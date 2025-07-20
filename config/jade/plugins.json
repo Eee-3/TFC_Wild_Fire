@@ -75,9 +75,6 @@
   "balm": {
     "jade": true
   },
-  "platforms": {
-    "hud": true
-  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -180,11 +177,6 @@
     "energy": true,
     "tooltip_renderer": true
   },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
-  },
   "create": {
     "filter": true,
     "backtank_capacity": true,
@@ -195,6 +187,9 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "petrolpark": {
+    "contamination": true
   },
   "waystones": {
     "waystone": true
