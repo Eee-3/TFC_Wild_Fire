@@ -1,4 +1,4 @@
-ServerEs.recipes(e => {
+ServerEvents.recipes(e => {
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
   e.remove({ id: 'create_sa:blazing_axe_recipe' }) // 移除"炽热斧头"的合成配方-create_sa
   e.remove({ id: 'create_sa:blazing_pickaxe_recipe' }) // 移除"炽热镐子"的合成配方-create_sa
