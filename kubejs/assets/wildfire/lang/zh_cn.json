@@ -91,6 +91,8 @@
     "item.kubejs.overburned_bow_arm": "烧过了头的弓臂",
     "item.kubejs.charred_bow_arm": "烧糊了的弓臂",
     "item.kubejs.oiled_bow_arm": "浸过油的弓臂",
+
+    "block.kubejs.andesite_chassis": "安山机箱",
   
     "kubejs.climate.name.orbit_climate":"卫星轨道",
     "kubejs.climate.name.moon_climate":"月球大气",
