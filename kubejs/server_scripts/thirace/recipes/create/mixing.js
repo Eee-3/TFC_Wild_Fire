@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 
-    const id_prefix = 'tfcreate:create/mixing/';
+    const id_prefix = 'kubejs:thirace/create/mixing/';
 
     const recipes = [
         {
