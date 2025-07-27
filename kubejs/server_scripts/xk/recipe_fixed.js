@@ -1,110 +1,8 @@
 //基础修改
 ServerEvents.recipes(event => {
     const create = event.recipes.create
-    
-    event.remove({ type: 'minecraft:smelting' }) // 移除熔炉熔炼配方
-    event.remove({ type: 'minecraft:campfire_cooking' }) // 移除营火烹饪配方
-    event.remove({ type: 'minecraft:blasting' }) // 移除高炉熔炼配方
-    event.remove({id:'map_atlases:craft_atlas'}) // 移除 map_atlases 模组制作地图集的配方
-    event.remove({id:'simpleradio:radio'}) // 移除 simpleradio 模组制作收音机的配方
-    event.remove({id:'simpleradio:transceiver'}) // 移除 simpleradio 模组制作收发器的配方
-    event.remove({id:'simpleradio:radiosmither'}) // 移除 simpleradio 模组制作无线电锻造器的配方
-    event.remove({id:'simpleradio:transmitting_module'}) // 移除 simpleradio 模组制作发射模块的配方
-    event.remove({id:'simpleradio:speaker_module'}) // 移除 simpleradio 模组制作扬声器模块的配方
-    event.remove({id:'simpleradio:receiving_module'}) // 移除 simpleradio 模组制作接收模块的配方
-    event.remove({ id: 'astikorcarts:animal_cart' }) // 移除 astikorcarts 模组中动物推车的配方
-    event.remove({ id: 'astikorcarts:supply_cart' }) // 移除 astikorcarts 模组中补给推车的配方
-    event.remove({ id: 'astikorcarts:plow' }) // 移除 astikorcarts 模组中犁的配方
-    event.remove({ id: 'astikorcarts:wheel' }) // 移除 astikorcarts 模组中轮子的配方
-    event.remove({output:'#minecraft:tools',mod:'ae2'}) // 移除 astikorcarts 模组中轮子的配方
-    event.remove({ id: 'ad_astra:nasa_workbench' }) //NASA工作台
-    event.remove({ id: 'ad_astra:compressor' }) //压缩机
-    event.remove({ id: 'ad_astra:etrionic_blast_furnace' }) //电力高炉
-
-    //刷物品
-   event.remove({input:'#forge:plates',output:'#forge:plates'}) //板子
-    
-    
-    
-    
-    
-    
-    event.shapeless(Item.of('create_power_loader:brass_chunk_loader'),['create_power_loader:empty_brass_chunk_loader']);//黄铜区块加载器
-    event.shapeless(Item.of('create_power_loader:andesite_chunk_loader'),['create_power_loader:empty_andesite_chunk_loader']);//安山区块加载
- 
-  
-    //event.replaceInput({output:'tfc:fire_clay'},'tfc:powder/kaolinite','tfc:kaolin_clay')
-    event.replaceInput({output:'ars_nouveau:scribes_table'},'#forge:logs/archwood','#forge:ingots/steel')
-    event.replaceInput({output:'ars_nouveau:scribes_table'},'ars_nouveau:archwood_slab','immersiveengineering:slab_treated_wood_horizontal')
-    event.replaceInput({output:'create:tree_fertilizer'},'#forge:coral','coralstfc:coral_powder')//珊瑚
-    event.replaceInput({output:'@mekanism'},"tfc:metal/ingot/wrought_iron",'tfc:metal/ingot/steel')
-    event.replaceInput({output:'@mekanism'},'minecraft:iron_ingot','tfc:metal/ingot/steel')
    
-   
-
-
-
-    event.remove({id:'sophisticatedbackpacks:backpack'}) // 移除 背包
-    event.shaped('sophisticatedbackpacks:backpack',['aba','aca','ddd'],{a:'#c:string',b:'tfc:metal/double_sheet/wrought_iron',c:'backpacked_tfc:backpack',d:'#forge:leather'})//背包合成困难
-    event.remove({id:'create:crafting/kinetics/shaft'}) // 移除传动杆
-    event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
-    event.remove({id:'tfc_metal_items:crafting/steel_tilt_hammer_head'}) // 移除杠杆锤头
-    event.shaped('tfc_metal_items:steel_tilt_hammer_head', ['BAB','B B','AAA'],{A:'tfc:metal/double_ingot/wrought_iron',B:'tfc:metal/ingot/wrought_iron'})//杠杆锤头变简单
-    event.remove({ id:"minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
-    event.shapeless('9x tfc:metal/ingot/wrought_iron',['minecraft:iron_block']);//铁块合成锻铁
     
-    
-    
-
-
-    event.replaceInput({output:'minecraft:slime_ball'},'create:dough','#tfc:foods/dough')//粘液球面团替换
-    event.replaceInput({input:'minecraft:iron_ingot',type: "crafting_shaped"},'minecraft:iron_ingot','tfc:metal/ingot/wrought_iron')//锻铁替换铁
-    event.replaceOutput({}, 'create_power_loader:empty_andesite_chunk_loader', 'create_power_loader:andesite_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_andesite_chunk_loader” 替换为 “create_power_loader:andesite_chunk_loader”
-    event.replaceOutput({}, 'create_power_loader:empty_brass_chunk_loader', 'create_power_loader:brass_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_brass_chunk_loader” 替换为 “create_power_loader:brass_chunk_loader”
-    event.replaceInput({id:'create:crafting/kinetics/super_glue'},'minecraft:slime_ball','#forge:glue') //强力胶
-    event.replaceInput({id:'create:crafting/materials/sand_paper'},'minecraft:sand','#forge:sand')//砂纸
-
-    
-    
-
-
-
-
-    //无序配方
-      event.shapeless(Item.of('create_new_age:magnetite_block'),['9x tfcorewashing:rocky_chunks_magnetite']);//磁铁矿块
-      
-      //event.shapeless(Item.of('4x tfcorewashing:pellet_malachite'),['tfcorewashing:briquet_malachite'])
-      event.shapeless(Item.of('minecraft:lantern'),['8x minecraft:iron_nugget','minecraft:torch'])
-      event.shapeless(Item.of('minecraft:kelp'),['tfc:plant/leafy_kelp'])
-      event.shapeless(Item.of('4x tfc:plant/moss'),['tfc:plant/moss','tfc:groundcover/humus'])
-      event.shapeless(Item.of('minecraft:moss_block'),['tfc:plant/moss','#minecraft:dirt'])
-      event.shapeless(Item.of('2x minecraft:tuff'),['2x minecraft:flint','2x #forge:gravel'])//燧石
-      event.shapeless(Item.of('9x minecraft:spruce_planks'),['9x afc:wood/planks/cypress'])
-      //  event.shapeless(Item.of('vinery:cherry_sapling'),['tfc:plant/cherry_sapling'])//樱桃树苗
-      event.shapeless(Item.of('minecraft:amethyst_shard'),['tfc:gem/amethyst'])//紫水晶
-
-
-    //有序配方
-    event.shaped('create:fluid_tank',[['#forge:plates/copper'],['immersiveengineering:wooden_barrel'],['#forge:plates/copper']])//流体储罐
-    event.shaped('create:item_vault',[['#forge:plates/iron'],['immersiveengineering:crate'],['#forge:plates/iron']])//机械动力保险箱
-    event.shaped('cuisinedelight:spatula', ['  A',' A ','B  '],{A:'tfc:metal/ingot/wrought_iron',B:'#balm:wooden_rods'})//锅铲
-
-    //移除配方
-    event.remove({output:'vintageimprovements:pig_iron_sheet'})//移除猪铁
-    event.remove({output:'vintageimprovements:cast_iron_sheet'})//移除锻铁板
-    event.remove('htm:compat/tfc/rock_knapping/hammer_head')//移处锤子
-    event.remove('tfc:welding/cast_iron_double_ingot')
-    event.remove('tfc:heating/kaolin_clay')
-    event.remove('crafttweaker:backpack')
-    event.remove({id:'create:crafting/kinetics/empty_blaze_burner'})//移除烈焰人燃烧室
-    event.remove({id:'vinery:bamboo_lattice'})//删除竹格
-    
-    event.remove('farmersdelight:paper_from_tree_bark')//三个树皮合成纸
-
- 
-
-    //机械动力
-     //鼓风机
       //灵魂火
     create.haunting(Item.of('minecraft:blaze_rod'),'createaddition:electrum_rod')//烈焰棒
     create.mixing("minecraft:soul_sand",['#forge:sand','minecraft:rotten_flesh'])//灵魂沙
@@ -161,27 +59,6 @@ ServerEvents.recipes(event => {
     event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
     event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow',100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
   
-
-    //安山合金新配方
-   // event.shapeless(Item.of('create:andesite_alloy',3),['3x tfc:rock/loose/andesite','#forge:tools/hammers','tfc:metal/ingot/cast_iron']).damageIngredient({tag:'#forge:tools/hammers'},3)//铸铁
-    //event.shapeless(Item.of('create:andesite_alloy',1),['tfc:rock/loose/andesite','#forge:tools/hammers','minecraft:iron_nugget']).damageIngredient({tag:'#forge:tools/hammers'},3)//锻铁
-   // event.shapeless(Item.of('create:andesite_alloy',1),['tfc:rock/loose/andesite','#forge:tools/hammers','2x create:zinc_nugget']).damageIngredient({tag:'#forge:tools/hammers'},3)//锌
-
-
-
-
-
-    //帽子包
-    event.shapeless(Item.of('simplehats:hatbag_common'),[Item.of('minecraft:leather_helmet'),'minecraft:leather'])
-    event.shapeless(Item.of('simplehats:hatbag_uncommon'),['tfc:gem/pyrite','minecraft:leather'])
-    event.shapeless(Item.of('simplehats:hatbag_rare'),['tfc:gem/diamond','minecraft:leather'])
-    event.shapeless(Item.of('simplehats:hatbag_epic'),['tfc:gem/amethyst','tfc:silk_cloth'])
-    event.shapeless(Item.of('simplehats:hatbag_halloween'),['tfc:pumpkin','tfc:burlap_cloth'])
-    event.shapeless(Item.of('simplehats:hatbag_summer'),['tfc:melon','tfc:burlap_cloth'])
-    event.shapeless(Item.of('simplehats:hatbag_easter'),['minecraft:egg','tfc:burlap_cloth'])
-    event.shapeless(Item.of('simplehats:hatbag_festive'),['minecraft:snowball','tfc:burlap_cloth'])
-    
-
 
    
 
