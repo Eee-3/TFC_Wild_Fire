@@ -18,3 +18,10 @@ ServerEvents.tags('item', (event) => {
         'tfc:metal/hammer/red_steel'
     )
 })
+
+
+ServerEvents.tags('block', (event) => {
+
+    event.get('create:wrench_pickup').add('kubejs:andesite_chassis')
+    
+})
