@@ -33,11 +33,8 @@ TFCEvents.data(e => {
         fauna.distanceBelowSeaLevel(0)
     },
     "alexsmobs:crocodile")
-})
-
-EntityEvents.spawned(e => {
-    let type = e.entity.type
-
-    if (type == "tfc:tiger" || type == "tfc:direwolf" || type == "tfc:orca" || type == "tfc:crocodile")
-        e.cancel()
+    e.fauna(climate => {
+    },
+    fauna => { },
+    "untamedwilds:bear")
 })
