@@ -1,13 +1,14 @@
 {
   "modPriorities": [
-    "kubejs",
     "tfc",
-    "crafttweaker",
+    "minecraft",
+    "kubejs",
     "create",
-    "thermal",
+    "tfc_ie_addon",
     "immersiveengineering",
+    "vintageimprovements",
     "mekanism",
-    "minecraft"
+    "createmetallurgy"
   ],
   "stoneStrata": [
     "stone",
