@@ -41,11 +41,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}mechanical_mixer`
         },
         {
-            ingredients: [{ item: 'kubejs:andesite_chassis' }, { item: 'create:whisk' }],
-            results: [{ item: 'create:mechanical_mixer' }],
-            id: `${id_prefix}mechanical_mixer`
-        },
-        {
             ingredients: [{ item: 'kubejs:andesite_chassis' }, { item: 'tfc_metal_items:steel_pressing_head' }],
             results: [{ item: 'create:mechanical_press' }],
             id: `${id_prefix}mechanical_press`
