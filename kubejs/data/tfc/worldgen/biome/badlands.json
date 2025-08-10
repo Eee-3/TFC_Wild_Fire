@@ -63,7 +63,109 @@
         ],
         "creature": [
             {
-                "type": "tfc:crocodile",
+                "type": "alexsmobs:tarantula_hawk",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:gorilla",
+                "weight": 1,
+                "minCount": 2,
+                "maxCount": 6
+            },
+            {
+                "type": "alexsmobs:capuchin_monkey",
+                "weight": 1,
+                "minCount": 2,
+                "maxCount": 6
+            },
+            {
+                "type": "alexsmobs:moose",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:snow_leopard",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:tasmanian_devil",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:maned_wolf",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:rhinoceros",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:roadrunner",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:emu",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:toucan",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:rattlesnake",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:komodo_dragon",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:alligator_snapping_turtle",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:anaconda",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "naturalist:vulture",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 4
+            },
+            {
+                "type": "naturalist:dragonfly",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:crocodile",
                 "weight": 20,
                 "minCount": 1,
                 "maxCount": 1
@@ -117,12 +219,6 @@
                 "maxCount": 6
             },
             {
-                "type": "warriorsofpastepoch:entities/scavenger_rat",
-                "weight": 1,
-                "minCount": 2,
-                "maxCount": 10
-            },
-            {
                 "type": "tfc:duck",
                 "weight": 1,
                 "minCount": 2,
@@ -135,25 +231,25 @@
                 "maxCount": 6
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:polar_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:grizzly_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:black_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "tfc:lion",
+                "type": "naturalist:lion",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 3
@@ -165,7 +261,7 @@
                 "maxCount": 1
             },
             {
-                "type": "tfc:tiger",
+                "type": "alexsmobs:tiger",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1

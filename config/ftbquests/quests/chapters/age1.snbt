@@ -1,0 +1,1103 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age1"
+	group: "39B5DFD6C28A7E6E"
+	icon: "tfc:rock/loose/andesite"
+	id: "606E9CE3B7411694"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfchotornot:mittens"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2DB49F7DE2CD977C"
+			tasks: [{
+				id: "2BA37816F7D9F5A3"
+				type: "checkmark"
+			}]
+			title: "一切的开始"
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			hide_until_deps_complete: true
+			icon: "tfc:rock/loose/gabbro"
+			id: "01A61645DD554B40"
+			tasks: [{
+				id: "7E855843872102DE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:rock_knapping"
+					}
+				}
+				title: "Any #tfc:rock_knapping"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0C96D15A0FCAC50B"
+				"01A61645DD554B40"
+			]
+			description: [
+				"这是一把石刀，因为太短了所以称不上剑。"
+				""
+				"造成不了什么有效的伤害，但是用处很多。收割干草、肢解动物，一些简单的杂活都离不开它。"
+				""
+				"石刀刃的形状可以通过查阅书或JEI得知"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tfc:stone/knife/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C3C24598A5CB94A"
+			rewards: [{
+				id: "02B15AAA6A8458C2"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "不是剑"
+			tasks: [{
+				id: "25A1FD64127991A1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:knives"
+					}
+				}
+				title: "刀"
+				type: "item"
+			}]
+			title: "短兵"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0C96D15A0FCAC50B"
+				"01A61645DD554B40"
+			]
+			description: [
+				"石标枪是前期为数不多的杀伤性武器，可以左键攻击，也可以按住右键蓄力掷出。有了标枪，你就可以进行捕猎，以补充前期稀缺的食物。"
+				""
+				""
+				"注意，除食肉动物之外，有一些食草动物也具有攻击性，还有一部分食草动物在受到攻击后会进行反击。因此在打猎的时候，请做好防护，以防被动物反杀。"
+				""
+				""
+				"不过，本整合包中的一个附属mod提供了一个除了打猎之外的选项：动物陷阱。由于该模组文本文件硬编码，无法汉化，现将教程写在任务书中"
+				""
+				""
+				"第一步：获取一根木棍，右击陷阱以将它撑起来"
+				"第二步：手里拿一根麻绳，右击它"
+				"第三步：制作一个小型动物诱饵，右击陷阱以把诱饵系在麻绳上"
+				"陷阱就完成了。你需要耐心的等待，这也许需要好几天。"
+				""
+				"你所杀死的小型食草动物都会以尸体的形式掉落，将其与刀放在一起合成即可将其解体。"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "tfc:stone/javelin/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "78FB35EB700196BA"
+			rewards: [{
+				id: "4D23B58BF44DEF87"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "前期食物获取"
+			tasks: [
+				{
+					advancement: "tfc:world/hunter"
+					criterion: ""
+					id: "237A7A9E970B683E"
+					type: "advancement"
+				}
+				{
+					id: "7911E896225F04C9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/igneous_extrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/igneous_intrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/metamorphic"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/sedimentary"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "石标枪"
+					type: "item"
+				}
+			]
+			title: "猎杀时刻"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0C96D15A0FCAC50B"
+				"01A61645DD554B40"
+			]
+			description: [
+				"一把石斧，虽不如原版石斧砍得那么快，但也够用了。"
+				""
+				"群峦的树存在连锁破坏，只要你破坏树的最底端，上面的原木也会一并破坏，包括树叶，而耐久度也会根据一棵树的方块数量而损耗。"
+				""
+				"石斧刃的形状可以通过查阅书或JEI得知"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tfc:stone/axe/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77133CE00F63B5E7"
+			rewards: [{
+				id: "15C732CC2BCED01B"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "砍树！"
+			tasks: [{
+				id: "2BD557205F73C6A1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:inefficient_logging_axes"
+					}
+				}
+				title: "打制石斧"
+				type: "item"
+			}]
+			title: "木材就应该躺着"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0C96D15A0FCAC50B"
+				"01A61645DD554B40"
+			]
+			description: [
+				"一把石铲，挖泥土的速度比你手挖要快。"
+				""
+				"不要想着挖三填一，别忘了群峦世界的方块受重力影响。"
+				""
+				"石铲头的形状可以通过查阅书或JEI得知"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tfc:stone/shovel/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6AFF0C52463AEA9E"
+			rewards: [{
+				id: "32B6D02D5E9C7E22"
+				type: "xp"
+				xp: 18
+			}]
+			tasks: [{
+				id: "6E9218F2FCFA7F1A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:shovels"
+					}
+				}
+				title: "Any #tfc:shovels"
+				type: "item"
+			}]
+			title: "铲子虽小力无穷"
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2C3C24598A5CB94A"]
+			description: [
+				"干草是群峦传说所新增加的独特资源，由小刀采集地面上随处可见的草获得。"
+				""
+				"干草是一种用途极其广泛的资源，从制作工具到各种进阶材料的原材料都有其身影，因此建议多多收集。"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "6C9C6088595C7D07"
+			rewards: [{
+				id: "6F930784A5F3F1AA"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "你可以给我草吗"
+			tasks: [{
+				id: "5B739EC28E4CC075"
+				item: "tfc:straw"
+				type: "item"
+			}]
+			title: "割干草"
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C9C6088595C7D07"]
+			description: ["现在你可以用干草制作纤维绳来加固你的石制工具，让他获得100%的耐久度"]
+			hide_until_deps_complete: true
+			id: "2B78615306BE3AFD"
+			rewards: [{
+				id: "3A5AFD41D5698A90"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "绑好！"
+			tasks: [{
+				id: "4F61750C4C23F613"
+				item: "htm:plant_string"
+				type: "item"
+			}]
+			title: "加固你的工具"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6AFF0C52463AEA9E"]
+			description: [
+				"黏土会在大部分地区的地表生成，除非该地区的表面不是泥土。使用铲子挖掘黏土方块即可获取。黏土草方块平常跟普通草方块没有任何区别，因此很难辨别，不过当你的准星对准黏土草方块时，屏幕上方的指示器会显示其名为黏土草方块。"
+				""
+				"有一种方法可以很好地发现附近的黏土：寻找黏土指示植物。这些植物分别为蹄盖蕨、美人蕉、一枝黄花、蒲苇、分药花和水生美人蕉。一些水源附近也会生成黏土，如果你找不到指示植物，可以去水边碰碰运气。"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "36D7E98F85B893C9"
+			rewards: [{
+				id: "53C397E4C11E5FFD"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			subtitle: "是的，下一步是陶器"
+			tasks: [{
+				id: "62DBD6DB0954F17A"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "挖黏土"
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["36D7E98F85B893C9"]
+			description: [
+				"当你收集足够多的黏土之后，手持至少五个黏土右键即可打开黏土塑形的界面。黏土塑形的原理跟石子塑形大差不差，具体物品的配方可以通过查询书与JEI得知。"
+				""
+				"本任务中你需要制作三种陶器：大缸、小缸和陶罐。"
+				""
+				"大缸是一种有九个储存格的储存方块，能够容纳正常及以下大小的物品。大缸能够被密封，密封大缸中的食物会获得“储存”的buff，保质期延长一倍。未放置在大缸中或者放在大缸中却未密封的食物会引来老鼠，导致食物无法食用。"
+				""
+				"小缸是一种拥有四个储存格的储存道具，能够容纳小及以下大小的物品。小缸是前期熔炼金属的重要道具，矿物只有被容纳在小缸中才能在坑窑中加热。被储存在小缸中的食物会获得“储存”buff，保质期延长一倍，该buff与大缸所给予的不叠加。"
+				""
+				"陶罐是一种能容纳100mb液体的储存道具，能够容纳大部分的液体。装有液体的陶罐可以参与前期某些需要液体的合成配方中，装有水的陶罐也可以支持玩家喝一次水。"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/unfired_large_vessel"
+			}
+			id: "57F6BC38D1A881B4"
+			rewards: [{
+				id: "7065E58B4544B69B"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			subtitle: "没有人把泥土弄湿了之后置之不管，好像砖就能神奇地自己造出来一样。——普鲁塔克"
+			tasks: [
+				{
+					id: "5DA628B15E0F65B4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "1A99D6B518FBAC95"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_jug"
+					}
+					type: "item"
+				}
+			]
+			title: "制陶术"
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["77133CE00F63B5E7"]
+			description: [
+				"砍伐树木后就可以获得原木，但是木板需要后续的工具才能获得，所以现在原木只能用来建筑、做燃料和搭建篝火。"
+				""
+				"由于原木属于非常大物品，所以其无法被任何群峦原版的储存方块收纳。正确收纳原木的方法是手持原木对地面潜行右键以构建一个叫做原木堆的特殊收纳方块，该方块能收纳16个原木，在其储存满之前你可以手持原木潜行右键以放入尽可能多的原木。"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "653800260C26E91B"
+			rewards: [{
+				id: "2551D91E7293A5B4"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			subtitle: "可惜，还不是做木板的时候"
+			tasks: [{
+				advancement: "tfc:story/logging"
+				criterion: ""
+				id: "5F6E9FE500A9C1F2"
+				type: "advancement"
+			}]
+			title: "砍原木"
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["653800260C26E91B"]
+			description: [
+				"当你收集了足够的资源之后，就可以开始考虑寻找安家地点了。"
+				""
+				"一个好的安家地点包括多个要素，靠近淡水源、地势平坦、附近树木够多、平均温度在15℃左右、表层岩层是某种沉积岩，以及地面最好有黝铜矿、孔雀石或者原生铜的矿粒。最后一点不做强求，但前面五点请务必做到，只有选好开局点，后面的流程进行才不会过于困难。"
+			]
+			icon: "minecraft:oak_door"
+			id: "2A2194004E2ACB99"
+			rewards: [{
+				id: "4690C9086E9906BE"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "71EEAFDAC255A464"
+				type: "checkmark"
+			}]
+			title: "遮风挡雨的庇护所"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["653800260C26E91B"]
+			description: [
+				"将两根木棍斜着合成就能得到起火器，这是你在群峦能够获得的最基础的点火道具，它将陪伴你从蛮荒时代直到你获得钢锭。"
+				""
+				"起火器的使用非常简单，只需要对着某个方块按住右键，然后你会看到准星所指的地方慢慢冒烟、冒出火星，最后你就获得了一团火。群峦传说的很多配方都需要点火才能完成，所以你可以在背包里备两个起火器以便不时之需。"
+				""
+				"注：群峦世界中没有地狱，所以不要想着做地狱门"
+			]
+			hide_until_deps_complete: true
+			id: "038E23C880719111"
+			rewards: [{
+				id: "5F8592493EB19CBC"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "只需要两根木棍"
+			tasks: [{
+				id: "0F87B5DA6CC32C17"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "钻木取火"
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["78FB35EB700196BA"]
+			description: [
+				"当你成功击杀猎物之后你就可以开始考虑制作屠刀了"
+				"用骨头制作成骨制屠夫刀，用它来击杀[部分]野生动物可以获得他们的尸体"
+				""
+				"相关配方可以在JEI查询"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "4386B15CB5B92F9C"
+			rewards: [{
+				id: "21E885A4A2D8B282"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "残忍又血腥"
+			tasks: [
+				{
+					id: "7AB28180AD89F856"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"lhmiracleroad:punishment_cap": {
+								attribute: {
+									heavy: {
+										Amount: 6.0d
+										Name: ""
+										Operation: 0
+										UUID: [I;
+											-1895586052
+											-696235390
+											-1249835495
+											-153325220
+										]
+									}
+								}
+								attributeNeed: "[{\"attribute_id\":\"power\",\"need_points\":7}]"
+								heavy: 6.0d
+								recordPunishmentAttributeModifier: { }
+							}
+						}
+						id: "butcher:bonebutchersknife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48FEB5ADB60D7E04"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"lhmiracleroad:punishment_cap": {
+								attribute: {
+									heavy: {
+										Amount: 6.0d
+										Name: ""
+										Operation: 0
+										UUID: [I;
+											-599378411
+											824133439
+											-1797452312
+											-1862024640
+										]
+									}
+								}
+								attributeNeed: "[{\"attribute_id\":\"power\",\"need_points\":7}]"
+								heavy: 6.0d
+								recordPunishmentAttributeModifier: { }
+							}
+						}
+						id: "butcher:boneskinningknife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: " 原始屠夫"
+			x: -10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4386B15CB5B92F9C"]
+			description: ["成功获得一个完整的猎物！！就应该趁早把他带回家处理了"]
+			icon: "butcher:pig_corpse_item"
+			id: "4C47B292B62DA222"
+			rewards: [{
+				id: "771020554708E1CA"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "拖回家……"
+			tasks: [{
+				id: "4C0AE24004D92ECD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:corpseitem"
+					}
+				}
+				title: "Any #forge:corpseitem"
+				type: "item"
+			}]
+			title: "完整的猎物！"
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C47B292B62DA222"]
+			description: [
+				"&a&n获得整个尸体之后，就可以开始着手准备处理尸体了"
+				"&r&r"
+				"首先要制作悬挂绳来将动物尸体挂上去,然再动物下方挖个坑洞，以免&c血污&r流的到处都是,"
+				""
+				"挂上去之后先用屠刀右键动物尸体进行&c放血&r，等待一段时间之后，尸体的血将会放干，这个时候就可以继续用屠刀处理尸体了，部分生物需要先用剥皮刀去除外在部分，才可以进行肢解"
+				""
+				"一只动物肢解之后出来的肉量相当之大，可以吃很久很久"
+				"&4&n更多说明请查询《屠宰手册》&r&r"
+			]
+			hide_until_deps_complete: true
+			id: "11A35AC0A49C979D"
+			rewards: [{
+				id: "4AE9A67A739785E6"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "处理尸体"
+			tasks: [{
+				id: "468857CDECA2A260"
+				item: "butcher:rope"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["038E23C880719111"]
+			description: [
+				"篝火是前期极其重要的方块，可被用于提供照明，温暖身体，加热食物，以及制作火把。"
+				""
+				"想要搭建篝火，你需要在一格方块中丢出三根木棍和一根原木，之后使用起火器对准这四个物品及其所在格按住右键。如果你成功搭建了篝火，掉落物所在的位置会生成一个篝火方块。"
+				""
+				"篝火的搭建是有概率失败的，如果你失败太多次，试着在丢出的物品中加入几根干草，能够提高搭建的成功率。"
+				""
+				"右键篝火以打开其GUI，左边的四格可放置燃料，你可以加入干草和原木以延长其燃烧时间。这四格右侧的长条代表温度条，指针指在越高的位置代表篝火的温度越高。右侧的格子是加热所用的，可以用于烤熟生肉或点燃火把，将需要加热的物品放在上面，加热完成的物品则会出现在下面。"
+				""
+				"篝火在燃料耗尽，温度达到最低之后则会熄灭，此时打开GUI放入燃料，再手持起火器潜行对其按住右键即可再次点燃。"
+				""
+				"注意：不要把篝火放置在于干草或木质方块相近的地方，篝火的温度可能会将其直接点燃！"
+			]
+			hide_dependency_lines: true
+			hide_text_until_complete: true
+			icon: "tfc:firepit"
+			id: "7E60DB1DFF798B1C"
+			invisible: true
+			rewards: [{
+				id: "628695281DA36E4D"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "火……温暖的火"
+			tasks: [
+				{
+					advancement: "tfc:story/firepit"
+					criterion: ""
+					id: "177358DA1C5E479D"
+					type: "advancement"
+				}
+				{
+					id: "2587DA4B19FB4C92"
+					item: {
+						Count: 1
+						id: "tfc:firestarter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&e普罗米修斯"
+			x: -5.464285714285715d
+			y: 5.071428571428591d
+		}
+		{
+			dependencies: ["7E60DB1DFF798B1C"]
+			description: [
+				"陶锅可以通过右键放置在篝火上来建造烹饪锅。变成烹饪锅的篝火将失去烤制物品的功能，所以你需要再造一个篝火。"
+				""
+				"陶锅可以把最多五个食物煮成一锅汤，煮出来的汤拥有独立的保质期，且营养值只比原材料的所有营养值加起来略微少一点；大锅还可以用来加工液体，例如四个草木灰加水煮沸就可以变成碱液。要想让大锅开始工作，你需要向大锅中加入水，之后加入原材料，当锅中的水开始沸腾，就代表大锅开始工作了。一段时间后大锅会停止沸腾，这就代表配方已经完成了，你需要一个陶碗来把锅中的汤捞出来。"
+				""
+				"碗也可以被用来制作一种最简单的菜品：沙拉。只需要右键打开碗，把最多五个蔬菜、水果或者肉类放进去就可以了。成品的营养值会比所有原材料的营养值加起来少了25%，但更加方便。"
+			]
+			hide_until_deps_visible: true
+			icon: "tfc:ceramic/pot"
+			id: "6D3869F6AB5ECDD2"
+			rewards: [{
+				id: "327EF228E4BBC4CA"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "一些比较基础的烹饪"
+			tasks: [
+				{
+					id: "7AA86593EE24A0C7"
+					item: "tfc:ceramic/pot"
+					type: "item"
+				}
+				{
+					id: "76FC907A73703DA8"
+					item: "tfc:ceramic/bowl"
+					type: "item"
+				}
+			]
+			title: "锅碗瓢盆"
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7E60DB1DFF798B1C"]
+			description: ["生肉总是要放进火里烤熟了再吃的。营火烤出来的熟肉营养值会比生肉高，同时保质期也延长了33%。"]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:food/cooked_mutton"
+			}
+			id: "718D4BF687097875"
+			rewards: [{
+				id: "41D8B20F98E96881"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "你需要吃熟肉，对吧？没有人类是不吃烤熟的肉的。"
+			tasks: [{
+				id: "2C130E67E896C049"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/cooked_meats"
+					}
+				}
+				title: "任意熟肉"
+				type: "item"
+			}]
+			title: "烤熟了再吃"
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B78615306BE3AFD"]
+			description: [
+				"群峦传说修改了床的配方，这使得你无法在前期成功做出床。这使你只能使用不能度过夜晚，但是可以储存重生点的干草床代替。"
+				""
+				"要搭建干草床，你需要在地面上水平放置两个干草块，随后手持一张大兽皮对其按下右键。然而由于产出大兽皮的动物要么难以寻得，要么具有攻击性，大兽皮在前期极难获得。所以本任务并没有强制搭建干草床，你可以等有条件获取大兽皮后再进行搭建。"
+			]
+			hide_text_until_complete: false
+			hide_until_deps_visible: true
+			icon: "tfc:thatch"
+			id: "19CAFD0FAE153C2F"
+			invisible: true
+			rewards: [{
+				id: "67FC8C4696B28131"
+				type: "xp"
+				xp: 18
+			}]
+			size: 1.5d
+			subtitle: "先不做也可以"
+			tasks: [
+				{
+					id: "678A992E9D2263E5"
+					title: "请在阅读以下内容后点击确认"
+					type: "checkmark"
+				}
+				{
+					id: "6C498C1019EDC6A9"
+					item: "tfc:thatch"
+					type: "item"
+				}
+			]
+			title: "&e并不柔软的床"
+			x: -7.964285714285708d
+			y: 5.071428571428569d
+		}
+		{
+			dependencies: ["57F6BC38D1A881B4"]
+			description: [
+				"&l坑窑烧炼&r是前期用来加热物品或者烤制陶器的一种制造方式"
+				""
+				"&l坑窑&r是你前期烧炼物品的唯一方式，要想搭建坑窑，你需要在平地上挖一个&l&n一格深&r&r的坑，在坑中手持物品按下默认v键以放入最多4个物品，在坑中右键填入8个&l干草&r，再右键放入8根&l原木&r，最后使用起火器将其点燃。"
+				""
+				"坑窑直至燃烧完成会消耗游戏中的8小时"
+				""
+				"&n[&o八分钟啦~建议期间多烤几个坑或者干点其他事&r]&r"
+				""
+				"之后火焰会消失，露出其中烧炼完成的物品。使用右键即可将放置在地上的物品拾起。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/vessel"
+				tag: { }
+			}
+			id: "16F9997D7A1F6EB3"
+			rewards: [{
+				id: "3F6DD9F1C1B96E9F"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "毕竟没人愿意等"
+			tasks: [
+				{
+					id: "6D95783817F130E9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "0F38AF429260A4B0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:fired_vessels"
+						}
+					}
+					title: "Any #tfc:fired_vessels"
+					type: "item"
+				}
+			]
+			title: "&e只想看到你焚烧殆尽的样子……"
+			x: -10.464285714285715d
+			y: 5.214285714285715d
+		}
+		{
+			dependencies: ["16F9997D7A1F6EB3"]
+			description: [
+				"当你从坑窑里拿起小罐的时候，你会被烫的撒手，毕竟刚烧好的陶器是很热的，如果想要拿起炙热的物品，你就需要用隔热道具装备在副手才能握持，"
+				""
+				"当你拿着滚烫物品的时候，会一直损耗隔热道具的耐久"
+				""
+				"如果你想快速降温，可以试图把物品丢入水中"
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfchotornot:burlap_potholder"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "24A56687163D36FE"
+			rewards: [{
+				id: "61CB4C246857CD8A"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "没人敢拿刚烧好的东西"
+			tasks: [
+				{
+					id: "32E0CA990575055B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfchotornot:burlap_potholder"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49163749F6824021"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfchotornot:tongs/wood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "好烫！！！"
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			dependency_requirement: "one_completed"
+			description: [
+				"如果你不幸受伤了，你可以去路边随便采一些花，然后揉在一起搓成一个药草球来治疗你的肢体，虽然他单次恢复量很少，好在廉价"
+				""
+				"&a&n在治疗一个肢体部位的时候不能再治疗一次同一部位，需要等肢体恢复效果结束才能再次治疗&r&r"
+			]
+			hide_until_deps_visible: true
+			id: "42F9E68FB24385E8"
+			rewards: [{
+				id: "07B56B41B895C951"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "嚼碎了抹在伤口上"
+			tasks: [{
+				id: "5A3F80BCBF4FB9CB"
+				item: "legendarysurvivaloverhaul:healing_herbs"
+				type: "item"
+			}]
+			title: "疼！但是得治"
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			id: "77B85F179EA08A23"
+			invisible: true
+			rewards: [{
+				id: "089E1D5FED205BD7"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "带了药的绷带不能止血，没带药的绷带不能治伤"
+			tasks: [{
+				advancement: "majruszsdifficulty:bleeding"
+				criterion: ""
+				id: "184AF021E280B1F3"
+				title: "第一滴血"
+				type: "advancement"
+			}]
+			title: "第一滴血"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"16F9997D7A1F6EB3"
+				"7E60DB1DFF798B1C"
+				"6FE1589968B29E24"
+			]
+			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: "minecraft:oak_planks"
+			id: "49367AA483E68761"
+			rewards: [{
+				id: "26ACD177D1BC3D04"
+				type: "xp"
+				xp: 18
+			}]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "前往下一章"
+			tasks: [{
+				id: "543473228A17060C"
+				type: "checkmark"
+			}]
+			title: "何以为家"
+			x: -7.9285714285714235d
+			y: 8.357142857142854d
+		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			hide_dependency_lines: true
+			id: "54D81CF17173B502"
+			invisible: true
+			tasks: [{
+				id: "1EA2EECCA05DBE87"
+				item: "kubejs:obsidian_shards"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["54D81CF17173B502"]
+			id: "4557CEE602F8136A"
+			tasks: [
+				{
+					id: "50A92CBD622BF8E7"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5ABAD1E7723C8BEE"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C3D66444837DA14"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "557FEB06F62E13CD"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_tool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45541BDC4F025580"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65DCA7378C3DF119"
+					item: {
+						Count: 1
+						id: "kubejs:obsidian_javelin"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26BCD725201034B9"
+					item: {
+						Count: 1
+						id: "call_of_yucutan:obsidian_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: 1.0d
+		}
+	]
+	title: "一切的开始"
+}

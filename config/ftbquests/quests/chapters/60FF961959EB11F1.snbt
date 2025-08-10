@@ -2,17 +2,17 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "60FF961959EB11F1"
-	group: "2BD524ABD6AD1EEE"
+	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
 	icon: {
-		Count: 1b
+		Count: 1
 		ForgeCaps: {
 			"tfc:item_heat": {
 				heat: 0.0f
 				ticks: 0L
 			}
 		}
-		id: "tfc:metal/ingot/copper"
+		id: "tfc:ore/rich_native_copper"
 	}
 	id: "60FF961959EB11F1"
 	order_index: 1
@@ -28,7 +28,8 @@
 				""
 				"然而，由于铜矿粒的生成极其玄学，你可能找个几天几夜都找不到铜矿粒"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "137D5FE515108BCF"
 			rewards: [{
 				id: "7B0A05840E8E4699"
@@ -41,7 +42,7 @@
 			tasks: [{
 				id: "6CB3946851CB153C"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -53,8 +54,8 @@
 				type: "item"
 			}]
 			title: "寻找铜粒"
-			x: -6.0d
-			y: -7.0d
+			x: -23.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -70,7 +71,7 @@
 				""
 				"此方法相较于寻找铜矿粒只需要一片水域即可获取冶炼铜的原材料，且产量不低。推荐能找到铜矿粒的玩家也使用淘金盘。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5EF1774178DE574E"
 			rewards: [{
 				id: "729A8C5301C30553"
@@ -89,7 +90,7 @@
 				{
 					id: "5DD9C2CB3EBEDC78"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:ore_deposits"
@@ -101,7 +102,7 @@
 				{
 					id: "63374E1526FB28F8"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -114,15 +115,16 @@
 				}
 			]
 			title: "河道淘铜"
-			x: -12.0d
-			y: -7.0d
+			x: -17.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["37097019DD809AF1"]
 			description: ["接下来可以使用小缸把获得的铜矿粒全部装进去，丢到坑窑里面烧至融化"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					Parent: {
 						heat: 0.0f
@@ -144,7 +146,7 @@
 				consume_items: false
 				id: "1F73CC416FCCF2C2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:vessels"
@@ -154,14 +156,15 @@
 				type: "item"
 			}]
 			title: "融成汤！"
-			x: -9.0d
-			y: -8.0d
+			x: -20.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["73ECCFADDD5FD022"]
 			description: ["接下来我们要制作铜以及铜合金时期很重要的“模具”，可以让我们用浇筑的方式合成工具头部"]
+			hide_until_deps_complete: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -182,7 +185,7 @@
 				consume_items: false
 				id: "728298C66CD4D372"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:molds"
@@ -192,8 +195,8 @@
 				type: "item"
 			}]
 			title: "制造模具"
-			x: -9.0d
-			y: -9.5d
+			x: -20.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
@@ -203,7 +206,8 @@
 				""
 				"&m其实一想到史蒂夫把矿物丢进熔炉就变成锭的神秘操作就觉得熔炉到底是什么高科技设备&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "080CB57CFDDDAC4F"
 			rewards: [{
 				id: "44D4EB0FCA588A46"
@@ -211,12 +215,12 @@
 				xp: 20
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "珍贵的东西"
 			tasks: [{
 				id: "6D6C3F31F00E36EF"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -227,8 +231,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: -15.0d
+			x: -20.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
@@ -237,9 +241,10 @@
 				""
 				"勘矿镐是一种指示附近矿物种类和数量的工具。当手持勘矿镐右键地面时，若附近有矿物，则会显示“发现xxx量xxx矿”；若没有矿物，则会显示“没发现什么有意思的”。根据勘矿镐的指示，寻找巨量矿物的存在地点，就有可能发现地底埋藏的矿物。只是需要注意，勘矿镐的汇报有时会出现错误，且勘矿镐的等级越低，错误概率越大，因此有的时候请多勘几次以获得正确结果。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -257,12 +262,13 @@
 				type: "xp"
 				xp: 20
 			}]
+			shape: "hexagon"
 			subtitle: "前提你得找到矿"
 			tasks: [
 				{
 					id: "0B9FE07F740E083A"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -276,7 +282,7 @@
 				{
 					id: "79B40EB61F07B3DC"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -289,15 +295,16 @@
 				}
 			]
 			title: "终于可以下矿了！但"
-			x: -7.5d
-			y: -8.5d
+			x: -18.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
 			description: ["继续砍树~"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -319,7 +326,7 @@
 			tasks: [{
 				id: "09B1FC4155B234F5"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -331,15 +338,16 @@
 				type: "item"
 			}]
 			title: "更有力的伐木"
-			x: -11.5d
-			y: -9.5d
+			x: -21.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
 			description: ["锯子是一种用于加工原木的工具。在铜锯的帮助下，原木能被加工成各种材料，其中就包括木材。"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -357,11 +365,12 @@
 				type: "xp"
 				xp: 20
 			}]
+			shape: "hexagon"
 			subtitle: "加工木材"
 			tasks: [{
 				id: "4EF5292509E5FF7A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -373,15 +382,16 @@
 				type: "item"
 			}]
 			title: "真正的木匠"
-			x: -7.5d
-			y: -10.5d
+			x: -18.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
 			description: ["镰刀是一种专门用来对付植物类方块的工具。手持镰刀采集杂草、树叶、农作物时，能够一次性破坏3x3x3区域以内的所有植物类方块。"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -403,7 +413,7 @@
 			tasks: [{
 				id: "7DD6D84DD3EA97B7"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -415,20 +425,25 @@
 				type: "item"
 			}]
 			title: "更好的大片割草和收割作物"
-			x: -10.5d
-			y: -8.5d
+			x: -18.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["080CB57CFDDDAC4F"]
+			dependencies: [
+				"080CB57CFDDDAC4F"
+				"4B4C87358DE1D813"
+			]
 			dependency_requirement: "one_started"
 			description: [
 				"砧是锻造业的基础，没有砧，锻造就无法进行。但是你现在掌握不了制作砧的工艺，所以只能找块石头来代替。"
 				""
 				"制作石砧需要你获得一块天然的火成岩（流纹岩、玄武岩、安山岩、英安岩、花岗岩、闪长岩、英安岩），手持石锤敲击其顶面你就获得了石砧。石砧的具体使用方法将在之后讲到。"
 			]
-			hide: true
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tfc:stone/hammer/igneous_extrusive"
 				tag: {
 					Damage: 0
@@ -445,7 +460,7 @@
 			tasks: [{
 				id: "05A183B40E074BCF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:hammers"
@@ -455,8 +470,8 @@
 				type: "item"
 			}]
 			title: "用锤子敲击石头！"
-			x: -9.0d
-			y: -16.5d
+			x: -20.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["37097019DD809AF1"]
@@ -469,14 +484,16 @@
 				""
 				"木炭是极有用的资源，后期几乎所有的熔炼配方中都会用到木炭。因此，大炼木炭是很重要的事情，请在确保原木足够的情况下，尽可能多的烧制木炭。"
 			]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "493A5CFB05F95C24"
 			rewards: [{
 				id: "5A7EDD4A4B261658"
 				type: "xp"
 				xp: 20
 			}]
+			shape: "hexagon"
 			subtitle: "你看这木炭黑的跟你的脸一样"
 			tasks: [{
 				id: "288E7A6B156A73C8"
@@ -484,8 +501,8 @@
 				type: "item"
 			}]
 			title: "烧木炭"
-			x: -8.0d
-			y: -6.5d
+			x: -19.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["493A5CFB05F95C24"]
@@ -506,6 +523,7 @@
 				type: "xp"
 				xp: 20
 			}]
+			shape: "hexagon"
 			subtitle: "暖心的大火炉"
 			tasks: [{
 				advancement: "tfc:story/forge"
@@ -514,8 +532,8 @@
 				type: "advancement"
 			}]
 			title: "雪中送炭炉"
-			x: -10.0d
-			y: -6.5d
+			x: -21.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1FBB88CD20E47866"]
@@ -524,9 +542,10 @@
 				""
 				"在焊接金属前，你需要一个内部放有助焊剂的砧，目前我们只有石砧，后面会有更高级的代替。要焊接金属，你需要将两块相同的金属锭加热到可焊接温度，在那之后打开石砧并将两个金属锭放入，随后退出金属砧手持锤子对其潜行右键。当你听到一声敲击声，看到砧上两个金属锭合为一个的时候，焊接就顺利地完成了。两块金属锭焊接在一起之后叫做双锭，你目前只能焊接铜，先焊接一些铜双锭出来吧。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -542,12 +561,12 @@
 				xp: 20
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "严丝合缝"
 			tasks: [{
 				id: "30FD7D37C0034617"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -558,8 +577,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: -18.0d
+			x: -20.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["57CDD98BD1458E3F"]
@@ -583,6 +602,7 @@
 				""
 				"由于锻造规则复杂 、工作量巨大、没有数据辅助且贯穿整个中后期，还会发生你加热的锭有可能在你思考的时候就冷却掉或者熔化了，结果你要重新加热却发现炉子又灭了的搞心态惨案，这使得锻造成为了全群峦传说mod最难也是最令人诟病的环节。在没有数据辅助的情况下，想要锻造出完美工具需要反复近十次的试错，因此强烈推荐想要体验锻造的玩家装一个锻造辅助材质包。"
 			]
+			hide_until_deps_complete: true
 			id: "7DD760E18F97ABC9"
 			rewards: [{
 				id: "476F643DF1506A04"
@@ -590,11 +610,11 @@
 				xp: 20
 			}]
 			shape: "hexagon"
-			size: 3.0d
+			size: 1.5d
 			tasks: [{
 				id: "1FC8DD22F6A77942"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -605,14 +625,11 @@
 				}
 				type: "item"
 			}]
-			x: -6.095238095238095d
-			y: -19.892857142857142d
+			x: -22.5d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"7DD760E18F97ABC9"
-				"57CDD98BD1458E3F"
-			]
+			dependencies: ["7DD760E18F97ABC9"]
 			description: [
 				"在一些后面的大部分装置都很需要铜板的存在，需要大量的铜板，只不过敲打他实在是太难了【】后面才方便制作自动化"
 				""
@@ -620,6 +637,7 @@
 				""
 				"保障你生命的"
 			]
+			hide_until_deps_complete: true
 			id: "4BFB9D9E13DA373B"
 			rewards: [{
 				id: "4E5B8F77CA3017D0"
@@ -630,7 +648,7 @@
 			tasks: [{
 				id: "0D19D72D8E274579"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -641,8 +659,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: -20.0d
+			x: -24.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4BFB9D9E13DA373B"]
@@ -653,6 +671,7 @@
 				""
 				"&l群峦中，铠甲的制作步骤比较复杂，需要先制作未完成的装甲，再焊接板材让他制作完成。虽然制作工序复杂但其实也是相当耐用的"
 			]
+			hide_until_deps_complete: true
 			id: "3195F1931D37ADD0"
 			rewards: [{
 				id: "1F8985DEE4F8845C"
@@ -663,7 +682,7 @@
 			tasks: [{
 				id: "38933A635F4F3788"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -674,14 +693,11 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
-			y: -20.0d
+			x: -25.5d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"6FE1589968B29E24"
-				"37097019DD809AF1"
-			]
+			dependencies: ["34A3E922DB7A6883"]
 			description: [
 				"群峦世界的野生动物是有限的，杀一只少一只。在家附近的动物被杀光之前，抓几只进行繁殖是很有必要的。"
 				""
@@ -689,8 +705,8 @@
 				""
 				"注：&m默认按下左shift时（建议改键）对动物按右键可以抱起动物，再次对地面按下右键即可将其放下。&r&o如想使用该功能，请自行添加CarryOn模组。&l&n&4请注意！该模组易发生严重BUG导致坏档，请谨慎使用，切勿抱起多方块结构物品或者复杂的物品。"
 			]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			icon: "minecraft:oak_fence"
 			id: "2608FB20E2B5FB63"
 			rewards: [{
@@ -705,21 +721,18 @@
 				type: "checkmark"
 			}]
 			title: "战略包围"
-			x: -7.5d
-			y: -3.0d
+			x: -14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"6FE1589968B29E24"
-				"37097019DD809AF1"
-			]
+			dependencies: ["34A3E922DB7A6883"]
 			description: [
 				"要想营养均衡可不只能吃肉，如果你想做一个美食家，那么农作物就是不可缺少的。"
 				""
 				"与原版不同，种子并不能从杂草或村庄中获得。群峦的野外存在野生的作物，当其被破坏时，会掉落一些成熟的作物与作物的种子。有了作物的种子，就可以准备种田了。"
 			]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			icon: "tfc:seeds/wheat"
 			id: "69CF401EA3B7A3A8"
 			rewards: [{
@@ -731,7 +744,7 @@
 			tasks: [{
 				id: "45586B4FAACC6D70"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:seeds"
@@ -741,13 +754,14 @@
 				type: "item"
 			}]
 			title: "来点种子"
-			x: -10.5d
-			y: -3.0d
+			x: -15.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1063BE4F6A66D335"]
 			description: ["木材是手工业的核心，手工业的内容离不开木材及其制品，不过最重要的是，你终于能造出工作台了。"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "tfc:wood/lumber/hickory"
 			id: "1942F387C2F19008"
 			rewards: [{
@@ -759,7 +773,7 @@
 			tasks: [{
 				id: "5031571D56B25BC1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:lumber"
@@ -768,8 +782,8 @@
 				title: "任意木材"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -11.5d
+			x: -17.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1942F387C2F19008"]
@@ -778,7 +792,8 @@
 				""
 				"除了工作台，还有一个由木板制成的工作站值得制作：砧板。使用方法很简单，将有配方的物品放置在砧板上，手持加工的工具对其右键，即可获得产物。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "tfc:wood/planks/hickory"
 			id: "210AB4533CD5A8A7"
 			rewards: [{
@@ -791,7 +806,7 @@
 				{
 					id: "607E9F0A0985FB5C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:workbenches"
@@ -808,7 +823,7 @@
 				{
 					id: "44C95FD23EA9F1A5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:planks"
@@ -819,8 +834,8 @@
 				}
 			]
 			title: "老相好"
-			x: -3.0d
-			y: -11.5d
+			x: -15.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
@@ -829,6 +844,7 @@
 				""
 				"箱子无法容纳工具，这个时候就需要工具架的出场了。工具架可以放在墙上，一个工具架可以放置四把工具。"
 			]
+			hide_until_deps_complete: true
 			icon: "tfc:wood/chest/hickory"
 			id: "0E4EDC2573553FFB"
 			rewards: [{
@@ -841,7 +857,7 @@
 				{
 					id: "268EC58FA0EB4134"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:chests"
@@ -853,7 +869,7 @@
 				{
 					id: "512E9F71C130984E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:tool_racks"
@@ -864,8 +880,8 @@
 				}
 			]
 			title: "存储用方块"
-			x: -2.0d
-			y: -10.5d
+			x: -14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
@@ -874,6 +890,7 @@
 				""
 				"木桶是一个能容纳1000mb单种类流体的工具，能容纳除熔岩以外的绝大部分流体，木桶绝大多数情况用于转移流体，小部分情况参与合成配方。注意：与原版铁桶不同，木桶只采集流体，不采集流体源，将木桶里的水倒出来会让其消失而不是在原地形成一格新的水。"
 			]
+			hide_until_deps_complete: true
 			icon: "tfc:wood/barrel/hickory"
 			id: "3CCAB31FBEEE494C"
 			rewards: [{
@@ -886,7 +903,7 @@
 				{
 					id: "0B9372CEA01558BB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:barrels"
@@ -902,8 +919,8 @@
 				}
 			]
 			title: "大桶摇滚"
-			x: -3.0d
-			y: -13.0d
+			x: -15.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -911,6 +928,7 @@
 				"76F5FA862F96CF4B"
 			]
 			description: ["洗矿槽是一种用于清洗沉积物和碎矿中间产物的机器，要使用洗矿槽，需要从一格水源方块引出水流，并将水流干涸前的最后一格下方的方块挖掉，放置洗矿槽使水流的最后一格流在洗矿槽的顶端，若洗矿槽有水流经则代表洗矿槽搭建成功。将沉积物或碎矿中间产物丢在洗矿槽顶部，经过一段时间后清洗产物就会在底部出现，洗矿槽一次只能同时处理一个物品。"]
+			hide_until_deps_complete: true
 			icon: "tfc:wood/sluice/hickory"
 			id: "4FADA80691359ED3"
 			rewards: [{
@@ -918,11 +936,12 @@
 				type: "xp"
 				xp: 20
 			}]
+			size: 1.5d
 			subtitle: "重复劳动的开端"
 			tasks: [{
 				id: "1D4FE9CDA95F3DE3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:sluices"
@@ -932,8 +951,8 @@
 				type: "item"
 			}]
 			title: "洗矿槽"
-			x: -3.0d
-			y: -8.5d
+			x: -17.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0D63792C1A36411F"]
@@ -959,7 +978,7 @@
 				{
 					id: "1F6889E95A6ED4D4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:looms"
@@ -970,8 +989,8 @@
 				}
 			]
 			title: "札扎弄机杼"
-			x: 0.5d
-			y: -11.5d
+			x: -13.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -979,6 +998,7 @@
 				"7D97D80EA47C810E"
 			]
 			description: ["终于，你可以做床了。这张床可以正常度过夜晚，也可以保存重生点，除此之外没有别的了。"]
+			hide_until_deps_complete: true
 			id: "1A00219943638F23"
 			rewards: [{
 				id: "7D768149D9CE1995"
@@ -992,8 +1012,8 @@
 				type: "item"
 			}]
 			title: "温暖的床"
-			x: -0.5d
-			y: -12.5d
+			x: -11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
@@ -1002,9 +1022,10 @@
 				""
 				"纺锤需要继续用到制陶术，同样需要烧制后才能使用，烧制后的纺锤头与木棍合成为纺锤，纺锤与羊毛合成即可将其分解为六份羊毛纱。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tfc:spindle"
 				tag: {
 					Damage: 0
@@ -1021,7 +1042,7 @@
 				{
 					id: "2CBE3543A5A9A4E3"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -1035,7 +1056,7 @@
 				{
 					id: "1BA56EDCF685558B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfc:spindle"
 						tag: {
 							Damage: 0
@@ -1045,24 +1066,26 @@
 				}
 			]
 			title: "纺锤纺线"
-			x: -1.5d
-			y: -11.5d
+			x: -14.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
 			description: ["凿子是一种用于加工岩石类物品的工具，能够将石子、石膏加工成砖块，或是将天然石块雕凿成平滑石块。"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "6608F4D88798BA85"
 			rewards: [{
 				id: "5871AE88E196A6ED"
 				type: "xp"
 				xp: 20
 			}]
+			shape: "hexagon"
 			subtitle: "当每个人雕刻石材、竖起石柱、切开琉璃时，我们知道我们在建造一个比我们自己大的多的东西。——伍冰枝"
 			tasks: [{
 				id: "0021681AE7D71775"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1077,8 +1100,8 @@
 				type: "item"
 			}]
 			title: "铜凿——建造业"
-			x: -10.5d
-			y: -10.5d
+			x: -22.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6608F4D88798BA85"]
@@ -1087,7 +1110,8 @@
 				""
 				"总之，将一块天然岩石周围六格的方块全部挖掉，就能获得一块天然岩石了。这个过程中要小心塌方。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "tfc:rock/raw/dolomite"
 			id: "033192F96A2BE722"
 			rewards: [{
@@ -1099,7 +1123,7 @@
 			tasks: [{
 				id: "34B0758CE935637E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock/raw"
@@ -1109,8 +1133,8 @@
 				type: "item"
 			}]
 			title: "百年孤独"
-			x: -11.5d
-			y: -11.0d
+			x: -23.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["033192F96A2BE722"]
@@ -1119,6 +1143,7 @@
 				""
 				"凿制下来的平滑石能够用于建筑，同时它还是反重力方块，不受塌方影响，但其在被挖掘下来之前仍受重力影响，所以不要幻想凿一层平滑石就能防住塌方了。"
 			]
+			hide_until_deps_complete: true
 			icon: "tfc:rock/smooth/dolomite"
 			id: "04744FD6FEBF2BE0"
 			rewards: [{
@@ -1130,7 +1155,7 @@
 			tasks: [{
 				id: "06374B4978B70C87"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock/smooth"
@@ -1140,8 +1165,8 @@
 				type: "item"
 			}]
 			title: "光滑平整"
-			x: -11.5d
-			y: -12.0d
+			x: -24.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["04744FD6FEBF2BE0"]
@@ -1167,7 +1192,7 @@
 				{
 					id: "6BF59F7062131783"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfc:handstone"
 						tag: {
 							Damage: 0
@@ -1177,16 +1202,14 @@
 				}
 			]
 			title: "磨人的小东西"
-			x: -11.5d
-			y: -13.0d
+			x: -25.0d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"144D3D187A5B866C"
-				"1FBB88CD20E47866"
-			]
+			dependencies: ["144D3D187A5B866C"]
 			dependency_requirement: "one_completed"
 			description: ["助焊剂说白了就是碳酸钙粉末，用石锤砸碎或用手推磨磨碎含有碳酸钙的物品制得。含有碳酸钙的物品包括白垩岩、石灰岩、大理岩、白云岩以及贝壳之类。你也可以用手推磨磨碎硼砂获得助焊剂"]
+			hide_dependent_lines: true
 			id: "4B4C87358DE1D813"
 			rewards: [{
 				id: "234F0371A4CB3BF9"
@@ -1197,7 +1220,7 @@
 			tasks: [{
 				id: "677E722C1AA77B77"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1208,8 +1231,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
-			y: -16.5d
+			x: -26.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1219,6 +1242,7 @@
 			dependency_requirement: "all_started"
 			description: ["将助焊剂与淡水在大桶中混合即可得到石灰水，两原材料比例为1:500mb，石灰水能用于和沙子混合制作砂浆，也可以将兽皮浸泡在其中得到浸泡兽皮。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0D6D7D4274FAB7AF"
 			rewards: [{
 				id: "6D8448F2B3B1BDF9"
@@ -1229,7 +1253,7 @@
 			tasks: [{
 				id: "49193B1FE434AE8B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:wooden_bucket"
 					tag: {
 						fluid: {
@@ -1241,8 +1265,8 @@
 				type: "item"
 			}]
 			title: "石灰水"
-			x: -5.5d
-			y: -13.0d
+			x: -14.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1252,6 +1276,7 @@
 			dependency_requirement: "all_started"
 			description: ["将沙子密封在装有石灰水的大桶中就可以获得砂浆，砂浆主要用作建筑材料的原材料，大部分时侯都用于制作石砖。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "170AA7EF27C269F2"
 			rewards: [{
 				id: "75100AA6FD75058E"
@@ -1264,8 +1289,8 @@
 				item: "tfc:mortar"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -13.0d
+			x: -15.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3CCAB31FBEEE494C"]
@@ -1274,7 +1299,8 @@
 				""
 				"鞣酸需要至少1000mb淡水和任意数量的软木，软木包括白桦木、花旗松木、橡木、红杉木、山核桃木、栗木和枫木。每1000mb淡水将消耗一根软木，并生成1000mb的鞣酸。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "34AFE36F7F50B21E"
 			rewards: [{
 				id: "27151CBED0774173"
@@ -1285,7 +1311,7 @@
 			tasks: [{
 				id: "6BC786D965EE0AD0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:wooden_bucket"
 					tag: {
 						fluid: {
@@ -1297,8 +1323,8 @@
 				type: "item"
 			}]
 			title: "鞣制皮革"
-			x: -4.5d
-			y: -13.0d
+			x: -14.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7F83D1B9298B5393"]
@@ -1309,7 +1335,8 @@
 				""
 				"向耕地中施入肥料能够补充耕地中的营养元素，堆肥就是一种常用的肥料，能够同时补充耕地中的三种营养元素。另外能够使用的肥料有骨粉、钾石盐粉、矿渣等，关于具体的种类和其能够补充的营养元素，请通过书和JEI查询。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "12A7A0E27F6A5BAE"
 			rewards: [{
 				id: "788B7B03A681BC50"
@@ -1323,8 +1350,8 @@
 				type: "item"
 			}]
 			title: "堆肥与肥料"
-			x: -12.0d
-			y: -8.5d
+			x: -17.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["12A7A0E27F6A5BAE"]
@@ -1349,16 +1376,17 @@
 					type: "item"
 				}
 			]
-			x: -13.5d
-			y: -8.5d
+			x: -16.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["70C73D0813322E35"]
+			dependencies: ["7F83D1B9298B5393"]
 			description: [
 				"耕地中除了氮磷钾三种营养元素的指标之外，另外一种指标则是土壤湿度。农作物同样需要各自的土壤湿度才能够生长。土壤湿度的大小是根据其距离水源的远近决定的，离水源越近湿度越大，要想提高土壤湿度，可以选择靠近水源的地方种植，或者使用引水桥。关于农作物各自需要的土壤湿度，请查阅书或JEI。"
 				""
 				"引水桥是一种用于搬运流体的方块，能将水域内的流体搬运一定格数，常用于农业中增加土壤湿度，与木桶一样，引水桥搬运的是流体而并非流体源，只要引水桥被破坏，其中的水也会一起消失。"
 			]
+			hide_dependency_lines: true
 			icon: "tfc:rock/aqueduct/dolomite"
 			id: "521642503F94E9AC"
 			rewards: [{
@@ -1370,7 +1398,7 @@
 			tasks: [{
 				id: "1870FBB44CBD329D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock/aqueducts"
@@ -1380,11 +1408,11 @@
 				type: "item"
 			}]
 			title: "引水桥与灌溉"
-			x: -14.5d
-			y: -9.5d
+			x: -15.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["521642503F94E9AC"]
+			dependencies: ["7F83D1B9298B5393"]
 			description: [
 				"在你抓到了足够多的牲畜，且手里食物足够充裕时，就可以考虑开启畜牧业了。"
 				""
@@ -1394,6 +1422,7 @@
 				"{@pagebreak}"
 				"动物的产出行为只有在达到一定好感度才能进行，当动物的好感度到了30%，给两种性别不同的动物喂食就能使雌性动物怀孕或者使卵生动物下出的蛋受精，怀孕一段时间后就会生出幼年动物，产毛和产奶动物在好感度达到一定程度就能够剪毛和挤奶了。要注意的是，动物在剪毛、挤奶或产崽之后就会衰老，衰老的动物将无法进行任何产出行为，建议卸磨杀驴。所有动物的信息可以通过书得知。"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:lead"
 			id: "6BBB985E7404B527"
 			rewards: [{
@@ -1408,12 +1437,13 @@
 				type: "checkmark"
 			}]
 			title: "畜牧业"
-			x: -14.5d
-			y: -11.0d
+			x: -14.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6BBB985E7404B527"]
 			description: ["既然你拥有木板，就不用用两格高的方块将动物围起来了，使用更加便宜的栅栏吧。"]
+			hide_until_deps_complete: true
 			icon: "tfc:wood/planks/hickory_fence"
 			id: "34A3E922DB7A6883"
 			rewards: [{
@@ -1425,7 +1455,7 @@
 			tasks: [{
 				id: "5B20300F82D4DFA6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:wooden_fences"
@@ -1435,8 +1465,8 @@
 				type: "item"
 			}]
 			title: "无处可逃"
-			x: -14.5d
-			y: -12.5d
+			x: -13.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
@@ -1453,8 +1483,8 @@
 				item: "tfc:nest_box"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -11.5d
+			x: -12.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
@@ -1476,8 +1506,8 @@
 				type: "item"
 			}]
 			title: "养蜂"
-			x: -15.5d
-			y: -13.0d
+			x: -12.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["170AA7EF27C269F2"]
@@ -1493,7 +1523,7 @@
 			tasks: [{
 				id: "0C3ED711069AC063"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock/bricks"
@@ -1503,8 +1533,8 @@
 				type: "item"
 			}]
 			title: "我是一块砖"
-			x: -7.5d
-			y: -13.0d
+			x: -16.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["34AFE36F7F50B21E"]
@@ -1515,6 +1545,7 @@
 			]
 			hide_details_until_startable: true
 			hide_text_until_complete: false
+			hide_until_deps_complete: true
 			id: "41513B8F3A7B3810"
 			rewards: [{
 				id: "2BCA86869BFFDC9C"
@@ -1527,13 +1558,14 @@
 				item: "minecraft:leather"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -15.0d
+			x: -11.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
 			description: ["制作防水皮需要橄榄油，蜡脂或者蜂蜡，任何一种都需要不小的功夫，但只要你成功制作出防水皮，就能制作现版本唯一能制作的最便捷的水上交通工具：独木舟。"]
-			hide: false
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
 			icon: "firmaciv:large_waterproof_hide"
 			id: "022D17994F671052"
 			rewards: [{
@@ -1554,15 +1586,15 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: -16.0d
+			x: -10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
 			description: ["如果你生存的地区温度过于极端，使用皮革制作的皮衣可以让你过得不用那么辛苦。"]
-			hide: false
+			hide_until_deps_complete: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:leather_helmet"
 				tag: {
 					Damage: 0
@@ -1579,7 +1611,7 @@
 				{
 					id: "7561004CDBDD931A"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1610,7 +1642,7 @@
 				{
 					id: "58BBAAF76BCEC6D8"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1641,7 +1673,7 @@
 				{
 					id: "29EFB42C58D10C01"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1672,7 +1704,7 @@
 				{
 					id: "24BA13AFFFBD5DB8"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1702,8 +1734,8 @@
 				}
 			]
 			title: "隔热装备"
-			x: -4.5d
-			y: -16.5d
+			x: -12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1712,7 +1744,8 @@
 				""
 				"风箱由木材和皮革制成，使用风箱时，需要将风箱放置在木炭炉周围四格的圆石上任意一格上，带孔的那一面正对木炭炉木炭部分正上方一格的方块。对风箱按右键会使其工作一次，在风箱正确安装的情况下，风箱每工作一次都会使木炭炉增加温度和消耗燃料的速度加倍树苗，期间内燃料加热的温度上限会被提高到炽白，当木炭炉未处于被风箱强化的状态时，其温度就会从炽白开始下降。"
 			]
-			hide: false
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
 			id: "56F4833CBAD60422"
 			rewards: [{
 				id: "28FC84E34C8DB091"
@@ -1726,8 +1759,8 @@
 				type: "item"
 			}]
 			title: "强风吹拂"
-			x: -5.5d
-			y: -16.0d
+			x: -13.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1736,7 +1769,8 @@
 				"&m不过用膀胱装水……噢……&r"
 				"{@pagebreak}"
 			]
-			hide: false
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
 			id: "0BCA62FA74445E3F"
 			rewards: [{
 				id: "08B9248EEA5413B6"
@@ -1747,7 +1781,7 @@
 			tasks: [{
 				id: "159FF8618FAA2EC7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "waterflasks:leather_flask"
 					tag: {
 						Damage: 0
@@ -1755,8 +1789,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -15.0d
+			x: -11.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2894CF3972892690"]
@@ -1765,9 +1799,10 @@
 				""
 				"而在地面上勘探矿物就比较简单了，只需要遵循一种方法:圆心法。具体操作为通过勘矿镐找到多处巨量到大量(或大量到中量)的分界点并作下标记。标记围成的形状会大致呈现出圆形，这之后通过圆上两条弦的中垂线的交点找到圆心，从圆心所在的位置一直往下挖就大概率能找到矿脉。如果没有找到，就在圆心附近多向下挖几次，或者重新画一个圆。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1791,22 +1826,22 @@
 				type: "checkmark"
 			}]
 			title: "勘矿要诀"
-			x: -6.5d
-			y: -9.5d
+			x: -18.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"61E41171C9379CF9"
 				"5292D40DEFEA6B05"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"掌握了挖矿和勘矿的要领之后，接下来就是上手实操了，去挖一些矿物带回来吧。"
 				""
 				"需要注意的是，金属矿物有等级之分，分别为贫瘠，普通，富集。贫瘠的矿物含有15mb金属，普通的为25mb，而富集则有35mb。"
 			]
+			hide_until_deps_complete: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1825,7 +1860,7 @@
 			tasks: [{
 				id: "1979D6893EB7571E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:ore_pieces"
@@ -1835,11 +1870,12 @@
 				type: "item"
 			}]
 			title: "哦，闪亮的！"
-			x: -5.5d
-			y: -8.5d
+			x: -18.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["529ABBB855603108"]
+			hide_until_deps_visible: true
 			icon: "tfcorewashing:rocky_chunks_limonite"
 			id: "76F5FA862F96CF4B"
 			rewards: [{
@@ -1851,7 +1887,7 @@
 			tasks: [{
 				id: "3CDD8811680CA014"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/rocky_chunks"
@@ -1861,14 +1897,14 @@
 				type: "item"
 			}]
 			title: "锤子时间到"
-			x: -4.5d
-			y: -8.5d
+			x: -18.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4FADA80691359ED3"]
 			dependency_requirement: "one_completed"
 			description: ["矿石被砸碎后会变成含石矿物碎块，这时需要洗矿槽来将其清洗一遍。不过这还不是最终产物，还需要再加工两遍。"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "tfcorewashing:chunks_limonite"
 			id: "6393FF4A503DDE14"
 			rewards: [{
@@ -1880,7 +1916,7 @@
 			tasks: [{
 				id: "7B7A3342D0548DD3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/chunks"
@@ -1890,8 +1926,8 @@
 				type: "item"
 			}]
 			title: "水洗一遍"
-			x: 1.5d
-			y: -10.0d
+			x: -17.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6393FF4A503DDE14"]
@@ -1907,7 +1943,7 @@
 			tasks: [{
 				id: "769D653FADEC09CF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/dirty_dusts"
@@ -1917,14 +1953,14 @@
 				type: "item"
 			}]
 			title: "锤子时间又到"
-			x: 1.5d
-			y: -14.0d
+			x: -17.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["43A874DF1D79892D"]
 			description: ["终于，你完成了一套完整的矿物处理流程。觉得很麻烦吗？是的，这确实很麻烦。"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1943,7 +1979,7 @@
 			tasks: [{
 				id: "347768330D9DBBCD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/clean_dusts"
@@ -1953,8 +1989,8 @@
 				type: "item"
 			}]
 			title: "千辛万苦"
-			x: 1.5d
-			y: -16.5d
+			x: -17.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5EF1774178DE574E"]
@@ -1966,9 +2002,9 @@
 				""
 				"加油吧，少年，你还有的是活要忙呢。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1988,7 +2024,7 @@
 				count: 20L
 				id: "6B37C030598AC71B"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2000,14 +2036,14 @@
 				type: "item"
 			}]
 			title: "一点粉末"
-			x: -14.5d
-			y: -7.0d
+			x: -16.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["45C21923C740DB27"]
 			description: ["由于小缸能容纳的物品有限，因此如果你想要一次冶炼更多的金属，就需要把矿粉压缩。这些矿块的制作方法很简单，四合一就行。"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -2027,7 +2063,7 @@
 				{
 					id: "118090BB0DF69B32"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -2041,7 +2077,7 @@
 				{
 					id: "713CBA067B13816F"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -2054,15 +2090,14 @@
 				}
 			]
 			title: "压缩铜粉"
-			x: -16.5d
-			y: -7.0d
+			x: -14.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"7DD760E18F97ABC9"
 				"26C27CAED8D101C4"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"群峦传说的金属是有等级之分的，如果铜是一级金属的话，那么二级金属就是铜混合其他金属制成的合金。铜合金具有三种不同的变体，分别为黑铜、青铜和铋铜。除了制成的工具、武器和盔甲在某些属性上略有不同以外，这三种合金用途并没有任何的差别，你完全可以任选一种铜合金作为目标来着重铸造，而不需要三种全部做一遍。"
 				""
@@ -2074,9 +2109,9 @@
 				""
 				"铸造4个铜合金锭以表明你已掌握了铸造合金的技术。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -2092,12 +2127,12 @@
 				xp: 20
 			}]
 			shape: "gear"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "青铜器是反射外形的镜子，是反射心灵的酒。——埃斯库罗斯"
 			tasks: [{
 				id: "75518137383D68F8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -2138,22 +2173,22 @@
 				type: "item"
 			}]
 			title: "铜合金"
-			x: 1.4761904761904816d
-			y: -19.845238095238095d
+			x: -20.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["6FE1589968B29E24"]
+			dependencies: ["49367AA483E68761"]
 			description: ["在前期，一个好的家应该由一个遮风挡雨的棚子，一堆篝火和几个大缸构成。你后续的发展都要围绕你目前的基地展开，如果你准备好了，就点击确认。在这一阶段，我们将学习铜的冶炼。"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L
 					}
 				}
-				id: "tfc:metal/ingot/copper"
+				id: "tfc:ore/rich_native_copper"
 			}
 			id: "37097019DD809AF1"
 			rewards: [{
@@ -2170,8 +2205,8 @@
 				type: "checkmark"
 			}]
 			title: "第一章：铜之血"
-			x: -8.928571428571423d
-			y: -3.4285714285714377d
+			x: -20.0047619047619d
+			y: -6.844047619047622d
 		}
 		{
 			dependencies: ["7DD760E18F97ABC9"]
@@ -2192,11 +2227,15 @@
 				type: "advancement"
 			}]
 			title: "&e挑战：完美锻造"
-			x: -6.5d
-			y: -17.5d
+			x: -22.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["210AB4533CD5A8A7"]
+			dependencies: [
+				"210AB4533CD5A8A7"
+				"61E41171C9379CF9"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"众所周知，群峦世界中的方块大部分都受到重力的影响，岩石也不例外。"
 				"当你在地下挖矿时，岩石自身的稳定性让其能够承受一定程度上的悬空，但一旦你开凿出过大的空洞，岩石就将受到重力影响而下落，且这种下落不单是一个方块的下落，而是影响一片区域的塌方！"
@@ -2217,6 +2256,9 @@
 				""
 				"支撑柱本身的摆放方式是多种多样的，你可以为了节省材料而追求最大效率的摆放方式，或者为了极致的安全感而在整个区域覆盖满支撑梁。但请记住一件事，崩盘常发生，心态最重要。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: "tfc:wood/support/hickory"
 			id: "5292D40DEFEA6B05"
 			rewards: [{
@@ -2228,7 +2270,7 @@
 			tasks: [{
 				id: "50049CC93D2240C6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:support_beams"
@@ -2238,12 +2280,13 @@
 				type: "item"
 			}]
 			title: "&c挖矿要诀"
-			x: -4.5d
-			y: -9.5d
+			x: -17.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
 			description: ["相信你一定会经常为草丛或雪减缓自己的移动速度而感到烦恼，只需要在副手拿着这根手杖，就可以畅行无阻，还可以防止自己掉进细雪中。"]
+			hide_until_deps_complete: true
 			id: "47989EBC17776AF8"
 			rewards: [{
 				id: "0A9DF7C3A78606FA"
@@ -2254,7 +2297,7 @@
 			tasks: [{
 				id: "78895B75016622D1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfccanes:walking_cane"
 					tag: {
 						Damage: 0
@@ -2263,8 +2306,8 @@
 				type: "item"
 			}]
 			title: "跋山涉水"
-			x: -2.0d
-			y: -12.5d
+			x: -15.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2894CF3972892690"]
@@ -2281,7 +2324,8 @@
 				""
 				"宝石是指一些比较珍贵的矿物，如祖母绿、青金石、钻石等。宝石一般被切制后用作装饰，也可以被磨成宝石粉后制成宝石锯或参与附魔。注意：黄铁矿是宝石而不是铁矿。"
 			]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "2C296A519C874DE7"
 			rewards: [{
 				id: "2A89AD85B485EFB6"
@@ -2295,13 +2339,14 @@
 				type: "checkmark"
 			}]
 			title: "群峦传说中的矿物"
-			x: -7.5d
-			y: -7.5d
+			x: -17.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3195F1931D37ADD0"]
 			description: ["恭喜获得你的第一副铠甲！"]
-			hide: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "33991A0875EFF30F"
 			rewards: [{
 				id: "6B45A48F4DDB9F56"
@@ -2314,7 +2359,7 @@
 				{
 					id: "2AF45D55EA41AF9A"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -2351,7 +2396,7 @@
 				{
 					id: "6DF2A761A88600AD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -2388,7 +2433,7 @@
 				{
 					id: "685A88F07227BCB2"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -2425,7 +2470,7 @@
 				{
 					id: "79D41C3D02A2B833"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -2461,14 +2506,15 @@
 				}
 			]
 			title: "&e结结实实的防护"
-			x: -14.0d
-			y: -20.0d
+			x: -26.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2454FE619EC7E071"]
 			description: ["铜钳可以让你更好的夹住滚烫的物品。有更高的耐久"]
-			hide: true
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "0B036C67A4EF671E"
 			rewards: [{
 				id: "3088EBFD254119A9"
@@ -2479,7 +2525,7 @@
 			tasks: [{
 				id: "36804F3E2E7ACEE8"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2493,8 +2539,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: -7.5d
+			x: -21.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -2502,6 +2548,7 @@
 				"皮革手套是一个隔热道具，装备在副手能让你不被物品烫伤"
 				"因为极其高的耐用性和便宜的价格使他成为传奇耐烧王"
 			]
+			hide_until_deps_complete: true
 			id: "13831570ED683A51"
 			rewards: [{
 				id: "7DD83BE9D27B2A19"
@@ -2512,7 +2559,7 @@
 			tasks: [{
 				id: "11A7CC06B9B1E7ED"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2526,14 +2573,15 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -15.0d
+			x: -13.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"41513B8F3A7B3810"
 				"1A00219943638F23"
 			]
+			hide_until_deps_complete: true
 			icon: "valhelsia_structures:explorers_tent"
 			id: "551DB3F4D98BBD12"
 			rewards: [{
@@ -2550,7 +2598,7 @@
 				{
 					id: "141A666094BECF18"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "valhelsia_structures:sleeping_bags"
@@ -2561,9 +2609,129 @@
 				}
 			]
 			title: "好帐篷"
-			x: -0.5d
-			y: -15.0d
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4717AD81AFA81CCD"]
+			description: [
+				"新版本的群峦传说更新了机械动力系统，目前该系统只有两个动力发生装置，能连接的机器也相当少，不过比起纯手动来说已经是相当的大提升了。"
+				""
+				"传动杆由木材和胶水合成，是动力传输的介质，你需要使用它来将动力装置和机器连接在一起。"
+				""
+				"然而，传动杆无法连接太长，此时就需要齿轮箱的帮助了。齿轮箱能够延长传动杆的连接距离，还能将动力传递到额外三个方向。手持锤子右击齿轮箱的任意一面来使该面能够与传动杆相连接。"
+			]
+			hide_until_deps_visible: true
+			icon: "tfc:wood/axle/hickory"
+			id: "78E7C759E7460612"
+			rewards: [{
+				id: "72154FD404E9F471"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "原始动力"
+			tasks: [
+				{
+					id: "2E7EAAAA90471F1B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:axles"
+						}
+					}
+					title: "任意群峦传动杆"
+					type: "item"
+				}
+				{
+					id: "6A211F4358AA77B6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:gear_boxes"
+						}
+					}
+					title: "任意齿轮箱"
+					type: "item"
+				}
+			]
+			x: -23.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78E7C759E7460612"]
+			description: ["群峦动力的动力发生装置十分简易：水车和风车。水车在其下半一或两格浸在河中的时候才会转动，而且不能是流动水必须是河流；风车则需要12x1x12的巨大空间，当空间足够时对手持风车叶片对传动杆右键即可安装最多五个叶片。一般来说，一个五叶片风车或两个水车即可带动目前的所有机器，所以不必要在这上面大费周章。"]
+			icon: "tfc:wood/water_wheel/hickory"
+			id: "7AEDC7D17F3A9676"
+			rewards: [{
+				id: "79C3C85F5F84AE05"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "自然产能领域的两座大山"
+			tasks: [
+				{
+					id: "6064BD96A9BA06CB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:water_wheels"
+						}
+					}
+					title: "任意水车"
+					type: "item"
+				}
+				{
+					id: "012A7D23964A8672"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:windmill_blades"
+						}
+					}
+					title: "任意风车叶片"
+					type: "item"
+				}
+			]
+			x: -24.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7AEDC7D17F3A9676"]
+			description: ["将竖直传动杆与手推磨顶端链接即可使其自动磨碎物品，你只需要把物品放进去就可以了。"]
+			icon: "tfc:quern"
+			id: "346835CB9F759BAD"
+			rewards: [{
+				id: "423E6800C0F0F439"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "自动化初见端倪"
+			tasks: [{
+				id: "2900AF7A6F892A8C"
+				title: "请在阅读以下内容后点击确认"
+				type: "checkmark"
+			}]
+			title: "鬼推磨"
+			x: -25.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D6D7D4274FAB7AF"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "4717AD81AFA81CCD"
+			tasks: [{
+				id: "749685E22629743F"
+				item: "tfc:glue"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -1.0d
 		}
 	]
-	title: "第一章：铜之血"
+	title: "第一章：铜砂"
 }

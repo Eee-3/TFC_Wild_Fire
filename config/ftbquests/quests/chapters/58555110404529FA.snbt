@@ -9,11 +9,7 @@
 	id: "58555110404529FA"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 3.0d
-			hover: [ ]
 			image: "tfc:textures/gui/book/icons/thermometer.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -21,11 +17,7 @@
 			y: 2.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
 			image: "mekanism:liquid/steam"
 			rotation: 0.0d
 			width: 0.03125d
@@ -33,11 +25,7 @@
 			y: 1.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 5.0d
-			hover: [ ]
 			image: "tfc:textures/painting/hot_spring.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -54,12 +42,12 @@
 				""
 				"&n本整合包由浙水院的《群峦：重生》魔改而来！增添了不少新内容和超过1000张精美的重绘贴图和自定义系统，祝玩得愉快!!&r"
 			]
-			hide: false
+			hide_until_deps_visible: false
 			id: "6DC1C6F2B8122DF1"
 			rewards: [{
 				id: "79AD6B3ADFF895D5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "tfc:field_guide"
@@ -81,7 +69,7 @@
 			dependencies: ["6D32F8E63FE2280C"]
 			description: ["你需要获得2个以上的石头然后对着空气右键进入敲击界面，来敲击获得石器头部"]
 			disable_toast: true
-			hide: true
+			hide_until_deps_visible: true
 			id: "0C96D15A0FCAC50B"
 			rewards: [{
 				id: "7AE4C613C33D1B67"
@@ -93,7 +81,7 @@
 			tasks: [{
 				id: "04DD21B9BE69A7C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock_knapping"
@@ -116,7 +104,7 @@
 				"当然，你也可以不看攻略，而完全按照自己的步调进行游戏，这反而是我们欢迎的。对于能够独立自主进行游戏的玩家来说，这些任务线只是白送他们经验的经验宝宝。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -164,7 +152,7 @@
 			tasks: [{
 				id: "5782D7AE368311C7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:inefficient_logging_axes"
@@ -187,7 +175,7 @@
 				"石铲头的形状可以通过查阅书或JEI得知"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tfc:stone/shovel/igneous_extrusive"
 				tag: {
 					Damage: 0
@@ -203,7 +191,7 @@
 			tasks: [{
 				id: "10CBA100C656B3FB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:shovels"
@@ -226,7 +214,7 @@
 				"石刀刃的形状可以通过查阅书或JEI得知"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tfc:stone/knife/igneous_extrusive"
 				tag: {
 					Damage: 0
@@ -242,7 +230,7 @@
 			tasks: [{
 				id: "39F60E78B657719C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:knives"
@@ -262,7 +250,7 @@
 				""
 				"干草是一种用途极其广泛的资源，从制作工具到各种进阶材料的原材料都有其身影，因此建议多多收集。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "12AE52C0DF1B7C7F"
 			rewards: [{
 				id: "6858838EC169571B"
@@ -286,7 +274,7 @@
 				""
 				"有一种方法可以很好地发现附近的黏土：寻找黏土指示植物。这些植物分别为蹄盖蕨、美人蕉、一枝黄花、蒲苇、分药花和水生美人蕉。一些水源附近也会生成黏土，如果你找不到指示植物，可以去水边碰碰运气。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "0B3BF0ADDBD382FE"
 			rewards: [{
 				id: "34796434F13C1E9E"
@@ -380,7 +368,7 @@
 				""
 				"不过要注意的是，群峦的野生动物是会&c杀绝&r的，所以要注意不要屠光附近所有的&a野生动物&r以保护自然平衡"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "minecraft:coarse_dirt"
 			id: "5BF73D6E33829591"
 			rewards: [{
@@ -536,7 +524,7 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "butcher:pillagerdisguise_helmet"
 				tag: {
 					Damage: 0
@@ -564,7 +552,7 @@
 				""
 				"由于原木属于非常大物品，所以其无法被任何群峦原版的储存方块收纳。正确收纳原木的方法是手持原木对地面潜行右键以构建一个叫做原木堆的特殊收纳方块，该方块能收纳16个原木，在其储存满之前你可以手持原木潜行右键以放入尽可能多的原木。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "5EEF44C1694292B8"
 			rewards: [{
 				id: "3FCEF076FF045EAA"
@@ -602,7 +590,7 @@
 			tasks: [{
 				id: "761E7DA1D9A6980A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:firestarter"
 					tag: {
 						Damage: 0
@@ -629,7 +617,7 @@
 				""
 				"注意：不要把篝火放置在于干草或木质方块相近的地方，篝火的温度可能会将其直接点燃！"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "tfc:firepit"
 			id: "0F7E78C69375D41D"
 			rewards: [{
@@ -650,7 +638,7 @@
 				{
 					id: "4F07D59F693EAFEA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfc:firestarter"
 						tag: {
 							Damage: 0
@@ -676,9 +664,9 @@
 				""
 				"之后火焰会消失，露出其中烧炼完成的物品。使用右键即可将放置在地上的物品拾起。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					Parent: {
 						heat: 0.0f
@@ -701,7 +689,7 @@
 				{
 					id: "5061A4B8879574A6"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -715,7 +703,7 @@
 				{
 					id: "5F28CB9A31BE89C8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "tfc:fired_vessels"
@@ -736,7 +724,7 @@
 				""
 				"要搭建干草床，你需要在地面上水平放置两个干草块，随后手持一张大兽皮对其按下右键。然而由于产出大兽皮的动物要么难以寻得，要么具有攻击性，大兽皮在前期极难获得。所以本任务并没有强制搭建干草床，你可以等有条件获取大兽皮后再进行搭建。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "tfc:thatch"
 			id: "29938C10347228F9"
 			rewards: [{
@@ -776,7 +764,7 @@
 				"陶罐是一种能容纳100mb液体的储存道具，能够容纳大部分的液体。装有液体的陶罐可以参与前期某些需要液体的合成配方中，装有水的陶罐也可以支持玩家喝一次水。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -797,7 +785,7 @@
 				{
 					id: "13AF6123F619D899"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -811,7 +799,7 @@
 				{
 					id: "0DEFDEA0F60112C1"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -1079,7 +1067,7 @@
 				""
 				"&e如果想要详细得知群峦自然生物的生成环境，请翻阅“&b群峦传说&r&e-这个世界-自然动物”&r&e章来详细了解所有动物的生成地区&r&r"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "minecraft:coarse_dirt"
 			id: "784D9D49B7638D76"
 			rewards: [{
@@ -1127,7 +1115,7 @@
 		{
 			dependencies: ["784D9D49B7638D76"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
 						creationDate: -9223372036854775808L
@@ -1156,7 +1144,7 @@
 				{
 					id: "308DE7000D0DA38B"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
 								creationDate: 2238000L
@@ -1179,7 +1167,7 @@
 		{
 			dependencies: ["784D9D49B7638D76"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
 						creationDate: -9223372036854775808L
@@ -1208,7 +1196,7 @@
 				{
 					id: "774795B880F28274"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
 								creationDate: 2238000L
@@ -1274,7 +1262,7 @@
 				"3EFD37B6CDC910EF"
 			]
 			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "minecraft:oak_planks"
 			id: "6FE1589968B29E24"
 			rewards: [{
@@ -1312,7 +1300,7 @@
 				""
 				"你所杀死的小型食草动物都会以尸体的形式掉落，将其与刀放在一起合成即可将其解体。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "2E54481F9BAE42BE"
 			rewards: [{
 				id: "562F7256DBCF0C2A"
@@ -1330,7 +1318,7 @@
 				{
 					id: "1F8BC4716C75ADA4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1376,9 +1364,9 @@
 		{
 			dependencies: ["0F7E78C69375D41D"]
 			description: ["生肉总是要放进火里烤熟了再吃的。营火烤出来的熟肉营养值会比生肉高，同时保质期也延长了33%。"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
 						creationDate: -9223372036854775808L
@@ -1401,7 +1389,7 @@
 			tasks: [{
 				id: "340B95F5993CED51"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:foods/cooked_meats"
@@ -1423,7 +1411,7 @@
 				""
 				"碗也可以被用来制作一种最简单的菜品：沙拉。只需要右键打开碗，把最多五个蔬菜、水果或者肉类放进去就可以了。成品的营养值会比所有原材料的营养值加起来少了25%，但更加方便。"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "tfc:ceramic/pot"
 			id: "73EA65983AD20A47"
 			rewards: [{
@@ -1458,7 +1446,7 @@
 				""
 				"&c&l注意！：因为mod代码问题，烤猪的时候需要先架起猪，再在下面点燃营火才可以进行烧烤，先放置了营火不会烤熟！&r&r"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "10F3EC6D18A52ED4"
 			rewards: [{
 				id: "653B4A343520ACA0"
@@ -1483,7 +1471,7 @@
 				""
 				"相关配方可以在JEI查询"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "6D55166B65FA72CD"
 			rewards: [{
 				id: "5EEF5F56C6A37BBF"
@@ -1495,7 +1483,7 @@
 				{
 					id: "132A8E6AE902B5EC"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1526,7 +1514,7 @@
 				{
 					id: "138B88ABA861DF9C"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"lhmiracleroad:punishment_cap": {
 								attribute: {
@@ -1572,7 +1560,7 @@
 			tasks: [{
 				id: "21C38CD8C2F032AB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:corpseitem"
@@ -1669,7 +1657,7 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tfccanes:walking_cane"
 				tag: {
 					Damage: 0
@@ -1699,7 +1687,7 @@
 				""
 				"&a&n在治疗一个肢体部位的时候不能再治疗一次同一部位，需要等肢体恢复效果结束才能再次治疗&r&r"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "7673CDE6A0712F6D"
 			rewards: [{
 				id: "3634E169CCE9447A"
@@ -1814,9 +1802,9 @@
 				""
 				"如果你想快速降温，可以试图把物品丢入水中"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1839,7 +1827,7 @@
 				{
 					id: "1FD1C3254126520F"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -1856,7 +1844,7 @@
 				{
 					id: "5F72AAE4935175CD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -1878,7 +1866,7 @@
 		{
 			dependencies: ["0C96D15A0FCAC50B"]
 			description: ["你可以在河边找到燧石，做成燧石长矛，燧石长矛虽然不能投掷但有十分可观的攻击距离，很适合前期使用"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "7D7EE81B85865237"
 			rewards: [{
 				id: "306EBDB4DB7A645D"
@@ -1889,7 +1877,7 @@
 			tasks: [{
 				id: "3F7334A84D004706"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"lhmiracleroad:punishment_cap": {
 							attribute: {
@@ -1924,7 +1912,7 @@
 		{
 			dependencies: ["7D7EE81B85865237"]
 			description: ["如果你有幸击杀了几只蜘蛛并获得了蜘蛛眼，你就可以制作吹筒和毒镖，作为前期很有用的远程武器，比弓箭更加便携方便，最重要的是，没有力量需求"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "193204240E1BF793"
 			rewards: [{
 				id: "4B550EE652885FD6"
@@ -1936,7 +1924,7 @@
 				{
 					id: "4A2951ED2F57FB80"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "call_of_yucutan:blow_gun"
 						tag: {
 							Damage: 0

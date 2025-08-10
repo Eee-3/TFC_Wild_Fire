@@ -5,13 +5,13 @@
 	group: "2BD524ABD6AD1EEE"
 	icon: "immersiveengineering:manual"
 	id: "4EBBE730662AEE77"
-	order_index: 8
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["01FFB92709ABF783"]
 			description: ["工程师手册包含了沉浸工程的所有信息，推荐多加阅读。"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "5C7222F9A6C49487"
 			rewards: [{
 				id: "1CB0C89F120AE133"
@@ -29,9 +29,9 @@
 		{
 			dependencies: ["2CEE61F6F19CA8F4"]
 			description: ["沉浸工程是一种注重于构建多方块机器的mod，该mod与群峦传说具有高度联动，通过沉浸工程的机器，你将完成一些原本群峦原版才能完成，连机械动力都做不到的自动化，最终使用最尖端的电弧炉完成金属的批量冶炼。"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "immersiveengineering:hammer"
 				tag: {
 					Damage: 0
@@ -79,7 +79,7 @@
 				"工程师锤可以用来将多方块结构连接为一个整体以及进行部分捶打工作。剪线钳的用途比较单纯，比如说制造金属板，金属线。但不可否认的是没有这两样东西，沉浸工程这个方面就无从进行。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "immersiveengineering:hammer"
 				tag: {
 					Damage: 0
@@ -95,7 +95,7 @@
 				{
 					id: "0603DE4FF45EEF1C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -106,7 +106,7 @@
 				{
 					id: "2E5CC5C0E56D97A6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:wirecutter"
 						tag: {
 							Damage: 0
@@ -236,7 +236,7 @@
 			tasks: [{
 				id: "10697FAB7BAE8273"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -270,31 +270,26 @@
 				{
 					id: "218736EABA05537E"
 					item: "immersiveengineering:thermoelectric_generator"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "012FC0DBF203468A"
 					item: "immersiveengineering:dynamo"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "40B11464A983E5BA"
 					item: "immersiveengineering:watermill"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "662BBF05070E63E2"
 					item: "immersiveengineering:windmill"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "531F4EF3D78CA06E"
 					item: "immersiveengineering:windmill_sail"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -323,7 +318,7 @@
 			tasks: [{
 				id: "360F25C931959F9D"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -359,7 +354,7 @@
 			tasks: [{
 				id: "013F3CF99159CF62"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -392,7 +387,7 @@
 			tasks: [{
 				id: "6864B8C5E5CC29CD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -410,7 +405,7 @@
 			dependencies: ["5C7222F9A6C49487"]
 			description: ["沉浸新加的三种金属中，铅和铝是用于制造电池和电线的，铀则用作温差发电机的温度指示方块。"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -429,7 +424,7 @@
 				{
 					id: "18BBD24DF7F45C61"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -443,7 +438,7 @@
 				{
 					id: "43D47B84884EFFC4"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -457,7 +452,7 @@
 				{
 					id: "5C0ED53F137AAF20"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -496,67 +491,56 @@
 				{
 					id: "4CF8E7813DCED73E"
 					item: "immersiveengineering:wirecoil_copper"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "35E3BC1F8962B23A"
 					item: "immersiveengineering:connector_lv"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3FE2F5D60303E6B4"
 					item: "immersiveengineering:connector_lv_relay"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1DA25F910135924B"
 					item: "immersiveengineering:wirecoil_electrum"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2087D2190771825D"
 					item: "immersiveengineering:connector_mv"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1DF5CFA0745DDF44"
 					item: "immersiveengineering:connector_mv_relay"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "663384A42242572B"
 					item: "immersiveengineering:wirecoil_steel"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "05E316EB1F9654A1"
 					item: "immersiveengineering:connector_hv"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "65BCDAB60077C941"
 					item: "immersiveengineering:connector_hv_relay"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "50E923A45B259801"
 					item: "immersiveengineering:transformer"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5AF810A5009BDF13"
 					item: "immersiveengineering:transformer_hv"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -599,19 +583,16 @@
 				{
 					id: "3D829C6944068B94"
 					item: "immersiveengineering:capacitor_lv"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4D39D0D274C36D24"
 					item: "immersiveengineering:capacitor_mv"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "33C201918DD629BE"
 					item: "immersiveengineering:capacitor_hv"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -770,7 +751,7 @@
 			tasks: [{
 				id: "615BBCCB9CB44633"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -813,7 +794,7 @@
 			tasks: [{
 				id: "1C2056CA3CC73C27"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:graphite_electrode"
 					tag: {
 						graphDmg: 0
@@ -915,7 +896,7 @@
 			tasks: [{
 				id: "3B76C4C84683166A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]

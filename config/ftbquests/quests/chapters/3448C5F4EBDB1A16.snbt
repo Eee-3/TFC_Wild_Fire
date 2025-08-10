@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: {
-		Count: 1b
+		Count: 1
 		ForgeCaps: {
 			"tfc:item_heat": {
 				heat: 0.0f
@@ -16,7 +16,7 @@
 		id: "tfc:metal/double_ingot/steel"
 	}
 	id: "3448C5F4EBDB1A16"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -30,7 +30,7 @@
 			]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -68,7 +68,7 @@
 				"单桅帆船的造价十分高昂，需要大量的钢、铜、羊毛及其他材料，且你还需要一段时间来学习如何操作帆船。如果你决定建造帆船，可以查阅书籍。看向帆船的桅杆以完成该任务。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -141,7 +141,7 @@
 			tasks: [{
 				id: "3448A564C61BF56D"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -168,7 +168,7 @@
 			tasks: [{
 				id: "4E9A859A547E0F1D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:flint_and_steel"
 					tag: {
 						Damage: 0
@@ -200,7 +200,7 @@
 				{
 					id: "00BBB25755A5975B"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -218,9 +218,9 @@
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
 			description: ["制作黑钢需要先制作脆钢，一种钢、镍和黑铜的合金，因此先收集些黑铜和镍吧。"]
-			hide: false
+			hide_until_deps_visible: false
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -241,7 +241,7 @@
 					count: 10L
 					id: "72A3817F02BCE155"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -256,7 +256,7 @@
 					count: 10L
 					id: "0C520128A178FACD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -279,10 +279,10 @@
 				""
 				"&l小知识&r：铬薄板可以代替铁薄板成为高炉砖块的蒙皮，而且铬铁产量比较大，一般挖一次就一段时间不缺了，唯一缺点就是铬薄板需要钢砧才能进行敲制、如果你比较缺铁或者不想浪费铁来制作高炉蒙皮，可以用廉价的铬作为替代"
 			]
-			hide: false
 			hide_dependency_lines: true
+			hide_until_deps_visible: false
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -302,7 +302,7 @@
 					count: 10L
 					id: "10B8D6C08B6A6E0F"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -317,7 +317,7 @@
 					count: 10L
 					id: "7F969A0EE73BCB82"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -336,8 +336,8 @@
 		{
 			dependencies: ["0C2E97A138486954"]
 			description: ["将钢、镍和铬按照一定比例混合就可以得到不锈钢。不锈钢的用途不算很多，但也不能没有。例如其可用于建造不锈钢温室、制作加工速度是干燥垫12倍的太阳能干燥器。"]
-			hide: false
 			hide_dependency_lines: true
+			hide_until_deps_visible: false
 			id: "418943718040C326"
 			rewards: [{
 				id: "30243E58AC40E103"
@@ -348,7 +348,7 @@
 			tasks: [{
 				id: "74811A37276979D8"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -376,7 +376,7 @@
 			tasks: [{
 				id: "458AD05150935012"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -393,7 +393,7 @@
 		{
 			dependencies: ["58B1D2FE24BF1134"]
 			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "4DFF7818B50623B5"
 			rewards: [{
 				id: "09ADD1B4CB9B71D2"
@@ -405,7 +405,7 @@
 			tasks: [{
 				id: "125439D3026E04C0"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -422,7 +422,7 @@
 		}
 		{
 			dependencies: ["4DFF7818B50623B5"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "tfc:crucible"
 			id: "446F9DA4F13E0AA6"
 			rewards: [{
@@ -444,9 +444,9 @@
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
 			description: ["制作蓝钢需要先制作脆蓝钢，一种黑钢、钢、铋铜和纹银的合金。"]
-			hide: false
+			hide_until_deps_visible: false
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -467,7 +467,7 @@
 					count: 10L
 					id: "03406F5786149A47"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -482,7 +482,7 @@
 					count: 10L
 					id: "751189AEB0002AB5"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -501,7 +501,7 @@
 		{
 			dependencies: ["419D1651505D2B46"]
 			description: ["将黑钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
-			hide: false
+			hide_until_deps_visible: false
 			id: "7BED755237B36ACA"
 			rewards: [{
 				id: "01454BC07A1673EC"
@@ -513,7 +513,7 @@
 			tasks: [{
 				id: "1400DE394149402F"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -542,7 +542,7 @@
 			tasks: [{
 				id: "33CB50C3834DE3A5"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -560,9 +560,9 @@
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
 			description: ["制作红钢需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
-			hide: false
+			hide_until_deps_visible: false
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -583,7 +583,7 @@
 					count: 10L
 					id: "4031C7CAB7F455F3"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -598,7 +598,7 @@
 					count: 10L
 					id: "3860E2631128CE9A"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -617,7 +617,7 @@
 		{
 			dependencies: ["0CB5C3D905F4A3F1"]
 			description: ["将黑钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
-			hide: false
+			hide_until_deps_visible: false
 			id: "4153C222DFD9B0D9"
 			rewards: [{
 				id: "3A024CAE6831504E"
@@ -629,7 +629,7 @@
 			tasks: [{
 				id: "191E34BAACFD9796"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -658,7 +658,7 @@
 			tasks: [{
 				id: "08BFEF0AD62DEDEF"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -691,7 +691,7 @@
 			tasks: [{
 				id: "16CACEDC366917FA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -1046,7 +1046,7 @@
 			tasks: [{
 				id: "78FAF1E33C2D586A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1075,7 +1075,7 @@
 			tasks: [{
 				id: "29A1B015DB01EA09"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1098,7 +1098,7 @@
 				"吃好罐头之后的清洗流程和小陶罐一样"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -1121,8 +1121,8 @@
 		{
 			dependencies: ["72432121EE248C7B"]
 			description: ["精妙背包是一款十分强大的存储模组，它提供了一个名叫背包的装备，既可以背在身上当做额外的存储空间，还可以放在地上当做大容量箱子。不仅如此，该背包还能够使用铁锭、金锭、钻石进行升级，最高级的背包拥有堪比钻石箱子的巨大储存量，还能够通过装载多种升级模组获得更强大的功能。最重要的是，它不受群峦本身重量系统的影响，也就是说你甚至可以在身上背好几十个装满水的大桶而不用担心超重！而如此强大的背包造价却十分的低廉，只需要四根羊毛纱，四块皮革和一个箱子，可以说是只要做出来就能颠覆游戏体验的bug级装备了。"]
-			hide: false
 			hide_dependent_lines: true
+			hide_until_deps_visible: false
 			id: "2578A42ACFFDE9A1"
 			rewards: [{
 				id: "61E5EF918F3A901D"
@@ -1133,7 +1133,7 @@
 			tasks: [{
 				id: "6A3CF892AFE145B1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:backpack"
 					tag: {
 						contentsUuid: [I;

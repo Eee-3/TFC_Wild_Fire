@@ -109,7 +109,7 @@
         ],
         "creature": [
             {
-                "type": "tfc:crocodile",
+                "type": "alexsmobs:crocodile",
                 "weight": 20,
                 "minCount": 1,
                 "maxCount": 1
@@ -151,12 +151,6 @@
                 "maxCount": 4
             },
             {
-                "type": "warriorsofpastepoch:entities/scavenger_rat",
-                "weight": 1,
-                "minCount": 2,
-                "maxCount": 10
-            },
-            {
                 "type": "tfc:musk_ox",
                 "weight": 1,
                 "minCount": 1,
@@ -181,25 +175,25 @@
                 "maxCount": 6
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:polar_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:grizzly_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:black_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "tfc:lion",
+                "type": "naturalist:lion",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 3
@@ -211,7 +205,7 @@
                 "maxCount": 1
             },
             {
-                "type": "tfc:tiger",
+                "type": "alexsmobs:tiger",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
@@ -341,6 +335,24 @@
                 "weight": 1,
                 "minCount": 2,
                 "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:catfish",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:terrapin",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "naturalist:bass",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
             }
         ]
     },

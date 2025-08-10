@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: ""
+	id: "21A6B461EC9F0A5B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "0FF989C95BAB6F5B"
+		rewards: [{
+			command: "/say Hi, @p!"
+			id: "4A68447DDC4D7724"
+			type: "command"
+		}]
+		tasks: [{
+			id: "678BF1CB76818BE7"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

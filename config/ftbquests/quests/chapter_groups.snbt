@@ -1,3 +1,6 @@
 {
-	chapter_groups: [{ id: "2BD524ABD6AD1EEE", title: "主线任务：群峦与星辰" }]
+	chapter_groups: [
+		{ id: "2BD524ABD6AD1EEE", title: "主线任务：群峦与星辰" }
+		{ id: "39B5DFD6C28A7E6E", title: "新任务" }
+	]
 }
