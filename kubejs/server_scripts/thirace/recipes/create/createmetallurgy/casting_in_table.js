@@ -51,9 +51,11 @@ ServerEvents.recipes((event) => {
     { mod: 'tfc', head: 'sword_blade' },
     { mod: 'precisionprospecting', head: 'mineral_prospector_head' },
     { mod: 'precisionprospecting', head: 'prospector_hammer_head' },
-    { mod: 'precisionprospecting', head: 'prospector_drill_head' },
     { mod: 'tfc_hammer_time', head: 'excavator_head' },
     { mod: 'tfc_hammer_time', head: 'sledgehammer_head' },
+  ]
+  const molds_3 = [
+    { mod: 'precisionprospecting', head: 'prospector_drill_head' },
   ]
   metals.forEach((metal) => {
     molds_1.forEach((mold) => {
@@ -74,6 +76,17 @@ ServerEvents.recipes((event) => {
           { amount: 200, fluid: `tfc:metal/${metal}`, nbt: {} }
         ],
         processingTime: 60,
+        result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
+        id: `${id_prefix}${mold.head}/${metal}`
+      });
+    });
+    molds_3.forEach((mold) => {
+      recipes.push({
+        ingredients: [
+          { item: `kubejs:graphite_${mold.head}_mold` },
+          { amount: 300, fluid: `tfc:metal/${metal}`, nbt: {} }
+        ],
+        processingTime: 90,
         result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
         id: `${id_prefix}${mold.head}/${metal}`
       });
@@ -272,3 +285,4 @@ ServerEvents.recipes((event) => {
   'kubejs:graphite_pickaxe_head_mold'
 
 ] */
+
