@@ -29,6 +29,14 @@
         "#tfc:in_biome/top_layer_modification"
     ],
     "spawners": {
+        "water_creature": [
+            {
+                "type": "naturalist:hippo",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            }
+        ],
         "monster": [
             {
                 "type": "minecraft:spider",
@@ -63,7 +71,7 @@
         ],
         "creature": [
             {
-                "type": "tfc:crocodile",
+                "type": "alexsmobs:crocodile",
                 "weight": 20,
                 "minCount": 1,
                 "maxCount": 1
@@ -128,32 +136,26 @@
                 "minCount": 2,
                 "maxCount": 6
             },
-           {
-                "type": "untamedwilds:bear",
+            {
+                "type": "tfc:polar_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:grizzly_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "untamedwilds:bear",
+                "type": "tfc:black_bear",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
             },
             {
-                "type": "warriorsofpastepoch:entities/scavenger_rat",
-                "weight": 1,
-                "minCount": 2,
-                "maxCount": 10
-            },
-            {
-                "type": "tfc:lion",
+                "type": "naturalist:lion",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 3
@@ -165,7 +167,7 @@
                 "maxCount": 1
             },
             {
-                "type": "tfc:tiger",
+                "type": "alexsmobs:tiger",
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 1
@@ -295,6 +297,108 @@
                 "weight": 1,
                 "minCount": 2,
                 "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:gorilla",
+                "weight": 1,
+                "minCount": 2,
+                "maxCount": 6
+            },
+            {
+                "type": "alexsmobs:capuchin_monkey",
+                "weight": 1,
+                "minCount": 2,
+                "maxCount": 6
+            },
+            {
+                "type": "alexsmobs:leafcutter_ant",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:moose",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:elephant",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:snow_leopard",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:kangaroo",
+                "weight": 1,
+                "minCount": 2,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:tasmanian_devil",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:anteater",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:maned_wolf",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:gelada_monkey",
+                "weight": 1,
+                "minCount": 3,
+                "maxCount": 6
+            },
+            {
+                "type": "alexsmobs:rhinoceros",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:bison",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 4
+            },
+            {
+                "type": "alexsmobs:skunk",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "alexsmobs:toucan",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "naturalist:snail",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "naturalist:giraffe",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 3
             }
         ]
     },

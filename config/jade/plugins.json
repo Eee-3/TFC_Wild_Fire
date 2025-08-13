@@ -60,7 +60,7 @@
     "block_face": false,
     "coordinates": false,
     "registry_name": "OFF",
-    "mod_name": true
+    "mod_name": false
   },
   "alekiships": {
     "furnace": true,
@@ -71,6 +71,9 @@
   },
   "lootr": {
     "info": true
+  },
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true

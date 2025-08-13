@@ -75,7 +75,7 @@
         ],
         "water_creature": [
             {
-                "type": "tfc:orca",
+                "type": "alexsmobs:orca",
                 "weight": 1,
                 "minCount": 1,
                 "maxCount": 3
@@ -91,6 +91,18 @@
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:giant_squid",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "alexsmobs:cachalot",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 2
             }
         ],
         "underground_water_creature": [
