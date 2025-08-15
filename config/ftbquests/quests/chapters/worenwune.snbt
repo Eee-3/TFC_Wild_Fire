@@ -1,0 +1,3606 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "worenwune"
+	group: "39B5DFD6C28A7E6E"
+	id: "357F6A6E664C8665"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "龙虾",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lobster",
+    "id": "K2L3M4N5O6P7Q8R9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "R9Q8P7O6N5M4L3K2",
+        "title": "关于龙虾的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇龙虾或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/lobster",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见龙虾",
+            "to_observe": "tfc:lobster",
+            "type": "observation"
+        },
+        {
+            "id": "S0T1U2V3W4X5Y6Z7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:龙虾",
+    "x": 1.0d,
+    "y": 0.0d
+}
+{
+    "dependencies": ["K2L3M4N5O6P7Q8R9"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lobster",
+    "id": "A8B9C0D1E2F3G4H5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀龙虾或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:lobster",
+            "icon": "tfc:spawn_egg/lobster",
+            "id": "I6J7K8L9M0N1O2P3",
+            "optional_task": true,
+            "title": "猎杀龙虾",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Q4R5S6T7U8V9W0X1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "龙虾的详细了解",
+    "x": 1.0d,
+    "y": 1.0d
+}
+// 鱼、海洋生物类（从小到大排序）
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "小龙虾",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/crayfish",
+    "id": "A1B2C3D4E5F6G7H8",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "H8G7F6E5D4C3B2A1",
+        "title": "关于小龙虾的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇小龙虾或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/crayfish",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见小龙虾",
+            "to_observe": "tfc:crayfish",
+            "type": "observation"
+        },
+        {
+            "id": "I9J0K1L2M3N4O5P6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:小龙虾",
+    "x": 0.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["A1B2C3D4E5F6G7H8"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/crayfish",
+    "id": "Q7R8S9T0U1V2W3X4",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀小龙虾或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:crayfish",
+            "icon": "tfc:spawn_egg/crayfish",
+            "id": "Y5Z6A7B8C9D0E1F2",
+            "optional_task": true,
+            "title": "猎杀小龙虾",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "G3H4I5J6K7L8M9N0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "小龙虾的详细了解",
+    "x": 0.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "龙虾",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lobster",
+    "id": "K2L3M4N5O6P7Q8R9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "R9Q8P7O6N5M4L3K2",
+        "title": "关于龙虾的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇龙虾或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/lobster",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见龙虾",
+            "to_observe": "tfc:lobster",
+            "type": "observation"
+        },
+        {
+            "id": "S0T1U2V3W4X5Y6Z7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:龙虾",
+    "x": 1.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["K2L3M4N5O6P7Q8R9"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lobster",
+    "id": "A8B9C0D1E2F3G4H5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀龙虾或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:lobster",
+            "icon": "tfc:spawn_egg/lobster",
+            "id": "I6J7K8L9M0N1O2P3",
+            "optional_task": true,
+            "title": "猎杀龙虾",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Q4R5S6T7U8V9W0X1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "龙虾的详细了解",
+    "x": 1.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "小口黑鲈",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/smallmouth_bass",
+    "id": "L3M4N5O6P7Q8R9S0",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "S0R9Q8P7O6N5M4L3",
+        "title": "关于小口黑鲈的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇小口黑鲈或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/smallmouth_bass",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见小口黑鲈",
+            "to_observe": "tfc:smallmouth_bass",
+            "type": "observation"
+        },
+        {
+            "id": "T1U2V3W4X5Y6Z7A8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:小口黑鲈",
+    "x": 2.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["L3M4N5O6P7Q8R9S0"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/smallmouth_bass",
+    "id": "B9C0D1E2F3G4H5I6",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀小口黑鲈或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:smallmouth_bass",
+            "icon": "tfc:spawn_egg/smallmouth_bass",
+            "id": "J7K8L9M0N1O2P3Q4",
+            "optional_task": true,
+            "title": "猎杀小口黑鲈",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "R5S6T7U8V9W0X1Y2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "小口黑鲈的详细了解",
+    "x": 2.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "虹鳟鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/rainbow_trout",
+    "id": "M4N5O6P7Q8R9S0T1",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "T1S0R9Q8P7O6N5M4",
+        "title": "关于虹鳟鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇虹鳟鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/rainbow_trout",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见虹鳟鱼",
+            "to_observe": "tfc:rainbow_trout",
+            "type": "observation"
+        },
+        {
+            "id": "U2V3W4X5Y6Z7A8B9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:虹鳟鱼",
+    "x": 3.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["M4N5O6P7Q8R9S0T1"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/rainbow_trout",
+    "id": "C0D1E2F3G4H5I6J7",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀虹鳟鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:rainbow_trout",
+            "icon": "tfc:spawn_egg/rainbow_trout",
+            "id": "K8L9M0N1O2P3Q4R5",
+            "optional_task": true,
+            "title": "猎杀虹鳟鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "S6T7U8V9W0X1Y2Z3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "虹鳟鱼的详细了解",
+    "x": 3.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "湖鳟",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lake_trout",
+    "id": "N5O6P7Q8R9S0T1U2",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "U2T1S0R9Q8P7O6N5",
+        "title": "关于湖鳟的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇湖鳟或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/lake_trout",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见湖鳟",
+            "to_observe": "tfc:lake_trout",
+            "type": "observation"
+        },
+        {
+            "id": "V3W4X5Y6Z7A8B9C0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:湖鳟",
+    "x": 4.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["N5O6P7Q8R9S0T1U2"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lake_trout",
+    "id": "D1E2F3G4H5I6J7K8",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀湖鳟或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:lake_trout",
+            "icon": "tfc:spawn_egg/lake_trout",
+            "id": "L9M0N1O2P3Q4R5S6",
+            "optional_task": true,
+            "title": "猎杀湖鳟",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "T7U8V9W0X1Y2Z3A4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "湖鳟的详细了解",
+    "x": 4.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "莓鲈",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/crappie",
+    "id": "O6P7Q8R9S0T1U2V3",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "V3U2T1S0R9Q8P7O6",
+        "title": "关于莓鲈的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇莓鲈或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/crappie",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见莓鲈",
+            "to_observe": "tfc:crappie",
+            "type": "observation"
+        },
+        {
+            "id": "W4X5Y6Z7A8B9C0D1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:莓鲈",
+    "x": 5.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["O6P7Q8R9S0T1U2V3"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/crappie",
+    "id": "E2F3G4H5I6J7K8L9",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀莓鲈或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:crappie",
+            "icon": "tfc:spawn_egg/crappie",
+            "id": "M0N1O2P3Q4R5S6T7",
+            "optional_task": true,
+            "title": "猎杀莓鲈",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "U8V9W0X1Y2Z3A4B5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "莓鲈的详细了解",
+    "x": 5.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蓝鳃鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/bluegill",
+    "id": "P7Q8R9S0T1U2V3W4",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "W4V3U2T1S0R9Q8P7",
+        "title": "关于蓝鳃鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蓝鳃鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/bluegill",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蓝鳃鱼",
+            "to_observe": "tfc:bluegill",
+            "type": "observation"
+        },
+        {
+            "id": "X5Y6Z7A8B9C0D1E2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蓝鳃鱼",
+    "x": 6.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["P7Q8R9S0T1U2V3W4"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/bluegill",
+    "id": "F3G4H5I6J7K8L9M0",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蓝鳃鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:bluegill",
+            "icon": "tfc:spawn_egg/bluegill",
+            "id": "N1O2P3Q4R5S6T7U8",
+            "optional_task": true,
+            "title": "猎杀蓝鳃鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "V9W0X1Y2Z3A4B5C6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蓝鳃鱼的详细了解",
+    "x": 6.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "鲈鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:bass_spawn_egg",
+    "id": "Q8R9S0T1U2V3W4X5",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "X5W4V3U2T1S0R9Q8",
+        "title": "关于鲈鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇鲈鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:bass_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见鲈鱼",
+            "to_observe": "naturalist:bass",
+            "type": "observation"
+        },
+        {
+            "id": "Y6Z7A8B9C0D1E2F3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:鲈鱼",
+    "x": 7.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["Q8R9S0T1U2V3W4X5"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:bass_spawn_egg",
+    "id": "G4H5I6J7K8L9M0N1",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀鲈鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:bass",
+            "icon": "naturalist:bass_spawn_egg",
+            "id": "O2P3Q4R5S6T7U8V9",
+            "optional_task": true,
+            "title": "猎杀鲈鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "W0X1Y2Z3A4B5C6D7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "鲈鱼的详细了解",
+    "x": 7.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "鲶鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_catfish",
+    "id": "R9S0T1U2V3W4X5Y6",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "Y6X5W4V3U2T1S0R9",
+        "title": "关于鲶鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇鲶鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_catfish",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见鲶鱼",
+            "to_observe": "alexsmobs:catfish",
+            "type": "observation"
+        },
+        {
+            "id": "Z7A8B9C0D1E2F3G4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:鲶鱼",
+    "x": 8.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["R9S0T1U2V3W4X5Y6"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_catfish",
+    "id": "H5I6J7K8L9M0N1O2",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀鲶鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:catfish",
+            "icon": "alexsmobs:spawn_egg_catfish",
+            "id": "P3Q4R5S6T7U8V9W0",
+            "optional_task": true,
+            "title": "猎杀鲶鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "X1Y2Z3A4B5C6D7E8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "鲶鱼的详细了解",
+    "x": 8.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "飞鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_flying_fish",
+    "id": "S0T1U2V3W4X5Y6Z7",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "Z7Y6X5W4V3U2T1S0",
+        "title": "关于飞鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇飞鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_flying_fish",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见飞鱼",
+            "to_observe": "alexsmobs:flying_fish",
+            "type": "observation"
+        },
+        {
+            "id": "A8B9C0D1E2F3G4H5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:飞鱼",
+    "x": 9.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["S0T1U2V3W4X5Y6Z7"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_flying_fish",
+    "id": "I6J7K8L9M0N1O2P3",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀飞鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:flying_fish",
+            "icon": "alexsmobs:spawn_egg_flying_fish",
+            "id": "Q4R5S6T7U8V9W0X1",
+            "optional_task": true,
+            "title": "猎杀飞鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Y2Z3A4B5C6D7E8F9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "飞鱼的详细了解",
+    "x": 9.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "弹涂鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mudskipper",
+    "id": "T1U2V3W4X5Y6Z7A8",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "A8Z7Y6X5W4V3U2T1",
+        "title": "关于弹涂鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇弹涂鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_mudskipper",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见弹涂鱼",
+            "to_observe": "alexsmobs:mudskipper",
+            "type": "observation"
+        },
+        {
+            "id": "B9C0D1E2F3G4H5I6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:弹涂鱼",
+    "x": 10.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["T1U2V3W4X5Y6Z7A8"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mudskipper",
+    "id": "J7K8L9M0N1O2P3Q4",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀弹涂鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:mudskipper",
+            "icon": "alexsmobs:spawn_egg_mudskipper",
+            "id": "R5S6T7U8V9W0X1Y2",
+            "optional_task": true,
+            "title": "猎杀弹涂鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Z3A4B5C6D7E8F9G0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "弹涂鱼的详细了解",
+    "x": 10.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "锤头鲨",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_hammerhead_shark",
+    "id": "U2V3W4X5Y6Z7A8B9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "B9A8Z7Y6X5W4V3U2",
+        "title": "关于锤头鲨的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇锤头鲨或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_hammerhead_shark",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见锤头鲨",
+            "to_observe": "alexsmobs:hammerhead_shark",
+            "type": "observation"
+        },
+        {
+            "id": "C0D1E2F3G4H5I6J7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:锤头鲨",
+    "x": 11.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["U2V3W4X5Y6Z7A8B9"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_hammerhead_shark",
+    "id": "K8L9M0N1O2P3Q4R5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀锤头鲨或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:hammerhead_shark",
+            "icon": "alexsmobs:spawn_egg_hammerhead_shark",
+            "id": "S6T7U8V9W0X1Y2Z3",
+            "optional_task": true,
+            "title": "猎杀锤头鲨",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "A4B5C6D7E8F9G0H1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "锤头鲨的详细了解",
+    "x": 11.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "皱鳃鲨",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_frilled_shark",
+    "id": "V3W4X5Y6Z7A8B9C0",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "C0B9A8Z7Y6X5W4V3",
+        "title": "关于皱鳃鲨的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇皱鳃鲨或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_frilled_shark",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见皱鳃鲨",
+            "to_observe": "alexsmobs:frilled_shark",
+            "type": "observation"
+        },
+        {
+            "id": "D1E2F3G4H5I6J7K8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:皱鳃鲨",
+    "x": 12.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["V3W4X5Y6Z7A8B9C0"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_frilled_shark",
+    "id": "L9M0N1O2P3Q4R5S6",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀皱鳃鲨或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:frilled_shark",
+            "icon": "alexsmobs:spawn_egg_frilled_shark",
+            "id": "T7U8V9W0X1Y2Z3A4",
+            "optional_task": true,
+            "title": "猎杀皱鳃鲨",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "B5C6D7E8F9G0H1I2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "皱鳃鲨的详细了解",
+    "x": 12.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "骷髅剑鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_skelewag",
+    "id": "W4X5Y6Z7A8B9C0D1",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "D1C0B9A8Z7Y6X5W4",
+        "title": "关于骷髅剑鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇骷髅剑鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_skelewag",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见骷髅剑鱼",
+            "to_observe": "alexsmobs:skelewag",
+            "type": "observation"
+        },
+        {
+            "id": "E2F3G4H5I6J7K8L9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:骷髅剑鱼",
+    "x": 13.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["W4X5Y6Z7A8B9C0D1"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_skelewag",
+    "id": "M0N1O2P3Q4R5S6T7",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀骷髅剑鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:skelewag",
+            "icon": "alexsmobs:spawn_egg_skelewag",
+            "id": "U8V9W0X1Y2Z3A4B5",
+            "optional_task": true,
+            "title": "猎杀骷髅剑鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "C6D7E8F9G0H1I2J3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "骷髅剑鱼的详细了解",
+    "x": 13.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "海龟",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/turtle",
+    "id": "X5Y6Z7A8B9C0D1E2",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "E2D1C0B9A8Z7Y6X5",
+        "title": "关于海龟的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇海龟或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/turtle",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见海龟",
+            "to_observe": "tfc:turtle",
+            "type": "observation"
+        },
+        {
+            "id": "F3G4H5I6J7K8L9M0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:海龟",
+    "x": 14.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["X5Y6Z7A8B9C0D1E2"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/turtle",
+    "id": "N1O2P3Q4R5S6T7U8",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀海龟或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:turtle",
+            "icon": "tfc:spawn_egg/turtle",
+            "id": "V9W0X1Y2Z3A4B5C6",
+            "optional_task": true,
+            "title": "猎杀海龟",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "D7E8F9G0H1I2J3K4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "海龟的详细了解",
+    "x": 14.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "水龟",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_terrapin",
+    "id": "Y6Z7A8B9C0D1E2F3",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "F3E2D1C0B9A8Z7Y6",
+        "title": "关于水龟的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇水龟或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_terrapin",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见水龟",
+            "to_observe": "alexsmobs:terrapin",
+            "type": "observation"
+        },
+        {
+            "id": "G4H5I6J7K8L9M0N1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:水龟",
+    "x": 15.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["Y6Z7A8B9C0D1E2F3"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_terrapin",
+    "id": "O2P3Q4R5S6T7U8V9",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀水龟或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:terrapin",
+            "icon": "alexsmobs:spawn_egg_terrapin",
+            "id": "W0X1Y2Z3A4B5C6D7",
+            "optional_task": true,
+            "title": "猎杀水龟",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "E8F9G0H1I2J3K4L5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "水龟的详细了解",
+    "x": 15.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "大鳄龟",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_alligator_snapping_turtle",
+    "id": "Z7A8B9C0D1E2F3G4",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "G4F3E2D1C0B9A8Z7",
+        "title": "关于大鳄龟的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇大鳄龟或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_alligator_snapping_turtle",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见大鳄龟",
+            "to_observe": "alexsmobs:alligator_snapping_turtle",
+            "type": "observation"
+        },
+        {
+            "id": "H5I6J7K8L9M0N1O2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:大鳄龟",
+    "x": 16.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["Z7A8B9C0D1E2F3G4"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_alligator_snapping_turtle",
+    "id": "P3Q4R5S6T7U8V9W0",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀大鳄龟或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:alligator_snapping_turtle",
+            "icon": "alexsmobs:spawn_egg_alligator_snapping_turtle",
+            "id": "X1Y2Z3A4B5C6D7E8",
+            "optional_task": true,
+            "title": "猎杀大鳄龟",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "F9G0H1I2J3K4L5M6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "大鳄龟的详细了解",
+    "x": 16.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "鲎",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/horseshoe_crab",
+    "id": "A8B9C0D1E2F3G4H5",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "H5G4F3E2D1C0B9A8",
+        "title": "关于鲎的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇鲎或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/horseshoe_crab",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见鲎",
+            "to_observe": "tfc:horseshoe_crab",
+            "type": "observation"
+        },
+        {
+            "id": "I6J7K8L9M0N1O2P3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:鲎",
+    "x": 17.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["A8B9C0D1E2F3G4H5"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/horseshoe_crab",
+    "id": "Q4R5S6T7U8V9W0X1",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀鲎或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:horseshoe_crab",
+            "icon": "tfc:spawn_egg/horseshoe_crab",
+            "id": "Y2Z3A4B5C6D7E8F9",
+            "optional_task": true,
+            "title": "猎杀鲎",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "G0H1I2J3K4L5M6N7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "鲎的详细了解",
+    "x": 17.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "鲎虫",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_triops",
+    "id": "B9C0D1E2F3G4H5I6",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "I6H5G4F3E2D1C0B9",
+        "title": "关于鲎虫的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇鲎虫或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_triops",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见鲎虫",
+            "to_observe": "alexsmobs:triops",
+            "type": "observation"
+        },
+        {
+            "id": "J7K8L9M0N1O2P3Q4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:鲎虫",
+    "x": 18.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["B9C0D1E2F3G4H5I6"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_triops",
+    "id": "R5S6T7U8V9W0X1Y2",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀鲎虫或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:triops",
+            "icon": "alexsmobs:spawn_egg_triops",
+            "id": "Z3A4B5C6D7E8F9G0",
+            "optional_task": true,
+            "title": "猎杀鲎虫",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "H1I2J3K4L5M6N7O8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "鲎虫的详细了解",
+    "x": 18.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "等足虫",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/isopod",
+    "id": "C0D1E2F3G4H5I6J7",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "J7I6H5G4F3E2D1C0",
+        "title": "关于等足虫的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇等足虫或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/isopod",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见等足虫",
+            "to_observe": "tfc:isopod",
+            "type": "observation"
+        },
+        {
+            "id": "K8L9M0N1O2P3Q4R5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:等足虫",
+    "x": 19.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["C0D1E2F3G4H5I6J7"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/isopod",
+    "id": "S6T7U8V9W0X1Y2Z3",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀等足虫或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:isopod",
+            "icon": "tfc:spawn_egg/isopod",
+            "id": "A4B5C6D7E8F9G0H1",
+            "optional_task": true,
+            "title": "猎杀等足虫",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "I2J3K4L5M6N7O8P9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "等足虫的详细了解",
+    "x": 19.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "水母",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/jellyfish",
+    "id": "D1E2F3G4H5I6J7K8",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "K8J7I6H5G4F3E2D1",
+        "title": "关于水母的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇水母或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/jellyfish",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见水母",
+            "to_observe": "tfc:jellyfish",
+            "type": "observation"
+        },
+        {
+            "id": "L9M0N1O2P3Q4R5S6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:水母",
+    "x": 20.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["D1E2F3G4H5I6J7K8"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/jellyfish",
+    "id": "T7U8V9W0X1Y2Z3A4",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀水母或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:jellyfish",
+            "icon": "tfc:spawn_egg/jellyfish",
+            "id": "B5C6D7E8F9G0H1I2",
+            "optional_task": true,
+            "title": "猎杀水母",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "J3K4L5M6N7O8P9Q0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "水母的详细了解",
+    "x": 20.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "栉水母",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_comb_jelly",
+    "id": "E2F3G4H5I6J7K8L9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "L9K8J7I6H5G4F3E2",
+        "title": "关于栉水母的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇栉水母或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_comb_jelly",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见栉水母",
+            "to_observe": "alexsmobs:comb_jelly",
+            "type": "observation"
+        },
+        {
+            "id": "M0N1O2P3Q4R5S6T7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:栉水母",
+    "x": 21.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["E2F3G4H5I6J7K8L9"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_comb_jelly",
+    "id": "U8V9W0X1Y2Z3A4B5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀栉水母或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:comb_jelly",
+            "icon": "alexsmobs:spawn_egg_comb_jelly",
+            "id": "C6D7E8F9G0H1I2J3",
+            "optional_task": true,
+            "title": "猎杀栉水母",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "K4L5M6N7O8P9Q0R1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "栉水母的详细了解",
+    "x": 21.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "拟态章鱼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mimic_octopus",
+    "id": "F3G4H5I6J7K8L9M0",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "M0L9K8J7I6H5G4F3",
+        "title": "关于拟态章鱼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇拟态章鱼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_mimic_octopus",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见拟态章鱼",
+            "to_observe": "alexsmobs:mimic_octopus",
+            "type": "observation"
+        },
+        {
+            "id": "N1O2P3Q4R5S6T7U8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:拟态章鱼",
+    "x": 22.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["F3G4H5I6J7K8L9M0"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mimic_octopus",
+    "id": "V9W0X1Y2Z3A4B5C6",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀拟态章鱼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:mimic_octopus",
+            "icon": "alexsmobs:spawn_egg_mimic_octopus",
+            "id": "D7E8F9G0H1I2J3K4",
+            "optional_task": true,
+            "title": "猎杀拟态章鱼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "L5M6N7O8P9Q0R1S2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "拟态章鱼的详细了解",
+    "x": 22.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "螳螂虾",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mantis_shrimp",
+    "id": "G4H5I6J7K8L9M0N1",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "N1M0L9K8J7I6H5G4",
+        "title": "关于螳螂虾的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇螳螂虾或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_mantis_shrimp",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见螳螂虾",
+            "to_observe": "alexsmobs:mantis_shrimp",
+            "type": "observation"
+        },
+        {
+            "id": "O2P3Q4R5S6T7U8V9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:螳螂虾",
+    "x": 23.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["G4H5I6J7K8L9M0N1"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_mantis_shrimp",
+    "id": "W0X1Y2Z3A4B5C6D7",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀螳螂虾或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:mantis_shrimp",
+            "icon": "alexsmobs:spawn_egg_mantis_shrimp",
+            "id": "E8F9G0H1I2J3K4L5",
+            "optional_task": true,
+            "title": "猎杀螳螂虾",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "M6N7O8P9Q0R1S2T3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "螳螂虾的详细了解",
+    "x": 23.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "香蕉蛞蝓",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_banana_slug",
+    "id": "H5I6J7K8L9M0N1O2",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "O2N1M0L9K8J7I6H5",
+        "title": "关于香蕉蛞蝓的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇香蕉蛞蝓或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_banana_slug",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见香蕉蛞蝓",
+            "to_observe": "alexsmobs:banana_slug",
+            "type": "observation"
+        },
+        {
+            "id": "P3Q4R5S6T7U8V9W0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:香蕉蛞蝓",
+    "x": 24.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["H5I6J7K8L9M0N1O2"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_banana_slug",
+    "id": "X1Y2Z3A4B5C6D7E8",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀香蕉蛞蝓或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:banana_slug",
+            "icon": "alexsmobs:spawn_egg_banana_slug",
+            "id": "F9G0H1I2J3K4L5M6",
+            "optional_task": true,
+            "title": "猎杀香蕉蛞蝓",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "N7O8P9Q0R1S2T3U4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "香蕉蛞蝓的详细了解",
+    "x": 24.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蜗牛",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:snail_spawn_egg",
+    "id": "I6J7K8L9M0N1O2P3",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "P3O2N1M0L9K8J7I6",
+        "title": "关于蜗牛的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蜗牛或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:snail_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蜗牛",
+            "to_observe": "naturalist:snail",
+            "type": "observation"
+        },
+        {
+            "id": "Q4R5S6T7U8V9W0X1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蜗牛",
+    "x": 25.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["I6J7K8L9M0N1O2P3"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:snail_spawn_egg",
+    "id": "Y2Z3A4B5C6D7E8F9",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蜗牛或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:snail",
+            "icon": "naturalist:snail_spawn_egg",
+            "id": "G0H1I2J3K4L5M6N7",
+            "optional_task": true,
+            "title": "猎杀蜗牛",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "O8P9Q0R1S2T3U4V5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蜗牛的详细了解",
+    "x": 25.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蜻蜓",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:dragonfly_spawn_egg",
+    "id": "J7K8L9M0N1O2P3Q4",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "Q4P3O2N1M0L9K8J7",
+        "title": "关于蜻蜓的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蜻蜓或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:dragonfly_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蜻蜓",
+            "to_observe": "naturalist:dragonfly",
+            "type": "observation"
+        },
+        {
+            "id": "R5S6T7U8V9W0X1Y2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蜻蜓",
+    "x": 26.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["J7K8L9M0N1O2P3Q4"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:dragonfly_spawn_egg",
+    "id": "Z3A4B5C6D7E8F9G0",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蜻蜓或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:dragonfly",
+            "icon": "naturalist:dragonfly_spawn_egg",
+            "id": "H1I2J3K4L5M6N7O8",
+            "optional_task": true,
+            "title": "猎杀蜻蜓",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "P9Q0R1S2T3U4V5W6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蜻蜓的详细了解",
+    "x": 26.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "切叶蚁",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_leafcutter_ant",
+    "id": "K8L9M0N1O2P3Q4R5",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "R5Q4P3O2N1M0L9K8",
+        "title": "关于切叶蚁的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇切叶蚁或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_leafcutter_ant",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见切叶蚁",
+            "to_observe": "alexsmobs:leafcutter_ant",
+            "type": "observation"
+        },
+        {
+            "id": "S6T7U8V9W0X1Y2Z3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:切叶蚁",
+    "x": 27.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["K8L9M0N1O2P3Q4R5"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_leafcutter_ant",
+    "id": "A4B5C6D7E8F9G0H1",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀切叶蚁或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:leafcutter_ant",
+            "icon": "alexsmobs:spawn_egg_leafcutter_ant",
+            "id": "I2J3K4L5M6N7O8P9",
+            "optional_task": true,
+            "title": "猎杀切叶蚁",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Q0R1S2T3U4V5W6X7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "切叶蚁的详细了解",
+    "x": 27.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "海牛",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/manatee",
+    "id": "L9M0N1O2P3Q4R5S6",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "S6R5Q4P3O2N1M0L9",
+        "title": "关于海牛的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇海牛或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/manatee",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见海牛",
+            "to_observe": "tfc:manatee",
+            "type": "observation"
+        },
+        {
+            "id": "T7U8V9W0X1Y2Z3A4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:海牛",
+    "x": 28.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["L9M0N1O2P3Q4R5S6"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/manatee",
+    "id": "B5C6D7E8F9G0H1I2",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀海牛或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:manatee",
+            "icon": "tfc:spawn_egg/manatee",
+            "id": "J3K4L5M6N7O8P9Q0",
+            "optional_task": true,
+            "title": "猎杀海牛",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "R1S2T3U4V5W6X7Y8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "海牛的详细了解",
+    "x": 28.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "海豹",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_seal",
+    "id": "M0N1O2P3Q4R5S6T7",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "T7S6R5Q4P3O2N1M0",
+        "title": "关于海豹的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇海豹或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_seal",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见海豹",
+            "to_observe": "alexsmobs:seal",
+            "type": "observation"
+        },
+        {
+            "id": "U8V9W0X1Y2Z3A4B5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:海豹",
+    "x": 29.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["M0N1O2P3Q4R5S6T7"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_seal",
+    "id": "C6D7E8F9G0H1I2J3",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀海豹或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:seal",
+            "icon": "alexsmobs:spawn_egg_seal",
+            "id": "K4L5M6N7O8P9Q0R1",
+            "optional_task": true,
+            "title": "猎杀海豹",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "S2T3U4V5W6X7Y8Z9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "海豹的详细了解",
+    "x": 29.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "海象（獠牙兽）",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_tusklin",
+    "id": "N1O2P3Q4R5S6T7U8",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "U8T7S6R5Q4P3O2N1",
+        "title": "关于海象（獠牙兽）的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇海象（獠牙兽）或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_tusklin",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见海象（獠牙兽）",
+            "to_observe": "alexsmobs:tusklin",
+            "type": "observation"
+        },
+        {
+            "id": "V9W0X1Y2Z3A4B5C6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:海象（獠牙兽）",
+    "x": 30.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["N1O2P3Q4R5S6T7U8"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_tusklin",
+    "id": "D7E8F9G0H1I2J3K4",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀海象（獠牙兽）或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:tusklin",
+            "icon": "alexsmobs:spawn_egg_tusklin",
+            "id": "L5M6N7O8P9Q0R1S2",
+            "optional_task": true,
+            "title": "猎杀海象（獠牙兽）",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "T3U4V5W6X7Y8Z9A0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "海象（獠牙兽）的详细了解",
+    "x": 30.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "虎鲸",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_orca",
+    "id": "O2P3Q4R5S6T7U8V9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "V9U8T7S6R5Q4P3O2",
+        "title": "关于虎鲸的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇虎鲸或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_orca",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见虎鲸",
+            "to_observe": "alexsmobs:orca",
+            "type": "observation"
+        },
+        {
+            "id": "W0X1Y2Z3A4B5C6D7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:虎鲸",
+    "x": 31.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["O2P3Q4R5S6T7U8V9"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_orca",
+    "id": "E8F9G0H1I2J3K4L5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀虎鲸或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:orca",
+            "icon": "alexsmobs:spawn_egg_orca",
+            "id": "M6N7O8P9Q0R1S2T3",
+            "optional_task": true,
+            "title": "猎杀虎鲸",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "U4V5W6X7Y8Z9A0B1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "虎鲸的详细了解",
+    "x": 31.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "抹香鲸",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_cachalot_whale",
+    "id": "P3Q4R5S6T7U8V9W0",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "W0V9U8T7S6R5Q4P3",
+        "title": "关于抹香鲸的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇抹香鲸或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_cachalot_whale",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见抹香鲸",
+            "to_observe": "alexsmobs:cachalot_whale",
+            "type": "observation"
+        },
+        {
+            "id": "X1Y2Z3A4B5C6D7E8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:抹香鲸",
+    "x": 32.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["P3Q4R5S6T7U8V9W0"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_cachalot_whale",
+    "id": "F9G0H1I2J3K4L5M6",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀抹香鲸或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:cachalot_whale",
+            "icon": "alexsmobs:spawn_egg_cachalot_whale",
+            "id": "N7O8P9Q0R1S2T3U4",
+            "optional_task": true,
+            "title": "猎杀抹香鲸",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "V5W6X7Y8Z9A0B1C2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "抹香鲸的详细了解",
+    "x": 32.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "大王乌贼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_giant_squid",
+   // 继续鱼、海洋生物类（从小到大排序）
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "大王乌贼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_giant_squid",
+    "id": "Q4R5S6T7U8V9W0X1",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "X1W0V9U8T7S6R5Q4",
+        "title": "关于大王乌贼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇大王乌贼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_giant_squid",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见大王乌贼",
+            "to_observe": "alexsmobs:giant_squid",
+            "type": "observation"
+        },
+        {
+            "id": "Y2Z3A4B5C6D7E8F9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:大王乌贼",
+    "x": 33.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["Q4R5S6T7U8V9W0X1"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_giant_squid",
+    "id": "G0H1I2J3K4L5M6N7",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀大王乌贼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:giant_squid",
+            "icon": "alexsmobs:spawn_egg_giant_squid",
+            "id": "O8P9Q0R1S2T3U4V5",
+            "optional_task": true,
+            "title": "猎杀大王乌贼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "W6X7Y8Z9A0B1C2D3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "大王乌贼的详细了解",
+    "x": 33.0d,
+    "y": 1.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蓝鲸",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_blue_whale",
+    "id": "R5S6T7U8V9W0X1Y2",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "Y2X1W0V9U8T7S6R5",
+        "title": "关于蓝鲸的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蓝鲸或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_blue_whale",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蓝鲸",
+            "to_observe": "alexsmobs:blue_whale",
+            "type": "observation"
+        },
+        {
+            "id": "Z3A4B5C6D7E8F9G0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蓝鲸",
+    "x": 34.0d,
+    "y": 0.0d
+},
+{
+    "dependencies": ["R5S6T7U8V9W0X1Y2"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_blue_whale",
+    "id": "H1I2J3K4L5M6N7O8",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蓝鲸或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:blue_whale",
+            "icon": "alexsmobs:spawn_egg_blue_whale",
+            "id": "P9Q0R1S2T3U4V5W6",
+            "optional_task": true,
+            "title": "猎杀蓝鲸",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "X7Y8Z9A0B1C2D3E4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蓝鲸的详细了解",
+    "x": 34.0d,
+    "y": 1.0d
+},
+
+// 陆地生物类（从小到大排序）
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蚂蚁",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:ant_spawn_egg",
+    "id": "S6T7U8V9W0X1Y2Z3",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "Z3Y2X1W0V9U8T7S6",
+        "title": "关于蚂蚁的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蚂蚁或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:ant_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蚂蚁",
+            "to_observe": "naturalist:ant",
+            "type": "observation"
+        },
+        {
+            "id": "A4B5C6D7E8F9G0H1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蚂蚁",
+    "x": 0.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["S6T7U8V9W0X1Y2Z3"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:ant_spawn_egg",
+    "id": "I2J3K4L5M6N7O8P9",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蚂蚁或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:ant",
+            "icon": "naturalist:ant_spawn_egg",
+            "id": "Q0R1S2T3U4V5W6X7",
+            "optional_task": true,
+            "title": "猎杀蚂蚁",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Y8Z9A0B1C2D3E4F5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蚂蚁的详细了解",
+    "x": 0.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蜜蜂",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:bee_spawn_egg",
+    "id": "T7U8V9W0X1Y2Z3A4",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "A4Z3Y2X1W0V9U8T7",
+        "title": "关于蜜蜂的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蜜蜂或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:bee_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蜜蜂",
+            "to_observe": "naturalist:bee",
+            "type": "observation"
+        },
+        {
+            "id": "B5C6D7E8F9G0H1I2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蜜蜂",
+    "x": 1.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["T7U8V9W0X1Y2Z3A4"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:bee_spawn_egg",
+    "id": "J3K4L5M6N7O8P9Q0",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蜜蜂或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:bee",
+            "icon": "naturalist:bee_spawn_egg",
+            "id": "R1S2T3U4V5W6X7Y8",
+            "optional_task": true,
+            "title": "猎杀蜜蜂",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "Z9A0B1C2D3E4F5G6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蜜蜂的详细了解",
+    "x": 1.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "蝴蝶",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:butterfly_spawn_egg",
+    "id": "U8V9W0X1Y2Z3A4B5",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "B5A4Z3Y2X1W0V9U8",
+        "title": "关于蝴蝶的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇蝴蝶或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "naturalist:butterfly_spawn_egg",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见蝴蝶",
+            "to_observe": "naturalist:butterfly",
+            "type": "observation"
+        },
+        {
+            "id": "C6D7E8F9G0H1I2J3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:蝴蝶",
+    "x": 2.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["U8V9W0X1Y2Z3A4B5"],
+    "hide_until_deps_complete": true,
+    "icon": "naturalist:butterfly_spawn_egg",
+    "id": "K4L5M6N7O8P9Q0R1",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀蝴蝶或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "naturalist:butterfly",
+            "icon": "naturalist:butterfly_spawn_egg",
+            "id": "S2T3U4V5W6X7Y8Z9",
+            "optional_task": true,
+            "title": "猎杀蝴蝶",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "A0B1C2D3E4F5G6H7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "蝴蝶的详细了解",
+    "x": 2.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "兔子",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/rabbit",
+    "id": "V9W0X1Y2Z3A4B5C6",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "C6B5A4Z3Y2X1W0V9",
+        "title": "关于兔子的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇兔子或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/rabbit",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见兔子",
+            "to_observe": "tfc:rabbit",
+            "type": "observation"
+        },
+        {
+            "id": "D7E8F9G0H1I2J3K4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:兔子",
+    "x": 3.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["V9W0X1Y2Z3A4B5C6"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/rabbit",
+    "id": "L5M6N7O8P9Q0R1S2",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀兔子或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:rabbit",
+            "icon": "tfc:spawn_egg/rabbit",
+            "id": "T3U4V5W6X7Y8Z9A0",
+            "optional_task": true,
+            "title": "猎杀兔子",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "B1C2D3E4F5G6H7I8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "兔子的详细了解",
+    "x": 3.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "松鼠",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_squirrel",
+    "id": "W0X1Y2Z3A4B5C6D7",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "D7C6B5A4Z3Y2X1W0",
+        "title": "关于松鼠的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇松鼠或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_squirrel",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见松鼠",
+            "to_observe": "alexsmobs:squirrel",
+            "type": "observation"
+        },
+        {
+            "id": "E8F9G0H1I2J3K4L5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:松鼠",
+    "x": 4.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["W0X1Y2Z3A4B5C6D7"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_squirrel",
+    "id": "M6N7O8P9Q0R1S2T3",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀松鼠或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:squirrel",
+            "icon": "alexsmobs:spawn_egg_squirrel",
+            "id": "U4V5W6X7Y8Z9A0B1",
+            "optional_task": true,
+            "title": "猎杀松鼠",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "C2D3E4F5G6H7I8J9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "松鼠的详细了解",
+    "x": 4.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "狐狸",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/fox",
+    "id": "X1Y2Z3A4B5C6D7E8",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "E8D7C6B5A4Z3Y2X1",
+        "title": "关于狐狸的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇狐狸或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/fox",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见狐狸",
+            "to_observe": "tfc:fox",
+            "type": "observation"
+        },
+        {
+            "id": "F9G0H1I2J3K4L5M6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:狐狸",
+    "x": 5.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["X1Y2Z3A4B5C6D7E8"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/fox",
+    "id": "N7O8P9Q0R1S2T3U4",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀狐狸或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:fox",
+            "icon": "tfc:spawn_egg/fox",
+            "id": "V5W6X7Y8Z9A0B1C2",
+            "optional_task": true,
+            "title": "猎杀狐狸",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "D3E4F5G6H7I8J9K0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "狐狸的详细了解",
+    "x": 5.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "狼",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/wolf",
+    "id": "Y2Z3A4B5C6D7E8F9",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "F9E8D7C6B5A4Z3Y2",
+        "title": "关于狼的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇狼或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/wolf",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见狼",
+            "to_observe": "tfc:wolf",
+            "type": "observation"
+        },
+        {
+            "id": "G0H1I2J3K4L5M6N7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:狼",
+    "x": 6.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["Y2Z3A4B5C6D7E8F9"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/wolf",
+    "id": "O8P9Q0R1S2T3U4V5",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀狼或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:wolf",
+            "icon": "tfc:spawn_egg/wolf",
+            "id": "W6X7Y8Z9A0B1C2D3",
+            "optional_task": true,
+            "title": "猎杀狼",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "E4F5G6H7I8J9K0L1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "狼的详细了解",
+    "x": 6.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "熊",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/bear",
+    "id": "Z3A4B5C6D7E8F9G0",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "G0F9E8D7C6B5A4Z3",
+        "title": "关于熊的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇熊或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/bear",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见熊",
+            "to_observe": "tfc:bear",
+            "type": "observation"
+        },
+        {
+            "id": "H1I2J3K4L5M6N7O8",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:熊",
+    "x": 7.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["Z3A4B5C6D7E8F9G0"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/bear",
+    "id": "P9Q0R1S2T3U4V5W6",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀熊或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:bear",
+            "icon": "tfc:spawn_egg/bear",
+            "id": "X7Y8Z9A0B1C2D3E4",
+            "optional_task": true,
+            "title": "猎杀熊",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "F5G6H7I8J9K0L1M2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "熊的详细了解",
+    "x": 7.0d,
+    "y": 3.0d
+}
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "狮子",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lion",
+    "id": "A4B5C6D7E8F9G0H1",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "H1G0F9E8D7C6B5A4",
+        "title": "关于狮子的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇狮子或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/lion",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见狮子",
+            "to_observe": "tfc:lion",
+            "type": "observation"
+        },
+        {
+            "id": "I2J3K4L5M6N7O8P9",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:狮子",
+    "x": 8.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["A4B5C6D7E8F9G0H1"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/lion",
+    "id": "Q0R1S2T3U4V5W6X7",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀狮子或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:lion",
+            "icon": "tfc:spawn_egg/lion",
+            "id": "Y8Z9A0B1C2D3E4F5",
+            "optional_task": true,
+            "title": "猎杀狮子",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "G6H7I8J9K0L1M2N3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "狮子的详细了解",
+    "x": 8.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "老虎",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/tiger",
+    "id": "B5C6D7E8F9G0H1I2",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "I2H1G0F9E8D7C6B5",
+        "title": "关于老虎的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇老虎或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/tiger",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见老虎",
+            "to_observe": "tfc:tiger",
+            "type": "observation"
+        },
+        {
+            "id": "J3K4L5M6N7O8P9Q0",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:老虎",
+    "x": 9.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["B5C6D7E8F9G0H1I2"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/tiger",
+    "id": "R1S2T3U4V5W6X7Y8",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀老虎或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:tiger",
+            "icon": "tfc:spawn_egg/tiger",
+            "id": "Z9A0B1C2D3E4F5G6",
+            "optional_task": true,
+            "title": "猎杀老虎",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "H7I8J9K0L1M2N3O4",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "老虎的详细了解",
+    "x": 9.0d,
+    "y": 3.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "大象",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/elephant",
+    "id": "C6D7E8F9G0H1I2J3",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "J3I2H1G0F9E8D7C6",
+        "title": "关于大象的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇大象或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "tfc:spawn_egg/elephant",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见大象",
+            "to_observe": "tfc:elephant",
+            "type": "observation"
+        },
+        {
+            "id": "K4L5M6N7O8P9Q0R1",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:大象",
+    "x": 10.0d,
+    "y": 2.0d
+},
+{
+    "dependencies": ["C6D7E8F9G0H1I2J3"],
+    "hide_until_deps_complete": true,
+    "icon": "tfc:spawn_egg/elephant",
+    "id": "S2T3U4V5W6X7Y8Z9",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀大象或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "tfc:elephant",
+            "icon": "tfc:spawn_egg/elephant",
+            "id": "A0B1C2D3E4F5G6H7",
+            "optional_task": true,
+            "title": "猎杀大象",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "I8J9K0L1M2N3O4P5",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "大象的详细了解",
+    "x": 10.0d,
+    "y": 3.0d
+},
+
+// 飞行生物类（从小到大排序）
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "麻雀",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_sparrow",
+    "id": "D7E8F9G0H1I2J3K4",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "K4J3I2H1G0F9E8D7",
+        "title": "关于麻雀的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇麻雀或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_sparrow",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见麻雀",
+            "to_observe": "alexsmobs:sparrow",
+            "type": "observation"
+        },
+        {
+            "id": "L5M6N7O8P9Q0R1S2",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:麻雀",
+    "x": 0.0d,
+    "y": 4.0d
+},
+{
+    "dependencies": ["D7E8F9G0H1I2J3K4"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_sparrow",
+    "id": "T3U4V5W6X7Y8Z9A0",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀麻雀或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:sparrow",
+            "icon": "alexsmobs:spawn_egg_sparrow",
+            "id": "B1C2D3E4F5G6H7I8",
+            "optional_task": true,
+            "title": "猎杀麻雀",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "J9K0L1M2N3O4P5Q6",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "麻雀的详细了解",
+    "x": 0.0d,
+    "y": 5.0d
+},
+{
+    "dependency_requirement": "one_started",
+    "description": [
+        "鸽子",
+        " 【2】",
+        " ",
+        " "
+    ],
+    "hide_text_until_complete": true,
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_pigeon",
+    "id": "E8F9G0H1I2J3K4L5",
+    "optional": true,
+    "rewards": [{
+        "auto": "enabled",
+        "icon": "eidolon:parchment",
+        "id": "L5K4J3I2H1G0F9E8",
+        "title": "关于鸽子的了解",
+        "type": "custom"
+    }],
+    "subtitle": "&6&l[通过遭遇鸽子或提供经验来解锁]&r&r",
+    "tasks": [
+        {
+            "icon": "alexsmobs:spawn_egg_pigeon",
+            "id": "6",
+            "observe_type": 5,
+            "optional_task": true,
+            "timer": 0L,
+            "title": "遇见鸽子",
+            "to_observe": "alexsmobs:pigeon",
+            "type": "observation"
+        },
+        {
+            "id": "M6N7O8P9Q0R1S2T3",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 2L
+        }
+    ],
+    "title": "手记:鸽子",
+    "x": 1.0d,
+    "y": 4.0d
+},
+{
+    "dependencies": ["E8F9G0H1I2J3K4L5"],
+    "hide_until_deps_complete": true,
+    "icon": "alexsmobs:spawn_egg_pigeon",
+    "id": "U4V5W6X7Y8Z9A0B1",
+    "shape": "pentagon",
+    "subtitle": "&6&l[通过击杀鸽子或提供经验来解锁更多信息]&r&r",
+    "tasks": [
+        {
+            "entity": "alexsmobs:pigeon",
+            "icon": "alexsmobs:spawn_egg_pigeon",
+            "id": "C2D3E4F5G6H7I8J9",
+            "optional_task": true,
+            "title": "猎杀鸽子",
+            "type": "kill",
+            "value": 10L
+        },
+        {
+            "id": "K0L1M2N3O4P5Q6R7",
+            "optional_task": true,
+            "points": false,
+            "type": "xp",
+            "value": 5L
+        }
+    ],
+    "title": "鸽子的详细了解",
+    "x": 1.0d,
+    "y": 5.0d
+},
+	]
+	title: "worenwune"
+}

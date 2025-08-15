@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "age2"
+	group: "39B5DFD6C28A7E6E"
+	id: "30C496E8EA1930F3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [ ]
+	title: "age2"
+}

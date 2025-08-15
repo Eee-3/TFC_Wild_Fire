@@ -5,7 +5,7 @@
 	group: "2BD524ABD6AD1EEE"
 	icon: "mekanism:upgrade_speed"
 	id: "3E6A62B959D7B49D"
-	order_index: 10
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -121,7 +121,7 @@
 			tasks: [{
 				id: "3A559144ACAFA584"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						RepairCost: 0
@@ -164,7 +164,7 @@
 		{
 			dependencies: ["70CC558923DC1DF7"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -179,7 +179,7 @@
 			tasks: [{
 				id: "4913DA6785C88296"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f

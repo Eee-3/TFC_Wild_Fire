@@ -5,7 +5,7 @@
 	group: "2BD524ABD6AD1EEE"
 	icon: "immersive_paintings:glow_painting"
 	id: "36A3BF356D26BFC5"
-	order_index: 11
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -67,7 +67,7 @@
 					count: 5L
 					id: "5A8E321B7AADC4DD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -82,7 +82,7 @@
 					consume_items: false
 					id: "439D95E3DB35A0F6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -119,7 +119,7 @@
 					count: 6L
 					id: "501B8658981B23A2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:planks"
@@ -132,7 +132,7 @@
 					consume_items: false
 					id: "0AD08915205E838A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -145,7 +145,7 @@
 					consume_items: true
 					id: "37CCD5E9ABEC4BCF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfc:firestarter"
 						tag: {
 							Damage: 0
@@ -169,7 +169,7 @@
 				exclude_from_claim_all: true
 				id: "0F4FB7BD8755C0C8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:potion"
 					tag: {
 						Potion: "minecraft:water"
@@ -272,7 +272,7 @@
 					count: 2L
 					id: "60694087AC82C655"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:dyes"
@@ -307,7 +307,7 @@
 				{
 					id: "7BA49BC7F9CCFC51"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "littlelogistics:guide"
@@ -401,7 +401,7 @@
 			can_repeat: true
 			dependencies: ["77488B3112125233"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "littlelogistics:guide"
@@ -413,7 +413,7 @@
 				exclude_from_claim_all: true
 				id: "2EE224D9A1857762"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "littlelogistics:guide"
@@ -425,7 +425,7 @@
 			tasks: [{
 				id: "4A5D8581C80866E0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "tfc:rock_knapping"
@@ -467,13 +467,12 @@
 					consume_items: false
 					id: "6BBEE4EF73CB4271"
 					item: "breezy:hot_air_balloon"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3CE26AFF4BAA2A34"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:flint_and_steel"
 						tag: {
 							Damage: 0
@@ -572,7 +571,7 @@
 				"有关本模组的教程都已经集成在了群峦的书中，可以随时进行查阅。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -586,7 +585,7 @@
 				{
 					id: "11C614A98BC0856E"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -600,7 +599,7 @@
 				{
 					id: "0E9F297BD51B9581"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f

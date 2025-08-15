@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	icon: "create:wrench"
 	id: "6E63D2E12D7AADD8"
-	order_index: 9
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -128,7 +128,7 @@
 			tasks: [{
 				id: "109C83E7DE88B6A3"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -607,7 +607,7 @@
 			tasks: [{
 				id: "656FC19549403A53"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:super_glue"
 					tag: {
 						Damage: 0
@@ -878,7 +878,7 @@
 				{
 					id: "15D147486798D8CF"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -931,7 +931,7 @@
 			tasks: [{
 				id: "20FB8B5E5E88FD85"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1246,7 +1246,7 @@
 				{
 					id: "550DC08239078922"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -1562,7 +1562,7 @@
 				{
 					id: "5EA01C3913088725"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "create:seats"

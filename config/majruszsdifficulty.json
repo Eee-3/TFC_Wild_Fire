@@ -871,7 +871,7 @@
           }
         ],
         "boss": {
-          "type": "quark:forgotten",
+          "type": "minecraft:pig",
           "count": 1
         },
         "game_stage": "master",
@@ -933,7 +933,7 @@
             "count": 1
           },
           {
-            "type": "quark:forgotten",
+            "type": "minecraft:pig",
             "count": 1
           },
           {

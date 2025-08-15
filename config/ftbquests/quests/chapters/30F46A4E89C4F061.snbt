@@ -7,7 +7,7 @@
 	hide_quest_until_deps_visible: true
 	icon: "ad_astra:earth_globe"
 	id: "30F46A4E89C4F061"
-	order_index: 5
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,8 +20,8 @@
 				""
 				"准备好了吗？"
 			]
-			hide: false
 			hide_dependent_lines: true
+			hide_until_deps_visible: false
 			icon: "ad_astra:earth_globe"
 			id: "55A7A71E11F88C31"
 			size: 3.0d
@@ -116,7 +116,7 @@
 				"&c&l详情请查看机械动力章节！！！！！！&r&r"
 				"只有找到了石油，火箭燃料才有着落，分炼原油的过程非常复杂!"
 			]
-			hide: false
+			hide_until_deps_visible: false
 			icon: "artisanal:bucket/petroleum"
 			id: "507A81C4A836ED05"
 			subtitle: "在老鹰看不见的地方"
@@ -135,7 +135,7 @@
 				{
 					id: "66D132D0D0D367FE"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ad_astra:space_suit"
 						tag: {
 							Damage: 0
@@ -146,7 +146,7 @@
 				{
 					id: "69F9549EA4A9806E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ad_astra:space_helmet"
 						tag: {
 							Damage: 0
@@ -186,7 +186,7 @@
 			tasks: [{
 				id: "50A2B676B210B8F4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:zip_gun"
 					tag: { }
 				}
@@ -238,7 +238,7 @@
 			tasks: [{
 				id: "308F1D67C94F865D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
@@ -321,7 +321,7 @@
 			tasks: [{
 				id: "5D476FC021FC1D4A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:enchanted_book"
 					tag: {
 						StoredEnchantments: [{
@@ -403,7 +403,7 @@
 				"5D65C2526363C750"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ad_astra:tier_2_rocket"
 				tag: { }
 			}
@@ -453,7 +453,7 @@
 			tasks: [{
 				id: "24CAF83614B7C2B7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "ad_astra:astrodux"
@@ -629,7 +629,7 @@
 				{
 					id: "3AC533A96C437238"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:elytra"
 						tag: {
 							Damage: 0
@@ -654,10 +654,10 @@
 			dependencies: ["55A7A71E11F88C31"]
 			description: ["当营养值拉满时，你的血量上限大约会是2500左右，相当于原版的两管半血量。"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 6000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 				}
@@ -674,7 +674,7 @@
 					count: 64
 					id: "30670EE47474BF48"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
 								creationDate: 407976000L
@@ -800,7 +800,7 @@
 			tasks: [{
 				id: "19F571CA6AD9777B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "vinery:villagers_fright"
 					tag: { }
 				}
