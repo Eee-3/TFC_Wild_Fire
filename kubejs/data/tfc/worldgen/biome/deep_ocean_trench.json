@@ -99,7 +99,7 @@
                 "maxCount": 2
             },
             {
-                "type": "alexsmobs:cachalot",
+                "type": "alexsmobs:cachalot_whale",
                 "weight": 1,
                 "minCount": 1,
                 "maxCount": 2
