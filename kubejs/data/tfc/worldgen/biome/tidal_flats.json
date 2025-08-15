@@ -101,7 +101,7 @@
         ],
         "water_creature": [
             {
-                "type": "tfc:orca",
+                "type": "alexsmobs:orca",
                 "weight": 1,
                 "minCount": 1,
                 "maxCount": 3
