@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}aluminum_rod`
         },
 
-        
+
 
     ];
 
@@ -31,167 +31,66 @@ ServerEvents.recipes((event) => {
     //////////////////////////////////////
     //////////////////////////////////////
 
+    const materials = [
+        { name: 'garnierite', fluid: 'nickel', heat: 'superheated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'magnetite', fluid: 'cast_iron', heat: 'superheated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'limonite', fluid: 'cast_iron', heat: 'superheated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'hematite', fluid: 'cast_iron', heat: 'superheated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'tetrahedrite', fluid: 'copper', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'malachite', fluid: 'copper', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'bismuthinite', fluid: 'bismuth', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'sphalerite', fluid: 'zinc', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'cassiterite', fluid: 'tin', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'copper', fluid: 'copper', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'gold', fluid: 'gold', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'silver', fluid: 'silver', heat: 'heated', mod: 'tfc', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
 
-    const tfc_pellets = [
-        { name: 'garnierite', fluid: 'nickel', type: 'superheated' },
-        { name: 'magnetite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'limonite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'hematite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'tetrahedrite', fluid: 'copper', type: 'heated' },
-        { name: 'malachite', fluid: 'copper', type: 'heated' },
-        { name: 'bismuthinite', fluid: 'bismuth', type: 'heated' },
-        { name: 'sphalerite', fluid: 'zinc', type: 'heated' },
-        { name: 'cassiterite', fluid: 'tin', type: 'heated' },
-        { name: 'copper', fluid: 'copper', type: 'heated' },
-        { name: 'gold', fluid: 'gold', type: 'heated' },
-        { name: 'silver', fluid: 'silver', type: 'heated' },
+        { name: 'galena', fluid: 'lead', heat: 'heated', mod: 'tfc_ie_addon', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'uraninite', fluid: 'uranium', heat: 'superheated', mod: 'tfc_ie_addon', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+        { name: 'bauxite', fluid: 'aluminum', heat: 'superheated', mod: 'tfc_ie_addon', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
+
+        { name: 'chromium', fluid: 'chromium', heat: 'heated', mod: 'firmalife', types: ['pellet', 'briquet', /* 'dirty_dust' */] },
     ]
 
-    tfc_pellets.forEach((pellet) => {
-        if (pellet.type == 'heated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:pellet_${pellet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 20, fluid: `tfc:metal/${pellet.fluid}` },
-                id: `${id_prefix}heated_${pellet.name}_pellets`
-            })
-        if (pellet.type == 'superheated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:pellet_${pellet.name}` },
-                heatRequirement: 'superheated',
-                processingTime: 20,
-                results: { amount: 20, fluid: `tfc:metal/${pellet.fluid}` },
-                id: `${id_prefix}superheated_${pellet.name}_pellets`
-            })
-    });
+    materials.forEach((material) => {
+        let heatInput
+        let timeInput
 
-    const ie_pellets = [
-        { name: 'galena', fluid: 'lead', type: 'heated' },
-        { name: 'uraninite', fluid: 'uranium', type: 'superheated' },
-        //{ name: 'bauxite', fluid: 'aluminum', type: 'superheated' }
-    ]
+        if (material.heat === 'heated') {
+            heatInput = 'heated'
+            timeInput = 20
+        } else if (material.heat === 'superheated') {
+            heatInput = 'superheated'
+            timeInput = 40
+        }
 
-    ie_pellets.forEach((pellet) => {
-        if (pellet.type == 'heated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:pellet_${pellet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 20, fluid: `tfc_ie_addon:metal/${pellet.fluid}` },
-                id: `${id_prefix}heated_${pellet.name}_pellets`
-            })
-        if (pellet.type == 'superheated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:pellet_${pellet.name}` },
-                heatRequirement: 'superheated',
-                processingTime: 20,
-                results: { amount: 20, fluid: `tfc_ie_addon:metal/${pellet.fluid}` },
-                id: `${id_prefix}superheated_${pellet.name}_pellets`
-            })
-    });
+        material.types.forEach((type) => {
+            let fluidOutput
+            /* if (type === 'dirty_dust') {
+                fluidOutput = 5
+            } */
+            if (type === 'pellet') {
+                fluidOutput = 20
+            }
+            if (type === 'briquet') {
+                fluidOutput = 80
+            }
 
-    
-    
-    
-
-    const tfccore_pellets = [
-        { name: 'chromium', fluid: 'chromium', type: 'heated' },
-    ]
-    tfccore_pellets.forEach((pellet) => {
-        if (pellet.type == 'heated')
             recipes.push({
-                ingredients: { item: `tfcorewashing:pellet_${pellet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 20, fluid: `firmalife:metal/${pellet.fluid}` },
-                id: `${id_prefix}heated_${pellet.name}_pellets`
+                ingredients: { item: `tfcorewashing:${type}_${material.name}` },
+                heatRequirement: heatInput,
+                processingTime: timeInput,
+                results: { amount: fluidOutput, fluid: `${material.mod}:metal/${material.fluid}` },
+                id: `${id_prefix}${heatInput}/${type}_${material.name}`
             })
-    });
+        })
+    })
+
 
     //////////////////////////////////////
     //////////////////////////////////////
     //////////////////////////////////////
 
-    const tfc_briquets = [
-        { name: 'garnierite', fluid: 'nickel', type: 'superheated' },
-        { name: 'magnetite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'limonite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'hematite', fluid: 'cast_iron', type: 'superheated' },
-        { name: 'tetrahedrite', fluid: 'copper', type: 'heated' },
-        { name: 'malachite', fluid: 'copper', type: 'heated' },
-        { name: 'bismuthinite', fluid: 'bismuth', type: 'heated' },
-        { name: 'sphalerite', fluid: 'zinc', type: 'heated' },
-        { name: 'cassiterite', fluid: 'tin', type: 'heated' },
-        { name: 'copper', fluid: 'copper', type: 'heated' },
-        { name: 'gold', fluid: 'gold', type: 'heated' },
-        { name: 'silver', fluid: 'silver', type: 'heated' },
-    ]
-
-    tfc_briquets.forEach((briquet) => {
-        if (briquet.type == 'heated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:briquet_${briquet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 80, fluid: `tfc:metal/${briquet.fluid}` },
-                id: `${id_prefix}heated_${briquet.name}_briquets`
-            })
-        if (briquet.type == 'superheated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:briquet_${briquet.name}` },
-                heatRequirement: 'superheated',
-                processingTime: 20,
-                results: { amount: 80, fluid: `tfc:metal/${briquet.fluid}` },
-                id: `${id_prefix}superheated_${briquet.name}_briquets`
-            })
-    });
-
-    const ie_briquets = [
-        { name: 'galena', fluid: 'lead', type: 'heated' },
-        { name: 'uraninite', fluid: 'uranium', type: 'superheated' },
-        //{ name: 'bauxite', fluid: 'aluminum', type: 'superheated' }
-    ]
-
-    ie_briquets.forEach((briquet) => {
-        if (briquet.type == 'heated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:briquet_${briquet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 80, fluid: `tfc_ie_addon:metal/${briquet.fluid}` },
-                id: `${id_prefix}heated_${briquet.name}_briquets`
-            })
-        if (briquet.type == 'superheated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:briquet_${briquet.name}` },
-                heatRequirement: 'superheated',
-                processingTime: 20,
-                results: { amount: 80, fluid: `tfc_ie_addon:metal/${briquet.fluid}` },
-                id: `${id_prefix}superheated_${briquet.name}_briquets`
-            })
-    });
-
-    const tfccore_briquets = [
-        { name: 'chromium', fluid: 'chromium', type: 'heated' },
-    ]
-    tfccore_briquets.forEach((briquet) => {
-        if (briquet.type == 'heated')
-            recipes.push({
-                ingredients: { item: `tfcorewashing:briquet_${briquet.name}` },
-                heatRequirement: 'heated',
-                processingTime: 20,
-                results: { amount: 80, fluid: `firmalife:metal/${briquet.fluid}` },
-                id: `${id_prefix}heated_${briquet.name}_briquets`
-            })
-    });
-
-
-
-
-    //////////////////////////////////////
-    //////////////////////////////////////
-    //////////////////////////////////////
 
 
 
@@ -356,7 +255,7 @@ ServerEvents.recipes((event) => {
         { item: 'blue_steel', type: '2' },
         { item: 'red_steel', type: '2' },
 
-        { item: 'pig_iron', type: '2' }, 
+        { item: 'pig_iron', type: '2' },
     ]
 
     tfc_metal_superheated.forEach((heated) => {
