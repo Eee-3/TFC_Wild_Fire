@@ -3,7 +3,7 @@ let tooltips = [
     ["minecraft:dirt", "原版泥土无法获取，玻璃罩建议使用沃土", "Dirt is not obtainable, use the rich soil instead"],
     ["tfc_ie_addon:mineral/quartz_shard", "石英块可以拆", "Quartz shard can be dismantled"],
     ["kubejs:alumina_dioxide", "在 §e2980°c§r 下熔化成 100mb 铝", "Fluids can be melted at §e2980°c§r to 100mb of aluminium"],
-    ["createmetallurgy:industrial_crucible", "§4此物品已禁用, 且可能会导致崩溃§r", "This item is disabled and may cause a crash."]
+    ["createmetallurgy:industrial_crucible", "§4此物品已禁用, 且可能会导致崩溃§r", "§4This item is disabled and may cause a crash."]
 ]
 tooltips.forEach(([key, zh_cn, en_us]) => {
     // 添加 key
