@@ -1,11 +1,12 @@
 {
   "modPriorities": [
     "tfc",
+    "immersiveengineering",
+    "tfmg",
     "minecraft",
     "kubejs",
     "create",
     "tfc_ie_addon",
-    "immersiveengineering",
     "vintageimprovements",
     "mekanism",
     "createmetallurgy"

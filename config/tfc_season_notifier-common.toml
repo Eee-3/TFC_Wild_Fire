@@ -1,0 +1,52 @@
+
+#This section defines the title and subtitle for each month in the game.
+[messages]
+
+	[messages.january]
+		title = "January"
+		subtitle = "Mid-winter. Rely on reserves."
+
+	[messages.february]
+		title = "February"
+		subtitle = "Late winter. Spring is near."
+
+	[messages.march]
+		title = "March"
+		subtitle = "Spring begins. Time to plant."
+
+	[messages.april]
+		title = "April"
+		subtitle = "Sow seeds and nurture plants."
+
+	[messages.may]
+		title = "May"
+		subtitle = "Crops are growing strong."
+
+	[messages.june]
+		title = "June"
+		subtitle = "Summer starts. Maintain your farm."
+
+	[messages.july]
+		title = "July"
+		subtitle = "Mid-summer heat and harvests."
+
+	[messages.august]
+		title = "August"
+		subtitle = "Late summer. Peak harvest time."
+
+	[messages.september]
+		title = "September"
+		subtitle = "Prepare food storage."
+
+	[messages.october]
+		title = "October"
+		subtitle = "Autumn harvest continues."
+
+	[messages.november]
+		title = "November"
+		subtitle = "Finish harvesting and prepare."
+
+	[messages.december]
+		title = "December"
+		subtitle = "Winter is here. Stay warm!"
+
