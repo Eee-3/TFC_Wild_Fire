@@ -3,11 +3,13 @@
 	default_quest_shape: ""
 	filename: "age3"
 	group: "39B5DFD6C28A7E6E"
+	icon: "eidolon:notetaking_tools"
 	id: "3B3817CEB8ECA525"
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -43,11 +45,12 @@
 				}
 			]
 			title: "手记:大口黑鲈"
-			x: 1.0d
-			y: -2.5d
+			x: -7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77700D34A512DA4D"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -65,6 +68,7 @@
 			}
 			id: "18F17B8B1C5F2E83"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -85,10 +89,11 @@
 				}
 			]
 			title: "大口黑鲈的详细了解"
-			x: 1.0d
-			y: -1.5d
+			x: -8.0d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -124,11 +129,12 @@
 				}
 			]
 			title: "手记:小口黑鲈"
-			x: 2.0d
-			y: -2.5d
+			x: -5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2125C5AD9EEE28BA"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -146,6 +152,7 @@
 			}
 			id: "10B3C78A3D408F7C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀小口黑鲈或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -166,10 +173,11 @@
 				}
 			]
 			title: "小口黑鲈的详细了解"
-			x: 2.0d
-			y: -1.5d
+			x: -5.5d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -205,11 +213,12 @@
 				}
 			]
 			title: "手记:小龙虾"
-			x: 14.5d
-			y: -2.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["74D47496C221135F"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -227,6 +236,7 @@
 			}
 			id: "25607769712D477C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀小龙虾或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -247,10 +257,11 @@
 				}
 			]
 			title: "小龙虾的详细了解"
-			x: 14.5d
-			y: -1.5d
+			x: 1.214965986394553d
+			y: -1.3443877551020407d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -286,15 +297,17 @@
 				}
 			]
 			title: "手记:弹涂鱼"
-			x: 8.0d
-			y: -2.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["00C3EE6C40995DA0"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:mudskipper_bucket"
 			id: "4A18577D0156049E"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀弹涂鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -315,10 +328,11 @@
 				}
 			]
 			title: "弹涂鱼的详细了解"
-			x: 8.0d
-			y: -1.5d
+			x: -3.0d
+			y: -1.4d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -354,15 +368,17 @@
 				}
 			]
 			title: "手记:海蜇"
-			x: 19.5d
-			y: -2.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0574F4CA09A931AC"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:bucket/jellyfish"
 			id: "780EB2EA1EC2CD48"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀水母或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -383,10 +399,11 @@
 				}
 			]
 			title: "海蜇的详细了解"
-			x: 19.5d
-			y: -1.5d
+			x: 3.2d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -422,15 +439,17 @@
 				}
 			]
 			title: "手记:海牛"
-			x: 11.0d
-			y: 0.0d
+			x: 11.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2FF2C7ACC57C62F7"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:plant/manatee_grass"
 			id: "2EEA0125E4FC5A82"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀海牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -451,10 +470,11 @@
 				}
 			]
 			title: "海牛的详细了解"
-			x: 11.0d
-			y: 1.0d
+			x: 11.2d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -490,11 +510,12 @@
 				}
 			]
 			title: "手记:湖鳟"
-			x: -1.0d
-			y: -2.5d
+			x: -7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["081FFC1A5396C635"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -512,6 +533,7 @@
 			}
 			id: "4CA94CB99C1A21E9"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀湖鳟或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -532,10 +554,11 @@
 				}
 			]
 			title: "湖鳟的详细了解"
-			x: -1.0d
-			y: -1.5d
+			x: -8.0d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -571,15 +594,17 @@
 				}
 			]
 			title: "手记:等足虫"
-			x: 20.5d
-			y: -2.5d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["641C617A321348CF"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/isopod"
 			id: "52F66C505C81A2A4"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀等足虫或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -600,10 +625,11 @@
 				}
 			]
 			title: "等足虫的详细了解"
-			x: 20.5d
-			y: -1.5d
+			x: 3.2d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -639,11 +665,12 @@
 				}
 			]
 			title: "手记:莓鲈"
-			x: -2.0d
-			y: -2.5d
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["461EFF7C729E94DE"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -661,6 +688,7 @@
 			}
 			id: "586DF046CE110427"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀莓鲈或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -681,10 +709,11 @@
 				}
 			]
 			title: "莓鲈的详细了解"
-			x: -2.0d
-			y: -1.5d
+			x: -8.0d
+			y: -1.4d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -720,11 +749,12 @@
 				}
 			]
 			title: "手记:蓝鳃鱼"
-			x: -3.0d
-			y: -2.5d
+			x: -7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4F2CF2EACC99CD82"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -742,6 +772,7 @@
 			}
 			id: "3CBD2EC6F4FA2E0D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀蓝鳃鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -762,10 +793,11 @@
 				}
 			]
 			title: "蓝鳃鱼的详细了解"
-			x: -3.0d
-			y: -1.5d
+			x: -8.0d
+			y: -2.4d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -801,11 +833,12 @@
 				}
 			]
 			title: "手记:虹鳟鱼"
-			x: 3.0d
-			y: -2.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6D154D92577983E3"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -823,6 +856,7 @@
 			}
 			id: "0BA9E7439BC5380A"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀虹鳟鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -843,10 +877,11 @@
 				}
 			]
 			title: "虹鳟鱼的详细了解"
-			x: 3.0d
-			y: -1.5d
+			x: -5.5d
+			y: -2.4d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -882,15 +917,17 @@
 				}
 			]
 			title: "手记:鲈鱼"
-			x: 9.0d
-			y: -2.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5CAAD502EB1B8F9F"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:bass_bucket"
 			id: "057052842578B8ED"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鲈鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -911,10 +948,11 @@
 				}
 			]
 			title: "鲈鱼的详细了解"
-			x: 9.0d
-			y: -1.5d
+			x: -3.0d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -950,15 +988,17 @@
 				}
 			]
 			title: "手记:鲎"
-			x: 16.5d
-			y: -2.5d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["50890C1DF4B493C4"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:triops_eggs"
 			id: "36794FB61916DE35"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鲎或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -979,10 +1019,11 @@
 				}
 			]
 			title: "鲎的详细了解"
-			x: 16.5d
-			y: -1.5d
+			x: 1.214965986394553d
+			y: 0.6556122448979593d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1018,11 +1059,12 @@
 				}
 			]
 			title: "手记:龙虾"
-			x: 15.5d
-			y: -2.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["132F60951639D821"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1040,6 +1082,7 @@
 			}
 			id: "29CC745B3988E59D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀龙虾或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1060,10 +1103,11 @@
 				}
 			]
 			title: "龙虾的详细了解"
-			x: 15.5d
-			y: -1.5d
+			x: 1.214965986394553d
+			y: -0.34438775510204067d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1099,11 +1143,12 @@
 				}
 			]
 			title: "手记:海龟"
-			x: 18.5d
-			y: -2.5d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["74821EAAC7F37686"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1121,6 +1166,7 @@
 			}
 			id: "7744506C7A0F7785"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀海龟或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1141,16 +1187,18 @@
 				}
 			]
 			title: "海龟的详细了解"
-			x: 18.5d
-			y: -1.5d
+			x: 3.2d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_giant_squid"
 			id: "3BE478640B7EA839"
+			invisible: true
 			optional: true
 			rewards: [{
 				auto: "enabled"
@@ -1159,36 +1207,29 @@
 				title: "关于大王乌贼的了解"
 				type: "custom"
 			}]
-			subtitle: "&8&l[通过遭遇大王乌贼或提供经验来解锁]&r&r"
-			tasks: [
-				{
-					icon: "alexsmobs:spawn_egg_giant_squid"
-					id: "1B9C783C821EB677"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					title: "遇见大王乌贼"
-					to_observe: "alexsmobs:giant_squid"
-					type: "observation"
-				}
-				{
-					id: "06CB69838804FACE"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 2L
-				}
-			]
+			subtitle: "&8&l[通过遭遇&3大王乌贼&8来解锁]&r&r"
+			tasks: [{
+				icon: "alexsmobs:spawn_egg_giant_squid"
+				id: "1B9C783C821EB677"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				title: "遇见大王乌贼"
+				to_observe: "alexsmobs:giant_squid"
+				type: "observation"
+			}]
 			title: "手记:大王乌贼"
-			x: 0.0d
-			y: 0.0d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3BE478640B7EA839"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:lost_tentacle"
 			id: "452E309D564EB089"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大王乌贼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1209,16 +1250,18 @@
 				}
 			]
 			title: "大王乌贼的详细了解"
-			x: 0.0d
-			y: 1.0d
+			x: 6.2d
+			y: -1.4d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_cachalot_whale"
 			id: "77C89A4511C52F91"
+			invisible: true
 			optional: true
 			rewards: [{
 				auto: "enabled"
@@ -1227,60 +1270,45 @@
 				title: "关于抹香鲸的了解"
 				type: "custom"
 			}]
-			subtitle: "&8&l[通过遭遇抹香鲸或提供经验来解锁]&r&r"
-			tasks: [
-				{
-					icon: "alexsmobs:spawn_egg_cachalot_whale"
-					id: "452552F2005EACBE"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					title: "遇见抹香鲸"
-					to_observe: "alexsmobs:cachalot_whale"
-					type: "observation"
-				}
-				{
-					id: "43E8A78E36DCF525"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 2L
-				}
-			]
+			subtitle: "&8&l[通过遭遇&3抹香鲸&8来解锁]&r&r"
+			tasks: [{
+				icon: "alexsmobs:spawn_egg_cachalot_whale"
+				id: "452552F2005EACBE"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				title: "遇见抹香鲸"
+				to_observe: "alexsmobs:cachalot_whale"
+				type: "observation"
+			}]
 			title: "手记:抹香鲸"
-			x: 1.0d
-			y: 0.0d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["77C89A4511C52F91"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:cachalot_whale_tooth"
 			id: "68F516C02E2EDCBB"
 			shape: "pentagon"
-			subtitle: "&8&l[通过击杀抹香鲸或提供经验来解锁更多信息]&r&r"
-			tasks: [
-				{
-					entity: "alexsmobs:cachalot_whale"
-					icon: "alexsmobs:spawn_egg_cachalot_whale"
-					id: "1F3C355073DAD0E7"
-					optional_task: true
-					title: "猎杀抹香鲸"
-					type: "kill"
-					value: 10L
-				}
-				{
-					id: "23498FBC99ECFD1C"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 5L
-				}
-			]
+			size: 0.8d
+			subtitle: "&8&l[通过击杀抹香鲸或来解锁更多信息]&r&r"
+			tasks: [{
+				entity: "alexsmobs:cachalot_whale"
+				icon: "alexsmobs:spawn_egg_cachalot_whale"
+				id: "1F3C355073DAD0E7"
+				optional_task: true
+				title: "猎杀抹香鲸"
+				type: "kill"
+				value: 2L
+			}]
 			title: "抹香鲸的详细了解"
-			x: 1.0d
-			y: 1.0d
+			x: 6.2d
+			y: -2.4d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1316,15 +1344,17 @@
 				}
 			]
 			title: "手记:水滴鱼"
-			x: 2.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["524F2A5BA9E8C2D1"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:blobfish"
 			id: "4506F9A3FC9BAB57"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀水滴鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1345,10 +1375,11 @@
 				}
 			]
 			title: "水滴鱼的详细了解"
-			x: 2.0d
-			y: 1.0d
+			x: 6.2d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1384,15 +1415,17 @@
 				}
 			]
 			title: "手记:皱鳃鲨"
-			x: 3.0d
-			y: 0.0d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["398E6C3283BAF08C"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:frilled_shark_bucket"
 			id: "62EFFDCAAD85988B"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀皱鳃鲨或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1413,10 +1446,11 @@
 				}
 			]
 			title: "皱鳃鲨的详细了解"
-			x: 3.0d
-			y: 1.0d
+			x: 8.606802721088435d
+			y: -1.266326530612254d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1452,15 +1486,17 @@
 				}
 			]
 			title: "手记:虎鲸"
-			x: 4.0d
-			y: 0.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["52A2C31AADA5BCA7"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:blubber"
 			id: "43133DEC627E78E8"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀虎鲸或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1481,10 +1517,11 @@
 				}
 			]
 			title: "虎鲸的详细了解"
-			x: 4.0d
-			y: 1.0d
+			x: 8.606802721088435d
+			y: 0.733673469387746d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1520,15 +1557,17 @@
 				}
 			]
 			title: "手记:锤头鲨"
-			x: 5.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5FC57699AE0D6808"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shark_tooth"
 			id: "1EE806393729A352"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀锤头鲨或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1549,10 +1588,11 @@
 				}
 			]
 			title: "锤头鲨的详细了解"
-			x: 5.0d
-			y: 1.0d
+			x: 8.606802721088435d
+			y: -0.266326530612254d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1588,15 +1628,17 @@
 				}
 			]
 			title: "手记:飞鱼"
-			x: 6.0d
-			y: 0.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["228611F6F2F1EF43"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:flying_fish"
 			id: "78580D328EB48297"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀飞鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1617,10 +1659,16 @@
 				}
 			]
 			title: "飞鱼的详细了解"
-			x: 6.0d
-			y: 1.0d
+			x: 1.214965986394553d
+			y: 1.6556122448979602d
 		}
 		{
+			dependencies: [
+				"00DFB3F12E61B6F3"
+				"5FC57699AE0D6808"
+				"52A2C31AADA5BCA7"
+				"398E6C3283BAF08C"
+			]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1656,11 +1704,12 @@
 				}
 			]
 			title: "手记:骷髅剑鱼"
-			x: 7.0d
-			y: 0.0d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["02C9D9FDB0C0FD4B"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1671,6 +1720,7 @@
 			}
 			id: "10EC2DE14071B461"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀骷髅剑鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1691,10 +1741,11 @@
 				}
 			]
 			title: "骷髅剑鱼的详细了解"
-			x: 7.0d
-			y: 1.0d
+			x: 8.60680272108845d
+			y: -2.266326530612247d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1730,11 +1781,12 @@
 				}
 			]
 			title: "手记:孔雀"
-			x: 9.0d
-			y: 3.0d
+			x: -21.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["34814B035548D51D"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1748,6 +1800,7 @@
 			}
 			id: "5F05BB7BDDF7FA39"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀孔雀或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1768,10 +1821,11 @@
 				}
 			]
 			title: "孔雀的详细了解"
-			x: 9.0d
-			y: 4.0d
+			x: -22.0d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1807,11 +1861,12 @@
 				}
 			]
 			title: "手记:松鸡"
-			x: 10.0d
-			y: 3.0d
+			x: -19.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["08316896ACB94B56"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1829,6 +1884,7 @@
 			}
 			id: "4D5DC889525C092E"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀松鸡或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1849,10 +1905,11 @@
 				}
 			]
 			title: "松鸡的详细了解"
-			x: 10.0d
-			y: 4.0d
+			x: -19.5d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1888,11 +1945,12 @@
 				}
 			]
 			title: "手记:火鸡"
-			x: 11.0d
-			y: 3.0d
+			x: -19.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["247EC75FFC7EFDA5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1910,6 +1968,7 @@
 			}
 			id: "583149A00F7F646E"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀火鸡或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -1930,10 +1989,11 @@
 				}
 			]
 			title: "火鸡的详细了解"
-			x: 11.0d
-			y: 4.0d
+			x: -19.5d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -1969,11 +2029,12 @@
 				}
 			]
 			title: "手记:雉鸡"
-			x: 12.0d
+			x: -19.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["26BAB4CEFD8AA28C"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1991,6 +2052,7 @@
 			}
 			id: "00FAC390119FBAE1"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀雉鸡或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2011,10 +2073,11 @@
 				}
 			]
 			title: "雉鸡的详细了解"
-			x: 12.0d
-			y: 4.0d
+			x: -19.5d
+			y: 2.600000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2050,11 +2113,12 @@
 				}
 			]
 			title: "手记:鸡"
-			x: 13.0d
-			y: 3.0d
+			x: -19.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["46DF51E19E25E6C9"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2072,6 +2136,7 @@
 			}
 			id: "013A2054AB857410"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鸡或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2092,10 +2157,11 @@
 				}
 			]
 			title: "鸡的详细了解"
-			x: 13.0d
-			y: 4.0d
+			x: -19.5d
+			y: 3.600000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2131,11 +2197,12 @@
 				}
 			]
 			title: "手记:鹌鹑"
-			x: 15.0d
-			y: 3.0d
+			x: -19.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6D0140140FD21ED3"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2153,6 +2220,7 @@
 			}
 			id: "239C755C1ECD01F8"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鹌鹑或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2173,10 +2241,11 @@
 				}
 			]
 			title: "鹌鹑的详细了解"
-			x: 15.0d
-			y: 4.0d
+			x: -19.5d
+			y: 5.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2191,6 +2260,7 @@
 				title: "关于乌鸦的了解"
 				type: "custom"
 			}]
+			shape: "hexagon"
 			subtitle: "&8&l[通过遭遇乌鸦或提供经验来解锁]&r&r"
 			tasks: [
 				{
@@ -2212,15 +2282,17 @@
 				}
 			]
 			title: "手记:乌鸦"
-			x: 0.0d
-			y: 3.0d
+			x: -21.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5771E693AAC3D5B1"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "eidolon:raven_feather"
 			id: "7FDCCD02C4B0E11F"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀乌鸦或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2241,10 +2313,11 @@
 				}
 			]
 			title: "乌鸦的详细了解"
-			x: 0.0d
-			y: 4.0d
+			x: -22.0d
+			y: 7.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2280,11 +2353,12 @@
 				}
 			]
 			title: "手记:冠蓝鸦"
-			x: 1.0d
-			y: 3.0d
+			x: -21.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2480D3759281B3A7"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2295,6 +2369,7 @@
 			}
 			id: "61D0B1A03BD037F8"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀冠蓝鸦或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2315,10 +2390,11 @@
 				}
 			]
 			title: "冠蓝鸦的详细了解"
-			x: 1.0d
-			y: 4.0d
+			x: -22.0d
+			y: 8.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2354,15 +2430,17 @@
 				}
 			]
 			title: "手记:巨嘴鸟"
-			x: 2.0d
-			y: 3.0d
+			x: -21.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6DB6ABFCFA39DC76"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "totemic:rattle"
 			id: "7F7FC3329C3A6F62"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀巨嘴鸟或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2383,10 +2461,11 @@
 				}
 			]
 			title: "巨嘴鸟的详细了解"
-			x: 2.0d
-			y: 4.0d
+			x: -22.0d
+			y: 9.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2422,17 +2501,18 @@
 				}
 			]
 			title: "手记:海鸥"
-			x: 3.0d
-			y: 3.0d
+			x: -19.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["181EAE3D1B4D9E7B"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 3948000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 				}
@@ -2440,6 +2520,7 @@
 			}
 			id: "5B40F3F4620B65CB"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀海鸥或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2460,10 +2541,11 @@
 				}
 			]
 			title: "海鸥的详细了解"
-			x: 3.0d
-			y: 4.0d
+			x: -19.5d
+			y: 7.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2499,15 +2581,17 @@
 				}
 			]
 			title: "手记:白头海雕"
-			x: 4.0d
-			y: 3.0d
+			x: -19.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3AC19D6A80ACC6EF"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "totemic:eagle_feather"
 			id: "5ADE7F8606CA6E5C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀白头海雕或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2528,10 +2612,11 @@
 				}
 			]
 			title: "白头海雕的详细了解"
-			x: 4.0d
-			y: 4.0d
+			x: -19.5d
+			y: 8.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2567,15 +2652,17 @@
 				}
 			]
 			title: "手记:走鹃"
-			x: 18.0d
-			y: 3.0d
+			x: -21.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["49B8A3A12C05D51A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:roadrunner_feather"
 			id: "5A69F63B9C6F6928"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀走鹃或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2596,10 +2683,11 @@
 				}
 			]
 			title: "走鹃的详细了解"
-			x: 18.0d
-			y: 4.0d
+			x: -22.0d
+			y: 3.600000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2635,15 +2723,18 @@
 				}
 			]
 			title: "手记:鲸头鹳"
-			x: 16.0d
-			y: 3.0d
+			x: -21.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["708554740E53B752"]
+			hide_details_until_startable: false
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "firmalife:spoon"
 			id: "141CD0723C0CFB61"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鲸头鹳或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2664,10 +2755,11 @@
 				}
 			]
 			title: "鲸头鹳的详细了解"
-			x: 16.0d
-			y: 4.0d
+			x: -22.0d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2703,16 +2795,18 @@
 				}
 			]
 			title: "手记:鸸鹋"
-			x: 17.0d
+			x: -21.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["73269C4BFDB38164"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:emu_feather"
 			id: "1483D9967FDB0259"
 			ignore_reward_blocking: true
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鸸鹋或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2733,10 +2827,11 @@
 				}
 			]
 			title: "鸸鹋的详细了解"
-			x: 17.0d
-			y: 4.0d
+			x: -22.0d
+			y: 2.600000000000001d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2772,15 +2867,17 @@
 				}
 			]
 			title: "手记:山羊"
-			x: -9.5d
-			y: 6.0d
+			x: -14.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["110F269715977C03"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "firmalife:bucket/goat_milk"
 			id: "7C289058C407A6D7"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀山羊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2801,10 +2898,11 @@
 				}
 			]
 			title: "山羊的详细了解"
-			x: -9.5d
-			y: 7.0d
+			x: -15.0d
+			y: -2.4d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2840,15 +2938,17 @@
 				}
 			]
 			title: "手记:牛"
-			x: -8.5d
-			y: 6.0d
+			x: -14.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6BE9F21FA2117902"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "minecraft:milk_bucket"
 			id: "7EAF2671D366A306"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2869,10 +2969,11 @@
 				}
 			]
 			title: "牛的详细了解"
-			x: -8.5d
-			y: 7.0d
+			x: -15.0d
+			y: -1.4d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2908,15 +3009,17 @@
 				}
 			]
 			title: "手记:牦牛"
-			x: -7.5d
-			y: 6.0d
+			x: -14.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2B60371A3480C0B5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "firmalife:bucket/yak_milk"
 			id: "65EC9C18BAE6999E"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀牦牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -2937,10 +3040,11 @@
 				}
 			]
 			title: "牦牛的详细了解"
-			x: -7.5d
-			y: 7.0d
+			x: -15.0d
+			y: -0.3999999999999999d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -2976,11 +3080,12 @@
 				}
 			]
 			title: "手记:猪"
-			x: -6.5d
-			y: 6.0d
+			x: -11.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["765209D27E8E2FF4"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2998,6 +3103,7 @@
 			}
 			id: "0F18528F1AC1ACBA"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀猪或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3018,10 +3124,11 @@
 				}
 			]
 			title: "猪的详细了解"
-			x: -6.5d
-			y: 7.0d
+			x: -11.5d
+			y: -2.4d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3057,15 +3164,17 @@
 				}
 			]
 			title: "手记:绵羊"
-			x: -5.5d
-			y: 6.0d
+			x: -14.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["207DAAA4BC5A08D8"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:wool"
 			id: "6DB5CFCEFF3A8973"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀绵羊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3086,10 +3195,11 @@
 				}
 			]
 			title: "绵羊的详细了解"
-			x: -5.5d
-			y: 7.0d
+			x: -15.0d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3125,15 +3235,17 @@
 				}
 			]
 			title: "手记:羊驼"
-			x: -4.5d
-			y: 6.0d
+			x: -14.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["427BE483ACA4477E"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "butcher:goatfur"
 			id: "66E5764B30E1F946"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀羊驼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3154,10 +3266,11 @@
 				}
 			]
 			title: "羊驼的详细了解"
-			x: -4.5d
-			y: 7.0d
+			x: -15.0d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3193,11 +3306,12 @@
 				}
 			]
 			title: "手记:驯鹿"
-			x: 17.5d
-			y: 6.0d
+			x: -19.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7E4B5D33C9E86883"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -3215,6 +3329,7 @@
 			}
 			id: "1895234D55AFA6A8"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀驯鹿或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3235,10 +3350,11 @@
 				}
 			]
 			title: "驯鹿的详细了解"
-			x: 17.5d
-			y: 7.0d
+			x: -19.5d
+			y: 13.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3274,15 +3390,17 @@
 				}
 			]
 			title: "手记:驼鹿"
-			x: 18.5d
-			y: 6.0d
+			x: -19.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["15928D9D1D156F69"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:moose_antler"
 			id: "5C384BA8475E8476"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀驼鹿或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3303,10 +3421,11 @@
 				}
 			]
 			title: "驼鹿的详细了解"
-			x: 18.5d
-			y: 7.0d
+			x: -19.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3342,11 +3461,12 @@
 				}
 			]
 			title: "手记:麋鹿"
-			x: 19.5d
-			y: 6.0d
+			x: -19.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["535FC5B72877EDFB"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -3357,6 +3477,7 @@
 			}
 			id: "4878A6C016EF9A1A"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀麋鹿或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3377,10 +3498,11 @@
 				}
 			]
 			title: "麋鹿的详细了解"
-			x: 19.5d
-			y: 7.0d
+			x: -19.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3416,15 +3538,17 @@
 				}
 			]
 			title: "手记:麝牛"
-			x: -3.5d
-			y: 6.0d
+			x: -11.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6AA1E6DA7E30392A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "butcher:cowhoof"
 			id: "7EB53AA2F6FB787C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀麝牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3445,10 +3569,11 @@
 				}
 			]
 			title: "麝牛的详细了解"
-			x: -3.5d
-			y: 7.0d
+			x: -11.5d
+			y: -1.4d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3484,15 +3609,17 @@
 				}
 			]
 			title: "手记:卷尾猴"
-			x: 0.0d
-			y: 6.0d
+			x: -11.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["656D0AD7432FC404"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:sopa_de_macaco"
 			id: "0B5A82E5F2C13FFC"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀卷尾猴或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3513,10 +3640,11 @@
 				}
 			]
 			title: "卷尾猴的详细了解"
-			x: 0.0d
-			y: 7.0d
+			x: -11.5d
+			y: 14.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3552,8 +3680,8 @@
 				}
 			]
 			title: "手记:大猩猩"
-			x: 1.0d
-			y: 6.0d
+			x: -11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0165A28C72D4DF38"]
@@ -3570,6 +3698,7 @@
 			}
 			id: "0E14CEA22B83FA94"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大猩猩或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3590,10 +3719,11 @@
 				}
 			]
 			title: "大猩猩的详细了解"
-			x: 1.0d
-			y: 7.0d
+			x: -11.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3629,15 +3759,17 @@
 				}
 			]
 			title: "手记:浣熊"
-			x: 2.0d
-			y: 6.0d
+			x: -16.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["574716506D54E013"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:raccoon_tail"
 			id: "0308F4FBAA5D6E04"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀浣熊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3658,10 +3790,11 @@
 				}
 			]
 			title: "浣熊的详细了解"
-			x: 2.0d
-			y: 7.0d
+			x: -17.0d
+			y: 14.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3697,11 +3830,12 @@
 				}
 			]
 			title: "手记:牛羚"
-			x: 3.0d
-			y: 6.0d
+			x: -13.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["37C93A7C7A3A0773"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -3715,6 +3849,7 @@
 			}
 			id: "024EE7DCFFCBBFCC"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀牛羚或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3735,10 +3870,11 @@
 				}
 			]
 			title: "牛羚的详细了解"
-			x: 3.0d
-			y: 7.0d
+			x: -14.0d
+			y: 15.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3774,15 +3910,17 @@
 				}
 			]
 			title: "手记:狮尾狒狒"
-			x: 4.0d
-			y: 6.0d
+			x: -11.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7C8905EB4E1E4687"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "endermanoverhaul:enderman_tooth"
 			id: "211C149CD6FF90B4"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀狮尾狒狒或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3803,10 +3941,11 @@
 				}
 			]
 			title: "狮尾狒狒的详细了解"
-			x: 4.0d
-			y: 7.0d
+			x: -11.5d
+			y: 13.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3842,15 +3981,18 @@
 				}
 			]
 			title: "手记:瞪羚"
-			x: 21.5d
-			y: 6.0d
+			x: -13.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["059DDD34B64A0F47"]
+			dependency_requirement: "all_started"
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:gazelle_horn"
 			id: "679C63A27E40C9F4"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀瞪羚或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3871,10 +4013,11 @@
 				}
 			]
 			title: "瞪羚的详细了解"
-			x: 21.5d
-			y: 7.0d
+			x: -14.0d
+			y: 17.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3910,11 +4053,12 @@
 				}
 			]
 			title: "手记:紫羚"
-			x: 22.5d
-			y: 6.0d
+			x: -13.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["16A5A903AD9DCD42"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -3929,6 +4073,7 @@
 			id: "6CDC862D5578D5CB"
 			optional: true
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀紫羚或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -3949,10 +4094,11 @@
 				}
 			]
 			title: "紫羚的详细了解"
-			x: 22.5d
-			y: 7.0d
+			x: -14.0d
+			y: 18.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -3988,15 +4134,17 @@
 				}
 			]
 			title: "手记:臭鼬"
-			x: 5.0d
-			y: 6.0d
+			x: -16.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["7F7CBFC289E9DEBB"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:stink_bottle"
 			id: "5336DA58BEF6E752"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀臭鼬或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4017,10 +4165,11 @@
 				}
 			]
 			title: "臭鼬的详细了解"
-			x: 5.0d
-			y: 7.0d
+			x: -17.0d
+			y: 15.1d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4056,11 +4205,12 @@
 				}
 			]
 			title: "手记:跳鼠"
-			x: 12.0d
-			y: 9.0d
+			x: 9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0B32A4C769006051"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -4074,6 +4224,7 @@
 			}
 			id: "600A20784198A2C0"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀跳鼠或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4094,10 +4245,11 @@
 				}
 			]
 			title: "跳鼠的详细了解"
-			x: 12.0d
-			y: 10.0d
+			x: 8.7d
+			y: 6.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4133,15 +4285,17 @@
 				}
 			]
 			title: "手记:食蚁兽"
-			x: 7.0d
-			y: 6.0d
+			x: -16.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["4608E4854F59AD5A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:leafcutter_ant_chamber"
 			id: "53047746B85CA916"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀食蚁兽或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4162,10 +4316,11 @@
 				}
 			]
 			title: "食蚁兽的详细了解"
-			x: 7.0d
-			y: 7.0d
+			x: -17.0d
+			y: 17.1d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4201,15 +4356,17 @@
 				}
 			]
 			title: "手记:鸭嘴兽"
-			x: 14.0d
-			y: 9.0d
+			x: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5886F3140843DA83"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:platypus_bucket"
 			id: "00632C8E6EAA31FC"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鸭嘴兽或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4230,10 +4387,11 @@
 				}
 			]
 			title: "鸭嘴兽的详细了解"
-			x: 14.0d
-			y: 10.0d
+			x: 8.7d
+			y: 7.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4269,15 +4427,17 @@
 				}
 			]
 			title: "手记:鹿"
-			x: 20.5d
-			y: 6.0d
+			x: -13.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["12DEFA182557B071"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:antler"
 			id: "5777AE139E404492"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鹿或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4298,10 +4458,11 @@
 				}
 			]
 			title: "鹿的详细了解"
-			x: 20.5d
-			y: 7.0d
+			x: -14.0d
+			y: 16.1d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4337,16 +4498,18 @@
 				}
 			]
 			title: "手记:鼠"
-			x: 13.0d
-			y: 9.0d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7A8BE0808F62B3B5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "warriorsofpastepoch:rat_carcass"
 			id: "27B323DCC4D84AF1"
 			optional: true
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鼠或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4367,10 +4530,11 @@
 				}
 			]
 			title: "鼠的详细了解"
-			x: 13.0d
-			y: 10.0d
+			x: 8.7d
+			y: 5.100000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4406,15 +4570,17 @@
 				}
 			]
 			title: "手记:企鹅"
-			x: 19.0d
-			y: 3.0d
+			x: -21.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["033FE153CEF71DB7"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/penguin"
 			id: "1437ADF4784A6CD9"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀企鹅或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4435,10 +4601,11 @@
 				}
 			]
 			title: "企鹅的详细了解"
-			x: 19.0d
-			y: 4.0d
+			x: -22.0d
+			y: 4.600000000000001d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4474,15 +4641,17 @@
 				}
 			]
 			title: "手记:凯门鳄"
-			x: 18.5d
-			y: 0.0d
+			x: 3.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7E9EF8F60D1CCC99"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:caiman_egg"
 			id: "5E1684F389310576"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀凯门鳄或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4503,10 +4672,11 @@
 				}
 			]
 			title: "凯门鳄的详细了解"
-			x: 18.5d
-			y: 1.0d
+			x: 2.5d
+			y: 13.6d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4542,15 +4712,17 @@
 				}
 			]
 			title: "手记:切叶蚁"
-			x: 14.0d
-			y: 11.5d
+			x: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7EB046A24267F537"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "firmalife:fruit_leaf"
 			id: "04F2ACD8CD72DB00"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀切叶蚁或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4571,16 +4743,18 @@
 				}
 			]
 			title: "切叶蚁的详细了解"
-			x: 14.0d
-			y: 12.5d
+			x: 8.7d
+			y: 9.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/sabertooth"
 			id: "694BC5683FE2FB90"
+			invisible: true
 			optional: true
 			rewards: [{
 				auto: "enabled"
@@ -4589,60 +4763,45 @@
 				title: "关于剑齿虎的了解"
 				type: "custom"
 			}]
-			subtitle: "&8&l[通过遭遇剑齿虎或提供经验来解锁]&r&r"
-			tasks: [
-				{
-					icon: "tfc:spawn_egg/sabertooth"
-					id: "1DD929AFA105EF92"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					title: "遇见剑齿虎"
-					to_observe: "tfc:sabertooth"
-					type: "observation"
-				}
-				{
-					id: "02D794BCDADEA2E6"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 2L
-				}
-			]
+			subtitle: "&8&l[通过遭遇&6剑齿虎&8来解锁]&r&r"
+			tasks: [{
+				icon: "tfc:spawn_egg/sabertooth"
+				id: "1DD929AFA105EF92"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				title: "遇见剑齿虎"
+				to_observe: "tfc:sabertooth"
+				type: "observation"
+			}]
 			title: "手记:剑齿虎"
-			x: 1.5d
-			y: 11.5d
+			x: -2.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["694BC5683FE2FB90"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "bsa:sabertooth_fang"
 			id: "3B9741D1B579A493"
 			shape: "pentagon"
-			subtitle: "&8&l[通过击杀剑齿虎或提供经验来解锁更多信息]&r&r"
-			tasks: [
-				{
-					entity: "tfc:sabertooth"
-					icon: "tfc:spawn_egg/sabertooth"
-					id: "2E04FCCC36D49F6F"
-					optional_task: true
-					title: "猎杀剑齿虎"
-					type: "kill"
-					value: 10L
-				}
-				{
-					id: "1C46ED6F3F390BB9"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 5L
-				}
-			]
+			size: 0.8d
+			subtitle: "&8&l[通过击杀剑齿虎来解锁更多信息]&r&r"
+			tasks: [{
+				entity: "tfc:sabertooth"
+				icon: "tfc:spawn_egg/sabertooth"
+				id: "2E04FCCC36D49F6F"
+				optional_task: true
+				title: "猎杀剑齿虎"
+				type: "kill"
+				value: 5L
+			}]
 			title: "剑齿虎的详细了解"
-			x: 1.5d
-			y: 12.5d
+			x: -3.0d
+			y: 16.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4678,15 +4837,17 @@
 				}
 			]
 			title: "手记:北极熊"
-			x: 4.0d
-			y: 9.0d
+			x: -7.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["25B90E173CAC87AE"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:polar_bear_fur"
 			id: "3D9BDB36C6E0E580"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀北极熊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4707,10 +4868,11 @@
 				}
 			]
 			title: "北极熊的详细了解"
-			x: 4.0d
-			y: 10.0d
+			x: -8.0d
+			y: 13.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4746,15 +4908,17 @@
 				}
 			]
 			title: "手记:响尾蛇"
-			x: 7.0d
-			y: 9.0d
+			x: 5.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["363D8E7A82F9BF93"]
+			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shed_snake_skin"
 			id: "01D2B3C65F255009"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀响尾蛇或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4775,10 +4939,11 @@
 				}
 			]
 			title: "响尾蛇的详细了解"
-			x: 7.0d
-			y: 10.0d
+			x: 5.0d
+			y: 12.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4814,15 +4979,17 @@
 				}
 			]
 			title: "手记:大象"
-			x: 8.0d
-			y: 6.0d
+			x: -15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2EE2AA7519941F3F"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_elephant"
 			id: "71036DB8000CC785"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大象或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4843,10 +5010,11 @@
 				}
 			]
 			title: "大象的详细了解"
-			x: 8.0d
-			y: 7.0d
+			x: -15.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -4882,11 +5050,12 @@
 				}
 			]
 			title: "手记:大鳄龟"
-			x: 21.5d
-			y: 0.0d
+			x: 5.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["36722C778BD0DE34"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -4897,6 +5066,7 @@
 			}
 			id: "2263050B329A2D37"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大鳄龟或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -4917,16 +5087,18 @@
 				}
 			]
 			title: "大鳄龟的详细了解"
-			x: 21.5d
-			y: 1.0d
+			x: 5.0d
+			y: 13.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "tfc:spawn_egg/direwolf"
 			id: "242D60284604C906"
+			invisible: true
 			optional: true
 			rewards: [{
 				auto: "enabled"
@@ -4935,60 +5107,45 @@
 				title: "关于恐狼的了解"
 				type: "custom"
 			}]
-			subtitle: "&8&l[通过遭遇恐狼或提供经验来解锁]&r&r"
-			tasks: [
-				{
-					icon: "tfc:spawn_egg/direwolf"
-					id: "458F7984EC1FC7B2"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					title: "遇见恐狼"
-					to_observe: "tfc:direwolf"
-					type: "observation"
-				}
-				{
-					id: "581F991E59B8F6D3"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 2L
-				}
-			]
+			subtitle: "&8&l[通过遭遇&9恐狼&8来解锁]&r&r"
+			tasks: [{
+				icon: "tfc:spawn_egg/direwolf"
+				id: "458F7984EC1FC7B2"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				title: "遇见恐狼"
+				to_observe: "tfc:direwolf"
+				type: "observation"
+			}]
 			title: "手记:恐狼"
-			x: 2.5d
-			y: 11.5d
+			x: -5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["242D60284604C906"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:direwolf_fur"
 			id: "2C4D852FCB0A6B25"
 			shape: "pentagon"
-			subtitle: "&8&l[通过击杀恐狼或提供经验来解锁更多信息]&r&r"
-			tasks: [
-				{
-					entity: "tfc:direwolf"
-					icon: "tfc:spawn_egg/direwolf"
-					id: "26D474F60F52D9D6"
-					optional_task: true
-					title: "猎杀恐狼"
-					type: "kill"
-					value: 10L
-				}
-				{
-					id: "4219217FD75895B2"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 5L
-				}
-			]
+			size: 0.8d
+			subtitle: "&8&l[通过击杀恐狼来解锁更多信息]&r&r"
+			tasks: [{
+				entity: "tfc:direwolf"
+				icon: "tfc:spawn_egg/direwolf"
+				id: "26D474F60F52D9D6"
+				optional_task: true
+				title: "猎杀恐狼"
+				type: "kill"
+				value: 5L
+			}]
 			title: "恐狼的详细了解"
-			x: 2.5d
-			y: 12.5d
+			x: -5.5d
+			y: 13.6d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5024,11 +5181,12 @@
 				}
 			]
 			title: "手记:拟态章鱼"
-			x: 8.0d
-			y: 0.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["59F6C7A61C83C11E"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -5046,6 +5204,7 @@
 			}
 			id: "3426CB42B0DB26E9"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀拟态章鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5066,10 +5225,11 @@
 				}
 			]
 			title: "拟态章鱼的详细了解"
-			x: 8.0d
-			y: 1.0d
+			x: 6.2d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5106,14 +5266,16 @@
 			]
 			title: "手记:栉水母"
 			x: 9.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5ECC8C2080195FA5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:comb_jelly_bucket"
 			id: "1F56FEB7F7035433"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀栉水母或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5134,10 +5296,11 @@
 				}
 			]
 			title: "栉水母的详细了解"
-			x: 9.0d
-			y: 1.0d
+			x: 8.7d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5173,15 +5336,17 @@
 				}
 			]
 			title: "手记:棕熊"
-			x: 3.0d
-			y: 9.0d
+			x: -7.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2193B0D589F37A22"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:grizzly_bear_fur"
 			id: "5F7640B97607BC3A"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀棕熊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5202,10 +5367,11 @@
 				}
 			]
 			title: "棕熊的详细了解"
-			x: 3.0d
-			y: 10.0d
+			x: -8.0d
+			y: 12.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5241,17 +5407,19 @@
 				}
 			]
 			title: "手记:森蚺"
-			x: 20.5d
-			y: 0.0d
+			x: 5.5d
+			y: 12.0d
 		}
 		{
 			can_repeat: false
 			dependencies: ["0743B0DD2FA39912"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bone_serpent_tooth"
 			id: "769B5A526380FD47"
 			optional: true
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀森蚺或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5272,10 +5440,11 @@
 				}
 			]
 			title: "森蚺的详细了解"
-			x: 20.5d
-			y: 1.0d
+			x: 5.0d
+			y: 11.6d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5311,15 +5480,17 @@
 				}
 			]
 			title: "手记:水龟"
-			x: 11.0d
-			y: -2.5d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["400A3FC2A6BA0F02"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:terrapin_bucket"
 			id: "0890D7A5574F7797"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀水龟或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5340,10 +5511,11 @@
 				}
 			]
 			title: "水龟的详细了解"
-			x: 11.0d
-			y: -1.5d
+			x: -3.0d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5379,11 +5551,12 @@
 				}
 			]
 			title: "手记:沙漠蛛蜂"
-			x: 12.0d
-			y: 11.5d
+			x: 9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["30C4D9CCA1265467"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -5394,6 +5567,7 @@
 			}
 			id: "4DBB6792EC0BF32C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀沙漠蛛蜂或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5414,10 +5588,11 @@
 				}
 			]
 			title: "沙漠蛛蜂的详细了解"
-			x: 12.0d
-			y: 12.5d
+			x: 8.7d
+			y: 8.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5453,15 +5628,17 @@
 				}
 			]
 			title: "手记:河马"
-			x: 15.0d
-			y: 6.0d
+			x: -11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0B278150CD017348"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:hippo_spawn_egg"
 			id: "68C1537B034F4103"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀河马或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5482,10 +5659,11 @@
 				}
 			]
 			title: "河马的详细了解"
-			x: 15.0d
-			y: 7.0d
+			x: -11.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5521,11 +5699,12 @@
 				}
 			]
 			title: "手记:海豹"
-			x: 10.0d
-			y: 0.0d
+			x: 11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3CF9D8D15DC0D924"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -5543,6 +5722,7 @@
 			}
 			id: "0070C6E82144083D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀海豹或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5563,10 +5743,11 @@
 				}
 			]
 			title: "海豹的详细了解"
-			x: 10.0d
-			y: 1.0d
+			x: 11.2d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5602,15 +5783,17 @@
 				}
 			]
 			title: "手记:犀牛"
-			x: 9.0d
-			y: 6.0d
+			x: -15.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2B217F48C46ED121"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_rhinoceros"
 			id: "0196E7A27673A65D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀犀牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5631,10 +5814,11 @@
 				}
 			]
 			title: "犀牛的详细了解"
-			x: 9.0d
-			y: 7.0d
+			x: -15.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5670,15 +5854,17 @@
 				}
 			]
 			title: "手记:狮子"
-			x: 3.5d
-			y: 11.5d
+			x: -2.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1E2D836D0F44BE0B"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:lion_fur"
 			id: "35556D4C7F76BB44"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀狮子或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5699,10 +5885,11 @@
 				}
 			]
 			title: "狮子的详细了解"
-			x: 3.5d
-			y: 12.5d
+			x: -3.0d
+			y: 12.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5738,11 +5925,12 @@
 				}
 			]
 			title: "手记:狼"
-			x: 5.0d
-			y: 9.0d
+			x: -5.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["76A417C1C70537E9"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -5760,6 +5948,7 @@
 			}
 			id: "37B0F87CCB2C1132"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀狼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5780,10 +5969,11 @@
 				}
 			]
 			title: "狼的详细了解"
-			x: 5.0d
-			y: 10.0d
+			x: -5.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5819,11 +6009,12 @@
 				}
 			]
 			title: "手记:獠牙兽"
-			x: 14.0d
-			y: 6.0d
+			x: -17.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4A517EDEE23A5786"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -5837,6 +6028,7 @@
 			}
 			id: "30F230CA4E6242A1"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀獠牙兽或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5857,10 +6049,11 @@
 				}
 			]
 			title: "獠牙兽的详细了解"
-			x: 14.0d
-			y: 7.0d
+			x: -17.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5896,15 +6089,17 @@
 				}
 			]
 			title: "手记:短吻鳄"
-			x: 17.5d
-			y: 0.0d
+			x: 3.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["7572DBD3FBE8E949"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:alligator_egg"
 			id: "5A59FB13B69FA32D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀短吻鳄或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5925,10 +6120,11 @@
 				}
 			]
 			title: "短吻鳄的详细了解"
-			x: 17.5d
-			y: 1.0d
+			x: 2.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -5964,15 +6160,17 @@
 				}
 			]
 			title: "手记:秃鹫"
-			x: 5.0d
-			y: 3.0d
+			x: -19.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3C0235965013A62A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:smoked_flesh"
 			id: "3447653243BC3CF5"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀秃鹫或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -5993,10 +6191,11 @@
 				}
 			]
 			title: "秃鹫的详细了解"
-			x: 5.0d
-			y: 4.0d
+			x: -19.5d
+			y: 9.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6032,15 +6231,17 @@
 				}
 			]
 			title: "手记:科莫多巨蜥"
-			x: 16.5d
-			y: 0.0d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["478957EBCF07CB65"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:komodo_spit"
 			id: "60BE4FFDB9511878"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀科莫多巨蜥或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6061,10 +6262,11 @@
 				}
 			]
 			title: "科莫多巨蜥的详细了解"
-			x: 16.5d
-			y: 1.0d
+			x: 2.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6100,15 +6302,17 @@
 				}
 			]
 			title: "手记:美洲狮"
-			x: 5.5d
-			y: 11.5d
+			x: -2.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0ACD24127B373E2D"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:cougar_fur"
 			id: "12F7078A8C374995"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀美洲狮或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6129,10 +6333,11 @@
 				}
 			]
 			title: "美洲狮的详细了解"
-			x: 5.5d
-			y: 12.5d
+			x: -3.0d
+			y: 14.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6168,15 +6373,17 @@
 				}
 			]
 			title: "手记:老虎"
-			x: 6.5d
-			y: 11.5d
+			x: -2.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["59C56C60367AA8B5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:tiger_fur"
 			id: "31191CB27A29885D"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀老虎或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6197,10 +6404,11 @@
 				}
 			]
 			title: "老虎的详细了解"
-			x: 6.5d
-			y: 12.5d
+			x: -3.0d
+			y: 15.6d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6236,15 +6444,17 @@
 				}
 			]
 			title: "手记:蜗牛"
-			x: 15.0d
-			y: 11.5d
+			x: 9.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["507B126D5AC9FBB5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:snail_shell"
 			id: "41F6972328305793"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀蜗牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6265,10 +6475,11 @@
 				}
 			]
 			title: "蜗牛的详细了解"
-			x: 15.0d
-			y: 12.5d
+			x: 8.7d
+			y: 10.6d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6304,15 +6515,17 @@
 				}
 			]
 			title: "手记:蜻蜓"
-			x: 16.0d
-			y: 11.5d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["64ED0A94D60633D8"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:sea_terror_eye"
 			id: "21FAD02F8A8ECBB8"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀蜻蜓或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6333,10 +6546,11 @@
 				}
 			]
 			title: "蜻蜓的详细了解"
-			x: 16.0d
-			y: 12.5d
+			x: 8.7d
+			y: 11.6d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6372,15 +6586,17 @@
 				}
 			]
 			title: "手记:螳螂虾"
-			x: 21.5d
-			y: -2.5d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1C1BB93DA4ED94E0"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:shrimp_fried_rice"
 			id: "4AEC19258A3B917F"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀螳螂虾或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6401,10 +6617,11 @@
 				}
 			]
 			title: "螳螂虾的详细了解"
-			x: 21.5d
-			y: -1.5d
+			x: 6.2d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6440,15 +6657,17 @@
 				}
 			]
 			title: "手记:袋獾"
-			x: 6.0d
-			y: 6.0d
+			x: -16.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["74A9ED5FB6B22B3F"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "majruszsdifficulty:cerberus_fang"
 			id: "2189D81BABCD88AB"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀袋獾或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6469,10 +6688,11 @@
 				}
 			]
 			title: "袋獾的详细了解"
-			x: 6.0d
-			y: 7.0d
+			x: -17.0d
+			y: 16.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6508,15 +6728,17 @@
 				}
 			]
 			title: "手记:袋鼠"
-			x: 10.0d
-			y: 6.0d
+			x: -13.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["31F2369F31926073"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:kangaroo_hide"
 			id: "67A0C29152703D3C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀袋鼠或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6537,10 +6759,11 @@
 				}
 			]
 			title: "袋鼠的详细了解"
-			x: 10.0d
-			y: 7.0d
+			x: -13.5d
+			y: 12.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6576,15 +6799,17 @@
 				}
 			]
 			title: "手记:野牛"
-			x: 12.0d
-			y: 6.0d
+			x: -17.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["048F5ED40E27A1DE"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bison_fur"
 			id: "151A585F06982308"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀野牛或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6605,10 +6830,11 @@
 				}
 			]
 			title: "野牛的详细了解"
-			x: 12.0d
-			y: 7.0d
+			x: -17.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6644,11 +6870,12 @@
 				}
 			]
 			title: "手记:野猪"
-			x: 13.0d
-			y: 6.0d
+			x: -13.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1C84C5C51AFDC753"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -6662,6 +6889,7 @@
 			}
 			id: "07FA87ECFEB8D40F"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀野猪或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6682,10 +6910,11 @@
 				}
 			]
 			title: "野猪的详细了解"
-			x: 13.0d
-			y: 7.0d
+			x: -14.0d
+			y: 14.1d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6721,11 +6950,12 @@
 				}
 			]
 			title: "手记:长颈鹿"
-			x: 11.0d
-			y: 6.0d
+			x: -13.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["72635BA95F860F2C"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -6743,6 +6973,7 @@
 			}
 			id: "6E4D64D279798E37"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀长颈鹿或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6763,10 +6994,11 @@
 				}
 			]
 			title: "长颈鹿的详细了解"
-			x: 11.0d
-			y: 7.0d
+			x: -13.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6802,11 +7034,12 @@
 				}
 			]
 			title: "手记:雨蛙"
-			x: 15.0d
-			y: 9.0d
+			x: 9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4F7CAE77F7EFE58D"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -6820,6 +7053,7 @@
 			}
 			id: "171AEFEF85B6C529"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀雨蛙或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6840,10 +7074,11 @@
 				}
 			]
 			title: "雨蛙的详细了解"
-			x: 15.0d
-			y: 10.0d
+			x: 8.7d
+			y: 4.100000000000001d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6879,11 +7114,12 @@
 				}
 			]
 			title: "手记:雪豹"
-			x: 7.5d
-			y: 11.5d
+			x: -2.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2C3013DF847FB380"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -6901,6 +7137,7 @@
 			}
 			id: "20CA355D46611B37"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀雪豹或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6921,10 +7158,11 @@
 				}
 			]
 			title: "雪豹的详细了解"
-			x: 7.5d
-			y: 12.5d
+			x: -3.0d
+			y: 11.6d
 		}
 		{
+			dependencies: ["728B350B98915D16"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -6960,15 +7198,17 @@
 				}
 			]
 			title: "手记:香蕉蛞蝓"
-			x: 16.0d
-			y: 9.0d
+			x: 9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["05309284326268A7"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:banana_slug_slime"
 			id: "59ED70EC1EEDE79E"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀香蕉蛞蝓或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -6989,10 +7229,11 @@
 				}
 			]
 			title: "香蕉蛞蝓的详细了解"
-			x: 16.0d
-			y: 10.0d
+			x: 8.7d
+			y: 3.100000000000001d
 		}
 		{
+			dependencies: ["5CECA5CEE11AFB8F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7028,15 +7269,17 @@
 				}
 			]
 			title: "手记:鬃狼"
-			x: 8.0d
-			y: 9.0d
+			x: -16.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["627A9DC2BC8BAC75"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:bear_fur"
 			id: "1E40D28A4CE2D735"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鬃狼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7057,10 +7300,11 @@
 				}
 			]
 			title: "鬃狼的详细了解"
-			x: 8.0d
-			y: 10.0d
+			x: -17.0d
+			y: 18.1d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7096,11 +7340,12 @@
 				}
 			]
 			title: "手记:鬣狗"
-			x: 6.0d
-			y: 9.0d
+			x: -5.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3998C89A1428772A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -7118,6 +7363,7 @@
 			}
 			id: "0FE62F3629798DA4"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鬣狗或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7138,10 +7384,11 @@
 				}
 			]
 			title: "鬣狗的详细了解"
-			x: 6.0d
-			y: 10.0d
+			x: -5.5d
+			y: 11.6d
 		}
 		{
+			dependencies: ["00DFB3F12E61B6F3"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7177,15 +7424,17 @@
 				}
 			]
 			title: "手记:鲎虫"
-			x: 17.5d
-			y: -2.5d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["51276D6012CABFC5"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:triops_bucket"
 			id: "53649C4BD9A380D9"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鲎虫或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7206,10 +7455,11 @@
 				}
 			]
 			title: "鲎虫的详细了解"
-			x: 17.5d
-			y: -1.5d
+			x: 3.2d
+			y: -1.4d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7245,15 +7495,17 @@
 				}
 			]
 			title: "手记:鲶鱼"
-			x: 10.0d
-			y: -2.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["73D62D2DEE474D2C"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:medium_catfish_bucket"
 			id: "433E8FF8442D74EC"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鲶鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7274,10 +7526,11 @@
 				}
 			]
 			title: "鲶鱼的详细了解"
-			x: 10.0d
-			y: -1.5d
+			x: -3.0d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["1AB20AD4E4D44848"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7313,15 +7566,17 @@
 				}
 			]
 			title: "手记:鸭"
-			x: 14.0d
-			y: 3.0d
+			x: -19.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["14D2185AFB5F4B5F"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "naturalist:duck"
 			id: "0372FF4C72EE7C33"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀鸭或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7342,10 +7597,11 @@
 				}
 			]
 			title: "鸭的详细了解"
-			x: 14.0d
-			y: 4.0d
+			x: -19.5d
+			y: 4.600000000000001d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7381,15 +7637,17 @@
 				}
 			]
 			title: "手记:黑熊"
-			x: 2.0d
-			y: 9.0d
+			x: -7.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["77E25591765A7A29"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:black_bear_fur"
 			id: "564C6998C45A09DE"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀黑熊或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7410,10 +7668,11 @@
 				}
 			]
 			title: "黑熊的详细了解"
-			x: 2.0d
-			y: 10.0d
+			x: -8.0d
+			y: 11.6d
 		}
 		{
+			dependencies: ["71ADD85B45024121"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7449,15 +7708,17 @@
 				}
 			]
 			title: "手记:黑豹"
-			x: 4.5d
-			y: 11.5d
+			x: -2.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["4275FFE61F9B83BA"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "textile:panther_fur"
 			id: "0717F6D86E46B894"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀黑豹或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7478,10 +7739,11 @@
 				}
 			]
 			title: "黑豹的详细了解"
-			x: 4.5d
-			y: 12.5d
+			x: -3.0d
+			y: 13.6d
 		}
 		{
+			dependencies: ["57BAF7C92DCE66B9"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7517,16 +7779,18 @@
 				}
 			]
 			title: "手记:大鳄鱼"
-			x: 19.5d
-			y: 0.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7BDBCE1CB8BA0630"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "alexsmobs:crocodile_egg"
 			id: "0D6C30FAC504DFA0"
 			optional: true
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大鳄鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7547,10 +7811,11 @@
 				}
 			]
 			title: "大鳄鱼的详细了解"
-			x: 19.5d
-			y: 1.0d
+			x: 2.5d
+			y: 14.6d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7599,11 +7864,12 @@
 				}
 			]
 			title: "手记:三文鱼"
-			x: 0.0d
-			y: -2.5d
+			x: -7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1BA061908DA5B255"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -7621,6 +7887,7 @@
 			}
 			id: "062938D7F7959D1F"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7641,10 +7908,11 @@
 				}
 			]
 			title: "三文鱼的详细了解"
-			x: 0.0d
-			y: -1.5d
+			x: -8.0d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7680,15 +7948,17 @@
 				}
 			]
 			title: "手记:兔子"
-			x: 11.0d
-			y: 9.0d
+			x: -11.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["55EF684B9642D23E"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "minecraft:rabbit_hide"
 			id: "0B2D15421602109F"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀跳鼠或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7718,10 +7988,11 @@
 				}
 			]
 			title: "兔子的详细了解"
-			x: 11.0d
-			y: 10.0d
+			x: -11.5d
+			y: 1.600000000000001d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7770,11 +8041,12 @@
 				}
 			]
 			title: "手记:鳕鱼"
-			x: 4.0d
-			y: -2.5d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3FCE566608798F42"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -7792,6 +8064,7 @@
 			}
 			id: "4896C4690CB7074C"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀大口黑鲈或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7821,11 +8094,12 @@
 				}
 			]
 			title: "三文鱼的详细了解"
-			x: 4.0d
-			y: -1.5d
+			x: -5.5d
+			y: -1.4d
 		}
 		{
 			dependencies: ["545D145004E45E6A"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -7843,6 +8117,7 @@
 			}
 			id: "2C500CB98A138A2A"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀热带鱼或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -7863,10 +8138,11 @@
 				}
 			]
 			title: "三文鱼的详细了解"
-			x: 5.0d
-			y: -1.5d
+			x: -5.5d
+			y: 0.6000000000000001d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7915,10 +8191,11 @@
 				}
 			]
 			title: "手记:热带鱼"
-			x: 5.0d
-			y: -2.5d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7954,10 +8231,11 @@
 				}
 			]
 			title: "手记:河豚"
-			x: 6.0d
-			y: -2.5d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["01439E173B19ED26"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -7993,15 +8271,17 @@
 				}
 			]
 			title: "手记:青蛙"
-			x: 7.0d
-			y: -2.5d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["53B5566655DB826C"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: "minecraft:pufferfish"
 			id: "25245F127AC57867"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀河豚或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -8022,11 +8302,12 @@
 				}
 			]
 			title: "河豚的详细了解"
-			x: 6.0d
-			y: -1.5d
+			x: -5.5d
+			y: 1.600000000000001d
 		}
 		{
 			dependencies: ["5F190606233262D8"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -8040,6 +8321,7 @@
 			}
 			id: "64DC8E49A804C884"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀青蛙或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -8060,10 +8342,11 @@
 				}
 			]
 			title: "青蛙的详细了解"
-			x: 7.0d
-			y: -1.5d
+			x: -3.0d
+			y: -2.4d
 		}
 		{
+			dependencies: ["7657DB921591A63F"]
 			dependency_requirement: "one_started"
 			description: ["【2】"]
 			hide_text_until_complete: true
@@ -8099,16 +8382,18 @@
 				}
 			]
 			title: "手记:马"
-			x: -2.5d
-			y: 6.0d
+			x: -11.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["68DBFE6B97991532"]
+			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 4044000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -8120,6 +8405,7 @@
 			}
 			id: "05ABC1CDC132EE64"
 			shape: "pentagon"
+			size: 0.8d
 			subtitle: "&8&l[通过击杀马或提供经验来解锁更多信息]&r&r"
 			tasks: [
 				{
@@ -8128,7 +8414,7 @@
 						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
-								creationDate: 4044000L
+								creationDate: -9223372036854775808L
 								traits: [ ]
 							}
 							"tfc:item_heat": {
@@ -8152,9 +8438,672 @@
 					value: 5L
 				}
 			]
-			title: "麝牛的详细了解"
-			x: -2.5d
-			y: 7.0d
+			title: "马的详细了解"
+			x: -11.5d
+			y: 0.6000000000000001d
+		}
+		{
+			dependencies: ["7657DB921591A63F"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "tfc:spawn_egg/donkey"
+			id: "2CF3AFB707273599"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "6E936C9B501F2CDC"
+				title: "关于麝牛的了解"
+				type: "custom"
+			}]
+			subtitle: "&8&l[通过遭遇麝牛或提供经验来解锁]&r&r"
+			tasks: [
+				{
+					icon: "tfc:spawn_egg/donkey"
+					id: "39B9E9F5A5E0B65D"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					title: "遇见驴"
+					to_observe: "tfc:donkey"
+					type: "observation"
+				}
+				{
+					id: "4726540963D2BC28"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			title: "手记:驴"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CF3AFB707273599"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:food/horse_meat"
+			}
+			id: "09845D82B52C1F9E"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀马或提供经验来解锁更多信息]&r&r"
+			tasks: [
+				{
+					entity: "tfc:donkey"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -9223372036854775808L
+								traits: [ ]
+							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:food/horse_meat"
+					}
+					id: "773B4D72EE3AAF4D"
+					optional_task: true
+					title: "猎杀马"
+					type: "kill"
+					value: 10L
+				}
+				{
+					id: "37DA1A09C7AC016B"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 5L
+				}
+			]
+			title: "驴的详细了解"
+			x: -11.5d
+			y: -0.3999999999999999d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:feather"
+			id: "1AB20AD4E4D44848"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "2E0EEF458F7AD790"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "鸟禽类"
+			x: -16.0d
+			y: 6.75d
+		}
+		{
+			disable_toast: true
+			hide_dependent_lines: true
+			icon: "eidolon:notetaking_tools"
+			id: "6250AFE313FA45C2"
+			shape: "rsquare"
+			size: 3.0d
+			tasks: [{
+				id: "3054829A476B5B29"
+				title: "启笔"
+				type: "checkmark"
+			}]
+			title: "动物手记"
+			x: -5.178571428571416d
+			y: 6.857142857142847d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "farmersdelight:horse_feed"
+			id: "7657DB921591A63F"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "16EA8D04E749EE47"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "可驯养动物"
+			x: -13.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "majruszsaccessories:horseshoe"
+			id: "5CECA5CEE11AFB8F"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "3E723411A24B0F97"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "中立野生动物"
+			x: -13.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "alexsmobs:dropbear_claw"
+			id: "71ADD85B45024121"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "3580D099051A62DF"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "陆地掠食者动物"
+			x: -5.12585034013604d
+			y: 9.806972789115648d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "tfc:plant/pistia"
+			id: "01439E173B19ED26"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "6F28A1668F2AD2A9"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "淡水水生动物"
+			x: -5.12585034013604d
+			y: 3.8069727891156404d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:plant/winged_kelp"
+			}
+			id: "00DFB3F12E61B6F3"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "12214BD4BB274FC9"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "海洋水生动物"
+			x: 3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: "naturalist:lizard_tail"
+			id: "57BAF7C92DCE66B9"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "5C6DDA63E90235D1"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "危险的冷血动物"
+			x: 3.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "majruszsaccessories:ancient_scarab"
+				tag: {
+					Bonus: {
+						Boosters: [ ]
+						Value: -0.6f
+					}
+				}
+			}
+			id: "728B350B98915D16"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "tfc:story/root"
+				criterion: ""
+				icon: "artisanal:quill"
+				id: "1378183DA92C1A36"
+				title: "启笔"
+				type: "advancement"
+			}]
+			title: "小型生物与昆虫"
+			x: 6.75d
+			y: 6.75d
+		}
+		{
+			dependencies: ["00DFB3F12E61B6F3"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:spawn_egg_sea_pig"
+			id: "16200431F6ECA5C2"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "657E962939839839"
+				title: "关于海猪的了解"
+				type: "custom"
+			}]
+			subtitle: "&8&l[通过遭遇海猪或提供经验来解锁]&r&r"
+			tasks: [
+				{
+					icon: "alexscaves:spawn_egg_sea_pig"
+					id: "72A7B9C1841AE43A"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					title: "遇见海猪"
+					to_observe: "alexscaves:sea_pig"
+					type: "observation"
+				}
+				{
+					id: "5B5E940C1D6549D1"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			title: "手记:海猪"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00DFB3F12E61B6F3"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:spawn_egg_tripodfish"
+			id: "3D860632DBED1F36"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "7BA31DE8BFC66DE5"
+				title: "关于三脚鱼的了解"
+				type: "custom"
+			}]
+			subtitle: "&8&l[通过遭遇三脚鱼或提供经验来解锁]&r&r"
+			tasks: [
+				{
+					icon: "alexscaves:spawn_egg_tripodfish"
+					id: "02791648F095A18A"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					title: "遇见三脚鱼"
+					to_observe: "alexscaves:tripodfish"
+					type: "observation"
+				}
+				{
+					id: "785B14296EDB2F0B"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			title: "手记:三脚鱼"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00DFB3F12E61B6F3"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:spawn_egg_hullbreaker"
+			id: "59FE1E43155D73C8"
+			invisible: true
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "499BF7DC9342E25B"
+				title: "关于碎船兽的了解"
+				type: "custom"
+			}]
+			size: 1.5d
+			subtitle: "&8&l[通过遭遇&3碎船兽&8来解锁]&r&r"
+			tasks: [{
+				icon: "alexscaves:spawn_egg_hullbreaker"
+				id: "1C126AF3E07F3EA0"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				title: "遇见碎船兽"
+				to_observe: "alexscaves:hullbreaker"
+				type: "observation"
+			}]
+			title: "手记:碎船兽"
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00DFB3F12E61B6F3"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:spawn_egg_gossamer_worm"
+			id: "25B77160F5429201"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "7436525EA3611E86"
+				title: "关于浮蚕的了解"
+				type: "custom"
+			}]
+			subtitle: "&8&l[通过遭遇浮蚕或提供经验来解锁]&r&r"
+			tasks: [
+				{
+					icon: "alexscaves:spawn_egg_gossamer_worm"
+					id: "278131D414306F44"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					title: "遇见浮蚕"
+					to_observe: "alexsmobs:triops"
+					type: "observation"
+				}
+				{
+					id: "34E267199CF67AF7"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			title: "手记:浮蚕"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00DFB3F12E61B6F3"]
+			dependency_requirement: "one_started"
+			description: ["【2】"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:spawn_egg_lanternfish"
+			id: "5DDD18BFD0D4F87E"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				icon: "eidolon:parchment"
+				id: "49BEC39663BA51C1"
+				title: "关于灯笼鱼的了解"
+				type: "custom"
+			}]
+			subtitle: "&8&l[通过遭遇灯笼鱼或提供经验来解锁]&r&r"
+			tasks: [
+				{
+					icon: "alexscaves:spawn_egg_lanternfish"
+					id: "51925C43661A3919"
+					observe_type: 5
+					optional_task: true
+					timer: 0L
+					title: "遇见灯笼鱼"
+					to_observe: "alexscaves:lanternfish"
+					type: "observation"
+				}
+				{
+					id: "7501DD3052C9C73F"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 2L
+				}
+			]
+			title: "手记:灯笼鱼"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["16200431F6ECA5C2"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:sea_pig_bucket"
+			id: "47A53CA2BBC0C44E"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀海猪或提供经验来解锁更多信息]&r&r"
+			tasks: [
+				{
+					entity: "alexscaves:sea_pig"
+					icon: "alexscaves:spawn_egg_sea_pig"
+					id: "51A4ACB106508908"
+					optional_task: true
+					title: "猎杀海猪"
+					type: "kill"
+					value: 10L
+				}
+				{
+					id: "736119782AA0F71C"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 5L
+				}
+			]
+			title: "海猪的详细了解"
+			x: 3.1945578231292657d
+			y: -2.242346938775512d
+		}
+		{
+			dependencies: ["3D860632DBED1F36"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:tripodfish"
+			id: "35492AA7965C19C2"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀三脚鱼或提供经验来解锁更多信息]&r&r"
+			tasks: [
+				{
+					entity: "alexscaves:tripodfish"
+					icon: "alexscaves:spawn_egg_tripodfish"
+					id: "01557D2169B77A32"
+					optional_task: true
+					title: "猎杀三脚鱼"
+					type: "kill"
+					value: 10L
+				}
+				{
+					id: "02ED16957ED3C2B0"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 5L
+				}
+			]
+			title: "三脚鱼的详细了解"
+			x: 3.214965986394553d
+			y: -3.4464285714285694d
+		}
+		{
+			dependencies: ["25B77160F5429201"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:gossamer_worm_bucket"
+			id: "66E1BC086C9822F0"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀浮蚕或提供经验来解锁更多信息]&r&r"
+			tasks: [
+				{
+					entity: "alexscaves:gossamer_worm"
+					icon: "alexscaves:spawn_egg_gossamer_worm"
+					id: "2FD3C14163B9A405"
+					optional_task: true
+					title: "猎杀浮蚕"
+					type: "kill"
+					value: 10L
+				}
+				{
+					id: "70659AD69936B3A8"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 5L
+				}
+			]
+			title: "浮蚕的详细了解"
+			x: 1.214965986394553d
+			y: -3.4464285714285694d
+		}
+		{
+			dependencies: ["5DDD18BFD0D4F87E"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:lanternfish_bucket"
+			id: "79425AE7C2DD62E5"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀灯笼鱼或提供经验来解锁更多信息]&r&r"
+			tasks: [
+				{
+					entity: "alexscaves:lanternfish"
+					icon: "alexscaves:spawn_egg_lanternfish"
+					id: "5E0EA64F019FB75D"
+					optional_task: true
+					title: "猎杀灯笼鱼"
+					type: "kill"
+					value: 10L
+				}
+				{
+					id: "1D84C3E5994497BC"
+					optional_task: true
+					points: false
+					type: "xp"
+					value: 5L
+				}
+			]
+			title: "灯笼鱼的详细了解"
+			x: 1.214965986394553d
+			y: -2.246428571428569d
+		}
+		{
+			dependencies: ["59FE1E43155D73C8"]
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
+			icon: "alexscaves:immortal_embryo"
+			id: "15658396E5C5BB12"
+			shape: "pentagon"
+			size: 0.8d
+			subtitle: "&8&l[通过击杀&3碎船兽&8来解锁更多信息]&r&r"
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				icon: "alexscaves:spawn_egg_hullbreaker"
+				id: "46595B3F094ADD82"
+				optional_task: true
+				title: "猎杀碎船兽"
+				type: "kill"
+				value: 2L
+			}]
+			title: "碎船兽的详细了解"
+			x: 7.6d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6250AFE313FA45C2"]
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/primordial_caves.png"
+				}
+			}
+			id: "26792A6C0C62BB38"
+			require_sequential_tasks: true
+			size: 1.5d
+			tasks: [{
+				advancement: "alexscaves:alexscaves/discover_primordial_caves"
+				criterion: ""
+				id: "136F78D9F70F3E9B"
+				type: "advancement"
+			}]
+			title: "&6时间之外的洞天"
+			x: -5.0d
+			y: 19.0d
 		}
 	]
 	title: "动物手记"

@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
         {
             item_in: { tag: 'wildfire:metal/hammers' },
             block_in: 'create:rose_quartz_block',
-            comment: '你需要一把金属锤子才能砸碎它。',
+            comment: 'lychee.comment.rose_quartz',
             post: [
                 { type: 'damage_item', damage: 1.0 },
                 { type: 'drop_item', item: 'create:rose_quartz', count: 3 },
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 
     ];
 
-    const anvils = [
+    const stones = [
         'andesite',
         'basalt',
         'dacite',
@@ -28,17 +28,17 @@ ServerEvents.recipes((event) => {
         'granite',
         'rhyolite'
     ]
-    anvils.forEach((anvil) => {
+    stones.forEach((stone) => {
         recipes.push({
             item_in: { tag: 'tfc:hammers' },
-            block_in: `tfc:rock/raw/${anvil}`,
-            comment: '找到一块火成喷出岩然后用你的锤子右键打造你的第一个原始人砧。',
+            block_in: `tfc:rock/raw/${stone}`,
+            comment: 'lychee.comment.stone_anvil',
             post: [
                 { type: 'damage_item', damage: 1.0 },
-                { type: 'place', block: `tfc:rock/anvil/${anvil}` },
+                { type: 'place', block: `tfc:rock/anvil/${stone}` },
                 { type: "execute", command: "playsound minecraft:block.stone.break player @p ~ ~ ~", hide: true, },
             ],
-            id: `${id_prefix}anvil/${anvil}`
+            id: `${id_prefix}anvil/${stone}`
         })
     });
 
@@ -47,5 +47,6 @@ ServerEvents.recipes((event) => {
         event.custom(recipe).id(recipe.id);
     })
 })
+
 
 
