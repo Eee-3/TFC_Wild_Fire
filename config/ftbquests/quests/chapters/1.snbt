@@ -53,5 +53,20 @@
 			x: -1.0d
 			y: 1.0d
 		}
+		{
+			id: "0CABA3F3E31329F2"
+			rewards: [{
+				advancement: "tfc:world/graphite"
+				criterion: ""
+				id: "79D380678A388866"
+				type: "advancement"
+			}]
+			tasks: [{
+				id: "1F9FB6AD14D10B92"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
 	]
 }
