@@ -62,13 +62,6 @@
     "registry_name": "OFF",
     "mod_name": false
   },
-  "alekiships": {
-    "furnace": true,
-    "jukebox": true,
-    "brewing_stand": true,
-    "block": true,
-    "note_block": true
-  },
   "lootr": {
     "info": true
   },
@@ -120,7 +113,10 @@
     "composter": true,
     "decaying": true,
     "wall_torch": true,
+    "electric_forge": true,
     "windmill": true,
+    "fire_box": true,
+    "boiling_cauldron": true,
     "drying_sinew": true,
     "ocelot": true,
     "candle_cake": true,
@@ -128,6 +124,7 @@
     "clutch": true,
     "animal": true,
     "fruit_tree_sapling": true,
+    "lava_basin": true,
     "squid": true,
     "encased_axle": true,
     "crop": true,
@@ -135,6 +132,7 @@
     "hand_wheel": true,
     "sheet_pile": true,
     "quern": true,
+    "kiln": true,
     "pit_kiln_above": true,
     "hot_poured_glass": true,
     "gearbox": true,
@@ -144,6 +142,7 @@
     "barrel": true,
     "mold_table": true,
     "predator": true,
+    "steam_generator": true,
     "wild_animal": true,
     "crucible": true,
     "torch": true,
@@ -158,10 +157,6 @@
     "jack_o_lantern": true,
     "firepit": true,
     "ingot_pile": true
-  },
-  "firmaciv": {
-    "tfc_chest": true,
-    "barrel": true
   },
   "jadeaddons": {
     "equipment_requirement": ""

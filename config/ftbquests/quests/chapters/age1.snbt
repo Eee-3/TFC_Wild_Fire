@@ -23,6 +23,7 @@
 				}
 			}
 			id: "2DB49F7DE2CD977C"
+			size: 1.5d
 			tasks: [{
 				id: "2BA37816F7D9F5A3"
 				type: "checkmark"
@@ -935,6 +936,7 @@
 				""
 				"&a&n在治疗一个肢体部位的时候不能再治疗一次同一部位，需要等肢体恢复效果结束才能再次治疗&r&r"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "42F9E68FB24385E8"
 			rewards: [{
@@ -949,7 +951,7 @@
 				type: "item"
 			}]
 			title: "疼！但是得治"
-			x: -9.5d
+			x: -10.0d
 			y: -2.5d
 		}
 		{
@@ -970,7 +972,7 @@
 				type: "advancement"
 			}]
 			title: "第一滴血"
-			x: -6.5d
+			x: -6.0d
 			y: -2.5d
 		}
 		{
