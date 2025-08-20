@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dieren"
+	group: "39B5DFD6C28A7E6E"
+	id: "32F2A222BBC97820"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "dieren"
+}
