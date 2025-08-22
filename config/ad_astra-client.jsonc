@@ -17,7 +17,7 @@
     "spaceMuffler": true,
     "radio": {
         // Range: 0 - 100
-        "volume": 60,
+        "volume": 10,
         "favorites": []
     }
 }
