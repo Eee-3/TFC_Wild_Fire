@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/scythe",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/scythe/copper_2"
+    }
+}

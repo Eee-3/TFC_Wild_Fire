@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/flanged_mace",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/flanged_mace/bronze_3"
+    }
+}

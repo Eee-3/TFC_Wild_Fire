@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/longsword",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/longsword/black_steel_1"
+    }
+}

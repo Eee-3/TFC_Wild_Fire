@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/glaive",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/glaive/black_steel_2"
+    }
+}

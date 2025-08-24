@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/quarterstaff",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/quarterstaff/bismuth_bronze"
+    }
+}

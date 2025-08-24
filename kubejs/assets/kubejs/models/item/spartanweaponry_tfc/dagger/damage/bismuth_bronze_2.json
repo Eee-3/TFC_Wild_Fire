@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/dagger",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/dagger/bismuth_bronze_2"
+    }
+}

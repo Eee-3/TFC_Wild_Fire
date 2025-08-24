@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/battle_hammer",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/battle_hammer/wrought_iron_2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/battleaxe",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/battleaxe/wrought_iron_2"
+    }
+}

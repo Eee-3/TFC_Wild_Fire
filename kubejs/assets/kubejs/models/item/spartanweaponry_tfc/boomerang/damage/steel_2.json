@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/boomerang",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/boomerang/steel_2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/warhammer",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/warhammer/bismuth_bronze_2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/pike",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/pike/red_steel"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/katana",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/katana/wrought_iron_1"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/greatsword_blocking",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/greatsword/steel_0"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/halberd",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/halberd/blue_steel_0"
+    }
+}

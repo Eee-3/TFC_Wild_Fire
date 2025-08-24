@@ -1,0 +1,6 @@
+{
+    "parent": "spartanweaponry:item/base/throwing_knife",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/throwing_knife/copper"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "parent": "spartanweaponry:item/base/greatsword",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/greatsword/black_steel_3"
+    },
+    "overrides": [
+        {
+            "model": "kubejs:item/spartanweaponry_tfc/greatsword/damage/black_steel_blocking_3",
+            "predicate": {
+                "spartanweaponry:blocking": 1.0
+            }
+        }
+    ]
+}
