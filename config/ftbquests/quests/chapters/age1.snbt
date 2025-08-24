@@ -73,11 +73,6 @@
 				}
 			}
 			id: "2C3C24598A5CB94A"
-			rewards: [{
-				id: "02B15AAA6A8458C2"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "不是剑"
 			tasks: [{
 				id: "25A1FD64127991A1"
@@ -127,11 +122,6 @@
 				}
 			}
 			id: "78FB35EB700196BA"
-			rewards: [{
-				id: "4D23B58BF44DEF87"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "前期食物获取"
 			tasks: [
 				{
@@ -207,11 +197,6 @@
 				}
 			}
 			id: "77133CE00F63B5E7"
-			rewards: [{
-				id: "15C732CC2BCED01B"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "砍树！"
 			tasks: [{
 				id: "2BD557205F73C6A1"
@@ -250,11 +235,6 @@
 				}
 			}
 			id: "6AFF0C52463AEA9E"
-			rewards: [{
-				id: "32B6D02D5E9C7E22"
-				type: "xp"
-				xp: 18
-			}]
 			tasks: [{
 				id: "6E9218F2FCFA7F1A"
 				item: {
@@ -281,11 +261,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "6C9C6088595C7D07"
-			rewards: [{
-				id: "6F930784A5F3F1AA"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "你可以给我草吗"
 			tasks: [{
 				id: "5B739EC28E4CC075"
@@ -301,11 +276,6 @@
 			description: ["现在你可以用干草制作纤维绳来加固你的石制工具，让他获得100%的耐久度"]
 			hide_until_deps_complete: true
 			id: "2B78615306BE3AFD"
-			rewards: [{
-				id: "3A5AFD41D5698A90"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "绑好！"
 			tasks: [{
 				id: "4F61750C4C23F613"
@@ -326,11 +296,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "36D7E98F85B893C9"
-			rewards: [{
-				id: "53C397E4C11E5FFD"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			subtitle: "是的，下一步是陶器"
 			tasks: [{
@@ -367,11 +332,6 @@
 				id: "tfc:ceramic/unfired_large_vessel"
 			}
 			id: "57F6BC38D1A881B4"
-			rewards: [{
-				id: "7065E58B4544B69B"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			subtitle: "没有人把泥土弄湿了之后置之不管，好像砖就能神奇地自己造出来一样。——普鲁塔克"
 			tasks: [
@@ -418,11 +378,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "653800260C26E91B"
-			rewards: [{
-				id: "2551D91E7293A5B4"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			subtitle: "可惜，还不是做木板的时候"
 			tasks: [{
@@ -444,11 +399,6 @@
 			]
 			icon: "minecraft:oak_door"
 			id: "2A2194004E2ACB99"
-			rewards: [{
-				id: "4690C9086E9906BE"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "71EEAFDAC255A464"
@@ -469,11 +419,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "038E23C880719111"
-			rewards: [{
-				id: "5F8592493EB19CBC"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "只需要两根木棍"
 			tasks: [{
 				id: "0F87B5DA6CC32C17"
@@ -501,11 +446,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "4386B15CB5B92F9C"
-			rewards: [{
-				id: "21E885A4A2D8B282"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "残忍又血腥"
 			tasks: [
 				{
@@ -580,11 +520,6 @@
 			description: ["成功获得一个完整的猎物！！就应该趁早把他带回家处理了"]
 			icon: "butcher:pig_corpse_item"
 			id: "4C47B292B62DA222"
-			rewards: [{
-				id: "771020554708E1CA"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "拖回家……"
 			tasks: [{
 				id: "4C0AE24004D92ECD"
@@ -616,11 +551,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "11A35AC0A49C979D"
-			rewards: [{
-				id: "4AE9A67A739785E6"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "处理尸体"
 			tasks: [{
 				id: "468857CDECA2A260"
@@ -650,11 +580,6 @@
 			icon: "tfc:firepit"
 			id: "7E60DB1DFF798B1C"
 			invisible: true
-			rewards: [{
-				id: "628695281DA36E4D"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "火……温暖的火"
@@ -693,11 +618,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:ceramic/pot"
 			id: "6D3869F6AB5ECDD2"
-			rewards: [{
-				id: "327EF228E4BBC4CA"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "一些比较基础的烹饪"
 			tasks: [
 				{
@@ -734,11 +654,6 @@
 				id: "tfc:food/cooked_mutton"
 			}
 			id: "718D4BF687097875"
-			rewards: [{
-				id: "41D8B20F98E96881"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "你需要吃熟肉，对吧？没有人类是不吃烤熟的肉的。"
 			tasks: [{
 				id: "2C130E67E896C049"
@@ -768,11 +683,6 @@
 			icon: "tfc:thatch"
 			id: "19CAFD0FAE153C2F"
 			invisible: true
-			rewards: [{
-				id: "67FC8C4696B28131"
-				type: "xp"
-				xp: 18
-			}]
 			size: 1.5d
 			subtitle: "先不做也可以"
 			tasks: [
@@ -818,11 +728,6 @@
 				tag: { }
 			}
 			id: "16F9997D7A1F6EB3"
-			rewards: [{
-				id: "3F6DD9F1C1B96E9F"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "毕竟没人愿意等"
@@ -882,11 +787,6 @@
 				}
 			}
 			id: "24A56687163D36FE"
-			rewards: [{
-				id: "61CB4C246857CD8A"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "没人敢拿刚烧好的东西"
 			tasks: [
 				{
@@ -939,11 +839,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "42F9E68FB24385E8"
-			rewards: [{
-				id: "07B56B41B895C951"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "嚼碎了抹在伤口上"
 			tasks: [{
 				id: "5A3F80BCBF4FB9CB"
@@ -958,11 +853,6 @@
 			dependencies: ["2DB49F7DE2CD977C"]
 			id: "77B85F179EA08A23"
 			invisible: true
-			rewards: [{
-				id: "089E1D5FED205BD7"
-				type: "xp"
-				xp: 18
-			}]
 			subtitle: "带了药的绷带不能止血，没带药的绷带不能治伤"
 			tasks: [{
 				advancement: "majruszsdifficulty:bleeding"
@@ -986,11 +876,6 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_planks"
 			id: "49367AA483E68761"
-			rewards: [{
-				id: "26ACD177D1BC3D04"
-				type: "xp"
-				xp: 18
-			}]
 			shape: "gear"
 			size: 3.0d
 			subtitle: "前往下一章"

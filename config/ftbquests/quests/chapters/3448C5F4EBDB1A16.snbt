@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3448C5F4EBDB1A16"
-	group: "2BD524ABD6AD1EEE"
+	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: {
@@ -16,7 +16,7 @@
 		id: "tfc:metal/double_ingot/steel"
 	}
 	id: "3448C5F4EBDB1A16"
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -764,47 +764,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
-			description: [
-				"&e&n汤姆的简易存储&r&r是一个能把&a存储方块&r整合到一起的一个mod，有了它再也不用担心物品分类，只要把箱子全部连接在一起，就可以通过控制一个终端来查找所有箱子的物品的功能来整合,后期获得的无线终端更是非常厉害，做好了他就相当于做了个无限量扩展的背包"
-				""
-				"相关的教程可以在b站搜索,本任务不再赘述"
-			]
-			icon: "toms_storage:ts.adv_wireless_terminal"
-			id: "4E9DF8D9E5E633DB"
-			rewards: [{
-				id: "111E013486B75248"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "高级整合器"
-			tasks: [
-				{
-					id: "5DFD73341E4C96D5"
-					item: "toms_storage:ts.inventory_connector"
-					type: "item"
-				}
-				{
-					id: "0938BBE0C808EE4E"
-					item: "toms_storage:ts.trim"
-					type: "item"
-				}
-				{
-					id: "653253DD5734D049"
-					item: "toms_storage:ts.inventory_proxy"
-					type: "item"
-				}
-				{
-					id: "3304761F53F25030"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-			]
-			title: "汤姆的简易存储：箱子缝合怪"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["751B81E18D2089CB"]
 			description: ["这是你可以获得的最强升级了，装上之后你的抽屉都不一定有装满的那一天"]
 			id: "2BEB019453D0D72E"
@@ -822,68 +781,6 @@
 			}]
 			title: "最强升级！"
 			x: -0.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4E9DF8D9E5E633DB"]
-			description: ["现在你可以通过终端来直接访问整个箱子系统的同时在终端里面自主合成道具，非常方便"]
-			id: "56EF21FEFEAE6561"
-			rewards: [{
-				id: "1EB9C0718D11C8DC"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "合成终端"
-			tasks: [{
-				id: "089A9BDDED6BDE4A"
-				item: "toms_storage:ts.crafting_terminal"
-				type: "item"
-			}]
-			title: "更方便的终端"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["56EF21FEFEAE6561"]
-			description: ["无线终端可以使你在绑定的存储终端附近16格的范围自由无线取出交互终端内的功能，已经非常方便了，只不过想要当百宝袋使用还有些距离……"]
-			id: "2253B558069A17CE"
-			rewards: [{
-				id: "074C0CEB343A8E22"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "无线！"
-			tasks: [{
-				id: "3114C2C3B46D6F4B"
-				item: "toms_storage:ts.wireless_terminal"
-				type: "item"
-			}]
-			title: "更更方便的终端"
-			x: 7.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["2253B558069A17CE"]
-			description: [
-				"高级无线终端可以让你在64格内交互绑定的存储终端，在该终端附近制造一个等级1的信标可以让他在主世界任意范围无线交互，如果这个信标的等级更高，可以跨纬度任意交互！"
-				""
-				"&a&l&n不过交互的前提是无线终端的区块正在被加载！&r&r&r"
-			]
-			id: "352CF88DF3F1E977"
-			rewards: [{
-				id: "283552E87BE7D102"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "pentagon"
-			subtitle: "天涯若比邻"
-			tasks: [{
-				id: "03B4AAB81DA7CA1D"
-				item: "toms_storage:ts.adv_wireless_terminal"
-				type: "item"
-			}]
-			title: "更更更方便的终端"
-			x: 7.5d
 			y: -2.0d
 		}
 		{

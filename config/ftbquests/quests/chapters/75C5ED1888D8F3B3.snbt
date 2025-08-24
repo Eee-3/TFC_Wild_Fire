@@ -24,6 +24,7 @@
 		{
 			dependencies: ["0DEA4BABDEA8ED79"]
 			description: ["你集齐了七个铜合金双锭，制作出了铜合金砧，是时候学习锻造的技巧了。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -36,11 +37,6 @@
 				id: "tfc:metal/anvil/bronze"
 			}
 			id: "4A4359CEAD6FB810"
-			rewards: [{
-				id: "76A9EFC45A06F568"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "别忘了把铜砧熔了"
@@ -94,6 +90,7 @@
 		{
 			dependencies: ["6F183520DCA27C19"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -106,11 +103,6 @@
 				id: "tfc:metal/double_ingot/bronze"
 			}
 			id: "0DEA4BABDEA8ED79"
-			rewards: [{
-				id: "041859932CF73376"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 7L
@@ -147,11 +139,6 @@
 				id: "tfc:metal/ingot/bronze"
 			}
 			id: "3CD4B3897381D686"
-			rewards: [{
-				id: "61A6171DB3195D67"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			subtitle: "接下来，让我们步入合金铜时代"
 			tasks: [{
@@ -169,14 +156,10 @@
 				""
 				"果树是一种能生产水果的树木，其外观上比正常的树木小且枝干更细，其树苗的获取方式也跟一般树木不同。当你站在果树下向上看的时候，你会看到一条竖直向上生长的主枝，和生长在主枝附近的分枝，破坏分枝和主枝相连接的部分即可获得果树树苗。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:wood/sapling/hickory"
 			id: "25CF5F9C5D4B934C"
-			rewards: [{
-				id: "18D2B27698942DCB"
-				type: "xp"
-				xp: 25
-			}]
 			tasks: [{
 				id: "1F070B79662A844B"
 				item: {
@@ -196,6 +179,7 @@
 		{
 			dependencies: ["5EE1C576428C5C78"]
 			description: ["大麦、小麦、黑麦、燕麦、玉米、大米，这六种作物被称作谷物，它们共同的特点是作物本身不含有营养值，必须被加工成面食才具有营养值。这类作物具有两个共同的配方：与小刀合成获得谷物粒，以及谷物粒在手推磨中磨碎获得面粉。而面粉通过一系列处理后就可以得到能够补充谷物的面包与面条。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -209,11 +193,6 @@
 				tag: { }
 			}
 			id: "20D072C6FCC3F36D"
-			rewards: [{
-				id: "04618619000ABDBB"
-				type: "xp"
-				xp: 25
-			}]
 			tasks: [
 				{
 					id: "2C1B69CFECC3C1BE"
@@ -247,13 +226,9 @@
 		{
 			dependencies: ["6F183520DCA27C19"]
 			description: ["你可能在获得铁矿之后就将其熔化，试图将其铸造为铁锭，可最后你只得到一块黑色的铁锭——铸铁锭。这是因为单纯的铸造会使铁锭内的含碳量过高，硬度达不到合格铁的标准。合格的铁被称为锻铁，需要使用名为锻铁炉的特制炉子烧炼得到。跟随这条任务线，你将学会锻铁的锻造方法。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "42FE5A114D45AF42"
-			rewards: [{
-				id: "4D988CD9886AC9E7"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "你这铁怎么不保熟啊"
 			tasks: [{
 				id: "1F1B667E83954EB8"
@@ -279,13 +254,8 @@
 				""
 				"黄铜是铜和锌的合金，将铜与锌按照正确的比例融化即可获得黄铜。"
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			id: "713BC7953932032B"
-			rewards: [{
-				id: "144DB35847C618CE"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "并非二级金属"
 			tasks: [{
 				id: "53E83F8F9926CC47"
@@ -311,14 +281,10 @@
 				""
 				"如果你没有黄铁矿又找不到怎么办？使用任务线先前送给你的切制宝石吧，这些宝石也是可以磨成粉的。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:powder/ruby"
 			id: "1571B5B650ECB701"
-			rewards: [{
-				id: "62C6AD6BBEE3AB23"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "虽然但是，这些宝石磨成粉用途更多"
 			tasks: [{
 				id: "584715EF35B68291"
@@ -340,13 +306,9 @@
 			dependencies: ["5EE1C576428C5C78"]
 			description: ["梳洗站是一种畜牧业用方块，用于自动喂食动物。如果你哪天忘记了喂食动物，动物就会跑去范围内装有食物的梳洗站进食并自己提高好感度。梳洗站可由不同种类的金属制成，金属的等级越高，梳洗站影响的范围越大。"]
 			hide_dependency_lines: false
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "0EF5D7352D4D611D"
-			rewards: [{
-				id: "6F7F17278D95F241"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "不用亲手喂还能涨好感度这种事怎么想都很奇怪"
 			tasks: [{
 				id: "1685F15CC992E94E"
@@ -376,11 +338,6 @@
 				id: "tfc:brass_mechanisms"
 			}
 			id: "0366F1D539BD472C"
-			rewards: [{
-				id: "4E8F3C4432693006"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "三 幻 神"
 			tasks: [
 				{
@@ -414,14 +371,10 @@
 				""
 				"除果树木以外，另一种名为灌木的植物也能生长水果，只需要破坏野外的野生灌木，并将灌木种植在适宜的气候中、平整的地面上，灌木即可开始生长。不过由于灌木的产量并不高，这里不做详细介绍，有需求请查阅书籍。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:plant/red_apple_sapling"
 			id: "4E94E1BF45EA5096"
-			rewards: [{
-				id: "555919ACA8A688C2"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "你获得水果的唯二手段之一"
 			tasks: [{
 				id: "0CAEE7C733BCF105"
@@ -436,11 +389,6 @@
 			dependencies: ["4E94E1BF45EA5096"]
 			description: ["果树叶被破坏时有概率掉落树叶，树叶可用于制作干燥垫。"]
 			id: "17F0AAB82BB1DE98"
-			rewards: [{
-				id: "2655DAF13046B552"
-				type: "xp"
-				xp: 25
-			}]
 			tasks: [{
 				id: "054C7F46DD984E2B"
 				item: "firmalife:fruit_leaf"
@@ -452,13 +400,9 @@
 		{
 			dependencies: ["5EE1C576428C5C78"]
 			description: ["气象站是两个设施：温室和地窖的核心方块，其由红石、黄铜机件、木板和蓝色玻璃制成。蓝色玻璃由二氧化硅玻璃吹管与铜粉合成再进行台盆浇筑得到。气象站用于指示温室与地窖是否有效，一旦结构无效，气象站四周玻璃中的材质就会转变成冰。相反，如果有效，就会变成水。右键一次气象站则可使其立刻开始检测一遍多方块结构。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "0D888CA32C333F40"
-			rewards: [{
-				id: "6B2446B918DF62A0"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "空，空调？"
 			tasks: [{
 				id: "61CCFAC4B893ED36"
@@ -479,14 +423,10 @@
 				""
 				"不锈钢等级以下的温室都会随着时间流逝而老化。不必在意，这不会对温室造成任何影响。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "firmalife:treated_wood_greenhouse_wall"
 			id: "400313764B17022E"
-			rewards: [{
-				id: "71BB0B5D0FF9B9A0"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "四季如春"
 			tasks: [
 				{
@@ -519,11 +459,6 @@
 			description: ["种植盆是温室中用于栽培作物的载体，每个种植盆能够种植的作物种类各不相同，种子自己会告诉你它们能够种在哪个种植盆里。种植盆和耕地一样可以施肥，但与耕地不一样需要每隔一段时间浇水。如果不及时浇水，种植盆中的作物便不会生长。你可以搭建自动浇水的灌溉系统，或者用喷壶手动浇水。"]
 			icon: "firmalife:large_planter"
 			id: "275A0704EB4EFA8C"
-			rewards: [{
-				id: "50A0F1C584B081F6"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "现在你要天天浇水了"
 			tasks: [
 				{
@@ -585,11 +520,6 @@
 				id: "firmalife:copper_pipe"
 			}
 			id: "5E3BE1BCF4F5095E"
-			rewards: [{
-				id: "7EDFF373D25E7D3E"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "现在又不用天天浇水了"
 			tasks: [
 				{
@@ -620,13 +550,9 @@
 		{
 			dependencies: ["1571B5B650ECB701"]
 			description: ["将宝石粉与黄铜棒合成就能得到宝石锯了，这种锯子对玻璃具有精准采集效果，在获得精准采集附魔之前只有它能破坏玻璃并留下掉落物。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "740B133DCD9B52AE"
-			rewards: [{
-				id: "14B96145C0891DDA"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "精准采集I"
 			tasks: [{
 				id: "35ACE5BDEC48136C"
@@ -659,14 +585,10 @@
 				""
 				"将玻璃配料与吹管合成会得到含有玻璃的吹管，将吹管加热直到变成淡红色即可开始吹制玻璃，注意不要加热到炽白，否则内含的玻璃会消失。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:blowpipe"
 			id: "345D69AFA3121901"
-			rewards: [{
-				id: "085AA4C71CA75B9D"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "肺活量大考验"
 			tasks: [
 				{
@@ -702,11 +624,6 @@
 			dependencies: ["345D69AFA3121901"]
 			description: ["吹制玻璃需要用到黄铜电镀方块，将五块电镀方块围绕一格空气方块（除了顶面）放置即可构建浇筑盆；将九格电镀方块搭建成3x3的平台即可构建浇筑桌。浇筑盆用于浇筑玻璃块，而浇筑桌用于浇筑玻璃板。"]
 			id: "570B10ABF6F54ED0"
-			rewards: [{
-				id: "775777751CD24559"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "别做成黄铜块了"
 			tasks: [{
 				count: 5L
@@ -734,11 +651,6 @@
 				"吹制玻璃物品的工序比吹制玻璃块玻璃板更加复杂，由于种类过多这里不做赘述，若有需求请自行查阅书和JEI。"
 			]
 			id: "6FF228D0CFA724F1"
-			rewards: [{
-				id: "652AECD9419981FE"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "晶莹剔透"
 			tasks: [{
 				id: "6A2A639D603B0A75"
@@ -751,13 +663,9 @@
 		{
 			dependencies: ["20D072C6FCC3F36D"]
 			description: ["将面粉与装有水的容器合成即可制作粗饼面团，任何一种面粉都可以制作出粗饼面团，且一份面粉可以制作出两份粗饼面团。粗饼面团在篝火中即可烤熟为粗饼，烤熟的粗饼会比粗饼面团多出两倍的保质期，且能够补充谷物营养值。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "0C8B3BCFC6EC225A"
-			rewards: [{
-				id: "670585A9EF61C730"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "看起来没那么精致"
 			tasks: [
 				{
@@ -883,11 +791,6 @@
 			hide_until_deps_visible: true
 			icon: "firmalife:oven_bottom"
 			id: "56CDC910560BCE74"
-			rewards: [{
-				id: "4D27096E95F58BEF"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "集成式厨房的优秀解决方案"
 			tasks: [
 				{
@@ -919,11 +822,6 @@
 			]
 			icon: "firmalife:cured_oven_top"
 			id: "5FF7FFB0F4F5ABBE"
-			rewards: [{
-				id: "26888F8C78ECD0CF"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "制陶术是一直在c的"
 			tasks: [{
 				id: "6417B821A7715F6F"
@@ -939,11 +837,6 @@
 			description: ["想要制作正经的面包需要酵种使其进行发酵，酵种的从无到有比较麻烦，需要将用干燥垫烘干的水果密封在大桶的清水里，每一个水果能生成100mb酵种。在有了酵种之后，后续再生产就比较简单了，将腐烂或者未腐烂的面粉密封在酵种内就可使其成倍增殖。"]
 			hide_until_deps_visible: true
 			id: "47559D982B64A34E"
-			rewards: [{
-				id: "5141FDBD90C2F21E"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "发酵"
 			tasks: [{
 				id: "581210F7E3FF80F7"
@@ -966,12 +859,8 @@
 		{
 			dependencies: ["47559D982B64A34E"]
 			description: ["将面粉与装有酵种的桶与糖（或蜂蜜）合成即可获得面团，这种面团只能在烤炉中烤制。烤制出来的面包拥有比粗饼更多的营养值，且能够制作三明治。三明治由上下两片面包，中间的三样夹心和一把刀合成而成，其会保留面包50%的营养值，夹心80%的营养值，且拥有独立的保质期。"]
+			hide_until_deps_complete: true
 			id: "212780ACC7F7C673"
-			rewards: [{
-				id: "4CBA37AD267178AD"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "谁会不爱吃面包呢？"
 			tasks: [
 				{
@@ -1007,11 +896,6 @@
 			description: ["披萨是一种十分复杂的料理，同时能提供较多的营养值。我个人不推荐制作披萨，但是如果你做出来了，我会给你奖励。"]
 			hide_until_deps_visible: true
 			id: "17A8B4197F2ED71A"
-			rewards: [{
-				id: "0B6C3058C379B8B3"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "gear"
 			subtitle: "这个问题永远不会带来和平"
 			tasks: [{
@@ -1053,11 +937,6 @@
 			]
 			hide_dependency_lines: true
 			id: "1B7FF0A15603E9C3"
-			rewards: [{
-				id: "6E375D0916AC786A"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "最没用的一集"
 			tasks: [
 				{
@@ -1086,11 +965,6 @@
 			dependencies: ["17F0AAB82BB1DE98"]
 			description: ["将三个果树叶子排成一排合成即可获得干燥垫，它是一个通过阳光晾晒晒干物品水分的方块。右键物品以将物品放置在上面。它可以晾晒水果以使其保质期延长两倍、将干草块晾晒为能够堆肥的枯萎的草，或者用来制作豆腐。干燥垫需要阳光才能工作，在下雨或下雪的情况下无法工作，且晾晒进度会重置。"]
 			id: "06F939458D851BBB"
-			rewards: [{
-				id: "02AA30E1ABC380C3"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "人类最早利用太阳能的范例"
 			tasks: [{
 				id: "40B260526A2D0774"
@@ -1107,14 +981,10 @@
 				""
 				"一个成功构建的地窖由密封方块围成的一个房间，几扇密封门和一个气象站构成。如果你正确地构建了多方块结构，通过观察气象站即可得知。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "firmalife:sealed_bricks"
 			id: "7736AC779D1DA025"
-			rewards: [{
-				id: "4D67F41004B8F218"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "主观缓时"
 			tasks: [
 				{
@@ -1137,11 +1007,6 @@
 			description: ["食物架和悬挂架是与地窖配套的专用食物储存方块，食物架用于储存肉和鱼以外的食物，而悬挂架用于储存肉和鱼。一个食物架和悬挂架能够储存一组同种的食物，且环境温度越低，保质期延长效率越高。"]
 			icon: "firmalife:wood/food_shelf/hickory"
 			id: "1E91D720F8A2C6EE"
-			rewards: [{
-				id: "352FED53F261D7AC"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "地窖专用"
 			tasks: [
 				{
@@ -1197,11 +1062,6 @@
 			]
 			icon: "tfc:powder/salt"
 			id: "3ACBDD26F3E31964"
-			rewards: [{
-				id: "08A9E74232D82C39"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "麻烦，但有效"
 			tasks: [
 				{
@@ -1250,14 +1110,10 @@
 				"除马车以外，该mod还提供了犁与牲畜运载马车，具体内容请自行研究。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfcastikorcarts:supply_cart/hickory"
 			id: "20DB734007DC2637"
-			rewards: [{
-				id: "0491DDA21B1DB5DC"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "骆驼史子"
 			tasks: [{
 				id: "255ACFCB49143BB6"
@@ -1279,13 +1135,9 @@
 			dependencies: ["5EE1C576428C5C78"]
 			description: ["你的牧场也差不多该建成了，是时候收集产物了，先用金属锻造出一把剪刀来获得一些羊毛吧。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "075CB10EB554B599"
-			rewards: [{
-				id: "19C357D489D4E8C8"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "羊没说它有意见"
 			tasks: [{
 				id: "21D3865693D439BF"
@@ -1312,13 +1164,9 @@
 			dependencies: ["5EE1C576428C5C78"]
 			description: ["当产奶动物的好感度足够时即可挤奶，你可以用陶罐或水罐饮用奶，饮用奶可以增加乳制品营养值。"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "firmalife:bucket/yak_milk"
 			id: "0F8DF269DEAF3917"
-			rewards: [{
-				id: "66422923D808280E"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "牛也没说它有意见"
 			tasks: [{
 				id: "439A318845623A01"
@@ -1381,11 +1229,6 @@
 			hide_until_deps_visible: true
 			icon: "firmalife:gouda_wheel"
 			id: "69AA5A517FBED61A"
-			rewards: [{
-				id: "025C99C62ECDD39D"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "某种真正意义上不会腐烂的食物"
 			tasks: [{
 				id: "26C7C350D5F89F1F"
@@ -1406,13 +1249,9 @@
 		{
 			dependencies: ["4A4359CEAD6FB810"]
 			description: ["锻造锻铁需要大量的木炭作为支持，如果你的木炭太少，我建议你先去多准备一些。"]
+			hide_until_deps_complete: true
 			icon: "minecraft:charcoal"
 			id: "7D591DFB9CF4D847"
-			rewards: [{
-				id: "6FADCF34BE2126D2"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			subtitle: "未雨绸缪"
 			tasks: [{
@@ -1432,12 +1271,8 @@
 				""
 				"要搭建锻铁炉多方块结构，你需要用石砖、天然石或平滑石构建一条最高五格高，最矮三格高的3x3烟囱，烟囱中心除了底面的一格都需要留空，四个角也可以去掉。在烟囱的第二格任意一面开一个口，并将口的左右两面也放上石方块，并将锻铁炉方块放在口中，锻铁炉就搭建完成了。具体的形状可以通过查阅书得知。"
 			]
+			hide_until_deps_complete: true
 			id: "15E9260AECAE335B"
-			rewards: [{
-				id: "35A9C6494D7C2726"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "265BEAB3CDA219F3"
@@ -1454,6 +1289,7 @@
 				""
 				"当你的原料填充完毕后，关闭锻铁炉方块，用起火器将其点燃即可使其开始烧炼。锻铁炉烧炼一次铁需要游戏中15小时。"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -1469,11 +1305,6 @@
 				}
 			}
 			id: "6E3F22CD2A68DE94"
-			rewards: [{
-				id: "0D861E986E0E189F"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			subtitle: "Fe2O3+3CO==2Fe+3CO2(高温)"
 			tasks: [{
@@ -1488,13 +1319,9 @@
 		{
 			dependencies: ["6E3F22CD2A68DE94"]
 			description: ["当锻铁炉烧炼完毕后，内部的熔融物将会被转变为生铁方坯，投入的原材料每含100mb铁就会生成一个，不足的部分会被舍去。使用镐子将其挖掉之后，你需要到你的铜合金砧里再去锻打两遍，第一遍锻打成精铁方坯，第二遍锻打成锻铁锭。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "58377F9BA65DF0F2"
-			rewards: [{
-				id: "340B30486544B399"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			subtitle: "锻打出其中的碳"
 			tasks: [{
@@ -1518,11 +1345,6 @@
 			dependencies: ["58377F9BA65DF0F2"]
 			description: ["你成功锻打了生铁方坯，接下来还需要最后一遍锻打就能得到生铁了。"]
 			id: "530975738347D212"
-			rewards: [{
-				id: "056003CEBABA523E"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "hexagon"
 			subtitle: "全力挥锤！"
 			tasks: [{
@@ -1545,13 +1367,9 @@
 		{
 			dependencies: ["530975738347D212"]
 			description: ["终于，在完成对精铁方坯的最后一次锻打后，你获得了锻铁锭。这就是正版铁锭了，与原版铁锭的用途没有差别。只不过在开始运用它之前，还是先做一个铁砧出来比较好。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "252AB0346BFE9A57"
-			rewards: [{
-				id: "151F66A9A938A962"
-				type: "xp"
-				xp: 25
-			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "万物都有极限——铁矿石不可能被打造成黄金。——马克·吐温"
@@ -1577,13 +1395,9 @@
 			dependency_requirement: "one_completed"
 			description: ["你可以把奶装到陶锅里面煮沸，做成奶皮，将奶皮研磨成粉，就可以变成奶粉！奶粉可以存储起来，想喝也只需加水"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "artisanal:powdered_milk"
 			id: "3DCF94DBD6241A3B"
-			rewards: [{
-				id: "753BDA801C44C6FC"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "只需加水"
 			tasks: [{
 				advancement: "artisanal:story/powdered_milk"
@@ -1641,11 +1455,6 @@
 			]
 			icon: "tfc:quern"
 			id: "0ECF37921F02C393"
-			rewards: [{
-				id: "572D1FE40F5AE489"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "果汁！"
 			tasks: [{
 				id: "72841F83FCEB9075"
@@ -1662,13 +1471,9 @@
 				""
 				"烧制小罐，然后让小罐用装上蜡油/猪油/鸡油的木桶[或者黄油]以及你想要的小型食物最后封装，你就可以获得一个可以保存很久的食物小陶罐了!"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "3C419F98EA5F89AF"
-			rewards: [{
-				id: "6D987578CD8CBE40"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "是时候保存食物了"
 			tasks: [
 				{
@@ -1704,14 +1509,10 @@
 				""
 				"把油脂炼成蜡脂，用草木灰和水混合获得碱水。然后把蜡脂与碱水混合，你就会获得脂肪酸盐，然后密封大桶八分钟，脂肪酸盐就会变成肥皂！肥皂丢进水里可以变成肥皂水，肥皂水可以轻松洗净小罐子以重复使用！"
 			]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "butcher:animalfat"
 			id: "3072431A0B7D21A5"
-			rewards: [{
-				id: "3F054649352619E0"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "是时候制作能够带走污垢的东西了"
 			tasks: [
 				{
@@ -1748,11 +1549,6 @@
 				"大家肯定不不会喜欢脏脏油油的餐具的"
 			]
 			id: "6DD42AF94B9009F9"
-			rewards: [{
-				id: "294892D20747280D"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "食品卫生很重要"
 			tasks: [{
 				id: "0AA1D6CAD34F8B19"
@@ -1770,6 +1566,7 @@
 				"背包是一个能够给你提供多余空间的一个装备，可以装在饰品栏的背部，按“B”快捷打开"
 				"虽然他的储量没有特别的多，但是苍蝇再小也是肉、"
 			]
+			hide_until_deps_complete: true
 			id: "5D9EF714343B776B"
 			subtitle: "终于有更多的空间了"
 			tasks: [{
@@ -1789,6 +1586,7 @@
 				""
 				"同样的，酿久一点也可以变成陈年啤酒！"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1819,6 +1617,7 @@
 		}
 		{
 			dependencies: ["3CD4B3897381D686"]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1843,6 +1642,7 @@
 		}
 		{
 			dependencies: ["3CD4B3897381D686"]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1867,31 +1667,27 @@
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
+			hide_until_deps_complete: true
 			id: "198FB45018B308D5"
-			tasks: [{
-				id: "510FA6FF21B2C6DC"
-				item: "kubejs:trachyandesite_alloy"
-				type: "item"
-			}]
-			x: 81.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["6F183520DCA27C19"]
-			id: "23F40E78FEC0CC34"
-			tasks: [{
-				id: "5704E7D08925EA40"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			x: 81.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"23F40E78FEC0CC34"
-				"198FB45018B308D5"
+			tasks: [
+				{
+					id: "510FA6FF21B2C6DC"
+					item: "kubejs:trachyandesite_alloy"
+					type: "item"
+				}
+				{
+					id: "5DF3C92E712F227D"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
 			]
+			title: "廉价又好用的工业金属"
+			x: 81.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["198FB45018B308D5"]
+			hide_until_deps_complete: true
 			id: "492B40A0DB508FD0"
 			tasks: [
 				{
@@ -1920,13 +1716,9 @@
 				""
 				"工作盆是一种工作辅助方块，可以存储九种以物流形式输入的最多16个物品或以掉落物形式输入的最多64个物品以及两种最多1000mb的流体，且六个方向都可以输入输出。工作盆侧面有一个配方过滤插槽，可以用于设定目标产物以避免配方混淆。工作盆在侧下方有置物台、溜槽、传送带、垂直放置的机械动力漏斗、工作盆之类的开放式存储方块时，会出现一个开口并尝试自动输出物品。在动态结构上倒置的工作盆会将其中的物品以掉落物的形式掉出。"
 			]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_mixer"
 			id: "1E12E1D7A92C2284"
-			rewards: [{
-				id: "5BFED95A62348424"
-				type: "xp"
-				xp: 50
-			}]
 			subtitle: "这里没有奶昔"
 			tasks: [
 				{
@@ -1951,13 +1743,10 @@
 				""
 				"置物台是一种容器和工作辅助方块，可以存储一批物品——一次输入的最少1个最多64个物品。置物台可以从六个方向输入物品，也可以接收掉落物，但在其存储的一批物品离开之前不会再接收其他物品。"
 			]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_press"
 			id: "095495F4961CCA5D"
-			rewards: [{
-				id: "72CA64143AACDFEC"
-				type: "xp"
-				xp: 50
-			}]
+			shape: "circle"
 			subtitle: "锻造？什么是锻造？"
 			tasks: [
 				{
@@ -1990,7 +1779,9 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
+			hide_until_deps_complete: true
 			id: "4052E4CC34F12433"
+			shape: "circle"
 			tasks: [{
 				id: "3E8E376301AF9688"
 				item: "create:millstone"
@@ -2001,6 +1792,7 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
+			hide_until_deps_complete: true
 			id: "461E29387C6F301A"
 			tasks: [{
 				id: "38155864A26D7110"
@@ -2012,6 +1804,7 @@
 		}
 		{
 			dependencies: ["492B40A0DB508FD0"]
+			hide_until_deps_complete: true
 			id: "5BFB313AE619BA74"
 			tasks: [{
 				id: "672BC21F7444DADE"
@@ -2024,6 +1817,7 @@
 		}
 		{
 			dependencies: ["5BFB313AE619BA74"]
+			hide_until_deps_complete: true
 			id: "4F573E92AB8D8E7F"
 			tasks: [{
 				id: "0F19FA9A1D28769C"
@@ -2035,6 +1829,7 @@
 		}
 		{
 			dependencies: ["4F573E92AB8D8E7F"]
+			hide_until_deps_complete: true
 			id: "4B918C04351D501D"
 			tasks: [{
 				id: "0284B1262EAEEA24"
@@ -2046,6 +1841,7 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
+			hide_until_deps_complete: true
 			id: "13B60D1D45C8F2B0"
 			tasks: [{
 				id: "3C523E5662F42BB5"
@@ -2057,6 +1853,7 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
+			hide_until_deps_complete: true
 			id: "0D8ADE2F487C7DA4"
 			tasks: [{
 				id: "45BED560E8AB5AFE"
@@ -2069,6 +1866,7 @@
 		{
 			dependencies: ["492B40A0DB508FD0"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "701A5DA00B5222CF"
 			tasks: [{
 				id: "23BC4BDBBA12EE59"
@@ -2081,6 +1879,7 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			hide_until_deps_complete: true
 			id: "151BE63A8B9BADCB"
 			tasks: [{
 				id: "1AB753D9CDFEBE25"
@@ -2092,6 +1891,7 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			hide_until_deps_complete: true
 			id: "31B3E6F21348E402"
 			tasks: [
 				{
@@ -2110,6 +1910,7 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			hide_until_deps_complete: true
 			id: "0F606AB5BA6D609E"
 			tasks: [{
 				id: "5ACD80C04D62F283"
@@ -2121,6 +1922,7 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			hide_until_deps_complete: true
 			id: "72A61ACE442DFF84"
 			tasks: [{
 				id: "6561F9BC27E52BC1"
@@ -2132,6 +1934,7 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			hide_until_deps_complete: true
 			id: "5DA0438D2C89A126"
 			tasks: [{
 				id: "13F6606A4A2CB8E7"
@@ -2142,8 +1945,8 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["23F40E78FEC0CC34"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7B14309A72A35AF9"
 			tasks: [{
 				id: "3FFF7F5FE23BE04C"
@@ -2162,11 +1965,6 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "685CFEACACF27218"
-			rewards: [{
-				id: "72F6B4D0C1EAD849"
-				type: "xp"
-				xp: 50
-			}]
 			tasks: [{
 				id: "4FCEB68495568958"
 				item: "create:fluid_valve"
@@ -2184,11 +1982,6 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5D75D8CE524F5405"
-			rewards: [{
-				id: "766C7E7DF9C1B21E"
-				type: "xp"
-				xp: 50
-			}]
 			tasks: [{
 				id: "344C5B74F67A3360"
 				item: "create:smart_fluid_pipe"
@@ -2199,6 +1992,7 @@
 		}
 		{
 			dependencies: ["7B14309A72A35AF9"]
+			hide_until_deps_complete: true
 			id: "516E60B8FD6CB32B"
 			tasks: [{
 				id: "7C68472E20BAECE3"
@@ -2222,6 +2016,7 @@
 		}
 		{
 			dependencies: ["51D2FB5E1274EBBF"]
+			hide_until_deps_complete: true
 			id: "42F18A787B2FD09B"
 			tasks: [{
 				id: "026E44268EA5CD0E"
@@ -2262,12 +2057,8 @@
 				""
 				"应力表可以告诉你目前系统中总共的应力与剩下的应力，这个值会显示在指针上，如果你戴着工程师护目镜，就会显示准确的数值。"
 			]
+			hide_until_deps_complete: true
 			id: "59BE02E592F17A58"
-			rewards: [{
-				id: "3FC28AEE2E6CE20F"
-				type: "xp"
-				xp: 50
-			}]
 			tasks: [{
 				id: "34CD12CF113CD743"
 				item: "create:stressometer"
@@ -2279,6 +2070,7 @@
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
+			hide_until_deps_complete: true
 			id: "235AAF8AE8B94796"
 			tasks: [{
 				id: "67920F75DF53B98E"
@@ -2299,6 +2091,7 @@
 		}
 		{
 			dependencies: ["235AAF8AE8B94796"]
+			hide_until_deps_visible: true
 			id: "20D181642DA76C30"
 			tasks: [{
 				id: "7D7E002D2843E897"
@@ -2310,6 +2103,7 @@
 		}
 		{
 			dependencies: ["20D181642DA76C30"]
+			hide_until_deps_visible: true
 			id: "4ADB430138A69B61"
 			tasks: [{
 				id: "4B410262F5D33163"
