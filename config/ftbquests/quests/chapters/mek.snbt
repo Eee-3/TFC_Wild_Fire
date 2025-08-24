@@ -5,7 +5,7 @@
 	group: "2BD524ABD6AD1EEE"
 	icon: "mekanism:upgrade_speed"
 	id: "3E6A62B959D7B49D"
-	order_index: 8
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,7 +23,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5C89C330BD2D7DFE"]
 			icon: "mekanism:upgrade_energy"
 			id: "274B850B54AF12A9"
 			shape: "pentagon"

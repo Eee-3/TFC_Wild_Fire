@@ -2,12 +2,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "30F46A4E89C4F061"
-	group: "2BD524ABD6AD1EEE"
+	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: "ad_astra:earth_globe"
 	id: "30F46A4E89C4F061"
-	order_index: 3
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -39,8 +39,9 @@
 			dependencies: ["55A7A71E11F88C31"]
 			id: "7AB58E87CFDADBB6"
 			tasks: [{
-				id: "001271FF09E2DFE0"
-				type: "custom"
+				id: "3205770E620CA983"
+				item: "kubejs:basic_plating"
+				type: "item"
 			}]
 			title: "船舱板材"
 			x: 0.0d
@@ -50,8 +51,9 @@
 			dependencies: ["55A7A71E11F88C31"]
 			id: "72FCF7BDEAF4FDE5"
 			tasks: [{
-				id: "093889AAAC948207"
-				type: "custom"
+				id: "5FA490726F00C694"
+				item: "kubejs:basic_propeller"
+				type: "item"
 			}]
 			title: "船舱推进器"
 			x: 1.5d
@@ -199,8 +201,9 @@
 			dependencies: ["7AB58E87CFDADBB6"]
 			id: "6079DA481486CC22"
 			tasks: [{
-				id: "7C85DAEB3B5754B4"
-				type: "custom"
+				id: "301D7041EA07A8E9"
+				item: "kubejs:basic_cabin"
+				type: "item"
 			}]
 			title: "船舱"
 			x: 0.0d
@@ -210,8 +213,9 @@
 			dependencies: ["55A7A71E11F88C31"]
 			id: "2A098B45CE50C921"
 			tasks: [{
-				id: "1A7A6F1BAAD6A314"
-				type: "custom"
+				id: "429ED4AD2BCE1885"
+				item: "kubejs:basic_crystal_pannel"
+				type: "item"
 			}]
 			title: "初级控制终端"
 			x: 0.0d
@@ -287,31 +291,6 @@
 			}]
 			x: 8.0d
 			y: -9.0d
-		}
-		{
-			dependencies: ["07CAE5A7D37874B7"]
-			icon: "mekanism:raw_osmium"
-			id: "0CC44CE55937C0EF"
-			tasks: [{
-				id: "6A86BA4576A16F50"
-				item: "mekanism:raw_osmium"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0CC44CE55937C0EF"]
-			icon: "mekanism:upgrade_speed"
-			id: "5C89C330BD2D7DFE"
-			subtitle: "Mek改变世界！"
-			tasks: [{
-				id: "74458B0F7E63EBB4"
-				type: "checkmark"
-			}]
-			title: "&eMek：通用机械"
-			x: 6.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["62AF798B3EC657B7"]
@@ -489,8 +468,9 @@
 			dependencies: ["3A590DC66B0BD664"]
 			id: "4A4417169A78116A"
 			tasks: [{
-				id: "1D439C0B537BC720"
-				type: "custom"
+				id: "68801505A483AFA7"
+				item: "kubejs:moon_propeller"
+				type: "item"
 			}]
 			title: "二阶火箭推进器"
 			x: 0.5d
@@ -511,8 +491,9 @@
 			dependencies: ["3A590DC66B0BD664"]
 			id: "5D65C2526363C750"
 			tasks: [{
-				id: "1B8D9D114287EA7E"
-				type: "custom"
+				id: "5D801E6B39E3AF71"
+				item: "kubejs:advanced_cabin"
+				type: "item"
 			}]
 			title: "二阶船舱板材"
 			x: -0.5d
@@ -590,35 +571,7 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			description: ["我的天，你竟然已经全都走过了一遍，看起来你是真的很喜欢群峦的地形。"]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-					"lhmiracleroad:punishment_cap": {
-						attribute: {
-							heavy: {
-								Amount: 2.5d
-								Name: ""
-								Operation: 0
-								UUID: [I;
-									-491318017
-									789594683
-									-1256239646
-									1076525865
-								]
-							}
-						}
-						heavy: 2.5d
-						recordPunishmentAttributeModifier: { }
-					}
-				}
-				id: "tfc_textile_coldsweat:crocodile_boots"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "artifacts:running_shoes"
 			id: "48B3CD1F9AB2055D"
 			rewards: [
 				{

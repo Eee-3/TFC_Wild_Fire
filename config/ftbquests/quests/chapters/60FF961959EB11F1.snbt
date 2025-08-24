@@ -31,11 +31,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "137D5FE515108BCF"
-			rewards: [{
-				id: "7B0A05840E8E4699"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "很累的"
@@ -73,11 +68,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "5EF1774178DE574E"
-			rewards: [{
-				id: "729A8C5301C30553"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "河流是世界的血脉"
@@ -135,11 +125,6 @@
 				tag: { }
 			}
 			id: "73ECCFADDD5FD022"
-			rewards: [{
-				id: "572A67E70A7A4C46"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "大锅炖"
 			tasks: [{
@@ -174,11 +159,6 @@
 				id: "tfc:ceramic/unfired_ingot_mold"
 			}
 			id: "2454FE619EC7E071"
-			rewards: [{
-				id: "09CA124BF2620B17"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "喝汤需要“碗”"
 			tasks: [{
@@ -209,11 +189,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "080CB57CFDDDAC4F"
-			rewards: [{
-				id: "44D4EB0FCA588A46"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "珍贵的东西"
@@ -257,11 +232,6 @@
 				}
 			}
 			id: "2894CF3972892690"
-			rewards: [{
-				id: "6CD73E0ABE6FBFCE"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "前提你得找到矿"
 			tasks: [
@@ -317,11 +287,6 @@
 				}
 			}
 			id: "406264C3D33FACA8"
-			rewards: [{
-				id: "1E1198CC5A004ED1"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "可以让木头的掉落变多了！"
 			tasks: [{
 				id: "09B1FC4155B234F5"
@@ -360,11 +325,6 @@
 				}
 			}
 			id: "1063BE4F6A66D335"
-			rewards: [{
-				id: "7EDDBA845ADA8281"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "加工木材"
 			tasks: [{
@@ -404,11 +364,6 @@
 				}
 			}
 			id: "7F83D1B9298B5393"
-			rewards: [{
-				id: "1AC247F11B05D805"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "虽然很吓人但是实际镰刀没什么伤害"
 			tasks: [{
 				id: "7DD6D84DD3EA97B7"
@@ -450,11 +405,6 @@
 				}
 			}
 			id: "1FBB88CD20E47866"
-			rewards: [{
-				id: "15E9894C78F4DBE6"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "到哪都是砧！"
 			tasks: [{
@@ -488,11 +438,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "493A5CFB05F95C24"
-			rewards: [{
-				id: "5A7EDD4A4B261658"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "你看这木炭黑的跟你的脸一样"
 			tasks: [{
@@ -518,11 +463,6 @@
 				"与篝火相同的是，木炭炉会引燃周围的可燃方块，请注意。"
 			]
 			id: "53AE550FCF8D78A9"
-			rewards: [{
-				id: "0637D0764DF78671"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "暖心的大火炉"
 			tasks: [{
@@ -555,11 +495,6 @@
 				id: "tfc:metal/double_ingot/copper"
 			}
 			id: "57CDD98BD1458E3F"
-			rewards: [{
-				id: "67727475D68B1E33"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "严丝合缝"
@@ -604,11 +539,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "7DD760E18F97ABC9"
-			rewards: [{
-				id: "476F643DF1506A04"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -639,11 +569,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "4BFB9D9E13DA373B"
-			rewards: [{
-				id: "4E5B8F77CA3017D0"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "重要的材料"
 			tasks: [{
 				id: "0D19D72D8E274579"
@@ -673,11 +598,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "3195F1931D37ADD0"
-			rewards: [{
-				id: "1F8985DEE4F8845C"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "很牢固"
 			tasks: [{
 				id: "38933A635F4F3788"
@@ -709,11 +629,6 @@
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_fence"
 			id: "2608FB20E2B5FB63"
-			rewards: [{
-				id: "75C847CC189299B9"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "此乃可持续发展"
 			tasks: [{
 				id: "4FB7F5B73B8D7E4B"
@@ -735,11 +650,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:seeds/wheat"
 			id: "69CF401EA3B7A3A8"
-			rewards: [{
-				id: "30093B95B005B51F"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "magnet……哦不好意思走错了"
 			tasks: [{
 				id: "45586B4FAACC6D70"
@@ -764,11 +674,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:wood/lumber/hickory"
 			id: "1942F387C2F19008"
-			rewards: [{
-				id: "2320CC586601A4B6"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "木材万岁"
 			tasks: [{
 				id: "5031571D56B25BC1"
@@ -796,11 +701,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:wood/planks/hickory"
 			id: "210AB4533CD5A8A7"
-			rewards: [{
-				id: "78EB21741F22E757"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "老友重逢的感觉"
 			tasks: [
 				{
@@ -847,11 +747,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/chest/hickory"
 			id: "0E4EDC2573553FFB"
-			rewards: [{
-				id: "089427B49897F633"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "箱子在任何硬核mod里面都逃不掉被砍的命运"
 			tasks: [
 				{
@@ -893,11 +788,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/barrel/hickory"
 			id: "3CCAB31FBEEE494C"
-			rewards: [{
-				id: "4FBAB7BA45A78717"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "小桶爵士"
 			tasks: [
 				{
@@ -931,11 +821,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/sluice/hickory"
 			id: "4FADA80691359ED3"
-			rewards: [{
-				id: "63A05FDF4C781E2F"
-				type: "xp"
-				xp: 20
-			}]
 			size: 1.5d
 			subtitle: "重复劳动的开端"
 			tasks: [{
@@ -963,11 +848,6 @@
 			]
 			icon: "tfc:wood/planks/hickory_loom"
 			id: "7D97D80EA47C810E"
-			rewards: [{
-				id: "1A6A5923329F9B0D"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "芊芊濯方手"
 			tasks: [
 				{
@@ -1000,11 +880,6 @@
 			description: ["终于，你可以做床了。这张床可以正常度过夜晚，也可以保存重生点，除此之外没有别的了。"]
 			hide_until_deps_complete: true
 			id: "1A00219943638F23"
-			rewards: [{
-				id: "7D768149D9CE1995"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "晚安，睡个好觉"
 			tasks: [{
 				id: "674982138EDB676D"
@@ -1032,11 +907,6 @@
 				}
 			}
 			id: "0D63792C1A36411F"
-			rewards: [{
-				id: "3985A3B2631016E7"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "制陶术还在输出"
 			tasks: [
 				{
@@ -1075,11 +945,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "6608F4D88798BA85"
-			rewards: [{
-				id: "5871AE88E196A6ED"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			subtitle: "当每个人雕刻石材、竖起石柱、切开琉璃时，我们知道我们在建造一个比我们自己大的多的东西。——伍冰枝"
 			tasks: [{
@@ -1114,11 +979,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:rock/raw/dolomite"
 			id: "033192F96A2BE722"
-			rewards: [{
-				id: "6B4CA262EC758553"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "石头感到寂寞也会死吗？"
 			tasks: [{
 				id: "34B0758CE935637E"
@@ -1146,11 +1006,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:rock/smooth/dolomite"
 			id: "04744FD6FEBF2BE0"
-			rewards: [{
-				id: "1A1D054649BB94DD"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "前期最可靠的反重力方块"
 			tasks: [{
 				id: "06374B4978B70C87"
@@ -1177,11 +1032,6 @@
 			]
 			icon: "tfc:quern"
 			id: "144D3D187A5B866C"
-			rewards: [{
-				id: "3E1135F34D32E1C7"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "和磨人的大东西"
 			tasks: [
 				{
@@ -1211,11 +1061,6 @@
 			description: ["助焊剂说白了就是碳酸钙粉末，用石锤砸碎或用手推磨磨碎含有碳酸钙的物品制得。含有碳酸钙的物品包括白垩岩、石灰岩、大理岩、白云岩以及贝壳之类。你也可以用手推磨磨碎硼砂获得助焊剂"]
 			hide_dependent_lines: true
 			id: "4B4C87358DE1D813"
-			rewards: [{
-				id: "234F0371A4CB3BF9"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "CaCO3"
 			tasks: [{
 				id: "677E722C1AA77B77"
@@ -1244,11 +1089,6 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "0D6D7D4274FAB7AF"
-			rewards: [{
-				id: "6D8448F2B3B1BDF9"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "也含了点氢氧化钙"
 			tasks: [{
 				id: "49193B1FE434AE8B"
@@ -1278,11 +1118,6 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "170AA7EF27C269F2"
-			rewards: [{
-				id: "75100AA6FD75058E"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "村口集合，水泥自带"
 			tasks: [{
 				id: "713DA3A4D36BE459"
@@ -1302,11 +1137,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "34AFE36F7F50B21E"
-			rewards: [{
-				id: "27151CBED0774173"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "泡了又泡，刮了又刮"
 			tasks: [{
 				id: "6BC786D965EE0AD0"
@@ -1338,11 +1168,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "12A7A0E27F6A5BAE"
-			rewards: [{
-				id: "788B7B03A681BC50"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "群峦星人是不用上厕所的"
 			tasks: [{
 				id: "0C6CD733A6832CD2"
@@ -1358,11 +1183,6 @@
 			description: ["将骨粉、泥土、树皮结合在一起，就能合成出有机肥料，将有机肥料放置在世界中等待几天，它就会变成一种特殊的泥土：沃土。这种泥土属于农夫乐事mod，能够加快种植在其上方的作物或树苗的成长速度，将群峦的作物种植在其上方，能够使其无视原本长达几年几月的生长周期，快速成长。只不过种植在沃土耕地上的群峦作物的产率会极大降低，成熟一次只能收割一个产物，而种植在沃土的树苗则不受影响，能够正常长大。"]
 			icon: "farmersdelight:organic_compost"
 			id: "70C73D0813322E35"
-			rewards: [{
-				id: "55D6D7D8674F25E1"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "没有想象的那么糟糕"
 			tasks: [
 				{
@@ -1389,11 +1209,6 @@
 			hide_dependency_lines: true
 			icon: "tfc:rock/aqueduct/dolomite"
 			id: "521642503F94E9AC"
-			rewards: [{
-				id: "1AF3DE43D3900D60"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "至少不用天天浇水"
 			tasks: [{
 				id: "1870FBB44CBD329D"
@@ -1425,11 +1240,6 @@
 			hide_dependency_lines: true
 			icon: "minecraft:lead"
 			id: "6BBB985E7404B527"
-			rewards: [{
-				id: "631EB77C3B7B4C0C"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "我喜欢猪。狗崇拜人类。猫鄙视人类。猪对我们一视同仁。——温斯顿·丘吉尔"
 			tasks: [{
 				id: "02AA5D9670C93E33"
@@ -1446,11 +1256,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/planks/hickory_fence"
 			id: "34A3E922DB7A6883"
-			rewards: [{
-				id: "79A8A7AE6957D22A"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "掌握之中，岂可逃之？"
 			tasks: [{
 				id: "5B20300F82D4DFA6"
@@ -1472,11 +1277,6 @@
 			dependencies: ["34A3E922DB7A6883"]
 			description: ["巢箱是用来使卵生动物下蛋的方块，没有巢箱你家里的鸡就不会下蛋，繁殖也就无从谈起。"]
 			id: "6262C1A5941770C6"
-			rewards: [{
-				id: "078440D25FCE6B90"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "我们家鸽鸽要下蛋了！"
 			tasks: [{
 				id: "028695A07B77952A"
@@ -1494,11 +1294,6 @@
 				"蜂蜡是一种建设进阶农业设施的关键物品，要想收获蜂箱内的蜂蜡，需要在GUI中用鼠标拿起小刀右键有蜂王的巢脾，这一举动会杀死其中的蜂王。而蜂蜜是一种用于替代糖的物品，收集蜂蜜需要手持玻璃罐右键有蜂蜜的蜂箱以装满蜂蜜，这需要你学会玻璃加工。"
 			]
 			id: "6A4BD488B4232501"
-			rewards: [{
-				id: "24623A2BBE261BE7"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "哈基米~哈基米~哈基米~"
 			tasks: [{
 				id: "0DF7314C6DC4E24D"
@@ -1514,11 +1309,6 @@
 			description: ["将砂浆和由石子和凿子合成得到的砖块合成就可以得到石砖了。石砖是不错的反重力方块，也有用于建筑和装饰的价值&m（真的有吗）&r。"]
 			icon: "tfc:rock/bricks/dolomite"
 			id: "4418DAE3A731CDE8"
-			rewards: [{
-				id: "7EB9D6087BFF20A2"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "哪里需要哪里搬"
 			tasks: [{
 				id: "0C3ED711069AC063"
@@ -1547,11 +1337,6 @@
 			hide_text_until_complete: false
 			hide_until_deps_complete: true
 			id: "41513B8F3A7B3810"
-			rewards: [{
-				id: "2BCA86869BFFDC9C"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "真皮的"
 			tasks: [{
 				id: "07F427C13AC407CF"
@@ -1568,11 +1353,6 @@
 			hide_until_deps_visible: false
 			icon: "firmaciv:large_waterproof_hide"
 			id: "022D17994F671052"
-			rewards: [{
-				id: "64E4A3EE9102FBD1"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "绝对防水"
 			tasks: [
 				{
@@ -1601,11 +1381,6 @@
 				}
 			}
 			id: "7A555A4DE3B89D8B"
-			rewards: [{
-				id: "0C622F89C8686F4A"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "传奇耐冷耐热王"
 			tasks: [
 				{
@@ -1747,11 +1522,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "56F4833CBAD60422"
-			rewards: [{
-				id: "28FC84E34C8DB091"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "有效的气流交换"
 			tasks: [{
 				id: "743564D52053608E"
@@ -1772,11 +1542,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "0BCA62FA74445E3F"
-			rewards: [{
-				id: "08B9248EEA5413B6"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "参考现实工艺"
 			tasks: [{
 				id: "159FF8618FAA2EC7"
@@ -1815,11 +1580,6 @@
 				}
 			}
 			id: "61E41171C9379CF9"
-			rewards: [{
-				id: "52631E57D720520B"
-				type: "xp"
-				xp: 20
-			}]
 			tasks: [{
 				id: "09034110F93ECDB8"
 				title: "请在阅读以下内容后点击确认"
@@ -1851,11 +1611,6 @@
 				id: "tfc:ore/rich_limonite"
 			}
 			id: "529ABBB855603108"
-			rewards: [{
-				id: "4F3D81FB2920A0C6"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "一个好的开头"
 			tasks: [{
 				id: "1979D6893EB7571E"
@@ -1878,11 +1633,6 @@
 			hide_until_deps_visible: true
 			icon: "tfcorewashing:rocky_chunks_limonite"
 			id: "76F5FA862F96CF4B"
-			rewards: [{
-				id: "20F46B5D71565136"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "洗矿第一步"
 			tasks: [{
 				id: "3CDD8811680CA014"
@@ -1907,11 +1657,6 @@
 			hide_until_deps_visible: true
 			icon: "tfcorewashing:chunks_limonite"
 			id: "6393FF4A503DDE14"
-			rewards: [{
-				id: "57F4961D70464E4D"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "洗矿第二步"
 			tasks: [{
 				id: "7B7A3342D0548DD3"
@@ -1934,11 +1679,6 @@
 			description: ["洗净后的矿物碎块需要再一步磨碎，磨碎后的矿粉杂质太多，需要再清洗一遍。"]
 			icon: "tfcorewashing:dirty_dust_limonite"
 			id: "43A874DF1D79892D"
-			rewards: [{
-				id: "237F56690A649469"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "洗矿第三步"
 			tasks: [{
 				id: "769D653FADEC09CF"
@@ -1970,11 +1710,6 @@
 				id: "tfc:powder/limonite"
 			}
 			id: "26C27CAED8D101C4"
-			rewards: [{
-				id: "5A33658BF0233023"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "你已经很努力了"
 			tasks: [{
 				id: "347768330D9DBBCD"
@@ -2014,11 +1749,6 @@
 				id: "tfc:powder/native_copper"
 			}
 			id: "45C21923C740DB27"
-			rewards: [{
-				id: "5A7B70A2F5F2FECB"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "你还有很长的路要走……"
 			tasks: [{
 				count: 20L
@@ -2053,11 +1783,6 @@
 				id: "tfcorewashing:briquet_copper"
 			}
 			id: "685CF927297145D5"
-			rewards: [{
-				id: "71C2FE9C3D907096"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "如果你想一口气冶炼更多矿物，那这些就是必不可少的"
 			tasks: [
 				{
@@ -2121,11 +1846,6 @@
 				id: "tfc:metal/ingot/bronze"
 			}
 			id: "0DE526D678470E0E"
-			rewards: [{
-				id: "5F34A2D8D5D55ED8"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "青铜器是反射外形的镜子，是反射心灵的酒。——埃斯库罗斯"
@@ -2191,11 +1911,6 @@
 				id: "tfc:ore/rich_native_copper"
 			}
 			id: "37097019DD809AF1"
-			rewards: [{
-				id: "223A940B678F0285"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "发展工业最重要的血液"
@@ -2213,11 +1928,6 @@
 			description: ["无论有没有使用锻造辅助，我想你已经学会了如何锻造完美工具了。恭喜，这是给你的奖励。"]
 			id: "434A607E06CE44E6"
 			invisible: true
-			rewards: [{
-				id: "3F36E745C6E19E3E"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "gear"
 			subtitle: "Perfect！"
 			tasks: [{
@@ -2261,11 +1971,6 @@
 			hide_until_deps_complete: true
 			icon: "tfc:wood/support/hickory"
 			id: "5292D40DEFEA6B05"
-			rewards: [{
-				id: "2C01CE93D876B9F9"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "当你发现你在坑里了，就别再挖了。——维尔 罗格"
 			tasks: [{
 				id: "50049CC93D2240C6"
@@ -2288,11 +1993,6 @@
 			description: ["相信你一定会经常为草丛或雪减缓自己的移动速度而感到烦恼，只需要在副手拿着这根手杖，就可以畅行无阻，还可以防止自己掉进细雪中。"]
 			hide_until_deps_complete: true
 			id: "47989EBC17776AF8"
-			rewards: [{
-				id: "0A9DF7C3A78606FA"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "如履平地"
 			tasks: [{
 				id: "78895B75016622D1"
@@ -2327,11 +2027,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "2C296A519C874DE7"
-			rewards: [{
-				id: "2A89AD85B485EFB6"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "如果你没在书里看过的话"
 			tasks: [{
 				id: "109773D6F407D655"
@@ -2348,11 +2043,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "33991A0875EFF30F"
-			rewards: [{
-				id: "6B45A48F4DDB9F56"
-				type: "xp"
-				xp: 20
-			}]
 			shape: "gear"
 			subtitle: "终于不是脆皮鸡了"
 			tasks: [
@@ -2516,11 +2206,6 @@
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "0B036C67A4EF671E"
-			rewards: [{
-				id: "3088EBFD254119A9"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "更好的钳子"
 			tasks: [{
 				id: "36804F3E2E7ACEE8"
@@ -2550,11 +2235,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "13831570ED683A51"
-			rewards: [{
-				id: "7DD83BE9D27B2A19"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "致敬传奇耐烧王"
 			tasks: [{
 				id: "11A7CC06B9B1E7ED"
@@ -2584,11 +2264,6 @@
 			hide_until_deps_complete: true
 			icon: "valhelsia_structures:explorers_tent"
 			id: "551DB3F4D98BBD12"
-			rewards: [{
-				id: "1F86AE12EC540C60"
-				type: "xp"
-				xp: 20
-			}]
 			tasks: [
 				{
 					id: "5B299D04487B8A00"
@@ -2624,11 +2299,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:wood/axle/hickory"
 			id: "78E7C759E7460612"
-			rewards: [{
-				id: "72154FD404E9F471"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "原始动力"
 			tasks: [
 				{
@@ -2664,11 +2334,6 @@
 			description: ["群峦动力的动力发生装置十分简易：水车和风车。水车在其下半一或两格浸在河中的时候才会转动，而且不能是流动水必须是河流；风车则需要12x1x12的巨大空间，当空间足够时对手持风车叶片对传动杆右键即可安装最多五个叶片。一般来说，一个五叶片风车或两个水车即可带动目前的所有机器，所以不必要在这上面大费周章。"]
 			icon: "tfc:wood/water_wheel/hickory"
 			id: "7AEDC7D17F3A9676"
-			rewards: [{
-				id: "79C3C85F5F84AE05"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "自然产能领域的两座大山"
 			tasks: [
 				{
@@ -2704,11 +2369,6 @@
 			description: ["将竖直传动杆与手推磨顶端链接即可使其自动磨碎物品，你只需要把物品放进去就可以了。"]
 			icon: "tfc:quern"
 			id: "346835CB9F759BAD"
-			rewards: [{
-				id: "423E6800C0F0F439"
-				type: "xp"
-				xp: 25
-			}]
 			subtitle: "自动化初见端倪"
 			tasks: [{
 				id: "2900AF7A6F892A8C"
