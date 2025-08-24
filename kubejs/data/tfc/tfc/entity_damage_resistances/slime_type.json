@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:slime_type",
+    "piercing": 460,
+    "slashing": 139,
+    "crushing": 460,
+    "temperature": -70,
+    "belief": 0,
+    "element": 0
+}

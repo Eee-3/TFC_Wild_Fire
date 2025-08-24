@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:metal_type",
+    "piercing": 460,
+    "slashing": 460,
+    "crushing": 0,
+    "temperature": -70,
+    "belief": 460,
+    "element": 0
+}

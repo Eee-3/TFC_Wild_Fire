@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "mobs_of_mythology:automaton",
+        "alexscaves:teletor",
+        "alexscaves:magnetron",
+        "alexscaves:boundroid",
+        "alexscaves:boundroid_winch",
+        "alexscaves:notor",
+        "alexscaves:mine_guardian",
+        "alexscaves:mine_guardian_anchor"
+    ]
+}

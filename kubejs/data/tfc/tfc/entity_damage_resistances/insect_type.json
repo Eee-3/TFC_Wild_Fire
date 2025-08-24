@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:insect_type",
+    "piercing": 0,
+    "slashing": 0,
+    "crushing": -70,
+    "temperature": -40,
+    "belief": 0,
+    "element": 0
+}

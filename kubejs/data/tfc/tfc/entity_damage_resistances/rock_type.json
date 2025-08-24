@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:rock_type",
+    "piercing": 230,
+    "slashing": 230,
+    "crushing": -70,
+    "temperature": -70,
+    "belief": 230,
+    "element": 460
+}

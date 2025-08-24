@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:skeleton_type",
+    "piercing": 460,
+    "slashing": 0,
+    "crushing": -40,
+    "temperature": 0,
+    "belief": -40,
+    "element": 0
+}

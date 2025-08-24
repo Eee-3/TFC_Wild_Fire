@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "endermanoverhaul:windswept_hills_enderman",
+        "creeperoverhaul:desert_creeper",
+        "creeperoverhaul:badlands_creeper",
+        "creeperoverhaul:dripstone_creeper",
+        "creeperoverhaul:beach_creeper",
+        "creeperoverhaul:hills_creeper",
+        "creeperoverhaul:cave_creeper",
+        "alexsmobs:rocky_roller",
+        "endermanoverhaul:cave_enderman"
+    ]
+}

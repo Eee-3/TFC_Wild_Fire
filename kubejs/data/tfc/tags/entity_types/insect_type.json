@@ -1,0 +1,30 @@
+{
+    "replace": false,
+    "values": [
+        "born_in_chaos_v1:firelight",
+        "alexsmobs:fly",
+        "alexsmobs:cockroach",
+        "alexsmobs:leafcutter_ant",
+        "alexsmobs:tarantula_hawk",
+        "alexsmobs:triops",
+        "alexsmobs:cave_centipede",
+        "alexsmobs:cave_centipede_body",
+        "alexsmobs:cave_centipede_tail",
+        "alexsmobs:crimson_mosquito",
+        "alexsmobs:warped_mosco",
+        "born_in_chaos_v1:diamond_thermite",
+        "born_in_chaos_v1:diamond_termite",
+        "born_in_chaos_v1:corpse_maggot",
+        "born_in_chaos_v1:corpse_fly",
+        "born_in_chaos_v1:bloody_gadfly",
+        "naturalist:firefly",
+        "naturalist:caterpillar",
+        "naturalist:butterfly",
+        "naturalist:dragonfly",
+        "alexscaves:gossamer_worm",
+        "alexscaves:gammaroach",
+        "alexscaves:gloomoth",
+        "endermanoverhaul:scarab",
+        "born_in_chaos_v1:wither_strider"
+    ]
+}

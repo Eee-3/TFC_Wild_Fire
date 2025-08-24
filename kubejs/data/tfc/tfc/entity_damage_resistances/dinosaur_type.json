@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:dinosaur_type",
+    "piercing": 10,
+    "slashing": -18,
+    "crushing": -40,
+    "temperature": 10,
+    "belief": -70,
+    "element": 0
+}

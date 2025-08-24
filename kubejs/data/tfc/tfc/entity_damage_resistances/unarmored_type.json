@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:unarmored_type",
+    "piercing": -18,
+    "slashing": -18,
+    "crushing": 0,
+    "temperature": 0,
+    "belief": 0,
+    "element": 0
+}

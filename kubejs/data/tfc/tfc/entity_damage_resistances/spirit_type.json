@@ -1,0 +1,9 @@
+{
+    "entity": "tfc:spirit_type",
+    "piercing": 460,
+    "slashing": 460,
+    "crushing": 460,
+    "temperature": 0,
+    "belief": -70,
+    "element": -40
+}
