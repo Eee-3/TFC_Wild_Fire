@@ -142,8 +142,8 @@
     },
     "deadlier_explosions": {
       "is_enabled": true,
-      "required_game_stage": "normal",
-      "radius_multiplier": 1.2599,
+      "required_game_stage": "expert",
+      "radius_multiplier": 1.5599,
       "fire_chance": 0.75,
       "is_scaled_by_crd": true
     },
@@ -390,7 +390,7 @@
       "is_scaled_by_crd": true
     },
     "spawn_player_zombie": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "chance": 1.0,
       "is_scaled_by_crd": false,
@@ -1065,7 +1065,7 @@
     }
   },
   "bleeding": {
-    "chance_multiplier_base": 0.09,
+    "chance_multiplier_base": 0.05,
     "chance_multiplier_per_armor": 0.03,
     "chance_multiplier_per_armor_toughness": 0.03,
     "is_enabled": true,
@@ -1083,11 +1083,11 @@
     "effect": {
       "__default": {
         "amplifier": 0,
-        "duration": 24.0
+        "duration": 7.0
       },
       "expert": {
         "amplifier": 1,
-        "duration": 24.0
+        "duration": 12.0
       },
       "master": {
         "amplifier": 2,
@@ -1097,11 +1097,11 @@
     "sources": {
       "arrows": {
         "is_enabled": true,
-        "chance": 0.333
+        "chance": 0.1
       },
       "bite": {
         "is_enabled": true,
-        "chance": 0.5,
+        "chance": 0.15,
         "blacklisted_animals": [
           "minecraft:llama"
         ]
@@ -1125,6 +1125,118 @@
           },
           {
             "id": "{regex}.*_sword",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/sword/.*",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/axe/.*",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/javelin/.*",
+            "chance": 0.13,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*/scythe/.*",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_spear",
+            "chance": 0.15,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_greatsword",
+            "chance": 0.32,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_halberd",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_scythe",
             "chance": 0.3,
             "enchantments": [
               {
@@ -1133,13 +1245,13 @@
               },
               {
                 "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
-                "extra_chance_per_level": 0.02
+                "extra_chance_per_level": 0.01
               }
             ]
           },
           {
-            "id": "{regex}.*_axe",
-            "chance": 0.26,
+            "id": "{regex}.*_battleaxe",
+            "chance": 0.25,
             "enchantments": [
               {
                 "id": "minecraft:sharpness",
@@ -1147,24 +1259,199 @@
               },
               {
                 "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
-                "extra_chance_per_level": 0.02
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_lance",
+            "chance": 0.18,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_longsword",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_katana",
+            "chance": 0.35,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_saber",
+            "chance": 0.3,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_glaive",
+            "chance": 0.28,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_rapier",
+            "chance": 0.12,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_pike",
+            "chance": 0.13,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_tomahawk",
+            "chance": 0.2,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_javelin",
+            "chance": 0.15,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_axe",
+            "chance": 0.25,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              },
+              {
+                "id": "{regex}(minecraft:smite)|(minecraft:bane_of_arthropods)|(majruszsenchantments:misanthropy)",
+                "extra_chance_per_level": 0.01
               }
             ]
           },
           {
             "id": "{regex}(.*_pickaxe)|minecraft:shears",
-            "chance": 0.22,
+            "chance": 0.1,
             "enchantments": []
           },
           {
             "id": "{regex}.*_shovel",
-            "chance": 0.18,
+            "chance": 0.03,
             "enchantments": []
           },
           {
             "id": "{regex}.*_hoe",
-            "chance": 0.14,
+            "chance": 0.02,
             "enchantments": []
+          },
+          {
+            "id": "{regex}.*_knife",
+            "chance": 0.3,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}.*/knife/.*",
+            "chance": 0.3,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}.*flint",
+            "chance": 0.4,
+            "enchantments": []
+          },
+          {
+            "id": "{regex}^(?!.*_parrying_dagger$).*_dagger$",
+            "chance": 0.5,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.08
+              }
+            ]
+          },
+          {
+            "id": "{regex}.*_parrying_dagger",
+            "chance": 0.35,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.04
+              }
+            ]
           }
         ]
       }

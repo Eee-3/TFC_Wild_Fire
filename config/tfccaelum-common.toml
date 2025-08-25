@@ -32,7 +32,7 @@
 	earthSeasonalTilt = 23.44
 	#Bloodmoon spawn count multiplier
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	bloodmoonSpawnCountMultiplier = 3.0
+	bloodmoonSpawnCountMultiplier = 5.0
 	#Average inclination to Earth equator for the Moon (in degrees).
 	#The closer to 0 this value is, the more frequent lunar and solar eclipses will be
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
