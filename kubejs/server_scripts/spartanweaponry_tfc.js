@@ -1,5 +1,11 @@
 ServerEvents.tags("spartanweaponry:weapon_traits", e => {
-   
-     e.add("kubejs:test_trait", [])
-
+     e.add("kubejs:copper_trait", [])
+     e.add("kubejs:bronze_trait", [])
+     e.add("kubejs:bismuth_bronze_trait", [])
+     e.add("kubejs:black_bronze_trait", [])
+     e.add("kubejs:wrought_iron_trait", [])
+     e.add("kubejs:steel_trait", [])
+     e.add("kubejs:black_steel_trait", [])
+     e.add("kubejs:blue_steel_trait", [])
+     e.add("kubejs:red_steel_trait", [])
 })
