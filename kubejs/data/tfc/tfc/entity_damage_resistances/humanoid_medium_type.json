@@ -1,0 +1,9 @@
+{
+  "entity": "tfc:humanoid_medium_type",
+  "piercing": 0,
+  "slashing": 10,
+  "crushing": 0,
+  "temperature": 0,
+  "belief": 0,
+  "element": 0
+}

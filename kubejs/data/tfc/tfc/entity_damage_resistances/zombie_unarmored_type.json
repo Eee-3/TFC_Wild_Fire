@@ -1,0 +1,9 @@
+{
+  "entity": "tfc:zombie_unarmored_type",
+  "piercing": 10,
+  "slashing": -40,
+  "crushing": 0,
+  "temperature": 0,
+  "belief": 0,
+  "element": 0
+}

@@ -1,14 +1,21 @@
 {
-    "replace": false,
-    "values": [
-        "endermanoverhaul:windswept_hills_enderman",
-        "creeperoverhaul:desert_creeper",
-        "creeperoverhaul:badlands_creeper",
-        "creeperoverhaul:dripstone_creeper",
-        "creeperoverhaul:beach_creeper",
-        "creeperoverhaul:hills_creeper",
-        "creeperoverhaul:cave_creeper",
-        "alexsmobs:rocky_roller",
-        "endermanoverhaul:cave_enderman"
-    ]
+  "replace": false,
+  "values": [
+    "creeperoverhaul:hills_creeper",
+    "creeperoverhaul:spruce_creeper",
+    "creeperoverhaul:cave_creeper",
+    "creeperoverhaul:desert_creeper",
+    "creeperoverhaul:badlands_creeper",
+    "creeperoverhaul:dripstone_creeper",
+    "creeperoverhaul:beach_creeper",
+    "endermanoverhaul:ice_spikes_enderman",
+    "endermanoverhaul:windswept_hills_enderman",
+    "endermanoverhaul:cave_enderman",
+    "alexsmobs:stradpole",
+    "alexsmobs:straddler",
+    "call_of_yucutan:chaac",
+    "alexsmobs:rocky_roller",
+    "mythsandlegends:gargoyle",
+    "inka:headclava"
+  ]
 }

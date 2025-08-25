@@ -1,0 +1,9 @@
+{
+  "entity": "tfc:humanoid_heavy_type",
+  "piercing": 52,
+  "slashing": 52,
+  "crushing": -70,
+  "temperature": 0,
+  "belief": 0,
+  "element": 0
+}

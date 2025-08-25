@@ -1,16 +1,13 @@
 {
-    "replace": false,
-    "values": [
-        "alexsmobs:mungus",
-        "alexsmobs:bunfungus",
-        "endermanoverhaul:mushroom_fields_enderman",
-        "creeperoverhaul:mushroom_creeper",
-        "creeperoverhaul:jungle_creeper",
-        "mobs_of_mythology:sporeling",
-        "creeperoverhaul:dark_oak_creeper",
-        "creeperoverhaul:spruce_creeper",
-        "creeperoverhaul:savannah_creeper",
-        "alexsmobs:flutter",
-        "creeperoverhaul:bamboo_creeper"
-    ]
+  "replace": false,
+  "values": [
+    "creeperoverhaul:savannah_creeper",
+    "creeperoverhaul:dark_oak_creeper",
+    "creeperoverhaul:bamboo_creeper",
+    "creeperoverhaul:mushroom_creeper",
+    "creeperoverhaul:jungle_creeper",
+    "endermanoverhaul:dark_oak_enderman",
+    "endermanoverhaul:mushroom_fields_enderman",
+    "endermanoverhaul:warped_forest_enderman"
+  ]
 }

@@ -1,0 +1,9 @@
+{
+  "entity": "tfc:zombie_special_type",
+  "piercing": -70,
+  "slashing": 0,
+  "crushing": 52,
+  "temperature": 0,
+  "belief": 0,
+  "element": 0
+}

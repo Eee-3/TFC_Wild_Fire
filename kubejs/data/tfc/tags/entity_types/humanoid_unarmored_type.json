@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "inka:incawarrion_1",
+    "inka:incawarrion_2",
+    "inka:incawarrion_3",
+    "inka:capac",
+    "ad_astra:lunar",
+    "ad_astra:corrupted_lunar",
+    "minecraft:piglin",
+    "minecraft:zombified_piglin",
+    "minecraft:piglin_brute",
+    "ad_astra:pygro",
+    "ad_astra:martian_raptor",
+    "minecraft:vindicator",
+    "immersiveengineering:commando",
+    "minecraft:evoker",
+    "irons_spellbooks:archeyoker",
+    "alexsmobs:murmur",
+    "alexsmobs:murmur_main"
+  ]
+}

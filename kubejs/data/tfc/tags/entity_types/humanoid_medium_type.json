@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "illagerinvasion:necromancer",
+    "eidolon:necromancer",
+    "illagerinvasion:illusioner",
+    "illagerinvasion:firecaller",
+    "illagerinvasion:sorcerer",
+    "illagerinvasion:archivist",
+    "minecraft:pillager",
+    "illagerinvasion:marauder",
+    "illagerinvasion:basher",
+    "illagerinvasion:alchemist",
+    "takesapillage:archer",
+    "illagerinvasion:provoker",
+    "immersiveengineering:fusilier",
+    "immersiveengineering:commando",
+    "mobs_of_mythology:kobold_warrior",
+    "alexscaves:deep_one",
+    "alexscaves:deep_one_knight",
+    "alexscaves:deep_one_mage",
+    "alexscaves:watcher",
+    "alexscaves:underzealot",
+    "illagerinvasion:invoker"
+  ]
+}

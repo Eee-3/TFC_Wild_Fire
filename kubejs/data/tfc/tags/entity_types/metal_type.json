@@ -1,13 +1,14 @@
 {
-    "replace": false,
-    "values": [
-        "mobs_of_mythology:automaton",
-        "alexscaves:teletor",
-        "alexscaves:magnetron",
-        "alexscaves:boundroid",
-        "alexscaves:boundroid_winch",
-        "alexscaves:notor",
-        "alexscaves:mine_guardian",
-        "alexscaves:mine_guardian_anchor"
-    ]
+  "replace": false,
+  "values": [
+    "alexscaves:notor",
+    "call_of_yucutan:ahahw",
+    "alexscaves:teletor",
+    "alexscaves:magnetron",
+    "alexscaves:boundroid",
+    "alexscaves:nucleeper",
+    "alexscaves:mine_guardian",
+    "mobs_of_mythology:automaton",
+    "call_of_yucutan:golden_guard"
+  ]
 }

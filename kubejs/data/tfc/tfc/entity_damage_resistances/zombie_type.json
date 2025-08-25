@@ -1,9 +1,0 @@
-{
-    "entity": "tfc:zombie_type",
-    "piercing": 0,
-    "slashing": -18,
-    "crushing": 10,
-    "temperature": 0,
-    "belief": -40,
-    "element": 0
-}
