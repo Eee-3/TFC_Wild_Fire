@@ -27,7 +27,7 @@ TFCEvents.data(e => {
 
   });
 
-  });
+  
   const small_light_items = [
     'cuisinedelight:suspicious_mix',
     'cuisinedelight:ham_fried_rice',
