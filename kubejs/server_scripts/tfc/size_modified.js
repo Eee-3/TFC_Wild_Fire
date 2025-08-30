@@ -1,4 +1,33 @@
 TFCEvents.data(e => {
+  const materials = [
+    "copper",
+    "bronze",
+    "bismuth_bronze",
+    "black_bronze",
+    "wrought_iron",
+    "steel",
+    "red_steel",
+    "blue_steel",
+    "black_steel"
+  ];
+
+  materials.forEach(material => {
+    e.itemSize(`kubejs:${material}_battle_hammer`, 'large', 'heavy') // 大锤
+    e.itemSize(`kubejs:${material}_warhammer`, 'large', 'heavy') // 战锤
+    e.itemSize(`kubejs:${material}_lance`, 'large', 'heavy') // 骑枪
+    e.itemSize(`kubejs:${material}_flanged_mace`,'large', 'heavy');        // 页锤
+    e.itemSize(`kubejs:${material}_scythe`,'large', 'heavy');             // 战镰
+    e.itemSize(`kubejs:${material}_greatsword`,'large', 'heavy');             // 大剑
+
+    e.itemSize(`kubejs:${material}_halberd`,'large', 'very_heavy');             // 戟
+
+    e.itemSize(`kubejs:${material}_throwing_knife`, 'large', 'light');      // 飞刀
+    e.itemSize(`kubejs:${material}_dagger`, 'large', 'light');              // 匕首
+    e.itemSize(`kubejs:${material}_parrying_dagger`, 'large', 'light');     // 格挡匕首
+
+  });
+
+  
   const small_light_items = [
     'cuisinedelight:suspicious_mix',
     'cuisinedelight:ham_fried_rice',
@@ -24,7 +53,10 @@ TFCEvents.data(e => {
   ]
   small_light_items.forEach(item => {
     e.itemSize(item, 'small', 'light')
+
+
   })
+
   const huge_very_heavy_items = [
     "immersive_aircraft:phull",
     "immersive_aircraft:engine",
