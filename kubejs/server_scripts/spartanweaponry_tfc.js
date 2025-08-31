@@ -24,33 +24,33 @@ ServerEvents.tags("item", e => {
 
 
      materials.forEach(material => {
-          e.add("tfc:deals_crushing_damage", [`kubejs:${material}_battle_hammer`,"spartanweaponry:oilable_weapons","spartanweaponry:battle_hammers"]);        // 大锤
-          e.add("tfc:deals_crushing_damage", [`kubejs:${material}_warhammer`,"spartanweaponry:oilable_weapons","spartanweaponry:warhammers"]);            // 战锤
-          e.add("tfc:deals_crushing_damage", [`kubejs:${material}_flanged_mace`,"spartanweaponry:oilable_weapons","spartanweaponry:flanged_maces"]);         // 页锤
-          e.add("tfc:deals_crushing_damage", [`kubejs:${material}_quarterstaff`,"spartanweaponry:oilable_weapons","spartanweaponry:quarterstaves"]);         // 长棍
-          e.add("tfc:deals_crushing_damage", [`kubejs:${material}_boomerang`,"spartanweaponry:oilable_weapons","spartanweaponry:boomerangs"]);            // 回旋镖
+          e.add("tfc:deals_crushing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:battle_hammers", [`kubejs:${material}_battle_hammer`]);        // 大锤
+          e.add("tfc:deals_crushing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:warhammers", [`kubejs:${material}_warhammer`]);            // 战锤
+          e.add("tfc:deals_crushing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:flanged_maces", [`kubejs:${material}_flanged_mace`]);         // 页锤
+          e.add("tfc:deals_crushing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:quarterstaves", [`kubejs:${material}_quarterstaff`]);         // 长棍
+          e.add("tfc:deals_crushing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:boomerangs", [`kubejs:${material}_boomerang`]);            // 回旋镖
      })
      materials.forEach(material => {
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_tomahawk`,"spartanweaponry:oilable_weapons","spartanweaponry:tomahawks"]);             // 投斧
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_longsword`,"spartanweaponry:oilable_weapons","spartanweaponry:longswords"]);            // 长刀
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_katana`,"spartanweaponry:oilable_weapons","spartanweaponry:katanas"]);               // 太刀
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_glaive`,"spartanweaponry:oilable_weapons","spartanweaponry:glaives"]);               // 长柄刀
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_battleaxe`,"spartanweaponry:oilable_weapons","spartanweaponry:battleaxes"]);            // 战斧
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_saber`,"spartanweaponry:oilable_weapons","spartanweaponry:sabers"]);                // 军刀
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_halberd`,"spartanweaponry:oilable_weapons","spartanweaponry:halberds"]);              // 戟
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_greatsword`,"spartanweaponry:oilable_weapons","spartanweaponry:greats_words"]);              // 大剑
-          e.add("tfc:deals_slashing_damage", [`kubejs:${material}_scythe`,"spartanweaponry:oilable_weapons","spartanweaponry:scythes"]);              // 战镰
-     }) 
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:tomahawks", [`kubejs:${material}_tomahawk`]);             // 投斧
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:longswords", [`kubejs:${material}_longsword`]);            // 长刀
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:katanas", [`kubejs:${material}_katana`]);               // 太刀
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:glaives", [`kubejs:${material}_glaive`]);               // 长柄刀
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:battleaxes", [`kubejs:${material}_battleaxe`]);            // 战斧
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:sabers", [`kubejs:${material}_saber`]);                // 军刀
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:halberds", [`kubejs:${material}_halberd`]);              // 戟
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:greats_words", [`kubejs:${material}_greatsword`]);              // 大剑
+          e.add("tfc:deals_slashing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:scythes", [`kubejs:${material}_scythe`]);              // 战镰
+     })
 
      materials.forEach(material => {
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_throwing_knife`,"spartanweaponry:oilable_weapons","spartanweaponry:throwing_knives"]);       // 飞刀
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_rapier`,"spartanweaponry:oilable_weapons","spartanweaponry:rapiers"]);               // 迅捷剑
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_lance`,"spartanweaponry:oilable_weapons","spartanweaponry:lances"]);                // 骑枪
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_pike`,"spartanweaponry:oilable_weapons","spartanweaponry:pikes"]);                 // 长矛
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_spear`,"spartanweaponry:oilable_weapons","spartanweaponry:spears"]);                // 长枪
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_javelin`,"spartanweaponry:oilable_weapons","spartanweaponry:javelins"]);              // 标枪
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_dagger`,"spartanweaponry:oilable_weapons","spartanweaponry:daggers"]);               // 匕首
-          e.add("tfc:deals_piercing_damage", [`kubejs:${material}_parrying_dagger`,"spartanweaponry:oilable_weapons","spartanweaponry:parrying_daggers"]);      // 格挡匕首
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:throwing_knives", [`kubejs:${material}_throwing_knife`]);       // 飞刀
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:rapiers", [`kubejs:${material}_rapier`]);               // 迅捷剑
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:lances", [`kubejs:${material}_lance`]);                // 骑枪
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:pikes", [`kubejs:${material}_pike`]);                 // 长矛
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:spears", [`kubejs:${material}_spear`]);                // 长枪
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:javelins", [`kubejs:${material}_javelin`]);              // 标枪
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:daggers", [`kubejs:${material}_dagger`]);               // 匕首
+          e.add("tfc:deals_piercing_damage", "spartanweaponry:oilable_weapons", "spartanweaponry:parrying_daggers", [`kubejs:${material}_parrying_dagger`]);      // 格挡匕首
      })
 
 
