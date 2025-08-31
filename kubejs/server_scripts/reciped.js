@@ -119,5 +119,4 @@ ServerEvents.recipes(event => {
     //有序配方
     event.shaped('create:fluid_tank',[['#forge:plates/copper'],['immersiveengineering:wooden_barrel'],['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault',[['#forge:plates/iron'],['immersiveengineering:crate'],['#forge:plates/iron']])//机械动力保险箱
-    event.shaped('cuisinedelight:spatula', ['  A',' A ','B  '],{A:'tfc:metal/ingot/wrought_iron',B:'#balm:wooden_rods'})//锅铲
 })
