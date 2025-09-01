@@ -8,6 +8,8 @@ ServerEvents.tags('item', e => {
     e.add("tfc:deals_piercing_damage", `#spartanweaponry:lances`); // 骑枪（长枪）
     e.add("tfc:deals_piercing_damage", `#spartanweaponry:javelins`); // 标枪
     e.add("tfc:deals_piercing_damage", `#spartanweaponry:spears`); // 矛（突刺类补充）
+    e.add("tfc:deals_piercing_damage", `#minecraft:arrows`); // 箭
+    e.add("tfc:deals_piercing_damage", `#spartanweaponry:bolts`); // 弩箭
 
     // 斩击伤害类型武器
     e.add("tfc:deals_slashing_damage", `#spartanweaponry:tomahawks`); // 印第安投斧（投斧）
@@ -17,7 +19,7 @@ ServerEvents.tags('item', e => {
     e.add("tfc:deals_slashing_damage", `#spartanweaponry:battleaxes`); // 战斧
     e.add("tfc:deals_slashing_damage", `#spartanweaponry:glaives`); // 长柄刀
     e.add("tfc:deals_slashing_damage", `#spartanweaponry:halberds`); // 戟
-    e.add("tfc:deals_slashing_damage", `#spartanweaponry:greats_words`); // 大剑
+    e.add("tfc:deals_slashing_damage", `#spartanweaponry:greatswords`); // 大剑
     e.add("tfc:deals_slashing_damage", `#spartanweaponry:scythes`); // 镰刀
 
     // 打击伤害类型武器
