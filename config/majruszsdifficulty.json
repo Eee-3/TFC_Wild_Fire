@@ -1452,6 +1452,16 @@
                 "extra_chance_per_level": 0.04
               }
             ]
+          },
+          {
+            "id": "warriorsofpastepoch:surgical_saw",
+            "chance": 0.6,
+            "enchantments": [
+              {
+                "id": "minecraft:sharpness",
+                "extra_chance_per_level": 0.08
+              }
+            ]
           }
         ]
       }
