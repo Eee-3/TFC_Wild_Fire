@@ -1,0 +1,13 @@
+{
+    "ingredient": [
+"gemsrealm:c/tfc/steel_scaffolding",
+"gemsrealm:c/tfc/black_steel_scaffolding",
+"gemsrealm:c/born_in_chaos_v1/dark_metal_scaffolding",
+"gemsrealm:c/ad_astra/desh_scaffolding"
+    ],
+    "support_up": 5,
+    "support_down": 3,
+    "support_horizontal": 10
+
+
+}
