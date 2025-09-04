@@ -1,0 +1,5 @@
+{
+    "type": "tfc:collapse",
+    "ingredient": "create:andesite_scaffolding",
+    "copy_input": true
+}

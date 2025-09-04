@@ -1,6 +1,8 @@
 {
     "ingredient": [
 "create:andesite_scaffolding",
+"alexscaves:metal_scaffolding",
+"minecraft:sand",
 "gemsrealm:c/tfc/bismuth_scaffolding",
 "gemsrealm:c/tfc/gold_scaffolding",
 "gemsrealm:c/tfc/nickel_scaffolding",
@@ -9,7 +11,7 @@
 "gemsrealm:c/tfc/tin_scaffolding",
 "gemsrealm:c/tfc/zinc_scaffolding"
     ],
-    "support_up": 2,
+    "support_up": 1,
     "support_down": 2,
     "support_horizontal": 4
 

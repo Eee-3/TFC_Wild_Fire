@@ -1,0 +1,9 @@
+BlockEvents.modification(event => {
+    event.modify('create:andesite_scaffolding', block => {
+        // 设置具有重力效应。注意：这通常需要配合处理下落实体逻辑。
+        // hasGravity 是 Forge 或 Fabric 的特定属性，KubeJS 可能通过其他方式处理重力。
+        // 下面的代码更多是概念性的，因为原版Minecraft的“重力”是硬编码的。
+        block.hasGravity = true; // 注意：这个属性名称可能因KubeJS版本和MC版本而异，可能需要查阅最新KubeJS文档。
+
+    });
+});
