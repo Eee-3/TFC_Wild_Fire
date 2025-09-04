@@ -1,10 +1,10 @@
 {
-    "name": "aaaa",
+    "name": "test",
     "attributes": {
         "strength": 10,
         "health": 10,
         "focus": 10,
-        "stamina": 10,
+        "stamina": 727,
         "endurance": 10,
         "intelligence": 10,
         "agility": 10,

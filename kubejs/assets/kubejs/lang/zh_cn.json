@@ -204,6 +204,10 @@
         "item.kubejs.wrought_iron_tomahawk": "锻铁印第安投斧",
         "item.kubejs.wrought_iron_scythe": "锻铁战镰",
         "item.kubejs.wrought_iron_flanged_mace": "锻铁页锤",
-        "item.kubejs.wrought_iron_boomerang": "锻铁回旋镖"
+        "item.kubejs.wrought_iron_boomerang": "锻铁回旋镖",
+        "more_attributes.class.test":"测试职业",
+        "more_attributes.class.description.test":"牢王727，饿的时候增加的耐性更多1"
+
+
     }
     
