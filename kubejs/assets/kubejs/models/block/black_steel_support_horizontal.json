@@ -1,0 +1,7 @@
+{
+    "parent": "kubejs:block/support/horizontal",
+    "textures": {
+        "texture": "kubejs:block/black_steel_support",
+        "particle": "kubejs:block/black_steel_support"
+    }
+}

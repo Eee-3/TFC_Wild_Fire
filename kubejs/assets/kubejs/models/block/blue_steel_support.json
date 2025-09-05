@@ -7,8 +7,8 @@
         32
     ],
     "textures": {
-        "1": "kubejs:block/steel_support",
-        "particle": "kubejs:block/steel_support"
+        "1": "kubejs:block/blue_steel_support",
+        "particle": "kubejs:block/blue_steel_support"
     },
     "elements": [
         {

@@ -1,0 +1,7 @@
+{
+    "parent": "kubejs:block/support/vertical",
+    "textures": {
+        "texture": "kubejs:block/wrought_iron_support",
+        "particle": "kubejs:block/wrought_iron_support"
+    }
+}

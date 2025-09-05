@@ -1,0 +1,7 @@
+{
+    "parent": "kubejs:block/support/vertical",
+    "textures": {
+        "texture": "kubejs:block/bismuth_bronze_support",
+        "particle": "kubejs:block/bismuth_bronze_support"
+    }
+}

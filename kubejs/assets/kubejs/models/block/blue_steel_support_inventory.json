@@ -1,6 +1,6 @@
 {
     "parent": "kubejs:block/support/inventory",
     "textures": {
-        "texture": "kubejs:block/copper_support"
+        "texture": "kubejs:block/blue_steel_support"
     }
 }
