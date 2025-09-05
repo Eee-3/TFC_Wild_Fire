@@ -205,8 +205,20 @@
     "block.kubejs.red_steel_support": "精金梁",
     "block.kubejs.blue_steel_support": "秘银梁",
     "block.kubejs.bismuth_bronze_support": "铋铜梁",
-    "block.kubejs.black_bronzel_support": "黑铜梁",
+    "block.kubejs.black_bronze_support": "黑铜梁",
     "block.kubejs.bronze_support": "青铜梁",
     "block.kubejs.wrought_iron_support": "锻铁梁",
-    "block.kubejs.galvanized_steel_support": "镀锌方钢梁"
+    "block.kubejs.galvanized_steel_support": "镀锌方钢梁",
+     "block.kubejs.pig_iron_support": "铸铁梁",
+    "block.kubejs.copper_support_horizontal": "铜横梁",
+    "block.kubejs.steel_support_horizontal": "钢横梁",
+    "block.kubejs.black_steel_support_horizontal": "黑钢横梁",
+    "block.kubejs.red_steel_support_horizontal": "精金横梁",
+    "block.kubejs.blue_steel_support_horizontal": "秘银横梁",
+    "block.kubejs.bismuth_bronze_support_horizontal": "铋铜横梁",
+    "block.kubejs.black_bronze_support_horizontal": "黑铜横梁",
+    "block.kubejs.bronze_support_horizontal": "青铜横梁",
+    "block.kubejs.wrought_iron_support_horizontal": "锻铁横梁",
+    "block.kubejs.galvanized_steel_support_horizontal": "镀锌方钢横梁",
+     "block.kubejs.pig_iron_support_horizontal": "铸铁横梁"
 }

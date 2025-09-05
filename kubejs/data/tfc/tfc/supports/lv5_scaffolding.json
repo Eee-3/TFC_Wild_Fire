@@ -1,14 +1,11 @@
 {
     "ingredient": [
-"gemsrealm:c/tfc/blue_steel_scaffolding",
-"gemsrealm:c/tfc/red_steel_scaffolding",
-"gemsrealm:c/minecraft/netherite_scaffolding",
-"gemsrealm:c/ad_astra/etrium_scaffolding",
-"gemsrealm:c/ad_astra/calorite_scaffolding"
+        "kubejs:red_steel_support_horizontal",
+        "kubejs:blue_steel_support_horizontal"
     ],
     "support_up": 7,
-    "support_down": 3,
-    "support_horizontal": 15
+    "support_down": 5,
+    "support_horizontal": 20
 
 
 }

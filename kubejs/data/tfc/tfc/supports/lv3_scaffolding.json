@@ -1,11 +1,11 @@
 {
     "ingredient": [
-"gemsrealm:c/createmetallurgy/obdurium_scaffolding",
-"gemsrealm:c/tfc/wrought_iron_scaffolding"
+        "alexscaves:metal_scaffolding",
+         "kubejs:steel_support_horizontal"
     ],
-    "support_up": 3,
+    "support_up": 4,
     "support_down": 3,
-    "support_horizontal": 8
+    "support_horizontal": 12
 
 
 }

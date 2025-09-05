@@ -1,16 +1,10 @@
 {
     "ingredient": [
-"create:copper_scaffolding",
-"create:brass_scaffolding",
-"gemsrealm:c/tfc/cast_iron_scaffolding",
-"gemsrealm:c/tfc/sterling_silver_scaffolding",
-"gemsrealm:c/tfc/bronze_scaffolding",
-"gemsrealm:c/tfc/black_bronze_scaffolding",
-"gemsrealm:c/tfc/bismuth_bronze_scaffolding"
+        "kubejs:wrought_iron_support_horizontal"
     ],
     "support_up": 3,
     "support_down": 3,
-    "support_horizontal": 6
+    "support_horizontal": 11
 
 
 }
