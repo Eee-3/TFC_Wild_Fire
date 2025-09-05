@@ -1,0 +1,7 @@
+{
+    "parent": "kubejs:block/support/horizontal",
+    "textures": {
+        "texture": "kubejs:block/pig_iron_support",
+        "particle": "kubejs:block/pig_iron_support"
+    }
+}
