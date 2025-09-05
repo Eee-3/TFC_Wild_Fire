@@ -4,8 +4,8 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "kubejs:block/copper_support",
-		"particle": "kubejs:block/copper_support"
+		"1": "kubejs:block/steel_support",
+		"particle": "kubejs:block/steel_support"
 	},
 	"elements": [
 		{
