@@ -1,0 +1,8 @@
+{
+    "type": "tfc:collapse",
+    "ingredient": [
+        "minecraft:basalt",
+        "minecraft:blackstone"
+    ],
+    "result": "tfc:rock/cobble/basalt"
+}

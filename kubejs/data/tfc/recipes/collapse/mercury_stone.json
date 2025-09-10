@@ -1,0 +1,8 @@
+{
+    "type": "tfc:collapse",
+    "ingredient": [
+        "ad_astra:mercury_stone",
+        "ad_astra:mercury_iron_ore"
+    ],
+    "result": "ad_astra:mercury_cobblestone"
+}
