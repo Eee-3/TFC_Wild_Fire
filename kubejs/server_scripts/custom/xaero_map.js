@@ -63,8 +63,9 @@ PlayerEvents.tick(event => {
 })
 
 PlayerEvents.loggedIn(event => {//登入给玩家buff
-if(player.isSurvival()){
-  const { player } = event;
+    const { player } = event;
+if(player.getGameMode()=="survival"){
+  
   player.setGameMode("spectator")//登陆变成旁观模式
   player.potionEffects.add('minecraft:blindness', 9999999, 4, false, false);
   player.potionEffects.add('minecraft:darkness', 9999999, 4, false, false);//给予黑暗和失明

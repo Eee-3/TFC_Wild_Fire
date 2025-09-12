@@ -2,13 +2,5 @@
     "parent": "spartanweaponry:item/base/greatsword",
     "textures": {
         "layer0": "kubejs:item/spartanweaponry_tfc/greatsword/wrought_iron_2"
-    },
-    "overrides": [
-        {
-            "model": "kubejs:item/spartanweaponry_tfc/greatsword/damage/wrought_iron_blocking_2",
-            "predicate": {
-                "spartanweaponry:blocking": 1.0
-            }
-        }
-    ]
+    }
 }

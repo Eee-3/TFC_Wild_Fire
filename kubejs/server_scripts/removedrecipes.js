@@ -118,6 +118,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:crafting/kinetics/shaft' }) // 移除传动杆
   e.remove({ id: 'sophisticatedbackpacks:backpack' }) // 移除 背包
   e.remove({ id: "minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
+e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
+
 
   //刷物品
   e.remove({ input: '#forge:plates', output: '#forge:plates' }) //板子
