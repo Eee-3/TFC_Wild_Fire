@@ -13,7 +13,7 @@ PlayerEvents.tick(event => {
         nowexp += expGain;
         player.persistentData.putDouble('endurance_exp', nowexp);
 
-player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
+//player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
         endurance_proficiency(player, nowexp);  // 传递当前经验
      
     }
@@ -24,9 +24,9 @@ player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
 // 体力升级函数（修改为正确获取和修改属性的方式）
 function endurance_proficiency(player, currentExp) {
     // 获取当前等级（假设使用的是属性系统）
-    const enduranceLevel = MoreAttributes.getLevel(player,"endurance") || 1;
+    const enduranceLevel = MoreAttributes.getLevel(player,"more_attributes:endurance") || 1;
     const enduranceExp = currentExp;
-player.tell(`等级 ${enduranceLevel}`);
+
     // 计算当前等级所需升级经验
     let upExp = 100+50*enduranceLevel;
    
@@ -36,7 +36,7 @@ player.tell(`等级 ${enduranceLevel}`);
         const remainingExp = enduranceExp - upExp;
         player.persistentData.putDouble('endurance_exp', remainingExp);
 
-        MoreAttributes.upgrade(player, "endurance",1)
+        MoreAttributes.upgrade(player, "more_attributes:endurance_level")
 
 
         // 升级反馈
