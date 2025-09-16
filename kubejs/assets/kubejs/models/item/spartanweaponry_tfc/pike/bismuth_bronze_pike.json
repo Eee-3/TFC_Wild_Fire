@@ -1,6 +1,13 @@
 {
-    "parent": "spartanweaponry:item/base/pike",
-    "textures": {
-        "layer0": "kubejs:item/spartanweaponry_tfc/pike/bismuth_bronze"
-    }
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "spartanweaponry:item/base/pike",
+	"textures": {
+		"layer0": "kubejs:item/spartanweaponry_tfc/pike/bismuth_bronze"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.7, 0.7, 0.7]
+		}
+	}
 }

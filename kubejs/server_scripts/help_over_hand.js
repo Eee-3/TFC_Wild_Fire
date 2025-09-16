@@ -7,4 +7,7 @@ ServerEvents.tags('item', event => {
      event.add('ad_astra:held_over_head', 'siegemachines:ballista')
      event.add('ad_astra:held_over_head', 'siegemachines:battering_ram')
      event.add('ad_astra:held_over_head', 'siegemachines:siege_ladder')
+     event.add('ad_astra:held_over_head', 'trotting_wagons:armored_wagon')
+     event.add('ad_astra:held_over_head', 'trotting_wagons:conestoga_wagon')
+     event.add('ad_astra:held_over_head', 'trotting_wagons:royal_wagon')
 })

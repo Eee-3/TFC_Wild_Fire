@@ -2,7 +2,7 @@
 #Server Settings
 [server]
 	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
-	disallowedItems = []
+	disallowedItems = ["tfc:ceramic/vessel", "tfc:ceramic/white_glazed_vessel", "tfc:ceramic/orange_glazed_vessel", "tfc:ceramic/magenta_glazed_vessel", "tfc:ceramic/light_blue_glazed_vessel", "tfc:ceramic/yellow_glazed_vessel", "tfc:ceramic/lime_glazed_vessel", "tfc:ceramic/pink_glazed_vessel", "tfc:ceramic/gray_glazed_vessel", "tfc:ceramic/light_gray_glazed_vessel", "tfc:ceramic/cyan_glazed_vessel", "tfc:ceramic/purple_glazed_vessel", "tfc:ceramic/blue_glazed_vessel", "tfc:ceramic/brown_glazed_vessel", "tfc:ceramic/green_glazed_vessel", "tfc:ceramic/red_glazed_vessel", "tfc:ceramic/black_glazed_vessel", "immersiveengineering:minecart_reinforcedcrate", "create:minecart_contraption", "create:furnace_minecart_contraption", "create:chest_minecart_contraption", "immersiveengineering:minecart_woodencrate", "immersiveengineering:reinforced_crate", "immersiveengineering:crate", "immersiveengineering:toolbox", "backpacked_tfc:backpack", "tfc:ceramic/fire_ingot_mold", "tfc:ceramic/ingot_mold", "minecraft:pink_shulker_box", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:gray_shulker_box", "minecraft:black_shulker_box", "minecraft:brown_shulker_box", "minecraft:red_shulker_box", "minecraft:orange_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:green_shulker_box", "minecraft:cyan_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:blue_shulker_box", "minecraft:purple_shulker_box", "minecraft:magenta_shulker_box", "minecraft:magenta_shulker_box"]
 	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
 	containerItemsDisallowed = false
 	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
@@ -436,4 +436,25 @@
 		slownessLevelsPerAdditionalBackpack = 1.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = false
+
+	#Advanced Jukebox Upgrade Settings
+	[server.advancedJukeboxUpgrade]
+		#Number of slots for discs in jukebox upgrade
+		#Range: 1 ~ 16
+		numberOfSlots = 12
+		#Number of lots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Alchemy Upgrade Settings
+	[server.alchemyUpgrade]
+		#Number of Alchemy Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 4
+
+	#Advanced Alchemy Upgrade Settings
+	[server.advancedAlchemyUpgrade]
+		#Number of Advanced Alchemy Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 8
 
