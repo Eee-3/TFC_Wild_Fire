@@ -8,7 +8,8 @@ PlayerEvents.tick(event => {
     // 超重时增加经验
     let nowexp = player.persistentData.getDouble('endurance_exp') || 0;
     if ((maxWeight > 0 && nowWeight / maxWeight > 1 && nowWeight !== 0)&&distan<200) {
-        const expGain = distan * nowWeight / maxWeight;
+        
+        const expGain = distan * (Math.min(nowWeight, 2 * maxWeight))*(Math.min(nowWeight, 2 * maxWeight)) / (maxWeight*maxWeight) / 4;
         nowexp += expGain;
         player.persistentData.putDouble('endurance_exp', nowexp);
 
@@ -27,10 +28,8 @@ function endurance_proficiency(player, currentExp) {
     const enduranceExp = currentExp;
 player.tell(`等级 ${enduranceLevel}`);
     // 计算当前等级所需升级经验
-    let upExp = 100;
-    for (let i = 1; i <= enduranceLevel; i++) {
-        upExp += 50*i;
-    }
+    let upExp = 100+50*enduranceLevel;
+   
 
     // 满足升级条件时
     if (enduranceExp >= upExp) {
