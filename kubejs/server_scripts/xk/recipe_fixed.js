@@ -141,14 +141,19 @@ ServerEvents.recipes(event => {
 
    event.forEachRecipe(//所有肉的烤制配方
         {       
-            mod:'butcher',
+          
             
             type:"smoking"
             //output: '#forge:meats'
         }, r => {   
+          
             var cookmeat_id = r.getOriginalRecipeResult().getId()
             var meat_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
            
+            if ((!cookmeat_id||(!meat_id || meat_id.length === 0)||(!meat_id || meat_id.length === 0))) {
+          
+                return;
+            }
         
             event.recipes.tfc.heating(meat_id, 200).resultItem(cookmeat_id)
     })

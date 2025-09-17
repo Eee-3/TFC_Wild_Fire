@@ -1,4 +1,47 @@
 ServerEvents.recipes(e => {
+
+  const iddd = [
+    "create:crafting/kinetics/water_wheel",//水车
+    "create:crafting/kinetics/large_water_wheel",//大水车
+    "createdieselgenerators:compat/immersiveengineering/nickel_sheet",//锤子锤板子
+    "createdieselgenerators:hammering/brass_sheet",
+    "createdieselgenerators:compat/immersiveengineering/silver_sheet",
+    "createdieselgenerators:hammering/iron_sheet",
+    "createdieselgenerators:compat/immersiveengineering/constantan_sheet",
+    "createdieselgenerators:compat/immersiveengineering/uranium_sheet",
+    "createdieselgenerators:hammering/copper_sheet",
+    "createdieselgenerators:compat/immersiveengineering/aluminum_sheet",
+    "createdieselgenerators:compat/immersiveengineering/electrum_sheet",
+    "createdieselgenerators:compat/immersiveengineering/steel_sheet",
+    "createdieselgenerators:hammering/gold_sheet",
+    "create:crafting/kinetics/propeller",//扇叶
+    "create:crafting/kinetics/whisk",//搅拌头
+
+  ]
+  iddd.forEach(id => { e.remove({ id: id }); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
   e.remove({ id: 'create_sa:blazing_axe_recipe' }) // 移除"炽热斧头"的合成配方-create_sa
   e.remove({ id: 'create_sa:blazing_pickaxe_recipe' }) // 移除"炽热镐子"的合成配方-create_sa
@@ -118,7 +161,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:crafting/kinetics/shaft' }) // 移除传动杆
   e.remove({ id: 'sophisticatedbackpacks:backpack' }) // 移除 背包
   e.remove({ id: "minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
-e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
+  e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
 
 
   //刷物品
