@@ -6,10 +6,7 @@ let tooltips = [
     ["createmetallurgy:industrial_crucible", "§4此物品已禁用，且可能会导致崩溃§r", "This item is disabled and may cause a crash."],
     ["eidolon:enchanted_ash", "§8“试试洒在地上围成一个圈，它能驱散亡灵使其无法靠近”§r", "§8“Try sprinkling it on the ground to form a circle! It can repel the undead and keep them from approaching.”§r"],
     ["#tfc:water_wheels", "§8“这种水车最好在有流动的§r§7河水§r§8处使用”§r", "§8“This kind of water wheel is best used where there is flowing §r§7river water§r§8.”§r"],
-    ["afc:wood/water_wheel/eucalyptus", "§8“这种水车最好在有流动的§r§7河水§r§8处使用”§r", "§8“This kind of water wheel is best used where there is flowing §r§7river water§r§8.”§r"],
-    ["#precisionprospecting:prospector_hammers","§7剥岩锤可以探测勘探中心15x15x15的矿物§r",""],
-    ["#precisionprospecting:prospector_drills","§7凿岩钻可以探测勘探中心长宽7x7、深25格的矿物§r",""],
-    ["#precisionprospecting:mineral_prospectors","§7地质锤可以探测勘探中心45x45x45的矿物§r",""]
+    ["afc:wood/water_wheel/eucalyptus", "§8“这种水车最好在有流动的§r§7河水§r§8处使用”§r", "§8“This kind of water wheel is best used where there is flowing §r§7river water§r§8.”§r"]
 ]
 tooltips.forEach(([key, zh_cn, en_us]) => {
     // 添加key
