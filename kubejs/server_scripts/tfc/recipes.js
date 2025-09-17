@@ -22,15 +22,7 @@ ServerEvents.recipes(e => {
     ]
   ).damageIngredient("#forge:tools/hammers").id("tfcorewashing:rock_powder/hammering")
 
-  tfc.anvil(
-    'create:andesite_alloy',
-    'kubejs:trachyandesite_alloy',
-    [
-      'hit_any',
-      'hit_any',
-      'hit_any'
-    ]
-  ).tier(1).bonus(true).id("tfc:andesite_alloy/anvil")
+  
   //扇叶合成
   tfc.welding('create:propeller', 'wildfire:fan_blade', 'create:andesite_alloy', 2)
 

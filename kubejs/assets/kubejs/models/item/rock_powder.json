@@ -1,0 +1,17 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/create/rock_powder"
+  },
+  "overrides": [
+    {
+      "predicate":"minecraft:tank",
+      "value":{
+          "Amount": 100,
+          "FluidName":"tfc:metal/zinc"
+        },
+    
+      "model": "kubejs:item/spartanweaponry_tfc/battle_hammer/damage/bismuth_bronze_1"
+    }
+  ]
+}
