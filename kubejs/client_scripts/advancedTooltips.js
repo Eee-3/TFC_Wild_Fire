@@ -27,6 +27,24 @@ ItemEvents.tooltip(event => {
         'precisionprospecting:metal/prospector_drill/copper',
         'precisionprospecting:metal/prospector_drill/bronze',
         'precisionprospecting:metal/prospector_drill/black_bronze',
-        'precisionprospecting:metal/prospector_drill/bismuth_bronze'
+        'precisionprospecting:metal/prospector_drill/bismuth_bronze',
+        'tfc:metal/propick/bismuth_bronze',
+        'tfc:metal/propick/black_bronze',
+        'tfc:metal/propick/bronze',
+        'tfc:metal/propick/copper',
+        'tfc:metal/propick/wrought_iron',
+        'tfc:metal/propick/steel',
+        'tfc:metal/propick/black_steel',
+        'tfc:metal/propick/blue_steel',
+        'tfc:metal/propick/red_steel',
+        'tfc:metal/chisel/bismuth_bronze',
+        'tfc:metal/chisel/black_bronze',
+        'tfc:metal/chisel/bronze',
+        'tfc:metal/chisel/copper',
+        'tfc:metal/chisel/wrought_iron',
+        'tfc:metal/chisel/steel',
+        'tfc:metal/chisel/black_steel',
+        'tfc:metal/chisel/blue_steel',
+        'tfc:metal/chisel/red_steel'
     ])
 })
