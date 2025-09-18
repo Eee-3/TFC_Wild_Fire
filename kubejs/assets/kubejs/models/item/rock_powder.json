@@ -5,13 +5,11 @@
   },
   "overrides": [
     {
-      "predicate":"minecraft:tank",
-      "value":{
-          "Amount": 100,
-          "FluidName":"tfc:metal/zinc"
-        },
-    
-      "model": "kubejs:item/spartanweaponry_tfc/battle_hammer/damage/bismuth_bronze_1"
+      "predicate": {
+        "tfc:tank":{"Amount":0,"FluidName":"tfc:metal/zinc"}
+      },
+      "model": "kubejs:item/spartanweaponry_tfc/rapier/damage/red_steel_1"
     }
+    
   ]
 }

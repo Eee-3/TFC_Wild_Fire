@@ -47,7 +47,7 @@ StartupEvents.registry('item', event => {
         )
         .tag("curios:ring")
         event
-        .create('shiny_ornaments:rose_gold_ender_ring')
+        .create('shiny_ornaments:rose_gold_ender_pearl_ring')
         .texture('kubejs:item/rose_gold_ender_ring')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()

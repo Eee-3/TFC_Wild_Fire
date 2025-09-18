@@ -1,6 +1,7 @@
 TFCEvents.data(e => {
   //烤肉
   e.itemHeat('#forge:meats', 1,null,null)
+   e.itemHeat('#forge:weapons', 1,null,null)
   //矿物融化
   e.itemHeat('#tfc:ore_pieces', 0.7,null,null)
   //空烈焰人燃烧室加热合成烈焰人燃烧室

@@ -23,7 +23,6 @@ ServerEvents.recipes(e => {
   ).damageIngredient("#forge:tools/hammers").id("tfcorewashing:rock_powder/hammering")
 
   
-  //扇叶合成
-  tfc.welding('create:propeller', 'wildfire:fan_blade', 'create:andesite_alloy', 2)
+
 
 })

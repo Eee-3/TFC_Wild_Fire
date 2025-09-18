@@ -64,7 +64,7 @@ StartupEvents.registry('item', event => {
         .modifyAttribute("lhmiracleroad:critical_hit_damage", "critical_hit_damage", 0.09, "multiply_total")
         )
         .tag("curios:ring")
-        .texture('kubejs:item/black_steel_ring_base')
+        .texture('kubejs:item/black_steel_ring')
         
         //精锻戒指
         event.create('shiny_ornaments:rose_gold_delicacy_ring')

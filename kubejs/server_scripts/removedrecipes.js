@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
     "createdieselgenerators:hammering/gold_sheet",
     "create:crafting/kinetics/propeller",//扇叶
     "create:crafting/kinetics/whisk",//搅拌头
-
+"butcher:hook_recipe"//恶性bug钩子
   ]
   iddd.forEach(id => { e.remove({ id: id }); });
 
