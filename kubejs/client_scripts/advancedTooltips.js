@@ -45,6 +45,27 @@ ItemEvents.tooltip(event => {
         'tfc:metal/chisel/steel',
         'tfc:metal/chisel/black_steel',
         'tfc:metal/chisel/blue_steel',
-        'tfc:metal/chisel/red_steel'
+        'tfc:metal/chisel/red_steel',
+        'kubejs:bismuth_bronze_lockpick',
+        'kubejs:black_bronze_lockpick',
+        'kubejs:bronze_lockpick',
+        'kubejs:copper_lockpick',
+        'kubejs:cast_iron_lockpick',
+        'kubejs:wrought_iron_lockpick',
+        'kubejs:steel_lockpick',
+        'kubejs:black_steel_lockpick',
+        'kubejs:homemade_lockpick',
+        'kubejs:wrought_iron_crowbar',
+        'kubejs:black_steel_crowbar',
+        'kubejs:steel_crowbar',
+        'kubejs:old_key',
+        'kubejs:brass_simple_key',
+        'kubejs:gold_simple_key',
+        'kubejs:bismuth_bronze_simple_key',
+        'kubejs:black_bronze_simple_key',
+        'kubejs:bronze_simple_key',
+        'kubejs:copper_simple_key'
+
+
     ])
 })
