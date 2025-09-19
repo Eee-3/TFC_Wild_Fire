@@ -9,7 +9,7 @@ StartupEvents.registry('block', event => {
         .nutrient('nitrogen')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/horsetail')
-        .productItem('kubejs:horsetail')
+        .existingProductItem('kubejs:horsetail')
         .seedItem(seed => {
             seed.displayName("问荆种子")
             seed.texture('kubejs:item/horsetail_seeds')
@@ -31,7 +31,7 @@ StartupEvents.registry('block', event => {
         .nutrient('phosphorous')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/hops')
-        .productItem('kubejs:hops')
+        .existingProductItem('kubejs:hops')
         .seedItem(seed => {
             seed.displayName("啤酒花种子")
             seed.texture('kubejs:item/hops_seed')
@@ -51,7 +51,7 @@ StartupEvents.registry('block', event => {
         .nutrient('nitrogen')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/marigold')
-        .productItem('kubejs:marigold')
+        .existingProductItem('kubejs:marigold')
         .seedItem(seed => {
             seed.displayName("金盏花种子")
             seed.texture('kubejs:item/marigold_seeds')
@@ -72,7 +72,7 @@ StartupEvents.registry('block', event => {
         .nutrient('nitrogen')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/trillium')
-        .productItem('kubejs:trillium')
+        .existingProductItem('kubejs:trillium')
         .seedItem(seed => {
             seed.displayName("延龄草种子")
             seed.texture('kubejs:item/trillium_seeds')
@@ -82,6 +82,7 @@ StartupEvents.registry('block', event => {
             deadCrop.tagBlock('tfc:mineable_with_sharp_tool')
             deadCrop.soundType('crop')
             deadCrop.model('tfc:blockstates/dead_crop/trillium')
+        })
         //草药-蓝姜
         event.create('tfc:crop/blue_ginger', 'tfc:crop')
         .stages(5)
@@ -92,7 +93,7 @@ StartupEvents.registry('block', event => {
         .nutrient('nitrogen')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/blue_ginger')
-        .productItem('kubejs:blue_ginger')
+        .existingProductItem('kubejs:blue_ginger')
         .seedItem(seed => {
             seed.displayName("蓝姜")
             seed.texture('kubejs:item/blue_ginger_seeds')
@@ -113,7 +114,7 @@ StartupEvents.registry('block', event => {
         .nutrient('nitrogen')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/labrador_tea')
-        .productItem('kubejs:labrador_tea')
+        .existingProductItem('kubejs:labrador_tea')
         .seedItem(seed => {
             seed.displayName("杜香种子")
             seed.texture('kubejs:item/labrador_tea_seeds')
@@ -136,7 +137,7 @@ StartupEvents.registry('block', event => {
         .nutrient('phosphorous')
         .tagBlock('tfc:mineable_with_sharp_tool')
         .model('tfc:blockstates/crop/red_palm')
-        .productItem('kubejs:palm_heart')
+        .existingProductItem('kubejs:palm_heart')
         .seedItem(seed => {
             seed.displayName("红棕榈种子")
             seed.texture('kubejs:item/red_palm_seeds')
@@ -146,5 +147,4 @@ StartupEvents.registry('block', event => {
             deadCrop.tagBlock('tfc:mineable_with_sharp_tool')
             deadCrop.soundType('crop')
         })
-    })
 })
