@@ -1,3 +1,5 @@
+const FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability');
+const Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
 
 PlayerEvents.tick(event => {
     const { player } = event;
@@ -21,38 +23,37 @@ PlayerEvents.tick(event => {
 }
 );
 
-// 玩家进食获得经验的代码
 ItemEvents.foodEaten(event => {
-    const { player, item } = event;
-    
-    const tfcData = player.data.get('tfc:player_data');
-    
-    if (!tfcData) {
-        return;
-    }
+    const player = event.player;
+    const itemStack = event.item;
+    if (!player || itemStack.isEmpty()) return;
 
-    const foodLevel = player.getFoodLevel(); // 获取TFC饱食度
-    const averageNutrition = tfcData.getAverageNutrition(); // 获取平均营养值
-    player.tell(`饱食度: ${foodLevel}, 平均营养: ${averageNutrition}`);
-    const maxHealth = player.getMaxHealth(); // 获取最大血量
-    
-    // 计算经验获得量
-    const expGain = (foodLevel + averageNutrition) * maxHealth / 2000;
-    
+    let food = FoodCapability.get(itemStack);
+    if (!food) return;
+
+    let foodData = food.getData();
+    let item = itemStack.getItem();
+
+    let grain = foodData.nutrient(Nutrient.GRAIN);
+    let fruit = foodData.nutrient(Nutrient.FRUIT);
+    let vegetables = foodData.nutrient(Nutrient.VEGETABLES);
+    let protein = foodData.nutrient(Nutrient.PROTEIN);
+    let dairy = foodData.nutrient(Nutrient.DAIRY);
+
+    let vanillaFood = item.getFoodProperties ? item.getFoodProperties(itemStack, player) : null;
+    let hunger = vanillaFood ? vanillaFood.getNutrition() : 0;
+
+    let averageNutrition = (grain + fruit + vegetables + protein + dairy) / 5.0;
+    let maxHealth = player.getMaxHealth();
+    let expGain = (hunger + averageNutrition) * maxHealth / 2000;
+
     if (expGain > 0 && !isNaN(expGain)) {
         let currentExp = player.persistentData.getDouble('endurance_exp') || 0;
         currentExp += expGain;
-        
         player.persistentData.putDouble('endurance_exp', currentExp);
-        
-        const enduranceLevel = MoreAttributes.getLevel(player, "more_attributes:endurance") || 1;
-        let upExp = 100 + 50 * enduranceLevel;
-        
-        if (currentExp >= upExp) {
-            const remainingExp = currentExp - upExp;
-            player.persistentData.putDouble('endurance_exp', remainingExp);
-            MoreAttributes.upgrade(player, "more_attributes:endurance_level")
-            player.tell(`§b你感觉你的体力上升了！当前等级: ${enduranceLevel + 1}`);
+
+        if (typeof endurance_proficiency === "function") {
+            endurance_proficiency(player, currentExp);
         }
     }
 });
@@ -79,5 +80,3 @@ function endurance_proficiency(player, currentExp) {
         player.tell(`你感觉你的体力上升了！当前等级: `);
     }
 }
-
-
