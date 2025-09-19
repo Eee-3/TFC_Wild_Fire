@@ -21,5 +21,6 @@ ServerEvents.tags('block', event => {
     event.add('tfc:toughness_3', 'kubejs:red_steel_support_horizontal')
     event.add('tfc:toughness_3', 'kubejs:blue_steel_support') // 蓝钢
     event.add('tfc:toughness_3', 'kubejs:blue_steel_support_horizontal')
+    event.add('tfc:forge_invisible_whitelist', 'createmetallurgy:foundry_basin')//铸造盆
 
 })
