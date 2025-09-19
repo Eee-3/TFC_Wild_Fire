@@ -47,22 +47,22 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:wrought_iron_crowbar')
         .texture('kubejs:item/wrought_iron_crowbar')
         .displayName("撬棍")
-        .maxDamage(10)
+        .maxDamage(25)
 
     event.create('kubejs:steel_crowbar')
         .texture('kubejs:item/steel_crowbar')
         .displayName("钢撬棍")
-        .maxDamage(20)
+        .maxDamage(35)
 
     event.create('kubejs:black_steel_crowbar')
         .texture('kubejs:item/black_steel_crowbar')
         .displayName("黑钢撬棍")
-        .maxDamage(30)
+        .maxDamage(65)
 
     event.create('kubejs:old_key')
         .texture('kubejs:item/old_key')
         .displayName("旧钥匙")
-        .maxDamage(5)
+        .maxDamage(2)
 
     event.create('kubejs:brass_simple_key')
         .texture('kubejs:item/brass_simple_key')

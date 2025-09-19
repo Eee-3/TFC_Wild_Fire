@@ -175,7 +175,7 @@
     "tooltip.kubejs.shift_wrought_iron_crowbar": "§7撬棍是用于强行破坏战利品箱子的工具、能强行开锁、但是一旦失误就会损耗耐久度",
     "tooltip.kubejs.shift_black_steel_crowbar": "§7撬棍是用于强行破坏战利品箱子的工具、能强行开锁、但是一旦失误就会损耗耐久度",
     "tooltip.kubejs.shift_steel_crowbar": "§7撬棍是用于强行破坏战利品箱子的工具、能强行开锁、但是一旦失误就会损耗耐久度",
-    "tooltip.kubejs.shift_old_key": "§7老旧的钥匙、看上去已经用过很多次了、生怕开锁的时候掰断……",
+    "tooltip.kubejs.shift_old_key": "§7老旧的钥匙、看上去已经用过很多次了、失误两次就会断掉",
     "tooltip.kubejs.shift_brass_simple_key": "§7通过浇筑复刻出来的钥匙、可能有概率打不开锁、一旦失误就会损耗耐久度",
     "tooltip.kubejs.shift_gold_simple_key": "§7通过浇筑复刻出来的钥匙、可能有概率打不开锁、一旦失误就会损耗耐久度",
     "tooltip.kubejs.shift_bismuth_bronze_simple_key": "§7通过浇筑复刻出来的钥匙、可能有概率打不开锁、一旦失误就会损耗耐久度",
