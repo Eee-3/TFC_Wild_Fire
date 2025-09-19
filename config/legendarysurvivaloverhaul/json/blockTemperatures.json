@@ -4,7 +4,27 @@
       "properties": {
         "blaze": "smouldering"
       },
-      "temperature": 2.5
+      "temperature": 7.5
+    },
+    {
+      "properties": {
+        "blaze": "kindled"
+      },
+      "temperature": 11.5
+    },
+    {
+      "properties": {
+        "blaze": "seething"
+      },
+      "temperature": 24.5
+    }
+  ],
+  "createdieselgenerators:burner": [
+    {
+      "properties": {
+        "blaze": "smouldering"
+      },
+      "temperature": 5.0
     },
     {
       "properties": {
@@ -16,7 +36,7 @@
       "properties": {
         "blaze": "seething"
       },
-      "temperature": 7.5
+      "temperature": 10.5
     }
   ],
   "moreburners:electric_burner": [
@@ -24,7 +44,7 @@
       "properties": {
         "blaze": "smouldering"
       },
-      "temperature": 2.5
+      "temperature": 5.0
     },
     {
       "properties": {
@@ -36,7 +56,7 @@
       "properties": {
         "blaze": "seething"
       },
-      "temperature": 7.5
+      "temperature": 10.5
     }
   ],
   "minecraft:soul_wall_torch": [
@@ -50,7 +70,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 15.0
+      "temperature": 22.0
     },
     {
       "properties": {
@@ -64,7 +84,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 10.0
+      "temperature": 17.0
     },
     {
       "properties": {
@@ -90,7 +110,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -118,7 +138,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -138,121 +158,121 @@
   "minecraft:magma_block": [
     {
       "properties": {},
-      "temperature": 12.0
+      "temperature": 20.0
     }
   ],
   "minecraft:lava": [
     {
       "properties": {},
-      "temperature": 12.5
+      "temperature": 20.5
     }
   ],
   "tfc:spring_water": [
     {
       "properties": {},
-      "temperature": 3.5
+      "temperature": 5.5
     }
   ],
   "minecraft:jack_o_lantern": [
     {
       "properties": {},
-      "temperature": 3.0
+      "temperature": 5.5
     }
   ],
   "tfc:jack_o_lantern": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/none": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/circle": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/creeper": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/axe": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/hammer": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/pickaxe": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/left": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "firmalife:lit_pumpkin/right": [
     {
       "properties": {},
-      "temperature": 2.5
+      "temperature": 5.0
     }
   ],
   "tfc:rock/magma/granite": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/diorite": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/gabbro": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/rhyolite": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/basalt": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/andesite": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:rock/magma/dacite": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "tfc:sea_ice": [
@@ -264,7 +284,7 @@
   "bakery:brick_stove": [
     {
       "properties": {},
-      "temperature": 4.0
+      "temperature": 6.0
     }
   ],
   "minecraft:soul_campfire": [
@@ -286,7 +306,7 @@
       "properties": {
         "active": "true"
       },
-      "temperature": 6.5
+      "temperature": 9.0
     },
     {
       "properties": {
@@ -300,7 +320,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 10.5
+      "temperature": 18.5
     },
     {
       "properties": {
@@ -314,7 +334,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 10.5
+      "temperature": 18.5
     },
     {
       "properties": {
@@ -328,7 +348,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 7.5
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -356,7 +376,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 8.5
+      "temperature": 6.5
     },
     {
       "properties": {
@@ -370,7 +390,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 8.5
+      "temperature": 6.5
     },
     {
       "properties": {
@@ -384,7 +404,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 8.5
+      "temperature": 6.5
     },
     {
       "properties": {
@@ -398,7 +418,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -412,7 +432,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -426,7 +446,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -440,7 +460,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -454,7 +474,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -468,7 +488,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -482,7 +502,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -496,7 +516,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -510,7 +530,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 8.5
+      "temperature": 6.5
     },
     {
       "properties": {
@@ -524,25 +544,25 @@
       "properties": {
         "heat_level": "7"
       },
-      "temperature": 13.0
+      "temperature": 21.0
     },
     {
       "properties": {
         "heat_level": "6"
       },
-      "temperature": 11.5
+      "temperature": 19.5
     },
     {
       "properties": {
         "heat_level": "5"
       },
-      "temperature": 10
+      "temperature": 17.0
     },
     {
       "properties": {
         "heat_level": "4"
       },
-      "temperature": 8.5
+      "temperature": 6.5
     },
     {
       "properties": {
@@ -560,7 +580,7 @@
       "properties": {
         "heat_level": "1"
       },
-      "temperature": 2.5
+      "temperature": 5.0
     },
     {
       "properties": {
@@ -574,7 +594,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 7.5
+      "temperature": 9.0
     },
     {
       "properties": {
@@ -598,7 +618,7 @@
   "minecraft:flowing_lava": [
     {
       "properties": {},
-      "temperature": 12.5
+      "temperature": 20.5
     }
   ],
   "legendarysurvivaloverhaul:sun_fern_crop": [
@@ -612,7 +632,7 @@
   "minecraft:fire": [
     {
       "properties": {},
-      "temperature": 7.0
+      "temperature": 14.0
     }
   ],
   "minecraft:soul_fire": [
@@ -626,7 +646,7 @@
       "properties": {
         "lit": "true"
       },
-      "temperature": 6.0
+      "temperature": 8.0
     },
     {
       "properties": {
@@ -641,21 +661,21 @@
         "lit": "true",
         "powered": "true"
       },
-      "temperature": 64.0
+      "temperature": 76.0
     },
     {
       "properties": {
         "lit": "true",
         "powered": "false"
       },
-      "temperature": 32.0
+      "temperature": 42.0
     },
     {
       "properties": {
         "lit": "false",
         "powered": "true"
       },
-      "temperature": 8.0
+      "temperature": 11.5
     },
     {
       "properties": {
@@ -693,6 +713,216 @@
         "powered": "false"
       },
       "temperature": 0.0
+    }
+  ],
+  "tfc:metal/bismuth": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc:metal/bismuth_bronze": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc:metal/tin": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc:metal/zinc": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc_ie_addon:metal/lead": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc:metal/unknown": [
+    {
+      "properties": {},
+      "temperature": 17
+    }
+  ],
+  "tfc:metal/copper": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/gold": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/silver": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/rose_gold": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/brass": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/bronze": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/black_bronze": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/sterling_silver": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc_ie_addon:metal/constantan": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc_ie_addon:metal/electrum": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc_ie_addon:metal/aluminum": [
+    {
+      "properties": {},
+      "temperature": 19
+    }
+  ],
+  "tfc:metal/nickel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/wrought_iron": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/cast_iron": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/pig_iron": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/black_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/blue_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/red_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/weak_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/weak_blue_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/weak_red_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/high_carbon_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/high_carbon_black_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/high_carbon_blue_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc:metal/high_carbon_red_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "farmlife:metal/chromium": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "farmlife:metal/stainless_steel": [
+    {
+      "properties": {},
+      "temperature": 23
+    }
+  ],
+  "tfc_ie_addon:metal/uranium": [
+    {
+      "properties": {},
+      "temperature": 23
     }
   ]
 }
