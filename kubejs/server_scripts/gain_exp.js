@@ -21,6 +21,42 @@ PlayerEvents.tick(event => {
 }
 );
 
+// 玩家进食获得经验的代码
+ItemEvents.foodEaten(event => {
+    const { player, item } = event;
+    
+    const tfcData = player.data.get('tfc:player_data');
+    
+    if (!tfcData) {
+        return;
+    }
+
+    const foodLevel = player.getFoodLevel(); // 获取TFC饱食度
+    const averageNutrition = tfcData.getAverageNutrition(); // 获取平均营养值
+    player.tell(`饱食度: ${foodLevel}, 平均营养: ${averageNutrition}`);
+    const maxHealth = player.getMaxHealth(); // 获取最大血量
+    
+    // 计算经验获得量
+    const expGain = (foodLevel + averageNutrition) * maxHealth / 2000;
+    
+    if (expGain > 0 && !isNaN(expGain)) {
+        let currentExp = player.persistentData.getDouble('endurance_exp') || 0;
+        currentExp += expGain;
+        
+        player.persistentData.putDouble('endurance_exp', currentExp);
+        
+        const enduranceLevel = MoreAttributes.getLevel(player, "more_attributes:endurance") || 1;
+        let upExp = 100 + 50 * enduranceLevel;
+        
+        if (currentExp >= upExp) {
+            const remainingExp = currentExp - upExp;
+            player.persistentData.putDouble('endurance_exp', remainingExp);
+            MoreAttributes.upgrade(player, "more_attributes:endurance_level")
+            player.tell(`§b你感觉你的体力上升了！当前等级: ${enduranceLevel + 1}`);
+        }
+    }
+});
+
 // 体力升级函数（修改为正确获取和修改属性的方式）
 function endurance_proficiency(player, currentExp) {
     // 获取当前等级（假设使用的是属性系统）

@@ -84,66 +84,66 @@ function calcAverage(playerZ, scale, min, max) {
 // 注册自定义气候模型
 TFCEvents.registerClimateModel(event => {
     // 轨道空间气候模型（空间站环境）
-    event.registerClimateModel('kubejs:orbit_climate', model => {
-        model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15) // 恒温15°C（太空服温度）
-        model.setAverageTemperatureCalculation((level, pos) => -270) // 太空背景温度
-        model.setAverageRainfallCalculation((level, pos) => 0)       // 无降水
-        model.setAirFog((level, pos, calendarTicks) => 0)            // 无空气雾
-        model.setWaterFog((level, pos, calendarTicks) => 0.25)       // 固定水雾
-        model.setWindVector((block, calendarTicks) => event.newVec2(0, 0)) // 无风
+    event.register('kubejs:orbit_climate', builder => {
+        builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15) // 恒温15°C（太空服温度）
+        builder.setAverageTemperatureCalculation((level, pos) => -270) // 太空背景温度
+        builder.setAverageRainfallCalculation((level, pos) => 0)       // 无降水
+        builder.setAirFog((level, pos, calendarTicks) => 0)            // 无空气雾
+        builder.setWaterFog((level, pos, calendarTicks) => 0.25)       // 固定水雾
+        builder.setWindVector((level, pos, calendarTicks) => builder.vector(0, 0)) // 无风
     })
 
     // 月球气候模型
-    event.registerClimateModel('kubejs:moon_climate', model => {
-        model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+    event.register('kubejs:moon_climate', builder => {
+        builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
             return calcCurrentTemp(-5, 60, pos.y, calendarTicks, 125, 0, 0) // 昼夜温差±125°C
         })
-        model.setAverageTemperatureCalculation((level, pos) => -5)   // 月表平均温度
-        model.setAverageRainfallCalculation((level, pos) => 0)       // 无降水
-        model.setAirFog((level, pos, calendarTicks) => 0)            // 无空气雾
-        model.setWaterFog((level, pos, calendarTicks) => 0.25)       // 固定水雾
-        model.setWindVector((block, calendarTicks) => event.newVec2(0, 0)) // 无风（月球无大气）
+        builder.setAverageTemperatureCalculation((level, pos) => -5)   // 月表平均温度
+        builder.setAverageRainfallCalculation((level, pos) => 0)       // 无降水
+        builder.setAirFog((level, pos, calendarTicks) => 0)            // 无空气雾
+        builder.setWaterFog((level, pos, calendarTicks) => 0.25)       // 固定水雾
+        builder.setWindVector((level, pos, calendarTicks) => builder.vector(0, 0)) // 无风（月球无大气）
     })
 
     // 火星气候模型
-    event.registerClimateModel('kubejs:mars_climate', model => {
-        model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+    event.register('kubejs:mars_climate', builder => {
+        builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
             let avgTemp = calcAverage(pos.z, 10000, -110, -15); // 纬度温差-110°C到-15°C
             return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5); // 昼夜温差±45°C
         })
-        model.setAverageTemperatureCalculation((level, pos) => {
+        builder.setAverageTemperatureCalculation((level, pos) => {
             return calcAverage(pos.z, 10000, -110, -15); // 模拟火星纬度温差
         })
-        model.setAverageRainfallCalculation((level, pos) => {
+        builder.setAverageRainfallCalculation((level, pos) => {
             return calcAverage(pos.z, 10000, 13, -25) // 极地微量降水，赤道干旱
         })
-        model.setAirFog((level, pos, calendarTicks) => 0)      // 无空气雾
-        model.setWaterFog((level, pos, calendarTicks) => 0.25) // 固定水雾
-        model.setWindVector((block, calendarTicks) => event.newVec2(0.25, 0.25)) // 持续微风（模拟火星风暴）
+        builder.setAirFog((level, pos, calendarTicks) => 0)      // 无空气雾
+        builder.setWaterFog((level, pos, calendarTicks) => 0.25) // 固定水雾
+        builder.setWindVector((level, pos, calendarTicks) => builder.vector(0.25, 0.25)) // 持续微风（模拟火星风暴）
     })
      // 金星气候模型（地狱般的高压高温大气）
-     event.registerClimateModel('kubejs:venus_climate', model => {
-        model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+     event.register('kubejs:venus_climate', builder => {
+        builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
             return calcCurrentTemp(450, 15, pos.y, calendarTicks, 25, 50, 0) // 地表恒温450°C，微弱昼夜波动
         })
-        model.setAverageTemperatureCalculation((level, pos) => 450)          // 太阳系最热行星
-        model.setAverageRainfallCalculation((level, pos) => 300)            // 模拟硫酸云降水
-        model.setAirFog((level, pos, calendarTicks) => 0.75)               // 浓厚大气雾
-        model.setWaterFog((level, pos, calendarTicks) => 0.9)              // 高密度雾气
-        model.setWindVector((block, calendarTicks) => event.newVec2(1.2, 1.2)) // 超强环流风（金星飓风）
+        builder.setAverageTemperatureCalculation((level, pos) => 450)          // 太阳系最热行星
+        builder.setAverageRainfallCalculation((level, pos) => 300)            // 模拟硫酸云降水
+        builder.setAirFog((level, pos, calendarTicks) => 0.75)               // 浓厚大气雾
+        builder.setWaterFog((level, pos, calendarTicks) => 0.9)              // 高密度雾气
+        builder.setWindVector((level, pos, calendarTicks) => builder.vector(1.2, 1.2)) // 超强环流风（金星飓风）
     })
 
     // 水星气候模型（极端昼夜温差）
-    event.registerClimateModel('kubejs:mercury_climate', model => {
-        model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+    event.register('kubejs:mercury_climate', builder => {
+        builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
             return calcCurrentTemp(150, 430, pos.y, calendarTicks, 300, 0, 0) // 昼夜温差±300°C
         })
-        model.setAverageTemperatureCalculation((level, pos) => {
+        builder.setAverageTemperatureCalculation((level, pos) => {
             return calcAverage(pos.z, 5000, -180, 430) // 极区-180°C，赤道430°C
         })
-        model.setAverageRainfallCalculation((level, pos) => 0)             // 无大气降水
-        model.setAirFog((level, pos, calendarTicks) => 0)                 // 透明稀薄大气
-        model.setWaterFog((level, pos, calendarTicks) => 0.1)             // 微量水雾
-        model.setWindVector((block, calendarTicks) => event.newVec2(0, 0)) // 无大气风
+        builder.setAverageRainfallCalculation((level, pos) => 0)             // 无大气降水
+        builder.setAirFog((level, pos, calendarTicks) => 0)                 // 透明稀薄大气
+        builder.setWaterFog((level, pos, calendarTicks) => 0.1)             // 微量水雾
+        builder.setWindVector((level, pos, calendarTicks) => builder.vector(0, 0)) // 无大气风
     })
 })
