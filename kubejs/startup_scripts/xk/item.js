@@ -23,8 +23,30 @@ StartupEvents.registry('item', event => {
     ingot.forEach(metal=>{
         event.create(`triple_${metal}`, 'basic').texture(`kubejs:item/metal/triple_${metal}`);//三锭
     })
-    
+    const weapon_part = [
+  "tomahawk_weapon_part",
+  "throwing_knife_weapon_part",
+  "dagger_weapon_part",
+  "handguard_weapon_part",
+  "longsword_weapon_part",
+  "katana_weapon_part",
+  "saber_weapon_part",
+  "rapier_weapon_part",
+  "battle_hammer_weapon_part",
+  "warhammer_weapon_part",
+  "battleaxe_weapon_part",
+  "flanged_mace_weapon_part",
+  "greatsword_weapon_part",
+  "halberd_weapon_part",
+  "glaive_weapon_part",
+  "scythe_weapon_part",
+  "lance_weapon_part",
+  "quarterstaff_weapon_part"
+];
+ ingot.forEach(metal=>{weapon_part.forEach(weapon_parta=>{
 
+        event.create(`${metal}_${weapon_parta}`, 'basic').texture(`kubejs:item/weapon_part/${metal}_${weapon_parta}`);
+    }) })
 
 
 

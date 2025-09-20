@@ -7,3 +7,4 @@ BlockEvents.modification(event => {
 
     });
 });
+融化地址kubejs\server_scripts\tfc\heat_modified.js

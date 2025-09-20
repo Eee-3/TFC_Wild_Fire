@@ -59,12 +59,12 @@ const items = [
     { name: "iron_scrap", metal: 'cast_iron', number: 75, temperature: 1535 }, // 铁甲片
     { name: "ancient_steel_scrap", metal: "steel", number: 75, temperature: 1540 }, // 古代钢甲片
     { name: "rusty_ancient_steel_scrap", metal: "steel", number: 75, temperature: 1540 }, // 生锈的古代钢甲片
-    { name: "copper_link", metal: "copper", number: 10, temperature: 1080 }, // 铜链环
-    { name: "rusty_copper_link", metal: "copper", number: 10, temperature: 1080 }, // 生锈的铜链环
-    { name: "bronze_link", metal: "bronze", number: 10, temperature: 950 }, // 青铜链环
-    { name: "rusty_bronze_link", metal: "bronze", number: 10, temperature: 950 }, // 生锈的青铜链环
-    { name: "rusty_iron_link", metal: 'cast_iron', number: 10, temperature: 1535 }, // 生锈的铁链环
-    { name: "iron_link", metal: 'cast_iron', number: 10, temperature: 1535 }, // 铁链环
+    { name: "copper_link", metal: "copper", number: 25, temperature: 1080 }, // 铜链环
+    { name: "rusty_copper_link", metal: "copper", number: 25, temperature: 1080 }, // 生锈的铜链环
+    { name: "bronze_link", metal: "bronze", number: 25, temperature: 950 }, // 青铜链环
+    { name: "rusty_bronze_link", metal: "bronze", number: 25, temperature: 950 }, // 生锈的青铜链环
+    { name: "rusty_iron_link", metal: 'cast_iron', number: 25, temperature: 1535 }, // 生锈的铁链环
+    { name: "iron_link", metal: 'cast_iron', number: 25, temperature: 1535 }, // 铁链环
     { name: "crown", metal: "gold", number: 5, temperature: 1064 }, // 金币
     { name: "triple_copper", temperature: 1080, metal: "copper", number: 300 },
     { name: "triple_bismuth_bronze", temperature: 960, metal: "bismuth_bronze", number: 300 },
