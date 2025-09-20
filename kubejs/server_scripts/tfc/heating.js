@@ -14,12 +14,12 @@ const metal = [
   const weaponry = [
     { name: "quarterstaff", number: 200 },        // 长棍
     { name: "dagger", number: 100 },              // 匕首
-    { name: "parrying_dagger", number: 100 },     // 格挡匕首
-    { name: "longsword", number: 300 },           // 长刀
-    { name: "greatsword", number: 400 },          // 大剑
-    { name: "saber", number: 300 },               // 军刀
-    { name: "rapier", number: 200 },              // 迅捷剑
-    { name: "katana", number: 300 },              // 太刀
+    { name: "parrying_dagger", number: 150 },     // 格挡匕首
+    { name: "longsword", number: 250 },           // 长刀
+    { name: "greatsword", number: 350 },          // 大剑
+    { name: "saber", number: 250 },               // 军刀
+    { name: "rapier", number: 250 },              // 迅捷剑
+    { name: "katana", number: 250 },              // 太刀
     { name: "battleaxe", number: 400 },           // 战斧
     { name: "battle_hammer", number: 200 },       // 长柄锤
     { name: "warhammer", number: 400 },           // 大锤
@@ -27,7 +27,7 @@ const metal = [
     { name: "spear", number: 100 },               // 矛
     { name: "pike", number: 100 },                // 长矛
     { name: "lance", number: 400 },               // 骑枪
-    { name: "glaive", number: 200 },              // 长柄刀
+    { name: "glaive", number: 350 },              // 长柄刀
     { name: "halberd", number: 400 },             // 戟
     { name: "throwing_knife", number: 100 },      // 飞刀
     { name: "tomahawk", number: 200 },            // 印第安投斧
@@ -35,6 +35,31 @@ const metal = [
     { name: "flanged_mace", number: 300 },        // 页锤
     { name: "boomerang", number: 100 }            // 回旋镖
   ];
+const weapon_part = [
+  { name: "tomahawk_weapon_part", number: 100 },        // 印第安投斧武器部件
+  { name: "throwing_knife_weapon_part", number: 100 },  // 飞刀武器部件
+  { name: "dagger_weapon_part", number: 100 },          // 匕首武器部件
+  { name: "handguard_weapon_part", number: 50 },       // 护手武器部件
+  { name: "longsword_weapon_part", number: 200 },       // 长刀武器部件
+  { name: "katana_weapon_part", number: 200 },          // 太刀武器部件
+  { name: "saber_weapon_part", number: 200 },           // 军刀武器部件
+  { name: "rapier_weapon_part", number: 200 },          // 迅捷剑武器部件
+  { name: "battle_hammer_weapon_part", number: 200 },   // 战锤武器部件
+  { name: "warhammer_weapon_part", number: 300 },       // 大战锤武器部件
+  { name: "battleaxe_weapon_part", number: 300 },       // 战斧武器部件
+  { name: "flanged_mace_weapon_part", number: 300 },    // 带刺钉头锤武器部件
+  { name: "greatsword_weapon_part", number: 300 },      // 大剑武器部件
+  { name: "halberd_weapon_part", number: 400 },         // 戟武器部件
+  { name: "glaive_weapon_part", number: 300 },          // 长柄刀武器部件
+  { name: "scythe_weapon_part", number: 400 },          // 战镰武器部件
+  { name: "lance_weapon_part", number: 400 },           // 骑枪武器部件
+  { name: "quarterstaff_weapon_part", number: 100 }     // 长棍武器部件
+];
+metal.forEach(metala => {weapon_part.forEach(weapon_parta => {
+tfc.heating(`kubejs:${metala.name}_${weapon_parta.name}`, metala.temperature)
+        .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, weapon_parta.number))
+    
+})})//武器部件熔铸
   metal.forEach(metala => {
     weaponry.forEach(weaponrya => {
       tfc.heating(`kubejs:${metala.name}_${weaponrya.name}`, metala.temperature)

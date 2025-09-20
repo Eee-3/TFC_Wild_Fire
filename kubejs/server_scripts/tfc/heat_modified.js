@@ -24,6 +24,6 @@ TFCEvents.data(e => {
   e.itemHeat('kubejs:overburned_bow_arm', 1, null, null);
   e.itemHeat('kubejs:charred_bow_arm', 1, null, null);
   e.itemHeat('kubejs:oiled_bow_arm', 1, null, null);
-    e.itemHeat('#k', 1, null, null);
+    e.itemHeat('@kubejs', 1, null, null);
 
 })
