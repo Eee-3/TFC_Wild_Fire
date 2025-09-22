@@ -16,31 +16,60 @@ ServerEvents.recipes(e => {
     "createdieselgenerators:hammering/gold_sheet",
     "create:crafting/kinetics/propeller",//扇叶
     "create:crafting/kinetics/whisk",//搅拌头
-"butcher:hook_recipe",//恶性bug钩子
-"farmersdelight:flint_knife"
+    "butcher:hook_recipe",//恶性bug钩子
+    "farmersdelight:flint_knife",
+    "tfc_metal_items:seq_pressing/double_ingots/electrum",//单独删除琥珀金
+    "tfc_metal_items:seq_pressing/sheets/electrum",
+    "tfc_metal_items:seq_pressing/double_ingots/lead",
+    "tfc_metal_items:seq_pressing/double_ingots/aluminum",
+    "tfc_metal_items:seq_pressing/sheets/aluminum",
+    "tfc_metal_items:seq_pressing/sheets/lead",
+    "tfc_metal_items:crafting/vanilla_anvil",
+    "vintageimprovements:mechanical_crafting/helve_hammer",
+    "createmetallurgy:crafting/content/foundry_basin",
+    "woodencog:crafting/kinetics/basin",
+    "create:crafting/kinetics/basin",
+    "createmetallurgy:crafting/content/foundry_lid",
+    "create:crafting/materials/andesite_alloy_from_zinc",
+    "tfc:crafting/blast_furnace",
+    "artisanal:crafting/bloomery"
+
+
   ]
+  const tfc_metal = [
+    "red_steel",
+    "bismuth",
+    "bismuth_bronze",
+    "black_bronze",
+    "bronze",
+    "brass",
+    "copper",
+    "gold",
+    "nickel",
+    "rose_gold",
+    "blue_steel",
+    "black_steel",
+    "steel",
+    "cast_iron",
+    "wrought_iron",
+    "sterling_silver",
+    "zinc",
+    "tin",
+    "silver"
+  ];
   iddd.forEach(id => { e.remove({ id: id }); });
 
+  tfc_metal.forEach(tfc_metal => {
+    e.remove({ id: `woodencog:heated_compacting/double_${tfc_metal}` })
+    e.remove({ id: `woodencog:heated_pressing/sheet_${tfc_metal}` })
+    e.remove({ id: `tfc_metal_items:seq_pressing/sheets/${tfc_metal}` })
+    e.remove({ id: `tfc_metal_items:seq_pressing/double_ingots/${tfc_metal}` })
+  })
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）

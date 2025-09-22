@@ -31,29 +31,32 @@ const metalaa = [
   { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
 ];
 const weaponry = [//A是金属头,B是棍子 C是金属棒 D是护手 E长手柄
-  { name: "quarterstaff", number: 200, recipesd: ["A", "B", "A"] },        // 长棍
+  { name: "quarterstaff", number: 200, recipesd: ["  A", " B ", "A  "] },        // 长棍
   { name: "dagger", number: 100, recipesd: ["A", "B"] },              // 匕首
   { name: "parrying_dagger", number: 100, recipesd: ["A", "C", "B"] },     // 格挡匕首
-  { name: "longsword", number: 300, recipesd: ["A", "D", "B"] },           // 长刀
+  { name: "longsword", number: 300, recipesd: ["  A", " D ", "B  "] },           // 长刀
   { name: "greatsword", number: 400, recipesd: ["A", "D", "B"] },          // 大剑
   { name: "saber", number: 300, recipesd: ["A", "D", "B"] },               // 军刀
-  { name: "rapier", number: 200, recipesd: ["A", "C", "B"] },              // 迅捷剑
-  { name: "katana", number: 300, recipesd: ["A", "D", "B"] },              // 太刀
+  { name: "rapier", number: 200, recipesd: ["  A", " C ", "B  "] },              // 迅捷剑
+  { name: "katana", number: 300, recipesd: ["  A", " D ", "B  "] },              // 太刀
   { name: "battleaxe", number: 400, recipesd: ["A", "B"] },           // 战斧
-  { name: "battle_hammer", number: 200, recipesd: ["A", "B"] },       // 长柄锤
-  { name: "warhammer", number: 400, recipesd: ["A", "B"] },           // 大锤
-  { name: "javelin", number: 400, recipesd: ["A", "E"] },             // 标枪
-  { name: "spear", number: 100, recipesd: ["A", "E"] },               // 矛
-  { name: "pike", number: 100, recipesd: ["A", "E", "E"] },                // 长矛
+  { name: "battle_hammer", number: 200, recipesd: ["A ", " B"] },       // 长柄锤
+  { name: "warhammer", number: 400, recipesd: ["A ", " B"] },           // 大锤
   { name: "lance", number: 400, recipesd: ["A", "E"] },               // 骑枪
   { name: "glaive", number: 200, recipesd: ["A", "E"] },              // 长柄刀
-  { name: "halberd", number: 400, recipesd: ["A", "E"] },             // 戟
-  { name: "throwing_knife", number: 100, recipesd: ["A", "B"] },      // 飞刀
-  { name: "tomahawk", number: 200, recipesd: ["A", "B"] },            // 印第安投斧
-  { name: "scythe", number: 400, recipesd: ["A", "E"] },              // 战镰
-  { name: "flanged_mace", number: 300, recipesd: ["A", "B"] },        // 页锤
+  { name: "halberd", number: 400, recipesd: ["A ", " E"] },             // 戟
+  { name: "throwing_knife", number: 100, recipesd: ["A ", " B"] },      // 飞刀
+  { name: "tomahawk", number: 200, recipesd: ["A ", " B"] },            // 印第安投斧
+  { name: "scythe", number: 400, recipesd: ["A ", " E"] },              // 战镰
+  { name: "flanged_mace", number: 300, recipesd: ["A ", " B"] },        // 页锤
+  { name: "javelin", number: 400, recipesd: ["A", "E"], },             // 标枪
+  { name: "spear", number: 100, recipesd: [" A", "E "], },               // 矛
+  { name: "pike", number: 100, recipesd: ["  A", " E ", "E  "], },
   //{ name: "boomerang", number: 100 ,recipesd:["A","B"]}            // 回旋镖
 ];
+const tfc_weaponry = [
+  // 长矛
+]
 ServerEvents.recipes(e => {
   tools.forEach(tool => {
     metals.forEach(metal => {
@@ -105,57 +108,237 @@ ServerEvents.recipes(e => {
     });
   });
 
-  metalaa.forEach(function (metala) {
-    // 遍历所有武器类型
-    weaponry.forEach(weaponrya => {
-      // 构建配方键映射
-      var keyMap = {};
-      // 为配方中的每个独特组件创建映射
-      var uniqueKeys = [];
-      for (var i = 0; i < weaponrya.recipesd.length; i++) {
-        var key = weaponrya.recipesd[i];
-        // 检查当前key是否已存在于uniqueKeys中
-        if (uniqueKeys.indexOf(key) === -1) {
-          uniqueKeys.push(key);
-        }
+  function applyForgingBonus(metala, weaponName) {
+    return (inputGrid, result) => {
+      const head = inputGrid.findAll().find(stack =>
+        stack.id.toString().startsWith(`kubejs:${metala.name}_${weaponName}_weapon_part`)
+      );
+      const headTag = head.getOrCreateTag();
+      let level = headTag.getInt("tfc:forging_bonus");
+      level = Math.min(level, 4);
+      const resultTag = result.getOrCreateTag();
+      resultTag.contains("tfc:forging_bonus")
+        ? resultTag.remove("tfc:forging_bonus")
+        : resultTag.putInt("tfc:forging_bonus", level);
+      return result;
+    };
+  }
+
+  // 生成所有武器配方
+  metalaa.forEach(metala => {
+    // 长棍
+    e.shaped(
+      `kubejs:${metala.name}_quarterstaff`, ["  A", " B ", "A  "],
+      {
+        A: `kubejs:${metala.name}_quarterstaff_weapon_part`,
+        B: 'spartanweaponry:handle'
       }
+    ).id(`kubejs:${metala.name}_quarterstaff_shaped`)
+      .modifyResult(applyForgingBonus(metala, "quarterstaff"));
 
-      uniqueKeys.forEach(key => {
-        switch (key) {
-          case 'A':
-            keyMap[key] = `kubejs:${metala.name}_${weaponrya.name}_weapon_part`;
-            break;
-          case 'B':
-            keyMap[key] = 'spartanweaponry:handle';
-            break;
-          case 'C':
-            keyMap[key] = `tfc:metal/rod/${metala.name}`;
-            break;
-          case 'D':
-            keyMap[key] = `kubejs:${metala.name}_handguard_weapon_part`;
-            break;
-          case 'E':
-            keyMap[key] = 'spartanweaponry:pole';
-            break;
-        }
-      });
+    // 匕首
+    e.shaped(
+      `kubejs:${metala.name}_dagger`, ["A", "B"],
+      {
+        A: `kubejs:${metala.name}_dagger_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_dagger_shaped`)
+      .modifyResult(applyForgingBonus(metala, "dagger"));
 
+    // 格挡匕首
+    e.shaped(
+      `kubejs:${metala.name}_parrying_dagger`, ["A", "C", "B"],
+      {
+        A: `kubejs:${metala.name}_parrying_dagger_weapon_part`,
+        B: 'spartanweaponry:handle',
+        C: `tfc:metal/rod/${metala.name}`
+      }
+    ).id(`kubejs:${metala.name}_parrying_dagger_shaped`)
+      .modifyResult(applyForgingBonus(metala, "parrying_dagger"));
 
-      e.shaped(
-        `kubejs:${metala.name}_${weaponrya.name}`,
-        weaponrya.recipesd,
-        keyMap
-      ).id(`kubejs:${metala.name}_${weaponrya.name}_shaped`)
-        .modifyResult((inputGrid, result) => {
-          const head = inputGrid.findAll().find(stack => stack.id.toString().startsWith(`kubejs:${metala.name}_${weaponrya.name}_weapon_part`))
-          const headTag = head.getOrCreateTag();
-          let level = headTag.getInt("tfc:forging_bonus")
-          level = Math.min(level, 4);
-          const resultTag = result.getOrCreateTag();
-          resultTag.contains("tfc:forging_bonus") ? resultTag.remove("tfc:forging_bonus") : resultTag.putInt("tfc:forging_bonus", level);
-          return result
-        });
-    });
+    // 长刀
+    e.shaped(
+      `kubejs:${metala.name}_longsword`, ["  A", " D ", "B  "],
+      {
+        A: `kubejs:${metala.name}_longsword_weapon_part`,
+        B: 'spartanweaponry:handle',
+        D: `kubejs:${metala.name}_handguard_weapon_part`
+      }
+    ).id(`kubejs:${metala.name}_longsword_shaped`)
+      .modifyResult(applyForgingBonus(metala, "longsword"));
+
+    // 大剑
+    e.shaped(
+      `kubejs:${metala.name}_greatsword`, ["A", "D", "B"],
+      {
+        A: `kubejs:${metala.name}_greatsword_weapon_part`,
+        B: 'spartanweaponry:handle',
+        D: `kubejs:${metala.name}_handguard_weapon_part`
+      }
+    ).id(`kubejs:${metala.name}_greatsword_shaped`)
+      .modifyResult(applyForgingBonus(metala, "greatsword"));
+
+    // 军刀
+    e.shaped(
+      `kubejs:${metala.name}_saber`, ["A", "D", "B"],
+      {
+        A: `kubejs:${metala.name}_saber_weapon_part`,
+        B: 'spartanweaponry:handle',
+        D: `kubejs:${metala.name}_handguard_weapon_part`
+      }
+    ).id(`kubejs:${metala.name}_saber_shaped`)
+      .modifyResult(applyForgingBonus(metala, "saber"));
+
+    // 迅捷剑
+    e.shaped(
+      `kubejs:${metala.name}_rapier`, ["  A", " C ", "B  "],
+      {
+        A: `kubejs:${metala.name}_rapier_weapon_part`,
+        B: 'spartanweaponry:handle',
+        C: `tfc:metal/rod/${metala.name}`
+      }
+    ).id(`kubejs:${metala.name}_rapier_shaped`)
+      .modifyResult(applyForgingBonus(metala, "rapier"));
+
+    // 太刀
+    e.shaped(
+      `kubejs:${metala.name}_katana`, ["  A", " D ", "B  "],
+      {
+        A: `kubejs:${metala.name}_katana_weapon_part`,
+        B: 'spartanweaponry:handle',
+        D: `kubejs:${metala.name}_handguard_weapon_part`
+      }
+    ).id(`kubejs:${metala.name}_katana_shaped`)
+      .modifyResult(applyForgingBonus(metala, "katana"));
+
+    // 战斧
+    e.shaped(
+      `kubejs:${metala.name}_battleaxe`, [" A", "B "],
+      {
+        A: `kubejs:${metala.name}_battleaxe_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_battleaxe_shaped`)
+      .modifyResult(applyForgingBonus(metala, "battleaxe"));
+
+    // 长柄锤
+    e.shaped(
+      `kubejs:${metala.name}_battle_hammer`,[" A", "B "],
+      {
+        A: `kubejs:${metala.name}_battle_hammer_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_battle_hammer_shaped`)
+      .modifyResult(applyForgingBonus(metala, "battle_hammer"));
+
+    // 大锤
+    e.shaped(
+      `kubejs:${metala.name}_warhammer`, [" A", "B "],
+      {
+        A: `kubejs:${metala.name}_warhammer_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_warhammer_shaped`)
+      .modifyResult(applyForgingBonus(metala, "warhammer"));
+
+    // 骑枪
+    e.shaped(
+      `kubejs:${metala.name}_lance`, [" A", "E "],
+      {
+        A: `kubejs:${metala.name}_lance_weapon_part`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_lance_shaped`)
+      .modifyResult(applyForgingBonus(metala, "lance"));
+
+    // 长柄刀
+    e.shaped(
+      `kubejs:${metala.name}_glaive`, ["A", "E"],
+      {
+        A: `kubejs:${metala.name}_glaive_weapon_part`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_glaive_shaped`)
+      .modifyResult(applyForgingBonus(metala, "glaive"));
+
+    // 戟
+    e.shaped(
+      `kubejs:${metala.name}_halberd`, [" A", "E "],
+      {
+        A: `kubejs:${metala.name}_halberd_weapon_part`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_halberd_shaped`)
+      .modifyResult(applyForgingBonus(metala, "halberd"));
+
+    // 飞刀
+    e.shaped(
+      `kubejs:${metala.name}_throwing_knife`, ["A ", " B"],
+      {
+        A: `kubejs:${metala.name}_throwing_knife_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_throwing_knife_shaped`)
+      .modifyResult(applyForgingBonus(metala, "throwing_knife"));
+
+    // 印第安投斧
+    e.shaped(
+      `kubejs:${metala.name}_tomahawk`, [" A", "B "],
+      {
+        A: `kubejs:${metala.name}_tomahawk_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_tomahawk_shaped`)
+      .modifyResult(applyForgingBonus(metala, "tomahawk"));
+
+    // 战镰
+    e.shaped(
+      `kubejs:${metala.name}_scythe`, [" A", "E "],
+      {
+        A: `kubejs:${metala.name}_scythe_weapon_part`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_scythe_shaped`)
+      .modifyResult(applyForgingBonus(metala, "scythe"));
+
+    // 页锤
+    e.shaped(
+      `kubejs:${metala.name}_flanged_mace`, ["A ", " B"],
+      {
+        A: `kubejs:${metala.name}_flanged_mace_weapon_part`,
+        B: 'spartanweaponry:handle'
+      }
+    ).id(`kubejs:${metala.name}_flanged_mace_shaped`)
+      .modifyResult(applyForgingBonus(metala, "flanged_mace"));
+    // 标枪
+    e.shaped(
+      `kubejs:${metala.name}_javelin`, ["A", "E"],
+      {
+        A: `tfc:metal/javelin_head/${metala.name}`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_javelin_shaped`)
+      .modifyResult(applyForgingBonus(metala, "javelin"));
+    // 矛
+    e.shaped(
+      `kubejs:${metala.name}_spear`, [" A", "E "],
+      {
+        A: `tfc:metal/javelin_head/${metala.name}`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_spear_shaped`)
+      .modifyResult(applyForgingBonus(metala, "spear"));
+    // 长矛
+    e.shaped(
+      `kubejs:${metala.name}_pike`, ["  A", " E ", "E  "],
+      {
+        A: `tfc:metal/javelin_head/${metala.name}`,
+        E: 'spartanweaponry:pole'
+      }
+    ).id(`kubejs:${metala.name}_pike_shaped`)
+      .modifyResult(applyForgingBonus(metala, "pike"));
+
   });
 
 })

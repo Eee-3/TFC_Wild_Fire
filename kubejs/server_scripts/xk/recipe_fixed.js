@@ -583,7 +583,7 @@ ServerEvents.recipes(event => {
   const imdouble_ingots = ['aluminum','uranium','constantan','electrum','lead'];
 
 //动力辊压机压板
-double_ingots.forEach(di=>{
+/*double_ingots.forEach(di=>{
    let inputm =`tfc:metal/double_ingot/${di}`
    let outputm =`tfc:metal/sheet/${di}`
  event.custom(
@@ -604,8 +604,8 @@ double_ingots.forEach(di=>{
     "results": [{"item": outputm}],
     "loops": 2
   })
-})
-fdouble_ingots.forEach(di=>{
+})*/
+/*fdouble_ingots.forEach(di=>{
     let inputm =`firmalife:metal/double_ingot/${di}`
     let outputm =`firmalife:metal/sheet/${di}`
     event.custom(
@@ -648,7 +648,7 @@ imdouble_ingots.forEach(di=>{
         "results": [{"item": outputm}],
         "loops": 2
       }) 
-})
+})*/
 
 //激光焊接-锭>双锭
 

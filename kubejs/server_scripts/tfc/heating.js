@@ -1,16 +1,16 @@
 ServerEvents.recipes(e => {
   const { tfc, create, kubejs, immersiveengineering } = e.recipes;
-const metal = [
-    { name: "copper", temperature: 1080, metal: "copper" },       
+  const metal = [
+    { name: "copper", temperature: 1080, metal: "copper" },
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
-    { name: "black_bronze", temperature: 1050, metal: "black_bronze" }, 
-    { name: "bronze", temperature: 950, metal: "bronze" },        
-    { name: "black_steel", temperature: 1485, metal: "black_steel" },  
-    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },   
-    { name: "red_steel", temperature: 1538, metal: "red_steel" },    
-    { name: "steel", temperature: 1540, metal: "steel" },        
-    { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }  
-];
+    { name: "black_bronze", temperature: 1050, metal: "black_bronze" },
+    { name: "bronze", temperature: 950, metal: "bronze" },
+    { name: "black_steel", temperature: 1485, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
+    { name: "red_steel", temperature: 1538, metal: "red_steel" },
+    { name: "steel", temperature: 1540, metal: "steel" },
+    { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
+  ];
   const weaponry = [
     { name: "quarterstaff", number: 200 },        // 长棍
     { name: "dagger", number: 100 },              // 匕首
@@ -35,31 +35,33 @@ const metal = [
     { name: "flanged_mace", number: 300 },        // 页锤
     { name: "boomerang", number: 100 }            // 回旋镖
   ];
-const weapon_part = [
-  { name: "tomahawk_weapon_part", number: 100 },        // 印第安投斧武器部件
-  { name: "throwing_knife_weapon_part", number: 100 },  // 飞刀武器部件
-  { name: "dagger_weapon_part", number: 100 },          // 匕首武器部件
-  { name: "handguard_weapon_part", number: 50 },       // 护手武器部件
-  { name: "longsword_weapon_part", number: 200 },       // 长刀武器部件
-  { name: "katana_weapon_part", number: 200 },          // 太刀武器部件
-  { name: "saber_weapon_part", number: 200 },           // 军刀武器部件
-  { name: "rapier_weapon_part", number: 200 },          // 迅捷剑武器部件
-  { name: "battle_hammer_weapon_part", number: 200 },   // 战锤武器部件
-  { name: "warhammer_weapon_part", number: 300 },       // 大战锤武器部件
-  { name: "battleaxe_weapon_part", number: 300 },       // 战斧武器部件
-  { name: "flanged_mace_weapon_part", number: 300 },    // 带刺钉头锤武器部件
-  { name: "greatsword_weapon_part", number: 300 },      // 大剑武器部件
-  { name: "halberd_weapon_part", number: 400 },         // 戟武器部件
-  { name: "glaive_weapon_part", number: 300 },          // 长柄刀武器部件
-  { name: "scythe_weapon_part", number: 400 },          // 战镰武器部件
-  { name: "lance_weapon_part", number: 400 },           // 骑枪武器部件
-  { name: "quarterstaff_weapon_part", number: 100 }     // 长棍武器部件
-];
-metal.forEach(metala => {weapon_part.forEach(weapon_parta => {
-tfc.heating(`kubejs:${metala.name}_${weapon_parta.name}`, metala.temperature)
+  const weapon_part = [
+    { name: "tomahawk_weapon_part", number: 100 },        // 印第安投斧武器部件
+    { name: "throwing_knife_weapon_part", number: 100 },  // 飞刀武器部件
+    { name: "dagger_weapon_part", number: 100 },          // 匕首武器部件
+    { name: "handguard_weapon_part", number: 50 },       // 护手武器部件
+    { name: "longsword_weapon_part", number: 200 },       // 长刀武器部件
+    { name: "katana_weapon_part", number: 200 },          // 太刀武器部件
+    { name: "saber_weapon_part", number: 200 },           // 军刀武器部件
+    { name: "rapier_weapon_part", number: 200 },          // 迅捷剑武器部件
+    { name: "battle_hammer_weapon_part", number: 200 },   // 战锤武器部件
+    { name: "warhammer_weapon_part", number: 300 },       // 大战锤武器部件
+    { name: "battleaxe_weapon_part", number: 300 },       // 战斧武器部件
+    { name: "flanged_mace_weapon_part", number: 300 },    // 带刺钉头锤武器部件
+    { name: "greatsword_weapon_part", number: 300 },      // 大剑武器部件
+    { name: "halberd_weapon_part", number: 400 },         // 戟武器部件
+    { name: "glaive_weapon_part", number: 300 },          // 长柄刀武器部件
+    { name: "scythe_weapon_part", number: 400 },          // 战镰武器部件
+    { name: "lance_weapon_part", number: 400 },           // 骑枪武器部件
+    { name: "quarterstaff_weapon_part", number: 100 }     // 长棍武器部件
+  ];
+  metal.forEach(metala => {
+    weapon_part.forEach(weapon_parta => {
+      tfc.heating(`kubejs:${metala.name}_${weapon_parta.name}`, metala.temperature)
         .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, weapon_parta.number))
-    
-})})//武器部件熔铸
+
+    })
+  })//武器部件熔铸
   metal.forEach(metala => {
     weaponry.forEach(weaponrya => {
       tfc.heating(`kubejs:${metala.name}_${weaponrya.name}`, metala.temperature)
@@ -67,7 +69,7 @@ tfc.heating(`kubejs:${metala.name}_${weapon_parta.name}`, metala.temperature)
         .useDurability(true);
     });
   });
-const items = [
+  const items = [
     { name: "copper_fragments", metal: "copper", number: 35, temperature: 1080 }, // 铜碎片
     { name: "bronze_fragments", metal: "bronze", number: 35, temperature: 950 }, // 青铜碎片
     { name: "iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 }, // 铁碎片
@@ -98,23 +100,31 @@ const items = [
     { name: "triple_black_steel", temperature: 1485, metal: "black_steel", number: 300 },
     { name: "triple_blue_steel", temperature: 1538, metal: "blue_steel", number: 300 },
     { name: "triple_red_steel", temperature: 1538, metal: "red_steel", number: 300 },
-    { name: "triple_steel", temperature: 1540, metal: "steel", number: 300 },
-    { name: "triple_wrought_iron", temperature: 1535, metal: "cast_iron", number: 300 }
+    { name: "triple_steel", temperature: 1540, metal: "steel", number: 300 }
 
-   
-];
- items.forEach(metala => {
-    
-      tfc.heating(`kubejs:${metala.name}`, metala.temperature)
-        .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
-    
+
+  ];
+  items.forEach(metala => {
+
+    tfc.heating(`kubejs:${metala.name}`, metala.temperature)
+      .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
+
+  });
+    const itemss = [
+    { name: "anvil", temperature: 1535, metal: "cast_iron", number: 1400 ,mods:"minecraft:"},
+    { name: "chipped_anvil", temperature: 1535, metal: "cast_iron", number: 1200, mods:"minecraft:"},
+    { name: "damaged_anvil", temperature: 1535, metal: "cast_iron", number: 1000 ,mods:"minecraft:"}
+
+  ]
+  itemss.forEach(metala => {
+
+    tfc.heating(`${metala.mods}${metala.name}`, metala.temperature)
+      .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
+
   });
 
 
 
 
 
-
-
-  
 });
