@@ -1,0 +1,201 @@
+
+#General settings
+[general]
+	#Enable or disable all notifications (default: true)
+	enabled = true
+	#Debug mode (default: false)
+	debug = false
+	#Show additional notification on world join (default: true)
+	on_join_message = true
+	#Use game language for titles and subtitles. Use false to use custom messages defined in months section (default: true)
+	game_lang = true
+
+#Style settings
+[style]
+	#Default title color (default: WHITE)
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+	title_color = "WHITE"
+	#Default subtitle color (default: GRAY)
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+	subtitle_color = "GRAY"
+	#Fade-in time in ticks (default: 10)
+	#Range: 0 ~ 100
+	fade_in = 10
+	#Duration in ticks (default: 60)
+	#Range: 0 ~ 400
+	duration = 60
+	#Fade-out time in ticks (default: 10)
+	#Range: 0 ~ 100
+	fade_out = 10
+
+#Notification settings for each month
+[months]
+
+	[months.january]
+		#Enable notification for January
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "January"
+		#Custom month subtitle message
+		custom_subtitle = "January is here!"
+
+	[months.february]
+		#Enable notification for February
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "February"
+		#Custom month subtitle message
+		custom_subtitle = "February is here!"
+
+	[months.march]
+		#Enable notification for March
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "March"
+		#Custom month subtitle message
+		custom_subtitle = "March is here!"
+
+	[months.april]
+		#Enable notification for April
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "April"
+		#Custom month subtitle message
+		custom_subtitle = "April is here!"
+
+	[months.may]
+		#Enable notification for May
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "May"
+		#Custom month subtitle message
+		custom_subtitle = "May is here!"
+
+	[months.june]
+		#Enable notification for June
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "June"
+		#Custom month subtitle message
+		custom_subtitle = "June is here!"
+
+	[months.july]
+		#Enable notification for July
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "July"
+		#Custom month subtitle message
+		custom_subtitle = "July is here!"
+
+	[months.august]
+		#Enable notification for August
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "August"
+		#Custom month subtitle message
+		custom_subtitle = "August is here!"
+
+	[months.september]
+		#Enable notification for September
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "September"
+		#Custom month subtitle message
+		custom_subtitle = "September is here!"
+
+	[months.october]
+		#Enable notification for October
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "October"
+		#Custom month subtitle message
+		custom_subtitle = "October is here!"
+
+	[months.november]
+		#Enable notification for November
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "November"
+		#Custom month subtitle message
+		custom_subtitle = "November is here!"
+
+	[months.december]
+		#Enable notification for December
+		enabled = true
+		#Color for month title. Use INHERIT to use default title color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		title_color = "INHERIT"
+		#Color for month subtitle. Use INHERIT to use default subtitle color (default: INHERIT)
+		#Allowed Values: INHERIT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		subtitle_color = "INHERIT"
+		#Custom month title message
+		custom_title = "December"
+		#Custom month subtitle message
+		custom_subtitle = "December is here!"
+
