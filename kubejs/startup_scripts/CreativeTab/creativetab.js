@@ -126,7 +126,7 @@ StartupEvents.modifyCreativeTab("ad_astra:main", event => {
 })
 
 StartupEvents.registry('creative_mode_tab', event => {
-    event.create('TFC_weaponrys')
+    event.create('tfc_weaponrys')
         .icon(() => 'kubejs:black_steel_greatsword')
         .displayName(Component.translatable("itemGroup.kubejs.tfc_weaponrys"))
         .content(_showRestrictedItems => [
