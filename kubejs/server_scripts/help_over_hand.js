@@ -10,4 +10,8 @@ ServerEvents.tags('item', event => {
      event.add('ad_astra:held_over_head', 'trotting_wagons:armored_wagon')
      event.add('ad_astra:held_over_head', 'trotting_wagons:conestoga_wagon')
      event.add('ad_astra:held_over_head', 'trotting_wagons:royal_wagon')
+     event.add('tfc:prospectable', 'tfc:kaolin_clay_grassr')
+     event.add('tfc:prospectable', 'tfc:white_kaolin_clay')
+     event.add('tfc:prospectable', 'tfc:pink_kaolin_clay')
+     event.add('tfc:prospectable', 'tfc:pink_kaolin_clay')
 })
