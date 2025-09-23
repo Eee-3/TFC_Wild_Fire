@@ -1,0 +1,20 @@
+{
+	"conditions": [
+		{
+			  "type": "forge:mod_loaded",
+			  "modid": "createaddition"
+		}
+	],
+	"type":"createaddition:rolling",
+	"input": {
+	  "type": "tfc:heatable",
+	  "min_temp": 590,
+	  "ingredient": {
+		  "tag": "forge:ingots/bismuth_bronze"
+	  }
+	},
+	"result": {
+	  "item": "tfc:metal/rod/bismuth_bronze",
+	  "count": 2
+	}
+}

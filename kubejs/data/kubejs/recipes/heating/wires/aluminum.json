@@ -1,0 +1,24 @@
+{
+  "type": "tfc:heating",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/aluminum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfc_ie_addon"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/aluminum"
+  },
+  "result_fluid": {
+    "fluid": "tfc_ie_addon:metal/aluminum",
+    "amount": 25
+  },
+  "temperature": 650
+}

@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "firmalife"
+    },
+    {
+		  "type": "forge:mod_loaded",
+		  "modid": "createaddition"
+    }
+  ],
+  "type":"createaddition:rolling",
+  "input": {
+    "type": "tfc:heatable",
+    "min_temp": 920,
+    "ingredient": {
+        "tag": "forge:ingots/stainless_steel"
+    }
+  },
+  "result": {
+    "item": "firmalife:metal/rod/stainless_steel",
+    "count": 2
+  }
+}

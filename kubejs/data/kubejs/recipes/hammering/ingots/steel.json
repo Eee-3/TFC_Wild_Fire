@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 10,
+  "ingredients": [
+    {
+      "type": "tfc:heatable",
+      "min_temp": 920,
+      "ingredient": {
+        "item": "tfc:metal/ingot/high_carbon_steel"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:metal/ingot/steel"
+    }
+  ]
+}

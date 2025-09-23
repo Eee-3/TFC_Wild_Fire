@@ -110,10 +110,13 @@ ServerEvents.recipes(e => {
       .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
 
   });
-    const itemss = [
-    { name: "anvil", temperature: 1535, metal: "cast_iron", number: 1400 ,mods:"minecraft:"},
-    { name: "chipped_anvil", temperature: 1535, metal: "cast_iron", number: 1200, mods:"minecraft:"},
-    { name: "damaged_anvil", temperature: 1535, metal: "cast_iron", number: 1000 ,mods:"minecraft:"}
+  const itemss = [
+    { name: "anvil", temperature: 1535, metal: "cast_iron", number: 1400, mods: "minecraft:" },
+    { name: "chipped_anvil", temperature: 1535, metal: "cast_iron", number: 1200, mods: "minecraft:" },
+    { name: "damaged_anvil", temperature: 1535, metal: "cast_iron", number: 1000, mods: "minecraft:" },
+    { name: "material_component_steel", temperature: 1580, metal: "steel", number: 50,mods: "kubejs:" },
+    { name: "material_component_black_steel", temperature: 1620, metal: "black_steel", number: 50,mods: "kubejs:"  },
+    { name: "material_component_wrought_iron", temperature: 1500, metal: "wrought_iron", number: 50 ,mods: "kubejs:" },
 
   ]
   itemss.forEach(metala => {

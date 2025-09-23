@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was created by tfch",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/iron",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:wires/iron"
+  },
+  "result_fluid": {
+    "fluid": "tfc:metal/cast_iron",
+    "amount": 25
+  },
+  "temperature": 1535,
+  "use_durability": true
+}

@@ -32,10 +32,34 @@ ServerEvents.recipes(e => {
     "createmetallurgy:crafting/content/foundry_lid",
     "create:crafting/materials/andesite_alloy_from_zinc",
     "tfc:crafting/blast_furnace",
-    "artisanal:crafting/bloomery"
+    "artisanal:crafting/bloomery",
+    "tfc_metal_items:seq_pressing/ingots/bloom_raw",
+    "tfc_metal_items:seq_pressing/ingots/bloom_refined",
+    
+    "create_new_age:shaped/connector",
+    "create_new_age:shaped/connector_mirrored",
+    "create_new_age:cutting/copper_sheet",
+    'create_new_age:overcharged_iron_wire',
+    "create_new_age:cutting/overcharged_iron_sheet",
+    "create_new_age:cutting/overcharged_golden_sheet",
+    "create_new_age:diamond_wire",
+    "create_new_age:reactor/reactor_casing",
+    "create_new_age:reactor/reactor_rod",
+    "create_new_age:reactor/reactor_fuel_acceptor",
+    "create_new_age:reactor/reactor_heat_vent",
+    "create_new_age:thorium/nuclear_fuel",
+    "create:pressing/compat/immersiveengineering/plate_steel",
+    "create:pressing/steel_ingot",
+
+    "ad_astra:steel_ingot",
+    "create:sequenced_assembly/sturdy_sheet",
+    
+    
+    
 
 
   ]
+  iddd.forEach(id => { e.remove({ id: id }); });
   const tfc_metal = [
     "red_steel",
     "bismuth",
@@ -57,13 +81,12 @@ ServerEvents.recipes(e => {
     "tin",
     "silver"
   ];
-  iddd.forEach(id => { e.remove({ id: id }); });
+  
 
   tfc_metal.forEach(tfc_metal => {
     e.remove({ id: `woodencog:heated_compacting/double_${tfc_metal}` })
     e.remove({ id: `woodencog:heated_pressing/sheet_${tfc_metal}` })
-    e.remove({ id: `tfc_metal_items:seq_pressing/sheets/${tfc_metal}` })
-    e.remove({ id: `tfc_metal_items:seq_pressing/double_ingots/${tfc_metal}` })
+
   })
 
 

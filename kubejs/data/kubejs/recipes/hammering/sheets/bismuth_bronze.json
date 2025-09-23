@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    },
+    {
+      "value":{
+        "tag": "forge:double_ingots/bismuth_bronze",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 6,
+	"ingredients": [
+	  {
+	    "type": "tfc:heatable",
+	    "min_temp": 590,
+	    "ingredient": {
+	      "tag": "forge:double_ingots/bismuth_bronze"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    }
+  ]
+}

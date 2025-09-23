@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    },
+    {
+      "value":{
+        "tag": "forge:double_ingots/uranium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 10,
+	"ingredients": [
+	  {
+	    "type": "tfc:heatable",
+	    "min_temp": 750,
+	    "ingredient": {
+	      "tag": "forge:double_ingots/uranium"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc_ie_addon:metal/sheet/uranium"
+    }
+  ]
+}

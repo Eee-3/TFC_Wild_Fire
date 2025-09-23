@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'kubejs:thirace/wildfire/shaped/';
 
-    const recipes = [
+  /*  const recipes = [
 
         {
             output: 'createmetallurgy:sturdy_whisk',
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
         },
 
     ];
-
+*/
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

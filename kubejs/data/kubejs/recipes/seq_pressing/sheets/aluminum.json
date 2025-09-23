@@ -1,0 +1,99 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "value":{
+        "tag": "forge:double_ingots/aluminum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:heatable",
+    "min_temp": 390,
+    "ingredient": {
+      "tag": "forge:double_ingots/aluminum"
+    }
+  },
+  "transitionalItem": {
+    "item": "tfc_metal_items:unknown_sheet"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc_ie_addon:metal/sheet/aluminum"
+    }
+  ],
+  "loops": 2
+}

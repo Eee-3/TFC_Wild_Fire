@@ -9,15 +9,15 @@ PlayerEvents.tick(event => {
 
     // 超重时增加经验
     let nowexp = player.persistentData.getDouble('endurance_exp') || 0;
-    if ((maxWeight > 0 && nowWeight / maxWeight > 1 && nowWeight !== 0)&&distan<200) {
-        
-        const expGain = distan * (Math.min(nowWeight, 2 * maxWeight))*(Math.min(nowWeight, 2 * maxWeight)) / (maxWeight*maxWeight) / 4;
+    if ((maxWeight > 0 && nowWeight / maxWeight > 1 && nowWeight !== 0) && distan < 200) {
+
+        const expGain = distan * (Math.min(nowWeight, 2 * maxWeight)) * (Math.min(nowWeight, 2 * maxWeight)) / (maxWeight * maxWeight) / 4;
         nowexp += expGain;
         player.persistentData.putDouble('endurance_exp', nowexp);
 
-//player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
+     //player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
         endurance_proficiency(player, nowexp);  // 传递当前经验
-     
+
     }
 
 }
@@ -45,13 +45,13 @@ ItemEvents.foodEaten(event => {
 
     let averageNutrition = (grain + fruit + vegetables + protein + dairy) / 5.0;
     let maxHealth = player.getMaxHealth();
-    let expGain = (hunger + averageNutrition) * maxHealth / 2000;
-
+    let expGain = (hunger + averageNutrition) * maxHealth / 10;
+player.tell(`经验 ${expGain}`);
     if (expGain > 0 && !isNaN(expGain)) {
         let currentExp = player.persistentData.getDouble('endurance_exp') || 0;
         currentExp += expGain;
         player.persistentData.putDouble('endurance_exp', currentExp);
-
+player.tell(`经验当前 ${currentExp}`);
         if (typeof endurance_proficiency === "function") {
             endurance_proficiency(player, currentExp);
         }
@@ -61,9 +61,9 @@ ItemEvents.foodEaten(event => {
 // 体力升级函数（修改为正确获取和修改属性的方式）
 function endurance_proficiency(player, currentExp) {
     // 获取当前等级（假设使用的是属性系统）
-    const enduranceLevel = MoreAttributes.getLevel(player,"more_attributes:endurance") || 1;
+    const enduranceLevel = MoreAttributes.getLevel(player,"endurance") || 1;
     const enduranceExp = currentExp;
-
+//player.tell(`等级 ${enduranceLevel}`);
     // 计算当前等级所需升级经验
     let upExp = 100+50*enduranceLevel;
    
@@ -73,10 +73,10 @@ function endurance_proficiency(player, currentExp) {
         const remainingExp = enduranceExp - upExp;
         player.persistentData.putDouble('endurance_exp', remainingExp);
 
-        MoreAttributes.upgrade(player, "more_attributes:endurance_level")
+        MoreAttributes.upgrade(player, "endurance",1)
 
 
         // 升级反馈
-        player.tell(`你感觉你的体力上升了！当前等级: `);
+        //player.tell(`你感觉你的体力上升了！当前等级: `);
     }
 }

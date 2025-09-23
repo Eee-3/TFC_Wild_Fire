@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+		  "type": "forge:mod_loaded",
+		  "modid": "createaddition"
+    }
+  ],
+  "type":"createaddition:rolling",
+  "input": {
+    "type": "tfc:heatable",
+    "min_temp": 580,
+    "ingredient": {
+        "tag": "forge:ingots/rose_gold"
+    }
+  },
+  "result": {
+    "item": "tfc:metal/rod/rose_gold",
+    "count": 2
+  }
+}

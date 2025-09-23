@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    },
+    {
+      "value":{
+        "tag": "forge:double_ingots/black_steel",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 10,
+	"ingredients": [
+	  {
+	    "type": "tfc:heatable",
+	    "min_temp": 890,
+	    "ingredient": {
+	      "tag": "forge:double_ingots/black_steel"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:metal/sheet/black_steel"
+    }
+  ]
+}

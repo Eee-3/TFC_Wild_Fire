@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "firmalife"
+    },
+    {
+		  "type": "forge:mod_loaded",
+		  "modid": "createaddition"
+    }
+  ],
+  "type":"createaddition:rolling",
+  "input": {
+    "type": "tfc:heatable",
+    "min_temp": 750,
+    "ingredient": {
+        "tag": "forge:ingots/chromium"
+    }
+  },
+  "result": {
+    "item": "firmalife:metal/rod/chromium",
+    "count": 2
+  }
+}

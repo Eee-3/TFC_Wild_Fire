@@ -20,7 +20,7 @@ ServerEvents.recipes(e => {
       item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红蓝钢
     );
   });
- 
+
 
   tfc.anvil(
     'create:andesite_alloy',
@@ -44,42 +44,89 @@ ServerEvents.recipes(e => {
       'draw_any'
     ]
   ).tier(1).bonus(true).id("tfc:andesite_alloy_shaft/anvil")//传动杆
-  tfc.anvil(
+  tfc.anvil(//搅拌头半成品
     'kubejs:stirrer_head_blank',
     'kubejs:wrought_iron_double_rod',
     [
       'draw_any',
       'draw_any'
     ]
-  ).tier(3).bonus(true).id("kubejs:stirrer_head_blank/anvil")//搅拌头半成品
-  tfc.anvil(
-    'kubejs:fan_blade_blank',
-    'kubejs:wrought_iron_double_rod',
+  ).tier(3).bonus(true).id("kubejs:stirrer_head_blank/anvil")
+
+  tfc.anvil(//黑钢搅拌头半成品
+    'kubejs:black_steel_head_blank',
+    'kubejs:black_steel_double_rod',
     [
       'draw_any',
       'draw_any'
     ]
-  ).tier(3).bonus(true).id("kubejs:fan_blade_blank/anvil")//扇叶半成品
+  ).tier(5).bonus(true).id("kubejs:stirrer_head_blank/anvil")
+  tfc.anvil(
+    '2x kubejs:fan_blade_blank_part',
+    'tfc:metal/ingot/wrought_iron',
+    [
+      'hit_any',
+      'hit_any'
+    ]
+  ).tier(3).bonus(true).id("kubejs:fan_blade_blank_part/anvil")//扇叶叶片
+  e.shapeless('kubejs:fan_blade_blank', ['4x kubejs:fan_blade_blank_part'])//风扇合成
 
-  tfc.welding(
+  
+tfc.anvil(// 锻铁零件的铁砧配方
+    '2x kubejs:material_component_wrought_iron',  
+    'tfc:metal/ingot/wrought_iron',              
+    [
+        'hit_any',                              
+        'hit_any'                                
+    ]
+).tier(3).bonus(true).id("kubejs:material_component_wrought_iron/anvil"); 
+
+
+tfc.anvil(// 钢制零件的铁砧配方
+    '2x kubejs:material_component_steel',        
+    'tfc:metal/ingot/steel',                     
+    [
+        'hit_any',                               
+        'hit_any'                                
+    ]
+).tier(4).bonus(true).id("kubejs:material_component_steel/anvil");  
+
+
+tfc.anvil(// 黑钢零件的铁砧配方
+    '2x kubejs:material_component_black_steel',  
+    'tfc:metal/ingot/black_steel',               
+    [
+        'hit_any',                               
+        'hit_any'                                
+    ]
+).tier(5).bonus(true).id("kubejs:material_component_black_steel/anvil");  
+
+
+
+  tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',
     'tfc:metal/rod/wrought_iron',
     'tfc:metal/rod/wrought_iron',
     3
-  )//双棒焊接
-  tfc.welding(
+  )
+  tfc.welding(//风扇焊接
     'create:propeller',
-    'kubejs:stirrer_head_blank',
-    'create:andesite_alloy',
-    3
-  )//风扇焊接
-  tfc.welding(
-    'create:whisk',
     'kubejs:fan_blade_blank',
     'create:andesite_alloy',
     3
-  )//搅拌头焊接
-
+  )
+  tfc.welding(//搅拌头焊接
+    'create:whisk',
+    'kubejs:whisk_stirrer_head_blank',
+    'tfc:metal/sheet/wrought_iron',
+    3
+  )
+  tfc.welding(//黑钢搅拌头焊接
+    'createmetallurgy:sturdy_whisk',
+    'kubejs:whisk_black_steel_head_blank',
+    'tfc:metal/sheet/black_steel',
+    4
+  )
 
 
 

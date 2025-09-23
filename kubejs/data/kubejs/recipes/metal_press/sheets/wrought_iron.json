@@ -1,0 +1,30 @@
+{
+	"conditions": [
+	  {
+		"type": "forge:mod_loaded",
+		"modid": "immersiveengineering"
+	  },
+      {
+        "value":{
+          "tag": "forge:double_ingots/wrought_iron",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+	],
+	"type":"immersiveengineering:metal_press",
+	"energy":2400,
+	"mold":"tfc_metal_items:steel_pressing_head",
+	"input": {
+	  "type": "tfc:heatable",
+	  "min_temp": 920,
+	  "ingredient": {
+		"tag": "forge:double_ingots/wrought_iron"
+	  }
+	},  
+	"result": [
+	  {
+		"item": "tfc:metal/sheet/wrought_iron"
+	  }
+	]
+  }

@@ -1,0 +1,20 @@
+{
+  "type": "tfc:heating",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:rods/pig_iron",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:rods/pig_iron"
+  },
+  "result_fluid": {
+    "fluid": "tfc:metal/pig_iron",
+    "amount": 50
+  },
+  "temperature": 1535
+}

@@ -1,0 +1,1 @@
+execute as @a run function kubejs:set_custom_model

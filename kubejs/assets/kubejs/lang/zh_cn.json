@@ -279,8 +279,6 @@
   "item.shiny_ornaments.sterling_silver_jade_ring": "纹银翡翠戒指",
   "item.wildfire.wrought_iron_pressing_head": "锻铁压头",
   "item.kubejs.wrought_iron_double_rod": "锻铁双杆",
-  "item.kubejs.fan_blade_blank": "未拼装的搅拌头",
-  "item.kubejs.stirrer_head_blank": "未拼装的扇叶",
   "item.shiny_ornaments.copper_jade_ring": "铜制翡翠戒指",
   "item.shiny_ornaments.copper_cinnabar_ring": "铜制朱砂戒指",
   "item.shiny_ornaments.copper_emerald_ring": "铜制翡翠戒指",
@@ -505,5 +503,13 @@
   "more_attributes.class.crash_landed_refugees_prisoners": "囚徒",
   "more_attributes.class.worthless_people": "无用之人",
   "more_attributes.class.description.test": "牢王727,饿的时候增加的耐性更多1",
-  "itemGroup.kubejs.tfc_weaponrys":"群峦传说 | 战斗"
+  "itemGroup.kubejs.tfc_weaponrys": "群峦传说 | 战斗",
+  "item.kubejs.brass_forge_door": "黄铜锻炉门",
+  "item.kubejs.whisk_black_steel_head_blank": "黑钢搅拌器头",
+  "item.kubejs.fan_blade_blank": "未拼装的扇叶",
+  "item.kubejs.whisk_stirrer_head_blank": "锻铁搅拌器头",
+  "item.kubejs.fan_blade_blank_part": "扇叶叶片",
+  "item.kubejs.material_component_wrought_iron": "锻铁零件",
+  "item.kubejs.material_component_steel": "钢制零件",
+  "item.kubejs.material_component_black_steel": "黑钢零件"
 }

@@ -1,15 +1,20 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "kubejs:item/create/rock_powder"
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "tfc:tank":{"Amount":0,"FluidName":"tfc:metal/zinc"}
-      },
-      "model": "kubejs:item/spartanweaponry_tfc/rapier/damage/red_steel_1"
-    }
-    
-  ]
+    "parent": "item/generated",
+    "textures": {
+        "layer0":"kubejs:item/create/rock_powder"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "kubejs:has_tank": 1
+            },
+            "model": "kubejs:item/create/rock_powder_blank"
+        },
+        {
+            "predicate": {
+                "kubejs:has_tank": 0
+            },
+            "model": "kubejs:item/create/rock_powder"
+        }
+    ]
 }

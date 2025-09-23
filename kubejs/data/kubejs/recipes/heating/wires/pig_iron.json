@@ -1,0 +1,20 @@
+{
+  "type": "tfc:heating",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/pig_iron",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/pig_iron"
+  },
+  "result_fluid": {
+    "fluid": "tfc:metal/pig_iron",
+    "amount": 25
+  },
+  "temperature": 1535
+}

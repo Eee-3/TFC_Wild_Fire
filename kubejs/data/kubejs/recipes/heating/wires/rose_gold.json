@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was created by tfch",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/rose_gold",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:wires/rose_gold"
+  },
+  "result_fluid": {
+    "fluid": "tfc:metal/rose_gold",
+    "amount": 25
+  },
+  "temperature": 960,
+  "use_durability": true
+}

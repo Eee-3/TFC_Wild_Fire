@@ -1,0 +1,30 @@
+{
+	"conditions": [
+	  {
+		"type": "forge:mod_loaded",
+		"modid": "immersiveengineering"
+	  },
+      {
+        "value":{
+          "tag": "forge:double_ingots/tin",
+          "type": "forge:tag_empty"
+        },
+        "type": "forge:not"
+      }
+	],
+	"type":"immersiveengineering:metal_press",
+	"energy":2400,
+	"mold":"tfc_metal_items:steel_pressing_head",
+	"input": {
+	  "type": "tfc:heatable",
+	  "min_temp": 140,
+	  "ingredient": {
+		"tag": "forge:double_ingots/tin"
+	  }
+	},  
+	"result": [
+	  {
+		"item": "tfc:metal/sheet/tin"
+	  }
+	]
+  }

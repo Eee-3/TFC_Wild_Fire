@@ -1,0 +1,92 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:heatable",
+    "min_temp": 300,
+    "ingredient": {
+      "tag": "forge:double_ingots/lead"
+    }
+  },
+  "transitionalItem": {
+    "item": "tfc_metal_items:unknown_sheet"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc_ie_addon:metal/sheet/lead"
+    }
+  ],
+  "loops": 2
+}

@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintageimprovements"
+    },
+    {
+      "value":{
+        "tag": "forge:double_ingots/chromium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "vintageimprovements:hammering",
+	"hammerBlows": 8,
+	"ingredients": [
+	  {
+	    "type": "tfc:heatable",
+	    "min_temp": 750,
+	    "ingredient": {
+	      "tag": "forge:double_ingots/chromium"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:metal/sheet/chromium"
+    }
+  ]
+}

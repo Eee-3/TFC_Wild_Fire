@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:rods/electrum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfc_ie_addon"
+    }
+  ],
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:rods/electrum"
+  },
+  "result_fluid": {
+    "fluid": "tfc_ie_addon:metal/electrum",
+    "amount": 50
+  },
+  "temperature": 1250
+}

@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     create.compacting(Item.of('minecraft:netherite_ingot'),['ad_astra:ostrum_ingot','tfc:metal/ingot/unknown','tfc:metal/ingot/gold']).superheated()//下界合金锭
     create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1),['ad_astra:infernal_spire_block','tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
     create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1),['ad_astra:infernal_spire_block',Fluid.of('tfc:metal/unknown',100)]).superheated()//下界合金碎片（金星
-    create.mixing(Item.of('tfc:raw_iron_bloom'),['minecraft:charcoal',Fluid.of('tfc:metal/cast_iron',100)]).heated()//生铁块合成
+  
     //辊压
 
     
@@ -371,54 +371,9 @@ ironOres.forEach(ore => {
 });
 });
   create.mixing(Fluid.of('tfc:metal/cast_iron',100),['tfc:metal/ingot/cast_iron']).heated()
-//锻造铁锭
-create.sequenced_assembly('tfc:refined_iron_bloom','tfc:raw_iron_bloom',
-  [create.pressing('tfc:raw_iron_bloom','tfc:raw_iron_bloom'),
-   create.pressing('tfc:raw_iron_bloom','tfc:raw_iron_bloom'),
-   create.pressing('tfc:raw_iron_bloom','tfc:raw_iron_bloom'),
-   create.pressing('tfc:raw_iron_bloom','tfc:raw_iron_bloom'),
-  ]
- ).transitionalItem('tfc:raw_iron_bloom').loops(2)//生铁方胚=>精铁方胚
-
-create.sequenced_assembly('tfc:metal/ingot/wrought_iron','tfc:refined_iron_bloom',
-  [create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-  ]
- ).transitionalItem('tfc:refined_iron_bloom').loops(2)//精铁方胚=>锻铁
-
- create.sequenced_assembly('tfc:metal/ingot/wrought_iron','tfc:refined_iron_bloom',
-  [create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-   create.pressing('tfc:refined_iron_bloom','tfc:refined_iron_bloom'),
-  ]
- ).transitionalItem('tfc:refined_iron_bloom').loops(2)//高碳钢=>钢
 
 
 
-
-
-
-
- event.recipes.create.sequenced_assembly( // 使用 Create 模组的顺序组装配方功能
-  'tfc:metal/ingot/steel', // 最终产出物品为 TFC 模组的钢锭
-  'tfc:metal/ingot/high_carbon_steel', // 初始物品为 TFC 模组的高碳钢锭
-  [
-      event.recipes.createDeploying('tfc:metal/ingot/high_carbon_steel', ['tfc:metal/ingot/high_carbon_steel', 'tfc:metal/hammer/blue_steel']), // 将高碳钢锭和蓝钢锤作用于高碳钢锭
-      event.recipes.createDeploying('tfc:metal/ingot/high_carbon_steel', ['tfc:metal/ingot/high_carbon_steel', 'tfc:metal/hammer/red_steel']) // 第二将高碳钢锭和红钢锤作用于高碳钢锭
-  ]
-).transitionalItem('tfc:metal/ingot/high_carbon_steel').loops(2); // 过渡物品为高碳钢锭，整个序列循环执行 5 次
-
-event.recipes.create.sequenced_assembly( // 使用 Create 模组的顺序组装配方功能
-  'tfc:metal/ingot/high_carbon_steel', // 最终产出物品为 TFC 模组的高碳钢锭
-  'tfc:metal/ingot/pig_iron', // 初始物品为 TFC 模组的生铁锭
-  [
-      event.recipes.createDeploying('tfc:metal/ingot/pig_iron', ['tfc:metal/ingot/pig_iron', 'tfc:metal/hammer/blue_steel']), // 将生铁锭和蓝钢锤作用于生铁锭
-      event.recipes.createDeploying('tfc:metal/ingot/pig_iron', ['tfc:metal/ingot/pig_iron', 'tfc:metal/hammer/red_steel']) // 将生铁锭和红钢锤作用于生铁锭
-  ]
-).transitionalItem('tfc:metal/ingot/pig_iron').loops(2); // 过渡物品为生铁锭，整个序列循环执行 5 次
 
 
 })

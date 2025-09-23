@@ -1,0 +1,92 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:heatable",
+    "min_temp": 920,
+    "ingredient": {
+      "item": "tfc:refined_iron_bloom"
+    }
+  },
+  "transitionalItem": {
+    "item": "tfc_metal_items:unforget_bloom"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unforget_bloom"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:metal/ingot/wrought_iron"
+    }
+  ],
+  "loops": 6
+}

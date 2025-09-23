@@ -1,0 +1,27 @@
+{
+	"conditions": [
+	  {
+		"type": "forge:mod_loaded",
+		"modid": "immersiveengineering"
+	  },
+      {
+        "type": "forge:mod_loaded",
+		"modid": "tfc_ie_addon"
+      }
+	],
+	"type":"immersiveengineering:metal_press",
+	"energy":2400,
+	"mold":"tfc_metal_items:steel_pressing_head",
+	"input": {
+	  "type": "tfc:heatable",
+	  "min_temp": 540,
+	  "ingredient": {
+        "tag": "forge:double_ingots/electrum"
+	  }
+	},  
+	"result": [
+	  {
+        "item": "tfc_ie_addon:metal/sheet/electrum"
+	  }
+	]
+}
