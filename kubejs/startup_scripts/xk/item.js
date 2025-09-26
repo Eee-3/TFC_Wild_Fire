@@ -12,9 +12,9 @@ StartupEvents.registry('item', event => {
   event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 黑钢搅拌头半成品
   event.create('brass_forge_door', 'basic').texture('kubejs:item/create/brass_forge_door');// 黄铜锻炉门
 
-  event.create('material_component_wrought_iron', 'basic').texture('material_component_wrought_iron');// 锻铁零件
-  event.create('material_component_steel', 'basic').texture('material_component_steel');// 钢制零件
-  event.create('material_component_black_steel', 'basic').texture('material_component_black_steel');// 黑钢零件
+  event.create('material_component_wrought_iron', 'basic').texture('mkubejs:item/create/aterial_component_wrought_iron');// 锻铁零件
+  event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
+  event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 黑钢零件
 
 
   //三锭
