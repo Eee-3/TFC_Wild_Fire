@@ -4212,16 +4212,7 @@
 			dependencies: ["0B32A4C769006051"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "immersiveengineering:wire_electrum"
-			}
+			icon: "immersiveengineering:wire_electrum"
 			id: "600A20784198A2C0"
 			shape: "pentagon"
 			size: 0.8d
