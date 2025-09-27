@@ -35,7 +35,7 @@ ServerEvents.recipes(e => {
     "artisanal:crafting/bloomery",
     "tfc_metal_items:seq_pressing/ingots/bloom_raw",
     "tfc_metal_items:seq_pressing/ingots/bloom_refined",
-    
+
     "create_new_age:shaped/connector",
     "create_new_age:shaped/connector_mirrored",
     "create_new_age:cutting/copper_sheet",
@@ -53,9 +53,9 @@ ServerEvents.recipes(e => {
 
     "ad_astra:steel_ingot",
     "create:sequenced_assembly/sturdy_sheet",
-    
-    
-    
+
+
+
 
 
   ]
@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
     "tin",
     "silver"
   ];
-  
+
 
   tfc_metal.forEach(tfc_metal => {
     e.remove({ id: `woodencog:heated_compacting/double_${tfc_metal}` })
@@ -93,6 +93,7 @@ ServerEvents.recipes(e => {
 
 
   e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
+  e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）

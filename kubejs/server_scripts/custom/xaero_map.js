@@ -48,10 +48,11 @@ PlayerEvents.tick(event => {
 
 
 
-   if (distanceRounded > 0.1 && player.isSpectator()) {
+   if ((distanceRounded > 0.1 && player.isSpectator)&&logged == false) {
       player.removeEffect('minecraft:darkness')
       player.removeEffect('minecraft:blindness')
       player.setGameMode("survival")
+      logged = true
     }
     player.persistentData.putDouble('distanceRd', distanceRoundedxz)
   }
@@ -65,8 +66,7 @@ PlayerEvents.tick(event => {
 PlayerEvents.loggedIn(event => {//登入给玩家buff
     const { player } = event;
 if(!player.isCreative()){
-  console.log
-      
+     logged = false
         player.tell(`你感觉你的体力上升了！当前等级: `);
   player.setGameMode("spectator")//登陆变成旁观模式
   player.potionEffects.add('minecraft:blindness', 9999999, 4, false, false);
