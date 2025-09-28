@@ -1,5 +1,6 @@
+//物品tag
 ServerEvents.tags('item', event => {
-     event.add('ad_astra:held_over_head', 'siegemachines:mortar')       // 大炮
+     event.add('ad_astra:held_over_head', 'siegemachines:mortar')
      event.add('ad_astra:held_over_head', 'siegemachines:culverin')
      event.add('ad_astra:held_over_head', 'siegemachines:catapult')
      event.add('ad_astra:held_over_head', 'siegemachines:catapult')
@@ -10,10 +11,65 @@ ServerEvents.tags('item', event => {
      event.add('ad_astra:held_over_head', 'trotting_wagons:armored_wagon')
      event.add('ad_astra:held_over_head', 'trotting_wagons:conestoga_wagon')
      event.add('ad_astra:held_over_head', 'trotting_wagons:royal_wagon')
+     //毛皮刮制配方tag
+     //大皮
+     event.add('tfc:scrapable', 'textile:lion_fur')
+     event.add('tfc:scrapable', 'alexsmobs:kangaroo_hide')
+     event.add('tfc:scrapable', 'textile:sabertooth_fur')
+     event.add('tfc:scrapable', 'textile:cougar_fur')
+     event.add('tfc:scrapable', 'textile:caribou_fur')
+     event.add('tfc:scrapable', 'butcher:polarbearfur')
+     event.add('tfc:scrapable', 'textile:polar_bear_fur')
+     event.add('tfc:scrapable', 'textile:grizzly_bear_fur')
+     event.add('tfc:scrapable', 'textile:black_bear_fur')
+     event.add('tfc:scrapable', 'butcher:cow_skin')
+     event.add('tfc:scrapable', 'butcher:pig_skin')
+     event.add('tfc:scrapable', 'butcher:pandafur')
+     event.add('tfc:scrapable', 'alexscaves:tough_hide')
+     event.add('tfc:scrapable', 'textile:panther_fur')
+     event.add('tfc:scrapable', 'textile:tiger_fur')
+     //中皮
+     event.add('tfc:scrapable', 'butcher:white_llama_skin')
+     event.add('tfc:scrapable', 'butcher:blackhorseskin')
+     event.add('tfc:scrapable', 'butcher:brownhorseskin')
+     event.add('tfc:scrapable', 'butcher:chestnuthorseskin')
+     event.add('tfc:scrapable', 'butcher:creamyhorseskin')
+     event.add('tfc:scrapable', 'butcher:darkbrownhorseskin')
+     event.add('tfc:scrapable', 'butcher:grayhorseskin')
+     event.add('tfc:scrapable', 'butcher:whitehorseskin')
+     event.add('tfc:scrapable', 'textile:direwolf_fur')
+     event.add('tfc:scrapable', 'butcher:snifferfur')
+     event.add('tfc:scrapable', 'butcher:muleskin')
+     event.add('tfc:scrapable', 'butcher:donkeyskin')
+     event.add('tfc:scrapable', 'butcher:sheep_skin')
+     event.add('tfc:scrapable', 'born_in_chaos_v1:monster_skin')
+     event.add('tfc:scrapable', 'butcher:brown_llama_skin')
+     event.add('tfc:scrapable', 'butcher:creamyllamaskin')
+     event.add('tfc:scrapable', 'butcher:gray_llama_skin')
+     //小皮
+     event.add('tfc:scrapable', 'butcher:whitecatfur')
+     event.add('tfc:scrapable', 'butcher:tabbycatfur')
+     event.add('tfc:scrapable', 'butcher:redcatfur')
+     event.add('tfc:scrapable', 'butcher:siamesecatfur')
+     event.add('tfc:scrapable', 'butcher:shorthaircatfur')
+     event.add('tfc:scrapable', 'butcher:calicocatfur')
+     event.add('tfc:scrapable', 'butcher:persiancatfur')
+     event.add('tfc:scrapable', 'butcher:ragdollcatfur')
+     event.add('tfc:scrapable', 'butcher:jelliecatfur')
+     event.add('tfc:scrapable', 'butcher:ocelotskin')
+     event.add('tfc:scrapable', 'butcher:tuxedocatfur')
+     event.add('tfc:scrapable', 'butcher:blackcatfur')
+     event.add('tfc:scrapable', 'minecraft:rabbit_hide')
+
+
 })
+//方块atg
 ServerEvents.tags('block', event => {
-     event.add('tfc:prospectable', 'tfc:kaolin_clay_grassr')
+     //探勘物品
+     event.add('tfc:prospectable', 'tfc:kaolin_clay_grass')
      event.add('tfc:prospectable', 'tfc:white_kaolin_clay')
      event.add('tfc:prospectable', 'tfc:pink_kaolin_clay')
+     event.add('tfc:prospectable', 'tfc:red_kaolin_clay')
+     //锻铁炉建材
      event.add('tfc:bloomery_insulation', 'minecraft:hopper')
 })
