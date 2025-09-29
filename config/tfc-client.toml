@@ -62,7 +62,7 @@
 	#   KELVIN = Exact Kelvin
 	#   RANKINE = Exact degrees Rankine
 	#Allowed Values: COLOR, CELSIUS, FAHRENHEIT, RANKINE, KELVIN
-	heatTooltipStyle = "COLOR"
+	heatTooltipStyle = "CELSIUS"
 	#
 	# The style to display all external (i.e. climate) temperature in.
 	#   COLOR = Approximate, color based tooltips (like Very Hot**, Brilliant White)
@@ -78,7 +78,7 @@
 	#   DAYS_MONTHS = Display values larger than a year as a number of months and days, i.e. '13 month(s), 1 day(s)'
 	#   DAYS_MONTHS_YEARS = Display values as normal, i.e. '1 year(s), 1 month(s), 1 day(s)'
 	#Allowed Values: DAYS_MONTHS_YEARS, DAYS_MONTHS, DAYS
-	timeDeltaTooltipStyle = "DAYS_MONTHS_YEARS"
+	timeDeltaTooltipStyle = "DAYS_MONTHS"
 	#
 	# The style to display HUD elements when the XP bar is disabled.
 	#   HOVER = Display all elements in their default positions

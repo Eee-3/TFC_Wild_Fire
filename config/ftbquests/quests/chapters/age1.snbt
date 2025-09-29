@@ -53,10 +53,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"0C96D15A0FCAC50B"
-				"01A61645DD554B40"
-			]
+			dependencies: ["01A61645DD554B40"]
 			description: [
 				"这是一把石刀，因为太短了所以称不上剑。"
 				""
@@ -91,10 +88,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"0C96D15A0FCAC50B"
-				"01A61645DD554B40"
-			]
+			dependencies: ["01A61645DD554B40"]
 			description: [
 				"石标枪是前期为数不多的杀伤性武器，可以左键攻击，也可以按住右键蓄力掷出。有了标枪，你就可以进行捕猎，以补充前期稀缺的食物。"
 				""
@@ -177,10 +171,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"0C96D15A0FCAC50B"
-				"01A61645DD554B40"
-			]
+			dependencies: ["01A61645DD554B40"]
 			description: [
 				"一把石斧，虽不如原版石斧砍得那么快，但也够用了。"
 				""
@@ -215,10 +206,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"0C96D15A0FCAC50B"
-				"01A61645DD554B40"
-			]
+			dependencies: ["01A61645DD554B40"]
 			description: [
 				"一把石铲，挖泥土的速度比你手挖要快。"
 				""

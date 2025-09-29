@@ -21,7 +21,7 @@
 		#Range: -10000 ~ 10000
 		"Temperature Display X Offset" = 0
 		#Range: -10000 ~ 10000
-		"Temperature Display Y Offset" = 0
+		"Temperature Display Y Offset" = -6
 		# The X and Y offset of the body temperature, shown when thermometer is equipped as a bauble (needs the curios mod).
 		# Set both to 0 for no offset.
 		#Range: -10000 ~ 10000
