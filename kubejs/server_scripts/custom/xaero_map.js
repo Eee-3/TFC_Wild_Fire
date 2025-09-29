@@ -22,7 +22,8 @@ const NOMAP_EFFECT = [
   'xaerominimap:no_waypoints',
   'xaerominimap:no_cave_maps'
 ]
-let logged = false//初始状态
+
+
 
 PlayerEvents.tick(event => {
   const { player } = event;
@@ -48,12 +49,22 @@ PlayerEvents.tick(event => {
 
 
 
-   if ((distanceRounded > 0.1 && player.isSpectator)&&logged == false) {
-      player.removeEffect('minecraft:darkness')
-      player.removeEffect('minecraft:blindness')
-      player.setGameMode("survival")
-      logged = true
-    }
+let logged = player.persistentData.getBoolean('logged') || false;
+
+// 优化条件判断顺序，先检查是否已处理，再检查其他条件
+if (!logged && player.isSpectator() && distanceRounded > 0.1) {
+    // 清除负面效果
+    player.removeEffect('minecraft:darkness');
+    player.removeEffect('minecraft:blindness');
+    
+    // 切换到生存模式
+    player.setGameMode('survival');
+    
+    // 更新状态（存储到玩家数据中，确保跨tick保存）
+    logged = true;
+    player.persistentData.putBoolean('logged', true);
+}
+
     player.persistentData.putDouble('distanceRd', distanceRoundedxz)
   }
 

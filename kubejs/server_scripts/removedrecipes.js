@@ -35,6 +35,7 @@ ServerEvents.recipes(e => {
     "artisanal:crafting/bloomery",
     "tfc_metal_items:seq_pressing/ingots/bloom_raw",
     "tfc_metal_items:seq_pressing/ingots/bloom_refined",
+    
 
     "create_new_age:shaped/connector",
     "create_new_age:shaped/connector_mirrored",
