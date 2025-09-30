@@ -15,6 +15,12 @@ StartupEvents.registry('item', event => {
   event.create('material_component_wrought_iron', 'basic').texture('mkubejs:item/create/aterial_component_wrought_iron');// 锻铁零件
   event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
   event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 黑钢零件
+  event.create('rotten_meat', 'basic').texture('kubejs:item/rotten_meat');// 注册腐烂的肉
+  event.create('rotten_fish', 'basic').texture('kubejs:item/rotten_fish');// 注册腐烂的鱼
+  event.create('rotten_vegetables', 'basic').texture('kubejs:item/rotten_vegetables');// 注册腐烂的蔬菜
+  event.create('rotten_fruit', 'basic').texture('kubejs:item/rotten_fruit');// 注册腐烂的水果
+  event.create('rot', 'basic').texture('kubejs:item/rot');// 注册腐烂物（
+  event.create('burnt_food_residue', 'basic').texture('kubejs:item/burnt_food_residue');// 注册烧焦的食物残渣
 
 
   //三锭

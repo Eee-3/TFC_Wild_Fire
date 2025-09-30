@@ -19,9 +19,9 @@ ServerEvents.recipes(event => {
     event.shaped('tfc:blast_furnace', ['aba', 'cdc', 'aea'], {
         a: 'tfc:metal/sheet/cast_iron', b: 'createmetallurgy:foundry_lid', c: 'tfc:metal/tuyere/wrought_iron', d: 'tfc:metal/bars/wrought_iron', e: 'tfc:crucible'
     }) //高炉
-        event.shaped('immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
+        event.shaped('2x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
         a: 'tfc:metal/sheet/steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'}) //轻型工程块
-        event.shaped('immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
+        event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
         a: 'tfc:metal/sheet/black_steel', b: 'kubejs:material_component_black_steel', c: 'create:precision_mechanism'}) //重型工程块
 
     event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {

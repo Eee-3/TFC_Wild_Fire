@@ -511,5 +511,11 @@
   "item.kubejs.fan_blade_blank_part": "扇叶叶片",
   "item.kubejs.material_component_wrought_iron": "锻铁零件",
   "item.kubejs.material_component_steel": "钢制零件",
-  "item.kubejs.material_component_black_steel": "黑钢零件"
+  "item.kubejs.material_component_black_steel": "黑钢零件",
+  "item.kubejs.rotten_meat": "腐烂的肉",
+  "item.kubejs.rotten_fish": "腐烂的鱼",
+  "item.kubejs.rotten_vegetables": "腐烂的蔬菜",
+  "item.kubejs.rotten_fruit": "腐烂的水果",
+  "item.kubejs.rot": "腐烂物",
+  "item.kubejs.burnt_food_residue": "烧焦的食物残渣"
 }
