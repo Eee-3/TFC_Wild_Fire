@@ -92,7 +92,7 @@ StartupEvents.modifyCreativeTab("tfc:rock", event => {
         "kubejs:obsidian_javelin",
         "kubejs:obsidian_hammer",
         "kubejs:obsidian_axe",
-        "kubejs:obsidian_tool",
+        "kubejs:obsidian_knife",
         "kubejs:diamond_shovel_head",
         "kubejs:diamond_hoe_head",
         "kubejs:diamond_javelin_head",
@@ -104,7 +104,7 @@ StartupEvents.modifyCreativeTab("tfc:rock", event => {
         "kubejs:diamond_javelin",
         "kubejs:diamond_hammer",
         "kubejs:diamond_axe",
-        "kubejs:diamond_tool"
+        "kubejs:diamond_knife"
     ])
 })
 StartupEvents.modifyCreativeTab("ad_astra:main", event => {

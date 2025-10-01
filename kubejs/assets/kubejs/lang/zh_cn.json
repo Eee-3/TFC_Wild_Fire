@@ -517,5 +517,7 @@
   "item.kubejs.rotten_vegetables": "腐烂的蔬菜",
   "item.kubejs.rotten_fruit": "腐烂的水果",
   "item.kubejs.rot": "腐烂物",
-  "item.kubejs.burnt_food_residue": "烧焦的食物残渣"
+  "item.kubejs.burnt_food_residue": "烧焦的食物残渣",
+  "item.kubejs.diamond_knife": "钻石小刀",
+  "item.kubejs.obsidian_knife": "黑曜石小刀"
 }

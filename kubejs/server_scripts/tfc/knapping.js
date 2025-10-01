@@ -1,10 +1,146 @@
 TFCEvents.data(event => {
   //塑形配方注册
   event.knappingType(
-    'minecraft:diamond', 1, 1, 'minecraft:entity.warden.roar', false, false, true,'minecraft:diamond','kubejs:diamond'
+    'tfc:ore/diamond', 2, 1, 'minecraft:block.copper.step', false, false, true, 'tfc:ore/diamond', 'kubejs:diamond'
   )
   event.knappingType(
-    'kubejs:obsidian_shards', 1, 1, 'minecraft:entity.warden.roar', false, false, true,"minecraft:obsidian",'kubejs:obsidian'
+    'kubejs:obsidian_shards', 2, 1, 'minecraft:block.copper.step', false, false, true, "minecraft:obsidian", 'kubejs:obsidian'
   )
 
+})
+
+ServerEvents.recipes(event => {
+  const MODID = "kubejs:"; 
+
+  // ==============================
+  // 核心：定义工具部件通用配置（统一钻石/黑曜石的部件类型与产出）
+  // ==============================
+  const toolPartConfigs = [
+    // 1. 斧头头部（2种对称图案，单产出）
+    {
+      partName: "axe_head", // 部件名称（拼接材质后生成最终物品ID）
+      outputCount: 1,       // 产出数量
+      patterns: [           // 支持的敲制图案（两种对称样式）
+        [" X   ", "XXXX ", "XXXXX", "XXXX ", " X   "],
+        ["   X ", " XXXX", "XXXXX", " XXXX", "   X "]
+      ]
+    },
+    // 2. 标枪头部（2种对称图案，单产出）
+    {
+      partName: "javelin_head",
+      outputCount: 1,
+      patterns: [
+        ["XXX  ", "XXXX ", "XXXXX", " XXX ", "  X  "],
+        ["  XXX", " XXXX", "XXXXX", " XXX ", "  X  "]
+      ]
+    },
+    // 3. 锤子头部（1种图案，单产出）
+    {
+      partName: "hammer_head",
+      outputCount: 1,
+      patterns: [
+        ["XXXXX", "XXXXX", "  X  "]
+      ]
+    },
+    // 4. 锄头头部（4种组合图案+2种简化图案，区分多产出/单产出）
+    {
+      partName: "hoe_head",
+      outputCount: 2, // 完整图案（5行）产出2个
+      patterns: [
+        ["XXXXX", "XX   ", "     ", "XXXXX", "XX   "],
+        ["XXXXX", "   XX", "     ", "XXXXX", "   XX"],
+        ["XXXXX", "XX   ", "     ", "XXXXX", "   XX"],
+        ["XXXXX", "   XX", "     ", "XXXXX", "XX   "]
+      ],
+      // 简化图案（2行）单独配置（产出1个）
+      simplePatterns: [
+        ["XXXXX", "XX   "],
+        ["XXXXX", "   XX"]
+      ],
+      simpleOutputCount: 1
+    },
+    // 5. 铲子头部（1种图案，单产出）
+    {
+      partName: "shovel_head",
+      outputCount: 1,
+      patterns: [
+        ["XXX", "XXX", "XXX", "XXX", " X "]
+      ]
+    },
+    // 6. 刀身（3种对称图案+2种简化图案，区分多产出/单产出）
+    {
+      partName: "knife_blade",
+      outputCount: 2, // 完整图案（5行）产出2个
+      patterns: [
+        ["X  X ", "XX XX", "XX XX", "XX XX", "XX XX"],
+        [" X  X", "XX XX", "XX XX", "XX XX", "XX XX"],
+        ["X   X", "XX XX", "XX XX", "XX XX", "XX XX"]
+      ],
+      // 简化图案（5行短版）单独配置（产出1个）
+      simplePatterns: [
+        ["X ", "XX", "XX", "XX", "XX"],
+        [" X", "XX", "XX", "XX", "XX"]
+      ],
+      simpleOutputCount: 1
+    }
+  ];
+
+  // ==============================
+  // 1. 注册钻石工具部件敲制配方
+  // ==============================
+  const diamondConfig = {
+    material: "diamond",          // 材质名称（用于拼接物品ID和敲制类型）
+    ingredient: Item.of("tfc:ore/diamond") // 原料：TFC钻石矿石
+  };
+
+  toolPartConfigs.forEach(part => {
+    const baseResult = `${MODID}${diamondConfig.material}_${part.partName}`;
+    
+    // 注册完整图案配方（多产出/单产出）
+    part.patterns.forEach(pattern => {
+      const result = part.outputCount > 1 ? `${part.outputCount}x ${baseResult}` : baseResult;
+      event.recipes.tfc.knapping(result, `kubejs:${diamondConfig.material}`, pattern)
+        .ingredient(diamondConfig.ingredient)
+        .outsideSlotRequired(false); 
+    });
+
+    // 若有简化图案，注册简化配方（单产出）
+    if (part.simplePatterns && part.simpleOutputCount) {
+      part.simplePatterns.forEach(simplePattern => {
+        event.recipes.tfc.knapping(baseResult, `kubejs:${diamondConfig.material}`, simplePattern)
+          .ingredient(diamondConfig.ingredient)
+          .outsideSlotRequired(false);
+      });
+    }
+  });
+
+  // ==============================
+  // 2. 注册黑曜石工具部件敲制配方（与钻石完全对称）
+  // ==============================
+  const obsidianConfig = {
+    material: "obsidian",          // 材质名称（与钻石配置对称）
+    ingredient: Item.of("kubejs:obsidian_shards") // 原料：黑曜石碎片
+  };
+
+  // 复用工具部件配置，仅替换材质和原料（保证配方逻辑完全一致）
+  toolPartConfigs.forEach(part => {
+    const baseResult = `${MODID}${obsidianConfig.material}_${part.partName}`;
+    
+    // 注册完整图案配方（与钻石相同的产出数量）
+    part.patterns.forEach(pattern => {
+      const result = part.outputCount > 1 ? `${part.outputCount}x ${baseResult}` : baseResult;
+      event.recipes.tfc.knapping(result, `kubejs:${obsidianConfig.material}`, pattern)
+        .ingredient(obsidianConfig.ingredient)
+        .outsideSlotRequired(false);
+    });
+
+    // 注册简化图案配方（与钻石对称）
+    if (part.simplePatterns && part.simpleOutputCount) {
+      part.simplePatterns.forEach(simplePattern => {
+        event.recipes.tfc.knapping(baseResult, `kubejs:${obsidianConfig.material}`, simplePattern)
+          .ingredient(obsidianConfig.ingredient)
+          .outsideSlotRequired(false);
+      });
+    }
+  });
 })

@@ -8,6 +8,11 @@ const metals = [
   "red_steel",
   "wrought_iron"
 ]
+const gem = [
+  { gem: "diamond", name: "diamond" },
+  { gem: "obsidian", name: "obsidian_shards" }
+
+]
 const tools = [
   "hoe",
   "axe",
@@ -57,7 +62,68 @@ const weaponry = [//A是金属头,B是棍子 C是金属棒 D是护手 E长手柄
 const tfc_weaponry = [
   // 长矛
 ]
+const toolHeads = [
+  { name: "javelin", type: "javelin_head" },
+  { name: "hammer", type: "hammer_head" },
+  { name: "hoe", type: "hoe_head" },
+  { name: "axe", type: "axe_head" },
+  { name: "shovel", type: "shovel_head" },
+  { name: "knife", type: "knife_blade" }
+];
 ServerEvents.recipes(e => {
+  toolHeads.forEach(tool => {
+    gem.forEach(gem => {
+       //nobonus
+      e.recipes.kubejs.shaped(
+       Item.of(`kubejs:${gem.gem}_${tool.name}`, '{Damage:100}'),
+        [
+        "B",
+        "C"
+        ], {
+        
+        B: `kubejs:${gem.gem}_${tool.type}`,
+        C: "#forge:rods/wooden"
+      }
+      ).id(`kubejs:${gem.gem}_${tool.type}/nobonus`)
+      //weak
+      e.recipes.kubejs.shaped(
+        `kubejs:${gem.gem}_${tool.name}`,
+        [
+        "AB",
+        "C "
+        ], {
+        A: "#bsa:bindings/weak",
+        B: `kubejs:${gem.gem}_${tool.type}`,
+        C: "#forge:rods/wooden"
+      }
+      ).id(`kubejs:${gem.gem}_${tool.type}/weak`)
+      //medium
+      e.recipes.kubejs.shaped(
+         Item.of(`kubejs:${gem.gem}_${tool.name}`, '{"tfc:forging_bonus":2}'),
+        [
+        "AB",
+        "C "
+        ], {
+        A: "#bsa:bindings/medium",
+        B:`kubejs:${gem.gem}_${tool.type}`,
+        C: "#forge:rods/wooden"
+      }
+      ).id(`kubejs:${gem.gem}_${tool.type}/medium`)
+      //strong
+      e.recipes.kubejs.shaped(
+      Item.of(`kubejs:${gem.gem}_${tool.name}`, '{"tfc:forging_bonus":4}'),
+        [
+        "AB",
+        "C "
+        ], {
+        A: "#bsa:bindings/strong",
+        B:  `kubejs:${gem.gem}_${tool.type}`,
+        C: "#forge:rods/wooden"
+      }
+      ).id(`kubejs:${gem.gem}_${tool.type}/strong`)
+
+    });
+  });
   tools.forEach(tool => {
     metals.forEach(metal => {
       //weak
@@ -106,6 +172,7 @@ ServerEvents.recipes(e => {
       }).id(`kubejs:crafting/metal/${tool}/${metal}/strong`)
 
     });
+
   });
 
   function applyForgingBonus(metala, weaponName) {
@@ -224,7 +291,7 @@ ServerEvents.recipes(e => {
 
     // 长柄锤
     e.shaped(
-      `kubejs:${metala.name}_battle_hammer`,[" A", "B "],
+      `kubejs:${metala.name}_battle_hammer`, [" A", "B "],
       {
         A: `kubejs:${metala.name}_battle_hammer_weapon_part`,
         B: 'spartanweaponry:handle'

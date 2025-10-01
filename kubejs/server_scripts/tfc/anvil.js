@@ -45,22 +45,22 @@ ServerEvents.recipes(e => {
     ]
   ).tier(1).bonus(true).id("tfc:andesite_alloy_shaft/anvil")//传动杆
   tfc.anvil(//搅拌头半成品
-    'kubejs:stirrer_head_blank',
+    'kubejs:whisk_stirrer_head_blank',
     'kubejs:wrought_iron_double_rod',
     [
       'draw_any',
       'draw_any'
     ]
-  ).tier(3).bonus(true).id("kubejs:stirrer_head_blank/anvil")
+  ).tier(3).bonus(true).id("kubejs:whisk_stirrer_head_blank/anvil")
 
   tfc.anvil(//黑钢搅拌头半成品
-    'kubejs:black_steel_head_blank',
+    'kubejs:whisk_black_steel_head_blank',
     'kubejs:black_steel_double_rod',
     [
       'draw_any',
       'draw_any'
     ]
-  ).tier(5).bonus(true).id("kubejs:stirrer_head_blank/anvil")
+  ).tier(5).bonus(true).id("kubejs:whisk_black_steel_stirrer_head_blank/anvil")
   tfc.anvil(
     '2x kubejs:fan_blade_blank_part',
     'tfc:metal/ingot/wrought_iron',
