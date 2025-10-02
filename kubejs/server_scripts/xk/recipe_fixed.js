@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         return;
       }
 
-      event.recipes.tfc.heating(cookmeat_id, 400).resultItem('kubejs:burnt_food_residue')
+      event.recipes.tfc.heating(cookmeat_id, 200).resultItem('kubejs:burnt_food_residue')
     })
 
   event.shaped('create:empty_blaze_burner', [
