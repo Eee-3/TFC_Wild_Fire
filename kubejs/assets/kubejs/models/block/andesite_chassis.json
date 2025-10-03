@@ -1,11 +1,13 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"13": "kubejs:block/andesite_chassis"
+		"13": "kubejs:block/andesite_chassis",
+		"particle": "create:andesite_casing"
 	},
+	"render_type":"minecraft:cutout",
 	"elements": [
 		{
 			"from": [0, 0, 0],
@@ -132,6 +134,7 @@
 			}
 		}
 	],
+	"display": {},
 	"groups": [
 		{
 			"name": "group",

@@ -1,7 +1,7 @@
 
-StartupEvents.registry('block', (event) => {
+/*StartupEvents.registry('block', (event) => {
 
-    /* event.create('test').soundType('glass').hardness(1).defaultCutout().renderType('cutout').textureAll('texturepath') */
+    /* event.create('test').soundType('glass').hardness(1).defaultCutout().renderType('cutout').textureAll('texturepath') 
         
     const blocks = [
         {
@@ -17,7 +17,7 @@ StartupEvents.registry('block', (event) => {
     });
 
     
-});
+});*/
 
 
 

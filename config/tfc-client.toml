@@ -53,7 +53,7 @@
 	#
 	# The overlay color to indicate rotten foods. Default = 0x88CC33
 	#Range: 0 ~ 16777215
-	foodExpiryOverlayColor = 8965171
+	foodExpiryOverlayColor = 16777215
 	#
 	# The style to display all heat tooltips in.
 	#   COLOR = Approximate, color based tooltips (like Very Hot**, Brilliant White)

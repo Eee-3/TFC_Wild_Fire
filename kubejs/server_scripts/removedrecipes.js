@@ -55,7 +55,13 @@ ServerEvents.recipes(e => {
     "ad_astra:steel_ingot",
     "create:sequenced_assembly/sturdy_sheet",
 
-
+"woodencog:crafting/kinetics/encased_fan",
+"woodencog:crafting/kinetics/millstone",
+"woodencog:crafting/kinetics/mechanical_press",
+"create:item_application/andesite_casing_from_log",
+"create:item_application/andesite_casing_from_wood",
+"woodencog:rock_knapping/andesite_alloy",
+"woodencog:rock_knapping/andesite_alloy_deploying"
 
 
 

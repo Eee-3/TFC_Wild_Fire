@@ -16,6 +16,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}andesite_chassis`
         },
         {
+            ingredients: [{ tag: 'forge:stripped_logs' }, {  item: 'vintageimprovements:andesite_sheet' }],
+            results: [{ item: 'create:andesite_casing' }],
+            id: `${id_prefix}andesite_casing`
+        },
+        {
             ingredients: [{ item: 'kubejs:andesite_chassis' }, { item: 'create:propeller' }],
             results: [{ item: 'create:encased_fan' }],
             id: `${id_prefix}encased_fan`
