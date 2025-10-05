@@ -382,7 +382,7 @@ event.custom(
                 "count": 1
             },
             "e":{
-                "tag":"#tfc:axles",
+                "tag":"tfc:axles",
                 "count": 2
             }
         },
@@ -442,7 +442,7 @@ event.custom(
                 "count": 2
             },
             "c":{
-                "item":"'create:item_vault'",
+                "item":"create:item_vault",
                 "count": 4
             },
             "d":{
