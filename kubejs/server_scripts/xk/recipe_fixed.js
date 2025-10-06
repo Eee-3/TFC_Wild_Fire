@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
 
 
       type: "smoking"
-    
+
     }, r => {
 
       var cookmeat_id = r.getOriginalRecipeResult().getId()
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
 
         return;
       }
-      if(cookmeat_id=='immersiveengineering:clinker_brick'||cookmeat_id=='tfc:powder/soda_ash'||cookmeat_id=='tfc:torch'){
+      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch') {
         return;
       }
 
@@ -310,12 +310,12 @@ ServerEvents.tags('minecraft:item', event => {
   event.remove("bsa:bindings/strong", '#forge:plant_fiber');
   event.remove("bsa:bindings/strong", '#forge:string');
   event.remove("bsa:bindings/strong", 'tfc:glue');
+  event.remove('bsa:bindings/weak', 'tfc:straw');
+
+  event.remove('bsa:bindings/weak', 'tfc:glue');
 
 
-
-
-
-
+  event.add("bsa:bindings/medium", 'bsa:bindings/weak');//基础绳子
   event.add("bsa:bindings/medium", 'minecraft:slime_ball');//合格粘液球
   event.add("bsa:bindings/medium", 'minecraft:string');//合格，线
   event.add("bsa:bindings/medium", 'tfc:glue');//合格
