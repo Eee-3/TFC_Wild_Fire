@@ -13,33 +13,30 @@ function endurance_proficiency(player, currentExp) {// 体力升级函数（修�
     if (enduranceExp >= upExp) {
         const remainingExp = enduranceExp - upExp;
         player.persistentData.putDouble('endurance_exp', remainingExp);
-
         MoreAttributes.upgrade(player, "endurance", 1)
-
-
         // 升级反馈
         //player.tell(`你感觉你的体力上升了！当前等级: `);
+        player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", enduranceLevel))
     }
 }
 function health_proficiency(player, currentExp) {// 生命升级函数（修改为正确获取和修改属性的方式）
     // 获取当前等级（假设使用的是属性系统）
-    const enduranceLevel = MoreAttributes.getLevel(player, "health") || 1;
-    const enduranceExp = currentExp;
-    //player.tell(`等级 ${enduranceLevel}`);
+    const healthLevel = MoreAttributes.getLevel(player, "health") || 1;
+    const healthExp = currentExp;
     // 计算当前等级所需升级经验
-    let upExp = 100 + 50 * enduranceLevel;
+    let upExp = 100 + 50 * healthLevel;
 
 
     // 满足升级条件时
-    if (enduranceExp >= upExp) {
-        const remainingExp = enduranceExp - upExp;
+    if (healthExp >= upExp) {
+        const remainingExp = healthExp - upExp;
         player.persistentData.putDouble('health_exp', remainingExp);
 
         MoreAttributes.upgrade(player, "health", 1)
 
 
         // 升级反馈
-        player.tell(`你感觉你的生命上升了！当前等级: `);
+        player.setStatusMessage(Component.translate("message.kubejs.health_upgrade", healthLevel))
     }
 }
 function strength_proficiency(player, damageDealt) {//力量升级
@@ -50,6 +47,7 @@ function strength_proficiency(player, damageDealt) {//力量升级
 
     // 2. 先判断力量等级是否已达上限，达上限则不继续计算经验
     if (strengthLevel >= maxStrengthLimit) {
+        player.setStatusMessage("message.kubejs.max_strength_upgrade")
         // 可根据需求添加“等级上限提示”，例如：player.tell("你的力量已达当前体力对应的上限，无法继续提升！");
         return;
     }
@@ -67,7 +65,6 @@ function strength_proficiency(player, damageDealt) {//力量升级
 
     // 5. 计算当前力量等级的升级所需经验（参考体力升级公式，保持成长曲线一致）
     const levelUpExp = 120 + 60 * strengthLevel; // 升级所需经验：基础120，每级额外+60（可根据需求调整）
- player.tell(`所需 ${levelUpExp}`);
     // 6. 处理升级逻辑：若经验达标，循环判断是否可连升（避免单次伤害过高导致多级升级）
     let remainingExp = updatedStrengthExp; // 剩余经验（初始为更新后总经验）
     while (remainingExp >= levelUpExp) {
@@ -76,7 +73,7 @@ function strength_proficiency(player, damageDealt) {//力量升级
 
         // 6.2 升级力量等级（每次+1）
         MoreAttributes.upgrade(player, "strength", 1);
-
+        player.setStatusMessage(Component.translate("message.kubejs.strength_upgrade", strengthLevel))
         // 6.3 升级后重新计算“新等级的升级所需经验”和“新的力量等级上限”
         const newStrengthLevel = MoreAttributes.getLevel(player, "strength");
         const newLevelUpExp = 120 + 60 * newStrengthLevel;
@@ -157,9 +154,8 @@ ItemEvents.foodEaten(event => {//生命值吃东西加经验
 EntityEvents.hurt(event => {
     const { source, entity, damage } = event;
     // 判断伤害来源是否为玩家（避免非玩家伤害触发）
-    if (source.isPlayer() && !entity.isPlayer()) {
+    if (source.getPlayer() != null) {
         const player = source.player; // 获取造成伤害的玩家
-       player.tell(`你造成了伤害 `);
         const validDamage = Math.max(damage, 0.1); // 确保伤害为正数（避免0伤害计算）
         strength_proficiency(player, validDamage); // 调用力量升级函数，传入伤害值
     }

@@ -12,7 +12,6 @@
 !/index.toml
 !/install_java.*
 !/LICENSE
-!/options.txt
 !/pack.toml
 !/README.txt
 !/release_guide.md
