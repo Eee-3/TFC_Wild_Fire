@@ -25,66 +25,48 @@ const NOMAP_EFFECT = [
 
 
 
-PlayerEvents.tick(event => {
-  const { player } = event;
-  const currentPos = {
-    x: player.getX(),
-    y: player.getY(),
-    z: player.getZ()
-  };
-  if (lastPos) {
-    // 计算差值
-    diffX = currentPos.x - lastPos.x;
-    diffY = currentPos.y - lastPos.y;
-    diffZ = currentPos.z - lastPos.z;
+// PlayerEvents.tick(e => {
+//   const { player } = e
+//   const currentPos = {
+//     x: player.getX(),
+//     y: player.getY(),
+//     z: player.getZ()
+//   }
+//   if (lastPos) {
+//     const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x),2) + Math.pow((currentPos.z - lastPos.z),2))
+//     let distanceRounded = Math.round(distance * 100) / 100;
+//     player.persistentData.putDouble('distanceRd', distanceRounded)
+//     player.tell(distanceRounded)
+//   }
+//   lastPos = currentPos
+// })
 
-    // 直线距离
-    const distance = Math.sqrt(diffX * diffX + diffY * diffY + diffZ * diffZ);
-    const distancexz = Math.sqrt(diffX * diffX + diffZ * diffZ);
-
-    let distanceRoundedxz = Math.round(distancexz * 100) / 100;
-    let distanceRounded = Math.round(distance * 100) / 100;
-
-    //player.tell(`每秒移动距离: ${distanceRounded}`);
-
-
-
-let logged = player.persistentData.getBoolean('logged') || false;
-
+//player.tell(`每秒移动距离: ${distanceRounded}`);
+// let distanceRounded = Math.round(distance * 100) / 100;
+// let logged = player.persistentData.getBoolean('logged') || false;
 // 优化条件判断顺序，先检查是否已处理，再检查其他条件
-if (!logged && player.isSpectator() && distanceRounded > 0.1) {
-    // 清除负面效果
-    player.removeEffect('minecraft:darkness');
-    player.removeEffect('minecraft:blindness');
-    
-    // 切换到生存模式
-    player.setGameMode('survival');
-    
-    // 更新状态（存储到玩家数据中，确保跨tick保存）
-    logged = true;
-    player.persistentData.putBoolean('logged', true);
-}
+// if (!logged && player.isSpectator() && distanceRounded > 0.1) {
+//     // 清除负面效果
+//     player.removeEffect('minecraft:darkness');
+//     player.removeEffect('minecraft:blindness');
+//     // 切换到生存模式
+//     player.setGameMode('survival');
+//     // 更新状态（存储到玩家数据中，确保跨tick保存）
+//     logged = true;
+//     player.persistentData.putBoolean('logged', true);
+// }
+// PlayerEvents.loggedIn(event => {//登入给玩家buff
+//     const { player } = event;
+// if(!player.isCreative()){
+//      logged = false
+//         player.tell(`你感觉你的体力上升了！当前等级: `);
+//   player.setGameMode("spectator")//登陆变成旁观模式
+//   player.potionEffects.add('minecraft:blindness', 9999999, 4, false, false);
+//   player.potionEffects.add('minecraft:darkness', 9999999, 4, false, false);//给予黑暗和失明
+// }
 
-    player.persistentData.putDouble('distanceRd', distanceRoundedxz)
-  }
+// })
 
-
-  lastPos = currentPos;
-
-
-})
-
-PlayerEvents.loggedIn(event => {//登入给玩家buff
-    const { player } = event;
-if(!player.isCreative()){
-     logged = false
-        player.tell(`你感觉你的体力上升了！当前等级: `);
-  player.setGameMode("spectator")//登陆变成旁观模式
-  player.potionEffects.add('minecraft:blindness', 9999999, 4, false, false);
-  player.potionEffects.add('minecraft:darkness', 9999999, 4, false, false);//给予黑暗和失明
-}
-
-})
 PlayerEvents.respawned(event => {//复活给玩家buff
   const { player } = event;
   player.potionEffects.add("minecraft:hunger", 100, 255, false, false);//饥饿

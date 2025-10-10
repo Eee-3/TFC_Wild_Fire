@@ -1,24 +1,56 @@
 const FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability');
 const Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
-function endurance_proficiency(player, currentExp) {// 体力升级函数（修改为正确获取和修改属性的方式）
-    // 获取当前等级（假设使用的是属性系统）
-    const enduranceLevel = MoreAttributes.getLevel(player, "endurance") || 1;
-    const enduranceExp = currentExp;
-    //player.tell(`等级 ${enduranceLevel}`);
-    // 计算当前等级所需升级经验
-    let upExp = 100 + 50 * enduranceLevel;
 
+// //体力升级
+// /**
+//  * 
+//  * @param { Internal.Player } player 玩家
+//  * @param { number } currentExp 当前经验
+//  */
+// function endurance_proficiency(player, currentExp) {
+//     const enduranceLevel = MoreAttributes.getLevel(player, "endurance") || 1
+//     let upExp = 100 + 50 * enduranceLevel
+//     if (currentExp >= upExp) {
+//         player.persistentData.putDouble('endurance_exp', 0)
+//         MoreAttributes.upgrade(player, "endurance", 1)
+//         player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", enduranceLevel))
+//     }
+// }
+PlayerEvents.tick(e => {
+    const { player } = e
+    const currentPos = {x: player.getX(), y: player.getY(), z: player.getZ()}//当前位置
+    const speed = player.getAttributeValue("minecraft:generic.movement_speed")//当前速度
+    const speedRounded = Math.round(speed * 100) / 100//当前速度保留两位小数
+    const maxWeight = player.getAttributeValue("more_attributes:equip_load_max")//最大载重
+    const currentWeight = player.getAttributeValue("more_attributes:equip_load_current")//当前载重
+    let currentLevel = Math.max(MoreAttributes.getLevel(player, "endurance"), 10)//当前等级
+    let currentExp = player.persistentData.getDouble('endurance_exp')//当前经验
+    let upExp = 100 + 50 * currentLevel//升级所需经验
 
-    // 满足升级条件时
-    if (enduranceExp >= upExp) {
-        const remainingExp = enduranceExp - upExp;
-        player.persistentData.putDouble('endurance_exp', remainingExp);
-        MoreAttributes.upgrade(player, "endurance", 1)
-        // 升级反馈
-        //player.tell(`你感觉你的体力上升了！当前等级: `);
-        player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", enduranceLevel))
+    if (lastPos && !player.isFallFlying()) {
+        const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x), 2) + Math.pow((currentPos.z - lastPos.z), 2))
+        let distanceRounded = Math.round(distance * 100) / 100;
+        // player.tell(`distance:${distanceRounded}`)
+        if ((maxWeight > 0 && currentWeight / maxWeight > 1 && currentWeight !== 0) && speedRounded > 0 && distanceRounded > 0) {
+            let expGain = Math.round(speedRounded * Math.pow((Math.min(currentWeight, 2 * maxWeight)), 2) / (maxWeight * maxWeight) / 2 * 100) / 100
+            currentExp += expGain
+            player.persistentData.putDouble('endurance_exp', currentExp)
+            // player.tell(`currentLevel:${currentLevel}`)
+            // player.tell(`currentExp:${currentExp}`)
+            // player.tell(`upExp:${upExp}`)
+            if (currentExp >= upExp) {
+                MoreAttributes.upgrade(player, "endurance", 1)
+                currentExp = currentExp - upExp
+                player.persistentData.putDouble('endurance_exp', Math.max( currentExp - upExp, 0))
+                player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", currentLevel + 1))
+            }
+        }
     }
-}
+    lastPos = currentPos
+    // player.tell(`speed:${speedRounded}`)
+})
+
+
 function health_proficiency(player, currentExp) {// 生命升级函数（修改为正确获取和修改属性的方式）
     // 获取当前等级（假设使用的是属性系统）
     const healthLevel = MoreAttributes.getLevel(player, "health") || 1;
@@ -94,27 +126,6 @@ function strength_proficiency(player, damageDealt) {//力量升级
     player.persistentData.putDouble('strength_exp', remainingExp);
 }
 
-PlayerEvents.tick(event => {// 超重时增加经验
-    const { player } = event;
-    const distan = player.persistentData.getDouble('distanceRd')//调用速度
-    const maxWeight = player.getAttributeValue("more_attributes:equip_load_max");  // 获取属性值
-    const nowWeight = player.getAttributeValue("more_attributes:equip_load_current");  // 修复调用对象
-
-
-    let nowexp = player.persistentData.getDouble('endurance_exp') || 0;
-    if ((maxWeight > 0 && nowWeight / maxWeight > 1 && nowWeight !== 0) && distan < 200) {
-
-        const expGain = distan * (Math.min(nowWeight, 2 * maxWeight)) * (Math.min(nowWeight, 2 * maxWeight)) / (maxWeight * maxWeight) / 4;
-        nowexp += expGain;
-        player.persistentData.putDouble('endurance_exp', nowexp);
-
-        //player.tell(` ${player.persistentData.getDouble('endurance_exp')}`);
-        endurance_proficiency(player, nowexp);  // 传递当前经验
-
-    }
-
-}
-);
 
 ItemEvents.foodEaten(event => {//生命值吃东西加经验
     const player = event.player;
