@@ -25,36 +25,6 @@ const NOMAP_EFFECT = [
 
 
 
-// PlayerEvents.tick(e => {
-//   const { player } = e
-//   const currentPos = {
-//     x: player.getX(),
-//     y: player.getY(),
-//     z: player.getZ()
-//   }
-//   if (lastPos) {
-//     const distance = Math.sqrt(Math.pow((currentPos.x - lastPos.x),2) + Math.pow((currentPos.z - lastPos.z),2))
-//     let distanceRounded = Math.round(distance * 100) / 100;
-//     player.persistentData.putDouble('distanceRd', distanceRounded)
-//     player.tell(distanceRounded)
-//   }
-//   lastPos = currentPos
-// })
-
-//player.tell(`每秒移动距离: ${distanceRounded}`);
-// let distanceRounded = Math.round(distance * 100) / 100;
-// let logged = player.persistentData.getBoolean('logged') || false;
-// 优化条件判断顺序，先检查是否已处理，再检查其他条件
-// if (!logged && player.isSpectator() && distanceRounded > 0.1) {
-//     // 清除负面效果
-//     player.removeEffect('minecraft:darkness');
-//     player.removeEffect('minecraft:blindness');
-//     // 切换到生存模式
-//     player.setGameMode('survival');
-//     // 更新状态（存储到玩家数据中，确保跨tick保存）
-//     logged = true;
-//     player.persistentData.putBoolean('logged', true);
-// }
 // PlayerEvents.loggedIn(event => {//登入给玩家buff
 //     const { player } = event;
 // if(!player.isCreative()){

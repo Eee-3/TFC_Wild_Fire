@@ -1,21 +1,6 @@
 const FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food.FoodCapability');
 const Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
 
-// //体力升级
-// /**
-//  * 
-//  * @param { Internal.Player } player 玩家
-//  * @param { number } currentExp 当前经验
-//  */
-// function endurance_proficiency(player, currentExp) {
-//     const enduranceLevel = MoreAttributes.getLevel(player, "endurance") || 1
-//     let upExp = 100 + 50 * enduranceLevel
-//     if (currentExp >= upExp) {
-//         player.persistentData.putDouble('endurance_exp', 0)
-//         MoreAttributes.upgrade(player, "endurance", 1)
-//         player.setStatusMessage(Component.translate("message.kubejs.endurance_upgrade", enduranceLevel))
-//     }
-// }
 PlayerEvents.tick(e => {
     const { player } = e
     const currentPos = {x: player.getX(), y: player.getY(), z: player.getZ()}//当前位置
