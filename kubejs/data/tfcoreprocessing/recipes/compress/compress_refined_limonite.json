@@ -12,7 +12,11 @@
     },
     {
       "item":"tfcoreprocessing:refined/limonite"
+    },
+    {
+      "item":"tfcoreprocessing:refined/limonite"
     }
+    
   ],
   "result": {
       "item":"tfcoreprocessing:compressed/limonite"

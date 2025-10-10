@@ -40,8 +40,8 @@ TFCEvents.registerFaunas(event => {
     event.replace('alexsmobs:shoebill', 'in_water', 'world_surface');
     // 鲸头鹳（地面）→ 世界表面（湿地）
     event.replace('alexsmobs:shoebill', 'on_ground', 'world_surface_wg');
-    // 海鸥（无限制，模拟飞行逻辑用 no_restrictions）→ 世界表面（海岸天空，用 world_surface 占位）
-    event.replace('alexsmobs:seagull', 'no_restrictions', 'world_surface');
+    // 海鸥（无限制，模拟飞行逻辑用 on_ground）→ 世界表面（海岸天空，用 world_surface 占位）
+    event.replace('alexsmobs:seagull', 'on_ground', 'world_surface');
     // 沙漠蛛蜂（地面）→ 世界表面（沙漠）
     event.replace('alexsmobs:tarantula_hawk', 'on_ground', 'world_surface_wg');
     // 大猩猩（地面）→ 世界表面（丛林地面）
@@ -67,9 +67,9 @@ TFCEvents.registerFaunas(event => {
     // 科莫多巨蜥（地面）→ 世界表面（热带岛屿）
     event.replace('alexsmobs:komodo_dragon', 'on_ground', 'world_surface');
     // 秃鹫（无限制，模拟飞行）→ 世界表面（沙漠天空）
-    event.replace('naturalist:vulture', 'no_restrictions', 'world_surface_wg');
+    event.replace('naturalist:vulture', 'on_ground', 'world_surface_wg');
     // 蜻蜓（无限制，模拟飞行）→ 世界表面（湿地天空）
-    event.replace('naturalist:dragonfly', 'no_restrictions', 'world_surface');
+    event.replace('naturalist:dragonfly', 'on_ground', 'world_surface');
     // 野牛（地面）→ 世界表面（草原平原）
     event.replace('alexsmobs:bison', 'on_ground', 'world_surface_wg');
     // 獠牙兽（地面）→ 世界表面（北极苔原）
@@ -89,13 +89,13 @@ TFCEvents.registerFaunas(event => {
     // 蜗牛（地面）→ 世界表面（温带森林地面）
     event.replace('naturalist:snail', 'on_ground', 'world_surface_wg');
     // 白头海雕（无限制，模拟飞行）→ 世界表面（温带天空）
-    event.replace('alexsmobs:bald_eagle', 'no_restrictions', 'world_surface');
+    event.replace('alexsmobs:bald_eagle', 'on_ground', 'world_surface');
     // 香蕉蛞蝓（地面）→ 世界表面（温带雨林）
     event.replace('alexsmobs:banana_slug', 'on_ground', 'world_surface_wg');
     // 浣熊（地面）→ 世界表面（温带森林边缘）
     event.replace('alexsmobs:raccoon', 'on_ground', 'world_surface');
     // 乌鸦（无限制，模拟飞行）→ 世界表面（城市天空）
-    event.replace('alexsmobs:crow', 'no_restrictions', 'world_surface_wg');
+    event.replace('alexsmobs:crow', 'on_ground', 'world_surface_wg');
     // 冠蓝鸦（地面/树上，简化为 on_ground）→ 世界表面（温带树木区）
     event.replace('alexsmobs:blue_jay', 'on_ground', 'world_surface');
     // 雨蛙（地面）→ 世界表面（热带雨林地面）
