@@ -226,34 +226,6 @@
       "rolls": 1.0
     },
     {
-       "bonus_rolls": 0.1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.2,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "snowpig:frozen_ham",
-          "weight": 1
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
        "bonus_rolls": 0.2,
       "entries": [
         {
@@ -280,34 +252,6 @@
         }
       ],
       "rolls": 1.0
-    },
-    {
-       "bonus_rolls": 0.2,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.4,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "snowpig:frozen_porkchop",
-          "weight": 3
-        }
-      ],
-      "rolls": 2.0
     }
   ],
   "random_sequence": "illagerinvasion:chests/common"
