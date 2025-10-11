@@ -1,11 +1,7 @@
 MafuyuEvents.modifyVariedModel(event => {
-    const getnbt = event.getItemStack().nbt.contains()
-    if (getnbt != "null") {
-        return
-    } else {
-        if (getnbt == "tank") {
-            event.setmode("kubejs:item/create/rock_powder_blank")
-        }
+    if (event.getItemStack().nbt.contains("tank") && event.getItemStack().id.includes('kubejs:rock_powder')) {
+        event.setModelPath("kubejs:rock_powder_blank")
+        
+    } 
 
-    }
 })
