@@ -304,7 +304,7 @@
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
-			description: ["梳洗站是一种畜牧业用方块，用于自动喂食动物。如果你哪天忘记了喂食动物，动物就会跑去范围内装有食物的梳洗站进食并自己提高好感度。梳洗站可由不同种类的金属制成，金属的等级越高，梳洗站影响的范围越大。"]
+			description: ["喂食槽是一种畜牧业用方块，用于自动喂食动物。如果你哪天忘记了喂食动物，动物就会跑去范围内装有食物的喂食槽进食并自己提高好感度。喂食槽可由不同种类的金属制成，金属的等级越高，喂食槽影响的范围越大。"]
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true

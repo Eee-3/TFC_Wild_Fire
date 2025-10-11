@@ -1008,62 +1008,6 @@
       "rolls": 1.0
     },
     {
-      "bonus_rolls": 0.1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.15,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "lhmiracleroad:soon_elapse_soul",
-          "weight": 1
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "lhmiracleroad:incomplete_soul",
-          "weight": 1
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
       "bonus_rolls": 0.0,
       "entries": [
         {
