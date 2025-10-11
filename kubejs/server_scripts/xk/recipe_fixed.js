@@ -62,54 +62,6 @@ ServerEvents.recipes(event => {
 
 
 
-  //基础炼矿
-  event.recipes.tfc.heating('tfc:ore/poor_native_copper', 1083).resultFluid(Fluid.of('tfc:metal/copper', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_native_copper', 1083).resultFluid(Fluid.of('tfc:metal/copper', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_native_copper', 1083).resultFluid(Fluid.of('tfc:metal/copper', 30))//铜
-
-  event.recipes.tfc.heating('tfc:ore/poor_native_silver', 961).resultFluid(Fluid.of('tfc:metal/silver', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_native_silver', 961).resultFluid(Fluid.of('tfc:metal/silver', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_native_silver', 961).resultFluid(Fluid.of('tfc:metal/silver', 30))//银
-
-  event.recipes.tfc.heating('tfc:ore/poor_hematite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_hematite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_hematite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 30))//赤铁
-
-  event.recipes.tfc.heating('tfc:ore/poor_native_gold', 1064).resultFluid(Fluid.of('tfc:metal/gold', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_native_gold', 1064).resultFluid(Fluid.of('tfc:metal/gold', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_native_gold', 1064).resultFluid(Fluid.of('tfc:metal/gold', 30))//金
-
-  event.recipes.tfc.heating('tfc:ore/poor_bismuthinite', 271).resultFluid(Fluid.of('tfc:metal/bismuth', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_bismuthinite', 271).resultFluid(Fluid.of('tfc:metal/bismuth', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_bismuthinite', 271).resultFluid(Fluid.of('tfc:metal/bismuth', 30))//铋
-
-  event.recipes.tfc.heating('tfc:ore/poor_garnierite', 1445).resultFluid(Fluid.of('tfc:metal/nickel', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_garnierite', 1445).resultFluid(Fluid.of('tfc:metal/nickel', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_garnierite', 1445).resultFluid(Fluid.of('tfc:metal/nickel', 30))//绿镍
-
-  event.recipes.tfc.heating('tfc:ore/poor_malachite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_malachite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_malachite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 30))//孔雀石
-
-  event.recipes.tfc.heating('tfc:ore/poor_cassiterite', 231).resultFluid(Fluid.of('tfc:metal/tin', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_cassiterite', 231).resultFluid(Fluid.of('tfc:metal/tin', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_cassiterite', 231).resultFluid(Fluid.of('tfc:metal/tin', 30))//锡石
-
-  event.recipes.tfc.heating('tfc:ore/poor_tetrahedrite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_tetrahedrite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_tetrahedrite', 1083).resultFluid(Fluid.of('tfc:metal/copper', 30))//黝铜矿
-
-  event.recipes.tfc.heating('tfc:ore/poor_limonite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_limonite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_limonite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 30))//褐铁矿
-
-  event.recipes.tfc.heating('tfc:ore/poor_magnetite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_magnetite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_magnetite', 1538).resultFluid(Fluid.of('tfc:metal/cast_iron', 30))//磁铁矿
-
-  event.recipes.tfc.heating('tfc:ore/poor_sphalerite', 419).resultFluid(Fluid.of('tfc:metal/zinc', 10))
-  event.recipes.tfc.heating('tfc:ore/normal_sphalerite', 419).resultFluid(Fluid.of('tfc:metal/zinc', 20))
-  event.recipes.tfc.heating('tfc:ore/rich_sphalerite', 419).resultFluid(Fluid.of('tfc:metal/zinc', 30))//闪锌
 
 
   //获取树皮
@@ -162,7 +114,7 @@ ServerEvents.recipes(event => {
 
 
       type: "smoking"
-    
+
     }, r => {
 
       var cookmeat_id = r.getOriginalRecipeResult().getId()
@@ -172,7 +124,7 @@ ServerEvents.recipes(event => {
 
         return;
       }
-      if(cookmeat_id=='immersiveengineering:clinker_brick'||cookmeat_id=='tfc:powder/soda_ash'||cookmeat_id=='tfc:torch'){
+      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch'|| cookmeat_id == 'tfc:stick_bunch') {
         return;
       }
 
@@ -240,10 +192,6 @@ ServerEvents.recipes(event => {
     'X X X',
     'X X X',
     'XXXXX']).outsideSlotRequired(false)
-  event.recipes.tfc.heating('kubejs:unfired_mold_mechanical', 1500).resultItem('kubejs:mold_mechanical')//零件模具
-  event.recipes.tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
-  event.recipes.tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
-  event.recipes.tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
 
   event.recipes.tfc.welding('tfc:metal/double_ingot/cast_iron', 'tfc:metal/ingot/cast_iron', 'tfc:metal/ingot/cast_iron')//铸铁焊接
 
@@ -310,12 +258,12 @@ ServerEvents.tags('minecraft:item', event => {
   event.remove("bsa:bindings/strong", '#forge:plant_fiber');
   event.remove("bsa:bindings/strong", '#forge:string');
   event.remove("bsa:bindings/strong", 'tfc:glue');
+ 
+
+  event.remove('bsa:bindings/weak', 'tfc:glue');
 
 
-
-
-
-
+  event.add("bsa:bindings/medium", 'bsa:bindings/weak');//基础绳子
   event.add("bsa:bindings/medium", 'minecraft:slime_ball');//合格粘液球
   event.add("bsa:bindings/medium", 'minecraft:string');//合格，线
   event.add("bsa:bindings/medium", 'tfc:glue');//合格

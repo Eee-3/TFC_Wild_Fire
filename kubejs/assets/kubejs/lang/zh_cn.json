@@ -519,5 +519,9 @@
   "item.kubejs.rot": "腐烂物",
   "item.kubejs.burnt_food_residue": "烧焦的食物残渣",
   "item.kubejs.diamond_knife": "钻石小刀",
-  "item.kubejs.obsidian_knife": "黑曜石小刀"
+  "item.kubejs.obsidian_knife": "黑曜石小刀",
+  "message.kubejs.endurance_upgrade": "你感觉你的体力上升了！当前等级: %d",
+  "message.kubejs.health_upgrade": "你感觉你的生命上升了！当前等级: %d",
+  "message.kubejs.strength_upgrade": "你感觉你的力量上升了！当前等级: %d",
+  "message.kubejs.max_strength_upgrade": "你的力量已达上限，无法继续提升！"
 }

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = generic_dirt_message_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756224668447
+  last_edited_time = 1760094079777
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:4c925b2e-28a9-497f-abd8-6a6c2bb3405c-1756224601921] = [groups:][instances:]
+  [loading_requirement_container_meta:a8e9cdce-3e5a-4ca9-a2b6-c560f4975d5b-1760094067730] = [groups:][instances:]
 }
 
 menu_background {
@@ -62,11 +62,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1600
+  auto_sizing_base_screen_height = 1512
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -315
-  y = 165
+  anchor_point = bottom-left
+  x = 7
+  y = -29
   width = 100
   height = 20
   stretch_x = false

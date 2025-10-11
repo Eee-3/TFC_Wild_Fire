@@ -28,14 +28,14 @@ ServerEvents.recipes(e => {
     [
       'hit_any',
     ]
-  ).tier(1).bonus(true).id("tfc:andesite_alloy/anvil")//粗安山合金合成安山合金
+  ).tier(1).bonus(false).id("tfc:andesite_alloy/anvil")//粗安山合金合成安山合金
   tfc.anvil(
     'vintageimprovements:andesite_sheet',
     'create:andesite_alloy',
     [
       'hit_any',
     ]
-  ).tier(1).bonus(true).id("tfc:andesite_alloy_sheet/anvil")//安山合金板
+  ).tier(1).bonus(false).id("tfc:andesite_alloy_sheet/anvil")//安山合金板
   tfc.anvil(
     '4x create:shaft',
     'create:andesite_alloy',
@@ -43,7 +43,7 @@ ServerEvents.recipes(e => {
       'draw_any',
       'draw_any'
     ]
-  ).tier(1).bonus(true).id("tfc:andesite_alloy_shaft/anvil")//传动杆
+  ).tier(1).bonus(false).id("tfc:andesite_alloy_shaft/anvil")//传动杆
   tfc.anvil(//搅拌头半成品
     'kubejs:whisk_stirrer_head_blank',
     'kubejs:wrought_iron_double_rod',
@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
       'draw_any',
       'draw_any'
     ]
-  ).tier(3).bonus(true).id("kubejs:whisk_stirrer_head_blank/anvil")
+  ).tier(3).bonus(false).id("kubejs:whisk_stirrer_head_blank/anvil")
 
   tfc.anvil(//黑钢搅拌头半成品
     'kubejs:whisk_black_steel_head_blank',
@@ -60,7 +60,7 @@ ServerEvents.recipes(e => {
       'draw_any',
       'draw_any'
     ]
-  ).tier(5).bonus(true).id("kubejs:whisk_black_steel_stirrer_head_blank/anvil")
+  ).tier(5).bonus(false).id("kubejs:whisk_black_steel_stirrer_head_blank/anvil")
   tfc.anvil(
     '2x kubejs:fan_blade_blank_part',
     'tfc:metal/ingot/wrought_iron',
@@ -68,7 +68,7 @@ ServerEvents.recipes(e => {
       'hit_any',
       'hit_any'
     ]
-  ).tier(3).bonus(true).id("kubejs:fan_blade_blank_part/anvil")//扇叶叶片
+  ).tier(3).bonus(false).id("kubejs:fan_blade_blank_part/anvil")//扇叶叶片
   e.shapeless('kubejs:fan_blade_blank', ['4x kubejs:fan_blade_blank_part'])//风扇合成
 
   
@@ -79,7 +79,7 @@ tfc.anvil(// 锻铁零件的铁砧配方
         'hit_any',                              
         'hit_any'                                
     ]
-).tier(3).bonus(true).id("kubejs:material_component_wrought_iron/anvil"); 
+).tier(3).bonus(false).id("kubejs:material_component_wrought_iron/anvil"); 
 
 
 tfc.anvil(// 钢制零件的铁砧配方
@@ -89,7 +89,7 @@ tfc.anvil(// 钢制零件的铁砧配方
         'hit_any',                               
         'hit_any'                                
     ]
-).tier(4).bonus(true).id("kubejs:material_component_steel/anvil");  
+).tier(4).bonus(false).id("kubejs:material_component_steel/anvil");  
 
 
 tfc.anvil(// 黑钢零件的铁砧配方
@@ -99,9 +99,17 @@ tfc.anvil(// 黑钢零件的铁砧配方
         'hit_any',                               
         'hit_any'                                
     ]
-).tier(5).bonus(true).id("kubejs:material_component_black_steel/anvil");  
+).tier(5).bonus(false).id("kubejs:material_component_black_steel/anvil");  
 
-
+tfc.anvil(// 锻铁炉的铁砧配方
+    'kubejs:brass_forge_door',  
+    'tfc:metal/double_sheet/brass',               
+    [
+        'hit_any',                               
+        'hit_any',
+        "bend_last"                                
+    ]
+).tier(2).bonus(true).id("kubejs:brass_forge_door/anvil");  
 
   tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',

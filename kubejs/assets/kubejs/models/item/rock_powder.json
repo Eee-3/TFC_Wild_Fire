@@ -2,19 +2,6 @@
     "parent": "item/generated",
     "textures": {
         "layer0":"kubejs:item/create/rock_powder"
-    },
-    "overrides": [
-        {
-            "predicate": {
-                "kubejs:has_fluid": 1
-            },
-            "model": "kubejs:item/create/rock_powder_blank"
-        },
-        {
-            "predicate": {
-                "kubejs:has_fluid": 0
-            },
-            "model": "kubejs:item/create/rock_powder"
-        }
-    ]
+    }
+
 }

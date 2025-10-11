@@ -1,40 +1,12 @@
-PlayerEvents.inventoryChanged(event => {
+MafuyuEvents.modifyVariedModel(event => {
+    const itemStack = event.getItemStack();
+    if (!itemStack) return; // 物品堆不存在时直接返回
 
+    if (!itemStack.id.includes('kubejs:rock_powder')) return;
+    const nbt = itemStack.nbt;
+    if (!nbt) return;
 
-
-
-
-
-
-
-
-
-
-
-
-
-})
-ItemEvents.textureOverride(event => {
-  event.overrideCustom('kubejs:rock_powder', (item, context) => {
-    const nbt = item.getTag();
-    
-    if (nbt && nbt.contains("tank")) {
-      const tank = nbt.getCompound("tank");
-      
-      if (tank.contains("FluidName")) {
-        const fluidName = tank.getString("FluidName");
-        
-        // 根据流体类型返回不同的纹理路径
-        switch(fluidName) {
-          case "tfc:metal/zinc":
-            return "kubejs:item/rock_powder_overlay";
-          default:
-            return "kubejs:item/rock_powder_default";
-        }
-      }
+    if (!nbt.contains("null") && nbt.contains("tank")) {
+        event.setModelPath("kubejs:rock_powder_blank");
     }
-    
-    // 默认纹理
-    return "kubejs:item/rock_powder";
-  });
 });
