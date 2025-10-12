@@ -53,15 +53,15 @@ const lockPickConfigs = {
 BlockEvents.rightClicked(e => {
   const { player, block } = e
   const isLoot = block.entityData?.LootTable
-  // const item = player.getMainHandItem().id
+  // const item = player.getMainHandItem()
   // let value = block.getEntity().persistentData.getInt("Lock")
-  // if(item === "minecraft:stick"){
+  // if(item.id === "minecraft:stick"){
   //   player.tell(`lockValue:${value}`)
   // }
   if (isLoot) {
+    const lockPick = player.getMainHandItem()
     let chestData = block.getEntity().persistentData
     let lockValue = chestData.getInt("Lock")
-    const lockPick = player.getMainHandItem().id
     // 初始化锁值
     if (!lockValue) {
       lockValue = randomInt(50, 100)
@@ -70,7 +70,7 @@ BlockEvents.rightClicked(e => {
     //进行开锁
     if (lockValue != 114514) {
       //无钥匙
-      if (!allLockPick.includes(lockPick)) {
+      if (!allLockPick.includes(lockPick.id)) {
         player.setStatusMessage(Component.translate("message.kubejs.no_lockpick"))
         block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
         player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
@@ -78,34 +78,44 @@ BlockEvents.rightClicked(e => {
       }
       //开锁参数
       let reduceValue, durabilityCost, config
-      if (ironLockPick.includes(lockPick)) config = lockPickConfigs.iron
-      else if (diamondLockPick.includes(lockPick)) config = lockPickConfigs.diamond
-      else if (netheriteLockPick.includes(lockPick)) config = lockPickConfigs.netherite
-      else if (copperLockPick.includes(lockPick)) config = lockPickConfigs.copper
-      else if (mediumLockPick.includes(lockPick)) config = lockPickConfigs.medium
-      else if (advancedLockPick.includes(lockPick)) config = lockPickConfigs.advanced
-      else if (crowbar.includes(lockPick)) config = lockPickConfigs.crowbar
-      else if (key.includes(lockPick)) config = lockPickConfigs.key
-      else if (originalKey.includes(lockPick)) config = lockPickConfigs.originalKey
+      let currentLevel = player.persistentData.getInt('skill_level') || 10//当前等级
+      if (ironLockPick.includes(lockPick.id)) config = lockPickConfigs.iron
+      else if (diamondLockPick.includes(lockPick.id)) config = lockPickConfigs.diamond
+      else if (netheriteLockPick.includes(lockPick.id)) config = lockPickConfigs.netherite
+      else if (copperLockPick.includes(lockPick.id)) config = lockPickConfigs.copper
+      else if (mediumLockPick.includes(lockPick.id)) config = lockPickConfigs.medium
+      else if (advancedLockPick.includes(lockPick.id)) config = lockPickConfigs.advanced
+      else if (crowbar.includes(lockPick.id)) config = lockPickConfigs.crowbar
+      else if (key.includes(lockPick.id)) config = lockPickConfigs.key
+      else if (originalKey.includes(lockPick.id)) config = lockPickConfigs.originalKey
       if (config) {
-        reduceValue = randomInt(config.reduceValue[0], config.reduceValue[1])
+        let levelBoost = (1 + (currentLevel - 10) / 10)
+        reduceValue = randomInt(config.reduceValue[0], config.reduceValue[1]) * ((levelBoost > 2) ? 2 : levelBoost)
         durabilityCost = config.durabilityCost
-        // player.tell(`reduceValue:${reduceValue}, lockValue:${lockValue}`)
+        // player.tell(`reduceValue:${reduceValue}, lockValue:${lockValue}, remainValue:${lockValue - reduceValue}`)
       }
       // 开锁成功
       if (lockValue - reduceValue <= 0) {
         chestData.putInt("Lock", 114514)
         player.setStatusMessage(Component.translate("message.kubejs.lockpick_success"))
         block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.note_block.bell", "blocks", 2.0, 1.2)
+        // 技巧经验获取
+        let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
+        let expGain = Math.round(Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
+        skillLevelUp(player, currentExp, expGain)
         return
       }
       // 开锁失败
       else {
-        player.setStatusMessage(Component.translate("message.kubejs.lockpick_failure"))
         lockValue -= reduceValue
+        player.setStatusMessage(Component.translate("message.kubejs.lockpick_failure"))
         player.damageHeldItem("main_hand", durabilityCost)
         chestData.putInt("Lock", lockValue)
         block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
+        // 技巧经验获取
+        let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
+        let expGain = Math.round(2 * Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
+        skillLevelUp(player, currentExp, expGain)
         e.cancel()
       }
     }

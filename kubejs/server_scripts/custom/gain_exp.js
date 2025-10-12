@@ -2,7 +2,6 @@ const FoodCapability = Java.loadClass('net.dries007.tfc.common.capabilities.food
 const Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
 
 /*
-技巧:撬锁时获得
 耐性:受到伤害获得耐性[受到数值越高的伤害单次加成越高、反之越低（例如受到10颗心的伤害+100经验、1颗心为2）]、死亡时清零
 集中:开锁成功和使用远程武器造成伤害获得
 敏捷:负重越少增加的经验越多负重100%后每多1%-2%获得经验最低为0，进行跳跃时增加
@@ -97,3 +96,16 @@ EntityEvents.hurt(e => {
 
 //耐性经验获取
 //集中经验获取
+//技巧经验获取
+function skillLevelUp(player, currentExp, expGain) {
+    const currentLevel = MoreAttributes.getLevel(player, "skill") || 10//当前技巧等级
+    const upExp = 100 + 50 * currentLevel//升级所需经验
+    currentExp += expGain
+    player.persistentData.putDouble('skill_exp', currentExp)
+    // player.tell(`currentLevel:${currentLevel}; expGain ${expGain}; currentExp ${currentExp}, upExp:${upExp}`)
+    if (currentExp >= upExp) {
+        MoreAttributes.upgrade(player, "skill", 1)
+        player.persistentData.putDouble('skill_exp', 0);
+        player.setStatusMessage(Component.translate("message.kubejs.skill_upgrade", currentLevel + 1))
+    }
+}
