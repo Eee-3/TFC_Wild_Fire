@@ -1,165 +1,112 @@
-BlockEvents.rightClicked(event => {
-  //判断是否是战利品箱
-  const isLoot = event.block.entityData?.LootTable
+const ironLockPick = [
+  "minecraft:iron_sword",
+]
+const diamondLockPick = [
+  "minecraft:diamond_sword",
+]
+const netheriteLockPick = [
+  "minecraft:netherite_sword",
+]
+const copperLockPick = [
+  "kubejs:bismuth_bronze_lockpick",
+  "kubejs:black_bronze_lockpick",
+  "kubejs:bronze_lockpick",
+  "kubejs:copper_lockpick",
+]
+const mediumLockPick = [
+  "kubejs:cast_iron_lockpick",
+  "kubejs:wrought_iron_lockpick",
+  "kubejs:steel_lockpick",
+]
+const advancedLockPick = [
+  "kubejs:black_steel_lockpick",
+  "kubejs:homemade_lockpick",
+]
+const crowbar = [
+  "kubejs:wrought_iron_crowbar",
+  "kubejs:black_steel_crowbar",
+  "kubejs:steel_crowbar",
+]
+const key = [
+  "kubejs:brass_simple_key",
+  "kubejs:gold_simple_key",
+  "kubejs:bismuth_bronze_simple_key",
+  "kubejs:black_bronze_simple_key",
+  "kubejs:bronze_simple_key",
+  "kubejs:copper_simple_key",
+]
+const originalKey = [
+  "kubejs:old_key",
+]
+const allLockPick = ironLockPick.concat(diamondLockPick).concat(netheriteLockPick).concat(copperLockPick).concat(mediumLockPick).concat(advancedLockPick).concat(crowbar).concat(key).concat(originalKey)
+const lockPickConfigs = {
+  "iron": { reduceValue: [1, 10], durabilityCost: 3 },
+  "diamond": { reduceValue: [5, 15], durabilityCost: 2 },
+  "netherite": { reduceValue: [10, 20], durabilityCost: 1 },
+  "copper": { reduceValue: [3, 15], durabilityCost: 2 },
+  "medium": { reduceValue: [5, 20], durabilityCost: 2 },
+  "advanced": { reduceValue: [10, 29], durabilityCost: 2 },
+  "crowbar": { reduceValue: [50, 139], durabilityCost: 1 },
+  "key": { reduceValue: [131, 170], durabilityCost: 1 },
+  "originalKey": { reduceValue: [131, 170], durabilityCost: 1 }
+}
+BlockEvents.rightClicked(e => {
+  const { player, block } = e
+  const isLoot = block.entityData?.LootTable
+  // const item = player.getMainHandItem().id
+  // let value = block.getEntity().persistentData.getInt("Lock")
+  // if(item === "minecraft:stick"){
+  //   player.tell(`lockValue:${value}`)
+  // }
   if (isLoot) {
-    let chestData = event.block.getEntity().persistentData
-    let lockValue = chestData.getInt('Lock')
-    const lockPick = event.player.getMainHandItem()
-
-    // 锁初始化，为未上锁的箱子设置随机锁值
+    let chestData = block.getEntity().persistentData
+    let lockValue = chestData.getInt("Lock")
+    const lockPick = player.getMainHandItem().id
+    // 初始化锁值
     if (!lockValue) {
-      //如果容器没有锁值，则随机生成数值，数值越大表示锁越难开
-      lockValue = Math.floor(Math.random() * 100 + 50)  // 初始锁值范围
-      chestData.putInt('Lock', lockValue)
+      lockValue = randomInt(50, 100)
+      chestData.putInt("Lock", lockValue)
     }
-
-    // 开锁流程，仅在箱子未解锁时执行
-    if (lockValue != 1) {
-      // 检查玩家是否持有正确的开锁工具
-      let unlockValue, successThreshold, durabilityCost
-
-      // 根据钥匙类型设置开锁参数
-      if (lockPick.id == 'minecraft:iron_sword') {
-        unlockValue = Math.floor(Math.random() * 10 + 1) //铁开锁工具：每次减1-10
-        successThreshold = 10 // 需减到≤10
-        durabilityCost = 3 // 每次尝试耐久的消耗
-      } else if (lockPick.id == 'minecraft:diamond_sword') {
-        unlockValue = Math.floor(Math.random() * 15 + 5) // 钻石开锁工具：每次减5-15
-        successThreshold = 5 // 需减到≤5
-        durabilityCost = 2 // 每次尝试耐久的消耗
-      } else if (lockPick.id == 'minecraft:netherite_sword') {
-        unlockValue = Math.floor(Math.random() * 20 + 10) // 下界开锁工具：每次减10-20
-        successThreshold = 3 //需减到≤3
-        durabilityCost = 1 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:bismuth_bronze_lockpick',
-        'kubejs:black_bronze_lockpick',
-        'kubejs:bronze_lockpick',
-        'kubejs:copper_lockpick'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 30 + 3) // 铜开锁工具：每次减3-15
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 2 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:cast_iron_lockpick',
-        'kubejs:wrought_iron_lockpick',
-        'kubejs:steel_lockpick'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 35 + 10) // 中级开锁工具：每次减5-20
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 2 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:black_steel_lockpick',
-        'kubejs:homemade_lockpick'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 50 + 10) // 高级开锁工具：每次减10-29
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 2 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:wrought_iron_crowbar',
-        'kubejs:black_steel_crowbar',
-        'kubejs:steel_crowbar'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 50 + 90) // 撬棍、每次减50~139
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 1 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:brass_simple_key',
-        'kubejs:gold_simple_key',
-        'kubejs:bismuth_bronze_simple_key',
-        'kubejs:black_bronze_simple_key',
-        'kubejs:bronze_simple_key',
-        'kubejs:copper_simple_key'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 70 + 80) // 钥匙、每次减131~170
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 1 // 每次尝试耐久的消耗
-      } else if ([
-        'kubejs:old_key'
-      ].includes(lockPick.id)) {
-        unlockValue = Math.floor(Math.random() * 40 + 101) // 原装钥匙、每次减131~170
-        successThreshold = 10 //需减到≤10
-        durabilityCost = 1 // 每次尝试耐久的消耗
+    //进行开锁
+    if (lockValue != 114514) {
+      //无钥匙
+      if (!allLockPick.includes(lockPick)) {
+        player.setStatusMessage(Component.translate("message.kubejs.no_lockpick"))
+        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
+        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
+        e.cancel()
       }
-
-
-
-      // 无钥匙/错误工具处理
-      if (lockValue > 1 && ![
-        'minecraft:iron_sword',
-        'minecraft:diamond_sword',
-        'minecraft:netherite_sword',
-        'kubejs:bismuth_bronze_lockpick',
-        'kubejs:black_bronze_lockpick',
-        'kubejs:bronze_lockpick',
-        'kubejs:copper_lockpick',
-        'kubejs:cast_iron_lockpick',
-        'kubejs:wrought_iron_lockpick',
-        'kubejs:steel_lockpick',
-        'kubejs:black_steel_lockpick',
-        'kubejs:homemade_lockpick',
-        'kubejs:wrought_iron_crowbar',
-        'kubejs:black_steel_crowbar',
-        'kubejs:steel_crowbar',
-        'kubejs:old_key',
-        'kubejs:brass_simple_key',
-        'kubejs:gold_simple_key',
-        'kubejs:bismuth_bronze_simple_key',
-        'kubejs:black_bronze_simple_key',
-        'kubejs:bronze_simple_key',
-        'kubejs:copper_simple_key'
-
-      ].includes(lockPick.id)) {
-        event.player.setStatusMessage('§d这个容器已上锁，你需要一把§a[开锁工具]§d才能打开它')
-        event.level.playSound(null, event.block.pos.x, event.block.pos.y, event.block.pos.z,
-          'minecraft:block.iron_trapdoor.close', 2.0, 1.2, 'players')
-        event.player.playSound('minecraft:block.chain.break', 1.0, 0.8)
-        event.cancel()
+      //开锁参数
+      let reduceValue, durabilityCost, config
+      if (ironLockPick.includes(lockPick)) config = lockPickConfigs.iron
+      else if (diamondLockPick.includes(lockPick)) config = lockPickConfigs.diamond
+      else if (netheriteLockPick.includes(lockPick)) config = lockPickConfigs.netherite
+      else if (copperLockPick.includes(lockPick)) config = lockPickConfigs.copper
+      else if (mediumLockPick.includes(lockPick)) config = lockPickConfigs.medium
+      else if (advancedLockPick.includes(lockPick)) config = lockPickConfigs.advanced
+      else if (crowbar.includes(lockPick)) config = lockPickConfigs.crowbar
+      else if (key.includes(lockPick)) config = lockPickConfigs.key
+      else if (originalKey.includes(lockPick)) config = lockPickConfigs.originalKey
+      if (config) {
+        reduceValue = randomInt(config.reduceValue[0], config.reduceValue[1])
+        durabilityCost = config.durabilityCost
+        // player.tell(`reduceValue:${reduceValue}, lockValue:${lockValue}`)
       }
-
-      // 有效开锁尝试处理
-      else if ([
-        'minecraft:iron_sword',
-        'minecraft:diamond_sword',
-        'minecraft:netherite_sword',
-        'kubejs:bismuth_bronze_lockpick',
-        'kubejs:black_bronze_lockpick',
-        'kubejs:bronze_lockpick',
-        'kubejs:copper_lockpick',
-        'kubejs:cast_iron_lockpick',
-        'kubejs:wrought_iron_lockpick',
-        'kubejs:steel_lockpick',
-        'kubejs:black_steel_lockpick',
-        'kubejs:homemade_lockpick',
-        'kubejs:wrought_iron_crowbar',
-        'kubejs:black_steel_crowbar',
-        'kubejs:steel_crowbar',
-        'kubejs:old_key',
-        'kubejs:brass_simple_key',
-        'kubejs:gold_simple_key',
-        'kubejs:bismuth_bronze_simple_key',
-        'kubejs:black_bronze_simple_key',
-        'kubejs:bronze_simple_key',
-        'kubejs:copper_simple_key'
-
-      ].includes(lockPick.id)) {
-        // 开锁成功
-        if (lockValue - unlockValue <= successThreshold) {
-          chestData.putInt('Lock', 1) // 完全解锁
-          event.player.setStatusMessage("§6开锁成功！")
-          event.level.playSound(null, event.block.pos.x, event.block.pos.y, event.block.pos.z,
-            'minecraft:block.note_block.bell', 2.0, 1.2, 'players')
-          return // 允许打开容器
-        }
-        // 开锁失败
-        else {
-          event.player.setStatusMessage("§7再试试吧…")
-          lockValue = lockValue - unlockValue // 降低锁值
-          event.player.damageHeldItem('main_hand', durabilityCost) // 消耗耐久
-          chestData.putInt('Lock', lockValue) // 更新锁值
-          event.player.playSound('minecraft:block.iron_trapdoor.open', 1.0, 0.8)
-          event.cancel() // 阻止打开容器
-        }
+      // 开锁成功
+      if (lockValue - reduceValue <= 0) {
+        chestData.putInt("Lock", 114514)
+        player.setStatusMessage(Component.translate("message.kubejs.lockpick_success"))
+        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.note_block.bell", "blocks", 2.0, 1.2)
+        return
+      }
+      // 开锁失败
+      else {
+        player.setStatusMessage(Component.translate("message.kubejs.lockpick_failure"))
+        lockValue -= reduceValue
+        player.damageHeldItem("main_hand", durabilityCost)
+        chestData.putInt("Lock", lockValue)
+        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
+        e.cancel()
       }
     }
   }

@@ -19,8 +19,10 @@ EntityEvents.spawned(e => {
 //逻辑判断
 BlockEvents.rightClicked(e => {
   const { player, block } = e
-  if (player.hasEffect("minecraft:invisibility")) return
-  if (block.getEntityData().contains("LootTable")) {
+  if(player.hasEffect("minecraft:invisibility"))return
+  // try{block.getEntityData().contains("LootTable")}catch(error){return}
+  const isLoot = e.block.entityData?.LootTable
+  if(isLoot){
     const { level, pos } = block
     const r = 8
     const box = AABB.of(
