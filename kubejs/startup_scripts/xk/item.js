@@ -22,10 +22,10 @@ StartupEvents.registry('item', event => {
   event.create('rot', 'basic').texture('kubejs:item/rot');// 注册腐烂物（
   event.create('burnt_food_residue', 'basic').texture('kubejs:item/burnt_food_residue');// 注册烧焦的食物残渣
 
-event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
+  event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
 
 
-event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
+  event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 
 
   //三锭
@@ -70,30 +70,9 @@ event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); /
     })
   })
 
-
+  weapon_part.forEach(weapon_part => {
+    `kubejs:${weapon_part}_${weapon_part}_weapon_part`
+  })
 
 })
 
-const aaaaaaaaaa = [
-  "tomahawk_weapon_part",
-  "throwing_knife_weapon_part",
-  "dagger_weapon_part",
-  "handguard_weapon_part",
-  "longsword_weapon_part",
-  "katana_weapon_part",
-  "saber_weapon_part",
-  "rapier_weapon_part",
-  "battle_hammer_weapon_part",
-  "warhammer_weapon_part",
-  "battleaxe_weapon_part",
-  "flanged_mace_weapon_part",
-  "greatsword_weapon_part",
-  "halberd_weapon_part",
-  "glaive_weapon_part",
-  "scythe_weapon_part",
-  "lance_weapon_part",
-  "quarterstaff_weapon_part"
-];
-aaaaaaaaaa.forEach(aacddeead => {
-  `kubejs:${aacddeead}_${aacddeead}_weapon_part`
-})

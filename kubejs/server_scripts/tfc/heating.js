@@ -100,14 +100,36 @@ ServerEvents.recipes(e => {
     { name: "triple_black_steel", temperature: 1485, metal: "black_steel", number: 300 },
     { name: "triple_blue_steel", temperature: 1538, metal: "blue_steel", number: 300 },
     { name: "triple_red_steel", temperature: 1538, metal: "red_steel", number: 300 },
-    { name: "triple_steel", temperature: 1540, metal: "steel", number: 300 }
+    { name: "triple_steel", temperature: 1540, metal: "steel", number: 300 },
+    // 钥匙类
+    { name: "brass_simple_key", temperature: 940, metal: "brass", number: 100 },    // 黄铜简易钥匙（kubejs:brass_simple_key）
+    { name: "gold_simple_key", temperature: 1064, metal: "gold", number: 100 },    // 黄金简易钥匙（kubejs:gold_simple_key）
+    { name: "bismuth_bronze_simple_key", temperature: 960, metal: "bismuth_bronze", number: 100 },    // 铋铜简易钥匙（kubejs:bismuth_bronze_simple_key）
+    { name: "black_bronze_simple_key", temperature: 1050, metal: "black_bronze", number: 100 },    // 黑铜简易钥匙（kubejs:black_bronze_simple_key）
+    { name: "bronze_simple_key", temperature: 950, metal: "bronze", number: 100 },    // 青铜简易钥匙（kubejs:bronze_simple_key）
+    { name: "copper_simple_key", temperature: 1080, metal: "copper", number: 100 },    // 铜制简易钥匙（kubejs:copper_simple_key）
+
+    // 开锁器类
+    { name: "bismuth_bronze_lockpick", temperature: 960, metal: "bismuth_bronze", number: 50},    // 铋铜开锁器（kubejs:bismuth_bronze_lockpick）
+    { name: "black_bronze_lockpick", temperature: 1050, metal: "black_bronze", number: 50 },    // 黑铜开锁器（kubejs:black_bronze_lockpick）
+    { name: "bronze_lockpick", temperature: 950, metal: "bronze", number: 50 },    // 青铜开锁器（kubejs:bronze_lockpick）
+    { name: "copper_lockpick", temperature: 1080, metal: "copper", number: 50 },    // 铜制开锁器（kubejs:copper_lockpick）
+    { name: "cast_iron_lockpick", temperature: 1150, metal: "cast_iron", number: 50 },    // 铸铁开锁器（kubejs:cast_iron_lockpick）
+    { name: "wrought_iron_lockpick", temperature: 1535, metal: "wrought_iron", number: 50 },    // 锻铁开锁器（kubejs:wrought_iron_lockpick）
+    { name: "steel_lockpick", temperature: 1540, metal: "steel", number: 50 },    // 钢制开锁器（kubejs:steel_lockpick）
+    { name: "black_steel_lockpick", temperature: 1485, metal: "black_steel", number: 50 },    // 黑钢开锁器（kubejs:black_steel_lockpick）
+
+    // 撬棍类
+    { name: "wrought_iron_crowbar", temperature: 1535, metal: "wrought_iron", number: 200 },    // 锻铁撬棍（kubejs:wrought_iron_crowbar）
+    { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },    // 钢撬棍（kubejs:steel_crowbar）
+    { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
 
 
   ];
   items.forEach(metala => {
 
     tfc.heating(`kubejs:${metala.name}`, metala.temperature)
-      .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
+      .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number)).useDurability(true);
 
   });
   const itemss = [
@@ -116,7 +138,7 @@ ServerEvents.recipes(e => {
     { name: "damaged_anvil", temperature: 1535, metal: "cast_iron", number: 1000, mods: "minecraft:" },
     { name: "material_component_steel", temperature: 1580, metal: "steel", number: 50,mods: "kubejs:" },
     { name: "material_component_black_steel", temperature: 1620, metal: "black_steel", number: 50,mods: "kubejs:"  },
-    { name: "material_component_wrought_iron", temperature: 1500, metal: "wrought_iron", number: 50 ,mods: "kubejs:" },
+    { name: "material_component_wrought_iron", temperature: 1500, metal: "cast_iron", number: 50 ,mods: "kubejs:" },
 
   ]
   itemss.forEach(metala => {
@@ -128,10 +150,12 @@ ServerEvents.recipes(e => {
 
 
 tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
+tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold__simple_key')//钥匙模具
 tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
 tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
 tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
 
 
 
+    
 });

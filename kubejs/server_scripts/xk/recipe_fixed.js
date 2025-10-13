@@ -3,18 +3,18 @@ ServerEvents.recipes(event => {
   const create = event.recipes.create
 
 
-  //灵魂火
+  /*//灵魂火
   create.haunting(Item.of('minecraft:blaze_rod'), 'createaddition:electrum_rod')//烈焰棒
-  create.mixing("minecraft:soul_sand", ['#forge:sand', 'minecraft:rotten_flesh'])//灵魂沙
+  create.mixing("minecraft:soul_sand", ['#forge:sand', 'minecraft:rotten_flesh'])//灵魂沙*/
 
 
 
   //搅拌
   create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
-  create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
+ /* create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', 'tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', Fluid.of('tfc:metal/unknown', 100)]).superheated()//下界合金碎片（金星
-
+*/
   //辊压
 
 

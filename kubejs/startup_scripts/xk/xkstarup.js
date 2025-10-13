@@ -2,26 +2,28 @@ StartupEvents.registry('item', event => {
     event.create('brass_cartridge_nest').texture('kubejs:item/gun/brass_cartridge_nest'); // 黄铜弹巢
     event.create('cast_iron_firing_hammer').texture('kubejs:item/gun/cast_iron_firing_hammer'); // 铸铁击锤
     event.create('cast_iron_gun_barrel').texture('kubejs:item/gun/cast_iron_gun_barrel'); // 铸铁枪管
-    event.create('standard_type_muzzle_brake_parts_steel').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_steel'); // 制式制退器配件（钢）
-    event.create('standard_type_muzzle_brake_parts_copper').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_copper'); // 制式制退器配件（铜）
-    event.create('standard_type_handguard_parts_steel').texture('kubejs:item/gun/standard_type_handguard_parts_steel'); // 制式护手配件（钢）
-    event.create('standard_type_handguard_parts_copper').texture('kubejs:item/gun/standard_type_handguard_parts_copper'); // 制式护手配件（铜）
-    event.create('standard_type_gun_body_parts_steel').texture('kubejs:item/gun/standard_type_gun_body_parts_steel'); // 制式枪身配件（钢）
-    event.create('standard_type_gun_body_parts_copper').texture('kubejs:item/gun/standard_type_gun_body_parts_copper'); // 制式枪身配件（铜）
-    event.create('standard_type_pistol_slide_parts_steel').texture('kubejs:item/gun/standard_type_pistol_slide_parts_steel'); // 制式手枪滑套配件（钢）
-    event.create('standard_type_pistol_slide_parts_copper').texture('kubejs:item/gun/standard_type_pistol_slide_parts_copper'); // 制式手枪滑套配件（铜）
-    event.create('standard_type_magazine_parts_steel').texture('kubejs:item/gun/standard_type_magazine_parts_steel'); // 制式弹匣配件（钢）
-    event.create('standard_type_magazine_parts_copper').texture('kubejs:item/gun/standard_type_magazine_parts_copper'); // 制式弹匣配件（铜）
-    event.create('standard_type_grip_parts_steel').texture('kubejs:item/gun/standard_type_grip_parts_steel'); // 制式握把配件（钢）
-    event.create('standard_type_grip_parts_copper').texture('kubejs:item/gun/standard_type_grip_parts_copper'); // 制式握把配件（铜）
-    event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
-    event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）
+   event.create('standard_type_muzzle_brake_parts_steel').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_steel'); // 制式制退器配件（钢）
+     event.create('standard_type_muzzle_brake_parts_copper').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_copper'); // 制式制退器配件（铜）
+     event.create('standard_type_handguard_parts_steel').texture('kubejs:item/gun/standard_type_handguard_parts_steel'); // 制式护手配件（钢）
+     event.create('standard_type_handguard_parts_copper').texture('kubejs:item/gun/standard_type_handguard_parts_copper'); // 制式护手配件（铜）
+     event.create('standard_type_gun_body_parts_steel').texture('kubejs:item/gun/standard_type_gun_body_parts_steel'); // 制式枪身配件（钢）
+     event.create('standard_type_gun_body_parts_copper').texture('kubejs:item/gun/standard_type_gun_body_parts_copper'); // 制式枪身配件（铜）
+     event.create('standard_type_pistol_slide_parts_steel').texture('kubejs:item/gun/standard_type_pistol_slide_parts_steel'); // 制式手枪滑套配件（钢）
+     event.create('standard_type_pistol_slide_parts_copper').texture('kubejs:item/gun/standard_type_pistol_slide_parts_copper'); // 制式手枪滑套配件（铜）
+     event.create('standard_type_magazine_parts_steel').texture('kubejs:item/gun/standard_type_magazine_parts_steel'); // 制式弹匣配件（钢）
+     event.create('standard_type_magazine_parts_copper').texture('kubejs:item/gun/standard_type_magazine_parts_copper'); // 制式弹匣配件（铜）
+     event.create('standard_type_grip_parts_steel').texture('kubejs:item/gun/standard_type_grip_parts_steel'); // 制式握把配件（钢）
+     event.create('standard_type_grip_parts_copper').texture('kubejs:item/gun/standard_type_grip_parts_copper'); // 制式握把配件（铜）
+     event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
+     event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）
     event.create('rock_powder_blank') //粗粗安山合金模型
-
+    event.create('cast_iron_indenter', 'basic').texture('kubejs:item/create/cast_iron_indenter')//铸铁压头
 
     event.create('mold_mechanical', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_mechanical')//零件模具
     event.create('unfired_mold_mechanical', 'basic').texture('kubejs:item/tfc/unfired_mold_mechanical')//没烧的零件模具
 
+    event.create('mold_simple_key', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_simple_key')//简易钥匙模具
+    event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key')//没烧的简易钥匙模具
 
 
     // 快烧好的弓臂

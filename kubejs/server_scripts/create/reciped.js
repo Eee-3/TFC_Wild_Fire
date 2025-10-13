@@ -1,5 +1,6 @@
 
 ServerEvents.recipes(event => {
+    const id_prefix = 'kubejs:create/reciped/';
     event.shaped('create:water_wheel',
         [
             'AAA',
@@ -10,8 +11,8 @@ ServerEvents.recipes(event => {
             A: 'tfc_ie_addon:treated_wood_lumber',
             B: 'create:shaft'
         }
-    )//小水车
-        event.shaped('create:large_water_wheel',
+    ).id(`${id_prefix}water_wheel`)//小水车
+    event.shaped('create:large_water_wheel',
         [
             'AAA',
             'ABA',
@@ -21,7 +22,7 @@ ServerEvents.recipes(event => {
             A: 'immersiveengineering:treated_wood_horizontal',
             B: 'create:water_wheel'
         }
-    )//小水车
+    ).id(`${id_prefix}large_water_wheel`)//大水车
 
 
 

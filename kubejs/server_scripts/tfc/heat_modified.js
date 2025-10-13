@@ -12,6 +12,8 @@ TFCEvents.data(e => {
   e.itemHeat('tfc:plant/laminaria', 1, null, null)
   //零件模具
   e.itemHeat('kubejs:unfired_mold_mechanical', 1, null, null)
+  //简易钥匙模具
+  e.itemHeat('kubejs:unfired_mold_simple_key', 1, null, null)
   //黄铜机件融化
   e.itemHeat('tfc:brass_mechanisms', 1, null, null)
   //烤弓

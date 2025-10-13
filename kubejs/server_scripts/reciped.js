@@ -36,7 +36,15 @@ ServerEvents.recipes(event => {
             }
         }
         return outputit
+
+        
     });
+
+
+
+ event.shaped('kubejs:cast_iron_indenter', [' a ', 'aaa'], {
+        a: 'tfc:metal/double_ingot/cast_iron'}) //铸铁压头合成
+
 
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'tfc:wood/log/oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'afc:wood/log/ancient_oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  古代
@@ -153,8 +161,17 @@ ServerEvents.recipes(event => {
     //  event.shapeless(Item.of('vinery:cherry_sapling'),['tfc:plant/cherry_sapling'])//樱桃树苗
     event.shapeless(Item.of('minecraft:amethyst_shard'), ['tfc:gem/amethyst'])//紫水晶
 
+       event.shapeless(Item.of('kubejs:unfired_mold_simple_key', 1), [//合成简易钥匙模具
+      'kubejs:old_key',
+      "minecraft:clay"
+    ])
+      //.replaceIngredient({ item:'kubejs:old_key', }, 'kubejs:old_key',)//这是不消耗钥匙
+    
+
 
     //有序配方
     event.shaped('create:fluid_tank', [['#forge:plates/copper'], ['immersiveengineering:wooden_barrel'], ['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault', [['#forge:plates/iron'], ['immersiveengineering:crate'], ['#forge:plates/iron']])//机械动力保险箱
+
+
 })

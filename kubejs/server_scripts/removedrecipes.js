@@ -35,7 +35,6 @@ ServerEvents.recipes(e => {
     "artisanal:crafting/bloomery",
     "tfc_metal_items:seq_pressing/ingots/bloom_raw",
     "tfc_metal_items:seq_pressing/ingots/bloom_refined",
-    
 
     "create_new_age:shaped/connector",
     "create_new_age:shaped/connector_mirrored",
@@ -55,13 +54,13 @@ ServerEvents.recipes(e => {
     "ad_astra:steel_ingot",
     "create:sequenced_assembly/sturdy_sheet",
 
-"woodencog:crafting/kinetics/encased_fan",
-"woodencog:crafting/kinetics/millstone",
-"woodencog:crafting/kinetics/mechanical_press",
-"create:item_application/andesite_casing_from_log",
-"create:item_application/andesite_casing_from_wood",
-"woodencog:rock_knapping/andesite_alloy",
-"woodencog:rock_knapping/andesite_alloy_deploying"
+    "woodencog:crafting/kinetics/encased_fan",
+    "woodencog:crafting/kinetics/millstone",
+    "woodencog:crafting/kinetics/mechanical_press",
+    "create:item_application/andesite_casing_from_log",
+    "create:item_application/andesite_casing_from_wood",
+    "woodencog:rock_knapping/andesite_alloy",
+    "woodencog:rock_knapping/andesite_alloy_deploying"
 
 
 
@@ -101,6 +100,10 @@ ServerEvents.recipes(e => {
 
   e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
+  e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
+  e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
+  e.remove({ mod: 'totemic' }) // 移除图腾全部配方 
+
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）

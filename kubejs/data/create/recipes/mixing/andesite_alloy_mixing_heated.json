@@ -3,17 +3,17 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "tag": "loot:andesite"
+      "item": "kubejs:rock_powder"
     },
     {
-      "amount": 10,
+      "amount": 50,
       "fluid": "tfc:metal/cast_iron",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "item": "create:andesite_alloy"
+      "item": "kubejs:trachyandesite_alloy"
     }
   ]
 }
