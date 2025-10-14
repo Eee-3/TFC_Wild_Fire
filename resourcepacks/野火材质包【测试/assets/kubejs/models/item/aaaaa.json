@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kubejs:item/aaaaa"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.40
+            },
+            "model": "kubejs:item/spartanweaponry_tfc/greatsword/damage/bismuth_bronze_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.80
+            },
+            "model": "kubejs:item/spartanweaponry_tfc/greatsword/damage/bismuth_bronze_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "kubejs:item/spartanweaponry_tfc/greatsword/damage/bismuth_bronze_3"
+        }
+    ]
+}

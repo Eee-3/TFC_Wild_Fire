@@ -1,0 +1,34 @@
+{
+  "itemGroup.survivorsdelight.main": "群峦传说 | 生存乐事",
+
+  "block.survivorsdelight.skillet.copper_tin": "镀锡铜煎锅",
+  "block.survivorsdelight.skillet.copper_silver": "镀银铜煎锅",
+
+  "block.survivorsdelight.skillet.copper": "铜煎锅",
+  "block.survivorsdelight.skillet.cast_iron": "铸铁煎锅",
+  "block.survivorsdelight.skillet.steel": "钢煎锅",
+  "block.survivorsdelight.skillet.farmer": "农夫煎锅",
+  "block.survivorsdelight.skillet.black_steel": "黑钢煎锅",
+  "block.survivorsdelight.skillet.red_steel": "精金煎锅",
+  "block.survivorsdelight.skillet.blue_steel": "秘银煎锅",
+
+  "item.survivorsdelight.skillet_head.copper": "铜煎锅锅头",
+  "item.survivorsdelight.skillet_head.cast_iron": "铸铁煎锅锅头",
+  "item.survivorsdelight.skillet_head.steel": "钢煎锅锅头",
+  "item.survivorsdelight.skillet_head.black_steel": "黑钢煎锅锅头",
+  "item.survivorsdelight.skillet_head.red_steel": "精金煎锅锅头",
+  "item.survivorsdelight.skillet_head.blue_steel": "秘银煎锅锅头",
+
+  "item.survivorsdelight.unfinished_skillet.copper": "未完成的铜锅",
+  "item.survivorsdelight.unfinished_skillet.cast_iron": "未完成的铸铁锅",
+  "item.survivorsdelight.unfinished_skillet.steel": "未完成的钢锅",
+  "item.survivorsdelight.unfinished_skillet.black_steel": "未完成的黑钢锅",
+  "item.survivorsdelight.unfinished_skillet.red_steel": "未完成的精金锅",
+  "item.survivorsdelight.unfinished_skillet.blue_steel": "未完成的秘银锅",
+
+  "item.survivorsdelight.skillet_lining.silver": "银煎锅镀层",
+  "item.survivorsdelight.skillet_lining.tin": "锡煎锅镀层",
+
+  "survivorsdelight.tooltip.foodtrait.skillet_cooked": "煎锅烹制",
+  "survivorsdelight.tooltip.foodtrait.food_model": "食物模型"
+}

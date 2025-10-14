@@ -1,0 +1,72 @@
+{
+  "name": "糖的制作",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:non_perishable_sugar",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "在《手工工艺》（Artisanal）中制作糖的过程，相比普通的《大地工艺》（TerraFirmaCraft）要复杂得多，但结果实际上……好吧，其实用处更小。不过，胜在真实！"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/clean_sugarcane_water",
+          "text": "加工甘蔗的第一步是清洗，将其密封在水桶中8小时即可完成。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/clean_sugarcane_soapy_water",
+          "text": "或者，也可以使用$(l:tfc:artisanal/soap)肥皂水$()立即清洗甘蔗。"
+      },
+      {
+          "type": "tfc:artisanal/juicing_recipe",
+          "recipe": "artisanal:juicing/sugarcane_juice",
+          "text": "然后，将甘蔗在磨盘里$(l:tfc:artisanal/juicing)榨汁$()，制成$(thing)甘蔗汁$()。"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "artisanal:quern/food/cleaned_sugarcane",
+          "text": "在此过程中，会产生副产品$(thing)干蔗渣$()。它可用作火坑燃料、引火物或堆肥。$(br2)甘蔗汁可以在锅中煮沸，制成$(thing)易腐坏的糖$()。同时也会产生副产品$(thing)糖蜜$()。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/perishable_sugar_recipe.png"
+          ],
+          "text": ""
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/filtered_sugarcane_juice",
+          "text": "或者，甘蔗汁可以用$(thing)黄麻网$()进一步过滤。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/alkalized_sugarcane_juice",
+          "text": "然后，用石灰将汁液碱化。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/clarified_sugarcane_juice",
+          "text": "接着，再次使用黄麻网过滤掉石灰，使其澄清。$(br2)澄清后的甘蔗汁再煮沸就制成了不易腐坏的糖。同时也会产生副产品糖蜜。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/non_perishable_sugar_recipe.png"
+          ]
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/rum",
+          "text": "糖蜜可以发酵成朗姆酒。它也可以直接饮用，并提供$(l)$(a)水果$()和$(l)$(2)蔬菜$()的营养。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:food/cleaned_sugarcane": 1,
+      "artisanal:wet_bagasse": 3,
+      "artisanal:dry_bagasse": 4,
+      "artisanal:perishable_sugar": 5,
+      "artisanal:non_perishable_sugar": 9
+  }
+}

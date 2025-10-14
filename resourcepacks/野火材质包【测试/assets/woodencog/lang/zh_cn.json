@@ -1,0 +1,35 @@
+{
+  "sealed_on": "密封于",
+  "barrel_crafting": "木桶合成",
+
+  "block.woodencog.ct_transformer": "木质应力转换器",
+  "block.woodencog.ct_transformer.tooltip.summary": "木质传动转换器可将机械动力的旋转动力转换为TFC的角动量，输入与输出的旋转速度保持匹配、但越快的角动量所需的应力也越大！",
+
+  "block.woodencog.wooden_generator": "木质传动转换器",
+
+  "category.woodencog.heated_mixing": "加热混合",
+  "category.woodencog.heated_pressing": "加热压制",
+  "category.woodencog.heated_compacting": "加热压实",
+
+  "woodencog.ponder.wooden_generator.water_wheel.header": "通过TFC动力源生成旋转应力",
+  "woodencog.ponder.wooden_generator.water_wheel.text_1": "木质应力转换器可以转换TFC的传动物体的应力",
+  "woodencog.ponder.wooden_generator.water_wheel.text_2": "应力根据动力源的角动量速度生成",
+  "woodencog.ponder.wooden_generator.water_wheel.text_3": "1024SU",
+
+  "woodencog.ponder.wooden_generator.windmill.header": "关于TFC风车",
+  "woodencog.ponder.wooden_generator.windmill.text_1": "风车能带来4096的应力",
+
+  "woodencog.ponder.wooden_generator.windmill_rustic.header": "更好的风车",
+  "woodencog.ponder.wooden_generator.windmill_rustic.text_1": "由布匹制成的乡村风车生成的应力为普通风车的两倍、也就是8192su",
+
+  "woodencog.ponder.wooden_transformer.header": "旋转动力转换",
+  "woodencog.ponder.wooden_transformer.text_1": "aaaa",
+
+  "woodencog.ponder.heat.header": "物品加热",
+  "woodencog.ponder.heat.text_1": "可受热物品接触岩浆时会被加热，最高温度可达1700°。",
+  "woodencog.ponder.heat.text_2": "接触火焰同样可加热物品，但最高温度限制为200°，非常适合烹饪！",
+  "woodencog.ponder.cool.header": "物品冷却",
+  "woodencog.ponder.cool.text_1": "已加热的物品可通过接触水进行冷却。",
+
+  "recipe.assembly.pressing": "组装压制"
+}

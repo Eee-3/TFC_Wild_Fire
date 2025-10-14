@@ -1,0 +1,39 @@
+{
+  "name": "带流道铸造",
+  "category": "tfc:tfcchannelcasting",
+  "icon": "tfcchannelcasting:channel",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "你可以使用$(thing)流道$()和$(thing)模具桌$()，一次从$(thing)坩埚$()向多个模具进行浇铸。只需用$(thing)流道$()将$(thing)模具桌$()与$(thing)坩埚$()连接起来，然后右键点击$(thing)坩埚$()旁边的$(thing)流道$()。按住Shift并右键点击$(thing)模具桌$()，同时手持$(l:getting_started/pottery#mold)模具$()，即可放置或移除模具。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
+          "text": "制作几个$(thing)未烧制的流道$()。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
+          "text": "制作一个$(thing)未烧制的模具桌$()。"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "tfcchannelcasting:heating/channel",
+          "text": "流道和模具桌制作完成后，它们需要像任何陶器一样进行$(thing)烧制$()。"
+      },
+      {
+          "type": "patchouli:multiblock",
+          "multiblock_id": "tfcchannelcasting:example",
+          "name": "一个铸造装置",
+          "text": "",
+          "enable_visualize": false
+      },
+      {
+          "type": "patchouli:text",
+          "text": "$(列表项)在$(thing)模具桌$()上使用风箱可使金属冷却得更快。$()$(列表项)用红石信号激活$(thing)流道$()将开始浇注金属。$()$(列表项)$(thing)模具桌$()会输出比较器信号。",
+          "title": "自动化"
+      }
+  ],
+  "read_by_default": true
+}

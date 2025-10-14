@@ -7,11 +7,18 @@
   "_comment2": "Leather",
   "item.waterflasks.leather_flask.filled": "%s 皮革水壶",
   "item.waterflasks.leather_flask": "皮革水壶",
-  "item.waterflasks.broken_leather_flask": "损坏的皮革水壶",
+  "item.waterflasks.broken_leather_flask": "坏了的皮革水壶",
 
   "_comment3": "Iron",
   "item.waterflasks.iron_flask.filled": "%s 铁质水壶",
   "item.waterflasks.iron_flask": "铁质水壶",
-  "item.waterflasks.unfinished_iron_flask": "未用完的铁质水壶",
-  "item.waterflasks.broken_iron_flask": "损坏的铁质水壶"
+  "item.waterflasks.unfinished_iron_flask": "未完成的铁质水壶",
+  "item.waterflasks.broken_iron_flask": "坏了的铁质水壶",
+
+  
+  "_comment4": "red_steel",
+  "item.waterflasks.red_steel_flask.filled": "%s 精金水壶",
+  "item.waterflasks.red_steel_flask": "精金水壶",
+  "item.waterflasks.unfinished_red_steel_flask": "未完成的精金水壶",
+  "item.waterflasks.broken_red_steel_flask": "坏了的精金水壶"
 }

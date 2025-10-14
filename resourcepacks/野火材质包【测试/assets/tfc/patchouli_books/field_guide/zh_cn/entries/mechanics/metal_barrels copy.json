@@ -1,0 +1,22 @@
+{
+    "name": "金属手推磨磨盘",
+    "category": "tfc:mechanics",
+    "icon": "tfcoreprocessing:cast_iron_handstone",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "原始的石质手推磨磨盘价格便宜，但不太耐用。经过所有的矿石和燃料加工步骤后，你很快就会把它们用完。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfcoreprocessing:cast_iron_handstone",
+            "text": "使用 3 块耐用材料（铁级或更高级别）的双锭和一根木棍，你可以制作出比石质手推磨磨盘耐用得多的同类物品！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfcoreprocessing:red_steel_handstone",
+            "text": "精金和秘银材质的手推磨磨盘似乎永远都用不坏！"
+        }
+    ],
+    "read_by_default": true
+}

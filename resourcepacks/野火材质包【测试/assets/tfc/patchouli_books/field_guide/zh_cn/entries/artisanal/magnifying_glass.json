@@ -1,0 +1,62 @@
+{
+  "name": "放大镜",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:metal/magnifying_glass/brass",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "$(thing)放大镜$()可用于生火，与$(l:tfc:getting_started/firepit)打火器$()类似，但速度更快且不消耗耐久度。$(br2)然而，这种高效是以只能在有阳光时使用为代价的。$(br2)这意味着使用时，要么你，"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "item": {"tag": "artisanal:magnifying_glasses"},
+          "text": "要么你试图点燃的方块必须能看到天空。放大镜也只能在白天和晴朗天气下使用。$(br2)放大镜还可用于点燃$(thing)火坑$()、$(l:tfc:getting_started/pit_kiln)坑窑$()、$(thing)火把$()以及打火器能点燃的任何其他东西。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "artisanal:anvil/metal/magnifying_glass_frame/brass",
+          "text": "要制作放大镜，首先用你选择的材料棒锻造一个$(thing)放大镜框架$()。放大镜可以由多种材料制成，包括：$(br2)铋$(br)黄铜$(br)金$(br)玫瑰金$(br)银$(br)纯银$(br)锡$(br2)"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/metal/magnifying_glass/rose_gold",
+          "text": "然后，将框架与$(l:tfc:mechanics/glassworking_applications)镜片$()一起合成，制作出你的放大镜。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/metal/magnifying_glass/tin_uncraft",
+          "text": "如果你想回收用于制作放大镜的镜片和/或金属，可以将放大镜放在合成栏中，从框架上取下镜片。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/amethyst_cut",
+          "text": "切割$(l:tfc:mechanics/gems)宝石$()也需要用到放大镜。这不会消耗放大镜。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:metal/magnifying_glass_frame/bismuth": 2,
+      "artisanal:metal/magnifying_glass_frame/brass": 2,
+      "artisanal:metal/magnifying_glass_frame/gold": 2,
+      "artisanal:metal/magnifying_glass_frame/rose_gold": 2,
+      "artisanal:metal/magnifying_glass_frame/silver": 2,
+      "artisanal:metal/magnifying_glass_frame/sterling_silver": 2,
+      "artisanal:metal/magnifying_glass_frame/tin": 2,
+      "artisanal:metal/magnifying_glass/bismuth": 3,
+      "artisanal:metal/magnifying_glass/brass": 3,
+      "artisanal:metal/magnifying_glass/gold": 3,
+      "artisanal:metal/magnifying_glass/rose_gold": 3,
+      "artisanal:metal/magnifying_glass/silver": 3,
+      "artisanal:metal/magnifying_glass/sterling_silver": 3,
+      "artisanal:metal/magnifying_glass/tin": 3,
+      "tfc:gem/amethyst": 5,
+      "tfc:gem/diamond": 5,
+      "tfc:gem/emerald": 5,
+      "tfc:gem/lapis_lazuli": 5,
+      "tfc:gem/opal": 5,
+      "tfc:gem/pyrite": 5,
+      "tfc:gem/ruby": 5,
+      "tfc:gem/sapphire": 5,
+      "tfc:gem/topaz": 5
+  }
+}

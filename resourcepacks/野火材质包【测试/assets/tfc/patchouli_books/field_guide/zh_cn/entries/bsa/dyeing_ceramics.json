@@ -1,0 +1,26 @@
+{
+  "name": "陶瓷染色",
+  "category": "tfc:bsa",
+  "icon": "bsa:ceramic/jug/glazed/red",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "现在，陶瓷容器和大型陶瓷容器可以不用桶，直接使用液体染料进行染色。<br><br>要做到这一点，先将一个陶瓷壶（或其他液体容器）装满至少 100 毫巴的液体染料，然后将其与你想染色的物品合成。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/ceramic/magenta_unfired_vessel_liquid_dye",
+          "recipe2": "bsa:crafting/ceramic/red_unfired_large_vessel_liquid_dye"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "此外，壶和罐子也可以像其他陶瓷制品一样，通过相同的方式进行染色。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/ceramic/pot/unfired/black_liquid_dye",
+          "recipe2": "bsa:crafting/ceramic/jug/unfired/red"
+      }
+  ],
+  "read_by_default": true
+}

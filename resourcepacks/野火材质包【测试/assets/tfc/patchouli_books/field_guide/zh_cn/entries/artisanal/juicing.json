@@ -1,0 +1,40 @@
+{
+  "name": "榨汁",
+  "category": "tfc:artisanal",
+  "icon": "tfc:handstone",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "有时，在$(l:tfc:mechanics/quern)磨盘$()中研磨物品会挤出液体。这些液体可以收集在磨盘下方放置的桶中。$(br2)请注意，桶必须是打开的才能接收液体。如果桶是封闭的，产生的液体将会浪费掉。"
+      },
+      {
+          "type": "patchouli:multiblock",
+          "name": "榨汁装置",
+          "multiblock_id": "artisanal:juicing_apparatus",
+          "text": "一种榨汁装置。由磨盘研磨物品产生的液体将收集到下方的桶中。"
+      },
+      {
+          "type": "tfc:artisanal/juicing_recipe",
+          "recipe": "artisanal:juicing/sugarcane_juice",
+          "text": "甘蔗是可以榨汁的物品之一。榨汁后会得到甘蔗汁，用于$(l:tfc:artisanal/sugar_production)制糖$()。"
+      },
+      {
+          "type": "tfc:artisanal/juicing_recipe",
+          "recipe": "artisanal:juicing/lemon_juice",
+          "text": "苹果、柠檬和橙子也可以榨汁。榨出的果汁可以饮用，提供水果类营养。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/cider",
+          "text": "苹果汁可以进一步发酵制成苹果酒。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/screwdriver_mixture.png"
+          ],
+          "text": "橙汁可以与伏特加混合制成$(thing)螺丝刀鸡尾酒$()。"
+      }
+  ],
+  "read_by_default": true
+}

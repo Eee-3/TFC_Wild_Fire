@@ -1,0 +1,51 @@
+{
+  "name": "颗粒燃料与燃烧木段",
+  "category": "tfc:mechanics",
+  "icon": "tfcoreprocessing:kindle/firelog",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "木材并非最高效的燃料。对于大多数配方而言，木材的燃烧时长足够，但如果需要高强度燃烧，木材很快就会消耗殆尽。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "anchor": "wood_pellets",
+          "item": "tfcoreprocessing:kindle/wood_pellets",
+          "title": "燃料颗粒",
+          "link_recipes": false,
+          "text": " $(thing)燃料颗粒$() 是一种效率高得多的燃料，其燃烧时长与一根原木相近，但成本大约只有原木的一半。"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "tfcoreprocessing:quern/kindle/lumber_sawdust",
+          "anchor": "wood_grinding",
+          "title": "研磨木材",
+          "text": "你可以使用 $(l:力学机制/磨盘)磨盘$() 将木材转化为 $(thing)燃料颗粒$()。不过，研磨得到的粉末还不能直接燃烧，需要先进行压缩。茅草也是获取这种粉末的一种方式，只是效率较低。如果你能得到树皮或韧皮，也可以将其研磨！锯末则可以直接用来制作颗粒燃料。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "tfcoreprocessing:compress/wood_pellets",
+          "text": "将粉末进行压缩，你会得到一组 $(thing)燃料颗粒$()，其燃烧时长与一根枫木原木相当。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "tfcoreprocessing:compress/firelog",
+          "text": "使用一些胶水进一步压缩这些颗粒燃料，你将得到 $(thing)燃烧木段$()。它们的燃烧时长是制作它们所用颗粒燃料的 5 倍，并且可以像原木一样在 $(l:入门指南/坑式窑炉)坑式窑炉$() 中使用，甚至还能堆放在原木堆里！"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "tfcoreprocessing:quern/kindle/bamboo_fiber",
+          "text": "你也可以将竹子转化为 $(thing)燃料颗粒$()！不过，它们的燃烧时长大约只有普通颗粒燃料的一半。"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "tfcoreprocessing:quern/kindle/palm_wood_fiber",
+          "text": "大多数原木需要先加工成木材才能进行研磨。不过，$(thing)棕榈原木$() 是个例外。由于棕榈原木比普通木材的效率更高且热量更足，直接将这些原木转化为纤维是更好的选择。如果你能得到树皮或韧皮，也可以将其研磨！"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "请注意，棕榈纤维只能从原木中提取，而不是棕榈木材。因此，如果你想要 $(thing)棕榈燃料颗粒$()，请研磨原木而不是木材！这些颗粒燃料物有所值，因为它们的燃烧时长是原木本身的 3 倍，制成燃烧木段后燃烧时长可达 15 分钟！不过，它们的燃烧温度较低。"
+      }
+  ],
+  "read_by_default": true
+}

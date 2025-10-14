@@ -1,0 +1,47 @@
+{
+  "name": "箭头",
+  "category": "tfc:bsa",
+  "icon": "bsa:stone/arrowhead",
+  "pages": [
+      {
+          "type": "patchouli:spotlight",
+          "item": {
+              "tag": "bsa:arrowheads"
+          },
+          "text": "由于$(l:tfc:bsa/flint)燧石$()更为稀有，现在箭需要用实际打制的箭头来制作。这些箭头可以用石头、燧石或$(l:tfc:bsa/bone_tools)骨头$()制成。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:rock_knapping/stone/arrowhead/1_1_0_0",
+          "text": "用石头打制箭头。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:rock_knapping/stone/arrowhead/flint/5_3_0_0",
+          "text": "用燧石打制箭头。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:bone_knapping/bone/arrowhead/9_7_0_0",
+          "text": "用骨头打制箭头。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/arrow/stone",
+          "recipe2": "bsa:crafting/arrow/bone"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/arrow/flint",
+          "text": "使用石头或骨头箭头能制作出一支箭。使用燧石箭头则能制作出两支箭。想想这是为什么吧。说实话，这确实不太说得通。"
+      }
+  ],
+  "read_by_default": true,
+  "sortnum": 10000000,
+  "extra_recipe_mappings": {
+      "minecraft:arrow": 0,
+      "bsa:stone/arrowhead": 0,
+      "bsa:stone/arrowhead/flint": 0,
+      "bsa:bone/arrowhead": 0
+  }
+}

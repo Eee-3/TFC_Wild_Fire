@@ -1,0 +1,41 @@
+{
+  "name": "彩绘陶罐",
+  "category": "tfc:bsa",
+  "icon": "minecraft:decorated_pot{BlockEntityTag:{sherds:[\"minecraft:angler_pottery_sherd\", \"minecraft:archer_pottery_sherd\", \"minecraft:heart_pottery_sherd\", \"minecraft:howl_pottery_sherd\"]}}",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "在这个版本的《我的世界》中，彩绘陶罐实际上并没有什么实际用途，但它们仍然是很棒的装饰品！"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:clay_knapping/blank_unfired_sherd",
+          "text": "制作彩绘陶罐的第一步是用黏土打制一些空白陶片。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:sherd_knapping/archer",
+          "text": "有了陶片之后，你可以在上面打制图案。注意，这$(bold)不是$()黏土打制；需要以空白陶片作为原料。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/ceramic/unfired_decorated_pot",
+          "text": "任意图案的四块未烧制陶片可以合成一个未烧制的彩绘陶罐。"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "bsa:heating/ceramic/decorated_pot",
+          "text": "然后可以将陶罐放在$(l:tfc:getting_started/pit_kiln)坑式窑$()中烧制，之后就可以放置使用了。小心！用工具破坏陶罐会使其碎成陶片！"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "bsa:heating/ceramic/sherd/howl",
+          "text": "陶片也可以单独烧制。烧制好的陶片并不是特别有用，但可以用于角色扮演（也许可以作为早期游戏中硬币的替代品）。$(br2)所有陶片也可以通过$(l:tfc:bsa/clay_dust)回收$()来获取其中的黏土。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "bsa:ceramic/unfired_decorated_pot": 0,
+      "bsa:ceramic/sherd/unfired/blank": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "谷物加工",
+  "category": "tfc:bsa",
+  "icon": "bsa:food/crushed_barley_grain",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "你可能还没有手磨，但这并不意味着你不能享用一些美味的谷物制品！"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "bsa:anvil/food/crushed_oat_grain",
+          "text": "一些谷物可以在$(l:tfc:getting_started/primitive_anvils)原始铁砧$()上锤打成$(thing)碎谷物$()。这些碎谷物本身含有一些谷物营养成分，但最好在食用前进一步加工。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "bsa:anvil/food/coarse_rye_flour",
+          "text": "进一步加工碎谷物的一种方法是同样在铁砧上把它们捣成$(thing)粗面粉$()。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "bsa:anvil/food/coarse_maize_flour",
+          "text": "玉米和大米颗粒已经很小了，所以它们可以直接捣成粗面粉。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/dough/wheat/6_from_coarse_flour",
+          "text": "和普通面粉一样，粗面粉也可以用来制作$(l:tfc:mechanics/bread)面团$()，但每两份粗面粉只能制作出一个面团，而不是一份普通面粉能制作出两个面团。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "item": {
+              "item": "bsa:food/porridge"
+          },
+          "text": "更高效的选择是粥，它是通过在水锅中煮3 - 5份碎谷物和0 - 2份水果制成的。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "bsa:textures/gui/book/porridge_recipe.png"
+          ],
+          "text": ""
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "bsa:quern/food/coarse_rice_flour",
+          "text": "所有的碎谷物和粗面粉物品也可以在手磨中研磨成普通面粉。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "bsa:food/crushed_barley_grain": 1,
+      "bsa:food/crushed_oat_grain": 1,
+      "bsa:food/crushed_rye_grain": 1,
+      "bsa:food/crushed_wheat_grain": 1,
+      "bsa:food/coarse_barley_flour": 2,
+      "bsa:food/coarse_maize_flour": 2,
+      "bsa:food/coarse_oat_flour": 2,
+      "bsa:food/coarse_rice_flour": 2,
+      "bsa:food/coarse_rye_flour": 2,
+      "bsa:food/coarse_wheat_flour": 2,
+      "bsa:food/porridge": 5
+  }
+}

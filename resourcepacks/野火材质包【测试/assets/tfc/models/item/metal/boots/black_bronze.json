@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/metal/boots/black_bronze_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.40
+            },
+            "model": "tfc:item/metal/boots/damage/black_bronze_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.80
+            },
+            "model": "tfc:item/metal/boots/damage/black_bronze_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "tfc:item/metal/boots/damage/black_bronze_3"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "多功能工具",
+  "category": "tfc:bsa",
+  "icon": "bsa:stone/multitool_head/igneous_extrusive",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "想在确定工具用途之前预先打制工具头吗？试试多功能工具吧！这种石头工具头可以根据木棍和多功能工具头在合成网格中的摆放方向，制作成任何工具。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:rock_knapping/stone/multitool_head/igneous_extrusive"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/axe/igneous_extrusive/multitool",
+          "text": "使用多功能工具头制作的工具不能有$(l:tfc:bsa/tool_bindings)工具绑定$()。用多功能工具头制作的工具通常是为满足特定需求而打造的，一旦需求得到满足，它往往不会使用太久。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/hammer/igneous_extrusive/multitool",
+          "recipe2": "bsa:crafting/stone/hoe/igneous_extrusive/multitool"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/javelin/igneous_extrusive/multitool",
+          "recipe2": "bsa:crafting/stone/shovel/igneous_extrusive/multitool"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/knife/igneous_extrusive/multitool",
+          "text": "多功能工具头也可以制作成刀头。与其他用多功能工具头制作的工具不同，刀可以像普通工具一样进行绑定。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "bsa:stone/multitool_head/igneous_extrusive": 0,
+      "bsa:stone/multitool_head/igneous_intrusive": 0,
+      "bsa:stone/multitool_head/metamorphic": 0,
+      "bsa:stone/multitool_head/sedimentary": 0
+  }
+}

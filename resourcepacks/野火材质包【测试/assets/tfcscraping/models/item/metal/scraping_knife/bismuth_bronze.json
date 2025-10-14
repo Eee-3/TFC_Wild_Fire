@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfcscraping:item/metal/scraping_knife/bismuth_bronze_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "tfcscraping:item/metal/scraping_knife/damage/bismuth_bronze_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "tfcscraping:item/metal/scraping_knife/damage/bismuth_bronze_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "tfcscraping:item/metal/scraping_knife/damage/bismuth_bronze_3"
+        }
+    ]
+}

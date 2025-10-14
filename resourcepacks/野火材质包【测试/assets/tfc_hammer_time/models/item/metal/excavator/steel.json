@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc_hammer_time:item/metal/excavator/steel_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "tfc_hammer_time:item/metal/excavator/damage/steel_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "tfc_hammer_time:item/metal/excavator/damage/steel_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "tfc_hammer_time:item/metal/excavator/damage/steel_3"
+        }
+    ]
+}

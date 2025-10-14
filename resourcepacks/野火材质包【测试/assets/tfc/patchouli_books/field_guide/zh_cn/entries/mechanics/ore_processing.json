@@ -1,0 +1,51 @@
+{
+  "name": "矿石加工",
+  "category": "tfc:mechanics",
+  "icon": "tfcoreprocessing:refined/native_gold",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "$(l:the_world/ores_and_minerals)矿石$() 可以直接进行 $(l:getting_started/finding_ores)熔炼$() 和 $(l:getting_started/finding_ores)铸造$()，一开始可以使用 $(l:getting_started/pottery#vessel)小容器$()，并将其放在 $(l:getting_started/pit_kiln)坑式窑炉$() 或 $(l:mechanics/charcoal_forge)木炭锻造炉$() 中烧制。不过，矿石可以经过加工来进一步提高产出！"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "tfc:quern/small_native_gold",
+          "anchor": "ore_grinding",
+          "title": "矿石研磨",
+          "text": "矿石加工从 $(l:mechanics/quern)磨盘$() 开始。你可以将矿石研磨成粉末，使产出提高 20%！每一份粉末价值 6 $(thing)毫升（mB）$()。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "anchor": "slurry",
+          "recipe": "tfcoreprocessing:barrel/slurry/slurry_native_gold",
+          "text": "加工过程的下一步是制作 $(thing)矿浆$()。这种液体是由矿石粉末与水混合而成。将其放在密封桶中一段时间后，矿石粉末就会变成液体。每一份粉末需要 250 毫升的水来制作 250 毫升的矿浆。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "anchor": "frothing",
+          "item": "tfc:pan/empty",
+          "title": "起泡处理",
+          "link_recipes": false,
+          "text": "制作好矿浆后，用桶取一桶矿浆，将其倒入放有一个空平底锅的锅中，让它煮几分钟。这将产生 4 份精炼矿石粉末，每份价值 8 毫升。别担心，你的平底锅会还给你的……"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "tfcoreprocessing:compress/compress_refined_native_gold",
+          "text": "对粉末进行压缩可以进一步精炼，使其产出提高到 40 毫升，但这还不是加工过程的最后一步。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "anchor": "roasting",
+          "item": "tfcoreprocessing:roasted_brick/native_gold",
+          "title": "焙烧",
+          "link_recipes": false,
+          "text": "你可以将得到的矿石进一步焙烧，把 1 到 5 份压缩后的粉末放入锅中，并加入少量水（100 毫升）。这样会得到一块结实的砖，价值 50 毫升的矿石，几乎是最初矿石量的 2.5 倍！"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "tfcoreprocessing:uncompress/uncompress_roasted_native_gold",
+          "text": "可以用锤子将焙烧后的产物敲碎成 5 份 10 毫升的焙烧粉末。"
+      }
+  ],
+  "read_by_default": true
+}

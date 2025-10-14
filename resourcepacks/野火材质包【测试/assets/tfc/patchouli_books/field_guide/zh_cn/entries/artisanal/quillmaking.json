@@ -1,0 +1,53 @@
+{
+  "name": "羽毛笔制作",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:quill",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "通过$(thing)抄写桌$()或$(thing)书与羽毛笔$()来存储信息是一项非常有用的技能。$(br2)要做到这一点，你需要一支羽毛笔。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/trimmed_feather",
+          "text": "制作羽毛笔的第一步是将羽毛下端的绒毛修剪掉。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/soaked_feather",
+          "text": "接下来，将羽毛浸泡在水中。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/tempered_feather",
+          "text": "之后，将一些沙子加热到$(7)$(bold)非常热**$()，然后与羽毛合成，对其进行回火处理。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": ""
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/quill",
+          "text": "最后，再次用刀对羽毛进行加工，削出笔尖，完成羽毛笔的制作。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/writable_book",
+          "recipe2": "artisanal:crafting/writable_book_from_dye"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/wood/chestnut_scribing_table",
+          "text": "制作抄写桌和书与羽毛笔需要用到羽毛笔。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:trimmed_feather": 1,
+      "artisanal:soaked_feather": 2,
+      "artisanal:tempered_feather": 3,
+      "artisanal:quill": 5,
+      "minecraft:writable_book": 6
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kubejs:item/spartanweaponry_tfc/greatsword/bismuth_bronze_3"
+    }
+}

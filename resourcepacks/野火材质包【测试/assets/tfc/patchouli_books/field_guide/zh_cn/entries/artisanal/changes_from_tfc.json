@@ -1,0 +1,55 @@
+{
+  "name": "来自TFC的改动",
+  "category": "tfc:artisanal",
+  "icon": "tfc:powder/lime",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "这是一份被TFC手工工艺（TFC Artisanal）修改过的配方列表。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "tfc:barrel/limewater_from_lime",
+          "text": "石灰水已更名为 $(thing)熟石灰$()，且现在只能用 $(thing)石灰$() 制作，不能再用助熔剂制作。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/writable_book",
+          "text": "现在，书与羽毛笔的制作使用黑色染料而非墨囊，并且使用 $(l:tfc:artisanal/quillmaking)羽毛笔$() 而非羽毛。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/paper",
+          "text": "现在，纸张既可以通过在碱液中漂白未精制纸张来制作，也可以通过刮制来制作。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/clean_soup_bowl_water",
+          "text": "现在，在水桶中清洗脏物需要花费时间，并且需要将其密封在桶中。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/clean_jute_net_soapy_water",
+          "text": "现在，即时清洗需要使用 $(thing)肥皂水$()。详见 $(l:tfc:artisanal/soap)肥皂$()。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "现在，蛋糕和南瓜派可以用所有TFC甜味剂制作，包括手工工艺模组中的易腐坏和不易腐坏的糖，以及ArborFirmaCraft模组中的桦树糖和枫糖。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/cake",
+          "recipe2": "artisanal:crafting/pumpkin_pie"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "现在，甜味剂可能会过期，并且已经为TFC、ArborFirmaCraft（AFC）和Fermalife的甜味剂添加了保质期（不过除了手工工艺模组中的易腐坏糖之外，其他都设置为“永不过期”）。$(br2)这意味着TFC或Fermalife中任何使用甜味剂的配方都已重新调整为使用未变质的甜味剂。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "除了易腐坏的糖之外，这应该不会影响你的游戏体验。$(br2)说到糖，AFC的糖浆精炼锅配方已重新设计为可扩展配方，这意味着它们按比例完成（例如10份枫糖浆 -> 1份浓缩枫糖浆），而不是特定的数量。而且它们不再需要木棍。"
+      }
+  ],
+  "read_by_default": true,
+  "sortnum": -1
+} 

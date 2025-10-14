@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "tfc:item/metal/shield/model/wrought_iron_blocking"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/metal/shield/textures/wrought_iron"
+        }
+    }
+}

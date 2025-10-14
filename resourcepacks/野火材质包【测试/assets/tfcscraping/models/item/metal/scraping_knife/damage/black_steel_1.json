@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfcscraping:item/metal/scraping_knife/black_steel_1"
+    }
+}
