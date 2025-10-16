@@ -51,6 +51,16 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "tfcgroomer": {
     "grooming_station": true
   },
@@ -64,9 +74,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": false
-  },
-  "lootr": {
-    "info": true
   },
   "functionalstorage": {
     "armory": true
@@ -163,16 +170,8 @@
     "lightroom": true,
     "photograph_frame": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
+  "jadeaddons.lootr": {
+    "info": true
   },
   "petrolpark": {
     "contamination": true
@@ -190,6 +189,9 @@
     "mixed_beer": true,
     "trade_box": true,
     "beer_barrel": true
+  },
+  "afc": {
+    "tap": true
   },
   "tfc_support_indicator": {
     "support_indicator": true
