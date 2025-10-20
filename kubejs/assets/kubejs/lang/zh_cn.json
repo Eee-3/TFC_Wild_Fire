@@ -22,14 +22,12 @@
   "block.kubejs.steel_support_horizontal": "钢横梁",
   "block.kubejs.wrought_iron_support": "锻铁梁",
   "block.kubejs.wrought_iron_support_horizontal": "锻铁横梁",
-
   "fluid.kubejs.epic_ink": "史诗墨水",
   "fluid.kubejs.heavy_oil": "重油",
   "fluid.kubejs.legendary_ink": "传奇墨水",
   "fluid.kubejs.light_oil": "轻油",
   "fluid.kubejs.rare_ink": "稀有墨水",
   "fluid.kubejs.uncommon_ink": "非凡墨水",
-
   "item.kubejs.advanced_cabin": "进阶个人舱体",
   "item.kubejs.advanced_plating": "进阶船体板",
   "item.kubejs.basic_cabin": "紧凑型舱体",
@@ -531,7 +529,6 @@
   "item.kubejs.wrought_iron_tomahawk_weapon_part": "锻铁印第安投斧刃",
   "item.kubejs.wrought_iron_warhammer": "锻铁穿甲锤",
   "item.kubejs.wrought_iron_warhammer_weapon_part": "锻铁穿甲锤头",
-
   "item.shiny_ornaments.black_steel_amethyst_ring": "黑钢紫水晶戒指",
   "item.shiny_ornaments.black_steel_cinnabar_ring": "黑钢朱砂戒指",
   "item.shiny_ornaments.black_steel_delicacy_ring": "黑钢精致戒指",
@@ -614,20 +611,15 @@
   "item.shiny_ornaments.sterling_silver_ruby_ring": "纹银红宝石戒指",
   "item.shiny_ornaments.sterling_silver_sapphire_ring": "纹银蓝宝石戒指",
   "item.shiny_ornaments.sterling_silver_topaz_ring": "纹银黄宝石戒指",
-
   "item.wildfire.wrought_iron_pressing_head": "锻铁压头",
-
   "itemGroup.kubejs.tfc_weaponrys": "群峦传说 | 战斗",
-
   "kubejs.climate.name.mars_climate": "火星大气",
   "kubejs.climate.name.mercury_climate": "水星大气",
   "kubejs.climate.name.moon_climate": "月球大气",
   "kubejs.climate.name.orbit_climate": "卫星轨道",
   "kubejs.climate.name.venus_climate": "金星大气",
-
   "lychee.comment.rose_quartz": "你需要一把金属锤子才能砸碎它。",
   "lychee.comment.stone_anvil": "找到一块火成喷出岩然后用你的锤子右键打造你的第一个原始人砧。",
-
   "message.kubejs.conventcommand": "§6潜行+右键§r获取物品ID\n输入§6-efg§r获得[夜视 力量 抗性 恒温]buff\n输入§6-efc§r清除自身所有buff",
   "message.kubejs.debug": "§4验证开发者用户信息中§r\n§a身份正确§r\n§4欢迎回来!%s§r",
   "message.kubejs.endurance_upgrade": "你感觉你的体力上升了！当前等级: %d",
@@ -638,7 +630,6 @@
   "message.kubejs.skill_upgrade": "你感觉你的技巧上升了！当前等级: %d",
   "message.kubejs.strength_upgrade": "你感觉你的力量上升了！当前等级: %d",
   "message.kubejs.theft_prohibited": "§4周围的怪物注意到你了!",
-
   "more_attributes.class.aborigines_explorers": "探险家",
   "more_attributes.class.aborigines_hunters": "猎人",
   "more_attributes.class.aborigines_primitive_people": "原始人",
@@ -650,8 +641,6 @@
   "more_attributes.class.description.test": "牢王727,饿的时候增加的耐性更多1",
   "more_attributes.class.test": "测试职业",
   "more_attributes.class.worthless_people": "无用之人",
-  
-  
   "tooltip.kubejs.hold_ctrl": "§r§8按住 [§r§rCtrl§8] 查看如何使用§r",
   "tooltip.kubejs.hold_ctrl_to_see_more_info": "§r§8按住 [§r§7Ctrl§r§8] 查看如何使用§r",
   "tooltip.kubejs.hold_shift": "§r§8按住 [§r§rShift§8] 查看更多信息§r",
@@ -720,5 +709,27 @@
   "tooltip.kubejs.shift_steel_crowbar": "§7撬棍是用于强行破坏战利品箱子的工具、能强行开锁、但是一旦失误就会损耗耐久度",
   "tooltip.kubejs.shift_steel_lockpick": "§7用于开启上锁的战利品箱子、需要多尝试几次才能开启",
   "tooltip.kubejs.shift_wrought_iron_crowbar": "§7撬棍是用于强行破坏战利品箱子的工具、能强行开锁、但是一旦失误就会损耗耐久度",
-  "tooltip.kubejs.shift_wrought_iron_lockpick": "§7用于开启上锁的战利品箱子、需要多尝试几次才能开启"
+  "tooltip.kubejs.shift_wrought_iron_lockpick": "§7用于开启上锁的战利品箱子、需要多尝试几次才能开启",
+  "tooltip.kubejs.shift_horse_whip": "§7使用马鞭来指挥运载马车的马、挥打一次前进、第二次挥打加速、再次则停止。多次挥打没办法让你的马儿变的更快！",
+  "tooltip.kubejs.shift_armored_wagon": "§7装甲马车可以用来运载生物、而且比较耐打、不容易损坏",
+  "tooltip.kubejs.shift_royal_wagon": "§7皇家马车很适合用来载着你的朋友观光！而且非常轻便",
+  "tooltip.kubejs.shift_conestoga_wagon": "§7大篷车有超大的存储空间、你可以把你能想到的所有物品都装进去一口气带走！",
+  "tooltip.kubejs.shift_metal/sledgehammer/bismuth_bronze": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/black_bronze": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/bronze": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/copper": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/wrought_iron": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/steel": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/black_steel": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/blue_steel": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/sledgehammer/red_steel": "§7长柄大锤可以一次性开采3x3的岩石！请确保在有支撑的情况下挖掘、否则很容易塌方！§r",
+  "tooltip.kubejs.shift_metal/excavator/bismuth_bronze": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/black_bronze": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/bronze": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/copper": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/wrought_iron": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/steel": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/black_steel": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/blue_steel": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r",
+  "tooltip.kubejs.shift_metal/excavator/red_steel": "§7开掘铲可以一次性挖掘3x3的土块！非常方便~§r"
 }

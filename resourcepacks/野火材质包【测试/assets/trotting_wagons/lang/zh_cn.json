@@ -1,0 +1,10 @@
+{
+  "item.trotting_wagons.conestoga_wagon": "大篷车",
+  "entity.trotting_wagons.conestoga_wagon": "大篷车",
+  "item.trotting_wagons.royal_wagon": "皇家马车",
+  "entity.trotting_wagons.royal_wagon": "皇家马车",
+  "item.trotting_wagons.armored_wagon": "装甲马车",
+  "entity.trotting_wagons.armored_wagon": "装甲马车",
+  "item.trotting_wagons.horse_whip": "马鞭",
+  "item.trotting_wagons.wheel": "车轮"
+}

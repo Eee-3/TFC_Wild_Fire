@@ -64,8 +64,29 @@ ItemEvents.tooltip(event => {
         'kubejs:bismuth_bronze_simple_key',
         'kubejs:black_bronze_simple_key',
         'kubejs:bronze_simple_key',
-        'kubejs:copper_simple_key'
-
+        'kubejs:copper_simple_key',
+        'trotting_wagons:horse_whip',
+        'trotting_wagons:armored_wagon',
+        'trotting_wagons:royal_wagon',
+        'trotting_wagons:conestoga_wagon',
+        "tfc_hammer_time:metal/sledgehammer/bismuth_bronze",
+        "tfc_hammer_time:metal/sledgehammer/black_bronze",
+        "tfc_hammer_time:metal/sledgehammer/bronze",
+        "tfc_hammer_time:metal/sledgehammer/copper",
+        "tfc_hammer_time:metal/sledgehammer/wrought_iron",
+        "tfc_hammer_time:metal/sledgehammer/steel",
+        "tfc_hammer_time:metal/sledgehammer/black_steel",
+        "tfc_hammer_time:metal/sledgehammer/blue_steel",
+        "tfc_hammer_time:metal/sledgehammer/red_steel",
+        "tfc_hammer_time:metal/excavator/bismuth_bronze",
+        "tfc_hammer_time:metal/excavator/black_bronze",
+        "tfc_hammer_time:metal/excavator/bronze",
+        "tfc_hammer_time:metal/excavator/copper",
+        "tfc_hammer_time:metal/excavator/wrought_iron",
+        "tfc_hammer_time:metal/excavator/steel",
+        "tfc_hammer_time:metal/excavator/black_steel",
+        "tfc_hammer_time:metal/excavator/blue_steel",
+        "tfc_hammer_time:metal/excavator/red_steel"
 
     ])
 })
