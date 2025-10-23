@@ -1,0 +1,69 @@
+[
+    {
+        "matchItems": [
+            "minecraft:iron_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_steel"
+        ],
+        "resultItems": "tfc:metal/ingot/steel"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_nickel"
+        ],
+        "resultItems": "tfc:metal/ingot/nickel"
+    },
+    {
+        "matchItems": [
+           "immersiveengineering:ingot_silver"
+        ],
+        "resultItems": "tfc:metal/ingot/silver"
+    },
+    {
+        "matchItems": [
+           "eidolon:lead_ingot"
+        ],
+        "resultItems": "immersiveengineering:ingot_lead"
+    },
+    {
+        "matchItems": [
+          "minecraft:copper_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/copper"
+    },
+    {
+        "matchItems": [
+          "minecraft:gold_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/gold"
+    },
+    {
+        "matchItems": [
+         "minecraft:diamond"
+        ],
+        "resultItems":"tfc:gem/diamond"
+    },
+    {
+        "matchItems": [
+         "minecraft:emerald"
+        ],
+        "resultItems":"tfc:gem/emerald"
+    },
+    {
+        "matchItems": [
+         "minecraft:lapis_lazuli"
+        ],
+        "resultItems":"tfc:gem/lapis_lazuli"
+    },
+    {
+        "matchItems": [
+         "minecraft:amethyst_shard"
+        ],
+        "resultItems":"tfc:gem/amethyst"
+    }
+    
+]
