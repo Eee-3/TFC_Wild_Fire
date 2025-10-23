@@ -60,7 +60,8 @@ ServerEvents.recipes(e => {
     "create:item_application/andesite_casing_from_log",
     "create:item_application/andesite_casing_from_wood",
     "woodencog:rock_knapping/andesite_alloy",
-    "woodencog:rock_knapping/andesite_alloy_deploying"
+    "woodencog:rock_knapping/andesite_alloy_deploying",
+    "firmalife:crafting/bacon"
 
 
 
