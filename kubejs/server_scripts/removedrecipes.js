@@ -61,7 +61,8 @@ ServerEvents.recipes(e => {
     "create:item_application/andesite_casing_from_wood",
     "woodencog:rock_knapping/andesite_alloy",
     "woodencog:rock_knapping/andesite_alloy_deploying",
-    "firmalife:crafting/bacon"
+    "firmalife:crafting/bacon",
+    "design_decor:mechanical_crafting/enchanted_golden_apple"
 
 
 

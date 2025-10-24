@@ -1,0 +1,167 @@
+[
+    {
+        "matchItems": [
+            "minecraft:wheat"
+        ],
+        "resultItems": "tfc:food/wheat"
+    },
+    {
+        "matchItems": [
+            "brewery:barley"
+        ],
+        "resultItems": "tfc:food/barley"
+    },
+    {
+        "matchItems": [
+            "brewery:corn"
+        ],
+        "resultItems": "tfc:food/maize"
+    },
+    {
+        "matchItems": [
+            "vinery:cherry"
+        ],
+        "resultItems": "tfc:food/cherry"
+    },
+    {
+        "matchItems": [
+            "createmetallurgy:graphite"
+        ],
+        "resultItems": "tfc:ore/graphite"
+    },
+    {
+        "matchItems": [
+            "createmetallurgy:slag"
+        ],
+        "resultItems": "immersiveengineering:slag"
+    },
+    {
+        "matchItems": [
+            "createmetallurgy:coke"
+        ],
+        "resultItems": "immersiveengineering:coal_coke"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:belt_grinder"
+        ],
+        "resultItems": "createmetallurgy:mechanical_belt_grinder"
+    },
+    {
+        "matchItems": [
+            "naturalist:venison"
+        ],
+        "resultItems": "tfc:food/venison"
+    },
+    {
+        "matchItems": [
+            "naturalist:cooked_venison"
+        ],
+        "resultItems": "tfc:food/cooked_venison"
+    },
+    {
+        "matchItems": [
+            "refurbished_furniture:sea_salt"
+        ],
+        "resultItems": "tfc:powder/salt"
+    },
+    {
+        "matchItems": [
+            "tfc:food/cooked_egg",
+            "naturalist:cooked_egg"
+        ],
+        "resultItems": "farmersdelight:fried_egg"
+    },
+    {
+        "matchItems": [
+            "refurbished_furniture:wheat_flour"
+        ],
+        "resultItems": "create:wheat_flour"
+    },
+    {
+        "matchItems": [
+            "butcher:rawbearmeat"
+        ],
+        "replaceWith": "tfc:food/bear"
+    },
+    {
+        "matchItems": [
+            "butcher:bearmeat"
+        ],
+        "replaceWith": "tfc:food/cooked_bear"
+    },
+    {
+        "matchItems": [
+            "butcher:horsemeat"
+        ],
+        "replaceWith": "tfc:food/horse_meat"
+    },
+    {
+        "matchItems": [
+            "butcher:cookedhorsemeat"
+        ],
+        "replaceWith": "tfc:food/cooked_horse_meat"
+    },
+    {
+        "matchItems": [
+            "butcher:rawcamelmeat"
+        ],
+        "replaceWith": "tfc:food/camelidae"
+    },
+    {
+        "matchItems": [
+            "butcher:camelmeat"
+        ],
+        "replaceWith": "tfc:food/cooked_camelidae"
+    },
+    {
+        "matchItems": [
+            "butcher:rawllamameat"
+        ],
+        "replaceWith": "tfc:food/mutton"
+    },
+    {
+        "matchItems": [
+            "butcher:llamameat"
+        ],
+        "replaceWith": "tfc:food/cooked_mutton"
+    },
+    {
+        "matchItems": [
+            "butcher:turtle_meat"
+        ],
+        "replaceWith": "tfc:food/turtle"
+    },
+    {
+        "matchItems": [
+            "butcher:cookedturtlemeat"
+        ],
+        "replaceWith": "tfc:food/cooked_turtle"
+    },
+    {
+        "matchItems": [
+            "butcher:wolfmeat"
+        ],
+        "replaceWith": "tfc:food/wolf"
+    },
+    {
+        "matchItems": [
+            "butcher:cookedwolfmeat"
+        ],
+        "replaceWith": "tfc:food/cooked_wolf"
+    },
+    {
+        "matchItems": [
+            "butcher:raw_mulemeat",
+            "butcher:rawdonkeymeat"
+        ],
+        "replaceWith": "tfc:food/horse_meat"
+    },
+    {
+        "matchItems": [
+            "butcher:cooked_mulemeat",
+            "butcher:cookeddonkeymeat"
+        ],
+        "replaceWith": "tfc:food/cooked_horse_meat"
+    }
+]

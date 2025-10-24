@@ -7,7 +7,9 @@
     },
     {
         "matchItems": [
-            "immersiveengineering:ingot_steel"
+            "immersiveengineering:ingot_steel",
+            "createmetallurgy:steel_ingot",
+            "ad_astra:steel_ingot"
         ],
         "resultItems": "tfc:metal/ingot/steel"
     },
@@ -64,6 +66,28 @@
          "minecraft:amethyst_shard"
         ],
         "resultItems":"tfc:gem/amethyst"
+    },
+    {
+        "matchItems": [
+         "eidolon:silver_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/silver"
+    },
+    {
+        "matchItems": [
+         "minecraft:quartz"
+        ],
+        "resultItems":"tfc_ie_addon:mineral/quartz_shard"
     }
-    
+
+    ,
+    {
+        "matchItems": [
+         "alexscaves:sulfur_dust",
+        "eidolon:sulfur",
+         "scguns:sulfur_dust",
+         "immersiveengineering:dust_sulfur"
+        ],
+        "resultItems":"tfc:powder/sulfur"
+    }
 ]
