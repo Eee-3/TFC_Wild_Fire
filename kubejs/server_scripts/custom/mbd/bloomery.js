@@ -52,6 +52,7 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     let event = e.event
     const { machine, player, heldItem } = event
     const { customData } = machine
+    let heat_time = 40 //暖机时间
     if (customData.getInt("heat_time") > 0)
         return
     // if (!heldItem.is("minecraft:flint_and_steel")) //触发条件
@@ -71,7 +72,6 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
         let stackInSlot = storage.getStackInSlot(i)
         if (!stackInSlot.isEmpty()) {
             let recipe = HeatingRecipe.getRecipe(stackInSlot)
-
             let result = recipe.assembleFluid(new ItemStackInventory(stackInSlot))
 
             amount += result.amount
@@ -83,7 +83,8 @@ MBDMachineEvents.onRightClick('mbd2:bloomery', (e) => {
     }
     //启动加热过程
     if (flag) {
-        customData.putInt("heat_time", 40)
+        customData.putInt("heat_time", heat_time)
+        machine.setMachineState("heating")
         player.playSound("minecraft:block.fire.ambient")
     }
     fluidStorage.restoreFromSnapshot(fluidSnapshot)
@@ -97,6 +98,7 @@ MBDMachineEvents.onTick("mbd2:bloomery", e => {
     if (customData.getInt("heat_time") > 0) {
         //加热完成
         if (customData.getInt("heat_time") == 1) {
+            machine.setMachineState("working")
             /**@type {Internal.ItemSlotCapabilityTrait} */
             let inputTrait = machine.getTraitByName("item_input_slot")
             /**@type {Internal.FluidTankCapabilityTrait} */
