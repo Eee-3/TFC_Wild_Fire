@@ -24,7 +24,7 @@
 		# If enabled, use on a filled map will show destination coordinates.
 		"Show Coordinate On Filled Map" = true
 		# If enabled, information like position and direction will be hidden from the debug screen (F3).
-		"Hide Info From Debug" = true
+		"Hide Info From Debug" = false
 		# If enabled, the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
 		"Natural Regeneration Enabled" = false
 		# If enabled, the player suffers vanilla freeze when inside powder snow.
