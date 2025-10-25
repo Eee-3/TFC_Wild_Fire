@@ -1,0 +1,7 @@
+{
+  "parent": "survivorsdelight:block/skillet/skillet",
+  "textures": {
+    "1": "survivorsdelight:block/custom/steel",
+    "particle": "tfc:block/metal/smooth/steel"
+  }
+}
