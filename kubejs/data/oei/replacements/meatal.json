@@ -89,5 +89,47 @@
          "immersiveengineering:dust_sulfur"
         ],
         "resultItems":"tfc:powder/sulfur"
+    },
+    {
+        "matchItems": [
+            "create:iron_sheet"
+        ],
+        "resultItems": "tfc:metal/sheet/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "create:zinc_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/zinc"
+    },
+    {
+        "matchItems": [
+            "create:brass_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/brass"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:stick_iron"
+        ],
+        "resultItems": "tfc:metal/rod/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:stick_steel"
+        ],
+        "resultItems": "tfc:metal/rod/steel"
+    },
+    {
+        "matchItems": [
+            "ad_astra:iron_rod"
+        ],
+        "resultItems": "tfc:metal/rod/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "ad_astra:steel_rod"
+        ],
+        "resultItems": "tfc:metal/rod/steel"
     }
 ]
