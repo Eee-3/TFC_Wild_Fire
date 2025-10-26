@@ -242,7 +242,7 @@
     "tfc.tooltip.nutrition": "营养：",
     "tfc.tooltip.nutrition_saturation": " - 饱和度：%s%%",
     "tfc.tooltip.nutrition_water": " - 口渴值：%s%%",
-    "tfc.tooltip.nutrition_none": " - 似乎没有营养价值……",
+    "tfc.tooltip.nutrition_none": " - 难以下咽……",
     "tfc.tooltip.hold_shift_for_nutrition_info": "按住 Shift 来查看营养值信息",
     "tfc.tooltip.salad": "沙拉",
     "tfc.tooltip.contents": "内容物：",

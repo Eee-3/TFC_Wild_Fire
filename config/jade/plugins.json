@@ -75,13 +75,6 @@
     "registry_name": "OFF",
     "mod_name": false
   },
-  "alekiships": {
-    "furnace": true,
-    "jukebox": true,
-    "brewing_stand": true,
-    "block": true,
-    "note_block": true
-  },
   "functionalstorage": {
     "armory": true
   },
@@ -170,10 +163,6 @@
     "firepit": true,
     "ingot_pile": true
   },
-  "firmaciv": {
-    "tfc_chest": true,
-    "barrel": true
-  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
@@ -183,6 +172,9 @@
   },
   "jadeaddons.lootr": {
     "info": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   },
   "petrolpark": {
     "contamination": true
