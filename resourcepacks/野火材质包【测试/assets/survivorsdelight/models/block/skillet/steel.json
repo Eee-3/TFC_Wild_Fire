@@ -2,6 +2,7 @@
   "parent": "survivorsdelight:block/skillet/skillet",
   "textures": {
     "1": "survivorsdelight:block/custom/steel",
+    "2": "tfc:block/wood/planks/chestnut",
     "particle": "tfc:block/metal/smooth/steel"
   }
 }
