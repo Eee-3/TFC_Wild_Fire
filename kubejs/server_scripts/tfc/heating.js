@@ -115,12 +115,12 @@ ServerEvents.recipes(e => {
     { name: "bronze_lockpick", temperature: 950, metal: "bronze", number: 50 },    // 青铜开锁器（kubejs:bronze_lockpick）
     { name: "copper_lockpick", temperature: 1080, metal: "copper", number: 50 },    // 铜制开锁器（kubejs:copper_lockpick）
     { name: "cast_iron_lockpick", temperature: 1150, metal: "cast_iron", number: 50 },    // 铸铁开锁器（kubejs:cast_iron_lockpick）
-    { name: "wrought_iron_lockpick", temperature: 1535, metal: "wrought_iron", number: 50 },    // 锻铁开锁器（kubejs:wrought_iron_lockpick）
+    { name: "wrought_iron_lockpick", temperature: 1535, metal: "cast_iron", number: 50 },    // 锻铁开锁器（kubejs:wrought_iron_lockpick）
     { name: "steel_lockpick", temperature: 1540, metal: "steel", number: 50 },    // 钢制开锁器（kubejs:steel_lockpick）
     { name: "black_steel_lockpick", temperature: 1485, metal: "black_steel", number: 50 },    // 黑钢开锁器（kubejs:black_steel_lockpick）
 
     // 撬棍类
-    { name: "wrought_iron_crowbar", temperature: 1535, metal: "wrought_iron", number: 200 },    // 锻铁撬棍（kubejs:wrought_iron_crowbar）
+    { name: "wrought_iron_crowbar", temperature: 1535, metal: "cast_iron", number: 200 },    // 锻铁撬棍（kubejs:wrought_iron_crowbar）
     { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },    // 钢撬棍（kubejs:steel_crowbar）
     { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
 

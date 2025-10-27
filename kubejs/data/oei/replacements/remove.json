@@ -180,7 +180,9 @@
         "brewinandchewin:fiery_fondue_pot",
         "brewinandchewin:fiery_fondue",
         "butcher:butcherspapers",
-        "patchouli:guide_book"
+        "patchouli:guide_book",
+        "design_decor:mechanical_crafting/enchanted_golden_apple",
+        "supplementaries:strings"
     ],
     "resultItems": "minecraft:air"
 }
