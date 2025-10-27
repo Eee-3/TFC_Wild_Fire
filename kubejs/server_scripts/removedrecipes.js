@@ -197,6 +197,14 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'minecraft:smelting' }) // 移除熔炉熔炼配方
   e.remove({ type: 'minecraft:campfire_cooking' }) // 移除营火烹饪配方
   e.remove({ type: 'minecraft:blasting' }) // 移除高炉熔炼配方
+  e.remove({ type: 'immersiveengineering:alloy_smelter' }) // 移除合金窑熔炼配方 【没成功
+  e.remove({ type: 'immersiveengineering:blast_furnace' }) // 移除沉浸高炉熔炼配方
+  e.remove({ type: 'createdieselgenerators:wire_cutting' }) // 移除剪线配方
+  e.remove({ type: 'scguns:macerator' }) // 移除scg研磨机配方 【没成功
+  e.remove({ type: 'scguns:mech_press' }) // 移除scg冲压机配方 【没成功
+  e.remove({ type: 'scguns:powered_macerator' }) // 移除scg动力研磨机配方 【没成功
+  e.remove({ type: 'scguns:powered_mech_press' }) // 移除scg动力冲压机配方 【没成功
+
   e.remove({ id: 'map_atlases:craft_atlas' }) // 移除 map_atlases 模组制作地图集的配方
   e.remove({ id: 'simpleradio:radio' }) // 移除 simpleradio 模组制作收音机的配方
   e.remove({ id: 'simpleradio:transceiver' }) // 移除 simpleradio 模组制作收发器的配方
@@ -220,6 +228,29 @@ ServerEvents.recipes(e => {
   e.remove('crafttweaker:backpack')
   e.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' })//移除烈焰人燃烧室
   e.remove({ id: 'vinery:bamboo_lattice' })//删除竹格
+  e.remove({ id: 'brewery:beer_mug' })//移除多余的酒杯配方
+  e.remove({ id: 'brewinandchewin:cooking/sweet_berry_jam' })//移除饮酒作乐甜浆果果酱配方
+  e.remove({ id: 'brewinandchewin:cooking/glow_berry_marmalade' })//移除饮酒作乐发光果酱配方
+  e.remove({ id: 'brewinandchewin:cooking/apple_jelly' })//移除饮酒作乐苹果果酱配方
+
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_barley' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_corn' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_carrots' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_tomatoes' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_emmer' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_lettuce' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_strawberries' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_oat' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_potatoes' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_ribwort' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_beetroots' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_onions' })//移除空配方 
+  e.remove({ id: 'brewinandchewin:fermenting/flaxen_cheese_from_milk' })//移除空配方
+  e.remove({ id: 'brewinandchewin:fermenting/scarlet_cheese_from_milk' })//移除空配方
+  e.remove({ id: 'butcher:butchersguidejei' })//移除空配方
+  e.remove({ id: 'butcher:butcherspapersrecipe' })//移除空配方
+  e.remove({ id: 'butcher:forgeguiderecipe' })//移除空配方
+
 
   e.remove('farmersdelight:paper_from_tree_bark')//三个树皮合成纸
 
