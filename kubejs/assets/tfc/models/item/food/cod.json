@@ -1,0 +1,1 @@
+{  "parent": "minecraft:item/handheld",  "loader": "forge:separate_transforms",  "base": {    "parent": "kubejs:block/coaster_cod"  },  "perspectives": {    "gui": {      "parent": "tfc:item/food/cod_item"    }, "ground": {      "parent": "tfc:item/food/cod_item"    }, "fixed": {      "parent": "tfc:item/food/cod_item"    }   }}

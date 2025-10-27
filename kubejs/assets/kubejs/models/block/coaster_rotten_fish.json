@@ -4,7 +4,7 @@
 	"texture_size": [24, 24],
 	"textures": {
 		"0": "kubejs:block/rotten_fish",
-		"particle": "#0"
+		"particle": "kubejs:block/rotten_fish"
 	},
 	"elements": [
 		{
@@ -85,5 +85,23 @@
 				"down": {"uv": [8, 4.66667, 5.33333, 6.66667], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 90],
+			"translation": [-7, 4, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, -90],
+			"translation": [7, 4, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [60, 0, 90],
+			"translation": [-6, 5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [60, 0, -90],
+			"translation": [8, 5, 0]
+		}
+	}
 }
