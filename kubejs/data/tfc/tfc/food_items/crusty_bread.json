@@ -1,9 +1,0 @@
-{
-  "ingredient": {
-    "item": "bakery:crusty_bread"
-  },
-  "hunger": 2,
-  "saturation": 1,
-  "decay_modifier": 1.50,
-  "grain": 1.5
-}
