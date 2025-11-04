@@ -1,14 +1,7 @@
 [
     {
         "matchItems": [
-            "bakery:strawberry_jam"
-        ],
-        "resultItems": "tfc:jar/strawberry"
-    },
-    {
-        "matchItems": [
-            "brewinandchewin:apple_jelly",
-            "bakery:apple_jam"
+            "brewinandchewin:apple_jelly"
         ],
         "resultItems": "tfc:jar/red_apple"
     },
@@ -47,14 +40,12 @@
     },
     {
         "matchItems": [
-            "bakery:sweetberry_jam",
             "brewinandchewin:sweet_berry_jam"
         ],
         "resultItems": "tfc:jar/cranberry"
     },
     {
         "matchItems": [
-            "bakery:glowberry_jam",
             "brewinandchewin:glow_berry_marmalade"
         ],
         "resultItems": "tfc:jar/cloudberry"
@@ -367,5 +358,17 @@
             "farm_and_charm:flour"
         ],
         "resultItems": "tfc:food/wheat_flour"
+    },
+    {
+        "matchItems": [
+            "minecraft:kelp"
+        ],
+        "resultItems": "tfc:plant/leafy_kelp"
+    },
+    {
+        "matchItems": [
+            "minecraft:sea_pickle"
+        ],
+        "resultItems": "tfc:sea_pickle"
     }
 ]

@@ -136,7 +136,7 @@ StartupEvents.registry("item", event => {
     commonToolTypes.forEach(tool => {
         event.create(`kubejs:diamond_${tool.type}`, tool.type)
             .maxDamage(tool.diamondDurability)
-
+            .tag('tfc:usable_on_tool_rack')
             .texture(`kubejs:item/tfc/diamond/${tool.type}`);
 
 
@@ -146,7 +146,7 @@ StartupEvents.registry("item", event => {
     commonToolTypes.forEach(tool => {
         event.create(`kubejs:obsidian_${tool.type}`, tool.type)
             .maxDamage(tool.obsidianDurability)
-
+            .tag('tfc:usable_on_tool_rack')
             .fireResistant(true)
             .texture(`kubejs:item/tfc/obsidian/${tool.type}`);
 
@@ -174,7 +174,7 @@ StartupEvents.registry("item", event => {
     event.create("kubejs:diamond_hammer", "tfc:hammer")  // 注册钻石锤子
         .displayName("diamond_hammer")
         .maxDamage(600)
-
+        .tag('tfc:usable_on_tool_rack')
         .fireResistant(false)
         .tag("kubejs:hammers")
         .texture("kubejs:item/tfc/diamond/hammer")
@@ -184,7 +184,7 @@ StartupEvents.registry("item", event => {
     event.create("kubejs:obsidian_hammer", "tfc:hammer")    // 注册黑曜石锤子
         .displayName("obsidian_hammer")
         .maxDamage(200)
-
+        .tag('tfc:usable_on_tool_rack')
         .fireResistant(true)
         .tag("kubejs:hammers")
         .texture("kubejs:item/tfc/obsidian/hammer")
@@ -202,7 +202,7 @@ StartupEvents.registry("item", event => {
     let diamondJavelin = event.create("kubejs:diamond_javelin", "tfc:javelin")
         .displayName("diamond_javelin")
         .maxDamage(600)
-
+        .tag('tfc:usable_on_tool_rack')
         .fireResistant(false)
         .tag("kubejs:javelins")
         .texture("kubejs:item/tfc/diamond/javelin")
@@ -214,7 +214,7 @@ StartupEvents.registry("item", event => {
     let obsidianJavelin = event.create("kubejs:obsidian_javelin", "tfc:javelin")
         .displayName("obsidian_javelin")
         .maxDamage(200)
-
+        .tag('tfc:usable_on_tool_rack')
         .fireResistant(true)
         .tag("kubejs:javelins")
         .texture("kubejs:item/tfc/obsidian/javelin")

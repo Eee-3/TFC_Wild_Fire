@@ -857,7 +857,6 @@
 			dependencies: [
 				"16F9997D7A1F6EB3"
 				"7E60DB1DFF798B1C"
-				"6FE1589968B29E24"
 			]
 			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
 			hide_dependency_lines: true

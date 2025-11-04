@@ -5,7 +5,7 @@
 	group: "2BD524ABD6AD1EEE"
 	icon: "immersive_paintings:glow_painting"
 	id: "36A3BF356D26BFC5"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -306,13 +306,6 @@
 			rewards: [
 				{
 					id: "7BA49BC7F9CCFC51"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "littlelogistics:guide"
-						}
-					}
 					type: "item"
 				}
 				{
@@ -400,25 +393,11 @@
 		{
 			can_repeat: true
 			dependencies: ["77488B3112125233"]
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "littlelogistics:guide"
-				}
-			}
 			id: "0B526F214CD09418"
 			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2EE224D9A1857762"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "littlelogistics:guide"
-					}
-				}
 				type: "item"
 			}]
 			shape: "hexagon"

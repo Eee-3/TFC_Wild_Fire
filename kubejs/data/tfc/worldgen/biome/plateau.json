@@ -30,18 +30,7 @@
     ],
     "spawners": {
         "water_creature": [
-            {
-                "type": "naturalist:hippo",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
-            },
-            {
-                "type": "naturalist:dragonfly",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
-            }
+
         ],
         "monster": [
             {

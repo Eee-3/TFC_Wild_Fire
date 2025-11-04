@@ -1,6 +1,6 @@
 {
   "common": {
-    "Deeper_Replace": false,
+    "Deeper_Replace": true,
     "Enable_Lite": false,
     "Clear_Food_Properties": false,
     "Default_Rules": {"data": {

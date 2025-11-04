@@ -24,7 +24,6 @@
 		{
 			dependencies: ["0DEA4BABDEA8ED79"]
 			description: ["你集齐了七个铜合金双锭，制作出了铜合金砧，是时候学习锻造的技巧了。"]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -174,7 +173,7 @@
 			}]
 			title: "种树"
 			x: 86.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -221,7 +220,7 @@
 			]
 			title: "谷物加工"
 			x: 86.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -300,7 +299,7 @@
 			}]
 			title: "暴殄天物"
 			x: 86.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -383,7 +382,7 @@
 			}]
 			title: "种果树"
 			x: 87.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -395,7 +394,7 @@
 				type: "item"
 			}]
 			x: 89.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -423,7 +422,6 @@
 				""
 				"不锈钢等级以下的温室都会随着时间流逝而老化。不必在意，这不会对温室造成任何影响。"
 			]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "firmalife:treated_wood_greenhouse_wall"
 			id: "400313764B17022E"
@@ -572,7 +570,7 @@
 				type: "item"
 			}]
 			x: 87.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["740B133DCD9B52AE"]
@@ -585,7 +583,6 @@
 				""
 				"将玻璃配料与吹管合成会得到含有玻璃的吹管，将吹管加热直到变成淡红色即可开始吹制玻璃，注意不要加热到炽白，否则内含的玻璃会消失。"
 			]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "tfc:blowpipe"
 			id: "345D69AFA3121901"
@@ -618,7 +615,7 @@
 			]
 			title: "吹制玻璃"
 			x: 89.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["345D69AFA3121901"]
@@ -641,7 +638,7 @@
 				type: "item"
 			}]
 			x: 90.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["570B10ABF6F54ED0"]
@@ -650,6 +647,7 @@
 				""
 				"吹制玻璃物品的工序比吹制玻璃块玻璃板更加复杂，由于种类过多这里不做赘述，若有需求请自行查阅书和JEI。"
 			]
+			hide_until_deps_complete: true
 			id: "6FF228D0CFA724F1"
 			subtitle: "晶莹剔透"
 			tasks: [{
@@ -658,12 +656,11 @@
 				type: "item"
 			}]
 			x: 92.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20D072C6FCC3F36D"]
 			description: ["将面粉与装有水的容器合成即可制作粗饼面团，任何一种面粉都可以制作出粗饼面团，且一份面粉可以制作出两份粗饼面团。粗饼面团在篝火中即可烤熟为粗饼，烤熟的粗饼会比粗饼面团多出两倍的保质期，且能够补充谷物营养值。"]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "0C8B3BCFC6EC225A"
 			subtitle: "看起来没那么精致"
@@ -779,7 +776,7 @@
 				}
 			]
 			x: 87.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0C8B3BCFC6EC225A"]
@@ -811,7 +808,7 @@
 			]
 			title: "烤炉"
 			x: 89.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["56CDC910560BCE74"]
@@ -830,7 +827,7 @@
 			}]
 			title: "变硬"
 			x: 90.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5FF7FFB0F4F5ABBE"]
@@ -854,7 +851,7 @@
 			}]
 			title: "酵种"
 			x: 92.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["47559D982B64A34E"]
@@ -889,7 +886,7 @@
 				}
 			]
 			x: 93.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["212780ACC7F7C673"]
@@ -926,7 +923,7 @@
 			}]
 			title: "&e挑战：披萨上应该加菠萝吗？"
 			x: 95.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -959,7 +956,7 @@
 			]
 			title: "果酱"
 			x: 91.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["17F0AAB82BB1DE98"]
@@ -972,7 +969,7 @@
 				type: "item"
 			}]
 			x: 91.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0D888CA32C333F40"]
@@ -981,7 +978,6 @@
 				""
 				"一个成功构建的地窖由密封方块围成的一个房间，几扇密封门和一个气象站构成。如果你正确地构建了多方块结构，通过观察气象站即可得知。"
 			]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "firmalife:sealed_bricks"
 			id: "7736AC779D1DA025"
@@ -1038,7 +1034,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["1E91D720F8A2C6EE"]
+			dependencies: ["5EE1C576428C5C78"]
 			description: [
 				"原版的食物保鲜工序是最复杂的，但却意外的有效。"
 				""
@@ -1062,7 +1058,7 @@
 			]
 			icon: "tfc:powder/salt"
 			id: "3ACBDD26F3E31964"
-			subtitle: "麻烦，但有效"
+			subtitle: "有效"
 			tasks: [
 				{
 					id: "1FEDAFF550E38D29"
@@ -1098,9 +1094,9 @@
 					type: "item"
 				}
 			]
-			title: "群峦原版的食物保存方案"
-			x: 90.5d
-			y: 3.0d
+			title: "简易的保险"
+			x: 86.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1226,7 +1222,7 @@
 				"将奶酪轮放置在地上，手持小刀对其右键即可切下一片奶酪，奶酪可以直接用来吃，或者夹在三明治里。放在地窖中的奶酪轮会随着时间慢慢老化，老化程度越高奶酪的营养越丰富，只不过不是完整的奶酪轮无法进行老化。"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "firmalife:gouda_wheel"
 			id: "69AA5A517FBED61A"
 			subtitle: "某种真正意义上不会腐烂的食物"
@@ -1247,7 +1243,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4A4359CEAD6FB810"]
+			dependencies: ["15E9260AECAE335B"]
 			description: ["锻造锻铁需要大量的木炭作为支持，如果你的木炭太少，我建议你先去多准备一些。"]
 			hide_until_deps_complete: true
 			icon: "minecraft:charcoal"
@@ -1262,16 +1258,15 @@
 			}]
 			title: "大烧木炭"
 			x: 76.5d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["7D591DFB9CF4D847"]
+			dependencies: ["4A4359CEAD6FB810"]
 			description: [
 				"锻铁炉方块是搭建锻铁炉多方块结构的核心，其本质是一块活板门，需要八张铜合金双层薄板，也就是32个铜合金锭合成。双层薄板由两张薄板焊接而成，而薄板由一个双锭锻造而成。"
 				""
 				"要搭建锻铁炉多方块结构，你需要用石砖、天然石或平滑石构建一条最高五格高，最矮三格高的3x3烟囱，烟囱中心除了底面的一格都需要留空，四个角也可以去掉。在烟囱的第二格任意一面开一个口，并将口的左右两面也放上石方块，并将锻铁炉方块放在口中，锻铁炉就搭建完成了。具体的形状可以通过查阅书得知。"
 			]
-			hide_until_deps_complete: true
 			id: "15E9260AECAE335B"
 			shape: "hexagon"
 			tasks: [{
@@ -1279,7 +1274,7 @@
 				item: "tfc:bloomery"
 				type: "item"
 			}]
-			x: 75.0d
+			x: 76.5d
 			y: 4.5d
 		}
 		{
@@ -1412,6 +1407,7 @@
 		{
 			dependencies: ["6FF228D0CFA724F1"]
 			description: ["现在你可以制作放大镜的透镜了！"]
+			hide_until_deps_complete: true
 			id: "75849ECACEE6E0B4"
 			subtitle: "现代利润最高的工作"
 			tasks: [{
@@ -1420,7 +1416,7 @@
 				type: "item"
 			}]
 			x: 93.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["75849ECACEE6E0B4"]
@@ -1445,7 +1441,7 @@
 			}]
 			title: "放大镜"
 			x: 95.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -1462,7 +1458,7 @@
 			}]
 			title: "好渴，有什么能喝的吗"
 			x: 89.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1509,7 +1505,6 @@
 				""
 				"把油脂炼成蜡脂，用草木灰和水混合获得碱水。然后把蜡脂与碱水混合，你就会获得脂肪酸盐，然后密封大桶八分钟，脂肪酸盐就会变成肥皂！肥皂丢进水里可以变成肥皂水，肥皂水可以轻松洗净小罐子以重复使用！"
 			]
-			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			icon: "butcher:animalfat"
 			id: "3072431A0B7D21A5"
@@ -1524,12 +1519,7 @@
 							value: "artisanal:fats"
 						}
 					}
-					title: "Any #artisanal:fats"
-					type: "item"
-				}
-				{
-					id: "257E6B33AB645D8A"
-					item: "butcher:animalfat"
+					title: "任意动物脂肪"
 					type: "item"
 				}
 				{
@@ -1569,18 +1559,34 @@
 			hide_until_deps_complete: true
 			id: "5D9EF714343B776B"
 			subtitle: "终于有更多的空间了"
-			tasks: [{
-				advancement: "backpacked_tfc:backpack_task"
-				criterion: ""
-				id: "3B0F71F5696452D1"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					advancement: "backpacked_tfc:backpack_task"
+					criterion: ""
+					id: "3B0F71F5696452D1"
+					type: "advancement"
+				}
+				{
+					id: "1310944FFDCE0E32"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 16
+							}
+						}
+						id: "backpacked_tfc:backpack"
+					}
+					type: "item"
+				}
+			]
 			title: "背包"
 			x: 80.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["20D072C6FCC3F36D"]
+			dependencies: ["193B3FD792076CDE"]
 			description: [
 				"你可以在大桶里面装入水和小麦面粉发酵成啤酒"
 				""
@@ -1612,8 +1618,8 @@
 				type: "item"
 			}]
 			title: "啤酒就是生命"
-			x: 87.5d
-			y: 0.0d
+			x: 89.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3CD4B3897381D686"]
@@ -1637,8 +1643,8 @@
 				type: "checkmark"
 			}]
 			title: "美好的生活"
-			x: 84.34523809523807d
-			y: 0.595238095238102d
+			x: 85.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3CD4B3897381D686"]
@@ -1662,8 +1668,8 @@
 				type: "checkmark"
 			}]
 			title: "更好的工业"
-			x: 83.34523809523807d
-			y: 0.595238095238102d
+			x: 82.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -1716,7 +1722,6 @@
 				""
 				"工作盆是一种工作辅助方块，可以存储九种以物流形式输入的最多16个物品或以掉落物形式输入的最多64个物品以及两种最多1000mb的流体，且六个方向都可以输入输出。工作盆侧面有一个配方过滤插槽，可以用于设定目标产物以避免配方混淆。工作盆在侧下方有置物台、溜槽、传送带、垂直放置的机械动力漏斗、工作盆之类的开放式存储方块时，会出现一个开口并尝试自动输出物品。在动态结构上倒置的工作盆会将其中的物品以掉落物的形式掉出。"
 			]
-			hide_until_deps_complete: true
 			icon: "create:mechanical_mixer"
 			id: "1E12E1D7A92C2284"
 			subtitle: "这里没有奶昔"
@@ -1743,7 +1748,6 @@
 				""
 				"置物台是一种容器和工作辅助方块，可以存储一批物品——一次输入的最少1个最多64个物品。置物台可以从六个方向输入物品，也可以接收掉落物，但在其存储的一批物品离开之前不会再接收其他物品。"
 			]
-			hide_until_deps_complete: true
 			icon: "create:mechanical_press"
 			id: "095495F4961CCA5D"
 			shape: "circle"
@@ -1779,12 +1783,19 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
-			hide_until_deps_complete: true
+			icon: "create:millstone"
 			id: "4052E4CC34F12433"
 			shape: "circle"
 			tasks: [{
 				id: "3E8E376301AF9688"
-				item: "create:millstone"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(create:millstone)item(design_decor:granite_millstone)item(design_decor:diorite_millstone)item(design_decor:limestone_millstone)item(design_decor:tuff_millstone)item(design_decor:dripstone_millstone)item(design_decor:deepslate_millstone))"
+					}
+				}
+				title: "制作任意石磨"
 				type: "item"
 			}]
 			x: 73.5d
@@ -1792,7 +1803,6 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
-			hide_until_deps_complete: true
 			id: "461E29387C6F301A"
 			tasks: [{
 				id: "38155864A26D7110"
@@ -1804,7 +1814,6 @@
 		}
 		{
 			dependencies: ["492B40A0DB508FD0"]
-			hide_until_deps_complete: true
 			id: "5BFB313AE619BA74"
 			tasks: [{
 				id: "672BC21F7444DADE"
@@ -1841,11 +1850,10 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
-			hide_until_deps_complete: true
 			id: "13B60D1D45C8F2B0"
 			tasks: [{
 				id: "3C523E5662F42BB5"
-				item: "vintageimprovements:belt_grinder"
+				item: "createmetallurgy:mechanical_belt_grinder"
 				type: "item"
 			}]
 			x: 76.5d
@@ -1853,8 +1861,8 @@
 		}
 		{
 			dependencies: ["0012F0FD8DE8560E"]
-			hide_until_deps_complete: true
 			id: "0D8ADE2F487C7DA4"
+			shape: "circle"
 			tasks: [{
 				id: "45BED560E8AB5AFE"
 				item: "create:encased_fan"
@@ -1866,7 +1874,7 @@
 		{
 			dependencies: ["492B40A0DB508FD0"]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "701A5DA00B5222CF"
 			tasks: [{
 				id: "23BC4BDBBA12EE59"
@@ -1879,7 +1887,6 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			hide_until_deps_complete: true
 			id: "151BE63A8B9BADCB"
 			tasks: [{
 				id: "1AB753D9CDFEBE25"
@@ -1891,7 +1898,6 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			hide_until_deps_complete: true
 			id: "31B3E6F21348E402"
 			tasks: [
 				{
@@ -1910,7 +1916,6 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			hide_until_deps_complete: true
 			id: "0F606AB5BA6D609E"
 			tasks: [{
 				id: "5ACD80C04D62F283"
@@ -1922,7 +1927,6 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			hide_until_deps_complete: true
 			id: "72A61ACE442DFF84"
 			tasks: [{
 				id: "6561F9BC27E52BC1"
@@ -1934,7 +1938,6 @@
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			hide_until_deps_complete: true
 			id: "5DA0438D2C89A126"
 			tasks: [{
 				id: "13F6606A4A2CB8E7"
@@ -1945,6 +1948,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["198FB45018B308D5"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7B14309A72A35AF9"
@@ -1992,7 +1996,6 @@
 		}
 		{
 			dependencies: ["7B14309A72A35AF9"]
-			hide_until_deps_complete: true
 			id: "516E60B8FD6CB32B"
 			tasks: [{
 				id: "7C68472E20BAECE3"
@@ -2112,6 +2115,19 @@
 			}]
 			x: 78.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["20D072C6FCC3F36D"]
+			description: ["专业的酿造小桶可以用来酿造酒或其他腌制物品、对于大桶来说他的存储量不够多但是密封性更好、更适合用来做一些酿制配方！"]
+			id: "193B3FD792076CDE"
+			tasks: [{
+				id: "2D705BBF7DF315C9"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "酿造时间"
+			x: 87.5d
+			y: 1.0d
 		}
 	]
 	title: "第二章：大地结晶"

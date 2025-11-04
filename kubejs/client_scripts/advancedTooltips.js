@@ -88,5 +88,28 @@ ItemEvents.tooltip(event => {
         "tfc_hammer_time:metal/excavator/blue_steel",
         "tfc_hammer_time:metal/excavator/red_steel"
 
-    ])
+    ]),
+        addCtrlTooltip(event, [
+            "minecraft:wooden_pickaxe",
+            "minecraft:wooden_shovel",
+            "spartanweaponry:wooden_scythe",
+            "spartanweaponry:wooden_glaive",
+            "spartanweaponry:wooden_battleaxe",
+            "spartanweaponry:wooden_throwing_knife",
+            "spartanweaponry:wooden_tomahawk",
+            "spartanweaponry:wooden_boomerang",
+            "spartanweaponry:wooden_lance",
+            "spartanweaponry:wooden_battle_hammer",
+            "spartanweaponry:wooden_greatsword",
+            "spartanweaponry:wooden_rapier",
+            "spartanweaponry:wooden_warhammer",
+            "spartanweaponry:wooden_dagger",
+            "spartanweaponry:wooden_parrying_dagger",
+            "spartanweaponry:wooden_longsword",
+            "spartanweaponry:wooden_katana",
+            "spartanweaponry:wooden_saber",
+            "minecraft:wooden_axe",
+            "minecraft:wooden_sword",
+            "minecraft:wooden_hoe"
+        ])
 })
