@@ -1,24 +1,24 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"texture_size": [24, 24],
 	"textures": {
-		"2": "kubejs:block/rye_flatbread",
+		"0": "kubejs:block/rye_flatbread",
 		"particle": "kubejs:block/rye_flatbread"
 	},
 	"elements": [
 		{
-			"from": [5, 0, 5.5],
-			"to": [11, 1, 10.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 6.5]},
+			"from": [5, -0.5, 5],
+			"to": [12, 1.5, 10],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.5, 0.5, 7]},
 			"faces": {
-				"north": {"uv": [3.33333, 3.33333, 7.33333, 4], "texture": "#2"},
-				"east": {"uv": [0, 3.33333, 3.33333, 4], "texture": "#2"},
-				"south": {"uv": [10.66667, 3.33333, 14.66667, 4], "texture": "#2"},
-				"west": {"uv": [7.33333, 3.33333, 10.66667, 4], "texture": "#2"},
-				"up": {"uv": [7.33333, 3.33333, 3.33333, 0], "texture": "#2"},
-				"down": {"uv": [11.33333, 0, 7.33333, 3.33333], "texture": "#2"}
+				"north": {"uv": [7, 0, 14, 2], "texture": "#0"},
+				"east": {"uv": [7, 4, 12, 6], "texture": "#0"},
+				"south": {"uv": [7, 2, 14, 4], "texture": "#0"},
+				"west": {"uv": [7, 6, 12, 8], "texture": "#0"},
+				"up": {"uv": [7, 5, 0, 0], "texture": "#0"},
+				"down": {"uv": [7, 5, 0, 10], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {}
 }

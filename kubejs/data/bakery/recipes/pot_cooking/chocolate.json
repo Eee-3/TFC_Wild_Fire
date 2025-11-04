@@ -1,5 +1,5 @@
 {
-  "type": "bakery:pot_cooking",
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -24,7 +24,7 @@
     }
   ],
   "container": {
-    "item": "minecraft:paper"
+	"required": false
   },
   "result": {
     "item": "bakery:chocolate_truffle",

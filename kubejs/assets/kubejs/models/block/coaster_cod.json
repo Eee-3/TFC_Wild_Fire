@@ -2,7 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "kubejs:block/cod",
+		"particle": "tfc:item/food/cod",
 		"cod": "kubejs:block/cod"
 	},
 	"elements": [

@@ -50,6 +50,15 @@
     {
       "weight": 1,
       "element": {
+        "location": "takesapillage:bastille/corner/outside_corner_windmill",
+        "processors": "takesapillage:bastille/bastille",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
         "location": "takesapillage:bastille/corner/outside_corner_stables",
         "processors": "takesapillage:bastille/bastille",
         "projection": "rigid",
