@@ -1,0 +1,16 @@
+[
+    {
+        "matchItems": [
+           "farmersdelight:rope"
+          
+        ],
+        "resultItems":"kubejs:straw_rope"
+    },
+    {
+        "matchItems": [
+           "farmersdelight:straw"
+          
+        ],
+        "resultItems":"tfc:straw"
+    }
+]

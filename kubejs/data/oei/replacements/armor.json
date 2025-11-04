@@ -1,0 +1,74 @@
+[
+    {
+        "matchItems": [
+            "minecraft:diamond_helmet"
+        ],
+        "resultItems": "tfc:metal/helmet/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_chestplate"
+        ],
+        "resultItems": "tfc:metal/chestplate/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_leggings"
+        ],
+        "resultItems": "tfc:metal/greaves/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_boots"
+        ],
+        "resultItems": "tfc:metal/boots/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_helmet"
+        ],
+        "resultItems": "tfc:metal/helmet/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_chestplate"
+        ],
+        "resultItems": "tfc:metal/chestplate/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_leggings"
+        ],
+        "resultItems": "tfc:metal/greaves/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_boots"
+        ],
+        "resultItems": "tfc:metal/boots/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_helmet"
+        ],
+        "resultItems": "tfc:metal/helmet/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_chestplate"
+        ],
+        "resultItems": "tfc:metal/chestplate/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_leggings"
+        ],
+        "resultItems": "tfc:metal/greaves/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_boots"
+        ],
+        "resultItems": "tfc:metal/boots/wrought_iron"
+    }
+]

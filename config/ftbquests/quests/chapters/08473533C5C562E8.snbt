@@ -17,7 +17,7 @@
 						ticks: 0L
 					}
 				}
-				id: "tfc:metal/anvil/copper"
+				id: "tfc:metal/anvil/wrought_iron"
 			}
 			id: "09EEA60B10948B0E"
 			tasks: [
@@ -33,411 +33,485 @@
 					type: "advancement"
 				}
 			]
+			title: "匠"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["09EEA60B10948B0E"]
-			id: "6B36071A17B179D5"
-			tasks: [{
-				id: "428D2A3121FD746C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/sword/copper"
-					tag: {
-						Damage: 0
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				type: "item"
-			}]
+				id: "tfc:metal/sword/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B36071A17B179D5"
+			subtitle: "刀锋利刃"
+			title: "斩击伤害"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09EEA60B10948B0E"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/mace/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DA79A2BB466C9B4"
+			subtitle: "硬碰硬"
+			title: "打击伤害"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["09EEA60B10948B0E"]
-			id: "4DA79A2BB466C9B4"
-			tasks: [{
-				id: "62E7C11A7138B085"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/mace/copper"
-					tag: {
-						Damage: 0
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["09EEA60B10948B0E"]
+				id: "tfc:metal/javelin/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0DA1E7DE85A0F39D"
-			tasks: [{
-				id: "308288131D9D37AD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/javelin/copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
+			subtitle: "穿肠破肚"
+			title: "穿刺伤害"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "710B6A4EC435C6C4"
 			tasks: [{
-				id: "1AC7702FF3EBAC10"
-				item: {
+				icon: {
 					Count: 1
-					id: "spartanweaponry:copper_greatsword"
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_greatsword"
 					tag: {
 						Damage: 0
 					}
 				}
+				id: "2E95A82FA807507A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_greatsword)item(kubejs:bronze_greatsword)item(kubejs:bismuth_bronze_greatsword)item(kubejs:black_bronze_greatsword)item(kubejs:wrought_iron_greatsword)item(kubejs:steel_greatsword)item(kubejs:black_steel_greatsword)item(kubejs:blue_steel_greatsword)item(kubejs:red_steel_greatsword))"
+					}
+				}
+				title: "制作一把大剑"
 				type: "item"
 			}]
+			title: "武器类型：大剑"
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "56C7A384B5BADC4D"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "2C6BA88227E2B8EF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_dagger)item(kubejs:bronze_dagger)item(kubejs:bismuth_bronze_dagger)item(kubejs:black_bronze_dagger)item(kubejs:wrought_iron_dagger)item(kubejs:steel_dagger)item(kubejs:black_steel_dagger)item(kubejs:blue_steel_dagger)item(kubejs:red_steel_dagger))"
+					}
+				}
+				title: "制作一把匕首"
+				type: "item"
+			}]
+			title: "武器类型：匕首"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_tomahawk"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "750A70062E2FCFED"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_tomahawk"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "351DBBA7365356E3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_tomahawk)item(kubejs:bronze_tomahawk)item(kubejs:bismuth_bronze_tomahawk)item(kubejs:black_bronze_tomahawk)item(kubejs:wrought_iron_tomahawk)item(kubejs:steel_tomahawk)item(kubejs:black_steel_tomahawk)item(kubejs:blue_steel_tomahawk)item(kubejs:red_steel_tomahawk))"
+					}
+				}
+				title: "制作一把投斧"
+				type: "item"
+			}]
+			title: "武器类型：投斧"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_throwing_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0167EF953F12AEE3"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_throwing_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3235AE3D588F43DE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_throwing_knife)item(kubejs:bronze_throwing_knife)item(kubejs:bismuth_bronze_throwing_knife)item(kubejs:black_bronze_throwing_knife)item(kubejs:wrought_iron_throwing_knife)item(kubejs:steel_throwing_knife)item(kubejs:black_steel_throwing_knife)item(kubejs:blue_steel_throwing_knife)item(kubejs:red_steel_throwing_knife))"
+					}
+				}
+				title: "制作一把飞刀"
+				type: "item"
+			}]
+			title: "武器类型：飞刀"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_longsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5828E70C6CA3772F"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_longsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3914A055EBE7B621"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_longsword)item(kubejs:bronze_longsword)item(kubejs:bismuth_bronze_longsword)item(kubejs:black_bronze_longsword)item(kubejs:wrought_iron_longsword)item(kubejs:steel_longsword)item(kubejs:black_steel_longsword)item(kubejs:blue_steel_longsword)item(kubejs:red_steel_longsword))"
+					}
+				}
+				title: "制作一把长刀"
+				type: "item"
+			}]
+			title: "武器类型：长刀"
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_saber"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "719081A06117ECF9"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "52EA878E28FBCEEF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_saber)item(kubejs:bronze_saber)item(kubejs:bismuth_bronze_saber)item(kubejs:black_bronze_saber)item(kubejs:wrought_iron_saber)item(kubejs:steel_saber)item(kubejs:black_steel_saber)item(kubejs:blue_steel_saber)item(kubejs:red_steel_saber))"
+					}
+				}
+				title: "制作一把军刀"
+				type: "item"
+			}]
+			title: "武器类型：军刀"
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_halberd"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "092D3381ED59C2FC"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_halberd"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "553D366F86F7A514"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_halberd)item(kubejs:bronze_halberd)item(kubejs:bismuth_bronze_halberd)item(kubejs:black_bronze_halberd)item(kubejs:wrought_iron_halberd)item(kubejs:steel_halberd)item(kubejs:black_steel_halberd)item(kubejs:blue_steel_halberd)item(kubejs:red_steel_halberd))"
+					}
+				}
+				title: "制作一把战戟"
+				type: "item"
+			}]
+			title: "武器类型：戟"
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_rapier"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6691362A057566EF"
+			ignore_reward_blocking: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_rapier"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "419F83E9EFE45AEC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_rapier)item(kubejs:bronze_rapier)item(kubejs:bismuth_bronze_rapier)item(kubejs:black_bronze_rapier)item(kubejs:wrought_iron_rapier)item(kubejs:steel_rapier)item(kubejs:black_steel_rapier)item(kubejs:blue_steel_rapier)item(kubejs:red_steel_rapier))"
+					}
+				}
+				title: "制作一把迅捷细剑"
+				type: "item"
+			}]
+			title: "武器类型：迅捷剑"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_warhammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BA7885FA291E37E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_warhammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "114D2FA97514027B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_warhammer)item(kubejs:bronze_warhammer)item(kubejs:bismuth_bronze_warhammer)item(kubejs:black_bronze_warhammer)item(kubejs:wrought_iron_warhammer)item(kubejs:steel_warhammer)item(kubejs:black_steel_warhammer)item(kubejs:blue_steel_warhammer)item(kubejs:red_steel_warhammer))"
+					}
+				}
+				title: "制作一把穿甲锤"
+				type: "item"
+			}]
+			title: "武器类型：穿甲锤"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "56C7A384B5BADC4D"
-			tasks: [{
-				id: "35D5B415FDAA51E1"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_dagger"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "750A70062E2FCFED"
-			tasks: [{
-				id: "5AAD42F5BFE71FBE"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_tomahawk"
-					tag: {
-						AmmoUsed: 0
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "0167EF953F12AEE3"
-			tasks: [{
-				id: "13AB16F8A2B2932A"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_throwing_knife"
-					tag: {
-						AmmoUsed: 0
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "5828E70C6CA3772F"
-			tasks: [{
-				id: "677942A44127A8D3"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_longsword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -1.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "719081A06117ECF9"
-			tasks: [{
-				id: "4BCAE0331E09C721"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_saber"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "092D3381ED59C2FC"
-			tasks: [{
-				id: "6D6CC7C7AB425E97"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_halberd"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 0.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "6691362A057566EF"
-			tasks: [{
-				id: "44B0B1314D310032"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_rapier"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["4DA79A2BB466C9B4"]
-			id: "4BA7885FA291E37E"
-			tasks: [{
-				id: "411A51C4FD65B7E0"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_warhammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["4DA79A2BB466C9B4"]
 			id: "2546589506380CC8"
+			optional: true
 			tasks: [{
-				id: "159730F3B57DAE2B"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_flanged_mace"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4DA79A2BB466C9B4"]
-			id: "7BBA77BBEA699212"
-			tasks: [{
-				id: "309AAB7458C83691"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_quarterstaff"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "5F5ECE09C1DDB344"
-			tasks: [{
-				id: "14C4B9C9A1278C43"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_battleaxe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 1.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6B36071A17B179D5"]
-			id: "6B4B42A8EAEE6C19"
-			tasks: [{
-				id: "6D389CDB2AB667E1"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_glaive"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -0.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "5A8BA36BF04DEBFE"
-			tasks: [{
-				id: "066D1495F59AB56F"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_lance"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 7.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "42C490F442425AC2"
-			tasks: [{
-				id: "0BDF6D29AAC385EF"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_spear"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "2ADCD90B65B9BFD8"
-			tasks: [{
-				id: "083AAE48CBC399F7"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_javelin"
-					tag: {
-						AmmoUsed: 0
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0DA1E7DE85A0F39D"]
-			id: "40C5748AD346560E"
-			tasks: [{
-				id: "3B32CB78F6A55872"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_pike"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4DA79A2BB466C9B4"]
-			id: "3FBA992B15ADEBD1"
-			tasks: [{
-				id: "0A945B0778A5C6BF"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_battle_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["4DA79A2BB466C9B4"]
-			id: "38F9FF588C994C0C"
-			tasks: [{
-				id: "50D7EE5E0FDF8F31"
-				item: {
-					Count: 1
-					id: "spartanweaponry:copper_boomerang"
-					tag: {
-						AmmoUsed: 0
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["4DA79A2BB466C9B4"]
-			id: "7B7DB29269859589"
-			tasks: [{
-				id: "160E40DF846EF533"
-				item: {
+				icon: {
 					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
@@ -445,18 +519,491 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/mace/copper"
+					id: "kubejs:wrought_iron_flanged_mace"
 					tag: {
 						Damage: 0
 					}
 				}
+				id: "159730F3B57DAE2B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_warhammer)item(kubejs:bronze_warhammer)item(kubejs:bismuth_bronze_warhammer)item(kubejs:black_bronze_warhammer)item(kubejs:wrought_iron_warhammer)item(kubejs:steel_warhammer)item(kubejs:black_steel_warhammer)item(kubejs:blue_steel_warhammer)item(kubejs:red_steel_warhammer))"
+					}
+				}
+				title: "制作一把页锤"
 				type: "item"
 			}]
-			x: -6.0d
+			title: "武器类型：页锤"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_quarterstaff"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7BBA77BBEA699212"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_quarterstaff"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "309AAB7458C83691"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_quarterstaff)item(kubejs:bronze_quarterstaff)item(kubejs:bismuth_bronze_quarterstaff)item(kubejs:black_bronze_quarterstaff)item(kubejs:wrought_iron_quarterstaff)item(kubejs:steel_quarterstaff)item(kubejs:black_steel_quarterstaff)item(kubejs:blue_steel_quarterstaff)item(kubejs:red_steel_quarterstaff))"
+					}
+				}
+				title: "制作长棍"
+				type: "item"
+			}]
+			title: "武器类型：长棍"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_battleaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5F5ECE09C1DDB344"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "73363BFDD35F467D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_battleaxe)item(kubejs:bronze_battleaxe)item(kubejs:bismuth_bronze_battleaxe)item(kubejs:black_bronze_battleaxe)item(kubejs:wrought_iron_battleaxe)item(kubejs:steel_battleaxe)item(kubejs:black_steel_battleaxe)item(kubejs:blue_steel_battleaxe)item(kubejs:red_steel_battleaxe))"
+					}
+				}
+				title: "制作一把战斧"
+				type: "item"
+			}]
+			title: "武器类型：双面战斧"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_glaive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B4B42A8EAEE6C19"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_glaive"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4A820C1A0651EB06"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_glaive)item(kubejs:bronze_glaive)item(kubejs:bismuth_bronze_glaive)item(kubejs:black_bronze_glaive)item(kubejs:wrought_iron_glaive)item(kubejs:steel_glaive)item(kubejs:black_steel_glaive)item(kubejs:blue_steel_glaive)item(kubejs:red_steel_glaive))"
+					}
+				}
+				title: "制作一把薙刀"
+				type: "item"
+			}]
+			title: "武器类型：薙刀"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_lance"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5A8BA36BF04DEBFE"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_lance"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "455A76DB3BB3F3D7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_lance)item(kubejs:bronze_lance)item(kubejs:bismuth_bronze_lance)item(kubejs:black_bronze_lance)item(kubejs:wrought_iron_lance)item(kubejs:steel_lance)item(kubejs:black_steel_lance)item(kubejs:blue_steel_lance)item(kubejs:red_steel_lance))"
+					}
+				}
+				title: "制作一把骑枪"
+				type: "item"
+			}]
+			title: "武器类型：骑枪"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_spear"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "42C490F442425AC2"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3A5045B4281C8E7D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_spear)item(kubejs:bronze_spear)item(kubejs:bismuth_bronze_spear)item(kubejs:black_bronze_spear)item(kubejs:wrought_iron_spear)item(kubejs:steel_spear)item(kubejs:black_steel_spear)item(kubejs:blue_steel_spear)item(kubejs:red_steel_spear))"
+					}
+				}
+				title: "制作一把矛"
+				type: "item"
+			}]
+			title: "武器类型：单手矛"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_javelin"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2ADCD90B65B9BFD8"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_javelin"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "55B5BADE233EE499"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_javelin)item(kubejs:bronze_javelin)item(kubejs:bismuth_bronze_javelin)item(kubejs:black_bronze_javelin)item(kubejs:wrought_iron_javelin)item(kubejs:steel_javelin)item(kubejs:black_steel_javelin)item(kubejs:blue_steel_javelin)item(kubejs:red_steel_javelin))"
+					}
+				}
+				title: "制作一对标枪"
+				type: "item"
+			}]
+			title: "武器类型：多重标枪"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_pike"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "40C5748AD346560E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_pike"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4A252BB402F0CD72"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_pike)item(kubejs:bronze_pike)item(kubejs:bismuth_bronze_pike)item(kubejs:black_bronze_pike)item(kubejs:wrought_iron_pike)item(kubejs:steel_pike)item(kubejs:black_steel_pike)item(kubejs:blue_steel_pike)item(kubejs:red_steel_pike))"
+					}
+				}
+				title: "制作一把长矛"
+				type: "item"
+			}]
+			title: "武器类型：长矛"
+			x: 7.0d
 			y: -1.0d
 		}
 		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_battle_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3FBA992B15ADEBD1"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_battle_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5B5833908184125B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_battle_hammer)item(kubejs:bronze_battle_hammer)item(kubejs:bismuth_bronze_battle_hammer)item(kubejs:black_bronze_battle_hammer)item(kubejs:wrought_iron_battle_hammer)item(kubejs:steel_battle_hammer)item(kubejs:black_steel_battle_hammer)item(kubejs:blue_steel_battle_hammer)item(kubejs:red_steel_battle_hammer))"
+					}
+				}
+				title: "制作大战锤"
+				type: "item"
+			}]
+			title: "武器类型：战锤"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_boomerang"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "38F9FF588C994C0C"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_boomerang"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "1C22E9AADA3888ED"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_boomerang)item(kubejs:bronze_boomerang)item(kubejs:bismuth_bronze_boomerang)item(kubejs:black_bronze_boomerang)item(kubejs:wrought_iron_boomerang)item(kubejs:steel_boomerang)item(kubejs:black_steel_boomerang)item(kubejs:blue_steel_boomerang)item(kubejs:red_steel_boomerang))"
+					}
+				}
+				title: "制作回旋镖"
+				type: "item"
+			}]
+			title: "武器类型：回旋镖"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/mace/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7B7DB29269859589"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/mace/wrought_iron"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "160E40DF846EF533"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:maces)"
+					}
+				}
+				title: "制作一把狼牙棒"
+				type: "item"
+			}]
+			title: "武器类型：狼牙棒"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
 			dependencies: ["09EEA60B10948B0E"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/chisel/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7062EADD4F67C38E"
 			tasks: [
 				{
@@ -528,6 +1075,7 @@
 					type: "item"
 				}
 			]
+			title: "作为工具"
 			x: -2.0d
 			y: 1.0d
 		}
@@ -550,10 +1098,24 @@
 		}
 		{
 			dependencies: ["09EEA60B10948B0E"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/shield/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "33B34F6D9DD02476"
 			tasks: [{
-				id: "7FE65CF0EA39896A"
-				item: {
+				advancement: "tfc:story/shield"
+				criterion: ""
+				icon: {
 					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
@@ -561,13 +1123,16 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/shield/copper"
+					id: "tfc:metal/shield/wrought_iron"
 					tag: {
 						Damage: 0
 					}
 				}
-				type: "item"
+				id: "5034C74396AE1F8B"
+				title: "制作一面盾牌"
+				type: "advancement"
 			}]
+			title: "防护手段"
 			x: 2.0d
 			y: 1.0d
 		}
@@ -675,6 +1240,19 @@
 			description: ["如果你真的害怕受伤、那我觉得一副盔甲的确是重中之重"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/helmet/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "65C1803A10147342"
 			rewards: [{
 				id: "4CFA18E2050E2C6E"
@@ -682,159 +1260,258 @@
 				xp: 20
 			}]
 			subtitle: "硬邦邦"
-			tasks: [
-				{
-					id: "247D5372BEAEC83E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-							"lhmiracleroad:punishment_cap": {
-								attribute: {
-									heavy: {
-										Amount: 2.5d
-										Name: ""
-										Operation: 0
-										UUID: [I;
-											-1269524484
-											-1573041290
-											-1205947975
-											-464648384
-										]
-									}
-								}
-								heavy: 2.5d
-								recordPunishmentAttributeModifier: { }
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/helmet/copper"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "03FC3674B5827D35"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-							"lhmiracleroad:punishment_cap": {
-								attribute: {
-									heavy: {
-										Amount: 10.0d
-										Name: ""
-										Operation: 0
-										UUID: [I;
-											-1551215370
-											2044611715
-											-1296127862
-											-30156288
-										]
-									}
-								}
-								heavy: 10.0d
-								recordPunishmentAttributeModifier: { }
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/chestplate/copper"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "67BDC57B208CFA9F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-							"lhmiracleroad:punishment_cap": {
-								attribute: {
-									heavy: {
-										Amount: 7.5d
-										Name: ""
-										Operation: 0
-										UUID: [I;
-											684676487
-											1946960893
-											-1546837186
-											-385600270
-										]
-									}
-								}
-								heavy: 7.5d
-								recordPunishmentAttributeModifier: { }
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/greaves/copper"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "62206B0D4C8B5554"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-							"lhmiracleroad:punishment_cap": {
-								attribute: {
-									heavy: {
-										Amount: 2.5d
-										Name: ""
-										Operation: 0
-										UUID: [I;
-											-273856346
-											-1430239784
-											-1736269896
-											561622096
-										]
-									}
-								}
-								heavy: 2.5d
-								recordPunishmentAttributeModifier: { }
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/boots/copper"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
 			title: "&e真正的防护"
 			x: 3.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/javelin/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1AB4B88DE07CD0A2"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/javelin/wrought_iron"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "74EB2E70467BD07C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:javelins)"
+					}
+				}
+				title: "制作单根标枪"
+				type: "item"
+			}]
+			title: "武器类型：标枪"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/sword/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22D946C002021CA7"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/sword/wrought_iron"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "675CE5DFEE452912"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:swords)"
+					}
+				}
+				title: "制作一把剑"
+				type: "item"
+			}]
+			title: "武器类型：剑"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_katana"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "157AB930B9CD0AE9"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_katana"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0EF5409595D2014A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_katana)item(kubejs:bronze_katana)item(kubejs:bismuth_bronze_katana)item(kubejs:black_bronze_katana)item(kubejs:wrought_iron_katana)item(kubejs:steel_katana)item(kubejs:black_steel_katana)item(kubejs:blue_steel_katana)item(kubejs:red_steel_katana))"
+					}
+				}
+				title: "制作一把太刀"
+				type: "item"
+			}]
+			title: "武器类型：太刀"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0DA1E7DE85A0F39D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_parrying_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "211456A825E947C4"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_parrying_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5DDFAF5DFC247732"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_parrying_dagger)item(kubejs:bronze_parrying_dagger)item(kubejs:bismuth_bronze_parrying_dagger)item(kubejs:black_bronze_parrying_dagger)item(kubejs:wrought_iron_parrying_dagger)item(kubejs:steel_parrying_dagger)item(kubejs:black_steel_parrying_dagger)item(kubejs:blue_steel_parrying_dagger)item(kubejs:red_steel_parrying_dagger))"
+					}
+				}
+				title: "制作一把格挡匕首"
+				type: "item"
+			}]
+			title: "武器类型：格挡匕首"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4DA79A2BB466C9B4"]
+			id: "469DEFD306D6A53F"
+			tasks: [{
+				id: "348C72C1B4BAD8AB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "spartanweaponry:cestus"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "武器类型：拳套"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6B36071A17B179D5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:wrought_iron_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "37A4FF0BD82E029E"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:wrought_iron_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "21DBA2A585B930AD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_scythe)item(kubejs:bronze_scythe)item(kubejs:bismuth_bronze_scythe)item(kubejs:black_bronze_scythe)item(kubejs:wrought_iron_scythe)item(kubejs:steel_scythe)item(kubejs:black_steel_scythe)item(kubejs:blue_steel_scythe)item(kubejs:red_steel_scythe))"
+					}
+				}
+				title: "制作巨镰"
+				type: "item"
+			}]
+			title: "武器类型：巨镰"
+			x: -6.0d
+			y: -1.5d
 		}
 	]
 	title: "锻造大师"

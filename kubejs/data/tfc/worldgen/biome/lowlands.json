@@ -85,19 +85,8 @@
                 "weight": 2,
                 "minCount": 1,
                 "maxCount": 3
-            },
-            {
-                "type": "naturalist:hippo",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
-            },
-            {
-                "type": "naturalist:dragonfly",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
             }
+        
         ],
         "underground_water_creature": [
             {
@@ -238,7 +227,7 @@
             },
             {
                 "type": "alexsmobs:tiger",
-                "weight": 2,
+                "weight": 1,
                 "minCount": 1,
                 "maxCount": 1
             },

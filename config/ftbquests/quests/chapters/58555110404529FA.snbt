@@ -46,13 +46,6 @@
 			id: "6DC1C6F2B8122DF1"
 			rewards: [{
 				id: "79AD6B3ADFF895D5"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "tfc:field_guide"
-					}
-				}
 				type: "item"
 			}]
 			size: 2.0d
