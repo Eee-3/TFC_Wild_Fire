@@ -184,8 +184,93 @@
     },
     {
         "matchItems": [
-            "vinery:wine_bottle"
+            "butcher:polarbearfur"
         ],
-        "resultItems": "firmalife:volcanic_wine_bottle"
+        "resultItems": "textile:polar_bear_fur"
+    },
+    {
+        "matchItems": [
+            "butcher:wolffur",
+            "butcher:goatfur"
+        ],
+        "resultItems": "tfc:wool"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_uranium"
+        ],
+        "resultItems": "tfc_ie_addon:metal/sheet/uranium"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_lead"
+        ],
+        "resultItems": "tfc_ie_addon:metal/sheet/lead"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_electrum"
+        ],
+        "resultItems": "tfc_ie_addon:metal/sheet/electrum"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_aluminum"
+        ],
+        "resultItems": "tfc_ie_addon:metal/sheet/aluminum"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:bronze_rod"
+        ],
+        "resultItems": "tfc:metal/rod/bronze"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:zinc_rod"
+        ],
+        "resultItems": "tfc:metal/rod/zinc"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:steel_rod"
+        ],
+        "resultItems": "tfc:metal/rod/steel"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:nickel_rod"
+        ],
+        "resultItems": "tfc:metal/rod/nickel"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:rose_gold_rod"
+        ],
+        "resultItems": "tfc:metal/rod/rose_gold"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:tin_rod"
+        ],
+        "resultItems": "tfc:metal/rod/tin"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:aluminum_rod"
+        ],
+        "resultItems": "immersiveengineering:stick_aluminum"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:silver_rod"
+        ],
+        "resultItems": "tfc:metal/rod/silver"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:cast_iron_rod"
+        ],
+        "resultItems": "tfc:metal/rod/cast_iron"
     }
 ]

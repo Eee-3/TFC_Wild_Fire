@@ -1,0 +1,122 @@
+[
+    {
+        "matchItems": [
+            "minecraft:stone_sword"
+        ],
+        "resultItems": "tfc:stone/knife/igneous_extrusive"
+    },
+    {
+        "matchItems": [
+            "minecraft:stone_axe"
+        ],
+        "resultItems": "tfc:stone/axe/igneous_extrusive"
+    },
+    {
+        "matchItems": [
+            "minecraft:stone_pickaxe"
+        ],
+        "resultItems": "tfc:stone/hammer/igneous_extrusive"
+    },
+    {
+        "matchItems": [
+            "minecraft:stone_hoe"
+        ],
+        "resultItems": "tfc:stone/hoe/igneous_extrusive"
+    },
+    {
+        "matchItems": [
+            "minecraft:stone_shovel"
+        ],
+        "resultItems": "tfc:stone/shovel/igneous_extrusive"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_sword"
+        ],
+        "resultItems": "tfc:metal/sword/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_axe"
+        ],
+        "resultItems": "tfc:metal/axe/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_pickaxe"
+        ],
+        "resultItems": "tfc:metal/pickaxe/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_shovel"
+        ],
+        "resultItems": "tfc:metal/shovel/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_hoe"
+        ],
+        "resultItems": "tfc:metal/hoe/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_sword"
+        ],
+        "resultItems": "tfc:metal/sword/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_axe"
+        ],
+        "resultItems": "tfc:metal/axe/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_pickaxe"
+        ],
+        "resultItems": "tfc:metal/pickaxe/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_shovel"
+        ],
+        "resultItems": "tfc:metal/shovel/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_hoe"
+        ],
+        "resultItems": "tfc:metal/hoe/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_sword"
+        ],
+        "resultItems": "tfc:metal/sword/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_axe"
+        ],
+        "resultItems": "tfc:metal/axe/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_pickaxe"
+        ],
+        "resultItems": "tfc:metal/pickaxe/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_hoe"
+        ],
+        "resultItems": "tfc:metal/hoe/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:diamond_shovel"
+        ],
+        "resultItems": "tfc:metal/shovel/steel"
+    }
+]

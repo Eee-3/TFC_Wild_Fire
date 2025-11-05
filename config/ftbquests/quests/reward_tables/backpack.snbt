@@ -15,7 +15,7 @@
 		{ item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade", weight: 0.2f }
 		{ item: "sophisticatedbackpacks:tool_swapper_upgrade" }
 		{ item: "sophisticatedbackpacks:jukebox_upgrade" }
-		{ item: "sophisticatedbackpacks:stonecutter_upgrade" }
+		{ }
 		{ item: "sophisticatedbackpacks:everlasting_upgrade" }
 	]
 	title: "backpack"

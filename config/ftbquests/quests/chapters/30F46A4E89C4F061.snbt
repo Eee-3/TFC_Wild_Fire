@@ -431,13 +431,6 @@
 			subtitle: "每个星际公民必备的一本书"
 			tasks: [{
 				id: "24CAF83614B7C2B7"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "ad_astra:astrodux"
-					}
-				}
 				type: "item"
 			}]
 			x: 5.5d
@@ -606,16 +599,6 @@
 		{
 			dependencies: ["55A7A71E11F88C31"]
 			description: ["当营养值拉满时，你的血量上限大约会是2500左右，相当于原版的两管半血量。"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:food": {
-						creationDate: -9223372036854775808L
-						traits: [ ]
-					}
-				}
-				id: "bakery:vegetable_sandwich"
-			}
 			id: "26F27FD932580E54"
 			rewards: [
 				{

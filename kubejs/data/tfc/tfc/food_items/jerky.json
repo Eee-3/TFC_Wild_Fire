@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "brewinandchewin:jerky"
+  },
+  "decay_modifier": 0,
+  "hunger": 4,
+  "saturation": 0.1,
+  "protein": 0.5,
+  "water": -20
+}

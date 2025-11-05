@@ -1,0 +1,14 @@
+{
+  "type": "firmalife:smoking",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "firmalife:foods/raw_fish"
+      }
+    }
+  ],
+  "result": {
+    "item": "brewinandchewin:kippers"
+  }
+}
