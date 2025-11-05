@@ -21,7 +21,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-      "item": "minecraft:egg"
+      "tag": "forge:eggs"
       }
     },
     {
