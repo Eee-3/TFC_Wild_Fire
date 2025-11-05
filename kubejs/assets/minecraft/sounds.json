@@ -1,9 +1,0 @@
-{
-
-
-"custom.metal_pipe_close": { "category": "block", "attenuation_distance":16,"sounds": [ "custom/metal_pipe_close" ] },
-"custom.metal_pipe_far": { "category": "block", "attenuation_distance":16,"sounds": [ "custom/metal_pipe_far" ] }
-
-}
-
-

@@ -11,10 +11,11 @@ ServerEvents.recipes(event => {
 
   //搅拌
   create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
- /* create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
-  create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', 'tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
-  create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', Fluid.of('tfc:metal/unknown', 100)]).superheated()//下界合金碎片（金星
-*/
+   create.compacting('tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite','minecraft:clay_ball']).heated()//耐火粘土
+  /* create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
+   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', 'tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
+   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', Fluid.of('tfc:metal/unknown', 100)]).superheated()//下界合金碎片（金星
+ */
   //辊压
 
 
@@ -124,7 +125,7 @@ ServerEvents.recipes(event => {
 
         return;
       }
-      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch'|| cookmeat_id == 'tfc:stick_bunch') {
+      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
         return;
       }
 
@@ -258,20 +259,40 @@ ServerEvents.tags('minecraft:item', event => {
   event.remove("bsa:bindings/strong", '#forge:plant_fiber');
   event.remove("bsa:bindings/strong", '#forge:string');
   event.remove("bsa:bindings/strong", 'tfc:glue');
- 
+
 
   event.remove('bsa:bindings/weak', 'tfc:glue');
 
+  const bindings_weak = [
+    'tfc:straw',//干草
+    'tfc:plant/hanging_vines',//藤蔓
+    'tfc:plant/jungle_vines',//丛林藤蔓
+    'tfc:jute',//黄麻
+    'tfc:plant/ivy',//常春藤
+  ]
+  bindings_weak.forEach(week => {
+    event.remove('bsa:bindings/weak', `${week}`);
+    event.remove("bsa:bindings/medium", `${week}`);
+  })
 
-  event.add("bsa:bindings/medium", 'bsa:bindings/weak');//基础绳子
-  event.add("bsa:bindings/medium", 'minecraft:slime_ball');//合格粘液球
-  event.add("bsa:bindings/medium", 'minecraft:string');//合格，线
-  event.add("bsa:bindings/medium", 'tfc:glue');//合格
-  event.add("bsa:bindings/medium", 'tfc:wool_yarn');//合格
-  event.add("bsa:bindings/medium", 'animaltrap:twine');//合格
 
+  const bindings_medium = [
+
+    'minecraft:string',//线
+    'tfc:glue',//胶水
+    'tfc:wool_yarn',//羊毛线
+    'animaltrap:twine',//麻绳
+    'minecraft:slime_ball',//粘液球
+  ]
+  bindings_medium.forEach(medium => {
+    event.add("bsa:bindings/medium", `${medium}`);
+  })
+
+  event.add("bsa:bindings/medium", '#forge:wires')//电线绑定
+  event.add("bsa:bindings/weak", 'kubejs:straw_rope');//粗制草绳
   event.add("bsa:bindings/weak", 'htm:plant_string');//满耐久
   event.add("bsa:bindings/weak", '#forge:fiber_hemp');//满耐久
+
 
   event.add("bsa:bindings/strong", 'bsa:sinew_string');//完美
   event.add("bsa:bindings/strong", 'firmaciv:rope_coil');//完美

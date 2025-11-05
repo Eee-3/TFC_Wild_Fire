@@ -19,32 +19,44 @@ ServerEvents.recipes(event => {
     event.shaped('tfc:blast_furnace', ['aba', 'cdc', 'aea'], {
         a: 'tfc:metal/sheet/cast_iron', b: 'createmetallurgy:foundry_lid', c: 'tfc:metal/tuyere/wrought_iron', d: 'tfc:metal/bars/wrought_iron', e: 'tfc:crucible'
     }) //高炉
-        event.shaped('2x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
-        a: 'tfc:metal/sheet/steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'}) //轻型工程块
-        event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
-        a: 'tfc:metal/sheet/black_steel', b: 'kubejs:material_component_black_steel', c: 'create:precision_mechanism'}) //重型工程块
+    event.shaped('2x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
+        a: 'tfc:metal/sheet/steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'
+    }) //轻型工程块
+    event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
+        a: 'tfc:metal/sheet/black_steel', b: 'kubejs:material_component_black_steel', c: 'create:precision_mechanism'
+    }) //重型工程块
 
     event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
         a: 'tfc:brass_mechanisms',
         b: 'tfc:metal/double_sheet/brass',
         c: 'kubejs:brass_forge_door'
-    }).modifyResult((inputit, outputit) => {
-        let brassForgeDoors = brassForgeDoors.getOrCreateTag().getInt("tfc:forging_bonus");
-        for (let i = 0; i < brassForgeDoors; i++) {
-            if (!brassForgeDoors[i] > 3) {
+    }).modifyResult((inputit, outputit) => { //let brassForgeDoors = inputit.getOrCreateTag().getInt("tfc:forging_bonus");
+        const doors = inputit.findAll("kubejs:brass_forge_door");
+        for (let i = 0; i < doors.length; i++) {
+            if (!doors[i].hasNBT) { return "air" }
+            if (doors[i].getOrCreateTag().getInt("tfc:forging_bonus") < 3) {
                 return "air"
             }
         }
         return outputit
 
-        
+
     });
+    Item.of('tfc:metal/hammer_head/red_steel', '{"tfc:forging_bonus":3}')
 
 
+    event.shaped('kubejs:cast_iron_indenter', [' a ', 'aaa'], {
+        a: 'tfc:metal/double_ingot/cast_iron'
+    }) //铸铁压头合成
 
- event.shaped('kubejs:cast_iron_indenter', [' a ', 'aaa'], {
-        a: 'tfc:metal/double_ingot/cast_iron'}) //铸铁压头合成
+    /*event.shaped('minecraft:prismarine_shard', ['aaa', 'aab', ' aa'], {
+        a: {
+            "type": "tfc:heatable",
+            "min_temp": 120,
+            "ingredient": { "item": "tfc:ore/normal_hematite" }
 
+        }, b: '#tfc:knives'
+    }).damageIngredient({ tag: '#tfc:knives' }, 20)//测试*/
 
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'tfc:wood/log/oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'afc:wood/log/ancient_oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  古代
@@ -127,7 +139,7 @@ ServerEvents.recipes(event => {
 
 
 
-    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'aca', 'ddd'], { a: '#c:string', b: 'tfc:metal/double_sheet/wrought_iron', c: 'backpacked_tfc:backpack', d: '#forge:leather' })//背包合成困难
+    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'aca', 'ddd'], { a: '#bsa:bindings/strong', b: 'tfc:metal/double_sheet/wrought_iron', c: 'backpacked_tfc:backpack', d: '#forge:leather' })//背包合成困难
 
     //event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
 
@@ -142,7 +154,7 @@ ServerEvents.recipes(event => {
     event.replaceOutput({}, 'create_power_loader:empty_brass_chunk_loader', 'create_power_loader:brass_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_brass_chunk_loader” 替换为 “create_power_loader:brass_chunk_loader”
     event.replaceInput({ id: 'create:crafting/kinetics/super_glue' }, 'minecraft:slime_ball', '#forge:glue') //强力胶
     event.replaceInput({ id: 'create:crafting/materials/sand_paper' }, 'minecraft:sand', '#forge:sand')//砂纸
-event.replaceInput({ input: 'firmalife:food/bacon' },'firmalife:food/bacon', 'farmersdelight:bacon')//培根替换
+    event.replaceInput({ input: 'firmalife:food/bacon' }, 'firmalife:food/bacon', 'farmersdelight:bacon')//培根替换
     event.replaceInput({ input: 'immersiveengineering:plate_steel' }, 'immersiveengineering:plate_steel', 'tfc:metal/sheet/steel') // 将配方中钢板换成钢薄板
 
 
@@ -161,12 +173,12 @@ event.replaceInput({ input: 'firmalife:food/bacon' },'firmalife:food/bacon', 'fa
     //  event.shapeless(Item.of('vinery:cherry_sapling'),['tfc:plant/cherry_sapling'])//樱桃树苗
     event.shapeless(Item.of('minecraft:amethyst_shard'), ['tfc:gem/amethyst'])//紫水晶
 
-       event.shapeless(Item.of('kubejs:unfired_mold_simple_key', 1), [//合成简易钥匙模具
-      'kubejs:old_key',
-      "minecraft:clay"
+    event.shapeless(Item.of('kubejs:unfired_mold_simple_key', 1), [//合成简易钥匙模具
+        'kubejs:old_key',
+        "minecraft:clay"
     ])
-      //.replaceIngredient({ item:'kubejs:old_key', }, 'kubejs:old_key',)//这是不消耗钥匙
-    
+    //.replaceIngredient({ item:'kubejs:old_key', }, 'kubejs:old_key',)//这是不消耗钥匙
+
 
 
     //有序配方
