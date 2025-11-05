@@ -8,10 +8,10 @@
   "fermentingtime": 19200,
   "ingredients": [
     {
-      "item": "brewery:hops"
+      "item": "tfc:food/oat_grain"
     },
     {
-      "item": "brewery:hops"
+      "item": "tfc:food/oat_flour"
     },
     {
       "item": "brewery:hops"
@@ -20,7 +20,7 @@
   "recipe_book_tab": "drinks",
   "result": {
     "count": 1000,
-    "fluid": "kubejs:beer_hops"
+    "fluid": "kubejs:beer_oat"
   },
   "temperature": 3
 }

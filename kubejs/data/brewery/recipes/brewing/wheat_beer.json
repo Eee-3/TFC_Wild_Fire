@@ -1,30 +1,26 @@
 {
-  "type": "drinkbeer:brewing",
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "minecraft:water"
+  },
+  "experience": 1.0,
+  "fermentingtime": 19200,
   "ingredients": [
     {
-      "item": "brewery:dried_wheat"
+      "item": "tfc:food/maize_grain"
     },
     {
-      "item": "brewery:dried_wheat"
+      "item": "tfc:food/maize"
     },
     {
-      "item": "brewery:dried_wheat"
-    },
-    {
-      "type": "tfc:fluid_item",
-      "fluid_ingredient": {
-        "ingredient": "minecraft:water",
-        "amount": 100
-      }
+      "item": "brewery:hops"
     }
   ],
-  "cup": {
-    "item": "brewery:beer_mug",
-    "count": 4
-  },
-  "brewing_time": 72000,
+  "recipe_book_tab": "drinks",
   "result": {
-    "item": "brewery:beer_wheat",
-    "count": 4
-  }
+    "count": 1000,
+    "fluid": "kubejs:beer_maize"
+  },
+  "temperature": 3
 }

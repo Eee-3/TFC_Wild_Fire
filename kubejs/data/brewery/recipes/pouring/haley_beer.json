@@ -1,0 +1,14 @@
+{
+  "type": "brewinandchewin:keg_pouring",
+  "amount": 250,
+  "container": {
+    "item": "brewinandchewin:tankard"
+  },
+  "filling": true,
+  "filling": true,
+  "fluid": "kubejs:beer_haley",
+  "output": {
+    "item": "brewery:beer_haley"
+  },
+  "strict": false
+}
