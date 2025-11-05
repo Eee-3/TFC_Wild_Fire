@@ -23,7 +23,7 @@ StartupEvents.registry('item', event => {
   event.create('burnt_food_residue', 'basic').texture('kubejs:item/burnt_food_residue');// 注册烧焦的食物残渣
 
   event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
-  event.create('straw_rope', 'basic').texture('kubejs:item/straw_rope');   // 注册草绳
+  //event.create('straw_rope', 'basic').texture('kubejs:item/straw_rope');   // 注册草绳
 
 
 

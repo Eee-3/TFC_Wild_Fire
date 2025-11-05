@@ -61,8 +61,9 @@ ServerEvents.recipes(e => {
     "create:item_application/andesite_casing_from_wood",
     "woodencog:rock_knapping/andesite_alloy",
     "woodencog:rock_knapping/andesite_alloy_deploying",
-    "firmalife:crafting/bacon",
-    "design_decor:mechanical_crafting/enchanted_golden_apple"
+   // "firmalife:crafting/bacon",
+    "design_decor:mechanical_crafting/enchanted_golden_apple",
+    "create_new_age:enchanted_golden_apple"
 
 
 
@@ -300,37 +301,6 @@ ServerEvents.recipes(e => {
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
-  e.remove({ id: 'create_sa:blazing_axe_recipe' }) // 移除"炽热斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_pickaxe_recipe' }) // 移除"炽热镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_shovel_recipe' }) // 移除"炽热铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_sword_recipe' }) // 移除"炽热剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_axe_recipe' }) // 移除"黄铜斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_pickaxe_recipe' }) // 移除"黄铜镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_shovel_recipe' }) // 移除"黄铜铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_sword_recipe' }) // 移除"黄铜剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_hoe_recipe' }) // 移除"黄铜锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_helmet_recipe' }) // 移除"黄铜头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_chestplate_recipe' }) // 移除"黄铜胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_leggings_recipe' }) // 移除"黄铜 leggings（护腿）"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_boots_recipe' }) // 移除"黄铜靴子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_axe_recipe' }) // 移除"铜斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_pickaxe_recipe' }) // 移除"铜镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_shovel_recipe' }) // 移除"铜铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_sword_recipe' }) // 移除"铜剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_hoe_recipe' }) // 移除"铜锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_helmet_recipe' }) // 移除"铜头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_chestplate_recipe' }) // 移除"铜胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_leggings_recipe' }) // 移除"铜护腿"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_boots_recipe' }) // 移除"铜靴子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_axe_recipe' }) // 移除"锌斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_pickaxe_recipe' }) // 移除"锌镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_shovel_recipe' }) // 移除"锌铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_sword_recipe' }) // 移除"锌剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_hoe_recipe' }) // 移除"锌锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_helmet_recipe' }) // 移除"锌头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_chestplate_recipe' }) // 移除"锌胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_leggings_recipe' }) // 移除"锌护腿"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_boots_recipe' }) // 移除"锌靴子"的合成配方-create_sa
   e.remove({ id: 'createaddition:fiiling/chocolate_cake' }) // 移除"巧克力蛋糕"的填充配方-createaddition
   e.remove({ id: 'createaddition:fiiling/cake' }) // 移除"蛋糕"的填充配方-createaddition
   e.remove({ id: 'createaddition:fiiling/honey_cake' }) // 移除"蜂蜜蛋糕"的填充配方-createaddition
@@ -415,7 +385,6 @@ ServerEvents.recipes(e => {
   e.remove({ output: 'vintageimprovements:cast_iron_sheet' })//移除锻铁板
   e.remove('htm:compat/tfc/rock_knapping/hammer_head')//移处锤子
   e.remove('tfc:welding/cast_iron_double_ingot')
-  e.remove('tfc:heating/kaolin_clay')
   e.remove('crafttweaker:backpack')
   e.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' })//移除烈焰人燃烧室
   e.remove({ id: 'vinery:bamboo_lattice' })//删除竹格

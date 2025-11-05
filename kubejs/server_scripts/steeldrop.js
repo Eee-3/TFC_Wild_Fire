@@ -6,7 +6,8 @@ ServerEvents.tick(e => {
             let itemEntity = entity
             if (itemEntity.item.is("tfc:metal/rod/steel")) {
                 if (entity.onGround() && entity.yOld != entity.y) {
-                    entity.playSound("custom.metal_pipe_close")
+                    entity.playSound("tfc:block.anvil.hit")
+               
                 }
             }
         }

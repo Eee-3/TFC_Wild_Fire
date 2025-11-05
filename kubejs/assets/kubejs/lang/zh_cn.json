@@ -639,8 +639,9 @@
   "more_attributes.class.crash_landed_refugees_merchants": "商人",
   "more_attributes.class.crash_landed_refugees_prisoners": "囚徒",
   "more_attributes.class.crash_landed_refugees_researchers": "科研人员",
-  "more_attributes.class.description.test": "牢王727,饿的时候增加的耐性更多1",
-  "more_attributes.class.test": "测试职业",
+  "more_attributes.class.description.test1": "牢王727,饿的时候增加的耐性更多1",
+  "more_attributes.class.test1": "牢王",
+ 
   "more_attributes.class.worthless_people": "无用之人",
   "tooltip.kubejs.hold_ctrl": "§r§8按住 [§r§rCtrl§8] 查看信息§r",
   "tooltip.kubejs.hold_ctrl_to_see_more_info": "§r§8按住 [§r§7Ctrl§r§8] 查看信息§r",
