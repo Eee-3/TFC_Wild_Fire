@@ -1,0 +1,44 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "kubejs:cheese"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:vegetables/beetroot"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:tomato_sauce"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:pasta/raw_pasta"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:foods/raw_meats"
+      }
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "brewinandchewin:horror_lasagna"
+  }
+}

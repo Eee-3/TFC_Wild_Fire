@@ -197,12 +197,6 @@
     },
     {
         "matchItems": [
-            "tfc:food/rice_grain"
-        ],
-        "resultItems": "farmersdelight:rice"
-    },
-    {
-        "matchItems": [
             "minecraft:glass_bottle"
         ],
         "resultItems": "tfc:silica_glass_bottle"

@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:pie_crust"
+      }
+    },
+    "b": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:cooked_bacon"
+      }
+    },
+    "c":     {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "kubejs:cheese"
+      }
+    },
+    "e": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "minecraft:egg"
+      }
+    },
+    "l": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:cabbage_leaf"
+      }
+    },
+    "m": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "tfc:milks"
+        },
+        "amount": 100
+      }
+    }
+  },
+  "pattern": [
+    "blb",
+    "mcm",
+    "eCe"
+  ],
+  "result": {
+    "item": "brewinandchewin:quiche"
+  },
+  "show_notification": true
+}

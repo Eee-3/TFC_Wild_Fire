@@ -1,0 +1,11 @@
+{
+  "ingredient": {
+    "item": "brewinandchewin:creamy_onion_soup"
+  },
+  "hunger": 15,
+  "saturation": 3,
+  "decay_modifier": 1.45,
+  "grain": 1.5,
+  "vegetables": 1.5,
+  "dairy": 1.5
+}

@@ -1,0 +1,10 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "brewinandchewin:red_rum"
+  },
+  "decay_modifier": 0,
+  "water": 20,
+  "fruit": 0.5,
+  "vegetable": 0.5
+}

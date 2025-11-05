@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "brewinandchewin:horror_lasagna"
+  },
+  "hunger": 30,
+  "saturation": 3,
+  "decay_modifier": 1.3,
+  "vegetables": 1,
+  "protein": 1,
+  "grain": 2,
+  "dairy": 2
+}

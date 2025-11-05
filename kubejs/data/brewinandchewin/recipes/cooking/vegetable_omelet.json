@@ -1,0 +1,44 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "kubejs:cheese"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:eggs"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:eggs"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:vegetables/onion"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "forge:vegetables/carrot"
+      }
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "brewinandchewin:vegetable_omelet"
+  }
+}

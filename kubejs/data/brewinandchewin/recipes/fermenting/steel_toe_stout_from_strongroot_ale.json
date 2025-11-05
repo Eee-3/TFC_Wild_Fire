@@ -1,0 +1,29 @@
+{
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "brewinandchewin:strongroot_ale"
+  },
+  "experience": 1.0,
+  "fermentingtime": 9600,
+  "ingredients": [
+    {
+      "item": "tfc:powder/hematite"
+    },
+    {
+      "item": "tfc:food/garlic"
+    },
+    {
+      "item": "tfc:food/potato"
+    },
+    {
+      "item": "tfc:food/rye_grain"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1000,
+    "fluid": "brewinandchewin:steel_toe_stout"
+  },
+  "temperature": 1
+}
