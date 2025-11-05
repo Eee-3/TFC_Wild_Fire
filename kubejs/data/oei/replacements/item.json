@@ -272,5 +272,11 @@
             "vintageimprovements:cast_iron_rod"
         ],
         "resultItems": "tfc:metal/rod/cast_iron"
+    },
+    {
+        "matchItems": [
+            "illagerinvasion:platinum_infused_hatchet"
+        ],
+        "resultItems": "kubejs:bronze_tomahawk"
     }
 ]
