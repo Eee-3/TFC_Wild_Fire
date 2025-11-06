@@ -300,7 +300,7 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
   e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
   e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
-  e.remove({ mod: 'totemic' }) // 移除图腾全部配方 
+  e.remove({ mod:'vc_gliders' }) // 移除图腾全部配方 
 
 
 

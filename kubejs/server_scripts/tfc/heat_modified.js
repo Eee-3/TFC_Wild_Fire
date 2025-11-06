@@ -5,7 +5,7 @@ TFCEvents.data(e => {
   //矿物融化
   e.itemHeat('#tfc:ore_pieces', 0.7, null, null)
   //空烈焰人燃烧室加热合成烈焰人燃烧室
-  e.itemHeat('create:empty_blaze_burner', 0.7, null, null)
+  //e.itemHeat('create:empty_blaze_burner', 0.7, null, null)
   //海带加热
   e.itemHeat('tfc:plant/leafy_kelp', 1, null, null)
   e.itemHeat('tfc:plant/winged_kelp', 1, null, null)
@@ -30,5 +30,7 @@ TFCEvents.data(e => {
   e.itemHeat('minecraft:anvil', 1, null, null)
   e.itemHeat('minecraft:chipped_anvil', 1, null, null)
   e.itemHeat('minecraft:damaged_anvil', 1, null, null)
+  e.itemHeat('@vintageimprovements', 1, null, null)
+  e.itemHeat('#forge:rods/all_metal', 1, null, null)
 
 })
