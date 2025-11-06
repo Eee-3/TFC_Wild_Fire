@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id_in= "kubejs:reciped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
@@ -74,6 +75,9 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  无花果
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/rubber_fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  古代无花果
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/ancient_fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  橡皮树
+   
+    event.shapeless('2x kubejs:vellum', ['#tfc:knives', 'tfc:treated_hide']).damageIngredient({ tag: '#tfc:knives' }, 5).id(`${id_in}vellum`)//兽皮纸
+
 
 
 

@@ -26,6 +26,10 @@ StartupEvents.registry('item', event => {
     event.create('mold_simple_key', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_simple_key')//简易钥匙模具
     event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key')//没烧的简易钥匙模具
 
+    event.create('aerospace_suit_fabric', 'basic').texture('kubejs:item/ad/aerospace_suit_fabric')//ad航空服布料
+    event.create('netherite_reinforcement_plate', 'basic').texture('kubejs:item/ad/netherite_reinforcement_plate')//ad下界合金强化片
+    event.create('heat-resistant_reinforcement_plate', 'basic').texture('kubejs:item/ad/heat-resistant_reinforcement_plate')//ad耐热强化片
+    event.create('vellum', 'basic').texture('kubejs:item/vellum')//兽皮纸
 
     // 快烧好的弓臂
 

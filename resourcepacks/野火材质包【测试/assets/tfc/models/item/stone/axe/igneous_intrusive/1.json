@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/stone/axe/igneous_intrusive/1"
+    }
+}
