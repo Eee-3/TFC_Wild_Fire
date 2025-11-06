@@ -1,30 +1,29 @@
 {
-  "type": "drinkbeer:brewing",
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "brewinandchewin:mead"
+  },
+  "experience": 1.0,
+  "fermentingtime": 25600,
   "ingredients": [
     {
       "item": "brewery:hops"
     },
     {
-      "item": "tfc:powder/ruby"
+      "item": "tfc:gem/ruby"
     },
     {
-      "item": "firmalife:raw_honey"
+      "item": "tfc:food/red_apple"
     },
     {
-      "type": "tfc:fluid_item",
-      "fluid_ingredient": {
-        "ingredient": "tfc:rum",
-        "amount": 100
-      }
+      "item": "irons_spellbooks:fire_ale"
     }
   ],
-  "cup": {
-    "item": "brewery:beer_mug",
-    "count": 4
-  },
-  "brewing_time": 144000,
+  "recipe_book_tab": "drinks",
   "result": {
-    "item": "brewery:beer_haley",
-    "count": 4
-  }
+    "count": 1000,
+    "fluid": "kubejs:beer_haley"
+  },
+  "temperature": 3
 }

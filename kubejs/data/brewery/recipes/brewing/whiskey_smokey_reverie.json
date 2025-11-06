@@ -8,19 +8,19 @@
   "fermentingtime": 19200,
   "ingredients": [
     {
-      "item": "brewery:hops"
+      "item": "tfc:food/maize_grain"
     },
     {
-      "item": "brewery:hops"
+      "item": "tfc:food/wheat_grain"
     },
     {
-      "item": "brewery:hops"
+      "item": "tfc:food/cherry"
     }
   ],
   "recipe_book_tab": "drinks",
   "result": {
     "count": 1000,
-    "fluid": "kubejs:beer_hops"
+    "fluid": "kubejs:whiskey_smokey_reverie"
   },
   "temperature": 3
 }

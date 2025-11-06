@@ -364,5 +364,17 @@
             "minecraft:sea_pickle"
         ],
         "resultItems": "tfc:sea_pickle"
+    },
+    {
+        "matchItems": [
+            "butcher:rawfoxmeat"
+        ],
+        "resultItems": "tfc:food/fox"
+    },
+    {
+        "matchItems": [
+            "butcher:foxmeat"
+        ],
+        "resultItems": "tfc:food/cooked_fox"
     }
 ]

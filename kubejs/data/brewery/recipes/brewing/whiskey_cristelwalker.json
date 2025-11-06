@@ -1,30 +1,26 @@
 {
-  "type": "drinkbeer:brewing",
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "kubejs:beer_oat"
+  },
+  "experience": 1.0,
+  "fermentingtime": 19200,
   "ingredients": [
     {
-      "tag": "loot:apples"
+      "item": "tfc:food/maize_grain"
     },
     {
-      "item": "brewery:dried_corn"
+      "item": "tfc:powder/sapphire"
     },
     {
-      "item": "brewery:dried_corn"
-    },
-    {
-      "type": "tfc:fluid_item",
-      "fluid_ingredient": {
-        "ingredient": "firmalife:yeast_starter",
-        "amount": 100
-      }
+      "tag": "forge:fruits/apple"
     }
   ],
-  "cup": {
-    "item": "brewery:beer_mug",
-    "count": 4
-  },
-  "brewing_time": 192000,
+  "recipe_book_tab": "drinks",
   "result": {
-    "item": "brewery:whiskey_cristelwalker",
-    "count": 4
-  }
+    "count": 1000,
+    "fluid": "kubejs:whiskey_cristelwalker"
+  },
+  "temperature": 3
 }
