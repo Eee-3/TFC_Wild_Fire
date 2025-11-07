@@ -40,7 +40,7 @@ PlayerEvents.tick(e =>{
   }
 })
 //肾上腺素
-let p = 1
+let p = 0.05
 let wait = 0
 PlayerEvents.loggedIn(e => {
   wait = 0

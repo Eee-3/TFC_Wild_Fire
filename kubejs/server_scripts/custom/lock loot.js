@@ -72,8 +72,7 @@ BlockEvents.rightClicked(e => {
       //无钥匙
       if (!allLockPick.includes(lockPick.id)) {
         player.setStatusMessage(Component.translate("message.kubejs.no_lockpick"))
-        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
-        // player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
+        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
         e.cancel()
       }
       //开锁参数
@@ -98,7 +97,7 @@ BlockEvents.rightClicked(e => {
       if (lockValue - reduceValue <= 0) {
         chestData.putInt("Lock", 114514)
         player.setStatusMessage(Component.translate("message.kubejs.lockpick_success"))
-        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.note_block.bell", "blocks", 2.0, 1.2)
+        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.note_block.bell", volume: 2.0, pitch: 1.2})
         // 技巧经验获取
         let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
         let expGain = Math.round(Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
@@ -111,7 +110,7 @@ BlockEvents.rightClicked(e => {
         player.setStatusMessage(Component.translate("message.kubejs.lockpick_failure"))
         player.damageHeldItem("main_hand", durabilityCost)
         chestData.putInt("Lock", lockValue)
-        block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
+        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.iron_trapdoor.close", volume: 2.0, pitch: 1.2})
         // 技巧经验获取
         let currentExp = player.persistentData.getDouble('skill_exp')//当前经验
         let expGain = Math.round(2 * Math.abs(200 - reduceValue) / (currentLevel - 9)) / 10//计算经验
