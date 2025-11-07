@@ -73,7 +73,7 @@ BlockEvents.rightClicked(e => {
       if (!allLockPick.includes(lockPick.id)) {
         player.setStatusMessage(Component.translate("message.kubejs.no_lockpick"))
         block.level.playSound(null, block.x, block.y, block.z, "minecraft:block.iron_trapdoor.close", "blocks",2.0, 1.2)
-        player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
+        // player.sendData("kubejs_player_playsound", {soundEvent: "minecraft:block.chain.break", volume: 1.0, pitch: 0.8})
         e.cancel()
       }
       //开锁参数

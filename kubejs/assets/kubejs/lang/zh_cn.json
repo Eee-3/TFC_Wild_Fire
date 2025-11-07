@@ -631,6 +631,7 @@
   "message.kubejs.skill_upgrade": "你感觉你的技巧上升了！当前等级: %d",
   "message.kubejs.strength_upgrade": "你感觉你的力量上升了！当前等级: %d",
   "message.kubejs.theft_prohibited": "§4周围的怪物注意到你了!",
+  "message.kubejs.adrenaline": "§4死里逃生！快跑！",
   "more_attributes.class.aborigines_explorers": "探险家",
   "more_attributes.class.aborigines_hunters": "猎人",
   "more_attributes.class.aborigines_primitive_people": "原始人",
@@ -641,6 +642,7 @@
   "more_attributes.class.crash_landed_refugees_researchers": "科研人员",
   "more_attributes.class.description.test1": "牢王727,饿的时候增加的耐性更多1",
   "more_attributes.class.test1": "牢王",
+  "attribute.kubejs.life_steal": "生命吸取",
  
   "more_attributes.class.worthless_people": "无用之人",
   "tooltip.kubejs.hold_ctrl": "§r§8按住 [§r§rCtrl§8] 查看信息§r",
