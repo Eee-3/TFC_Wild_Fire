@@ -632,6 +632,7 @@
   "message.kubejs.strength_upgrade": "你感觉你的力量上升了！当前等级: %d",
   "message.kubejs.theft_prohibited": "§4周围的怪物注意到你了!",
   "message.kubejs.adrenaline": "§4死里逃生！快跑！",
+  "message.kubejs.adrenaline_cooldwon": "§4或许你已经逃出升天，但你体力耗尽，下次死里逃生只能在1分钟后生效....",
   "more_attributes.class.aborigines_explorers": "探险家",
   "more_attributes.class.aborigines_hunters": "猎人",
   "more_attributes.class.aborigines_primitive_people": "原始人",

@@ -24,6 +24,9 @@ function adrenaline(e){
   e.server.scheduleInTicks(600, func => {
     e.entity.potionEffects.add("minecraft:slowness", 60, 9)
     e.entity.potionEffects.add("minecraft:darkness", 100)
+    e.server.scheduleInTicks(100, func => {
+      e.player.setStatusMessage(Component.translatable("message.kubejs.adrenaline_cooldwon"))
+    })
   })
 }
 
@@ -73,7 +76,7 @@ EntityEvents.hurt(e => {
       //触发肾上腺素效果
       adrenaline(e)
       //显示肾上腺素提示
-      player.setStatusMessage(Text.translatable("message.kubejs.adrenaline"))
+      player.setStatusMessage(Component.translatable("message.kubejs.adrenaline"))
       //显示肾上腺素覆盖层
       player.paint({adrenaline: {type: 'atlas_texture', x: 0, y: 0, alignX: 'center', alignY: 'center', w: "$screenW", h: "$screenH", draw: "always", texture: "kubejs:item/adrenaline"}})
       //每20ticks播放一次心跳音效
