@@ -72,6 +72,15 @@ ServerEvents.recipes(e => {
     "farmersdelight:cutting/leather_horse_armor",
     "alexsmobs:kangaroo_hide_to_leather",
     "minecraft:leather",
+    "tfcoreprocessing:metal/barrel/pig_iron_barrel",
+"farmersdelight:lead_from_straw",
+"tfc:crafting/lead",
+"minecraft:lead",
+"create:crafting/kinetics/super_glue",
+"butcher:tfcspitroastrecipe"
+
+
+
     
 
 
