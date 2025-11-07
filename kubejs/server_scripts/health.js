@@ -46,7 +46,7 @@ PlayerEvents.tick(e =>{
 //肾上腺素
 // 当玩家血量低于20%时，有p的概率触发肾上腺素
 let p = 0.05
-// 判断是否冷却中
+// 冷却判断器
 let wait = 0
 //复活及登录时清除冷却，删除肾上腺素显示
 PlayerEvents.loggedIn(e => {
