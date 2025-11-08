@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "butcher:cookedlungs"
+  },
+  "hunger": 1.5,
+  "saturation": 1,
+  "decay_modifier": 1.5,
+  "protein": 1
+}

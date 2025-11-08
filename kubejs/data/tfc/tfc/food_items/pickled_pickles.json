@@ -1,11 +1,11 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "brewinandchewin:jerky"
+    "item": "brewinandchewin:pickled_pickles"
   },
-  "decay_modifier": 0.1,
+  "decay_modifier": 0.2,
   "hunger": 4,
   "saturation": 0.1,
-  "protein": 0.5,
-  "water": -10
+  "vegetables": 1,
+  "water": -5
 }

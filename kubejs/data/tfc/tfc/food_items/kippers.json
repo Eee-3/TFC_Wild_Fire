@@ -1,7 +1,7 @@
 {
   "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "brewinandchewin:jerky"
+    "item": "brewinandchewin:kippers"
   },
   "decay_modifier": 0.1,
   "hunger": 4,

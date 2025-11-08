@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "butcher:pork_shoulder"
+  },
+  "hunger": 2.4,
+  "saturation": 1.3,
+  "decay_modifier": 1.5,
+  "protein": 2.2
+}
