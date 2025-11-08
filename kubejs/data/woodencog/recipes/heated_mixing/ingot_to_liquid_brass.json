@@ -1,0 +1,19 @@
+{
+  "type": "woodencog:heated_mixing",
+  "heatRequirement": 930.0,
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "tfc:metal/ingot/brass"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "tfc:metal/brass",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100
+}

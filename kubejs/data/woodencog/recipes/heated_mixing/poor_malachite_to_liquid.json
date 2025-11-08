@@ -1,0 +1,19 @@
+{
+  "type": "woodencog:heated_mixing",
+  "heatRequirement": 1080.0,
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "tfc:ore/poor_malachite"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 15,
+      "fluid": "tfc:metal/copper",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100
+}

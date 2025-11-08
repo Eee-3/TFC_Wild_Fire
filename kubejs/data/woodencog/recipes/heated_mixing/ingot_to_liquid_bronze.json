@@ -1,0 +1,19 @@
+{
+  "type": "woodencog:heated_mixing",
+  "heatRequirement": 950.0,
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "tfc:metal/ingot/bronze"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "tfc:metal/bronze",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100
+}
