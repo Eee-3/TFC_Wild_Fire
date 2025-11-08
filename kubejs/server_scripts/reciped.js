@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id_in = "kubejs:reciped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
@@ -25,7 +26,22 @@ ServerEvents.recipes(event => {
     event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
         a: 'tfc:metal/sheet/black_steel', b: 'kubejs:material_component_black_steel', c: 'create:precision_mechanism'
     }) //重型工程块
-
+    event.shaped('minecraft:lead', ['aa ', 'aa ', '  a'], {
+        a: 'farmersdelight:rope'
+    }) // 栓绳
+    event.shaped('create:super_glue', ['aba', 'cbc', ' d '], {
+        a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'minecraft:iron_nugget'
+    }) // 强力胶
+    event.shapeless('create:super_glue', ['create:super_glue', 'tfc:glue']).modifyResult((inputItems, outputItem) => {
+        const items = inputItems.findAll('create:super_glue')
+        let glue = items[0].copy()
+        let damageValue = Math.max(glue.damageValue - 50, 0)
+        glue.setDamageValue(damageValue)
+        return glue
+    });//回耐久
+    event.shaped('butcher:spitroast', ['aaa', 'b b', 'c c'], {
+        a: 'tfc:metal/rod/cast_iron', b: '#minecraft:walls', c: '#tfc:rock/bricks'
+    }) // 锻铁烤架
     event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
         a: 'tfc:brass_mechanisms',
         b: 'tfc:metal/double_sheet/brass',
@@ -74,6 +90,9 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  无花果
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/rubber_fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  古代无花果
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/ancient_fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  橡皮树
+
+    event.shapeless('2x kubejs:vellum', ['#tfc:knives', 'tfc:treated_hide']).damageIngredient({ tag: '#tfc:knives' }, 5).id(`${id_in}vellum`)//兽皮纸
+
 
 
 

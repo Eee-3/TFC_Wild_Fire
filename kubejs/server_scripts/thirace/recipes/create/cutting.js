@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
             processingTime: 40,
             results: [
                 { item: `tfc:wood/stripped_log/${wood}` },
-                { item: 'farmersdelight:tree_bark', count: 4 },
+                { item: 'farmersdelight:tree_bark', count: 1 },
             ],
             id: `${id_prefix}stripped_log/${wood}`
         });
@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
             processingTime: 40,
             results: [
                 { item: `tfc:wood/stripped_wood/${wood}` },
-                { item: 'farmersdelight:tree_bark', count: 4 },
+                { item: 'farmersdelight:tree_bark', count: 1 },
             ],
             id: `${id_prefix}wood/${wood}`
         });

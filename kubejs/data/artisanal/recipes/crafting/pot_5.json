@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "tfc:advanced_shapeless_crafting",
+    "ingredients": [
+      {
+  
+          "item":"artisanal:ceramic/small_pot"
+    
+      },
+      {
+        "item": "tfc:powder/saltpeter"
+      },
+       {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "artisanal:rendered_fats"
+        },
+        "amount": 100
+      }
+    },
+      {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "tag": "artisanal:foods/can_be_canned"
+        }
+      },
+      {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "tag": "artisanal:foods/can_be_canned"
+        }
+      },
+      {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "tag": "artisanal:foods/can_be_canned"
+        }
+      },
+      {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "tag": "artisanal:foods/can_be_canned"
+        }
+      },
+      {
+        "type": "tfc:not_rotten",
+        "ingredient": {
+          "tag": "artisanal:foods/can_be_canned"
+        }
+      }
+    ],
+    "result": {
+      "stack": {
+        "item": "artisanal:ceramic/closed_small_pot"
+      },
+      "modifiers": [
+        {
+          "type": "tfc:meal",
+          "food": {
+            "decay_modifier": 4.5
+          },
+          "portions": [
+            {
+              "ingredient": {
+                "tag": "artisanal:foods/can_be_canned"
+              },
+              "nutrient_modifier": 0,
+              "water_modifier": 0,
+              "saturation_modifier": 0
+            }
+          ]
+        },
+        {
+          "type": "artisanal:inherit_decay",
+          "decay_multiplier": 1
+        },
+        "artisanal:homogenous_ingredients",
+        "tfc:copy_oldest_food"
+      ]
+    },
+    "primary_ingredient": {
+      "tag": "artisanal:foods/can_be_canned"
+    }
+  }
+}

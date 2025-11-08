@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
             ingredients: [{ item: `tfc:wood/log/${wood}` }],
             result: [
                 { item: `tfc:wood/stripped_log/${wood}` },
-                { item: 'farmersdelight:tree_bark', count: 4 },
+                { item: 'farmersdelight:tree_bark', count: 1 },
             ],
             tool: { tag: 'minecraft:axes' },
             id: `${id_prefix}stripped_log/${wood}_log`
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
             ingredients: [{ item: `tfc:wood/wood/${wood}` }],
             result: [
                 { item: `tfc:wood/stripped_wood/${wood}` },
-                { item: 'farmersdelight:tree_bark', count: 4 },
+                { item: 'farmersdelight:tree_bark', count: 1 },
             ],
             tool: { tag: 'minecraft:axes' },
             id: `${id_prefix}stripped_log/${wood}_wood`

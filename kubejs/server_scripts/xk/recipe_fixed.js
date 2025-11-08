@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
   create.filling('minecraft:glowstone_dust', ['kubejs:rock_powder', Fluid.of('minecraft:lava', 20)]).superheated()//萤石
 
 
-  event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
+  //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
 
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     d: 'tfc:metal/sheet/wrought_iron',
     e: 'tfc:metal/double_sheet/wrought_iron'
   })//烈焰人燃烧室
-  event.custom({ "type": "tfc:heating", "ingredient": { "item": 'create:empty_blaze_burner' }, "result_item": { "item": 'create:blaze_burner' }, "temperature": 1538 })//烈焰人燃烧室
+  //event.custom({ "type": "tfc:heating", "ingredient": { "item": 'create:empty_blaze_burner' }, "result_item": { "item": 'create:blaze_burner' }, "temperature": 1538 })//烈焰人燃烧室
   event.custom({//海带烧
     "type": "tfc:heating",
     "ingredient": { "tag": 'tfc:plants/kelp' },
@@ -289,7 +289,7 @@ ServerEvents.tags('minecraft:item', event => {
   })
 
   event.add("bsa:bindings/medium", '#forge:wires')//电线绑定
-  event.add("bsa:bindings/weak", 'kubejs:straw_rope');//粗制草绳
+  event.add("bsa:bindings/weak", 'farmersdelight:rope');//粗制草绳
   event.add("bsa:bindings/weak", 'htm:plant_string');//满耐久
   event.add("bsa:bindings/weak", '#forge:fiber_hemp');//满耐久
 

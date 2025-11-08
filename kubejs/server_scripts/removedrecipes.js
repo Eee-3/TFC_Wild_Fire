@@ -63,7 +63,26 @@ ServerEvents.recipes(e => {
     "woodencog:rock_knapping/andesite_alloy_deploying",
    // "firmalife:crafting/bacon",
     "design_decor:mechanical_crafting/enchanted_golden_apple",
-    "create_new_age:enchanted_golden_apple"
+    "create_new_age:enchanted_golden_apple",
+    "tfc:crafting/parchment",
+    "minecraft:paper",
+    "create:pressing/sugar_cane",
+    "create:crushing/leather_horse_armor",
+    "create:milling/saddle",
+    "farmersdelight:cutting/leather_horse_armor",
+    "alexsmobs:kangaroo_hide_to_leather",
+    "minecraft:leather",
+    "tfcoreprocessing:metal/barrel/pig_iron_barrel",
+"farmersdelight:lead_from_straw",
+"tfc:crafting/lead",
+"minecraft:lead",
+"create:crafting/kinetics/super_glue",
+"butcher:tfcspitroastrecipe"
+
+
+
+    
+
 
 
 
@@ -290,7 +309,7 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
   e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
   e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
-  e.remove({ mod: 'totemic' }) // 移除图腾全部配方 
+  e.remove({ mod:'vc_gliders' }) // 移除图腾全部配方 
 
 
 
