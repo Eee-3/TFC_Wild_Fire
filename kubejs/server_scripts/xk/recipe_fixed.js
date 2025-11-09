@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
   /*//灵魂火
   create.haunting(Item.of('minecraft:blaze_rod'), 'createaddition:electrum_rod')//烈焰棒
   create.mixing("minecraft:soul_sand", ['#forge:sand', 'minecraft:rotten_flesh'])//灵魂沙*/
-
+  
 
 
   //搅拌
@@ -254,11 +254,11 @@ ServerEvents.recipes(e => {
 })
 //绑定和tag修改
 ServerEvents.tags('minecraft:item', event => {
- const dirty_pile= ['tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_galena', 'tfcorewashing:dirty_pile_cryolite', 'tfcorewashing:dirty_pile_copper', 'tfcorewashing:dirty_pile_cinnabar', 'tfcorewashing:dirty_pile_chromite', 'tfcorewashing:dirty_pile_cassiterite', 'tfcorewashing:dirty_pile_bismuthinite', 'tfcorewashing:dirty_pile_bauxite', 'tfcorewashing:dirty_pile_sulfur', 'tfcorewashing:dirty_pile_sphalerite', 'tfcorewashing:dirty_pile_silver', 'tfcorewashing:dirty_pile_malachite', 'tfcorewashing:dirty_pile_magnetite', 'tfcorewashing:dirty_pile_limonite', 'tfcorewashing:dirty_pile_hematite', 'tfcorewashing:dirty_pile_graphite', 'tfcorewashing:dirty_pile_gold', 'tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_tetrahedrite']
+  const dirty_pile = ['tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_galena', 'tfcorewashing:dirty_pile_cryolite', 'tfcorewashing:dirty_pile_copper', 'tfcorewashing:dirty_pile_cinnabar', 'tfcorewashing:dirty_pile_chromite', 'tfcorewashing:dirty_pile_cassiterite', 'tfcorewashing:dirty_pile_bismuthinite', 'tfcorewashing:dirty_pile_bauxite', 'tfcorewashing:dirty_pile_sulfur', 'tfcorewashing:dirty_pile_sphalerite', 'tfcorewashing:dirty_pile_silver', 'tfcorewashing:dirty_pile_malachite', 'tfcorewashing:dirty_pile_magnetite', 'tfcorewashing:dirty_pile_limonite', 'tfcorewashing:dirty_pile_hematite', 'tfcorewashing:dirty_pile_graphite', 'tfcorewashing:dirty_pile_gold', 'tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_tetrahedrite']
   dirty_pile.forEach(dirty_pile => {
     event.add('tfc:dirty_piles', `${dirty_pile}`);
   })
- // 标签id，物品id
+  // 标签id，物品id
   event.remove("bsa:bindings/strong", 'tfc:jute_fiber');//移除完美绑定
   event.remove("bsa:bindings/strong", '#forge:plant_fiber');
   event.remove("bsa:bindings/strong", '#forge:string');
@@ -320,8 +320,8 @@ ServerEvents.tags('minecraft:item', event => {
 ServerEvents.recipes(event => {
   event.remove({ id: "create:splashing/gravel" })
   const create = event.recipes.create
-  create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], 'minecraft:gravel')
-  create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], '#tfc:rock/gravel')
+ // create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], 'minecraft:gravel')
+  //create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], '#tfc:rock/gravel')
 
   //create.crushing([Item.of('minecraft:flint').withChance(0.25),Item.of('tfc:ore/small_limonite').withChance(0.1)],"#forge:gravel")
   // 定义生成生铁液体合成配方的函数
@@ -346,8 +346,8 @@ ServerEvents.recipes(event => {
           }
         ]
       })
-      
-      
+
+
 
       //  create.mixing(Fluid.of('tfc:metal/cast_iron', fluidAmount), [oreItem]).heated();
     } catch (error) {
@@ -544,4 +544,3 @@ ServerEvents.recipes(event => {
 
 
 })
-

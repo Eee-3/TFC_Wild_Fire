@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:deposit/native_gold/basalt"
+  },
+  "loot_table": "tfc:sluicing/deposits/native_gold_basalt"
+}

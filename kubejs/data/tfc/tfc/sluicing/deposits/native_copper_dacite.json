@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:deposit/native_copper/dacite"
+  },
+  "loot_table": "tfc:sluicing/deposits/native_copper_dacite"
+}

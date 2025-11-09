@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:rock/gravel/chalk"
+  },
+  "loot_table": "tfc:sluicing/deposits/gravel_chalk"
+}
