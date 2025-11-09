@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:rock/gravel/dolomite"
+  },
+  "loot_table": "tfc:sluicing/deposits/gravel_dolomite"
+}

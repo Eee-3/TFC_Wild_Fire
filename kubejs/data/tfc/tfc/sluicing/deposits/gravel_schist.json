@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:rock/gravel/schist"
+  },
+  "loot_table": "tfc:sluicing/deposits/gravel_schist"
+}

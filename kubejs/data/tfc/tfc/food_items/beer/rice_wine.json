@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "brewinandchewin:rice_wine"
+  },
+  "decay_modifier": 0,
+  "water": 20,
+  "grain": 0.5
+}

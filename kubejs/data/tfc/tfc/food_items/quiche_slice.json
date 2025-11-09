@@ -1,0 +1,11 @@
+{
+  "ingredient": {
+    "item": "brewinandchewin:quiche_slice"
+  },
+  "hunger": 10,
+  "saturation": 1,
+  "decay_modifier": 1.3,
+  "protein": 0.5,
+  "grain": 1.0,
+  "dairy": 1.0
+}

@@ -95,8 +95,8 @@ ServerEvents.recipes(event => {
         'create:large_water_wheel': {
             'tfc_ie_addon:treated_wood_lumber': [2, 8],
             'create:shaft': [1],
-            'immersiveengineering:treated_wood_horizontal': [2, 4],
-            'minecraft:diamond': [1]
+            'immersiveengineering:treated_wood_horizontal': [2, 4]
+    
         },
     })
 

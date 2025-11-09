@@ -177,6 +177,9 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "petrolpark": {
     "contamination": true
   },

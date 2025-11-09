@@ -8,7 +8,7 @@ debugEntityVariantIds:false
 radarHideInvisibleEntities:true
 allowInternetAccess:true
 #INGAME SETTINGS (DO NOT EDIT!)
-updateNotification:true
+updateNotification:false
 minimap:false
 caveMaps:2
 caveZoom:1
@@ -20,7 +20,7 @@ oldDeathpoints:true
 distance:1
 lockNorth:true
 zoom:0
-minimapSize:0
+minimapSize:232
 chunkGrid:-1
 slimeChunks:false
 mapSafeMode:false
@@ -41,7 +41,7 @@ waypointsDistanceExp:0
 waypointsDistanceMin:0.0
 defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
 defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
-arrowScale:1.5
+arrowScale:2.0
 arrowColour:0
 smoothDots:true
 worldMap:true
@@ -61,7 +61,7 @@ lookingAtAngle:10
 lookingAtAngleVertical:180
 centeredEnlarged:false
 zoomOnEnlarged:0
-minimapTextAlign:0
+minimapTextAlign:1
 waypointsMutualEdit:true
 compassLocation:1
 compassDirectionScale:0
@@ -75,7 +75,7 @@ lightOverlayType:0
 lightOverlayMaxLight:7
 lightOverlayMinLight:0
 lightOverlayColor:13
-uiScale:3
+uiScale:2
 bossHealthPushBox:1
 potionEffectPushBox:1
 minimapFrame:0
@@ -87,7 +87,7 @@ entityRadar:true
 adjustHeightForCarpetLikeBlocks:true
 autoConvertWaypointDistanceToKmThreshold:10000
 waypointDistancePrecision:1
-mainDotSize:2
+mainDotSize:1
 partialYTeleportation:true
 deleteReachedDeathpoints:true
 hideMinimapUnderScreen:true
@@ -101,7 +101,7 @@ enlargedMinimapAToggle:false
 displayStainedGlass:true
 waypointOnMapScale:0
 switchToAutoOnDeath:true
-infoDisplayBackgroundOpacity:40
+infoDisplayBackgroundOpacity:53
 caveModeToggleTimer:1000
 legibleCaveMaps:false
 biomeBlending:true
@@ -112,16 +112,16 @@ trackedPlayerWorldIconScale:0
 trackedPlayerWorldNameScale:0
 trackedPlayerMinimapIconScale:0
 displayClaims:true
-displayCurrentClaim:true
+displayCurrentClaim:false
 claimsFillOpacity:46
 claimsBorderOpacity:80
 infoDisplayOrder:coords:overworld_coords:chunk_coords:angles:dimension:biome:weather:light_level:time:real_time:highlights:light_overlay_indicator:manual_cave_mode_indicator:custom_sub_world
 infoDisplay:coords:true:15:-1
-infoDisplay:overworld_coords:false:15:-1
-infoDisplay:chunk_coords:false:15:-1
+infoDisplay:overworld_coords:true:15:-1
+infoDisplay:chunk_coords:true:15:-1
 infoDisplay:angles:true:15:-1
 infoDisplay:dimension:true:15:-1
-infoDisplay:biome:false:15:-1
+infoDisplay:biome:true:15:-1
 infoDisplay:weather:true:15:-1
 infoDisplay:light_level:2:15:-1
 infoDisplay:time:1:15:-1
@@ -130,4 +130,4 @@ infoDisplay:highlights:true:15:-1
 infoDisplay:light_overlay_indicator:true:15:-1
 infoDisplay:manual_cave_mode_indicator:true:15:-1
 infoDisplay:custom_sub_world:true:15:-1
-module;id=xaerominimap:minimap;active=false;x=0;y=0;centered=false;fromRight=false;fromBottom=false;flippedVer=false;flippedHor=false;
+module;id=xaerominimap:minimap;active=false;x=5;y=15;centered=false;fromRight=true;fromBottom=false;flippedVer=false;flippedHor=false;

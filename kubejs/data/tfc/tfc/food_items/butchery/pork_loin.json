@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "butcher:pork_loin"
+  },
+  "hunger": 2.5,
+  "saturation": 1,
+  "decay_modifier": 1.5,
+  "protein": 2.5
+}

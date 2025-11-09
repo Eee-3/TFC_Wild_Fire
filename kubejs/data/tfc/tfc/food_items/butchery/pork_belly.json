@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "butcher:raw_pork_belly"
+  },
+  "hunger": 2.7,
+  "saturation": 1.5,
+  "decay_modifier": 1.5,
+  "protein": 2.7
+}

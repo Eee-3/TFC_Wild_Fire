@@ -1,0 +1,380 @@
+[
+    {
+        "matchItems": [
+            "brewinandchewin:apple_jelly"
+        ],
+        "resultItems": "tfc:jar/red_apple"
+    },
+    {
+        "matchItems": [
+            "create:dough",
+            "farmersdelight:wheat_dough",
+            "refurbished_furniture:dough",
+            "farm_and_charm:dough"
+        ],
+        "resultItems": "firmalife:food/wheat_dough"
+    },
+    {
+        "matchItems": [
+            "minecraft:glow_berries"
+        ],
+        "resultItems": "tfc:food/cloudberry"
+    },
+    {
+        "matchItems": [
+            "minecraft:sweet_berries"
+        ],
+        "resultItems": "tfc:food/cranberry"
+    },
+    {
+        "matchItems": [
+            "create:wheat_flour"
+        ],
+        "resultItems": "tfc:food/wheat_flour"
+    },
+    {
+        "matchItems": [
+            "bakery:jar"
+        ],
+        "resultItems": "tfc:empty_jar_with_lid"
+    },
+    {
+        "matchItems": [
+            "brewinandchewin:sweet_berry_jam"
+        ],
+        "resultItems": "tfc:jar/cranberry"
+    },
+    {
+        "matchItems": [
+            "brewinandchewin:glow_berry_marmalade"
+        ],
+        "resultItems": "tfc:jar/cloudberry"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:barley"
+        ],
+        "resultItems": "tfc:food/barley"
+    },
+    {
+        "matchItems": [
+            "scguns:sulfur_chunk",
+            "butcher:sulfur",
+            "vintageimprovements:sulfur"
+        ],
+        "resultItems": "tfc:ore/sulfur"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:lettuce",
+            "farmersdelight:cabbage"
+        ],
+        "resultItems": "tfc:food/cabbage"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:cabbage_seeds",
+            "farm_and_charm:lettuce_seeds"
+        ],
+        "resultItems": "tfc:seeds/cabbage"
+    },
+    {
+        "matchItems": [
+            "minecraft:carrot"
+        ],
+        "resultItems": "tfc:food/carrot"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:tomato_seeds",
+            "farm_and_charm:tomato_seeds"
+        ],
+        "resultItems": "tfc:seeds/tomato"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:rotten_tomato"
+        ],
+        "resultItems": "farmersdelight:rotten_tomato"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:tomato",
+            "farmersdelight:tomato"
+        ],
+        "resultItems": "tfc:food/tomato"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:onion",
+            "farmersdelight:onion"
+        ],
+        "resultItems": "tfc:food/onion"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:strawberry"
+        ],
+        "resultItems": "tfc:food/strawberry"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:raw_pasta"
+        ],
+        "resultItems": "farmersdelight:raw_pasta"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:minced_beef"
+        ],
+        "resultItems": "farmersdelight:minced_beef"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:lamb_ham"
+        ],
+        "resultItems": "farmersdelight:mutton_chops"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:chicken_parts"
+        ],
+        "resultItems": "farmersdelight:chicken_cuts"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:bacon"
+        ],
+        "resultItems": "farmersdelight:bacon"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:corn"
+        ],
+        "resultItems": "tfc:food/maize"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:oat"
+        ],
+        "resultItems": "tfc:food/oat"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:kernels"
+        ],
+        "resultItems": "tfc:seeds/maize"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:oat_seeds"
+        ],
+        "resultItems": "tfc:seeds/oat"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:fertilized_soil"
+        ],
+        "resultItems": "farmersdelight:rich_soil"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:butter"
+        ],
+        "resultItems": "firmalife:food/butter"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:pumpkin_slice"
+        ],
+        "resultItems": "tfc:food/pumpkin_chunks"
+    },
+    {
+        "matchItems": [
+            "minecraft:wheat_seeds"
+        ],
+        "resultItems": "tfc:seeds/wheat"
+    },
+    {
+        "matchItems": [
+            "minecraft:glass_bottle"
+        ],
+        "resultItems": "tfc:silica_glass_bottle"
+    },
+    {
+        "matchItems": [
+            "minecraft:honeycomb"
+        ],
+        "resultItems": "firmalife:beeswax"
+    },
+    {
+        "matchItems": [
+            "ad_astra:cheese",
+            "brewinandchewin:flaxen_cheese_wedge",
+            "refurbished_furniture:cheese"
+        ],
+        "resultItems": "firmalife:food/cheddar"
+    },
+    {
+        "matchItems": [
+            "minecraft:rabbit"
+        ],
+        "resultItems": "tfc:food/rabbit"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_rabbit"
+        ],
+        "resultItems": "tfc:food/cooked_rabbit"
+    },
+    {
+        "matchItems": [
+            "minecraft:chicken"
+        ],
+        "resultItems": "tfc:food/chicken"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_chicken"
+        ],
+        "resultItems": "tfc:food/cooked_chicken"
+    },
+    {
+        "matchItems": [
+            "minecraft:cake"
+        ],
+        "resultItems": "tfc:cake"
+    },
+    {
+        "matchItems": [
+            "minecraft:cod"
+        ],
+        "resultItems": "tfc:food/cod"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_cod"
+        ],
+        "resultItems": "tfc:food/cooked_cod"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_salmon"
+        ],
+        "resultItems": "tfc:food/cooked_salmon"
+    },
+    {
+        "matchItems": [
+            "minecraft:salmon"
+        ],
+        "resultItems": "tfc:food/salmon"
+    },
+    {
+        "matchItems": [
+            "minecraft:tropical_fish"
+        ],
+        "resultItems": "tfc:food/tropical_fish"
+    },
+    {
+        "matchItems": [
+            "minecraft:mutton"
+        ],
+        "resultItems": "tfc:food/mutton"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_mutton"
+        ],
+        "resultItems": "tfc:food/cooked_mutton"
+    },
+    {
+        "matchItems": [
+            "minecraft:cooked_porkchop"
+        ],
+        "resultItems": "tfc:food/cooked_pork"
+    },
+    {
+        "matchItems": [
+            "minecraft:porkchop"
+        ],
+        "resultItems": "tfc:food/pork"
+    },
+    {
+        "matchItems": [
+            "minecraft:beef"
+        ],
+        "resultItems": "tfc:food/beef"
+    },
+    {
+        "matchItems": [
+            "minecraft:potato"
+        ],
+        "resultItems": "tfc:food/potato"
+    },
+    {
+        "matchItems": [
+            "minecraft:baked_potato"
+        ],
+        "resultItems": "tfc:food/baked_potato"
+    },
+    {
+        "matchItems": [
+            "minecraft:melon_slice"
+        ],
+        "resultItems": "tfc:food/melon_slice"
+    },
+    {
+        "matchItems": [
+            "minecraft:cookie"
+        ],
+        "resultItems": "firmalife:food/chocolate_chip_cookie"
+    },
+    {
+        "matchItems": [
+            "tfc:food/banana"
+        ],
+        "resultItems": "alexsmobs:banana"
+    },
+    {
+        "matchItems": [
+            "alexsmobs:moose_ribs"
+        ],
+        "resultItems": "tfc:food/camelidae"
+    },
+    {
+        "matchItems": [
+            "alexsmobs:cooked_moose_ribs"
+        ],
+        "resultItems": "tfc:food/cooked_camelidae"
+    },
+    {
+        "matchItems": [
+            "farm_and_charm:flour"
+        ],
+        "resultItems": "tfc:food/wheat_flour"
+    },
+    {
+        "matchItems": [
+            "minecraft:kelp"
+        ],
+        "resultItems": "tfc:plant/leafy_kelp"
+    },
+    {
+        "matchItems": [
+            "minecraft:sea_pickle"
+        ],
+        "resultItems": "tfc:sea_pickle"
+    },
+    {
+        "matchItems": [
+            "butcher:rawfoxmeat"
+        ],
+        "resultItems": "tfc:food/fox"
+    },
+    {
+        "matchItems": [
+            "butcher:foxmeat"
+        ],
+        "resultItems": "tfc:food/cooked_fox"
+    }
+]

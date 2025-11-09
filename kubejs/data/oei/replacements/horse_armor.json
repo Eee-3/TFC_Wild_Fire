@@ -1,0 +1,20 @@
+[
+    {
+        "matchItems": [
+            "minecraft:diamond_horse_armor"
+        ],
+        "resultItems": "tfc:metal/horse_armor/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:golden_horse_armor"
+        ],
+        "resultItems": "tfc:metal/horse_armor/copper"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_horse_armor"
+        ],
+        "resultItems": "tfc:metal/horse_armor/wrought_iron"
+    }
+]

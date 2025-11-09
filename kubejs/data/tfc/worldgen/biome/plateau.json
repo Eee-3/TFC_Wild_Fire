@@ -30,18 +30,7 @@
     ],
     "spawners": {
         "water_creature": [
-            {
-                "type": "naturalist:hippo",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
-            },
-            {
-                "type": "naturalist:dragonfly",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 2
-            }
+
         ],
         "monster": [
             {
@@ -372,6 +361,6 @@
             }
         ]
     },
-    "creature_spawn_probability": 0.08,
+    "creature_spawn_probability": 0.20,
     "spawn_costs": {}
 }

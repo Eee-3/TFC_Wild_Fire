@@ -1,0 +1,135 @@
+[
+    {
+        "matchItems": [
+            "minecraft:iron_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_steel",
+            "createmetallurgy:steel_ingot",
+            "ad_astra:steel_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/steel"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:ingot_nickel"
+        ],
+        "resultItems": "tfc:metal/ingot/nickel"
+    },
+    {
+        "matchItems": [
+           "immersiveengineering:ingot_silver"
+        ],
+        "resultItems": "tfc:metal/ingot/silver"
+    },
+    {
+        "matchItems": [
+           "eidolon:lead_ingot"
+        ],
+        "resultItems": "immersiveengineering:ingot_lead"
+    },
+    {
+        "matchItems": [
+          "minecraft:copper_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/copper"
+    },
+    {
+        "matchItems": [
+          "minecraft:gold_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/gold"
+    },
+    {
+        "matchItems": [
+         "minecraft:diamond"
+        ],
+        "resultItems":"tfc:gem/diamond"
+    },
+    {
+        "matchItems": [
+         "minecraft:emerald"
+        ],
+        "resultItems":"tfc:gem/emerald"
+    },
+    {
+        "matchItems": [
+         "minecraft:lapis_lazuli"
+        ],
+        "resultItems":"tfc:gem/lapis_lazuli"
+    },
+    {
+        "matchItems": [
+         "minecraft:amethyst_shard"
+        ],
+        "resultItems":"tfc:gem/amethyst"
+    },
+    {
+        "matchItems": [
+         "eidolon:silver_ingot"
+        ],
+        "resultItems":"tfc:metal/ingot/silver"
+    },
+    {
+        "matchItems": [
+         "minecraft:quartz"
+        ],
+        "resultItems":"tfc_ie_addon:mineral/quartz_shard"
+    }
+ 
+    ,
+    {
+        "matchItems": [
+         "alexscaves:sulfur_dust",
+        "eidolon:sulfur",
+         "scguns:sulfur_dust",
+         "immersiveengineering:dust_sulfur"
+        ],
+        "resultItems":"tfc:powder/sulfur"
+    },
+    {
+        "matchItems": [
+            "create:iron_sheet"
+        ],
+        "resultItems": "tfc:metal/sheet/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "create:zinc_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/zinc"
+    },
+    {
+        "matchItems": [
+            "create:brass_ingot"
+        ],
+        "resultItems": "tfc:metal/ingot/brass"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:stick_iron"
+        ],
+        "resultItems": "tfc:metal/rod/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:stick_steel"
+        ],
+        "resultItems": "tfc:metal/rod/steel"
+    },
+    {
+        "matchItems": [
+            "ad_astra:iron_rod"
+        ],
+        "resultItems": "tfc:metal/rod/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "ad_astra:steel_rod"
+        ],
+        "resultItems": "tfc:metal/rod/steel"
+    }
+]

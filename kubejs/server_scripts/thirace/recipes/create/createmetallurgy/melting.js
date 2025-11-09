@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}${heated}_rod`
         });
         recipes.push({
-            ingredients: [{ tag: `forge:plates/${heated}` }],
+            ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
             processingTime: 120,
             results: [{ amount: 200, fluid: `tfc:metal/${heated}` }],
@@ -177,7 +177,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}double_${heated}`
         });
         recipes.push({
-            ingredients: [{ tag: `forge:plates/${heated}` }],
+            ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
             processingTime: 120,
             results: [{ amount: 200, fluid: `tfc_ie_addon:metal/${heated}` }],
@@ -216,7 +216,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}${heated}_rod`
         });
         recipes.push({
-            ingredients: [{ tag: `forge:plates/${heated}` }],
+            ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'heated',
             processingTime: 120,
             results: [{ amount: 200, fluid: `firmalife:metal/${heated}` }],
@@ -248,7 +248,7 @@ ServerEvents.recipes((event) => {
         { item: 'weak_blue_steel', type: '1' },
 
         { item: 'nickel', type: '2' },
-        { item: 'wrought_iron', type: '2' },
+       // { item: 'wrought_iron', type: '2' },
         { item: 'cast_iron', type: '2' },
         { item: 'steel', type: '2' },
         { item: 'black_steel', type: '2' },
@@ -285,7 +285,7 @@ ServerEvents.recipes((event) => {
             });
         if (heated.type == '2')
             recipes.push({
-                ingredients: [{ tag: `forge:plates/${heated.item}` }],
+                ingredients: [{ tag: `forge:sheets/${heated.item}` }],
                 heatRequirement: 'superheated',
                 processingTime: 120,
                 results: [{ amount: 200, fluid: `tfc:metal/${heated.item}` }],
@@ -335,7 +335,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}${heated}_rod`
         });
         recipes.push({
-            ingredients: [{ tag: `forge:plates/${heated}` }],
+            ingredients: [{ tag: `forge:sheets/${heated}` }],
             heatRequirement: 'superheated',
             processingTime: 120,
             results: [{ amount: 200, fluid: `firmalife:metal/${heated}` }],

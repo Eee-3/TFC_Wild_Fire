@@ -60,12 +60,219 @@ ServerEvents.recipes(e => {
     "create:item_application/andesite_casing_from_log",
     "create:item_application/andesite_casing_from_wood",
     "woodencog:rock_knapping/andesite_alloy",
-    "woodencog:rock_knapping/andesite_alloy_deploying"
+    "woodencog:rock_knapping/andesite_alloy_deploying",
+   // "firmalife:crafting/bacon",
+    "design_decor:mechanical_crafting/enchanted_golden_apple",
+    "create_new_age:enchanted_golden_apple",
+    "tfc:crafting/parchment",
+    "minecraft:paper",
+    "create:pressing/sugar_cane",
+    "create:crushing/leather_horse_armor",
+    "create:milling/saddle",
+    "farmersdelight:cutting/leather_horse_armor",
+    "alexsmobs:kangaroo_hide_to_leather",
+    "minecraft:leather",
+    "tfcoreprocessing:metal/barrel/pig_iron_barrel",
+"farmersdelight:lead_from_straw",
+"tfc:crafting/lead",
+"minecraft:lead",
+"create:crafting/kinetics/super_glue",
+"butcher:tfcspitroastrecipe"
+
+
+
+    
+
 
 
 
   ]
   iddd.forEach(id => { e.remove({ id: id }); });
+  const oeiremove1 = [
+    "vintageimprovements:small_pig_iron_spring",
+    "vintageimprovements:sulfur_chunk",
+    "vintageimprovements:sulfur_block",
+    "vintageimprovements:vanadium_sheet",
+    "vintageimprovements:uranium_wire",
+    "vintageimprovements:vanadium_wire",
+    "vintageimprovements:small_uranium_spring",
+    "vintageimprovements:small_tin_spring",
+    "vintageimprovements:small_rose_gold_spring",
+    "illagerinvasion:unusual_dust",
+    "illagerinvasion:imbuing_table",
+    "illagerinvasion:primal_essence",
+    "illagerinvasion:illusionary_dust",
+    "illagerinvasion:hallowed_gem",
+    "illagerinvasion:magical_fire_charge",
+    "illagerinvasion:lost_candle",
+    "illagerinvasion:platinum_infused_hatchet",
+    "illagerinvasion:platinum_sheet",
+    "illagerinvasion:platinum_chunk",
+    "design_decor:queen_slime_large_chain",
+    "design_decor:knightslime_large_chain",
+    "design_decor:invar_large_chain",
+    "design_decor:nickel_large_chain",
+    "design_decor:rose_gold_large_chain",
+    "design_decor:cobalt_large_chain",
+    "design_decor:manyullyn_large_chain",
+    "design_decor:hepatizon_large_chain",
+    "design_decor:pig_iron_large_chain",
+    "design_decor:mithril_large_chain",
+    "design_decor:nethersteel_large_chain",
+    "vintageimprovements:small_vanadium_spring",
+    "vintageimprovements:pig_iron_sheet",
+    "vintageimprovements:pig_iron_rod",
+    "vintageimprovements:pig_iron_wire",
+    "vintageimprovements:blaze_spring",
+    "vintageimprovements:pig_iron_spring",
+    "sophisticatedbackpacks:inception_upgrade",
+    "sophisticatedbackpacks:auto_smelting_upgrade",
+    "sophisticatedbackpacks:smelting_upgrade",
+    "sophisticatedbackpacks:auto_blasting_upgrade",
+    "sophisticatedbackpacks:blasting_upgrade",
+    "sophisticatedbackpacks:auto_smoking_upgrade",
+    "sophisticatedbackpacks:smoking_upgrade",
+    "sophisticatedbackpacks:stonecutter_upgrade",
+    "legendarysurvivaloverhaul:water_purifier",
+    "butcher:dioritebrickstairs",
+    "butcher:diorite_brick_slab",
+    "butcher:straynecklace_chestplate",
+    "immersiveengineering:pickaxe_steel",
+    "immersiveengineering:armor_steel_boots",
+    "legendarysurvivaloverhaul:water_plant_seeds",
+    "butcher:guardianspear",
+    "butcher:diorite_brickwall",
+    "butcher:freezer",
+    "legendarysurvivaloverhaul:water_plant_bag",
+    "immersiveengineering:armor_steel_leggings",
+    "immersiveengineering:armor_steel_chestplate",
+    "legendarysurvivaloverhaul:large_canteen",
+    "butcher:counterblock",
+    "immersiveengineering:armor_steel_helmet",
+    "butcher:display",
+    "legendarysurvivaloverhaul:canteen",
+    "butcher:cashregister",
+    "legendarysurvivaloverhaul:large_canteen",
+    "immersiveengineering:sword_steel",
+    "immersiveengineering:hoe_steel",
+    "butcher:emptyskinrack",
+    "legendarysurvivaloverhaul:canteen",
+    "immersiveengineering:axe_steel",
+    "legendarysurvivaloverhaul:seasonal_calendar",
+    "butcher:hook",
+    "immersiveengineering:shovel_steel",
+    "brewinandchewin:pizza_slice",
+    "brewinandchewin:scarlet_cheese_wedge",
+    "brewinandchewin:scarlet_cheese_wheel",
+    "brewinandchewin:unripe_scarlet_cheese_wheel",
+    "brewinandchewin:flaxen_cheese_wheel",
+    "brewinandchewin:unripe_flaxen_cheese_wheel",
+    "brewinandchewin:pizza",
+    "farm_and_charm:barley_seeds",
+    "farm_and_charm:strawberry_seeds",
+    "farm_and_charm:beetroot_bag",
+    "farm_and_charm:onion_bag",
+    "farm_and_charm:potato_bag",
+    "farm_and_charm:carrot_bag",
+    "farm_and_charm:tomato_bag",
+    "farm_and_charm:lettuce_bag",
+    "farm_and_charm:window_sill",
+    "farm_and_charm:plow",
+    "artifacts:bunny_hoppers",
+    "artifacts:kitty_slippers",
+    "artifacts:rooted_boots",
+    "artifacts:feral_claws",
+    "artifacts:steadfast_spikes",
+    "artifacts:night_vision_goggles",
+    "artifacts:snorkel",
+    "artifacts:everlasting_beef",
+    "artifacts:digging_claws",
+    "farm_and_charm:supply_cart",
+    "farm_and_charm:flour_bag",
+    "farm_and_charm:strawberry_bag",
+    "farm_and_charm:feeding_trough",
+    "farm_and_charm:water_sprinkler",
+    "farm_and_charm:corn_bag",
+    "farm_and_charm:barley_ball",
+    "farm_and_charm:oat_ball",
+    "farm_and_charm:wild_nettle",
+    "farm_and_charm:wild_ribwort",
+    "farm_and_charm:wild_emmer",
+    "farm_and_charm:wild_beetroots",
+    "farm_and_charm:wild_potatoes",
+    "farm_and_charm:wild_carrots",
+    "farm_and_charm:wild_barley",
+    "farm_and_charm:wild_corn",
+    "farm_and_charm:wild_oat",
+    "farm_and_charm:wild_lettuce",
+    "farm_and_charm:wild_onions",
+    "farm_and_charm:wild_tomatoes",
+    "farm_and_charm:wild_strawberries",
+    "bakery:sandwich",
+    "bakery:vegetable_sandwich",
+    "bakery:grilled_salmon_sandwich",
+    "bakery:grilled_bacon_sandwich",
+    "bakery:bread_with_jam",
+    "vintageimprovements:aluminum_sheet",
+    "vintageimprovements:bronze_sheet",
+    "vintageimprovements:cast_iron_sheet",
+    "vintageimprovements:constantan_sheet",
+    "vintageimprovements:lead_sheet",
+    "vintageimprovements:netherite_sheet",
+    "vintageimprovements:nickel_sheet",
+    "vintageimprovements:rose_gold_sheet",
+    "vintageimprovements:silver_sheet",
+    "vintageimprovements:tin_sheet",
+    "vintageimprovements:uranium_sheet",
+    "vintageimprovements:zinc_sheet",
+    "vintageimprovements:amethyst_bronze_sheet",
+    "vintageimprovements:cobalt_sheet",
+    "vintageimprovements:enderium_sheet",
+    "vintageimprovements:hepatizon_sheet",
+    "vintageimprovements:invar_sheet",
+    "vintageimprovements:lumium_sheet",
+    "vintageimprovements:manyullyn_sheet",
+    "vintageimprovements:osmium_sheet",
+    "vintageimprovements:palladium_sheet",
+    "vintageimprovements:platinum_sheet",
+    "vintageimprovements:pure_gold_sheet",
+    "vintageimprovements:refined_glowstone_sheet",
+    "vintageimprovements:refined_obsidian_sheet",
+    "vintageimprovements:rhodium_sheet",
+    "vintageimprovements:signalum_sheet",
+    "vintageimprovements:refined_radiance_sheet",
+    "vintageimprovements:nethersteel_sheet",
+    "vintageimprovements:ironwood_sheet",
+    "vintageimprovements:knightmetal_sheet",
+    "vintageimprovements:queens_slime_sheet",
+    "vintageimprovements:slimesteel_sheet",
+    "vintageimprovements:fiery_sheet",
+    "vintageimprovements:shadow_steel_sheet",
+    "shieldexp:golden_shield",
+    "shieldexp:diamond_shield",
+    "supplementaries:lunch_basket",
+    "supplementaries:bubble_blower",
+    "supplementaries:soap",
+    "supplementaries:slingshot",
+    "supplementaries:rope_arrow",
+    "supplementaries:faucet",
+    "supplementaries:cannon",
+    "supplementaries:quiver",
+    "shieldeexp:netherite_shield",
+    "supplementaries:cage",
+    "shieldeexp:iron_shield",
+    "shieldeexp:wooden_shield",
+    "butcher:butcherspapers",
+    "patchouli:guide_book",
+    "design_decor:mechanical_crafting/enchanted_golden_apple",
+    "supplementaries:strings"
+  ]
+  oeiremove1.forEach(ida => { e.remove({ output: ida }) })
+  e.remove({ output: "minecraft:air" })
+
+
+
+
   const tfc_metal = [
     "red_steel",
     "bismuth",
@@ -102,42 +309,11 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
   e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
   e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
-  e.remove({ mod: 'totemic' }) // 移除图腾全部配方 
+  e.remove({ mod:'vc_gliders' }) // 移除图腾全部配方 
 
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
-  e.remove({ id: 'create_sa:blazing_axe_recipe' }) // 移除"炽热斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_pickaxe_recipe' }) // 移除"炽热镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_shovel_recipe' }) // 移除"炽热铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:blazing_sword_recipe' }) // 移除"炽热剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_axe_recipe' }) // 移除"黄铜斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_pickaxe_recipe' }) // 移除"黄铜镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_shovel_recipe' }) // 移除"黄铜铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_sword_recipe' }) // 移除"黄铜剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_hoe_recipe' }) // 移除"黄铜锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_helmet_recipe' }) // 移除"黄铜头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_chestplate_recipe' }) // 移除"黄铜胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_leggings_recipe' }) // 移除"黄铜 leggings（护腿）"的合成配方-create_sa
-  e.remove({ id: 'create_sa:brass_boots_recipe' }) // 移除"黄铜靴子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_axe_recipe' }) // 移除"铜斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_pickaxe_recipe' }) // 移除"铜镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_shovel_recipe' }) // 移除"铜铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_sword_recipe' }) // 移除"铜剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_hoe_recipe' }) // 移除"铜锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_helmet_recipe' }) // 移除"铜头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_chestplate_recipe' }) // 移除"铜胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_leggings_recipe' }) // 移除"铜护腿"的合成配方-create_sa
-  e.remove({ id: 'create_sa:copper_boots_recipe' }) // 移除"铜靴子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_axe_recipe' }) // 移除"锌斧头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_pickaxe_recipe' }) // 移除"锌镐子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_shovel_recipe' }) // 移除"锌铲子"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_sword_recipe' }) // 移除"锌剑"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_hoe_recipe' }) // 移除"锌锄头"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_helmet_recipe' }) // 移除"锌头盔"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_chestplate_recipe' }) // 移除"锌胸甲"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_leggings_recipe' }) // 移除"锌护腿"的合成配方-create_sa
-  e.remove({ id: 'create_sa:zinc_boots_recipe' }) // 移除"锌靴子"的合成配方-create_sa
   e.remove({ id: 'createaddition:fiiling/chocolate_cake' }) // 移除"巧克力蛋糕"的填充配方-createaddition
   e.remove({ id: 'createaddition:fiiling/cake' }) // 移除"蛋糕"的填充配方-createaddition
   e.remove({ id: 'createaddition:fiiling/honey_cake' }) // 移除"蜂蜜蛋糕"的填充配方-createaddition
@@ -195,6 +371,14 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'minecraft:smelting' }) // 移除熔炉熔炼配方
   e.remove({ type: 'minecraft:campfire_cooking' }) // 移除营火烹饪配方
   e.remove({ type: 'minecraft:blasting' }) // 移除高炉熔炼配方
+  e.remove({ type: 'immersiveengineering:alloy_smelter' }) // 移除合金窑熔炼配方 【没成功
+  e.remove({ type: 'immersiveengineering:blast_furnace' }) // 移除沉浸高炉熔炼配方
+  e.remove({ type: 'createdieselgenerators:wire_cutting' }) // 移除剪线配方
+  e.remove({ type: 'scguns:macerator' }) // 移除scg研磨机配方 【没成功
+  e.remove({ type: 'scguns:mech_press' }) // 移除scg冲压机配方 【没成功
+  e.remove({ type: 'scguns:powered_macerator' }) // 移除scg动力研磨机配方 【没成功
+  e.remove({ type: 'scguns:powered_mech_press' }) // 移除scg动力冲压机配方 【没成功
+
   e.remove({ id: 'map_atlases:craft_atlas' }) // 移除 map_atlases 模组制作地图集的配方
   e.remove({ id: 'simpleradio:radio' }) // 移除 simpleradio 模组制作收音机的配方
   e.remove({ id: 'simpleradio:transceiver' }) // 移除 simpleradio 模组制作收发器的配方
@@ -214,10 +398,32 @@ ServerEvents.recipes(e => {
   e.remove({ output: 'vintageimprovements:cast_iron_sheet' })//移除锻铁板
   e.remove('htm:compat/tfc/rock_knapping/hammer_head')//移处锤子
   e.remove('tfc:welding/cast_iron_double_ingot')
-  e.remove('tfc:heating/kaolin_clay')
   e.remove('crafttweaker:backpack')
   e.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' })//移除烈焰人燃烧室
   e.remove({ id: 'vinery:bamboo_lattice' })//删除竹格
+  e.remove({ id: 'brewery:beer_mug' })//移除多余的酒杯配方
+  e.remove({ id: 'brewinandchewin:cooking/sweet_berry_jam' })//移除饮酒作乐甜浆果果酱配方
+  e.remove({ id: 'brewinandchewin:cooking/glow_berry_marmalade' })//移除饮酒作乐发光果酱配方
+  e.remove({ id: 'brewinandchewin:cooking/apple_jelly' })//移除饮酒作乐苹果果酱配方
+
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_barley' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_corn' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_carrots' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_tomatoes' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_emmer' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_lettuce' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_strawberries' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_oat' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_potatoes' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_ribwort' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_beetroots' })//移除空配方 
+  e.remove({ id: 'farm_and_charm:drying/bone_meal_from_wild_onions' })//移除空配方 
+  e.remove({ id: 'brewinandchewin:fermenting/flaxen_cheese_from_milk' })//移除空配方
+  e.remove({ id: 'brewinandchewin:fermenting/scarlet_cheese_from_milk' })//移除空配方
+  e.remove({ id: 'butcher:butchersguidejei' })//移除空配方
+  e.remove({ id: 'butcher:butcherspapersrecipe' })//移除空配方
+  e.remove({ id: 'butcher:forgeguiderecipe' })//移除空配方
+
 
   e.remove('farmersdelight:paper_from_tree_bark')//三个树皮合成纸
 

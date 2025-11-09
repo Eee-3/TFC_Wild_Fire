@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "brewinandchewin:kippers"
+  },
+  "decay_modifier": 0.1,
+  "hunger": 4,
+  "saturation": 0.1,
+  "protein": 0.5,
+  "water": -10
+}

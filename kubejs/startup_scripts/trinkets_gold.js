@@ -71,9 +71,9 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/golden_topaz_ring')
         .maxStackSize(1)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
-        .modifyAttribute("lhmiracleroad:burden", "burden", 16, "addition")
+        .modifyAttribute("more_attributes:equip_load_max", "equip_load_max", 50, "addition")
         .modifyAttribute("minecraft:generic.movement_speed", "generic.movement_speed", 0.05, "multiply_total")
-        .modifyAttribute("lhmiracleroad:hunger", "hunger", 0.15, "multiply_total")
+        .modifyAttribute("more_attributes:hunger_consumption", "hunger_consumption", 0.95, "multiply_total")
         )
         .tag("curios:ring")
         event

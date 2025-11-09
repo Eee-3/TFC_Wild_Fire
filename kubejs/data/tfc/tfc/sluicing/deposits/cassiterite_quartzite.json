@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "tfc:deposit/cassiterite/quartzite"
+  },
+  "loot_table": "tfc:sluicing/deposits/cassiterite_quartzite"
+}

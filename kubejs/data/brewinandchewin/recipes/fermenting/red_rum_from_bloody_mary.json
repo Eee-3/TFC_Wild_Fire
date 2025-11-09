@@ -1,0 +1,26 @@
+{
+  "type": "brewinandchewin:fermenting",
+  "basefluid": {
+    "count": 1000,
+    "fluid": "brewinandchewin:bloody_mary"
+  },
+  "experience": 1.0,
+  "fermentingtime": 9600,
+  "ingredients": [
+    {
+      "item": "tfc:food/raspberry"
+    },
+    {
+      "item": "tfc:powder/ruby"
+    },
+    {
+      "item": "tfc:food/red_apple"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1000,
+    "fluid": "brewinandchewin:red_rum"
+  },
+  "temperature": 5
+}

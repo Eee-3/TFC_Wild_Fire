@@ -14,7 +14,7 @@
 	],
 	"type":"immersiveengineering:metal_press",
 	"energy":2400,
-	"mold":"tfc_metal_items:steel_pressing_head",
+	"mold":"tfc_ie_addon:mold_sheet",
 	"input": {
 	  "type": "tfc:heatable",
 	  "min_temp": 580,

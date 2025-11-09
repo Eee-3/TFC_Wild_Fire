@@ -723,7 +723,7 @@
 			subtitle: "盘它！"
 			tasks: [{
 				id: "5C7E2C20EAF27143"
-				item: "vintageimprovements:belt_grinder"
+				item: "createmetallurgy:mechanical_belt_grinder"
 				type: "item"
 			}]
 			x: 12.0d

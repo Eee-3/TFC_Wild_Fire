@@ -1,0 +1,56 @@
+[
+    {
+        "matchItems": [
+            "immersiveengineering:plate_iron",
+            "ad_astra:iron_plate",
+            "ad_astra:iron_plate"
+        ],
+        "resultItems": "tfc:metal/sheet/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "create:copper_sheet",
+            "immersiveengineering:plate_copper"
+        ],
+        "resultItems": "tfc:metal/sheet/copper"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_constantan"
+        ],
+        "resultItems": "tfc_ie_addon:metal/sheet/constantan"
+    },
+    {
+        "matchItems": [
+            "immersiveengineering:plate_gold",
+            "create:golden_sheet"
+        ],
+        "resultItems": "tfc:metal/sheet/gold"
+    },
+    {
+        "matchItems": [
+            "create:brass_sheet"
+
+        ],
+        "resultItems": "tfc:metal/sheet/brass"
+    },
+    {
+        "matchItems": [
+            "ad_astra:steel_plate",
+            "immersiveengineering:plate_steel"
+        ],
+        "resultItems": "tfc:metal/sheet/steel"
+    },
+    {
+        "matchItems": [
+           "immersiveengineering:plate_nickel"
+        ],
+        "resultItems": "tfc:metal/sheet/nickel"
+    },
+    {
+        "matchItems": [
+           "immersiveengineering:plate_silver"
+        ],
+        "resultItems": "tfc:metal/sheet/silver"
+    }
+]

@@ -2132,7 +2132,7 @@
 						ticks: 0L
 					}
 				}
-				id: "minecraft:chicken"
+				id: "tfc:food/chicken"
 			}
 			id: "013A2054AB857410"
 			shape: "pentagon"
@@ -2260,7 +2260,6 @@
 				title: "关于乌鸦的了解"
 				type: "custom"
 			}]
-			shape: "hexagon"
 			subtitle: "&8&l[通过遭遇乌鸦或提供经验来解锁]&r&r"
 			tasks: [
 				{
@@ -2516,7 +2515,7 @@
 						traits: [ ]
 					}
 				}
-				id: "minecraft:baked_potato"
+				id: "tfc:food/baked_potato"
 			}
 			id: "5B40F3F4620B65CB"
 			shape: "pentagon"
@@ -3242,7 +3241,7 @@
 			dependencies: ["427BE483ACA4477E"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "butcher:goatfur"
+			icon: "tfc:wool"
 			id: "66E5764B30E1F946"
 			shape: "pentagon"
 			size: 0.8d
@@ -3694,7 +3693,7 @@
 						traits: [ ]
 					}
 				}
-				id: "tfc:food/banana"
+				id: "alexsmobs:banana"
 			}
 			id: "0E14CEA22B83FA94"
 			shape: "pentagon"
@@ -7564,7 +7563,20 @@
 			dependencies: ["14D2185AFB5F4B5F"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "naturalist:duck"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:food/duck"
+			}
 			id: "0372FF4C72EE7C33"
 			shape: "pentagon"
 			size: 0.8d
@@ -8067,8 +8079,12 @@
 								creationDate: -9223372036854775808L
 								traits: [ ]
 							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
-						id: "minecraft:cod"
+						id: "tfc:food/cod"
 					}
 					id: "5538E5C1C11CA301"
 					optional_task: true
