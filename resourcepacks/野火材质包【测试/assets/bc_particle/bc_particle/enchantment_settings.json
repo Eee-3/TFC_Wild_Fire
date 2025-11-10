@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": {
+    "minecraft:fire_aspect": {
+      "color_hex": "ff7e00",
+      "color_hex_sec": "ff5c29",
+      "light": true
+    }
+  }
+}
