@@ -1,0 +1,38 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kubejs:item/scraps/crown_1"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "contains":3
+            },
+            "model": "kubejs:item/crown/crown_3"
+        },
+        {
+            "predicate": {
+                "contains":{"count":5} 
+            },
+            "model": "kubejs:item/crown/crown_5"
+        },
+        {
+            "predicate": {
+                "contains":{"count":12} 
+            },
+            "model": "kubejs:item/crown/crown_12"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 32
+            },
+            "model": "kubejs:item/crown/crown_32"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 63
+            },
+            "model": "kubejs:item/crown/crown_63"
+        }
+    ]
+}
