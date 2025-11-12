@@ -61,18 +61,25 @@
 				"此方法相较于寻找铜矿粒只需要一片水域即可获取冶炼铜的原材料，且产量不低。推荐能找到铜矿粒的玩家也使用淘金盘。"
 			]
 			hide_until_deps_complete: true
+			icon: "tfc:pan/empty"
 			id: "5EF1774178DE574E"
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "河流、是大地之血脉"
 			tasks: [
 				{
-					id: "56FF37C641679BFC"
-					item: "tfc:pan/empty"
+					id: "73C0285DD9DE477C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:pan/empty)item(tfc:ceramic/unfired_pan))"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "5DD9C2CB3EBEDC78"
+					id: "488E6A6BDB4426F6"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -80,21 +87,8 @@
 							value: "tfc:ore_deposits"
 						}
 					}
-					title: "Any #tfc:ore_deposits"
-					type: "item"
-				}
-				{
-					id: "63374E1526FB28F8"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/unfired_pan"
-					}
+					optional_task: true
+					title: "可在河床找到的沉积砂种类"
 					type: "item"
 				}
 			]
