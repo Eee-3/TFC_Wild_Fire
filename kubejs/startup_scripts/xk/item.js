@@ -3,7 +3,7 @@ StartupEvents.registry('item', event => {
   event.create('rock_powder', 'tfc:mold').capacity(100)
   //岩石粉末模具
   event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
-  event.create('wrought_iron_pressing_head').texture('kubejs:item/create/wrought_iron_pressing_head'); //锻铁压头
+ 
   event.create('wrought_iron_double_rod', 'basic').texture('kubejs:item/create/wrought_iron_double_rod');// 锻铁双棒
   event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 黑钢双棒
   event.create('fan_blade_blank', 'basic').texture('kubejs:item/create/fan_blade_blank');// 扇叶半成品

@@ -8,8 +8,7 @@ ServerEvents.recipes(e => {
     1
   )
   //岩石粉末替换
-  e.replaceOutput({id: "tfcorewashing:rock_powder/crushing"}, "tfcorewashing:rock_powder", "kubejs:rock_powder")
-  e.replaceInput({id: "tfcorewashing:rock_powder/splashing"}, "tfcorewashing:rock_powder", "kubejs:rock_powder")
+ 
   create.milling(
     'kubejs:rock_powder',
     "tfc:rock/loose/andesite",

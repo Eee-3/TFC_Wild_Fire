@@ -1,8 +1,0 @@
-{
-  "ingredient": {
-    "tag": "tfchotornot:insulating_heatable"
-  },
-  "heat_capacity": 10,
-  "forging_temperature": 100,
-  "welding_temperature": 400
-}

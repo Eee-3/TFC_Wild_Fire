@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"6": "kubejs:item/metal/cast_iron_indenter"
+	},
+	"elements": [
+		{
+			"name": "92d0fa6e-54aa-4408-9ff4-dbf1ca0a4882_0",
+			"from": [3, 2.4, 3],
+			"to": [13, 6.4, 13],
+			"rotation": {"angle": 0, "axis": "x", "origin": [11, 5.2, 11]},
+			"faces": {
+				"north": {"uv": [5, 0, 10, 2], "texture": "#6"},
+				"east": {"uv": [5, 0, 10, 2], "texture": "#6"},
+				"south": {"uv": [5, 0, 10, 2], "texture": "#6"},
+				"west": {"uv": [5, 0, 10, 2], "texture": "#6"},
+				"up": {"uv": [5, 5, 0, 0], "texture": "#6"},
+				"down": {"uv": [5, 5, 0, 10], "texture": "#6"}
+			}
+		},
+		{
+			"name": "86eb0b56-0b61-4053-8a43-cfb0a988cac0_0",
+			"from": [5, 6, 5],
+			"to": [11, 10, 11],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 9.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 5, 8, 7], "texture": "#6"},
+				"east": {"uv": [5, 5, 8, 7], "texture": "#6"},
+				"south": {"uv": [5, 5, 8, 7], "texture": "#6"},
+				"west": {"uv": [5, 5, 8, 7], "texture": "#6"},
+				"up": {"uv": [8, 5, 5, 2], "texture": "#6"},
+				"down": {"uv": [8, 2, 5, 5], "texture": "#6"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [43, 51, -27],
+			"translation": [1, 1.75, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "86eb0b56-0b61-4053-8a43-cfb0a988cac0",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}
