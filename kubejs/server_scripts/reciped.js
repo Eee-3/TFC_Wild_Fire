@@ -50,15 +50,31 @@ ServerEvents.recipes(event => {
         const doors = inputit.findAll("kubejs:brass_forge_door");
         for (let i = 0; i < doors.length; i++) {
             if (!doors[i].hasNBT) { return "air" }
-            if (doors[i].getOrCreateTag().getInt("tfc:forging_bonus") < 3) {
+            if (doors[i].getOrCreateTag().getInt("tfc:forging_bonus") < 1) {
                 return "air"
             }
         }
         return outputit
 
 
-    });
-    Item.of('tfc:metal/hammer_head/red_steel', '{"tfc:forging_bonus":3}')
+    }).id('jeihide:brass_forge_door');
+        event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
+        a: 'tfc:brass_mechanisms',
+        b: 'tfc:metal/double_sheet/brass',
+        c: Item.of('kubejs:brass_forge_door', '{"tfc:forging_bonus":2}').weakNBT()
+    }).modifyResult((inputit, outputit) => { //let brassForgeDoors = inputit.getOrCreateTag().getInt("tfc:forging_bonus");
+        const doors = inputit.findAll("kubejs:brass_forge_door");
+        for (let i = 0; i < doors.length; i++) {
+            if (!doors[i].hasNBT) { return "air" }
+            if (doors[i].getOrCreateTag().getInt("tfc:forging_bonus") < 1) {
+                return "air"
+            }
+        }
+        return outputit
+
+
+    }).id('kubejs:/reciped/brass_forge_door');
+
 
 
     event.shaped('kubejs:cast_iron_indenter', [' a ', 'aaa'], {

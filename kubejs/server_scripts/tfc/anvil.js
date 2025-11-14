@@ -102,7 +102,7 @@ ServerEvents.recipes(e => {
   ).tier(5).bonus(false).id("kubejs:tfc/anvil/material_component_black_steel/anvil");
 
   tfc.anvil(// 锻铁炉的铁砧配方
-    'kubejs:brass_forge_door',
+    Item.of('kubejs:brass_forge_door', '{"tfc:forging_bonus":2}').weakNBT(),
     'tfc:metal/double_sheet/brass',
     [
       'hit_any',
@@ -184,7 +184,7 @@ ServerEvents.recipes(a => {
           `${abd.a1}`,
           `${abd.a2}`,
           `${abd.a3}`
-        ]).bonus(false).tier(abc.number).id(`kubejs:tfc/anvil/${abc.name}_${abd.weaponname}`);
+        ]).bonus(true).tier(abc.number).id(`kubejs:tfc/anvil/${abc.name}_${abd.weaponname}`);
     })
   })
 
