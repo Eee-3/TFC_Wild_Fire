@@ -3,15 +3,15 @@
   "conditions": [
     {
       "type": "sophisticatedcore:item_enabled",
-      "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+      "itemRegistryName": "sophisticatedbackpacks:gold_backpack"
     }
   ],
-  "key": {
+ "key": {
     "B": {
-      "item": "sophisticatedbackpacks:copper_backpack"
+      "item": "sophisticatedbackpacks:iron_backpack"
     },
     "C": {
-      "item": "tfc:metal/double_sheet/wrought_iron"
+      "item": "tfc:metal/double_sheet/gold"
     },
       "A": {
       "tag": "forge:leather"
@@ -23,6 +23,6 @@
     "ACA"
   ],
   "result": {
-    "item": "sophisticatedbackpacks:iron_backpack"
+    "item": "sophisticatedbackpacks:gold_backpack"
   }
 }

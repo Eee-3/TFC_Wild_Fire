@@ -3,15 +3,15 @@
   "conditions": [
     {
       "type": "sophisticatedcore:item_enabled",
-      "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+      "itemRegistryName": "sophisticatedbackpacks:netherite_backpack"
     }
   ],
-  "key": {
+ "key": {
     "B": {
-      "item": "sophisticatedbackpacks:copper_backpack"
+      "item": "sophisticatedbackpacks:diamond_backpack"
     },
     "C": {
-      "item": "tfc:metal/double_sheet/wrought_iron"
+      "item": "kubejs:netherite_reinforcement_plate"
     },
       "A": {
       "tag": "forge:leather"
@@ -23,6 +23,6 @@
     "ACA"
   ],
   "result": {
-    "item": "sophisticatedbackpacks:iron_backpack"
+    "item": "sophisticatedbackpacks:netherite_backpack"
   }
 }

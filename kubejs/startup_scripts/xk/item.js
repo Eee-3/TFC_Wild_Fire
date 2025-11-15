@@ -26,6 +26,7 @@ StartupEvents.registry('item', event => {
   //event.create('straw_rope', 'basic').texture('kubejs:item/straw_rope');   // 注册草绳
  event.create('brass_forge_door', 'basic').texture('kubejs:item/brass_forge_door');// 黄铜锻炉门
 event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
+event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
 
   event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 

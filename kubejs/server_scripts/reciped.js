@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 
 
     }).id('jeihide:brass_forge_door');
-        event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
+    event.shaped('tfc:bloomery', ['aba', 'c c', 'aba'], {
         a: 'tfc:brass_mechanisms',
         b: 'tfc:metal/double_sheet/brass',
         c: Item.of('kubejs:brass_forge_door', '{"tfc:forging_bonus":2}').weakNBT()
@@ -110,11 +110,18 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:vellum', ['#tfc:knives', 'tfc:treated_hide']).damageIngredient({ tag: '#tfc:knives' }, 5).id(`${id_in}vellum`)//兽皮纸
 
 
+    event.shaped('minecraft:chest', ['aaa', 'b b', 'aaa'], {
+        a: '#tfc:lumber',
+        b: 'firmaciv:copper_bolt'
+    }) //箱子合成
+
+ event.shaped('minecraft:barrel', ['aba', 'a a', 'aba'], {
+        a: '#tfc:lumber',
+        b: 'firmaciv:copper_bolt'
+    }) //桶合成
 
 
-
-
-    event.forEachRecipe( //合成箱子
+    /*event.forEachRecipe( //合成箱子
         {
             not: { input: ['#minecraft:logs', '#forge:chests'] },
             mod: 'quark',
@@ -131,7 +138,8 @@ ServerEvents.recipes(event => {
                 S: wood_id,
                 b: 'firmaciv:copper_bolt'
             })
-        })
+        })*/
+
 
     event.forEachRecipe(//合成木板
         {
@@ -145,14 +153,6 @@ ServerEvents.recipes(event => {
         })
     event.remove([{ not: { mod: "kubejs" }, input: "#minecraft:logs", type: "crafting_shapeless", output: "#minecraft:planks" }])//移除所有合成木板配方
     event.remove([{ not: { mod: "kubejs" }, input: ["#minecraft:logs", "#minecraft:planks"], type: "crafting_shaped", output: "#forge:chests" }])//移除所有箱子配方
-
-
-
-
-
-
-
-
 
 
 
