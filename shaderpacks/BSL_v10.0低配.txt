@@ -1,8 +1,0 @@
-#Thu Jul 24 10:19:07 CST 2025
-shadowDistance=128.0
-LIGHT_SHAFT=false
-MULTICOLORED_BLOCKLIGHT=true
-shadowMapResolution=1024
-MCBL_RANDOM=true
-TAA=false
-ADVANCED_MATERIALS=true

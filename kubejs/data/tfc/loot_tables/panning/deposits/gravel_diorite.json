@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:bone",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stick",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:dirty_pile_copper",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "tfc:rock/loose/diorite"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "tfcorewashing:rocky_chunks_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:obsidian_shards"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_hematite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_magnetite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_galena",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

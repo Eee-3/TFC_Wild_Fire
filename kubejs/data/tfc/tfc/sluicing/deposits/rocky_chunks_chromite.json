@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcorewashing:rocky_chunks_chromite"
+  },
+  "loot_table": "tfc:sluicing/deposits/rocky_chunks_chromite"
+}

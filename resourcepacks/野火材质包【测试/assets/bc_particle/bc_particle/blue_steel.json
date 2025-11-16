@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": {
+    "tfc:metal_item/blue_steel": {
+      "color_hex": "0074ff",
+      "color_hex_sec": "0074ff",
+      "light": true
+    }
+  }
+}

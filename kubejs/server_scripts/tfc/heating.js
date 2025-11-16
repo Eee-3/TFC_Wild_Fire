@@ -156,7 +156,36 @@ ServerEvents.recipes(e => {
   tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
 
+ const metaltongs = [
+    { name: "bismuth_bronze", temperature: 860, metal: "tfc:metal/bismuth_bronze" },
+    { name: "black_bronze", temperature: 910, metal: "tfc:metal/black_bronze" },
+    { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
+    { name: "copper", temperature: 1085, metal: "tfc:metal/copper" },
+    { name: "wrought_iron", temperature: 1538, metal: "tfc:metal/cast_iron" },
+    { name: "steel", temperature: 1538, metal: "tfc:metal/steel" },
+    { name: "black_steel", temperature: 1420, metal: "tfc:metal/black_steel" },
+    { name: "blue_steel", temperature: 1450, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 1480, metal: "tfc:metal/red_steel" },
+    { name: "cast_iron", temperature: 1200, metal: "tfc:metal/cast_iron" },
+    { name: "gold", temperature: 1064, metal: "tfc:metal/gold" },
+    { name: "rose_gold", temperature: 1050, metal: "tfc:metal/rose_gold" },
+    { name: "brass", temperature: 900, metal: "tfc:metal/brass" },
+    { name: "bismuth", temperature: 271, metal: "tfc:metal/bismuth" },
+    { name: "silver", temperature: 961, metal: "tfc:metal/silver" },
+    { name: "sterling_silver", temperature: 940, metal: "tfc:metal/sterling_silver" },
+    { name: "nickel", temperature: 1455, metal: "tfc:metal/nickel" },
+    { name: "chromium", temperature: 1907, metal: "firmalife:bucket/metal/chromium" },
+    { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
+    { name: "stainless_steel", temperature: 1400, metal: "firmalife:bucket/metal/stainless_steel" },
+    { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" },
+    { name: "blue_steel", temperature: 1538, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 1538, metal: "tfc:metal/red_steel" },
+    { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" }
+];
+  metaltongs.forEach(metal => {
 
-
+    tfc.heating(`kubejs:${metal.name}_tong`, metal.temperature).resultFluid(Fluid.of(metal.metal, 100))//完整融化
+    tfc.heating(`kubejs:${metal.name}_tong_part`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//部件融化
+  })
 
 });

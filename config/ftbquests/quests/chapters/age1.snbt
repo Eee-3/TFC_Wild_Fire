@@ -267,7 +267,7 @@
 			subtitle: "绑好！"
 			tasks: [{
 				id: "4F61750C4C23F613"
-				item: "htm:plant_string"
+				item: "farmersdelight:rope"
 				type: "item"
 			}]
 			title: "加固你的工具"
@@ -875,7 +875,6 @@
 			y: 8.357142857142854d
 		}
 		{
-			dependencies: ["2DB49F7DE2CD977C"]
 			hide_dependency_lines: true
 			id: "54D81CF17173B502"
 			invisible: true
@@ -928,7 +927,13 @@
 					id: "557FEB06F62E13CD"
 					item: {
 						Count: 1
-						id: "kubejs:obsidian_tool"
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:obsidian_knife"
 						tag: {
 							Damage: 0
 						}

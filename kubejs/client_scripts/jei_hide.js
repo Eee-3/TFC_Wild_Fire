@@ -1,4 +1,7 @@
+JEIEvents.removeRecipes(event => {
+event.remove('minecraft:crafting','jeihide:brass_forge_door')})
 JEIEvents.hideItems(event => {
+    
     const items = [
 
         /createmetallurgy:raw_.*/,

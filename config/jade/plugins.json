@@ -188,11 +188,6 @@
   "corpse": {
     "corpse": true
   },
-  "drinkbeer": {
-    "mixed_beer": true,
-    "trade_box": true,
-    "beer_barrel": true
-  },
   "afc": {
     "tap": true
   },

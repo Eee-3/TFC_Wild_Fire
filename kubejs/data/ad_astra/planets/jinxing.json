@@ -1,6 +1,6 @@
 {
     "dimension": "minecraft:the_nether",
-    "gravity": 0.80,
+    "gravity": 9.80,
   "orbit": "ad_astra:moon_orbit",
   "oxygen": true,
   "solar_power": 24,

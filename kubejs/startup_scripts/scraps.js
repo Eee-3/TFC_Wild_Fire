@@ -1,6 +1,6 @@
 StartupEvents.registry('item', event => {
 	event.create('kubejs:crown')
-    .texture('kubejs:item/scraps/crown')
+    //.texture('kubejs:item/scraps/crown')
     .displayName("铸金币")
 
     event.create('kubejs:copper_fragments')

@@ -28,3 +28,46 @@ MafuyuEvents.modifyVariedModel(event => {
 
 
 });
+MafuyuEvents.modifyVariedModel(event => {
+    const itemStack = event.getItemStack();
+    if (!itemStack) return; // 物品堆不存在时直接返回
+
+    if (!itemStack.id.includes('kubejs:brass_forge_door')) return;
+
+    const nbt = itemStack.nbt;
+    if (!nbt) event.setModelPath("kubejs:bad_brass_forge_door");
+
+    if (!nbt.contains("null") && nbt.contains("tfc:forging_bonus")) {
+        if (nbt.getInt("tfc:forging_bonus") > 1) {
+            return
+
+        } else { event.setModelPath("kubejs:bad_brass_forge_door"); }
+    }
+
+
+});
+/*MafuyuEvents.modifyVariedModel(event => {
+    const itemStack = event.getItemStack();
+    if (!itemStack) return; // 物品堆不存在时直接返回
+
+    if (!itemStack.id.includes('kubejs:crown')) return;
+const count = itemStack.getCount(); 
+
+if (count > 62) {
+    event.setModelPath("kubejs:item/crown/crown_32");
+} else if (count > 31) { 
+    event.setModelPath("kubejs:item/crown/crown_32");
+} else if (count > 11) { 
+    event.setModelPath("kubejs:item/crown/crown_12");
+} else if (count > 4) { 
+    event.setModelPath("kubejs:item/crown/crown_5");
+} else if (count > 2) { 
+    event.setModelPath("kubejs:item/crown/crown_3");
+} else { //
+    event.setModelPath("kubejs:item/crown/crown_1");
+}
+
+
+
+});
+*/

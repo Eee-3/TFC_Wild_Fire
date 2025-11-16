@@ -248,7 +248,7 @@ ServerEvents.recipes((event) => {
         { item: 'weak_blue_steel', type: '1' },
 
         { item: 'nickel', type: '2' },
-        { item: 'wrought_iron', type: '2' },
+       // { item: 'wrought_iron', type: '2' },
         { item: 'cast_iron', type: '2' },
         { item: 'steel', type: '2' },
         { item: 'black_steel', type: '2' },

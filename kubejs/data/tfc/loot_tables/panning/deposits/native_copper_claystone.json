@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "tfcorewashing:rocky_chunks_copper"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:bone",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stick",
+              "weight": 5
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:dirty_pile_copper",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 40,
+          "name": "tfc:rock/loose/claystone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "tfcorewashing:rocky_chunks_copper"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_bauxite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_limonite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_galena",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

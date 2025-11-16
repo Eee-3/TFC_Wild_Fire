@@ -1,0 +1,19 @@
+{
+  "type": "woodencog:heated_mixing",
+  "heatRequirement": 1080.0,
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "tfc:ore/small_tetrahedrite"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 10,
+      "fluid": "tfc:metal/copper",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100
+}

@@ -32,5 +32,17 @@ TFCEvents.data(e => {
   e.itemHeat('minecraft:damaged_anvil', 1, null, null)
   e.itemHeat('@vintageimprovements', 1, null, null)
   e.itemHeat('#forge:rods/all_metal', 1, null, null)
+ e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
+  const heatitem = [
+    '#forge:ores/rocky_chunks',
+    '#forge:ores/chunks',
+    '#forge:ores/dirty_dusts',
+    
+    '#forge:metal/pellet',
+    '#forge:metal/briquet'
+  ]
+  heatitem.forEach((item) => {
+    e.itemHeat(item, 1, null, null)
+  })
 
 })

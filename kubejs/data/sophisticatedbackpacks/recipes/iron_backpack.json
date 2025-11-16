@@ -8,16 +8,19 @@
   ],
   "key": {
     "B": {
-      "item": "sophisticatedbackpacks:backpack"
+      "item": "sophisticatedbackpacks:copper_backpack"
     },
-    "I": {
-      "item": "tfc:metal/ingot/wrought_iron"
+    "C": {
+      "item": "tfc:metal/double_sheet/wrought_iron"
+    },
+      "A": {
+      "tag": "forge:leather"
     }
   },
   "pattern": [
-    "III",
-    "IBI",
-    "III"
+    "ACA",
+    "ABA",
+    "ACA"
   ],
   "result": {
     "item": "sophisticatedbackpacks:iron_backpack"

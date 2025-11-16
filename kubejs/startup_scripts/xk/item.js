@@ -3,14 +3,14 @@ StartupEvents.registry('item', event => {
   event.create('rock_powder', 'tfc:mold').capacity(100)
   //岩石粉末模具
   event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
-  event.create('wrought_iron_pressing_head').texture('kubejs:item/create/wrought_iron_pressing_head'); //锻铁压头
+ 
   event.create('wrought_iron_double_rod', 'basic').texture('kubejs:item/create/wrought_iron_double_rod');// 锻铁双棒
   event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 黑钢双棒
   event.create('fan_blade_blank', 'basic').texture('kubejs:item/create/fan_blade_blank');// 扇叶半成品
   event.create('fan_blade_blank_part', 'basic').texture('kubejs:item/create/fan_blade_blank_part');// 扇叶片
   event.create('whisk_stirrer_head_blank', 'basic').texture('kubejs:item/create/whisk_stirrer_head_blank');// 搅拌头半成品
   event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 黑钢搅拌头半成品
-  event.create('brass_forge_door', 'basic').texture('kubejs:item/brass_forge_door');// 黄铜锻炉门
+ 
 
   event.create('material_component_wrought_iron', 'basic').texture('kubejs:item/create/material_component_wrought_iron');// 锻铁零件
   event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
@@ -24,8 +24,9 @@ StartupEvents.registry('item', event => {
 
   event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
   //event.create('straw_rope', 'basic').texture('kubejs:item/straw_rope');   // 注册草绳
-
-
+ event.create('brass_forge_door', 'basic').texture('kubejs:item/brass_forge_door');// 黄铜锻炉门
+event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
+event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
 
   event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 

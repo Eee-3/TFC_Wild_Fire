@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "tfc:rock/loose/shale"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "tfcorewashing:rocky_chunks_copper"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_sulfur",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_malachite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_uraninite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

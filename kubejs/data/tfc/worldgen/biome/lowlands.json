@@ -69,12 +69,6 @@
         ],
         "water_creature": [
             {
-                "type": "tfc:orca",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 3
-            },
-            {
                 "type": "tfc:dolphin",
                 "weight": 1,
                 "minCount": 1,

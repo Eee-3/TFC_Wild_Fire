@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#tfchotornot:hot_whitelist",
-    "#tfchotornot:gaseous_whitelist",
-    "#tfchotornot:cold_whitelist"
-  ]
-}

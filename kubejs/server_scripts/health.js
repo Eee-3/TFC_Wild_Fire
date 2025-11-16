@@ -19,10 +19,13 @@ function cooldown(event, time){
 function adrenaline(e){
   //首先给予玩家painkiller以及speed效果，持续600tick
   e.entity.potionEffects.add("legendarysurvivaloverhaul:painkiller", 600)
-  e.entity.potionEffects.add("minecraft:speed", 300)
+  e.entity.potionEffects.add("majruszsdifficulty:glass_regeneration", 100)
+  e.entity.potionEffects.add("majruszsdifficulty:bleeding_immunity", 600)
+  e.entity.potionEffects.add("minecraft:speed", 300,1)
   //600tick后，给予玩家slowness以及darkness效果，持续100tick
   e.server.scheduleInTicks(600, func => {
     e.entity.potionEffects.add("minecraft:slowness", 60, 9)
+    e.entity.potionEffects.add("tfc:exhausted", 180, 2)
     e.entity.potionEffects.add("minecraft:darkness", 100)
     e.server.scheduleInTicks(100, func => {
       e.player.setStatusMessage(Component.translatable("message.kubejs.adrenaline_cooldwon"))
@@ -59,6 +62,11 @@ PlayerEvents.loggedIn(e => {
 PlayerEvents.respawned(e => {
   wait = 0
   e.player.paint({adrenaline: {remove: true}})
+  e.server.scheduleInTicks(600, func => {
+    e.player.removeEffect("minecraft:slowness")
+    e.player.removeEffect("tfc:exhausted")
+    e.player.removeEffect("minecraft:darkness")
+})
 })
 // 当玩家受伤时，判断是否触发肾上腺素
 EntityEvents.hurt(e => {

@@ -1,0 +1,19 @@
+{
+  "type": "woodencog:heated_mixing",
+  "heatRequirement": 1453.0,
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "tfc:ore/rich_garnierite"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 35,
+      "fluid": "tfc:metal/nickel",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100
+}
