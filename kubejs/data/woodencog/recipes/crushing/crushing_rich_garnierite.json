@@ -1,0 +1,30 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/rich_garnierite"
+        }
+    ],
+    "results": [
+        {
+            "count": 7,
+            "item": "tfcorewashing:dirty_dust_garnierite"
+        },
+        {
+            "chance": 0.3,
+            "count": 3,
+            "item": "tfcorewashing:dirty_pile_garnierite"
+        },
+        {
+            "chance": 0.2,
+            "count": 2,
+            "item": "tfcorewashing:dirty_pile_garnierite"
+        },
+        {
+            "chance": 0.15,
+            "count": 2,
+            "item": "tfcorewashing:dirty_pile_garnierite"
+        }
+    ],
+    "processingTime": 400
+}

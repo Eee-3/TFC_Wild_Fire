@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "tag": "tfc:makes_lime_dye"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "minecraft:lime_dye"
+        }
+    ],
+    "processingTime": 400
+}

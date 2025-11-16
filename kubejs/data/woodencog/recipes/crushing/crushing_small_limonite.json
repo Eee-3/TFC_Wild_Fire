@@ -1,0 +1,23 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/small_limonite"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "tfcorewashing:dirty_dust_imonite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_imonite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_imonite"
+        }
+    ],
+    "processingTime": 400
+}

@@ -1,0 +1,25 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/poor_hematite"
+        }
+    ],
+    "results": [
+        {
+            "count": 3,
+            "item": "tfcorewashing:dirty_dust_hematite"
+        },
+        {
+            "chance": 0.3,
+            "count": 2,
+            "item": "tfcorewashing:dirty_pile_hematite"
+        },
+        {
+            "chance": 0.15,
+            "count": 1,
+            "item": "tfcorewashing:dirty_pile_hematite"
+        }
+    ],
+    "processingTime": 400
+}

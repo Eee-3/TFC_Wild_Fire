@@ -125,11 +125,11 @@ ServerEvents.recipes(event => {
 
         return;
       }
-      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
+      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:food/dried_kelp' || cookmeat_id == 'tfc:food/dried_seaweed' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
         return;
       }
 
-      event.recipes.tfc.heating(cookmeat_id, 200).resultItem('kubejs:burnt_food_residue')
+      event.recipes.tfc.heating(cookmeat_id, 700).resultItem('kubejs:burnt_food_residue')
     })
 
   event.shaped('create:empty_blaze_burner', [
