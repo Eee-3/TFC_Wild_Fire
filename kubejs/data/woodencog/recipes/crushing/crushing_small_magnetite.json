@@ -1,0 +1,23 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/small_magnetite"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "tfcorewashing:dirty_dust_magnetite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_magnetite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_magnetite"
+        }
+    ],
+    "processingTime": 400
+}

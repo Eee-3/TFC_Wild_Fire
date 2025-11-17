@@ -1,0 +1,25 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/poor_cassiterite"
+        }
+    ],
+    "results": [
+        {
+            "count": 3,
+            "item": "tfcorewashing:dirty_dust_cassiterite"
+        },
+        {
+            "chance": 0.3,
+            "count": 2,
+            "item": "tfcorewashing:dirty_pile_cassiterite"
+        },
+        {
+            "chance": 0.15,
+            "count": 1,
+            "item": "tfcorewashing:dirty_pile_cassiterite"
+        }
+    ],
+    "processingTime": 400
+}

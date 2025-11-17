@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "forge:fruits/apple"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "artisanal:apple_juice"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+   "item": "tfc:food/rye"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "tfc:food/rye_grain"
+    },
+    {
+      "count": 1,
+      "item": "tfc:straw"
+    }
+  ]
+}

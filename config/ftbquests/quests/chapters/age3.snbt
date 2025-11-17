@@ -6009,6 +6009,10 @@
 			icon: {
 				Count: 1
 				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 33720000L
+						traits: [ ]
+					}
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L
@@ -6870,6 +6874,10 @@
 			icon: {
 				Count: 1
 				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 33720000L
+						traits: [ ]
+					}
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L

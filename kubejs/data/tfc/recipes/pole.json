@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+        "item": "tfc:handle"
+    },
+    {
+        "item": "tfc:handle"
+    }
+  ],
+  "result": {
+    "item": "spartanweaponry:pole"
+  }
+}

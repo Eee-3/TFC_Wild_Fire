@@ -1,0 +1,15 @@
+{
+    "type": "create:milling",
+    "ingredients": [
+        {
+            "tag": "tfc:makes_purple_dye"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "minecraft:purple_dye"
+        }
+    ],
+    "processingTime": 400
+}

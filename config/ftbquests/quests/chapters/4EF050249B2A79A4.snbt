@@ -100,6 +100,10 @@
 		}
 		{
 			dependencies: ["48C217796BFAE34E"]
+			description: [
+				"{@pagebreak}"
+				"(new page placeholder text)"
+			]
 			id: "4470EA6D5135A4A3"
 			tasks: [{
 				id: "77C76DBEF5333923"

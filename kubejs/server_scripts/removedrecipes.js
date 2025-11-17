@@ -81,10 +81,6 @@ ServerEvents.recipes(e => {
 
 
 
-    
-
-
-
 
   ]
   iddd.forEach(id => { e.remove({ id: id }); });
@@ -371,6 +367,7 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'minecraft:smelting' }) // 移除熔炉熔炼配方
   e.remove({ type: 'minecraft:campfire_cooking' }) // 移除营火烹饪配方
   e.remove({ type: 'minecraft:blasting' }) // 移除高炉熔炼配方
+
   e.remove({ type: 'immersiveengineering:alloy_smelter' }) // 移除合金窑熔炼配方 【没成功
   e.remove({ type: 'immersiveengineering:blast_furnace' }) // 移除沉浸高炉熔炼配方
   e.remove({ type: 'createdieselgenerators:wire_cutting' }) // 移除剪线配方
@@ -396,11 +393,11 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'ad_astra:etrionic_blast_furnace' }) //电力高炉
   e.remove({ output: 'vintageimprovements:pig_iron_sheet' })//移除猪铁
   e.remove({ output: 'vintageimprovements:cast_iron_sheet' })//移除锻铁板
-  e.remove('htm:compat/tfc/rock_knapping/hammer_head')//移处锤子
+  e.remove('htm:compat/tfc/rock_knapping/hammer_head')//移除锤子
   e.remove('tfc:welding/cast_iron_double_ingot')
   e.remove('crafttweaker:backpack')
   e.remove({ id: 'create:crafting/kinetics/empty_blaze_burner' })//移除烈焰人燃烧室
-  e.remove({ id: 'vinery:bamboo_lattice' })//删除竹格
+  e.remove({ id: 'vinery:bamboo_lattice' })//移除竹格
   e.remove({ id: 'brewery:beer_mug' })//移除多余的酒杯配方
   e.remove({ id: 'brewinandchewin:cooking/sweet_berry_jam' })//移除饮酒作乐甜浆果果酱配方
   e.remove({ id: 'brewinandchewin:cooking/glow_berry_marmalade' })//移除饮酒作乐发光果酱配方
@@ -432,6 +429,14 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'sophisticatedbackpacks:backpack' }) // 移除 背包
   e.remove({ id: "minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
   e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
+
+  e.remove({ type: 'survivorsdelight:cooking' }) 
+  e.remove({ type: 'survivorsdelight:crafting/food' }) 
+  e.remove({ type: 'minecraft:feast' }) 
+  e.remove({ type: 'minecraft:meal' }) 
+  e.remove({ type: 'minecraft:soup' }) // 移除survivors delight 的食物配方
+
+
 
 
   //刷物品

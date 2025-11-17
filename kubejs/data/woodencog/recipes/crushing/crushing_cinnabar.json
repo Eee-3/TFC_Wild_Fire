@@ -1,0 +1,23 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc:ore/cinnabar"
+        }
+    ],
+    "results": [
+        {
+            "count": 8,
+            "item": "minecraft:redstone"
+        },
+        {
+            "chance": 0.25,
+            "item": "minecraft:redstone"
+        },
+        {
+            "chance": 0.25,
+            "item": "minecraft:redstone"
+        }
+    ],
+    "processingTime": 400
+}

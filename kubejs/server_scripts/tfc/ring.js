@@ -2,7 +2,6 @@ ServerEvents.recipes(e => {
     const { tfc, create, kubejs, immersiveengineering } = e.recipes;
     const rings = [//戒指锻造
 
-        { name: "copper", temperature: 1080, metal: "copper" }, // 铜戒指
         { name: "sterling_silver", temperature: 961, metal: "sterling_silver" }, // 纯银戒指
         { name: "silver", temperature: 961, metal: "silver" }, // 银戒指
         { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指
@@ -51,7 +50,7 @@ ServerEvents.recipes(e => {
     });
     ringGems.forEach(itema => {
         rings.forEach(itemb => {
-  
+
             e.shapeless(Item.of(`shiny_ornaments:${itemb.metal}_${itema.name}_ring`),
                 [`shiny_ornaments:${itemb.name}_ring`, `${itema.mod}${itema.gem}`])
 

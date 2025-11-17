@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "artisanal:sugarcane_juice"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:perishable_sugar"
+    },
+    {
+      "amount": 20,
+      "fluid": "artisanal:molasses"
+    }
+  ]
+}

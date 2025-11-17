@@ -4,8 +4,18 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:tag",
+          "name": "forge:bread",
+          "weight": 10
+        },
+        {
           "type": "minecraft:item",
           "name": "bakery:vegetable_sandwich",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bakery:grilled_salmon_sandwich",
           "weight": 8
         },
         {

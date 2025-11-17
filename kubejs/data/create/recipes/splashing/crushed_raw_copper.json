@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "tfc:food/sugarcane"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:food/cleaned_sugarcane"
+    }
+  ]
+}
