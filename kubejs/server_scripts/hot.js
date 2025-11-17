@@ -90,11 +90,14 @@ PlayerEvents.tick(event => {
             }
 
             player.offHandItem.getCapability($HeatCapability.CAPABILITY).ifPresent(iHeat => {
-                if (mittens != null && iHeat.getTemperature() > 300 && iHeat.getTemperature() < 1300) {
-                    damageMittens = true
+                if (iHeat.getTemperature() > 300) {
+                    if (mittens != null && iHeat.getTemperature() < 1300) {
+                        damageMittens = true;
+                    } else {
+                        dropHotItem = true;
+                    }
                 }
-                else dropHotItem = true
-            })
+            });
 
             if (dropHotItem) {
                 let dropItem = player.offHandItem.copy()

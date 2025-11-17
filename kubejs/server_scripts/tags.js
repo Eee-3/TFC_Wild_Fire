@@ -29,7 +29,7 @@ ServerEvents.tags("item", event => {
         'blue_steel',
         'red_steel'
     ];
-     metalsinf.forEach(metal => {
+    metalsinf.forEach(metal => {
         event.add('kubejs:inf_tongs', `kubejs:${metal}_tong`)
         event.add('kubejs:tongs', `kubejs:${metal}_tong`)
         event.add('kubejs:hot_items', `tfc:bucket/metal/${metal}`)
@@ -42,6 +42,7 @@ ServerEvents.tags("item", event => {
     )
 
     // 将手套加入进饰品tag
+    event.add('kubejs:tongs', 'kubejs:wooden_tong')
     event.add('curios:hands', 'kubejs:glove')
     // 熔岩桶是热的物品
     event.add('kubejs:hot_items', 'minecraft:lava_bucket')

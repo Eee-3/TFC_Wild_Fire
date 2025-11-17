@@ -14,68 +14,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
-        },
-        {
-          "item": "immersiveengineering:ingot_hop_graphite"
-        }
-      ],
-      "results": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        },
-        {
-          "item": "tfc:metal/double_sheet/steel"
-        }
-      ],
-      "results": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        }
-      ]
-    },
-    {
-      "type": "create:pressing",
-      "ingredients": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        }
-      ],
-      "results": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        },
-        {
-          "item": "firmalife:metal/sheet/chromium"
-        }
-      ],
-      "results": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
         },
         {
           "item": "ad_astra:desh_plate"
@@ -83,7 +22,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
         }
       ]
     },
@@ -91,15 +30,31 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
         },
         {
-          "item": "tfc:metal/sheet/red_steel"
+          "item": "immersiveengineering:ingot_hop_graphite"
         }
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        },
+        {
+          "item": "tfc:metal/double_sheet/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
         }
       ]
     },
@@ -107,17 +62,62 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
         }
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:advanced_plating_unfinished"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        },
+        {
+          "item": "firmalife:metal/sheet/chromium"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        },
+        {
+          "item": "tfc:metal/sheet/red_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:advanced_plating_unfinished"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "tfc:metal/double_sheet/black_steel"
+    "item": "kubejs:advanced_plating_unfinished"
   }
 }
