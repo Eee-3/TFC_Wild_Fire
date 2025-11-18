@@ -45,7 +45,7 @@
 			#Range: -10000 ~ 10000
 			"Wetness Indicator X Offset" = 0
 			#Range: -10000 ~ 10000
-			"Wetness Indicator Y Offset" = 0
+			"Wetness Indicator Y Offset" = -10
 
 [body-damage]
 	# The X and Y offset of the body damage indicator. Set both to 0 for no offset.

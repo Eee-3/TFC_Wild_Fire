@@ -3,7 +3,6 @@
 ServerEvents.recipes((event) => {
 
     const recipes = [
-        { type: 'createmetallurgy:bulk_melting' },
         { type: 'createmetallurgy:entity_melting' },
         { type: 'createmetallurgy:grinding' },
         { input: /createmetallurgy:raw_.*/ },

@@ -29,7 +29,7 @@
 	#
 	# Sound amplifier level for earthquakes and tremors. Default = 4.0.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	earthquakeSoundAmplifier = 4.0
+	earthquakeSoundAmplifier = 1.0
 	#
 	# Should volcanoes launch pyroclastic bombs?
 	togglePyroclasticBombs = true

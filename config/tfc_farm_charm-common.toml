@@ -1,0 +1,4 @@
+#对肥沃耕地施肥的养分加成倍率（默认是原养分的2.5倍）
+#Range: 1.0 ~ 10.0
+fertilizerOnFertilizedFarmland = 2.5
+

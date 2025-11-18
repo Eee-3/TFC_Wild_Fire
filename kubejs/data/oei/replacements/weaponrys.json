@@ -1,0 +1,577 @@
+[
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_battle_hammer"
+        ],
+        "resultItems": "kubejs:bronze_battle_hammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_greatsword"
+        ],
+        "resultItems": "kubejs:bronze_greatsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_rapier"
+        ],
+        "resultItems": "kubejs:bronze_rapier"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_saber"
+        ],
+        "resultItems": "kubejs:bronze_saber"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_katana"
+        ],
+        "resultItems": "kubejs:bronze_katana"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_longsword"
+        ],
+        "resultItems": "kubejs:bronze_longsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_dagger"
+        ],
+        "resultItems": "kubejs:bronze_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_tomahawk"
+        ],
+        "resultItems": "kubejs:bronze_tomahawk"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_throwing_knife"
+        ],
+        "resultItems": "kubejs:bronze_throwing_knife"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_boomerang"
+        ],
+        "resultItems": "kubejs:bronze_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_halberd"
+        ],
+        "resultItems": "kubejs:bronze_halberd"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_scythe"
+        ],
+        "resultItems": "kubejs:bronze_scythe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_glaive"
+        ],
+        "resultItems": "kubejs:bronze_glaive"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_quarterstaff"
+        ],
+        "resultItems": "kubejs:bronze_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_javelin"
+        ],
+        "resultItems": "kubejs:bronze_javelin"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_lance"
+        ],
+        "resultItems": "kubejs:bronze_lance"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_pike"
+        ],
+        "resultItems": "kubejs:bronze_pike"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_flanged_mace"
+        ],
+        "resultItems": "kubejs:bronze_flanged_mace"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_battleaxe"
+        ],
+        "resultItems": "kubejs:bronze_battleaxe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_warhammer"
+        ],
+        "resultItems": "kubejs:bronze_warhammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_boomerang"
+        ],
+        "resultItems": "kubejs:bronze_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_quarterstaff"
+        ],
+        "resultItems": "kubejs:bronze_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:bronze_parrying_dagger"
+        ],
+        "resultItems": "kubejs:bronze_parrying_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_battle_hammer",
+            "spartanweaponry:diamond_battle_hammer"
+        ],
+        "resultItems": "kubejs:steel_battle_hammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_greatsword",
+            "spartanweaponry:diamond_greatsword"
+        ],
+        "resultItems": "kubejs:steel_greatsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_rapier",
+            "spartanweaponry:diamond_rapier"
+        ],
+        "resultItems": "kubejs:steel_rapier"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_saber",
+            "spartanweaponry:diamond_saber"
+        ],
+        "resultItems": "kubejs:steel_saber"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_katana",
+            "spartanweaponry:diamond_katana"
+        ],
+        "resultItems": "kubejs:steel_katana"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_longsword",
+            "spartanweaponry:diamond_longsword"
+        ],
+        "resultItems": "kubejs:steel_longsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_dagger",
+            "spartanweaponry:diamond_dagger"
+        ],
+        "resultItems": "kubejs:steel_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_tomahawk",
+            "spartanweaponry:diamond_tomahawk"
+        ],
+        "resultItems": "kubejs:steel_tomahawk"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_throwing_knife",
+            "spartanweaponry:diamond_throwing_knife"
+        ],
+        "resultItems": "kubejs:steel_throwing_knife"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_boomerang",
+            "spartanweaponry:diamond_boomerang"
+        ],
+        "resultItems": "kubejs:steel_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_halberd",
+            "spartanweaponry:diamond_halberd"
+        ],
+        "resultItems": "kubejs:steel_halberd"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_scythe",
+            "spartanweaponry:diamond_scythe"
+        ],
+        "resultItems": "kubejs:steel_scythe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_glaive",
+            "spartanweaponry:diamond_glaive"
+        ],
+        "resultItems": "kubejs:steel_glaive"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_quarterstaff",
+            "spartanweaponry:diamond_quarterstaff"
+        ],
+        "resultItems": "kubejs:steel_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_javelin",
+            "spartanweaponry:diamond_javelin"
+        ],
+        "resultItems": "kubejs:steel_javelin"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_lance",
+            "spartanweaponry:diamond_lance"
+        ],
+        "resultItems": "kubejs:steel_lance"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_pike",
+            "spartanweaponry:diamond_pike"
+        ],
+        "resultItems": "kubejs:steel_pike"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_flanged_mace",
+            "spartanweaponry:diamond_flanged_mace"
+        ],
+        "resultItems": "kubejs:steel_flanged_mace"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_battleaxe",
+            "spartanweaponry:diamond_battleaxe"
+        ],
+        "resultItems": "kubejs:steel_battleaxe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_warhammer",
+            "spartanweaponry:diamond_warhammer"
+        ],
+        "resultItems": "kubejs:steel_warhammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_boomerang",
+            "spartanweaponry:diamond_boomerang"
+        ],
+        "resultItems": "kubejs:steel_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_quarterstaff",
+            "spartanweaponry:diamond_quarterstaff"
+        ],
+        "resultItems": "kubejs:steel_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:steel_parrying_dagger",
+            "spartanweaponry:diamond_parrying_dagger"
+        ],
+        "resultItems": "kubejs:steel_parrying_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_battle_hammer"
+        ],
+        "resultItems": "kubejs:wrought_iron_battle_hammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_greatsword"
+        ],
+        "resultItems": "kubejs:wrought_iron_greatsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_rapier"
+        ],
+        "resultItems": "kubejs:wrought_iron_rapier"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_saber"
+        ],
+        "resultItems": "kubejs:wrought_iron_saber"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_katana"
+        ],
+        "resultItems": "kubejs:wrought_iron_katana"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_longsword"
+        ],
+        "resultItems": "kubejs:wrought_iron_longsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_dagger"
+        ],
+        "resultItems": "kubejs:wrought_iron_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_tomahawk"
+        ],
+        "resultItems": "kubejs:wrought_iron_tomahawk"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_throwing_knife"
+        ],
+        "resultItems": "kubejs:wrought_iron_throwing_knife"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_boomerang"
+        ],
+        "resultItems": "kubejs:wrought_iron_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_halberd"
+        ],
+        "resultItems": "kubejs:wrought_iron_halberd"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_scythe"
+        ],
+        "resultItems": "kubejs:wrought_iron_scythe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_glaive"
+        ],
+        "resultItems": "kubejs:wrought_iron_glaive"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_quarterstaff"
+        ],
+        "resultItems": "kubejs:wrought_iron_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_javelin"
+        ],
+        "resultItems": "kubejs:wrought_iron_javelin"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_lance"
+        ],
+        "resultItems": "kubejs:wrought_iron_lance"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_pike"
+        ],
+        "resultItems": "kubejs:wrought_iron_pike"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_flanged_mace"
+        ],
+        "resultItems": "kubejs:wrought_iron_flanged_mace"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_battleaxe"
+        ],
+        "resultItems": "kubejs:wrought_iron_battleaxe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_warhammer"
+        ],
+        "resultItems": "kubejs:wrought_iron_warhammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_boomerang"
+        ],
+        "resultItems": "kubejs:wrought_iron_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_quarterstaff"
+        ],
+        "resultItems": "kubejs:wrought_iron_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:iron_parrying_dagger"
+        ],
+        "resultItems": "kubejs:wrought_iron_parrying_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_battle_hammer"
+        ],
+        "resultItems": "kubejs:copper_battle_hammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_greatsword"
+        ],
+        "resultItems": "kubejs:copper_greatsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_rapier"
+        ],
+        "resultItems": "kubejs:copper_rapier"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_saber"
+        ],
+        "resultItems": "kubejs:copper_saber"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_katana"
+        ],
+        "resultItems": "kubejs:copper_katana"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_longsword"
+        ],
+        "resultItems": "kubejs:copper_longsword"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_dagger"
+        ],
+        "resultItems": "kubejs:copper_dagger"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_tomahawk"
+        ],
+        "resultItems": "kubejs:copper_tomahawk"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_throwing_knife"
+        ],
+        "resultItems": "kubejs:copper_throwing_knife"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_boomerang"
+        ],
+        "resultItems": "kubejs:copper_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_halberd"
+        ],
+        "resultItems": "kubejs:copper_halberd"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_scythe"
+        ],
+        "resultItems": "kubejs:copper_scythe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_glaive"
+        ],
+        "resultItems": "kubejs:copper_glaive"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_quarterstaff"
+        ],
+        "resultItems": "kubejs:copper_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_javelin"
+        ],
+        "resultItems": "kubejs:copper_javelin"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_lance"
+        ],
+        "resultItems": "kubejs:copper_lance"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_pike"
+        ],
+        "resultItems": "kubejs:copper_pike"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_flanged_mace"
+        ],
+        "resultItems": "kubejs:copper_flanged_mace"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_battleaxe"
+        ],
+        "resultItems": "kubejs:copper_battleaxe"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_warhammer"
+        ],
+        "resultItems": "kubejs:copper_warhammer"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_boomerang"
+        ],
+        "resultItems": "kubejs:copper_boomerang"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_quarterstaff"
+        ],
+        "resultItems": "kubejs:copper_quarterstaff"
+    },
+    {
+        "matchItems": [
+            "spartanweaponry:copper_parrying_dagger"
+        ],
+        "resultItems": "kubejs:copper_parrying_dagger"
+    }
+]
