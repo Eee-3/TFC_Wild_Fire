@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:mud/silty_loam"
+    },
+    {
+      "item": "tfcoreprocessing:kindle/sawdust"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "tfc:drying_bricks/silty_loam"
+    }
+  ]
+}

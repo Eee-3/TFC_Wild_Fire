@@ -748,17 +748,5 @@
     "heat_resistance": 100.0,
     "cold_resistance": 4.5,
     "thermal_resistance": 100.0
-  },
-  "lhmiracheroad:frost_ring": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 8.0,
-    "thermal_resistance": 0.0
-  },
-  "lhmiracheroad:fire_resistane_ring": {
-    "temperature": 0.0,
-    "heat_resistance": 8.0,
-    "cold_resistance": 0.0,
-    "thermal_resistance": 0.0
   }
 }

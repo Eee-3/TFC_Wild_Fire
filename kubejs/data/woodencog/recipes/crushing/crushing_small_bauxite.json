@@ -1,0 +1,23 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "item": "tfc_ie_addon:ore/small_bauxite"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "tfcorewashing:dirty_dust_bauxite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_bauxite"
+        },
+        {
+            "chance": 0.15,
+            "item": "tfcorewashing:dirty_pile_bauxite"
+        }
+    ],
+    "processingTime": 400
+}

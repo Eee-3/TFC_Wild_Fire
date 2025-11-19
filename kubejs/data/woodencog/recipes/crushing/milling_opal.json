@@ -1,15 +1,2 @@
 {
-    "type": "create:milling",
-    "ingredients": [
-        {
-            "item": "tfc:ore/opal"
-        }
-    ],
-    "results": [
-        {
-            "count": 4,
-            "item": "tfc:powder/opal"
-        }
-    ],
-    "processingTime": 400
 }

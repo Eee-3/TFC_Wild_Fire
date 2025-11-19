@@ -8,15 +8,15 @@
     "results": [
         {
             "count": 2,
-            "item": "tfcorewashing:dirty_dust_native_silver"
+            "item": "tfcorewashing:dirty_dust_silver"
         },
         {
             "chance": 0.15,
-            "item": "tfcorewashing:dirty_pile_native_silver"
+            "item": "tfcorewashing:dirty_pile_silver"
         },
         {
             "chance": 0.15,
-            "item": "tfcorewashing:dirty_pile_native_silver"
+            "item": "tfcorewashing:dirty_pile_silver"
         }
     ],
     "processingTime": 400

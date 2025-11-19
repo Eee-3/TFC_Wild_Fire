@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [24, 24],
+	"textures": {
+		"0": "kubejs:block/cheddar",
+		"particle": "kubejs:block/cheddar"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 5.5],
+			"to": [10.5, 4, 10.5],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3.33333, 3.33333, 6.66667, 6], "texture": "#0"},
+				"east": {"uv": [0, 3.33333, 3.33333, 6], "texture": "#0"},
+				"south": {"uv": [10, 3.33333, 13.33333, 6], "texture": "#0"},
+				"west": {"uv": [6.66667, 3.33333, 10, 6], "texture": "#0"},
+				"up": {"uv": [6.66667, 3.33333, 3.33333, 0], "texture": "#0"},
+				"down": {"uv": [10, 0, 6.66667, 3.33333], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

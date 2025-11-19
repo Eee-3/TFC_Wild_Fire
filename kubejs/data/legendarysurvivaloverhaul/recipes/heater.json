@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "tfc:stick_bundle"
+    },
+    "i": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "w": {
+      "tag": "forge:stone_bricks"
+    }
+  },
+  "pattern": [
+    " i ",
+    "ici",
+    "www"
+  ],
+  "result": {
+    "item": "legendarysurvivaloverhaul:heater"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "tfc:drying_bricks/sandy_loam"
+  },
+  "result": "tfc:mud_brick/sandy_loam"
+}

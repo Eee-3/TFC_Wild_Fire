@@ -9,6 +9,10 @@
         {
             "count": 4,
             "item": "tfc:powder/salt"
+        },
+        {
+            "chance": 0.1,
+            "item": "tfc:powder/salt"
         }
     ],
     "processingTime": 400

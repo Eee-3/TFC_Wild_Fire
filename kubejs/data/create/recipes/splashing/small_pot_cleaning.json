@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "artisanal:ceramic/dirty_small_pot"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:ceramic/small_pot"
+    }
+  ]
+}

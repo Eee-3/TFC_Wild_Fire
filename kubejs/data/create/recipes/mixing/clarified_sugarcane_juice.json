@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "artisanal:alkalized_sugarcane_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "artisanal:clarified_sugarcane_juice"
+    }
+  ]
+}

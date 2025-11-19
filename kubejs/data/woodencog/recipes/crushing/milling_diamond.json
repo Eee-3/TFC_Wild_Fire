@@ -1,15 +1,2 @@
 {
-    "type": "create:milling",
-    "ingredients": [
-        {
-            "item": "tfc:ore/diamond"
-        }
-    ],
-    "results": [
-        {
-            "count": 4,
-            "item": "tfc:powder/diamond"
-        }
-    ],
-    "processingTime": 400
 }

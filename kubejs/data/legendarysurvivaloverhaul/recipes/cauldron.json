@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "tfc:metal/sheet/cast_iron"
+    }
+  },
+  "pattern": [
+    "i i",
+    "iii"
+  ],
+  "result": {
+    "item": "minecraft:cauldron"
+  },
+  "show_notification": true
+}

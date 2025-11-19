@@ -1,0 +1,15 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "tfc:dynamic_bowl_items"
+    }
+  ],
+  "results": [
+    {
+    "modifiers": [
+      "artisanal:empty_bowl"
+    ]
+    }
+  ]
+}

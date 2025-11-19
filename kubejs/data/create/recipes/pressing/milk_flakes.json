@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "artisanal:condensed_milk"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:milk_flakes"
+    }
+  ]
+}

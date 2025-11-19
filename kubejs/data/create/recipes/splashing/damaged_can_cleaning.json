@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "artisanal:metal/dirty_dented_tin_jar"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:metal/dented_tin_jar"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ function adrenaline(e){
 PlayerEvents.tick(e =>{
   const { player } = e
   // 每400tick恢复一次 HealthRatio 小于 1 的部位
-  if (player.age % 400 != 0 || !player) return
+  if (player.age % 800 != 0 || !player) return
   // if (player.age % 20 != 0 || !player) return
   if (player.getHealth() == player.getMaxHealth()) {
     let parts = [$BodyPartEnum.HEAD, $BodyPartEnum.CHEST, $BodyPartEnum.LEFT_ARM, $BodyPartEnum.RIGHT_ARM, $BodyPartEnum.LEFT_LEG, $BodyPartEnum.RIGHT_LEG, $BodyPartEnum.LEFT_FOOT, $BodyPartEnum.RIGHT_FOOT];

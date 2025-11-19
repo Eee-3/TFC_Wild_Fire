@@ -46,5 +46,58 @@
   "quark:coal_block": {
     "thermalType": "HEATING",
     "fuelValue": 270
+  },
+
+  "#minecraft:logs": {
+    "thermalType": "HEATING",
+    "fuelValue": 15
+  },
+  "tfc:stick_bunch": {
+    "thermalType": "HEATING",
+    "fuelValue": 50
+  },
+  "minecraft:hay_block": {
+    "thermalType": "HEATING",
+    "fuelValue": 45
+  },
+  "tfc:thatch": {
+    "thermalType": "HEATING",
+    "fuelValue": 25
+  },
+  "vinery:stackable_log": {
+    "thermalType": "HEATING",
+    "fuelValue": 60
+  },
+  "tfc:stick_bundle": {
+    "thermalType": "HEATING",
+    "fuelValue": 120
+  },
+  "tfcoreprocessing:kindle/firelog": {
+    "thermalType": "HEATING",
+    "fuelValue": 100
+  },
+  "tfcoreprocessing:kindle/bamboo_firelog": {
+    "thermalType": "HEATING",
+    "fuelValue": 80
+  },
+  "tfcoreprocessing:kindle/palm_fiber_firelog": {
+    "thermalType": "HEATING",
+    "fuelValue": 125
+  },
+  "tfcoreprocessing:kindle/charcoal_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 270
+  },
+  "tfcoreprocessing:kindle/coal_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 270
+  },
+  "tfcoreprocessing:kindle/charcoal_wood_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 220
+  },
+  "tfcoreprocessing:kindle/low_charcoal_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 150
   }
 }

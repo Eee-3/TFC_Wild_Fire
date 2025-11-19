@@ -1,15 +1,2 @@
 {
-    "type": "create:milling",
-    "ingredients": [
-        {
-            "item": "tfc:ore/emerald"
-        }
-    ],
-    "results": [
-        {
-            "count": 4,
-            "item": "tfc:powder/emerald"
-        }
-    ],
-    "processingTime": 400
 }
