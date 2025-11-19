@@ -1598,7 +1598,16 @@
 				"529ABBB855603108"
 			]
 			hide_until_deps_visible: true
-			icon: "tfcorewashing:rocky_chunks_limonite"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfcorewashing:rocky_chunks_limonite"
+			}
 			id: "76F5FA862F96CF4B"
 			subtitle: "洗矿第一步"
 			tasks: [{
@@ -1622,7 +1631,16 @@
 			dependency_requirement: "one_completed"
 			description: ["矿石被砸碎后会变成含石矿物碎块，这时需要洗矿槽来将其清洗一遍。不过这还不是最终产物，还需要再加工两遍。"]
 			hide_until_deps_visible: true
-			icon: "tfcorewashing:chunks_limonite"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfcorewashing:chunks_limonite"
+			}
 			id: "6393FF4A503DDE14"
 			subtitle: "洗矿第二步"
 			tasks: [{
@@ -1644,7 +1662,16 @@
 		{
 			dependencies: ["6393FF4A503DDE14"]
 			description: ["洗净后的矿物碎块需要再一步磨碎，磨碎后的矿粉杂质太多，需要再清洗一遍。"]
-			icon: "tfcorewashing:dirty_dust_limonite"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfcorewashing:dirty_dust_limonite"
+			}
 			id: "43A874DF1D79892D"
 			subtitle: "洗矿第三步"
 			tasks: [{

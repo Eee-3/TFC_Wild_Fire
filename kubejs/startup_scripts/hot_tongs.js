@@ -27,16 +27,16 @@ StartupEvents.registry('item', event => {
 
 
     ]
-    event.create('glove').maxDamage(200).texture(`kubejs:item/hot/glove`)
-    event.create('wooden_tong').maxDamage(60).texture(`kubejs:item/hot/wooden_tong`)
+    event.create('glove').maxDamage(200).texture(`kubejs:item/hot/glove`).tag('tfc:usable_on_tool_rack')
+    event.create('wooden_tong').maxDamage(60).texture(`kubejs:item/hot/wooden_tong`).tag('tfc:usable_on_tool_rack')
     metalhot.forEach(metal => {
-        event.create(`${metal.metal}_tong`).maxDamage(metal.damaged).texture(`kubejs:item/hot/tongs/${metal.metal}`)
+        event.create(`${metal.metal}_tong`).maxDamage(metal.damaged).texture(`kubejs:item/hot/tongs/${metal.metal}`).tag('tfc:usable_on_tool_rack')
         event.create(`${metal.metal}_tong_part`).texture(`kubejs:item/hot/tongpart/${metal.metal}`)
     }
 
     )
     metalinf.forEach(metal => {
-        event.create(`${metal.metal}_tong`).texture(`kubejs:item/hot/tongs/${metal.metal}`).maxStackSize(1)
+        event.create(`${metal.metal}_tong`).texture(`kubejs:item/hot/tongs/${metal.metal}`).maxStackSize(1).tag('tfc:usable_on_tool_rack')
         event.create(`${metal.metal}_tong_part`).texture(`kubejs:item/hot/tongpart/${metal.metal}`).maxStackSize(1)
     }
 

@@ -14,7 +14,6 @@ JEIEvents.hideItems(event => {
         'createmetallurgy:graphite_nugget_mold',
         'createmetallurgy:graphite_plate_mold',
         'createmetallurgy:foundry_unit',
-        'createmetallurgy:industrial_crucible',
         'createmetallurgy:graphite_gear_mold',
         'createmetallurgy:graphite_rod_mold',
         'createmetallurgy:crushed_raw_wolframite',

@@ -14,7 +14,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         },
         {
           "item": "ad_astra:calorite_plate"
@@ -22,7 +22,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -30,7 +30,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         },
         {
           "item": "tfc:metal/double_sheet/blue_steel"
@@ -38,7 +38,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -46,12 +46,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         },
         {
           "item": "ad_astra:calorite_plate"
@@ -67,7 +67,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -75,7 +75,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         },
         {
           "item": "tfc:metal/double_sheet/red_steel"
@@ -83,7 +83,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -91,7 +91,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         },
         {
           "item": "ad_astra:calorite_plate"
@@ -99,7 +99,7 @@
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     },
@@ -107,17 +107,17 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ],
       "results": [
         {
-          "item": "tfc:metal/double_sheet/black_steel"
+          "item": "kubejs:flare_plating_unfinished"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "tfc:metal/double_sheet/black_steel"
+    "item": "kubejs:flare_plating_unfinished"
   }
 }
