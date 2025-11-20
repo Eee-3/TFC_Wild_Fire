@@ -2,8 +2,13 @@ ItemEvents.modification(event => {
 
     event.modify('artisanal:stone/flint_and/pyrite', modify => {
         modify.setMaxDamage(20)
-    })
-
+    })//黄铁打火石
+    event.modify('create:super_glue', modify => {
+        modify.setMaxDamage(500)
+    })//强力胶
+      event.modify('bsa:bone/fishing_rod', modify => {
+        modify.setMaxDamage(50)
+    })//骨头吊杆
     const attack = [
         { name: 'tfc:metal/hoe/bismuth_bronze', att: 2 },
         { name: 'tfc:metal/hoe/black_bronze', att: 2 },
@@ -23,10 +28,10 @@ ItemEvents.modification(event => {
     )
     const attack2 = [
         { name: 'kubejs:copper_greatsword', att: 6 },
-       
+
     ]
-    
-   attack2.forEach(att =>
+
+    attack2.forEach(att =>
         event.modify(att.name, modification => {
             modification.setAttackDamage(att.att);
         })

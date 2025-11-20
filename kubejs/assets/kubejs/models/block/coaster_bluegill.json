@@ -114,6 +114,9 @@
 		"firstperson_lefthand": {
 			"rotation": [-30, 0, -90],
 			"translation": [8, 4, 1]
+		},
+		"ground": {
+			"translation": [0, 6.5, 0]
 		}
 	}
 }

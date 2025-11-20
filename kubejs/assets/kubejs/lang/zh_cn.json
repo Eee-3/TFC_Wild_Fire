@@ -615,7 +615,6 @@
   "item.shiny_ornaments.sterling_silver_ruby_ring": "纹银红宝石戒指",
   "item.shiny_ornaments.sterling_silver_sapphire_ring": "纹银蓝宝石戒指",
   "item.shiny_ornaments.sterling_silver_topaz_ring": "纹银黄宝石戒指",
-
   "item.shiny_ornaments.bronze_amethyst_ring": "青铜紫水晶戒指",
   "item.shiny_ornaments.bronze_cinnabar_ring": "青铜朱砂戒指",
   "item.shiny_ornaments.bronze_lapis_ring": "青铜青金石戒指",
@@ -624,7 +623,6 @@
   "item.shiny_ornaments.bronze_ring": "青铜戒指",
   "item.shiny_ornaments.bronze_ring_base": "青铜戒环",
   "item.shiny_ornaments.bronze_delicacy_ring": "青铜精致戒指",
-
   "item.shiny_ornaments.black_bronze_amethyst_ring": "黑铜紫水晶戒指",
   "item.shiny_ornaments.black_bronze_cinnabar_ring": "黑铜朱砂戒指",
   "item.shiny_ornaments.black_bronze_lapis_ring": "黑铜青金石戒指",
@@ -633,7 +631,6 @@
   "item.shiny_ornaments.black_bronze_ring": "黑铜戒指",
   "item.shiny_ornaments.black_bronze_ring_base": "黑铜戒环",
   "item.shiny_ornaments.black_bronze_delicacy_ring": "黑铜精致戒指",
-
   "item.shiny_ornaments.bismuth_bronze_amethyst_ring": "铋铜紫水晶戒指",
   "item.shiny_ornaments.bismuth_bronze_cinnabar_ring": "铋铜朱砂戒指",
   "item.shiny_ornaments.bismuth_bronze_lapis_ring": "铋铜青金石戒指",
@@ -642,7 +639,6 @@
   "item.shiny_ornaments.bismuth_bronze_ring": "铋铜戒指",
   "item.shiny_ornaments.bismuth_bronze_ring_base": "铋铜戒环",
   "item.shiny_ornaments.bismuth_bronze_delicacy_ring": "铋铜精致戒指",
-
   "item.wildfire.wrought_iron_pressing_head": "锻铁压头",
   "itemGroup.kubejs.tfc_weaponrys": "群峦传说 | 战斗",
   "kubejs.climate.name.mars_climate": "火星大气",
@@ -839,5 +835,7 @@
   "item.kubejs.rotten_platter": "腐烂的大餐",
   "item.kubejs.rotten_jam": "腐烂的果酱",
   "item.kubejs.oldcrown": "古老金币",
-  "death.attack.carnivorous":"%1$s 忘记了自己吃的是肉"
+  "death.attack.carnivorous": "%1$s 忘记了自己吃的是肉",
+  "tooltip.hot": "§c烫烫烫",
+  "tooltip2.hot": "非常非常烫烫烫"
 }

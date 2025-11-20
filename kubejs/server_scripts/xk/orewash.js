@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
 
             ],
             Item.of(ore.name)
-        );
+        ).id(`kubejs:orewash/${ore.rock}`);
     })
    orea.forEach(ore => {
         oree.forEach(deposit => {
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
 
                 ],
                 Item.of(`tfc:deposit/${deposit.name}/${ore.rock}`)
-            );
+            ).id(`kubejs:orewash/${deposit.name}/${ore.rock}`);
         })
     })
 

@@ -1,0 +1,18 @@
+{
+    "parent": "item/generated",
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "kubejs:item/glove/glove",
+        "textures": {
+            "1": "kubejs:item/hot/glove_modle/glove_1"
+        }
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "kubejs:item/hot/glove_0",
+            "textures": {
+                "layer0": "kubejs:item/hot/glove_1"
+            }
+        }
+    }
+}

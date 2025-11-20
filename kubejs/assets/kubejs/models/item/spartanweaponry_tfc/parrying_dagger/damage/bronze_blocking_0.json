@@ -1,5 +1,5 @@
 {
-    "parent": "spartanweaponry:item/base/greatsword_blocking",
+    "parent": "spartanweaponry:item/base/parrying_dagger_blocking",
     "textures": {
         "layer0": "kubejs:item/spartanweaponry_tfc/parrying_dagger/bronze_0"
     }

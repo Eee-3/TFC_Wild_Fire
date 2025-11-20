@@ -1,4 +1,6 @@
-const metals = [
+
+ServerEvents.recipes(e => {
+  const metals = [
   "bismuth_bronze",
   "black_bronze",
   "black_steel",
@@ -35,33 +37,6 @@ const metalaa = [
   { name: "steel", temperature: 1540, metal: "steel" },
   { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
 ];
-const weaponry = [//A是金属头,B是棍子 C是金属棒 D是护手 E长手柄
-  { name: "quarterstaff", number: 200, recipesd: ["  A", " B ", "A  "] },        // 长棍
-  { name: "dagger", number: 100, recipesd: ["A", "B"] },              // 匕首
-  { name: "parrying_dagger", number: 100, recipesd: ["A", "C", "B"] },     // 格挡匕首
-  { name: "longsword", number: 300, recipesd: ["  A", " D ", "B  "] },           // 长刀
-  { name: "greatsword", number: 400, recipesd: ["A", "D", "B"] },          // 大剑
-  { name: "saber", number: 300, recipesd: ["A", "D", "B"] },               // 军刀
-  { name: "rapier", number: 200, recipesd: ["  A", " C ", "B  "] },              // 迅捷剑
-  { name: "katana", number: 300, recipesd: ["  A", " D ", "B  "] },              // 太刀
-  { name: "battleaxe", number: 400, recipesd: ["A", "B"] },           // 战斧
-  { name: "battle_hammer", number: 200, recipesd: ["A ", " B"] },       // 长柄锤
-  { name: "warhammer", number: 400, recipesd: ["A ", " B"] },           // 大锤
-  { name: "lance", number: 400, recipesd: ["A", "E"] },               // 骑枪
-  { name: "glaive", number: 200, recipesd: ["A", "E"] },              // 长柄刀
-  { name: "halberd", number: 400, recipesd: ["A ", " E"] },             // 戟
-  { name: "throwing_knife", number: 100, recipesd: ["A ", " B"] },      // 飞刀
-  { name: "tomahawk", number: 200, recipesd: ["A ", " B"] },            // 印第安投斧
-  { name: "scythe", number: 400, recipesd: ["A ", " E"] },              // 战镰
-  { name: "flanged_mace", number: 300, recipesd: ["A ", " B"] },        // 页锤
-  { name: "javelin", number: 400, recipesd: ["A", "E"], },             // 标枪
-  { name: "spear", number: 100, recipesd: [" A", "E "], },               // 矛
-  { name: "pike", number: 100, recipesd: ["  A", " E ", "E  "], },
-  //{ name: "boomerang", number: 100 ,recipesd:["A","B"]}            // 回旋镖
-];
-const tfc_weaponry = [
-  // 长矛
-]
 const toolHeads = [
   { name: "javelin", type: "javelin_head" },
   { name: "hammer", type: "hammer_head" },
@@ -70,7 +45,6 @@ const toolHeads = [
   { name: "shovel", type: "shovel_head" },
   { name: "knife", type: "knife_blade" }
 ];
-ServerEvents.recipes(e => {
   toolHeads.forEach(tool => {
     gem.forEach(gem => {
        //nobonus

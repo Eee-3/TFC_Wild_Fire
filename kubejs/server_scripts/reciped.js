@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     event.shaped('minecraft:lead', ['aa ', 'aa ', '  a'], {
         a: 'farmersdelight:rope'
     }) // 栓绳
-    event.shaped('create:super_glue', ['aba', 'cbc', ' d '], {
+    event.shaped(Item.of('create:super_glue', '{Damage:400}'), ['aba', 'cbc', ' d '], {
         a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'minecraft:iron_nugget'
     }) // 强力胶
     event.shapeless('create:super_glue', ['create:super_glue', 'tfc:glue']).modifyResult((inputItems, outputItem) => {
