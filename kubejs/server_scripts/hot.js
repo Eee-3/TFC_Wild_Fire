@@ -71,7 +71,15 @@ PlayerEvents.tick(event => {
     $CuriosApi.getCuriosHelper().findFirstCurio(player, 'kubejs:glove').ifPresent(slot => {
         mittens = slot.stack()
     })
-
+    // 检测以及处理主手物品
+    if (!player.mainHandItem.isEmpty()) {
+        if (player.mainHandItem.hasTag('kubejs:tongs')) {
+            tong = player.mainHandItem
+        }
+        else if (player.mainHandItem.id == 'kubejs:glove') {
+            mittens = player.mainHandItem
+        }
+    }
     // 检测以及处理副手物品
     if (!player.offHandItem.isEmpty()) {
         if (player.offHandItem.hasTag('kubejs:tongs')) {
@@ -90,14 +98,12 @@ PlayerEvents.tick(event => {
             }
 
             player.offHandItem.getCapability($HeatCapability.CAPABILITY).ifPresent(iHeat => {
-                if (iHeat.getTemperature() > 300) {
-                    if (mittens != null && iHeat.getTemperature() < 1300) {
-                        damageMittens = true;
-                    } else {
-                        dropHotItem = true;
-                    }
+                if (mittens != null && iHeat.getTemperature() > 300 && iHeat.getTemperature() < 1300) {
+                    damageMittens = true
                 }
-            });
+                else dropHotItem = true
+            })
+
 
             if (dropHotItem) {
                 let dropItem = player.offHandItem.copy()

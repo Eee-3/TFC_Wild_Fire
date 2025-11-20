@@ -3,6 +3,9 @@ ItemEvents.modification(event => {
     event.modify('artisanal:stone/flint_and/pyrite', modify => {
         modify.setMaxDamage(20)
     })//黄铁打火石
+     event.modify('create:extendo_grip', modify => {
+        modify.setMaxDamage(800)
+    })//黄铁打火石
     event.modify('create:super_glue', modify => {
         modify.setMaxDamage(500)
     })//强力胶
