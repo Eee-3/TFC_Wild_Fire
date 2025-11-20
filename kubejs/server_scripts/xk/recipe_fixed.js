@@ -1,13 +1,7 @@
 //基础修改
 ServerEvents.recipes(event => {
   const create = event.recipes.create
-event.shaped(Item.of('tfc:metal/ingot/wrought_iron','{"tfc:heatable":9999}'), 
-    ['a'],
-    {
-        
-        a:'minecraft:oak_log',
-       
-    })//铜的
+
 
   /*//灵魂火
   create.haunting(Item.of('minecraft:blaze_rod'), 'createaddition:electrum_rod')//烈焰棒
