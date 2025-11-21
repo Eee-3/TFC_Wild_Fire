@@ -35,7 +35,8 @@ ServerEvents.recipes(e => {
     "artisanal:crafting/bloomery",
     "tfc_metal_items:seq_pressing/ingots/bloom_raw",
     "tfc_metal_items:seq_pressing/ingots/bloom_refined",
-
+    "immersiveengineering:crafting/heavy_engineering",
+    "immersiveengineering:crafting/light_engineering",
     "create_new_age:shaped/connector",
     "create_new_age:shaped/connector_mirrored",
     "create_new_age:cutting/copper_sheet",
@@ -61,7 +62,7 @@ ServerEvents.recipes(e => {
     "create:item_application/andesite_casing_from_wood",
     "woodencog:rock_knapping/andesite_alloy",
     "woodencog:rock_knapping/andesite_alloy_deploying",
-   // "firmalife:crafting/bacon",
+    // "firmalife:crafting/bacon",
     "design_decor:mechanical_crafting/enchanted_golden_apple",
     "create_new_age:enchanted_golden_apple",
     "tfc:crafting/parchment",
@@ -73,11 +74,11 @@ ServerEvents.recipes(e => {
     "alexsmobs:kangaroo_hide_to_leather",
     "minecraft:leather",
     "tfcoreprocessing:metal/barrel/pig_iron_barrel",
-"farmersdelight:lead_from_straw",
-"tfc:crafting/lead",
-"minecraft:lead",
-"create:crafting/kinetics/super_glue",
-"butcher:tfcspitroastrecipe"
+    "farmersdelight:lead_from_straw",
+    "tfc:crafting/lead",
+    "minecraft:lead",
+    "create:crafting/kinetics/super_glue",
+    "butcher:tfcspitroastrecipe"
 
 
 
@@ -305,7 +306,7 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
   e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
   e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
-  e.remove({ mod:'vc_gliders' }) // 移除图腾全部配方 
+  e.remove({ mod: 'vc_gliders' }) // 移除图腾全部配方 
 
 
 
@@ -430,10 +431,10 @@ ServerEvents.recipes(e => {
   e.remove({ id: "minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
   e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
 
-  e.remove({ type: 'survivorsdelight:cooking' }) 
-  e.remove({ type: 'survivorsdelight:crafting/food' }) 
-  e.remove({ type: 'minecraft:feast' }) 
-  e.remove({ type: 'minecraft:meal' }) 
+  e.remove({ type: 'survivorsdelight:cooking' })
+  e.remove({ type: 'survivorsdelight:crafting/food' })
+  e.remove({ type: 'minecraft:feast' })
+  e.remove({ type: 'minecraft:meal' })
   e.remove({ type: 'minecraft:soup' }) // 移除survivors delight 的食物配方
 
 

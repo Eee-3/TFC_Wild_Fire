@@ -26,33 +26,58 @@ ServerEvents.recipes(event => {
      * @param {string} toolId 工具id
      * @param {string} materialId 修复用的材料id
      * @param {number} tier 砧的等级
+     * @param {"percentage" | "value"} repairType 
      */
-    function welding_repair(toolId, materialId, tier){
-        tier = tier != null? tier: 0
-        let toolStack = Item.of(toolId)
+    function welding_repair(toolId, materialId, tier, repairType){
+        tier = typeof tier != 'undefined'? tier: 0
+        repairType = typeof repairType != 'undefined'? repairType: "percentage"
+
         let name = toolId.replace(':','/')
-        // 真配方（隐藏）
-        welding(
-            TFC.itemStackProvider.of(toolStack, ['kubejs:welding_repair']).copyForgingBonus(),
-            toolStack,
-            materialId,
-            tier
-        ).id(`jeihide:welding/${name}`)
-        
-        let inputToolStack = toolStack
-        let outputToolStack = toolStack
-        inputToolStack.setDamageValue(inputToolStack.maxDamage*0.6)
-        outputToolStack.setDamageValue(outputToolStack.maxDamage*0.4)
-        // 假配方（展示）
-        welding(
-            TFC.itemStackProvider.of(outputToolStack).copyForgingBonus(),
-            inputToolStack.weakNBT(),
-            materialId,
-            tier
-        ).id(`tfc:welding/${name}`)
+        const toolStack = Item.of(toolId)
+        const inputToolStack = Item.of(toolId)
+        const outputToolStack = Item.of(toolId)
+        if(repairType == "percentage"){
+            // 真配方（隐藏）
+            welding(
+                TFC.itemStackProvider.of(toolStack, ['kubejs:welding_repair_percentage']).copyForgingBonus(),
+                toolStack,
+                materialId,
+                tier
+            ).id(`jeihide:welding/${name}`)
+
+            inputToolStack.setDamageValue(inputToolStack.maxDamage*0.6)
+            outputToolStack.setDamageValue(outputToolStack.maxDamage*0.4)
+            // 假配方（展示）
+            welding(
+                TFC.itemStackProvider.of(outputToolStack).copyForgingBonus(),
+                inputToolStack.weakNBT(),
+                materialId,
+                tier
+            ).id(`tfc:welding/${name}`)
+        }
+        else if(repairType == "value"){
+            // 真配方（隐藏）
+            welding(
+                TFC.itemStackProvider.of(toolStack, ['kubejs:welding_repair_value']).copyForgingBonus(),
+                toolStack,
+                materialId,
+                tier
+            ).id(`jeihide:welding/${name}`)
+
+            inputToolStack.setDamageValue(inputToolStack.maxDamage*0.6)
+            outputToolStack.setDamageValue(Math.max(0, inputToolStack.damageValue - 400))
+            // 假配方（展示）
+            welding(
+                TFC.itemStackProvider.of(outputToolStack).copyForgingBonus(),
+                inputToolStack.weakNBT(),
+                materialId,
+                tier
+            ).id(`tfc:welding/${name}`)
+        }
     }
 
     // 配方
+    //100
     welding_repair('kubejs:wrought_iron_tong', 'minecraft:iron_nugget', 3)
+    welding_repair('tfc:metal/knife/wrought_iron', 'minecraft:iron_nugget', 3, 'value')
 })
-

@@ -1,31 +1,6 @@
 
 ServerEvents.recipes(e => {
-  const metals = [
-  "bismuth_bronze",
-  "black_bronze",
-  "black_steel",
-  "blue_steel",
-  "bronze",
-  "copper",
-  "red_steel",
-  "wrought_iron"
-]
-const gem = [
-  { gem: "diamond", name: "diamond" },
-  { gem: "obsidian", name: "obsidian_shards" }
 
-]
-const tools = [
-  "hoe",
-  "axe",
-  "mace",
-  "hammer",
-  "chisel",
-  "shovel",
-  "javelin",
-  "pickaxe",
-  "propick"
-]
 const metalaa = [
   { name: "copper", temperature: 1080, metal: "copper" },
   { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
@@ -37,133 +12,9 @@ const metalaa = [
   { name: "steel", temperature: 1540, metal: "steel" },
   { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
 ];
-const toolHeads = [
-  { name: "javelin", type: "javelin_head" },
-  { name: "hammer", type: "hammer_head" },
-  { name: "hoe", type: "hoe_head" },
-  { name: "axe", type: "axe_head" },
-  { name: "shovel", type: "shovel_head" },
-  { name: "knife", type: "knife_blade" }
-];
-  toolHeads.forEach(tool => {
-    gem.forEach(gem => {
-       //nobonus
-      e.recipes.kubejs.shaped(
-       Item.of(`kubejs:${gem.gem}_${tool.name}`, '{Damage:100}'),
-        [
-        "B",
-        "C"
-        ], {
-        
-        B: `kubejs:${gem.gem}_${tool.type}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:${gem.gem}_${tool.type}/nobonus`)
-      //weak
-      e.recipes.kubejs.shaped(
-        `kubejs:${gem.gem}_${tool.name}`,
-        [
-        "AB",
-        "C "
-        ], {
-        A: "#bsa:bindings/weak",
-        B: `kubejs:${gem.gem}_${tool.type}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:${gem.gem}_${tool.type}/weak`)
-      //medium
-      e.recipes.kubejs.shaped(
-         Item.of(`kubejs:${gem.gem}_${tool.name}`, '{"tfc:forging_bonus":2}'),
-        [
-        "AB",
-        "C "
-        ], {
-        A: "#bsa:bindings/medium",
-        B:`kubejs:${gem.gem}_${tool.type}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:${gem.gem}_${tool.type}/medium`)
-      //strong
-      e.recipes.kubejs.shaped(
-      Item.of(`kubejs:${gem.gem}_${tool.name}`, '{"tfc:forging_bonus":4}'),
-        [
-        "AB",
-        "C "
-        ], {
-        A: "#bsa:bindings/strong",
-        B:  `kubejs:${gem.gem}_${tool.type}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:${gem.gem}_${tool.type}/strong`)
 
-    });
-  });
-  tools.forEach(tool => {
-    metals.forEach(metal => {
-      //weak
-      e.recipes.kubejs.shaped(
-        `tfc:metal/${tool}/${metal}`,
-        [
-          "AB ",
-          "C  "
-        ], {
-        A: "#bsa:bindings/weak",
-        B: `tfc:metal/${tool}_head/${metal}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:crafting/metal/${tool}/${metal}/weak`)
-      //medium
-      e.recipes.kubejs.shaped(
-        `tfc:metal/${tool}/${metal}`,
-        [
-          "AB ",
-          "C  "
-        ], {
-        A: "#bsa:bindings/medium",
-        B: `tfc:metal/${tool}_head/${metal}`,
-        C: "#forge:rods/wooden"
-      }
-      ).id(`kubejs:crafting/metal/${tool}/${metal}/medium`)
-      //strong
-      e.recipes.kubejs.shaped(
-        `tfc:metal/${tool}/${metal}`,
-        [
-          "AB ",
-          "C  "
-        ], {
-        A: "#bsa:bindings/strong",
-        B: `tfc:metal/${tool}_head/${metal}`,
-        C: "#forge:rods/wooden"
-      }
-      ).modifyResult((inputGrid, result) => {
-        const head = inputGrid.findAll().find(stack => stack.id.toString().startsWith('tfc:metal/'))
-        const headTag = head.getOrCreateTag();
-        let level = headTag.getInt("tfc:forging_bonus") + 1;
-        level = Math.min(level, 4);
-        const resultTag = result.getOrCreateTag();
-        resultTag.contains("tfc:forging_bonus") ? resultTag.remove("tfc:forging_bonus") : resultTag.putInt("tfc:forging_bonus", level);
-        return result
-      }).id(`kubejs:crafting/metal/${tool}/${metal}/strong`)
-
-    });
-
-  });
-
-  function applyForgingBonus(metala, weaponName) {
-    return (inputGrid, result) => {
-      const head = inputGrid.findAll().find(stack =>
-        stack.id.toString().startsWith(`kubejs:${metala.name}_${weaponName}_weapon_part`)
-      );
-      const headTag = head.getOrCreateTag();
-      let level = headTag.getInt("tfc:forging_bonus");
-      level = Math.min(level, 4);
-      const resultTag = result.getOrCreateTag();
-      resultTag.contains("tfc:forging_bonus")
-        ? resultTag.remove("tfc:forging_bonus")
-        : resultTag.putInt("tfc:forging_bonus", level);
-      return result;
-    };
-  }
+  
+  
 
   // 生成所有武器配方
   metalaa.forEach(metala => {

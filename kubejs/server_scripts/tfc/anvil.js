@@ -110,6 +110,15 @@ ServerEvents.recipes(e => {
       "bend_last"
     ]
   ).tier(2).bonus(true).id("kubejs:tfc/anvil/brass_forge_door/anvil");
+    tfc.anvil(// 机械手的铁砧配方
+   'create:brass_hand',
+   'tfc:metal/double_sheet/brass',
+    [
+      'hit_any',
+      "draw_second_last",
+      "bend_last"
+    ]
+  ).tier(2).bonus(false).id("kubejs:tfc/anvil/brass_hand");
 
   tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',

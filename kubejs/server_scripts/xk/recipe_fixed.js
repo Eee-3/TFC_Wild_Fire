@@ -259,48 +259,7 @@ ServerEvents.tags('minecraft:item', event => {
     event.add('tfc:dirty_piles', `${dirty_pile}`);
   })
   // 标签id，物品id
-  event.remove("bsa:bindings/strong", 'tfc:jute_fiber');//移除完美绑定
-  event.remove("bsa:bindings/strong", '#forge:plant_fiber');
-  event.remove("bsa:bindings/strong", '#forge:string');
-  event.remove("bsa:bindings/strong", 'tfc:glue');
-
-
-  event.remove('bsa:bindings/weak', 'tfc:glue');
-
-  const bindings_weak = [
-    'tfc:straw',//干草
-    'tfc:plant/hanging_vines',//藤蔓
-    'tfc:plant/jungle_vines',//丛林藤蔓
-    'tfc:jute',//黄麻
-    'tfc:plant/ivy',//常春藤
-  ]
-  bindings_weak.forEach(week => {
-    event.remove('bsa:bindings/weak', `${week}`);
-    event.remove("bsa:bindings/medium", `${week}`);
-  })
-
-
-  const bindings_medium = [
-
-    'minecraft:string',//线
-    'tfc:glue',//胶水
-    'tfc:wool_yarn',//羊毛线
-    'animaltrap:twine',//麻绳
-    'minecraft:slime_ball',//粘液球
-  ]
-  bindings_medium.forEach(medium => {
-    event.add("bsa:bindings/medium", `${medium}`);
-  })
-
-  event.add("bsa:bindings/medium", '#forge:wires')//电线绑定
-  event.add("bsa:bindings/weak", 'farmersdelight:rope');//粗制草绳
-  event.add("bsa:bindings/weak", 'htm:plant_string');//满耐久
-  event.add("bsa:bindings/weak", '#forge:fiber_hemp');//满耐久
-
-
-  event.add("bsa:bindings/strong", 'bsa:sinew_string');//完美
-  event.add("bsa:bindings/strong", 'firmaciv:rope_coil');//完美
-
+  
 
 
   event.add('tfc:any_knapping', 'tfc:ore/diamond');//钻石上可以敲的标签

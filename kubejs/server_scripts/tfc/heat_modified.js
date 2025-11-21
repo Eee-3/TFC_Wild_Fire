@@ -29,7 +29,9 @@ TFCEvents.data(e => {
   e.itemHeat('minecraft:damaged_anvil', 1, null, null)
   e.itemHeat('@vintageimprovements', 1, null, null)
   e.itemHeat('#forge:rods/all_metal', 1, null, null)
-  e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
+  e.itemHeat('#tfc:rock/gravel', 1, null, null)
+
+  /*e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
   const heatitem = [
     '#forge:ores/rocky_chunks',
     '#forge:ores/chunks',
@@ -41,7 +43,7 @@ TFCEvents.data(e => {
   heatitem.forEach((item) => {
     e.itemHeat(item, 1, null, null)
   })
-
+*/
 })
 TFCEvents.data(event => {
   const metaltp = {
@@ -55,7 +57,7 @@ TFCEvents.data(event => {
     steel: 1540,
     wrought_iron: 1535
   };
-  const triplemetaltp=3*2.857
+  const triplemetaltp = 3 * 2.857
   //铋铜三层锭
   event.itemHeat('kubejs:triple_bismuth_bronze', triplemetaltp,
     Math.floor(metaltp.bismuth_bronze * 0.6),
@@ -75,7 +77,7 @@ TFCEvents.data(event => {
   );
 
   //铜三层锭
-  event.itemHeat('kubejs:triple_copper',triplemetaltp,
+  event.itemHeat('kubejs:triple_copper', triplemetaltp,
     Math.floor(metaltp.copper * 0.6),
     Math.floor(metaltp.copper * 0.8)
   );
@@ -99,7 +101,7 @@ TFCEvents.data(event => {
   );
 
   //蓝钢三层锭
-  event.itemHeat('kubejs:triple_blue_steel',triplemetaltp,
+  event.itemHeat('kubejs:triple_blue_steel', triplemetaltp,
     Math.floor(metaltp.blue_steel * 0.6),
     Math.floor(metaltp.blue_steel * 0.8)
   );
@@ -169,10 +171,10 @@ TFCEvents.data(event => {
 
   metal.forEach(metalItem => {
 
-     weaponry.forEach(equipment => {
-    
+    weaponry.forEach(equipment => {
+
       const itemId = `kubejs:${metalItem.name}_${equipment.name}`;
-      event.itemHeat(itemId, equipment.number / 100*2.857, null, null);
+      event.itemHeat(itemId, equipment.number / 100 * 2.857, null, null);
     });
   });
 });//斯巴达武器
@@ -202,7 +204,7 @@ TFCEvents.data(event => {
     { name: "rusty_iron_link", metal: 'cast_iron', number: 25, temperature: 1535 },
     { name: "iron_link", metal: 'cast_iron', number: 25, temperature: 1535 },
     { name: "crown", metal: "gold", number: 5, temperature: 1064 },
-   
+
     // 钥匙类
     { name: "brass_simple_key", temperature: 940, metal: "brass", number: 100 },
     { name: "gold_simple_key", temperature: 1064, metal: "gold", number: 100 },
@@ -226,7 +228,7 @@ TFCEvents.data(event => {
   ];
   items.forEach(item => {
     const itemId = `kubejs:${item.name}`; // 物品ID直接使用物件name字段
-    event.itemHeat(itemId, item.number / 100*2.857, null, null);
+    event.itemHeat(itemId, item.number / 100 * 2.857, null, null);
   });
 });//杂项
 TFCEvents.data(event => {
@@ -245,7 +247,7 @@ TFCEvents.data(event => {
   // 遍历所有多模组物品，生成热力配置
   itemss.forEach(item => {
     const itemId = `${item.mods}${item.name}`; // 拼接模组前缀+物品名，生成完整ID
-    event.itemHeat(itemId, item.number / 100*2.857, null, null);
+    event.itemHeat(itemId, item.number / 100 * 2.857, null, null);
   });
 });//杂项2
 TFCEvents.data(event => {
@@ -279,11 +281,11 @@ TFCEvents.data(event => {
 
   metaltongs.forEach(metal => {
     const tongId = `kubejs:${metal.name}_tong`;
-    event.itemHeat(tongId, 2*2.857, null, null);
+    event.itemHeat(tongId, 2 * 2.857, null, null);
 
     // 2. 钳子部件：热力配置
     const tongPartId = `kubejs:${metal.name}_tong_part`;
-    event.itemHeat(tongPartId, 1*2.857, null, null);
+    event.itemHeat(tongPartId, 1 * 2.857, null, null);
 
 
   });
@@ -306,7 +308,7 @@ TFCEvents.data(event => {
     const weldingTemp = Math.floor(ring.temperature * 0.8); // 焊接温度=熔点80%
     const itemId = `shiny_ornaments:${ring.name}_ring`;
     const itemId2 = `shiny_ornaments:${ring.name}_ring_base`;
-    event.itemHeat(itemId, 0.5*2.857, forgingTemp, weldingTemp);
-    event.itemHeat(itemId2, 1*2.857, forgingTemp, weldingTemp);
+    event.itemHeat(itemId, 0.5 * 2.857, forgingTemp, weldingTemp);
+    event.itemHeat(itemId2, 1 * 2.857, forgingTemp, weldingTemp);
   });
 });

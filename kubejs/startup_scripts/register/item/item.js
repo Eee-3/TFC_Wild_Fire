@@ -1,0 +1,125 @@
+StartupEvents.registry('item', event => {
+    event.create('brass_cartridge_nest').texture('kubejs:item/gun/brass_cartridge_nest'); // 黄铜弹巢
+    event.create('cast_iron_firing_hammer').texture('kubejs:item/gun/cast_iron_firing_hammer'); // 铸铁击锤
+    event.create('cast_iron_gun_barrel').texture('kubejs:item/gun/cast_iron_gun_barrel'); // 铸铁枪管
+    event.create('standard_type_muzzle_brake_parts_steel').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_steel'); // 制式制退器配件（钢）
+    event.create('standard_type_muzzle_brake_parts_copper').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_copper'); // 制式制退器配件（铜）
+    event.create('standard_type_handguard_parts_steel').texture('kubejs:item/gun/standard_type_handguard_parts_steel'); // 制式护手配件（钢）
+    event.create('standard_type_handguard_parts_copper').texture('kubejs:item/gun/standard_type_handguard_parts_copper'); // 制式护手配件（铜）
+    event.create('standard_type_gun_body_parts_steel').texture('kubejs:item/gun/standard_type_gun_body_parts_steel'); // 制式枪身配件（钢）
+    event.create('standard_type_gun_body_parts_copper').texture('kubejs:item/gun/standard_type_gun_body_parts_copper'); // 制式枪身配件（铜）
+    event.create('standard_type_pistol_slide_parts_steel').texture('kubejs:item/gun/standard_type_pistol_slide_parts_steel'); // 制式手枪滑套配件（钢）
+    event.create('standard_type_pistol_slide_parts_copper').texture('kubejs:item/gun/standard_type_pistol_slide_parts_copper'); // 制式手枪滑套配件（铜）
+    event.create('standard_type_magazine_parts_steel').texture('kubejs:item/gun/standard_type_magazine_parts_steel'); // 制式弹匣配件（钢）
+    event.create('standard_type_magazine_parts_copper').texture('kubejs:item/gun/standard_type_magazine_parts_copper'); // 制式弹匣配件（铜）
+    event.create('standard_type_grip_parts_steel').texture('kubejs:item/gun/standard_type_grip_parts_steel'); // 制式握把配件（钢）
+    event.create('standard_type_grip_parts_copper').texture('kubejs:item/gun/standard_type_grip_parts_copper'); // 制式握把配件（铜）
+    event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
+    event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）
+
+    event.create('mold_mechanical', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_mechanical')//零件模具
+    event.create('unfired_mold_mechanical', 'basic').texture('kubejs:item/tfc/unfired_mold_mechanical')//没烧的零件模具
+    event.create('mold_simple_key', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_simple_key')//简易钥匙模具
+    event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key')//没烧的简易钥匙模具
+    event.create('aerospace_suit_fabric', 'basic').texture('kubejs:item/ad/aerospace_suit_fabric')//ad航空服布料
+    event.create('netherite_reinforcement_plate', 'basic').texture('kubejs:item/ad/netherite_reinforcement_plate')//ad下界合金强化片
+    event.create('heat-resistant_reinforcement_plate', 'basic').texture('kubejs:item/ad/heat-resistant_reinforcement_plate')//ad耐热强化片
+    event.create('vellum', 'basic').texture('kubejs:item/vellum')//兽皮纸
+    event.create('rock_powder', 'tfc:mold').capacity(100)//岩石粉末模具
+    event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
+    event.create('wrought_iron_double_rod', 'basic').texture('kubejs:item/create/wrought_iron_double_rod');// 锻铁双棒
+    event.create('black_steel_double_rod', 'basic').texture('kubejs:item/create/black_steel_double_rod');// 黑钢双棒
+    event.create('fan_blade_blank', 'basic').texture('kubejs:item/create/fan_blade_blank');// 扇叶半成品
+    event.create('fan_blade_blank_part', 'basic').texture('kubejs:item/create/fan_blade_blank_part');// 扇叶片
+    event.create('whisk_stirrer_head_blank', 'basic').texture('kubejs:item/create/whisk_stirrer_head_blank');// 搅拌头半成品
+    event.create('whisk_black_steel_head_blank', 'basic').texture('kubejs:item/create/whisk_black_steel_head_blank');// 黑钢搅拌头半成品
+    event.create('material_component_wrought_iron', 'basic').texture('kubejs:item/create/material_component_wrought_iron');// 锻铁零件
+    event.create('material_component_steel', 'basic').texture('kubejs:item/create/material_component_steel');// 钢制零件
+    event.create('material_component_black_steel', 'basic').texture('kubejs:item/create/material_component_black_steel');// 黑钢零件
+    event.create('rotten_meat', 'basic').texture('kubejs:item/rotten_meat');// 注册腐烂的肉
+    event.create('rotten_fish', 'basic').texture('kubejs:item/rotten_fish');// 注册腐烂的鱼
+    event.create('rotten_vegetables', 'basic').texture('kubejs:item/rotten_vegetables');// 注册腐烂的蔬菜
+    event.create('rotten_fruit', 'basic').texture('kubejs:item/rotten_fruit');// 注册腐烂的水果
+    event.create('rot', 'basic').texture('kubejs:item/rot');// 注册腐烂物
+    event.create('burnt_food_residue', 'basic').texture('kubejs:item/burnt_food_residue');// 注册烧焦的食物残渣
+    event.create('rotten_jam', 'basic').texture('kubejs:item/rotten_jam');   // 注册腐烂的果酱
+    event.create('brass_forge_door', 'basic').texture('kubejs:item/brass_forge_door');// 黄铜锻炉门
+    event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
+    event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
+    event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
+    event.create('fish_hook', 'basic').texture('kubejs:item/rotten_platter'); // 骨钩
+
+//万象瑞雪模型以及
+    event.create('rock_powder_blank') //粗粗安山合金模型
+    event.create('emergency_hammer') //应急安全锤模型
+    event.create('cast_iron_indenter', 'basic')//铸铁压头
+
+    
+    const metal = [//金属列表
+        "copper",
+        "bismuth_bronze",
+        "black_bronze",
+        "bronze",
+        "black_steel",
+        "blue_steel",
+        "red_steel",
+        "steel",
+        "wrought_iron"
+    ]
+    const weapon_part = [//武器部件列表
+        "tomahawk_weapon_part",
+        "throwing_knife_weapon_part",
+        "dagger_weapon_part",
+        "handguard_weapon_part",
+        "longsword_weapon_part",
+        "katana_weapon_part",
+        "saber_weapon_part",
+        "rapier_weapon_part",
+        "battle_hammer_weapon_part",
+        "warhammer_weapon_part",
+        "battleaxe_weapon_part",
+        "flanged_mace_weapon_part",
+        "greatsword_weapon_part",
+        "halberd_weapon_part",
+        "glaive_weapon_part",
+        "scythe_weapon_part",
+        "lance_weapon_part",
+        "quarterstaff_weapon_part"
+    ];
+    metal.forEach(metal => {//三层锭注册
+        event.create(`triple_${metal}`, 'basic').texture(`kubejs:item/metal/triple_${metal}`);
+    })
+
+
+    metal.forEach(metal => {//斯巴达武器部件注册
+        weapon_part.forEach(weapon_parta => {
+            event.create(`${metal}_${weapon_parta}`, 'basic').texture(`kubejs:item/weapon_part/${metal}_${weapon_parta}`);
+        })
+    })
+
+})
+StartupEvents.registry("item", event => {//航空/航天相关部件
+    // 基础成品部件
+    event.create('kubejs:advanced_cabin').texture('kubejs:item/ad/advanced_cabin'); // 高级驾驶舱
+    event.create('kubejs:advanced_plating').texture('kubejs:item/ad/advanced_plating'); // 高级镀层
+    event.create('kubejs:basic_cabin').texture('kubejs:item/ad/basic_cabin'); // 基础驾驶舱
+    event.create('kubejs:basic_crystal_pannel').texture('kubejs:item/ad/basic_crystal_pannel'); // 基础水晶面板
+    event.create('kubejs:basic_plating').texture('kubejs:item/ad/basic_plating'); // 基础镀层
+    event.create('kubejs:basic_propeller').texture('kubejs:item/ad/basic_propeller'); // 基础螺旋桨
+    event.create('kubejs:columbus_propeller').texture('kubejs:item/ad/columbus_propeller'); // 哥伦布螺旋桨
+    event.create('kubejs:explorer_cabin').texture('kubejs:item/ad/explorer_cabin'); // 探索者驾驶舱
+    event.create('kubejs:flare_plating').texture('kubejs:item/ad/flare_plating'); // 耀斑镀层
+    event.create('kubejs:hologram_frontpanel').texture('kubejs:item/ad/hologram_frontpanel'); // 全息前面板
+    event.create('kubejs:moon_crystal_panel').texture('kubejs:item/ad/moon_crystal_panel'); // 月球水晶面板
+    event.create('kubejs:moon_propeller').texture('kubejs:item/ad/moon_propeller'); // 月球螺旋桨
+    event.create('kubejs:venus_plating').texture('kubejs:item/ad/venus_plating'); // 金星镀层
+
+    // 未完成部件
+    event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成
+    event.create('kubejs:basic_crystal_pannel_unfinished').texture('kubejs:item/ad/basic_crystal_pannel_unfinished'); // 基础水晶面板_未完成
+    event.create('kubejs:basic_plating_unfinished').texture('kubejs:item/ad/basic_plating_unfinished'); // 基础镀层_未完成
+    event.create('kubejs:flare_plating_unfinished').texture('kubejs:item/ad/flare_plating_unfinished'); // 耀斑镀层_未完成
+    event.create('kubejs:hologram_frontpanel_unfinished').texture('kubejs:item/ad/hologram_frontpanel_unfinished'); // 全息前面板_未完成
+    event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
+    event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
+});

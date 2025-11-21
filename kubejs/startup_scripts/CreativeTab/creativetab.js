@@ -1,4 +1,4 @@
-StartupEvents.modifyCreativeTab("tfc:metals", event => {
+/*StartupEvents.modifyCreativeTab("tfc:metals", event => {
     event.add([
         "kubejs:alumina_dioxide",
         "kubejs:triple_bismuth_bronze",
@@ -563,4 +563,4 @@ StartupEvents.registry('creative_mode_tab', event => {
             "kubejs:blue_steel_glaive_weapon_part",
             "kubejs:red_steel_glaive_weapon_part"
         ])
-})
+})*/
