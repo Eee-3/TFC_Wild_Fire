@@ -13,8 +13,22 @@ const metalaa = [
   { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
 ];
 
-  
-  
+
+  function applyForgingBonus(metala, weaponName) {
+    return (inputGrid, result) => {
+      const head = inputGrid.findAll().find(stack =>
+        stack.id.toString().startsWith(`kubejs:${metala.name}_${weaponName}_weapon_part`)
+      );
+      const headTag = head.getOrCreateTag();
+      let level = headTag.getInt("tfc:forging_bonus");
+      level = Math.min(level, 4);
+      const resultTag = result.getOrCreateTag();
+      resultTag.contains("tfc:forging_bonus")
+        ? resultTag.remove("tfc:forging_bonus")
+        : resultTag.putInt("tfc:forging_bonus", level);
+      return result;
+    };
+  }
 
   // 生成所有武器配方
   metalaa.forEach(metala => {

@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
 
 })
 //弓箭工艺
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
   const INITIAL_HEATING_TEMPERATURE = 200;
   // 定义每次温度递增常量
   const TEMPERATURE_INCREMENT = 30;
@@ -405,7 +405,7 @@ ServerEvents.recipes(event => {
     .inputFluid(Fluid.of('tfc:oil', 1000))
     .outputItem(Item.of("kubejs:oiled_bow_arm", '{"tfc:forging_bonus":0}'))
     .sound('minecraft:block.barrel.open');
-})
+})*/
 
 //辊压机碎矿一次处理
 ServerEvents.recipes(event => {
