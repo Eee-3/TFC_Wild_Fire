@@ -658,7 +658,7 @@
   "message.kubejs.skill_upgrade": "你感觉你的技巧上升了！当前等级: %d",
   "message.kubejs.strength_upgrade": "你感觉你的力量上升了！当前等级: %d",
   "message.kubejs.theft_prohibited": "§4周围的怪物注意到你了!",
-  "message.kubejs.adrenaline": "§4快跑！",
+  "message.kubejs.adrenaline": "§4我还不想死……",
   "message.kubejs.adrenaline_cooldwon": "§4体力已经耗尽，下次死里逃生只能在1分钟后生效....",
   "more_attributes.class.aborigines_explorers": "探险家",
   "more_attributes.class.aborigines_hunters": "猎人",
@@ -836,6 +836,6 @@
   "item.kubejs.rotten_jam": "腐烂的果酱",
   "item.kubejs.oldcrown": "古老金币",
   "death.attack.carnivorous": "%1$s 忘记了自己吃的是肉",
-  "tooltip.hot": "§c烫烫烫",
-  "tooltip2.hot": "非常非常烫烫烫"
+  "tooltip.hot": "§c烫手",
+  "tooltip2.hot": "非常非常烫手"
 }

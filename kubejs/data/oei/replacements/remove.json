@@ -170,8 +170,13 @@
         "butcher:butcherspapers",
         "patchouli:guide_book",
         "design_decor:mechanical_crafting/enchanted_golden_apple",
-        "supplementaries:strings"
+        "supplementaries:strings",
+        "sophisticatedbackpacks:auto_blasting_upgrade",
+        "sophisticatedbackpacks:auto_smoking_upgrade",
+        "sophisticatedbackpacks:smelting_upgrade",
+        "sophisticatedbackpacks:blasting_upgrade",
+        "sophisticatedbackpacks:smoking_upgrade",
+        "sophisticatedbackpacks:auto_smelting_upgrade"
     ],
     "resultItems": "minecraft:air"
-    
 }

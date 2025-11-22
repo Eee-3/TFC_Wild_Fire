@@ -369,13 +369,19 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'minecraft:campfire_cooking' }) // 移除营火烹饪配方
   e.remove({ type: 'minecraft:blasting' }) // 移除高炉熔炼配方
 
-  e.remove({ type: 'immersiveengineering:alloy_smelter' }) // 移除合金窑熔炼配方 【没成功
+  e.remove({ type: 'immersiveengineering:alloy' }) // 移除合金窑熔炼配方
   e.remove({ type: 'immersiveengineering:blast_furnace' }) // 移除沉浸高炉熔炼配方
   e.remove({ type: 'createdieselgenerators:wire_cutting' }) // 移除剪线配方
-  e.remove({ type: 'scguns:macerator' }) // 移除scg研磨机配方 【没成功
-  e.remove({ type: 'scguns:mech_press' }) // 移除scg冲压机配方 【没成功
-  e.remove({ type: 'scguns:powered_macerator' }) // 移除scg动力研磨机配方 【没成功
-  e.remove({ type: 'scguns:powered_mech_press' }) // 移除scg动力冲压机配方 【没成功
+  e.remove({ type: 'scguns:macerating' }) // 移除scg研磨机配方
+  e.remove({ type: 'scguns:mechanical_pressing' }) // 移除scg冲压机配方
+  e.remove({ type: 'scguns:powered_macerating' }) // 移除scg动力研磨机配方
+  e.remove({ type: 'scguns:powered_mechanical_pressing' }) // 移除scg动力冲压机配方
+  e.remove({ type: 'scguns:lightning_battery' }) // 移除scg等离子电池配方
+
+  e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
+  e.remove({ type: 'farm_and_charm:mincer' }) // 移除沉浸农艺搅碎配方
+  e.remove({ type: 'butcher:pestleandmortar' }) // 移除butchery垃圾配方
+  e.remove({ type: 'butcher:wetspongejeirecipetype' }) // 移除butchery垃圾配方
 
   e.remove({ id: 'map_atlases:craft_atlas' }) // 移除 map_atlases 模组制作地图集的配方
   e.remove({ id: 'simpleradio:radio' }) // 移除 simpleradio 模组制作收音机的配方

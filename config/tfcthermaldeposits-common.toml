@@ -25,7 +25,7 @@
 	naturalReplenishment = true
 	#
 	# Toggle whether or not lava and hot spring water should deposit minerals, regardless of them being natural or placed. True = all generated or placed deposits minerals.
-	toggleDepositsFromAllLavaOrSpringWater = true
+	toggleDepositsFromAllLavaOrSpringWater = false
 	#
 	# Sound amplifier level for earthquakes and tremors. Default = 4.0.
 	#Range: 0.0 ~ 1.7976931348623157E308
