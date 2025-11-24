@@ -2,7 +2,7 @@
 	"item.tfcthermaldeposits.mineral.alabandite": "硫锰矿",
 	"item.tfcthermaldeposits.mineral.apatite": "磷灰石",
 	"item.tfcthermaldeposits.mineral.bastnasite": "氟碳铈矿",
-	"item.tfcthermaldeposits.mineral.brimstone": "硫磺",
+	"item.tfcthermaldeposits.mineral.brimstone": "天然硫石",
 	"item.tfcthermaldeposits.mineral.calcite": "方解石",
 	"item.tfcthermaldeposits.mineral.greigite": "磁黄铁矿",
 	"item.tfcthermaldeposits.mineral.magnesite": "菱镁矿",
@@ -36,6 +36,6 @@
 	"block.tfcthermaldeposits.mineral.spherocobaltite.prospected": "球菱钴矿矿床",
 	"block.tfcthermaldeposits.mineral.zabuyelite.prospected": "碳酸锂矿矿床",
 	"block.tfcthermaldeposits.mineral.mineral_sheet.prospected": "矿床",
-	"block.tfcthermaldeposits.pyroclastic_bomb": "火山碎屑弹",
-	"entity.tfcthermaldeposits.pyroclastic_bomb": "火山碎屑弹"
+	"block.tfcthermaldeposits.pyroclastic_bomb": "火山迸发岩",
+	"entity.tfcthermaldeposits.pyroclastic_bomb": "火山迸发岩"
 }
