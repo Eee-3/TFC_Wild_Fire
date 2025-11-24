@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "tfcoreprocessing:kindle/wood_pellets",
-    "tfcoreprocessing:kindle/palm_fiber_pellets",
-    "tfcoreprocessing:kindle/bamboo_pellets"
-  ]
-}
