@@ -35,8 +35,18 @@ TFCEvents.data(e => {
   const heatitem = [
     '#forge:ores/rocky_chunks',
     '#forge:ores/chunks',
+<<<<<<< Updated upstream
     '#forge:ores/dirty_dusts',
 
+=======
+<<<<<<< HEAD
+    //'#forge:ores/dirty_dusts',//ERROE
+    
+=======
+    '#forge:ores/dirty_dusts',
+
+>>>>>>> origin/main
+>>>>>>> Stashed changes
     '#forge:metal/pellet',
     '#forge:metal/briquet'
   ]
