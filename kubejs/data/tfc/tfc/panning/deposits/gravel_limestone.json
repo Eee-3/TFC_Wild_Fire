@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/limestone",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/limestone_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_limestone"
+}

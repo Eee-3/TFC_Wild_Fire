@@ -1,7 +1,6 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "tfcorewashing:dirty_dust_cinnabar"
+    "item": "kubejs:item/ore/dirty_dust/cinnabar"
   },
   "loot_table": "tfc:sluicing/deposits/dirty_dust_cinnabar"
 }

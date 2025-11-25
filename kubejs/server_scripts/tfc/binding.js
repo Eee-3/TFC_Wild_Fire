@@ -117,28 +117,28 @@ ServerEvents.recipes(event => {
     rock_tools.forEach(tool => {
         rock.forEach(rock => {
             event.recipes.kubejs.shapeless(
-                Item.of(`kubejs:item/rock_tool/${rock.rock}_${tool.name}`, `{Damage:${rock.num}}`),
+                Item.of(`kubejs:rock_tool/${rock.rock}_${tool.name}`, `{Damage:${rock.num}}`),
                 [
                     `kubejs:${rock.rock}_${tool.type}`,"#forge:rods/wooden"
                 ]
             ).id(`kubejs:${rock.rock}_${tool.type}/nobonus`)
             //weak
             event.recipes.kubejs.shapeless(
-                `kubejs:item/rock_tool/${rock.rock}_${tool.name}`,
+                `kubejs:rock_tool/${rock.rock}_${tool.name}`,
                 [
                     "#kubejs:low_binding",`kubejs:${rock.rock}_${tool.type}`,"#forge:rods/wooden"
                 ]
             ).id(`kubejs:${rock.rock}_${tool.type}/low`)
             //medium
             event.recipes.kubejs.shapeless(
-                Item.of(`kubejs:item/rock_tool/${rock.rock}_${tool.name}`, '{"tfc:forging_bonus":2}'),
+                Item.of(`kubejs:rock_tool/${rock.rock}_${tool.name}`, '{"tfc:forging_bonus":2}'),
                 [
                     "#kubejs:medium_binding",`kubejs:${rock.rock}_${tool.type}`,"#forge:rods/wooden"
                 ]
             ).id(`kubejs:${rock.rock}_${tool.type}/medium`)
             //strong
             event.recipes.kubejs.shapeless(
-                Item.of(`kubejs:item/rock_tool/${rock.rock}_${tool.name}`, '{"tfc:forging_bonus":4}'),
+                Item.of(`kubejs:rock_tool/${rock.rock}_${tool.name}`, '{"tfc:forging_bonus":4}'),
                 [
                     "#kubejs:advanced_binding",`kubejs:${rock.rock}_${tool.type}`,"#forge:rods/wooden"
                 ]

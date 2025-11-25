@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "tfc:rock/loose/limestone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_silver",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/malachite",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

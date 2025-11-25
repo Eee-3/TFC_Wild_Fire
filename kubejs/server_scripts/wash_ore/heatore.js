@@ -33,30 +33,34 @@ const washoretype = [
     { type: "dust_brick", num: 90 } //精炼矿粉砖
 ];
 ServerEvents.recipes(event => {
-    const { tfc ,create} = event.recipes;
+    const recipedid = 'kubejs:wash_ore/heatore/';
+    const { tfc, create } = event.recipes;
     wash_ore.forEach(ore => {
         if (ore.temperature) {
             washoretype.forEach(ore1 => {
                 tfc.heating(`kubejs:item/ore/${ore1.type}/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, ore1.num))
+                    .id(`${recipedid}${ore1.type}/${ore.ore}`);//加热矿f粉融化
             })
-            tfc.heating(`tfc:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10))//贫瘠
-            tfc.heating(`tfc:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15))//普通
-            tfc.heating(`tfc:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25))//富集
+            tfc.heating(`tfc:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
+            tfc.heating(`tfc:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
+            tfc.heating(`tfc:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
 
 
 
             tfc.barrel_sealed(30 * 20)//变成矿浆处理
                 .outputFluid(Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 250))
                 .inputs(`kubejs:item/ore/dirty_dust/${ore.ore}`, TFC.fluidStackIngredient('minecraft:water', 250))
+            .id(`${recipedid}barrel_sealed/slurry/${ore.ore}`)
             tfc.pot(//矿浆处理
                 [],
                 Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 1000), 20 * 60, 100).itemOutput(`5x kubejs:item/ore/purified_dust/${ore.ore}`)
+            .id(`${recipedid}pot/slurry/${ore.ore}`)
 
 
 
 
             //机械动力简易化
-            create.mixing(Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 250),[`kubejs:item/ore/dirty_dust/${ore.ore}`,Fluid.of('minecraft:water', 250)])//矿浆
+            create.mixing(Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 250), [`kubejs:item/ore/dirty_dust/${ore.ore}`, Fluid.of('minecraft:water', 250)])//矿浆
             event.custom({//发酵矿浆精炼
                 "type": "createdieselgenerators:basin_fermenting",
                 "heatRequirement": "heated",
@@ -72,7 +76,7 @@ ServerEvents.recipes(event => {
                         "item": `kubejs:item/ore/refined_dust/${ore.ore}`
                     }
                 ]
-            }).id(`kubejs:wash_ore_heatore/mixing/heatslurry/refined_${ore.ore}`)//原浆发酵成精矿粉末
+            }).id(`${recipedid}mixing/heatslurry/refined_${ore.ore}`)//原浆发酵成精矿粉末
 
             event.custom({//加热矿浆蒸发
                 "type": "woodencog:heated_mixing",
@@ -92,7 +96,7 @@ ServerEvents.recipes(event => {
 
                     }
                 ]
-            }).id(`kubejs:wash_ore_heatore/mixing/heatslurry/${ore.ore}`);
+            }).id(`${recipedid}mixing/heatslurry/${ore.ore}`);
 
 
             washoretype.forEach(ore1 => {
@@ -114,7 +118,7 @@ ServerEvents.recipes(event => {
                             "fluid": ore.out
                         }
                     ]
-                }).id(`kubejs:wash_ore_heatore/mixing/${ore1.type}/${ore.ore}`);
+                }).id(`${recipedid}mixing/${ore1.type}/${ore.ore}`);
 
             })
 

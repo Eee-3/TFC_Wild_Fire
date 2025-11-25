@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/phyllite",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/phyllite_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_phyllite"
+}

@@ -2,22 +2,22 @@
 
 
 let wash_ore = [
-    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'uraninite', color: 0x262626 },
-    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'galena', color: 0x808080 },
-    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'bauxite', color: 0xA0522D },
-    { mod: 'firmalife:ore', type: '/type_', ore: 'chromite', color: 0x4F4F4F },
-    { mod: 'tfc:ore', type: '/type_', ore: 'limonite', color: 0xD2691E, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'limonite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'magnetite', color: 0x363636, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'magnetite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'hematite', color: 0xB22222, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'hematite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'native_copper', color: 0xB87333, temperature: 1085, out: 'tfc:metal/copper', metal: 'copper' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'native_gold', color: 0xFFD700, temperature: 1064, out: 'tfc:metal/gold', metal: 'gold' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'native_silver', color: 0xC0C0C0, temperature: 961, out: 'tfc:metal/silver', metal: 'silver' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'tetrahedrite', color: 0x556B2F, temperature: 1083, out: 'tfc:metal/copper', metal: 'tetrahedrite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'sphalerite', color: 0x9370DB, temperature: 419, out: 'tfc:metal/zinc', metal: 'sphalerite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'cassiterite', color: 0x708090, temperature: 232, out: 'tfc:metal/tin', metal: 'cassiterite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'bismuthinite', color: 0x8A2BE2, temperature: 271, out: 'tfc:metal/bismuth', metal: 'bismuthinite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'garnierite', color: 0x7CCD7C, temperature: 1453, out: 'tfc:metal/nickel', metal: 'garnierite' },
-    { mod: 'tfc:ore', type: '/type_', ore: 'malachite', color: 0x00FF7F, temperature: 1085, out: 'tfc:metal/copper', metal: 'malachite' },
+    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'uraninite', color: 0x606d61 },
+    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'galena', color: 0x5d6371 },
+    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'bauxite', color: 0x976752 },
+    { mod: 'firmalife:ore', type: '/type_', ore: 'chromite', color: 0x918d8b },
+    { mod: 'tfc:ore', type: '/type_', ore: 'limonite', color: 0x9c6c4d, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'limonite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'magnetite', color: 0x717171, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'magnetite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'hematite', color: 0xa36053, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'hematite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'native_copper', color: 0xa8694d, temperature: 1085, out: 'tfc:metal/copper', metal: 'copper' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'native_gold', color: 0xb07d3d, temperature: 1064, out: 'tfc:metal/gold', metal: 'gold' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'native_silver', color: 0x9e9e9e, temperature: 961, out: 'tfc:metal/silver', metal: 'silver' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'tetrahedrite', color: 0x8c7566, temperature: 1083, out: 'tfc:metal/copper', metal: 'tetrahedrite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'sphalerite', color: 0x889790, temperature: 419, out: 'tfc:metal/zinc', metal: 'sphalerite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'cassiterite', color: 0xab8a6b, temperature: 232, out: 'tfc:metal/tin', metal: 'cassiterite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'bismuthinite', color: 0x5f6f62, temperature: 271, out: 'tfc:metal/bismuth', metal: 'bismuthinite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'garnierite', color: 0x697e66, temperature: 1453, out: 'tfc:metal/nickel', metal: 'garnierite' },
+    { mod: 'tfc:ore', type: '/type_', ore: 'malachite', color: 0x849c92, temperature: 1085, out: 'tfc:metal/copper', metal: 'malachite' },
     { mod: 'tfc:ore', type: '/', ore: 'sulfur', color: 0xFFFF00 },
     { mod: 'tfc:ore', type: '/', ore: 'graphite', color: 0x202020 },
     { mod: 'tfc:ore', type: '/', ore: 'cryolite', color: 0xF0F8FF },
@@ -50,7 +50,10 @@ StartupEvents.registry("fluid", event => {
                 .stillTexture(`kubejs:fluid/ore/slurry/${ore.ore}`)
                 .flowingTexture(`kubejs:fluid/ore/slurry/${ore.ore}_flowing`)
                 .tag("tfc:usable_in_pot")
+                .tag("tfc:usable_in_wooden_bucket")
+                .tag("tfc:usable_in_barrel")
                 .density(5)
+                //.color(ore.color)
         }
     })
 

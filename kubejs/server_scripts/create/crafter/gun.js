@@ -1,4 +1,4 @@
-ServerEvents.recipes(event =>{
+/*ServerEvents.recipes(event =>{
     const create = event.recipes.create
 
     
@@ -139,4 +139,4 @@ ServerEvents.recipes(event =>{
         g:'#tfc:lumber'
     }) // 制式枪托配件（铜） 动力合成
   
-})
+})*/

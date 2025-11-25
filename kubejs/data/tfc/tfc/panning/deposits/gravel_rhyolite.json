@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/rhyolite",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/rhyolite_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_rhyolite"
+}

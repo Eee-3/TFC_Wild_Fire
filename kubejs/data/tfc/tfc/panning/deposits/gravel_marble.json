@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/marble",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/marble_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_marble"
+}

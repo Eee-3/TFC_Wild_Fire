@@ -1,7 +1,6 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "ingredient": {
-    "item": "tfcorewashing:rocky_chunks_limonite"
+    "item": "kubejs:item/ore/rocky_chunks/limonite"
   },
   "loot_table": "tfc:sluicing/deposits/rocky_chunks_limonite"
 }

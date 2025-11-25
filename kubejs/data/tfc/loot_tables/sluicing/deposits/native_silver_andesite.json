@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "kubejs:item/ore/rocky_chunks/native_silver"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "tfc:rock/loose/andesite"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:obsidian_shards"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_gold",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/magnetite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
