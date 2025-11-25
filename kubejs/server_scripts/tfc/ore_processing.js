@@ -1,7 +1,7 @@
 
 
 //矿物
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const processingTime = 20 * 5;
     const ore = [
@@ -289,3 +289,4 @@ ServerEvents.recipes(event => {
 
 
 })
+*/
