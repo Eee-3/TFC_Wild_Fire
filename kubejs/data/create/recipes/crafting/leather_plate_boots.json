@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "item": "tfc:burlap_cloth"
+    },
+    "a": {
+      "item": "kubejs:leather_scrap"
+    }
+  },
+  "pattern": [
+    "s s",
+    "a a"
+  ],
+  "result": {
+    "item": "kubejs:leather_plate_boots"
+  }
+}

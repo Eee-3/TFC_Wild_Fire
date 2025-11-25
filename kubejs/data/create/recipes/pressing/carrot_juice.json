@@ -12,6 +12,10 @@
     {
       "amount": 100,
       "fluid": "artisanal:carrot_juice"
+    },
+    {
+      "count": 1,
+      "item": "artisanal:food/carrot_mash"
     }
   ]
 }

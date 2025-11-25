@@ -38,5 +38,16 @@ StartupEvents.registry('item', event => {
         })
         .boneVisibility((renderer, slot) => {
             renderer.setAllVisible(true);
+            event.create('geckojs:furry_plugins','anim_helmet')
+    })
+    event.create('geckojs:hanabi_hair','anim_helmet')
+    .texture('kubejs:item/hood')
+    .tooltip('长不大的幼苗')
+    .geoModel(geo => {
+        geo.setSimpleModel('geckojs:geo/hanabi.geo.json')
+        geo.setSimpleTexture('geckojs:textures/hanabi.png')
+        })
+        .boneVisibility((renderer, slot) => {
+            renderer.setAllVisible(true);
     })
 })

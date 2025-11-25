@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "kubejs:beetroot_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "kubejs:condensed_beetroot_juice"
+    }
+  ]
+}

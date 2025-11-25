@@ -66,4 +66,10 @@ StartupEvents.registry("fluid",event=>{
     event.create("kubejs:whiskey_jamesons_malt")
     .stillTexture('kubejs:block/whiskey_jamesons_malt')
     .flowingTexture('kubejs:block/whiskey_jamesons_malt_flowing')
+
+    event.create("kubejs:beetroot_juice")
+    .thinTexture(0XE08888)
+
+    event.create("kubejs:condensed_beetroot_juice")
+    .thinTexture(0XC16051)
 })

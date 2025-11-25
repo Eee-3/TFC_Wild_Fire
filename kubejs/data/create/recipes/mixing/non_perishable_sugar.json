@@ -3,7 +3,7 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "amount": 200,
+      "amount": 100,
       "fluid": "artisanal:clarified_sugarcane_juice"
     }
   ],

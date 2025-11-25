@@ -1,0 +1,27 @@
+{
+  "type": "tfc:damage_inputs_shaped_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "a": {
+        "item": "kubejs:hardened_leather"
+      },
+      "b": {
+        "tag": "tfc:hammers"
+      },
+      "c": {
+        "tag": "tfc:sheets_hardened"
+      }
+    },
+    "pattern": [
+      "bc ",
+      "aaa"
+    ],
+    "result": {
+      "item": "kubejs:leather_plate",
+      "count": 3
+    },
+    "show_notification": true
+  }
+}

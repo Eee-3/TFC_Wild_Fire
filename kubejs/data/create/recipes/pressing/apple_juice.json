@@ -4,7 +4,7 @@
     {
     "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "forge:fruits/apple"
+        "tag": "tfc:foods/apple"
       }
     }
   ],
@@ -12,6 +12,10 @@
     {
       "amount": 100,
       "fluid": "artisanal:apple_juice"
+    },
+    {
+      "count": 1,
+      "item": "artisanal:food/fruit_mash"
     }
   ]
 }

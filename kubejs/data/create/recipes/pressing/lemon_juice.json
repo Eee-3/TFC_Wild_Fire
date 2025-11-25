@@ -12,6 +12,10 @@
     {
       "amount": 100,
       "fluid": "artisanal:lemon_juice"
+    },
+    {
+      "count": 1,
+      "item": "artisanal:food/fruit_mash"
     }
   ]
 }

@@ -9,7 +9,7 @@
       "tag": "survivorsdelight:meats_for_shepherds_pie"
     },
     "R": {
-      "tag": "tfc:foods/vegetables"
+      "item": "minecraft:rotten_flesh"
     },
     "b": {
       "item": "minecraft:bowl"

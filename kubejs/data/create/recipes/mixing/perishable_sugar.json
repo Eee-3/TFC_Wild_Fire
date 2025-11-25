@@ -3,7 +3,7 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "amount": 200,
+      "amount": 100,
       "fluid": "artisanal:sugarcane_juice"
     }
   ],
@@ -12,7 +12,7 @@
       "item": "artisanal:perishable_sugar"
     },
     {
-      "amount": 20,
+      "amount": 40,
       "fluid": "artisanal:molasses"
     }
   ]

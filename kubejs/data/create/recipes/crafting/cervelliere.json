@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "item": "tfc:metal/unfinished_helmet/wrought_iron"
+    },
+    "a": {
+      "item": "kubejs:leather_scrap"
+    }
+  },
+  "pattern": [
+    "asa"
+  ],
+  "result": {
+    "item": "kubejs:cervelliere"
+  }
+}

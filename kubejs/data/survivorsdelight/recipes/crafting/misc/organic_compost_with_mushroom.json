@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:organic_compost"
+  }
+}
