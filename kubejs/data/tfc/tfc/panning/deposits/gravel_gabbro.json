@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/gabbro",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/gabbro_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_gabbro"
+}

@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/schist",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/schist_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_schist"
+}

@@ -25,7 +25,7 @@ function registerTFCTools(event, material, maxDamage) {
     const acheulianDmg = Math.floor(maxDamage * 0.8);
 
     // 1. 锤子
-    event.create(`kubejs:item/rock_tool/${material}_hammer`, 'tfc:hammer')
+    event.create(`kubejs:rock_tool/${material}_hammer`, 'tfc:hammer')
         .maxDamage(maxDamage)
         .tag('tfc:usable_on_tool_rack')
         .texture(`kubejs:item/tfc/${material}/hammer`)
@@ -33,20 +33,20 @@ function registerTFCTools(event, material, maxDamage) {
         .attackDamageBonus(7);
 
     // 2. 标枪
-    event.create(`kubejs:item/rock_tool/${material}_javelin`, 'tfc:javelin')
+    event.create(`kubejs:rock_tool/${material}_javelin`, 'tfc:javelin')
         .maxDamage(maxDamage)
         .thrownDamage(7)
         .texture(`kubejs:item/tfc/${material}/javelin`)
         .tag('tfc:usable_on_tool_rack');
 
     // 3. 锄头
-    event.create(`kubejs:item/rock_tool/${material}_hoe`, 'tfc:hoe')
+    event.create(`kubejs:rock_tool/${material}_hoe`, 'tfc:hoe')
         .maxDamage(maxDamage)
         .texture(`kubejs:item/tfc/${material}/hoe`)
         .attackDamageBonus(8);
 
     // 4. 小刀
-    event.create(`kubejs:item/rock_tool/${material}_knife`, 'tfc:tool')
+    event.create(`kubejs:rock_tool/${material}_knife`, 'tfc:tool')
         .maxDamage(maxDamage)
         .texture(`kubejs:item/tfc/${material}/knife`)
         .tag('tfc:usable_on_tool_rack')
@@ -54,7 +54,7 @@ function registerTFCTools(event, material, maxDamage) {
         .attackDamageBonus(8);
 
     // 5. 斧头
-    event.create(`kubejs:item/rock_tool/${material}_axe`, "axe")
+    event.create(`kubejs:rock_tool/${material}_axe`, "axe")
         .maxDamage(maxDamage)
         .tag('tfc:axes')
         .tag('tfc:axes_that_log')
@@ -63,13 +63,13 @@ function registerTFCTools(event, material, maxDamage) {
         .texture(`kubejs:item/tfc/${material}/axe`);
 
     // 6. 铲子
-    event.create(`kubejs:item/rock_tool/${material}_shovel`, "shovel")
+    event.create(`kubejs:rock_tool/${material}_shovel`, "shovel")
         .maxDamage(maxDamage)
         .tag('tfc:usable_on_tool_rack')
         .texture(`kubejs:item/tfc/${material}/shovel`);
 
     // 7. 阿舍利手斧
-    event.create(`kubejs:item/rock_tool/${material}_acheulian`, "axe")
+    event.create(`kubejs:rock_tool/${material}_acheulian`, "axe")
         .maxDamage(acheulianDmg)
         .tag('minecraft:shovels')
         .tag('tfc:axes')

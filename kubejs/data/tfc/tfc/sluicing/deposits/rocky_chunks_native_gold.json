@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "kubejs:item/ore/rocky_chunks/native_gold"
+  },
+  "loot_table": "tfc:sluicing/deposits/rocky_chunks_native_gold"
+}

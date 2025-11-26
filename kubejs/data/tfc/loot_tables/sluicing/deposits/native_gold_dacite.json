@@ -1,0 +1,73 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "kubejs:item/ore/rocky_chunks/native_gold"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "tfc:rock/loose/dacite"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:obsidian_shards"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_gold",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_silver",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/cassiterite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/graphite",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

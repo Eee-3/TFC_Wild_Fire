@@ -1,28 +1,21 @@
 StartupEvents.registry('item', event => {
-
-    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/hot/unfinished_thermometer')// 未完成的温度计
-    event.create('kubejs:makeshift_firing_unit').texture('kubejs:item/gun/flintlock_unit')// 燧发枪机
-    event.create('kubejs:makeshift_grip').texture('kubejs:item/gun/makeshift_grip')// 粗制握把
-    event.create('kubejs:makeshift_magazine').texture('kubejs:item/gun/makeshift_magazine')// 粗制弹夹
-    event.create('kubejs:makeshift_gun_parts').texture('kubejs:item/gun/makeshift_gun_parts')// 粗制枪械零件
-
-    event.create('brass_cartridge_nest').texture('kubejs:item/gun/brass_cartridge_nest'); // 黄铜弹巢
-    event.create('cast_iron_firing_hammer').texture('kubejs:item/gun/cast_iron_firing_hammer'); // 铸铁击锤
-    event.create('cast_iron_gun_barrel').texture('kubejs:item/gun/cast_iron_gun_barrel'); // 铸铁枪管
-    event.create('standard_type_muzzle_brake_parts_steel').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_steel'); // 制式制退器配件（钢）
-    event.create('standard_type_muzzle_brake_parts_copper').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_copper'); // 制式制退器配件（铜）
-    event.create('standard_type_handguard_parts_steel').texture('kubejs:item/gun/standard_type_handguard_parts_steel'); // 制式护手配件（钢）
-    event.create('standard_type_handguard_parts_copper').texture('kubejs:item/gun/standard_type_handguard_parts_copper'); // 制式护手配件（铜）
-    event.create('standard_type_gun_body_parts_steel').texture('kubejs:item/gun/standard_type_gun_body_parts_steel'); // 制式枪身配件（钢）
-    event.create('standard_type_gun_body_parts_copper').texture('kubejs:item/gun/standard_type_gun_body_parts_copper'); // 制式枪身配件（铜）
-    event.create('standard_type_pistol_slide_parts_steel').texture('kubejs:item/gun/standard_type_pistol_slide_parts_steel'); // 制式手枪滑套配件（钢）
-    event.create('standard_type_pistol_slide_parts_copper').texture('kubejs:item/gun/standard_type_pistol_slide_parts_copper'); // 制式手枪滑套配件（铜）
-    event.create('standard_type_magazine_parts_steel').texture('kubejs:item/gun/standard_type_magazine_parts_steel'); // 制式弹匣配件（钢）
-    event.create('standard_type_magazine_parts_copper').texture('kubejs:item/gun/standard_type_magazine_parts_copper'); // 制式弹匣配件（铜）
-    event.create('standard_type_grip_parts_steel').texture('kubejs:item/gun/standard_type_grip_parts_steel'); // 制式握把配件（钢）
-    event.create('standard_type_grip_parts_copper').texture('kubejs:item/gun/standard_type_grip_parts_copper'); // 制式握把配件（铜）
-    event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
-    event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）
+    /* event.create('brass_cartridge_nest').texture('kubejs:item/gun/brass_cartridge_nest'); // 黄铜弹巢
+     event.create('cast_iron_firing_hammer').texture('kubejs:item/gun/cast_iron_firing_hammer'); // 铸铁击锤
+     event.create('cast_iron_gun_barrel').texture('kubejs:item/gun/cast_iron_gun_barrel'); // 铸铁枪管
+     event.create('standard_type_muzzle_brake_parts_steel').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_steel'); // 制式制退器配件（钢）
+     event.create('standard_type_muzzle_brake_parts_copper').texture('kubejs:item/gun/standard_type_muzzle_brake_parts_copper'); // 制式制退器配件（铜）
+     event.create('standard_type_handguard_parts_steel').texture('kubejs:item/gun/standard_type_handguard_parts_steel'); // 制式护手配件（钢）
+     event.create('standard_type_handguard_parts_copper').texture('kubejs:item/gun/standard_type_handguard_parts_copper'); // 制式护手配件（铜）
+     event.create('standard_type_gun_body_parts_steel').texture('kubejs:item/gun/standard_type_gun_body_parts_steel'); // 制式枪身配件（钢）
+     event.create('standard_type_gun_body_parts_copper').texture('kubejs:item/gun/standard_type_gun_body_parts_copper'); // 制式枪身配件（铜）
+     event.create('standard_type_pistol_slide_parts_steel').texture('kubejs:item/gun/standard_type_pistol_slide_parts_steel'); // 制式手枪滑套配件（钢）
+     event.create('standard_type_pistol_slide_parts_copper').texture('kubejs:item/gun/standard_type_pistol_slide_parts_copper'); // 制式手枪滑套配件（铜）
+     event.create('standard_type_magazine_parts_steel').texture('kubejs:item/gun/standard_type_magazine_parts_steel'); // 制式弹匣配件（钢）
+     event.create('standard_type_magazine_parts_copper').texture('kubejs:item/gun/standard_type_magazine_parts_copper'); // 制式弹匣配件（铜）
+     event.create('standard_type_grip_parts_steel').texture('kubejs:item/gun/standard_type_grip_parts_steel'); // 制式握把配件（钢）
+     event.create('standard_type_grip_parts_copper').texture('kubejs:item/gun/standard_type_grip_parts_copper'); // 制式握把配件（铜）
+     event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
+     event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）*/
 
     event.create('mold_mechanical', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_mechanical')//零件模具
     event.create('unfired_mold_mechanical', 'basic').texture('kubejs:item/tfc/unfired_mold_mechanical')//没烧的零件模具
@@ -54,14 +47,39 @@ StartupEvents.registry('item', event => {
     event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
-    event.create('fish_hook', 'basic').texture('kubejs:item/rotten_platter'); // 骨钩
 
-//万象瑞雪模型以及
+
+    /*event.create('sinew', 'basic').texture('kubejs:item/sinew');  // 筋腱
+    event.create('dried_sinew', 'basic').texture('kubejs:item/dried_sinew'); // 风干的筋腱*/
+    event.create('crushed_sinew', 'basic').texture('kubejs:item/crushed_sinew'); // 捣碎的筋腱
+    event.create('sinew_thread', 'basic').texture('kubejs:item/sinew_thread'); // 筋线
+
+    event.create('coal_powder', 'basic').texture('kubejs:item/coal_powder'); // 煤炭粉
+
+    // 燃料颗粒类物品注册 tfc:firepit_fuel tfc:forge_fuel
+    event.create('wood_pellet', 'basic').texture('kubejs:item/fuel/wood_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 木料颗粒
+    event.create('charcoal_pellet', 'basic').texture('kubejs:item/fuel/charcoal_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 木炭颗粒
+    event.create('coal_pellet', 'basic').texture('kubejs:item/fuel/coal_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 煤炭颗粒
+    event.create('coke_pellet', 'basic').texture('kubejs:item/fuel/coke_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 焦煤颗粒
+    event.create('high_performance_fuel_pellet', 'basic').texture('kubejs:item/fuel/high_performance_fuel_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 高性能燃料颗粒
+
+    // 燃料炭块（压块）类物品注册 tfc:log_pile_logs tfc:forge_fuel
+    event.create('wood_briquette', 'basic').texture('kubejs:item/fuel/wood_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 木料炭块
+    event.create('charcoal_briquette', 'basic').texture('kubejs:item/fuel/charcoal_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 木炭块
+    event.create('coal_briquette', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭块
+    event.create('coke_briquette', 'basic').texture('kubejs:item/fuel/coke_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 焦煤块
+    event.create('high_performance_fuel_briquette', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能燃料块
+
+    event.create('bone_fish_hook', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 骨钩
+    event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
+    event.create('bone_butchersknife_blade', 'basic').texture('kubejs:item/tfc/bone_butchersknife_blade'); // 骨刮皮刀
+
+    //万象瑞雪模型以及
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
     event.create('cast_iron_indenter', 'basic')//铸铁压头
 
-    
+
     const metal = [//金属列表
         "copper",
         "bismuth_bronze",

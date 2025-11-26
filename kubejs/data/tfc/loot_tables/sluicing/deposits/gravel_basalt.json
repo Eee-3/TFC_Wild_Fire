@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:flint",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfc:rock/loose/basalt"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "kubejs:obsidian_shards"
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/magnetite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/hematite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/chromite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/garnierite",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "kubejs:item/ore/rocky_chunks/bauxite",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

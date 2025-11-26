@@ -1,208 +1,231 @@
 ServerEvents.recipes(event => {
     const create = event.recipes.create
 
+    wash_ore.forEach(ore => {
+        create.splashing(//脏粉清洗
+            [
+                Item.of(`tfc:powder/${ore.ore}`).withChance(1),
+                Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),
+            ],
+            Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)
+        ).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+
+
+        create.splashing(//多石清洗
+            [
+                Item.of(`kubejs:item/ore/chunks/${ore.ore}`).withChance(1),
+                Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),
+            ],
+            Item.of(`kubejs:item/ore/rocky_chunks/${ore.ore}`)
+        ).id(`kubejs:wash_ore/createorewash/splashing/rocky_chunks/${ore.ore}`);
+    })
+
+
+
+
+
     // 融合后的岩石洗矿完整信息数组
     const orea = [
         {
             name: "tfc:rock/gravel/granite",
             rock: "granite",
-            t1: "tfcorewashing:rocky_chunks_gold",
-            t2: "tfcorewashing:rocky_chunks_silver",
-            t3: "tfcorewashing:rocky_chunks_cassiterite",
-            t4: "tfcorewashing:rocky_chunks_graphite",
-            t5: "tfcorewashing:rocky_chunks_uraninite"
+            t1: "kubejs:item/ore/rocky_chunks/native_gold",
+            t2: "kubejs:item/ore/rocky_chunks/native_silver",
+            t3: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t4: "kubejs:item/ore/rocky_chunks/graphite",
+            t5: "kubejs:item/ore/rocky_chunks/uraninite"
         },
         {
             name: "tfc:rock/gravel/diorite",
             rock: "diorite",
-            t1: "tfcorewashing:rocky_chunks_copper",
-            t2: "tfcorewashing:rocky_chunks_hematite",
-            t3: "tfcorewashing:rocky_chunks_magnetite",
-            t4: "tfcorewashing:rocky_chunks_sphalerite",
-            t5: "tfcorewashing:rocky_chunks_galena"
+            t1: "kubejs:item/ore/rocky_chunks/native_copper",
+            t2: "kubejs:item/ore/rocky_chunks/hematite",
+            t3: "kubejs:item/ore/rocky_chunks/magnetite",
+            t4: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t5: "kubejs:item/ore/rocky_chunks/galena"
         },
         {
             name: "tfc:rock/gravel/gabbro",
             rock: "gabbro",
-            t1: "tfcorewashing:rocky_chunks_magnetite",
-            t2: "tfcorewashing:rocky_chunks_hematite",
-            t3: "tfcorewashing:rocky_chunks_chromite",
-            t4: "tfcorewashing:rocky_chunks_garnierite",
-            t5: "tfcorewashing:rocky_chunks_limonite"
+            t1: "kubejs:item/ore/rocky_chunks/magnetite",
+            t2: "kubejs:item/ore/rocky_chunks/hematite",
+            t3: "kubejs:item/ore/rocky_chunks/chromite",
+            t4: "kubejs:item/ore/rocky_chunks/garnierite",
+            t5: "kubejs:item/ore/rocky_chunks/limonite"
         },
         {
             name: "tfc:rock/gravel/shale",
             rock: "shale",
-            t1: "tfcorewashing:rocky_chunks_sulfur",
-            t2: "tfcorewashing:rocky_chunks_copper",
-            t3: "tfcorewashing:rocky_chunks_malachite",
-            t4: "tfcorewashing:rocky_chunks_uraninite",
-            t5: "tfcorewashing:rocky_chunks_sphalerite"
+            t1: "kubejs:item/ore/rocky_chunks/sulfur",
+            t2: "kubejs:item/ore/rocky_chunks/native_copper",
+            t3: "kubejs:item/ore/rocky_chunks/malachite",
+            t4: "kubejs:item/ore/rocky_chunks/uraninite",
+            t5: "kubejs:item/ore/rocky_chunks/sphalerite"
         },
         {
             name: "tfc:rock/gravel/claystone",
             rock: "claystone",
-            t1: "tfcorewashing:rocky_chunks_bauxite",
-            t2: "tfcorewashing:rocky_chunks_limonite",
-            t3: "tfcorewashing:rocky_chunks_copper",
-            t4: "tfcorewashing:rocky_chunks_galena",
-            t5: "tfcorewashing:rocky_chunks_sphalerite"
+            t1: "kubejs:item/ore/rocky_chunks/bauxite",
+            t2: "kubejs:item/ore/rocky_chunks/limonite",
+            t3: "kubejs:item/ore/rocky_chunks/native_copper",
+            t4: "kubejs:item/ore/rocky_chunks/galena",
+            t5: "kubejs:item/ore/rocky_chunks/sphalerite"
         },
         {
             name: "tfc:rock/gravel/limestone",
             rock: "limestone",
-            t1: "tfcorewashing:rocky_chunks_galena",
-            t2: "tfcorewashing:rocky_chunks_sphalerite",
-            t3: "tfcorewashing:rocky_chunks_silver",
-            t4: "tfcorewashing:rocky_chunks_copper",
-            t5: "tfcorewashing:rocky_chunks_malachite"
+            t1: "kubejs:item/ore/rocky_chunks/galena",
+            t2: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t3: "kubejs:item/ore/rocky_chunks/native_silver",
+            t4: "kubejs:item/ore/rocky_chunks/native_copper",
+            t5: "kubejs:item/ore/rocky_chunks/malachite"
         },
         {
             name: "tfc:rock/gravel/conglomerate",
             rock: "conglomerate",
-            t1: "tfcorewashing:rocky_chunks_gold",
-            t2: "tfcorewashing:rocky_chunks_cassiterite",
-            t3: "tfcorewashing:rocky_chunks_silver",
-            t4: "tfcorewashing:rocky_chunks_hematite",
-            t5: "tfcorewashing:rocky_chunks_sulfur"
+            t1: "kubejs:item/ore/rocky_chunks/native_gold",
+            t2: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t3: "kubejs:item/ore/rocky_chunks/native_silver",
+            t4: "kubejs:item/ore/rocky_chunks/hematite",
+            t5: "kubejs:item/ore/rocky_chunks/sulfur"
         },
         {
             name: "tfc:rock/gravel/dolomite",
             rock: "dolomite",
-            t1: "tfcorewashing:rocky_chunks_silver",
-            t2: "tfcorewashing:rocky_chunks_galena",
-            t3: "tfcorewashing:rocky_chunks_sphalerite",
-            t4: "tfcorewashing:rocky_chunks_copper",
-            t5: "tfcorewashing:rocky_chunks_cinnabar"
+            t1: "kubejs:item/ore/rocky_chunks/native_silver",
+            t2: "kubejs:item/ore/rocky_chunks/galena",
+            t3: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t4: "kubejs:item/ore/rocky_chunks/native_copper",
+            t5: "kubejs:item/ore/rocky_chunks/cinnabar"
         },
         {
             name: "tfc:rock/gravel/chert",
             rock: "chert",
-            t1: "tfcorewashing:rocky_chunks_sulfur",
-            t2: "tfcorewashing:rocky_chunks_uraninite",
-            t3: "tfcorewashing:rocky_chunks_chromite",
-            t4: "tfcorewashing:rocky_chunks_sphalerite",
-            t5: "tfcorewashing:rocky_chunks_galena"
+            t1: "kubejs:item/ore/rocky_chunks/sulfur",
+            t2: "kubejs:item/ore/rocky_chunks/uraninite",
+            t3: "kubejs:item/ore/rocky_chunks/chromite",
+            t4: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t5: "kubejs:item/ore/rocky_chunks/galena"
         },
         {
             name: "tfc:rock/gravel/chalk",
             rock: "chalk",
-            t1: "tfcorewashing:rocky_chunks_sulfur",
-            t2: "tfcorewashing:rocky_chunks_copper",
-            t3: "tfcorewashing:rocky_chunks_limonite",
-            t4: "tfcorewashing:rocky_chunks_sphalerite",
-            t5: "tfcorewashing:rocky_chunks_malachite"
+            t1: "kubejs:item/ore/rocky_chunks/sulfur",
+            t2: "kubejs:item/ore/rocky_chunks/native_copper",
+            t3: "kubejs:item/ore/rocky_chunks/limonite",
+            t4: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t5: "kubejs:item/ore/rocky_chunks/malachite"
         },
         {
             name: "tfc:rock/gravel/rhyolite",
             rock: "rhyolite",
-            t1: "tfcorewashing:rocky_chunks_cassiterite",
-            t2: "tfcorewashing:rocky_chunks_gold",
-            t3: "tfcorewashing:rocky_chunks_silver",
-            t4: "tfcorewashing:rocky_chunks_graphite",
-            t5: "tfcorewashing:rocky_chunks_uraninite"
+            t1: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t2: "kubejs:item/ore/rocky_chunks/native_gold",
+            t3: "kubejs:item/ore/rocky_chunks/native_silver",
+            t4: "kubejs:item/ore/rocky_chunks/graphite",
+            t5: "kubejs:item/ore/rocky_chunks/uraninite"
         },
         {
             name: "tfc:rock/gravel/basalt",
             rock: "basalt",
-            t1: "tfcorewashing:rocky_chunks_magnetite",
-            t2: "tfcorewashing:rocky_chunks_hematite",
-            t3: "tfcorewashing:rocky_chunks_chromite",
-            t4: "tfcorewashing:rocky_chunks_garnierite",
-            t5: "tfcorewashing:rocky_chunks_bauxite"
+            t1: "kubejs:item/ore/rocky_chunks/magnetite",
+            t2: "kubejs:item/ore/rocky_chunks/hematite",
+            t3: "kubejs:item/ore/rocky_chunks/chromite",
+            t4: "kubejs:item/ore/rocky_chunks/garnierite",
+            t5: "kubejs:item/ore/rocky_chunks/bauxite"
         },
         {
             name: "tfc:rock/gravel/andesite",
             rock: "andesite",
-            t1: "tfcorewashing:rocky_chunks_copper",
-            t2: "tfcorewashing:rocky_chunks_gold",
-            t3: "tfcorewashing:rocky_chunks_magnetite",
-            t4: "tfcorewashing:rocky_chunks_sphalerite",
-            t5: "tfcorewashing:rocky_chunks_galena"
+            t1: "kubejs:item/ore/rocky_chunks/native_copper",
+            t2: "kubejs:item/ore/rocky_chunks/native_gold",
+            t3: "kubejs:item/ore/rocky_chunks/magnetite",
+            t4: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t5: "kubejs:item/ore/rocky_chunks/galena"
         },
         {
             name: "tfc:rock/gravel/dacite",
             rock: "dacite",
-            t1: "tfcorewashing:rocky_chunks_gold",
-            t2: "tfcorewashing:rocky_chunks_silver",
-            t3: "tfcorewashing:rocky_chunks_copper",
-            t4: "tfcorewashing:rocky_chunks_cassiterite",
-            t5: "tfcorewashing:rocky_chunks_graphite"
+            t1: "kubejs:item/ore/rocky_chunks/native_gold",
+            t2: "kubejs:item/ore/rocky_chunks/native_silver",
+            t3: "kubejs:item/ore/rocky_chunks/native_copper",
+            t4: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t5: "kubejs:item/ore/rocky_chunks/graphite"
         },
         {
             name: "tfc:rock/gravel/quartzite",
             rock: "quartzite",
-            t1: "tfcorewashing:rocky_chunks_gold",
-            t2: "tfcorewashing:rocky_chunks_silver",
-            t3: "tfcorewashing:rocky_chunks_cassiterite",
-            t4: "tfcorewashing:rocky_chunks_uraninite",
-            t5: "tfcorewashing:rocky_chunks_graphite"
+            t1: "kubejs:item/ore/rocky_chunks/native_gold",
+            t2: "kubejs:item/ore/rocky_chunks/native_silver",
+            t3: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t4: "kubejs:item/ore/rocky_chunks/uraninite",
+            t5: "kubejs:item/ore/rocky_chunks/graphite"
         },
         {
             name: "tfc:rock/gravel/slate",
             rock: "slate",
-            t1: "tfcorewashing:rocky_chunks_copper",
-            t2: "tfcorewashing:rocky_chunks_galena",
-            t3: "tfcorewashing:rocky_chunks_sphalerite",
-            t4: "tfcorewashing:rocky_chunks_sulfur",
-            t5: "tfcorewashing:rocky_chunks_malachite"
+            t1: "kubejs:item/ore/rocky_chunks/native_copper",
+            t2: "kubejs:item/ore/rocky_chunks/galena",
+            t3: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t4: "kubejs:item/ore/rocky_chunks/sulfur",
+            t5: "kubejs:item/ore/rocky_chunks/malachite"
         },
         {
             name: "tfc:rock/gravel/phyllite",
             rock: "phyllite",
-            t1: "tfcorewashing:rocky_chunks_copper",
-            t2: "tfcorewashing:rocky_chunks_sphalerite",
-            t3: "tfcorewashing:rocky_chunks_galena",
-            t4: "tfcorewashing:rocky_chunks_limonite",
-            t5: "tfcorewashing:rocky_chunks_malachite"
+            t1: "kubejs:item/ore/rocky_chunks/native_copper",
+            t2: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t3: "kubejs:item/ore/rocky_chunks/galena",
+            t4: "kubejs:item/ore/rocky_chunks/limonite",
+            t5: "kubejs:item/ore/rocky_chunks/malachite"
         },
         {
             name: "tfc:rock/gravel/schist",
             rock: "schist",
-            t1: "tfcorewashing:rocky_chunks_hematite",
-            t2: "tfcorewashing:rocky_chunks_magnetite",
-            t3: "tfcorewashing:rocky_chunks_copper",
-            t4: "tfcorewashing:rocky_chunks_gold",
-            t5: "tfcorewashing:rocky_chunks_silver"
+            t1: "kubejs:item/ore/rocky_chunks/hematite",
+            t2: "kubejs:item/ore/rocky_chunks/magnetite",
+            t3: "kubejs:item/ore/rocky_chunks/native_copper",
+            t4: "kubejs:item/ore/rocky_chunks/native_gold",
+            t5: "kubejs:item/ore/rocky_chunks/native_silver"
         },
         {
             name: "tfc:rock/gravel/gneiss",
             rock: "gneiss",
-            t1: "tfcorewashing:rocky_chunks_gold",
-            t2: "tfcorewashing:rocky_chunks_silver",
-            t3: "tfcorewashing:rocky_chunks_cassiterite",
-            t4: "tfcorewashing:rocky_chunks_graphite",
-            t5: "tfcorewashing:rocky_chunks_uraninite"
+            t1: "kubejs:item/ore/rocky_chunks/native_gold",
+            t2: "kubejs:item/ore/rocky_chunks/native_silver",
+            t3: "kubejs:item/ore/rocky_chunks/cassiterite",
+            t4: "kubejs:item/ore/rocky_chunks/graphite",
+            t5: "kubejs:item/ore/rocky_chunks/uraninite"
         },
         {
             name: "tfc:rock/gravel/marble",
             rock: "marble",
-            t1: "tfcorewashing:rocky_chunks_silver",
-            t2: "tfcorewashing:rocky_chunks_galena",
-            t3: "tfcorewashing:rocky_chunks_sphalerite",
-            t4: "tfcorewashing:rocky_chunks_copper",
-            t5: "tfcorewashing:rocky_chunks_cinnabar"
+            t1: "kubejs:item/ore/rocky_chunks/native_silver",
+            t2: "kubejs:item/ore/rocky_chunks/galena",
+            t3: "kubejs:item/ore/rocky_chunks/sphalerite",
+            t4: "kubejs:item/ore/rocky_chunks/native_copper",
+            t5: "kubejs:item/ore/rocky_chunks/cinnabar"
         }
     ];
     const oree = [
         {
             name: "cassiterite",
-            ore: 'tfcorewashing:rocky_chunks_cassiterite'
+            ore: 'kubejs:item/ore/rocky_chunks/cassiterite'
         },
         {
             name: "native_copper",
-            ore: 'tfcorewashing:rocky_chunks_copper'
+            ore: 'kubejs:item/ore/rocky_chunks/native_copper'
         },
         {
             name: "native_silver",
-            ore: 'tfcorewashing:rocky_chunks_silver'
+            ore: 'kubejs:item/ore/rocky_chunks/native_silver'
         },
         {
             name: "native_gold",
-            ore: 'tfcorewashing:rocky_chunks_gold'
+            ore: 'kubejs:item/ore/rocky_chunks/native_gold'
         }]
 
-   orea.forEach(ore => {
+    orea.forEach(ore => {
 
         create.splashing(
             [
@@ -216,7 +239,7 @@ ServerEvents.recipes(event => {
             Item.of(ore.name)
         ).id(`kubejs:orewash/${ore.rock}`);
     })
-   orea.forEach(ore => {
+    orea.forEach(ore => {
         oree.forEach(deposit => {
 
             create.splashing(
