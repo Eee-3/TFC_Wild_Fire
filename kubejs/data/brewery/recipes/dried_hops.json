@@ -1,11 +1,11 @@
 {
-  "type": "brewery:drying",
-  "ingredients": [
-    {
-      "item": "kubejs:hops"
-    }
-  ],
-  "output": {
-    "item": "brewery:hops"
+  "type": "farm_and_charm:drying",
+  "ingredient": {
+    "item": "kubejs:hops"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "item": "brewery:hops",
+    "count": 1
   }
 }

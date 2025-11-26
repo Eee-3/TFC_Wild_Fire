@@ -7,12 +7,11 @@
   "experience": 20.0,
   "fluid": {
     "amount": 100,
-    "ingredient": "tfc:olive_oil"
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
   },
   "ingredients": [
-    {
-      "tag": "tfc:sweetener"
-    },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
@@ -27,19 +26,26 @@
     },
     {
       "type": "tfc:not_rotten",
-      "ingredient": [
-        {
-          "tag": "tfc:foods/vegetables"
-        },
-        {
-          "tag": "survivorsdelight:fruit_for_cheesecake"
-        }
-      ]
+      "ingredient": {
+        "tag": "survivorsdelight:fruit_for_cheesecake"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
+      }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
         "tag": "tfc:foods/dough"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:raw_honey"
       }
     }
   ],

@@ -2,13 +2,19 @@
   "type": "survivorsdelight:nutrition_crafting",
   "key": {
     "M": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
       "tag": "tfc:foods/cooked_meats"
+      }
     },
     "S": {
       "tag": "forge:rods/wooden"
     },
     "V": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
       "tag": "tfc:foods/vegetables"
+      }
     }
   },
   "pattern": [

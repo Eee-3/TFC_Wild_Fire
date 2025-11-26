@@ -3,8 +3,8 @@
   "container": {
     "item": "minecraft:bowl"
   },
-  "cookingtime": 600,
-  "experience": 10.0,
+  "cookingtime": 300,
+  "experience": 5.0,
   "ingredients": [
     {
       "type": "tfc:not_rotten",

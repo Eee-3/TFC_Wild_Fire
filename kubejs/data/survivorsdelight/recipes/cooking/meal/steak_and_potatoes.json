@@ -7,13 +7,15 @@
   "experience": 15.0,
   "fluid": {
     "amount": 100,
-    "ingredient": "tfc:olive_oil"
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
   },
   "ingredients": [
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/cooked_beef"
+        "tag": "survivorsdelight:beef"
       }
     },
     {

@@ -6,8 +6,10 @@
   "cookingtime": 300,
   "experience": 15.0,
   "fluid": {
-    "amount": 100,
-    "ingredient": "tfc:olive_oil"
+    "amount": 50,
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
   },
   "ingredients": [
     {

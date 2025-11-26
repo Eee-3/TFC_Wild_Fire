@@ -3,7 +3,7 @@
   "container": {
     "item": "minecraft:bowl"
   },
-  "cookingtime": 600,
+  "cookingtime": 450,
   "experience": 15.0,
   "fluid": {
     "amount": 100,
@@ -15,7 +15,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/protein_soup"
+        "tag": "artisanal:foods/can_be_canned"
       }
     },
     {

@@ -1,32 +1,33 @@
 {
-  "type": "farmersdelight:cooking",
-  "cookingtime": 1200,
-  "experience": 10.0,
-  "fluid": {
-    "amount": 200,
-    "ingredient": "tfc:olive_oil"
-  },
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:foods/dough"
+        "tag": "firmalife:feeds_yeast"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:foods/dough"
+        "tag": "firmalife:feeds_yeast"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "survivorsdelight:pie_crust_dairy"
+        "tag": "firmalife:feeds_yeast"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:butter"
       }
     }
   ],
   "result": {
-    "item": "farmersdelight:pie_crust"
+    "item": "farmersdelight:pie_crust",
+    "count": 2
   }
 }

@@ -7,7 +7,9 @@
   "experience": 15.0,
   "fluid": {
     "amount": 100,
-    "ingredient": "tfc:olive_oil"
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
   },
   "ingredients": [
     {

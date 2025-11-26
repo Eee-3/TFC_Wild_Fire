@@ -1,0 +1,27 @@
+{
+  "type": "tfc:damage_inputs_shaped_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "c": {
+        "item": "firmalife:reinforced:glass"
+      },
+      "d": {
+        "item": "tfc:metal/sheet/steel"
+      },
+      "e": {
+        "item": "tfc:ceramic/fire_brick"
+      }
+    },
+    "pattern": [
+      "d d",
+      "ece",
+      "eee"
+    ],
+    "result": {
+      "item": "createmetallurgy:industrial_crucible"
+    },
+    "show_notification": true
+  }
+}

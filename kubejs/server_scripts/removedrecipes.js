@@ -437,11 +437,12 @@ ServerEvents.recipes(e => {
   e.remove({ id: "minecraft:iron_ingot_from_iron_block" }) // 移除 铁块合成铁
   e.remove({ id: "farmersdelight:cutting_board_from_beam" }) // 移除 梁合成木棍
 
-  e.remove({ type: 'survivorsdelight:cooking' })
-  e.remove({ type: 'survivorsdelight:crafting/food' })
-  e.remove({ type: 'minecraft:feast' })
-  e.remove({ type: 'minecraft:meal' })
-  e.remove({ type: 'minecraft:soup' }) // 移除survivors delight 的食物配方
+
+
+
+  e.remove({ id: 'farmersdelight:book_from_canvas' })
+  e.remove({ id: 'create:crafting/appliances/book' })
+  e.remove({ id: 'tfc_ie_addon:crafting/ersatz_leather_firmalife' })
 
 
 

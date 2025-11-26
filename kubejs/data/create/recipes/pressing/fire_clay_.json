@@ -1,0 +1,32 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+        "item": "tfc:powder/graphite"
+    },
+    {
+        "item": "tfc:powder/graphite"
+    },
+    {
+        "item": "tfc:powder/graphite"
+    },
+    {
+        "item": "tfc:powder/kaolinite"
+    },
+    {
+        "item": "minecraft:clay_ball"
+    },
+    {
+        "item": "tfc_ie_addon:powder/bauxite"
+    },
+    {
+        "item": "tfc_ie_addon:powder/bauxite"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "tfc:fire_clay"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "tfc:food/red_bell_pepper"
+    }
+  ],
+  "input": {
+    "item": "tfc:seeds/red_bell_pepper"
+  },
+  "soil": [
+    {
+      "item": "tfc:dirt/silt"
+    },
+    {
+      "item": "tfc:dirt/loam"
+    },
+    {
+      "item": "tfc:dirt/silty_loam"
+    },
+    {
+      "item": "tfc:dirt/sandy_loam"
+    }
+  ],
+  "time": 128000,
+  "render": {
+    "type": "crop",
+    "block": "tfc:crop/red_bell_pepper"
+  }
+}

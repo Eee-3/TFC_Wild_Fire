@@ -1,0 +1,43 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "tfc:pumpkin"
+  },
+  "cookingtime": 1200,
+  "experience": 20.0,
+  "fluid": {
+    "amount": 100,
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
+  },
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/grains"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/onion"
+      }
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:stuffed_pumpkin_block"
+  }
+}

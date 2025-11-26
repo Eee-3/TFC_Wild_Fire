@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"#": {
+			"item": "minecraft:stick"
+		},
+		"X": {
+			"item": "tfc:metal/rod/wrought_iron"
+		}
+	},
+	"pattern": [
+		"XXX",
+		" # ",
+		" # "
+	],
+	"result": {
+		"item": "farm_and_charm:pitchfork"
+	}
+}

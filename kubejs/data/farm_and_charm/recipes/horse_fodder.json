@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WWW",
+		"WWW"
+	],
+	"key": {
+		"W": {
+			"tag": "tfc:horse_food"
+		}
+	},
+	"result": {
+		"item": "farm_and_charm:horse_fodder",
+		"count": 1
+	}
+}

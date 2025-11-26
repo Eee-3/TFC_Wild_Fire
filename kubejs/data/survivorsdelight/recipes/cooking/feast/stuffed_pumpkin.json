@@ -1,25 +1,33 @@
 {
   "type": "farmersdelight:cooking",
   "container": {
-    "item": "minecraft:carved_pumpkin"
+    "item": "tfc:pumpkin"
   },
   "cookingtime": 1200,
   "experience": 20.0,
   "fluid": {
     "amount": 100,
-    "ingredient": "tfc:olive_oil"
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
   },
   "ingredients": [
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "minecraft:brown_mushroom"
+        "tag": "tfc:foods/grains"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:foods/grains"
+        "tag": "artisanal:foods/can_be_canned"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "artisanal:foods/can_be_canned"
       }
     },
     {

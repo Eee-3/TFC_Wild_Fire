@@ -39,7 +39,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/vegetables_salad"
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
       }
     }
   ],

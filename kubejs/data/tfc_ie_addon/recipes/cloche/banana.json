@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "alexsmobs:banana"
+    },
+    {
+      "item": "alexsmobs:banana"
+    },
+    {
+      "item": "alexsmobs:banana"
+    }
+  ],
+  "input": {
+    "item": "tfc:plant/banana_sapling"
+  },
+  "soil": [
+    {
+      "item": "tfc:dirt/silt"
+    },
+    {
+      "item": "tfc:dirt/loam"
+    },
+    {
+      "item": "tfc:dirt/silty_loam"
+    },
+    {
+      "item": "tfc:dirt/sandy_loam"
+    }
+  ],
+  "time": 128000,
+  "render": {
+    "type": "generic",
+    "block": "tfc:plant/banana_sapling"
+  }
+}

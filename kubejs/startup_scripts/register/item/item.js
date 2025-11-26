@@ -1,4 +1,11 @@
 StartupEvents.registry('item', event => {
+
+    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/hot/unfinished_thermometer')// 未完成的温度计
+    event.create('kubejs:makeshift_firing_unit').texture('kubejs:item/gun/flintlock_unit')// 燧发枪机
+    event.create('kubejs:makeshift_grip').texture('kubejs:item/gun/makeshift_grip')// 粗制握把
+    event.create('kubejs:makeshift_magazine').texture('kubejs:item/gun/makeshift_magazine')// 粗制弹夹
+    event.create('kubejs:makeshift_gun_parts').texture('kubejs:item/gun/makeshift_gun_parts')// 粗制枪械零件
+
     event.create('brass_cartridge_nest').texture('kubejs:item/gun/brass_cartridge_nest'); // 黄铜弹巢
     event.create('cast_iron_firing_hammer').texture('kubejs:item/gun/cast_iron_firing_hammer'); // 铸铁击锤
     event.create('cast_iron_gun_barrel').texture('kubejs:item/gun/cast_iron_gun_barrel'); // 铸铁枪管

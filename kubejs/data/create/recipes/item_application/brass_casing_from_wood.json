@@ -2,15 +2,15 @@
   "type": "create:item_application",
   "ingredients": [
     {
-      "tag": "forge:stripped_wood"
+      "item": "firmalife:cured_oven_bottom"
     },
     {
-      "item": "tfc:brass_mechanisms"
+      "item": "tfc:wrought_iron_grill"
     }
   ],
   "results": [
     {
-      "item": "create:brass_casing"
+    "item": "farmersdelight:stove"
     }
   ]
 }

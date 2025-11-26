@@ -3,10 +3,10 @@
   "container": {
     "item": "minecraft:bowl"
   },
-  "cookingtime": 3600,
+  "cookingtime": 1200,
   "experience": 15.0,
   "fluid": {
-    "amount": 400,
+    "amount": 250,
     "ingredient": {
       "tag": "tfc:any_fresh_water"
     }
@@ -24,7 +24,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/garlic"
+        "tag": "tfc:foods/vegetables"
       }
     },
     {

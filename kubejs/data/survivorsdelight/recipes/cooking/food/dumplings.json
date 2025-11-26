@@ -1,6 +1,6 @@
 {
   "type": "farmersdelight:cooking",
-  "cookingtime": 200,
+  "cookingtime": 100,
   "experience": 5.0,
   "ingredients": [
     {
@@ -18,13 +18,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/onion"
-      }
-    },
-    {
-      "type": "tfc:not_rotten",
-      "ingredient": {
-        "item": "tfc:food/cabbage"
+        "tag": "tfc:foods/cabbage"
       }
     }
   ],

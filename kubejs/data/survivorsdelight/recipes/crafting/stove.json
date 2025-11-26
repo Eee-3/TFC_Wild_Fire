@@ -2,17 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "BiB",
-    "BCB"
+    "B B"
   ],
   "key": {
     "i": {
       "item": "tfc:wrought_iron_grill"
     },
     "B": {
-      "item": "minecraft:bricks"
-    },
-    "C": {
-      "item": "minecraft:fire_charge"
+      "item": "firmalife:cured_oven_bottom"
     }
   },
   "result": {

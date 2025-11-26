@@ -1,19 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "b b",
-    "i i",
-    " i "
-  ],
-  "key": {
-    "i": {
-      "item": "tfc:metal/sheet/wrought_iron"
-    },
-    "b": {
-      "item": "minecraft:brick"
-    }
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:double_sheets/cast_iron"
   },
   "result": {
     "item": "farmersdelight:cooking_pot"
-  }
+  },
+  "tier": 2,
+  "rules": [
+    "draw_any",
+    "punch_any",
+    "hit_last"
+  ]
 }

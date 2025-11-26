@@ -5,4 +5,5 @@ StartupEvents.registry('item', event => {
     .texture('kubejs:item/crushed_raw_calorite')
     event.create('kubejs:crushed_raw_ostrum')
     .texture('kubejs:item/crushed_raw_ostrum')
-})
+
+    })

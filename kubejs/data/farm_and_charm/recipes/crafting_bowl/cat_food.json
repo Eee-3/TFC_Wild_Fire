@@ -1,0 +1,15 @@
+{
+	"type": "farm_and_charm:crafting_bowl",
+	"ingredients": [
+		{
+			"tag": "tfc:cat_food"
+		},
+		{
+			"tag": "tfc:cat_food"
+		}
+	],
+	"result": {
+		"item": "farm_and_charm:cat_food",
+		"count": 1
+	}
+}

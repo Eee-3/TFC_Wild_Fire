@@ -3,7 +3,7 @@
   "container": {
     "item": "minecraft:bowl"
   },
-  "cookingtime": 900,
+  "cookingtime": 450,
   "experience": 15.0,
   "ingredients": [
     {
@@ -15,7 +15,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "tfc:food/vegetables_soup"
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
       }
     }
   ],

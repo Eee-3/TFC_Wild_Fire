@@ -6,12 +6,11 @@
   "cookingtime": 600,
   "experience": 15.0,
   "fluid": {
-    "amount": 50,
+    "amount": 100,
     "ingredient": {
       "tag": "farmersdelight:cooking_oil"
     }
   },
-
   "ingredients": [
     {
       "type": "tfc:not_rotten",

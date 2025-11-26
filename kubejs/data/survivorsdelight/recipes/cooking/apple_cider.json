@@ -1,6 +1,11 @@
 {
   "type": "farmersdelight:cooking",
-  "recipe_book_tab": "drinks",
+  "cookingtime": 600,
+  "experience": 20.0,
+  "fluid": {
+    "amount": 250,
+    "ingredient": "tfc:cider"
+  },
   "ingredients": [
     {
       "type": "tfc:not_rotten",
@@ -15,7 +20,7 @@
       }
     },
     {
-      "item": "minecraft:sugar"
+      "tag": "tfc:sweetener"
     }
   ],
   "result": {
