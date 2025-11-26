@@ -44,7 +44,57 @@
                 "vintageimprovements:small_vanadium_spring",
                 "vintageimprovements:small_zinc_spring",
                 "vintageimprovements:small_tin_spring",
-                "vintageimprovements:uranium_wire"
+                "vintageimprovements:uranium_wire",
+                "vintageimprovements:small_pig_iron_spring",
+                "vintageimprovements:sulfur_chunk",
+                "vintageimprovements:sulfur_block",
+                "vintageimprovements:vanadium_sheet",
+                "vintageimprovements:uranium_wire",
+                "vintageimprovements:vanadium_wire",
+                "vintageimprovements:small_uranium_spring",
+                "vintageimprovements:small_tin_spring",
+                "vintageimprovements:small_rose_gold_spring",
+                "vintageimprovements:small_vanadium_spring",
+                "vintageimprovements:pig_iron_sheet",
+                "vintageimprovements:pig_iron_rod",
+                "vintageimprovements:pig_iron_wire",
+                "vintageimprovements:blaze_spring",
+                "vintageimprovements:pig_iron_spring",
+                "vintageimprovements:aluminum_sheet",
+                "vintageimprovements:bronze_sheet",
+                "vintageimprovements:cast_iron_sheet",
+                "vintageimprovements:constantan_sheet",
+                "vintageimprovements:lead_sheet",
+                "vintageimprovements:netherite_sheet",
+                "vintageimprovements:nickel_sheet",
+                "vintageimprovements:rose_gold_sheet",
+                "vintageimprovements:silver_sheet",
+                "vintageimprovements:tin_sheet",
+                "vintageimprovements:uranium_sheet",
+                "vintageimprovements:zinc_sheet",
+                "vintageimprovements:amethyst_bronze_sheet",
+                "vintageimprovements:cobalt_sheet",
+                "vintageimprovements:enderium_sheet",
+                "vintageimprovements:hepatizon_sheet",
+                "vintageimprovements:invar_sheet",
+                "vintageimprovements:lumium_sheet",
+                "vintageimprovements:manyullyn_sheet",
+                "vintageimprovements:osmium_sheet",
+                "vintageimprovements:palladium_sheet",
+                "vintageimprovements:platinum_sheet",
+                "vintageimprovements:pure_gold_sheet",
+                "vintageimprovements:refined_glowstone_sheet",
+                "vintageimprovements:refined_obsidian_sheet",
+                "vintageimprovements:rhodium_sheet",
+                "vintageimprovements:signalum_sheet",
+                "vintageimprovements:refined_radiance_sheet",
+                "vintageimprovements:nethersteel_sheet",
+                "vintageimprovements:ironwood_sheet",
+                "vintageimprovements:knightmetal_sheet",
+                "vintageimprovements:queens_slime_sheet",
+                "vintageimprovements:slimesteel_sheet",
+                "vintageimprovements:fiery_sheet",
+                "vintageimprovements:shadow_steel_sheet",
             ])
     })
     //删除design_decor的无用金属装饰
@@ -67,40 +117,28 @@
                 "design_decor:lead_large_chain",
                 "design_decor:mithril_large_chain",
                 "design_decor:nethersteel_large_chain",
-                "design_decor:tin_large_chain"
-            ])
-    })
-    StartupEvents.modifyCreativeTab("illagerinvasion:main", event => {
-        event.remove(
-            [
-                "illagerinvasion:unusual_dust",
-                "illagerinvasion:illusioanry_dust",
-                "illagerinvasion:hallowed_gem",
-                "illagerinvasion:primal_essence",
-                "illagerinvasion:platinum_chunk",
-                "illagerinvasion:platinum_sheet",
-                "illagerinvasion:platinum_infused_hatchet",
-                "illagerinvasion:horn_of_sight",
-                "illagerinvasion:lost_candle",
-                "illagerinvasion:imbuing_table",
-                "illagerinvasion:magical_fire_charge",
-                "illagerinvasion:illusionary_dust"
+                "design_decor:tin_large_chain",
+                "design_decor:queen_slime_large_chain",
+                "design_decor:knightslime_large_chain",
+                "design_decor:invar_large_chain",
+                "design_decor:nickel_large_chain",
+                "design_decor:rose_gold_large_chain",
+                "design_decor:cobalt_large_chain",
+                "design_decor:manyullyn_large_chain",
+                "design_decor:hepatizon_large_chain",
+                "design_decor:pig_iron_large_chain",
+                "design_decor:mithril_large_chain",
+                "design_decor:nethersteel_large_chain",
             ])
     })
     StartupEvents.modifyCreativeTab("lootr:lootr", event => {
         event.remove("lootr:trophy")
     })
-    StartupEvents.modifyCreativeTab("artifacts:main", event => {
+    StartupEvents.modifyCreativeTab("createdieselgenerators:cdg_creative_tab", event => {
         event.remove([
-            "artifacts:bunny_hoppers",
-            "artifacts:kitty_slippers",
-            "artifacts:rooted_boots",
-            "artifacts:feral_claws",
-            "artifacts:nightvision_goggles",
-            "artifacts:steadfast_spikes",
-            "artifacts:snorkel",
-            "artifacts:everlasting_beef",
-            "artifacts:digging_claws"
+            "createdieselgenerators:mold",
+            "createdieselgenerators:wire_cutters",
+            "createdieselgenerators:hammer"
         ])
     })
     StartupEvents.modifyCreativeTab("eidolon:general", event => {
@@ -125,7 +163,8 @@
         ])
     })
     StartupEvents.modifyCreativeTab("create_new_age:create_new_age_tab", event => {
-        event.remove(["create_new_age:thorium_ore",
+        event.remove([
+            "create_new_age:thorium_ore",
             "create_new_age:electrical_connector",
             "create_new_age:copper_wire",
             "create_new_age:overcharged_iron_wire",
@@ -133,6 +172,19 @@
             "create_new_age:overcharged_diamond_wire",
             "create_new_age:radioactive_thorium",
             "create_new_age:thorium"
+        ])
+    })
+    StartupEvents.modifyCreativeTab("artifacts:main", event => {
+        event.remove([
+            "artifacts:bunny_hoppers",
+            "artifacts:kitty_slippers",
+            "artifacts:rooted_boots",
+            "artifacts:feral_claws",
+            "artifacts:nightvision_goggles",
+            "artifacts:steadfast_spikes",
+            "artifacts:snorkel",
+            "artifacts:everlasting_beef",
+            "artifacts:digging_claws",
         ])
     })
     StartupEvents.modifyCreativeTab("sophisticatedbackpacks:main", event => {
@@ -143,6 +195,31 @@
             "sophisticatedbackpacks:blasting_upgrade",
             "sophisticatedbackpacks:smoking_upgrade",
             "sophisticatedbackpacks:auto_smelting_upgrade"
+        ])
+    })
+    StartupEvents.modifyCreativeTab("ad_astra:main", event => {
+        event.remove([
+            "ad_astra:fuel_refinery",
+            "ad_astra:oxygen_loader",
+            "ad_astra:coal_generator",
+            "ad_astra:compressor",
+            "ad_astra:water_pump",
+            "ad_astra:energizer",
+            "ad_astra:nasa_workbench",
+            "ad_astra:etrionic_blast_furnace"
+        ])
+    })
+    StartupEvents.modifyCreativeTab("illagerinvasion:main", event => {
+        event.remove([
+            "illagerinvasion:unusual_dust",
+            "illagerinvasion:imbuing_table",
+            "illagerinvasion:primal_essence",
+            "illagerinvasion:illusionary_dust",
+            "illagerinvasion:hallowed_gem",
+            "illagerinvasion:magical_fire_charge",
+            "illagerinvasion:lost_candle",
+            "illagerinvasion:platinum_sheet",
+            "illagerinvasion:platinum_chunk",
         ])
     })
     StartupEvents.modifyCreativeTab("immersiveengineering:main", event => {
@@ -180,7 +257,15 @@
             "immersiveengineering:deepslate_ore_silver",
             "immersiveengineering:raw_block_uranium",
             "immersiveengineering:ore_lead",
-            "immersiveengineering:deepslate_ore_lead"
+            "immersiveengineering:deepslate_ore_lead",
+            "immersiveengineering:dust_silver",
+            "immersiveengineering:dust_nickel",
+            "immersiveengineering:dust_gold",
+            "immersiveengineering:dust_copper",
+            "immersiveengineering:dust_lead",
+            "immersiveengineering:dust_iron",
+            "immersiveengineering:dust_uranium",
+            "immersiveengineering:dust_aluminum"
         ])
     })
     StartupEvents.modifyCreativeTab("legendarysurvivaloverhaul:legendary_creatures", event => {
@@ -205,7 +290,15 @@
             "legendarysurvivaloverhaul:beetroot_juice",
             "legendarysurvivaloverhaul:apple_juice",
             "legendarysurvivaloverhaul:carrot_juice",
-            "legendarysurvivaloverhaul:water_plant_bag"
+            "legendarysurvivaloverhaul:water_plant_bag",
+            "legendarysurvivaloverhaul:water_plant_seeds",
+            "legendarysurvivaloverhaul:water_purifier",
+            "legendarysurvivaloverhaul:water_plant_bag",
+            "legendarysurvivaloverhaul:large_canteen",
+            "legendarysurvivaloverhaul:canteen",
+            "legendarysurvivaloverhaul:large_canteen",
+            "legendarysurvivaloverhaul:canteen",
+            "legendarysurvivaloverhaul:seasonal_calendar",
         ])
     })
     StartupEvents.modifyCreativeTab("butcher:butcher", event => {
@@ -249,7 +342,12 @@
                 "butcher:canopypurple",
                 "butcher:canopygreen",
                 "butcher:canopylightgray",
-                "butcher:canopylime"
+                "butcher:canopylime",
+                "butcher:hook",
+                "butcher:dioritebrickstairs",
+                "butcher:diorite_brick_slab",
+                "butcher:diorite_brickwall",
+                "butcher:display"
             ])
     })
 

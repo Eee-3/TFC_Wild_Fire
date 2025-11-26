@@ -173,6 +173,22 @@ TFCEvents.data(e => {
 
   //大,中
   const large_medium_items = [
+    "tfc:ore/rich_cassiterite",
+    "tfc:ore/rich_native_silver",
+    "tfc:ore/rich_hematite",
+    "tfc:ore/rich_native_gold",
+    "tfc:ore/rich_native_copper",
+    "tfc_ie_addon:ore/rich_uraninite",
+    "tfc_ie_addon:ore/rich_galena",
+    "tfc_ie_addon:ore/rich_bauxite",
+    "firmalife:ore/rich_chromite",
+    "tfc:ore/rich_bismuthinite",
+    "tfc:ore/rich_garnierite",
+    "tfc:ore/rich_malachite",
+    "tfc:ore/rich_magnetite",
+    "tfc:ore/rich_limonite",
+    "tfc:ore/rich_sphalerite",
+    "tfc:ore/rich_tetrahedrite",
     "textile:sabertooth_hat",
     "textile:direwolf_boots",
     "textile:direwolf_pants",
@@ -824,6 +840,7 @@ TFCEvents.data(e => {
   large_light_items.forEach(item => {
     e.itemSize(item, 'large', 'light')
   })
+  
 
 
 
