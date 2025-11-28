@@ -252,29 +252,7 @@ ServerEvents.recipes(e => {
     console.log(`为 ${crop.name} 创建了种植配方`);
   });
 })
-//绑定和tag修改
-ServerEvents.tags('minecraft:item', event => {
-  const dirty_pile = ['tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_galena', 'tfcorewashing:dirty_pile_cryolite', 'tfcorewashing:dirty_pile_copper', 'tfcorewashing:dirty_pile_cinnabar', 'tfcorewashing:dirty_pile_chromite', 'tfcorewashing:dirty_pile_cassiterite', 'tfcorewashing:dirty_pile_bismuthinite', 'tfcorewashing:dirty_pile_bauxite', 'tfcorewashing:dirty_pile_sulfur', 'tfcorewashing:dirty_pile_sphalerite', 'tfcorewashing:dirty_pile_silver', 'tfcorewashing:dirty_pile_malachite', 'tfcorewashing:dirty_pile_magnetite', 'tfcorewashing:dirty_pile_limonite', 'tfcorewashing:dirty_pile_hematite', 'tfcorewashing:dirty_pile_graphite', 'tfcorewashing:dirty_pile_gold', 'tfcorewashing:dirty_pile_uraninite', 'tfcorewashing:dirty_pile_tetrahedrite']
-  dirty_pile.forEach(dirty_pile => {
-    event.add('tfc:dirty_piles', `${dirty_pile}`);
-  })
-  // 标签id，物品id
-  
 
-
-  event.add('tfc:any_knapping', 'tfc:ore/diamond');//钻石上可以敲的标签
-  event.add('tfc:any_knapping', 'kubejs:obsidian_shards');//钻石上可以敲的标签
-
-
-
-
-
-
-
-
-
-
-})
 //刷铁机产线
 ServerEvents.recipes(event => {
   event.remove({ id: "create:splashing/gravel" })

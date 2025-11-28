@@ -1,16 +1,104 @@
 TFCEvents.data(event => {
-  //塑形配方注册
+  //敲制
   event.knappingType(
     'tfc:ore/diamond', 2, 1, 'minecraft:block.copper.step', false, false, true, 'tfc:ore/diamond', 'kubejs:diamond'
-  )
+  )//钻石
   event.knappingType(
     'kubejs:obsidian_shards', 2, 1, 'minecraft:block.copper.step', false, false, true, "minecraft:obsidian", 'kubejs:obsidian'
-  )
+  )//黑曜石
+  event.knappingType(
+    'minecraft:flint', 2, 1, 'minecraft:block.copper.step', false, false, true, 'minecraft:flint', 'kubejs:flint'
+  )//燧石
+  event.knappingType(
+    'minecraft:bone', 3, 3, 'minecraft:block.copper.step', false, false, true, 'minecraft:bone', 'kubejs:bone'
+  )//骨头
+
 
 })
+ServerEvents.tags('minecraft:item', event => {//可以敲的标签
 
+  event.add('tfc:any_knapping', 'tfc:ore/diamond');//钻石
+  event.add('tfc:any_knapping', 'kubejs:obsidian_shards');//黑曜石
+  event.add('tfc:any_knapping', 'minecraft:flint');//燧石
+  event.add('tfc:any_knapping', 'minecraft:bone');//骨头
+
+})
 ServerEvents.recipes(event => {
-  const MODID = "kubejs:"; 
+  event.recipes.tfc.knapping(
+    'kubejs:bone_skinningknife_blade',
+    'kubejs:bone',
+    [
+      'xxx',
+      'xxx',
+      'xxx',
+      'xxx',
+      '  x'
+    ]
+  ).outsideSlotRequired(false)
+  event.recipes.tfc.knapping(
+    'kubejs:bone_skinningknife_blade',
+    'kubejs:bone',
+    [
+      'xxx',
+      'xxx',
+      'xxx',
+      'xxx',
+      'x  '
+    ]
+  ).outsideSlotRequired(false)
+  event.recipes.tfc.knapping(
+    'kubejs:bone_butchersknife_blade',
+    'kubejs:bone',
+    [
+      'x ',
+      'xx',
+      'xx',
+      'xx',
+      'x '
+    ]
+  ).outsideSlotRequired(false)
+  event.recipes.tfc.knapping(
+    'kubejs:bone_butchersknife_blade',
+    'kubejs:bone',
+    [
+      ' x',
+      'xx',
+      'xx',
+      'xx',
+      ' x'
+    ]
+  ).outsideSlotRequired(false)
+    event.recipes.tfc.knapping(
+   'kubejs:bone_fish_hook',
+    'kubejs:bone',
+    [
+      '  x',
+      'x x',
+      'xxx'
+    ]
+  ).outsideSlotRequired(false)
+    event.recipes.tfc.knapping(
+   'kubejs:bone_fish_hook',
+    'kubejs:bone',
+    [
+      'x  ',
+      'x x',
+      'xxx'
+    ]
+  ).outsideSlotRequired(false)
+
+
+
+
+
+
+
+
+
+
+
+
+  const MODID = "kubejs:";
 
   // ==============================
   // 核心：定义工具部件通用配置（统一钻石/黑曜石的部件类型与产出）
@@ -95,13 +183,13 @@ ServerEvents.recipes(event => {
 
   toolPartConfigs.forEach(part => {
     const baseResult = `${MODID}${diamondConfig.material}_${part.partName}`;
-    
+
     // 注册完整图案配方（多产出/单产出）
     part.patterns.forEach(pattern => {
       const result = part.outputCount > 1 ? `${part.outputCount}x ${baseResult}` : baseResult;
       event.recipes.tfc.knapping(result, `kubejs:${diamondConfig.material}`, pattern)
         .ingredient(diamondConfig.ingredient)
-        .outsideSlotRequired(false); 
+        .outsideSlotRequired(false);
     });
 
     // 若有简化图案，注册简化配方（单产出）
@@ -125,7 +213,7 @@ ServerEvents.recipes(event => {
   // 复用工具部件配置，仅替换材质和原料（保证配方逻辑完全一致）
   toolPartConfigs.forEach(part => {
     const baseResult = `${MODID}${obsidianConfig.material}_${part.partName}`;
-    
+
     // 注册完整图案配方（与钻石相同的产出数量）
     part.patterns.forEach(pattern => {
       const result = part.outputCount > 1 ? `${part.outputCount}x ${baseResult}` : baseResult;

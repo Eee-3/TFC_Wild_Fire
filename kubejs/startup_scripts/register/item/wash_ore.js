@@ -42,6 +42,7 @@ StartupEvents.registry("item", event => {
             event.create(`kubejs:item/ore/dust_brick/${ore.ore}`).texture(`kubejs:item/ore/dust_brick/${ore.ore}`).tag("kubejs:16ore");//精炼矿粉砖 90mb
         }
     })
+    event.create(`firmalife:powder/chromite`).tag("kubejs:ore"); //铬铁矿粉
 })
 StartupEvents.registry("fluid", event => {
     wash_ore.forEach(ore => {
@@ -57,6 +58,10 @@ StartupEvents.registry("fluid", event => {
         }
     })
 
+     event.create(`tfc_ie_addon:metal/aluminum_oxide`)//氧化铝
+                .stillTexture(`tfc_ie_addon:metal/aluminum`)
+                .flowingTexture(`tfc_ie_addon:metal/aluminum_flowing`)
+                .density(5)
+
     
-    event.create(`firmalife:powder/chromite`).tag("kubejs:ore"); //铬铁矿粉
 })

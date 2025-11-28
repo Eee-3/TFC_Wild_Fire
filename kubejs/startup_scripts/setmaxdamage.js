@@ -13,6 +13,10 @@ ItemEvents.modification(event => {
         { name: 'tfc_hammer_time:metal/sledgehammer/red_steel', num: 15000 },
         { name: 'tfc_hammer_time:metal/sledgehammer/blue_steel', num: 15000 },
 
+        { name: 'butcher:skinning_knife', num: 2000 },
+        { name: 'butcher:butchers_knife', num: 2000 },
+        { name: 'butcher:boneskinningknife', num: 50 }
+
 
 
     ]
