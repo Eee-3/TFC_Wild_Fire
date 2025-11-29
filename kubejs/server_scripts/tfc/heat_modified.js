@@ -178,7 +178,11 @@ TFCEvents.data(event => {
     { name: "lance_weapon_part", number: 400 },
     { name: "quarterstaff_weapon_part", number: 100 }
   ];
+  metal.forEach(metalItem => {//可以焊接修复的金属碎块
+    const heatTemperature = metalItem.temperature * 0.9;
 
+    event.itemHeat(`kubejs:${metalItem.name}_fragments`, 0.2 * 2.8, null, heatTemperature);
+  });
   metal.forEach(metalItem => {
 
     weaponry.forEach(equipment => {
@@ -187,13 +191,12 @@ TFCEvents.data(event => {
       event.itemHeat(itemId, equipment.number / 100 * 2.857, null, null);
     });
   });
+
 });//斯巴达武器
 TFCEvents.data(event => {
-  // 零碎物件配置表（自带name、temperature、number，直接读取参数）
+
   const items = [
-    { name: "copper_fragments", metal: "copper", number: 35, temperature: 1080 },
-    { name: "bronze_fragments", metal: "bronze", number: 35, temperature: 950 },
-    { name: "iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 },
+   
     { name: "rusty_iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 },
     { name: "silver_fragments", metal: "silver", number: 35, temperature: 961 },
     { name: "gold_fragments", metal: "gold", number: 35, temperature: 1064 },

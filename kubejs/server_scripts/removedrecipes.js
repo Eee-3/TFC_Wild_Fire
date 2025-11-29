@@ -377,6 +377,14 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'scguns:powered_macerating' }) // 移除scg动力研磨机配方
   e.remove({ type: 'scguns:powered_mechanical_pressing' }) // 移除scg动力冲压机配方
   e.remove({ type: 'scguns:lightning_battery' }) // 移除scg等离子电池配方
+  e.remove({ type: 'ad_astra:nasa_workbench' }) // 移除nasa工作台配方
+  e.remove({ type: 'ad_astra:refining' }) // 移除ad燃油精炼配方
+  e.remove({ type: 'ad_astra:oxygen_loading' }) // 移除氧气装填配方
+  e.remove({ type: 'ad_astra:alloying' }) // 移除发电高炉配方
+  e.remove({ type: 'refurbished_furniture:slicing' }) // 移除小龙虾家具_切片配方
+  e.remove({ type: 'createdieselgenerators:compression_molding' }) // 移除铸模冲压配方
+  e.remove({ type: 'createdieselgenerators:casting' }) // 移除无用铸造配方
+
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
   e.remove({ type: 'butcher:pestleandmortar' }) // 移除butchery垃圾配方

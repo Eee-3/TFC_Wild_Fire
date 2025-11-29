@@ -69,15 +69,24 @@ ServerEvents.recipes(e => {
         .useDurability(true);
     });
   });
+   
   const items = [
-    { name: "copper_fragments", metal: "copper", number: 35, temperature: 1080 }, // 铜碎片
-    { name: "bronze_fragments", metal: "bronze", number: 35, temperature: 950 }, // 青铜碎片
-    { name: "iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 }, // 铁碎片
-    { name: "rusty_iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 }, // 生锈的铁碎片
-    { name: "silver_fragments", metal: "silver", number: 35, temperature: 961 }, // 银碎片
-    { name: "gold_fragments", metal: "gold", number: 35, temperature: 1064 }, // 金碎片
-    { name: "rose_gold_fragments", metal: "rose_gold", number: 35, temperature: 1064 }, // 玫瑰金碎片
-    { name: "amber_gold_fragments", metal: "amber_gold", number: 35, temperature: 1064 }, // 琥珀金碎片
+
+    { name: "black_bronze_fragments", metal: "black_bronze", number: 20, temperature: 1080 }, // 黑铜碎片
+    { name: "bismuth_bronze_fragments", metal: "bismuth_bronze", number: 20, temperature: 1080 }, // 铋铜碎片
+    { name: "wrought_iron_fragments", metal: "cast_iron", number: 20, temperature: 1535 }, // 锻铁碎片
+    { name: "steel_fragments", metal: "steel_fragments", number: 20, temperature: 1535 }, // 钢碎片
+    { name: "black_steel_fragments", metal: "black_steel", number: 20, temperature: 1535 }, // 黑钢碎片
+    { name: "red_steel_fragments", metal: "red_steel", number: 20, temperature: 1535 }, // 红钢碎片
+    { name: "blue_steel_fragments", metal: "blue_steel", number: 20, temperature: 1535 }, // 蓝钢碎片
+    { name: "copper_fragments", metal: "copper", number: 20, temperature: 1080 }, // 铜碎片
+    { name: "bronze_fragments", metal: "bronze", number: 20, temperature: 950 }, // 青铜碎片
+    { name: "rusty_iron_fragments", metal: 'cast_iron', number: 20, temperature: 1535 }, // 生锈的铁碎片
+    { name: "silver_fragments", metal: "silver", number: 20, temperature: 961 }, // 银碎片
+    { name: "gold_fragments", metal: "gold", number: 20, temperature: 1064 }, // 金碎片
+    { name: "rose_gold_fragments", metal: "rose_gold", number: 20, temperature: 1064 }, // 玫瑰金碎片
+    { name: "amber_gold_fragments", metal: "amber_gold", number: 20, temperature: 1064 }, // 琥珀金碎片
+
     { name: "copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 铜甲片
     { name: "rusty_copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 生锈的铜甲片
     { name: "rusty_bronze_scrap", metal: "bronze", number: 75, temperature: 950 }, // 生锈的青铜甲片
@@ -156,7 +165,7 @@ ServerEvents.recipes(e => {
   tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
 
- const metaltongs = [
+  const metaltongs = [
     { name: "bismuth_bronze", temperature: 860, metal: "tfc:metal/bismuth_bronze" },
     { name: "black_bronze", temperature: 910, metal: "tfc:metal/black_bronze" },
     { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
@@ -181,7 +190,7 @@ ServerEvents.recipes(e => {
     { name: "blue_steel", temperature: 1538, metal: "tfc:metal/blue_steel" },
     { name: "red_steel", temperature: 1538, metal: "tfc:metal/red_steel" },
     { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" }
-];
+  ];
   metaltongs.forEach(metal => {
 
     tfc.heating(`kubejs:${metal.name}_tong`, metal.temperature).resultFluid(Fluid.of(metal.metal, 100))//完整融化

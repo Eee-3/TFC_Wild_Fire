@@ -90,6 +90,11 @@ ServerEvents.recipes(event => {
         }, b: '#tfc:knives'
     }).damageIngredient({ tag: '#tfc:knives' }, 20)//测试*/
 
+        event.shaped(Item.of('butcher:boneskinningknife'), ['kubejs:bone_butchersknife_blade','#forge:rods/wooden'])//骨头刀合成
+         event.shaped(Item.of('butcher:bonebutchersknife'), ['kubejs:bone_skinningknife_blade','#forge:rods/wooden'])//骨头刀合成
+          event.shaped(Item.of('kubejs:bone_fishing_rod'), [['#forge:rods/wooden','farmersdelight:rope'],['#forge:rods/wooden','kubejs:bone_fish_hook']])//骨头吊杆合成
+
+
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'tfc:wood/log/oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'afc:wood/log/ancient_oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  古代
     event.shapeless('minecraft:spruce_log', ['#tfc:chisels', 'tfc:wood/log/spruce']).keepIngredient({ item: '#tfc:chisels' })//云杉木原木  云杉
