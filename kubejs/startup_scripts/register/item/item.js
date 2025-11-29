@@ -47,14 +47,13 @@ StartupEvents.registry('item', event => {
     event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
-
-
-    /*event.create('sinew', 'basic').texture('kubejs:item/sinew');  // 筋腱
-    event.create('dried_sinew', 'basic').texture('kubejs:item/dried_sinew'); // 风干的筋腱*/
     event.create('crushed_sinew', 'basic').texture('kubejs:item/crushed_sinew'); // 捣碎的筋腱
     event.create('sinew_thread', 'basic').texture('kubejs:item/sinew_thread'); // 筋线
 
     event.create('coal_powder', 'basic').texture('kubejs:item/coal_powder'); // 煤炭粉
+    event.create('kubejs:crushed_raw_desh') // 创建粉碎的原始Desh物品.texture('kubejs:item/crushed_raw_desh') 
+    event.create('kubejs:crushed_raw_calorite') // 创建粉碎的原始Calorite物品.texture('kubejs:item/crushed_raw_calorite') 
+    event.create('kubejs:crushed_raw_ostrum') // 创建粉碎的原始Ostrum物品.texture('kubejs:item/crushed_raw_ostrum')
 
     // 燃料颗粒类物品注册 tfc:firepit_fuel tfc:forge_fuel
     event.create('wood_pellet', 'basic').texture('kubejs:item/fuel/wood_pellet').tag("tfc:firepit_fuel").tag("tfc:forge_fuel"); // 木料颗粒

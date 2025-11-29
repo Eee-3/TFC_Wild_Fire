@@ -1,4 +1,4 @@
-global.FTB_QUESTS_DISABLED_ITEMS = [
+/*global.FTB_QUESTS_DISABLED_ITEMS = [
     'ftbquests:screen_7', 
     'ftbquests:screen_5', 
     'ftbquests:screen_3', 
@@ -14,3 +14,4 @@ global.FTB_QUESTS_DISABLED_ITEMS = [
     'ftbquests:lootcrate'
 ];
 
+*/

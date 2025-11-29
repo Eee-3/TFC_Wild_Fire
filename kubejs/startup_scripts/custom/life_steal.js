@@ -8,4 +8,4 @@ ForgeModEvents.onEvent('net.minecraftforge.event.entity.EntityAttributeModificat
     if (!e.has('player', 'kubejs:life_steal')) {
       e.add('player', 'kubejs:life_steal')
     }
-})
+})//吸血
