@@ -1,6 +1,6 @@
 {
   "ingredient": {
-    "item": "kubejs:instant_gel_sky"
+    "item": "repas_de_survie:instant_gel_sky"
   },
   "hunger": 8.5,
   "saturation": 0.2,

@@ -1,27 +1,36 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"ingredients": [
-		{
-			"type": "tfc:not_rotten",
-			"ingredient": {
-				"item": "farm_and_charm:dough"
-			}
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "bakery:sweetened_dough"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "bakery:sweetened_dough"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "bakery:sweetened_dough"
+      }
+    },
+    {
+	"type": "tfc:fluid_item",
+	"fluid_ingredient": {
+		"ingredient": {
+			"tag": "tfc:milks"
 		},
-		{
-			"type": "tfc:fluid_item",
-			"fluid_ingredient": {
-				"ingredient": {
-					"tag": "tfc:milks"
-				},
-				"amount": 100
-			}
-		},
-		{
-			"item": "minecraft:sugar"
-		}
-	],
-	"result": {
-		"item": "tfc_farm_charm:unfinished_toast",
-		"count": 1
-	}
+		"amount": 100
+      }
+    }
+  ],
+  "result": {
+    "item": "tfc_farm_charm:unfinished_toast",
+    "count": 3
+  }
 }

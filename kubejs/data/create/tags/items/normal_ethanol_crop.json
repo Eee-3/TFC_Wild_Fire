@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:food/pumpkin_chunks",
+    "tfc:food/melon_slice",
+    "tfc:food/cherry",
+    "tfc:food/carrot",
+    "tfc:food/garlic",
+    "tfc:food/green_bean",
+    "tfc:food/green_bell_pepper",
+    "tfc:food/onion",
+    "tfc:food/dried_seaweed",
+    "tfc:food/cattail_root",
+    "tfc:food/taro_root",
+    "tfc:food/dried_kelp",
+    "tfc:food/red_bell_pepper",
+    "artisanal:food/fruit_mash",
+    "artisanal:food/carrot_mash",
+    "artisanal:food/tomato_mash"
+  ]
+}

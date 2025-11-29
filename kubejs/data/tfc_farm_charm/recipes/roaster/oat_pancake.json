@@ -4,25 +4,19 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/oat_grain"
+				"item": "firmalife:food/oat_dough"
 			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/oat_grain"
+				"item": "firmalife:food/oat_dough"
 			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/oat_grain"
-			}
-		},
-		{
-			"type": "tfc:not_rotten",
-			"ingredient": {
-				"tag": "forge:dough"
+				"item": "firmalife:food/oat_dough"
 			}
 		},
 		{

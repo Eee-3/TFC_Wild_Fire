@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#loot:berries",
+    "firmalife:food/nightshade_berry"
+  ]
+}

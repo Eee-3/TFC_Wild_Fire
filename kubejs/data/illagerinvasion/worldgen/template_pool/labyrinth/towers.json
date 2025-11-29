@@ -14,7 +14,7 @@
     {
       "element": {
         "element_type": "illagerinvasion:single_pool_element",
-        "location": "illagerinvasion:labyrinth/tower",
+        "location": "illagerinvasion:labyrinth/tower_2",
         "processors": {
           "processors": []
         },

@@ -1,0 +1,64 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "bakery:bread"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/onion"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/tomato"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "farm_and_charm:beef"
+      }
+    }
+  ],
+  "result": {
+    "stack": {
+    "item": "farmersdelight:hamburger"
+    },
+    "modifiers": [
+      {
+        "type": "tfc:meal",
+        "food": {
+          "hunger": 5,
+          "saturation": 1.6,
+          "decay_modifier": 3.0
+        },
+        "portions": [
+          {
+            "nutrient_modifier": 0.75,
+            "water_modifier": 0.8,
+            "saturation_modifier": 0.75
+          }
+        ]
+      }
+    ]
+  },
+  "primary_ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "tag": "bakery:bread"
+    }
+  }
+}

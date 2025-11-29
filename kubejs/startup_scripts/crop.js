@@ -147,4 +147,25 @@ StartupEvents.registry('block', event => {
             deadCrop.tagBlock('tfc:mineable_with_sharp_tool')
             deadCrop.soundType('crop')
         })
+
+    //作物-肉芽菜
+        event.create('tfc:crop/muscle', 'tfc:crop')
+        .stages(5)
+        .displayName("肌肉")
+        .noCollision()
+        .soundType('slime_block')
+        .hardness(0.9)
+        .nutrient('phosphorous')
+        .tagBlock('tfc:mineable_with_sharp_tool')
+        .model('tfc:blockstates/crop/muscle')
+        .existingProductItem('butcher:humanflesh')
+        .seedItem(seed => {
+            seed.displayName("肉孢子")
+            seed.texture('kubejs:item/granulaspore')
+        })
+        .deadBlock(deadCrop => {
+            deadCrop.displayName("腐烂的肌肉")
+            deadCrop.tagBlock('tfc:mineable_with_sharp_tool')
+            deadCrop.soundType('slime_block')
+        })
 })

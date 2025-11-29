@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:food/barley",
+    "tfc:food/maize",
+    "tfc:food/oat",
+    "tfc:food/wheat",
+    "tfc:food/rye",
+    "tfc:food/rice",
+    "tfc:food/barley_grain",
+    "tfc:food/maize_grain",
+    "tfc:food/oat_grain",
+    "tfc:food/wheat_grain",
+    "tfc:food/rye_grain",
+    "tfc:food/rice_grain"
+  ]
+}

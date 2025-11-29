@@ -4,16 +4,19 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"tag": "farm_and_charm:dough"
+				"tag": "bakery:dough"
 			}
 		},
 		{
-			"type": "tfc:fluid_item",
-			"fluid_ingredient": {
-				"ingredient": {
-					"fluid": "water"
-				},
-				"amount": 100
+			"item": "farm_and_charm:yeast"
+		},
+		{
+			"item": "tfc:powder/salt"
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:dough"
 			}
 		}
 	],

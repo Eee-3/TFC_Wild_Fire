@@ -4,7 +4,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/onion"
+				"tag": "tfc:foods/vegetables"
 			}
 		},
 		{

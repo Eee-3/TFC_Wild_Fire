@@ -4,21 +4,21 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "farm_and_charm:dough"
+        "tag": "bakery:dough"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "farm_and_charm:butter"
+        "tag": "bakery:sweetened_dough"
       }
     },
     {
-      "item": "farm_and_charm:yeast"
+      "item": "tfc:powder/wood_ash"
     }
   ],
   "result": {
     "item": "tfc_farm_charm:unfinished_pretzel",
-    "count": 1
+    "count": 2
   }
 }

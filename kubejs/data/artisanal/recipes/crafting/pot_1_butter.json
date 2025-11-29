@@ -11,7 +11,7 @@
         "item": "tfc:powder/saltpeter"
       },
       {
-        "item": "firmalife:food/butter"
+        "item": "firmalife:beeswax"
       },
       {
         "type": "tfc:not_rotten",
@@ -43,7 +43,7 @@
         },
         {
           "type": "artisanal:inherit_decay",
-          "decay_multiplier": 1
+          "decay_multiplier": 0.22
         },
         
         "artisanal:homogenous_ingredients",

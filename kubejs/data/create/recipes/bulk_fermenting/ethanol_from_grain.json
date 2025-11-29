@@ -1,0 +1,15 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "tag": "create:ethanol_grain"
+    }
+  ],
+  "processingTime": 9500,
+  "results": [
+    {
+      "fluid": "createdieselgenerators:ethanol",
+      "amount": 150
+    }
+  ]
+}

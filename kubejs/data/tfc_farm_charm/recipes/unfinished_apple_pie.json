@@ -30,6 +30,12 @@
 			"ingredient": {
 				"item": "farmersdelight:pie_crust"
 			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:sweetener"
+			}
 		}
 	],
 	"result": {

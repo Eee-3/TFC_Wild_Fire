@@ -4,7 +4,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/beet"
+				"tag": "tfc:foods/vegetables"
 			}
 		},
 		{
@@ -22,7 +22,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/tomato"
+				"tag": "tfc:foods/vegetables"
 			}
 		}
 	],

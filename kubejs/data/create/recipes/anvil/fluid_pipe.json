@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:sheets/copper"
+  },
+  "result": {
+    "item": "create:fluid_pipe",
+    "count": 3
+  },
+  "tier": 1,
+  "rules": [
+    "draw_any",
+    "draw_last",
+    "punch_not_last"
+  ]
+}

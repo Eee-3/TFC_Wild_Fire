@@ -1,9 +1,0 @@
-{
-  "values": [
-    "tfc:food/cheese",
-    {
-      "id": "firmalife:food/butter",
-      "required": false
-    }
-  ]
-}

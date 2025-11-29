@@ -4,16 +4,55 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"tag": "farm_and_charm:dough"
+				"item": "tfc:food/strawberry"
 			}
 		},
 		{
-			"item": "minecraft:sugar"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "firmalife:raw_honey"
+			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
 				"item": "tfc:food/strawberry"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/strawberry"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/strawberry"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/strawberry"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:sweetener"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "farmersdelight:pie_crust"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:sweetener"
 			}
 		}
 	],

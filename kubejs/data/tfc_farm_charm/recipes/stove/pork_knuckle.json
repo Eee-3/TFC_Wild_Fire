@@ -2,13 +2,19 @@
 	"type": "farm_and_charm:stove",
 	"ingredients": [
 		{
-			"tag": "brewery:beer"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "firmalife:food/butter"
+			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/pork"
+				"item": "farmersdelight:smoked_ham"
 			}
+		},
+		{
+				"item": "tfc:powder/salt"
 		}
 	],
 	"result": {

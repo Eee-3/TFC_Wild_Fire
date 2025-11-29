@@ -4,11 +4,20 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "bakery:hardened_dough"
 			}
 		},
 		{
-			"item": "minecraft:sugar"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:hardened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+			"tag": "tfc:sweetener"
+			}
 		},
 		{
 			"type": "tfc:fluid_item",
@@ -22,6 +31,6 @@
 	],
 	"result": {
 		"item": "tfc_farm_charm:unfinished_croissant",
-		"count": 1
+		"count": 2
 	}
 }

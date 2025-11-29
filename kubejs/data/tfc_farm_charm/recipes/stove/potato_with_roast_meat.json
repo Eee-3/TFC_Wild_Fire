@@ -10,11 +10,14 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/beef"
+				"tag": "tfc:foods/raw_meats"
 			}
 		},
 		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
 			"item": "firmalife:raw_honey"
+			}
 		}
 	],
 	"result": {

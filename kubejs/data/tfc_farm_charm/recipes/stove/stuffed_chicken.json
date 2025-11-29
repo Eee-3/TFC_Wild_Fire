@@ -16,7 +16,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/carrot"
+				"tag": "tfc:foods/vegetables"
 			}
 		}
 	],

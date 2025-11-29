@@ -1,0 +1,43 @@
+{
+	"type": "farm_and_charm:roaster",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:cooked_bacon"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:cooked_bacon"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:eggs"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:eggs"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "farm_and_charm:butter"
+			}
+		}
+	],
+	"container": {
+		"item": "minecraft:bowl"
+	},
+	"result": {
+		"item": "farm_and_charm:bacon_with_eggs",
+		"count": 1
+	},
+	"requiresLearning": false
+}

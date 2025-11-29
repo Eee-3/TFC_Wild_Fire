@@ -10,7 +10,13 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "farm_and_charm:lamb_ham"
+				"tag": "tfc:foods/vegetables"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "ftfc:food/mutton"
 			}
 		}
 	],

@@ -4,19 +4,19 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "farm_and_charm:dough"
+				"tag": "bakery:sweetened_dough"
 			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "bakery:sweetened_dough"
 			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-			"item": "minecraft:sugar"
+			"tag": "tfc:sweetener"
 			}
 		}
 	],

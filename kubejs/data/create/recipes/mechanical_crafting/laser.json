@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+        "R": {
+      "tag": "forge:dusts/redstone"
+    },
+        "P": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+	"g": {
+      "tag": "forge:dusts/glowstone"
+    },
+	"T": {
+      "item": "tfc:gem/ruby"
+    },
+	"G": {
+      "tag": "forge:glass/red"
+    },
+	"a": {
+      "item": "immersiveengineering:wirecoil_copper_ins"
+    },
+	"b": {
+      "item": "immersiveengineering:wirecoil_electrum_ins"
+    }
+  },
+  "pattern": [
+    "aRb",
+    "PTP",
+    "PgP",
+    "GGG"
+  ],
+  "result": {
+    "count": 1,
+    "item": "vintageimprovements:laser_item"
+  }
+}

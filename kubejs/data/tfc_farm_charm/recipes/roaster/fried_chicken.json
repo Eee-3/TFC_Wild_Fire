@@ -4,7 +4,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "farm_and_charm:chicken_parts"
+				"tag": "tfc_farm_charm:chicken"
 			}
 		},
 		{
@@ -16,7 +16,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/tomato"
+				"tag": "tfc:foods/vegetables"
 			}
 		},
 		{

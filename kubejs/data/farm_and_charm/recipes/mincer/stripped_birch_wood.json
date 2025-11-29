@@ -1,11 +1,7 @@
 {
-  "type": "farm_and_charm:mincer",
-  "ingredient": {
-    "item": "minecraft:birch_wood"
-  },
-  "recipe_type": "WOOD",
-  "result": {
-    "item": "minecraft:stripped_birch_wood",
-    "count": 1
-  }
+	"conditions": [
+		{
+			"type": "forge:false"
+		}
+	]
 }

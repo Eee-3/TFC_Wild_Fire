@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "alexsmobs:banana",
+    "tfc:food/red_apple",
+    "tfc:food/lemon",
+    "tfc:food/orange",
+    "tfc:food/peach",
+    "tfc:food/plum",
+    "tfc:food/red_apple",
+    "tfc:food/beet",
+    "tfc:food/cabbage",
+    "tfc:food/squash",
+    "tfc:food/tomato",
+    "tfc:food/soybean",
+    "tfc:food/yellow_bell_pepper",
+    "firmalife:food/fig"
+  ]
+}

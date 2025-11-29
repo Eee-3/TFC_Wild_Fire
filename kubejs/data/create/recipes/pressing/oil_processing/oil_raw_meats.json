@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+        "tag": "tfc:foods/raw_meats"
+    },
+    {
+        "tag": "tfc:foods/raw_meats"
+    },
+    {
+        "tag": "tfc:foods/raw_meats"
+    },
+    {
+        "tag": "tfc:foods/raw_meats"
+    }
+  ],
+  "results": [
+    {
+      "amount": 200,
+      "fluid": "tfc:tallow"
+    },
+    {
+       "item": "kubejs:burnt_food_residue"
+    }
+  ]
+}

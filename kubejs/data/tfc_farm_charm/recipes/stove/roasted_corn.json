@@ -16,7 +16,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"tag": "farm_and_charm:butter"
+				"tag": "tfc:sweetener"
 			}
 		}
 	],

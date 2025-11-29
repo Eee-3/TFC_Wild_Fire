@@ -4,7 +4,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweetened_dough"
+				"tag": "bakery:sweetened_dough"
 			}
 		},
 		{

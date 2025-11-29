@@ -8,12 +8,33 @@
 			}
 		},
 		{
-			"item": "minecraft:sugar"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc_farm_charm:glowberry"
+			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "tfc_farm_charm:glowberry"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:sweeterner"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "farmersdelight:pie_crust"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:sweeterner"
 			}
 		}
 	],

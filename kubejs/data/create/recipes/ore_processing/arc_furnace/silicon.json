@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "results": [
+    {
+      "count": 5,
+      "base_ingredient": {
+        "item": "kubejs:silicon"
+      }
+    }
+  ],
+  "additives": [
+    {
+      "count": 2,
+      "base_ingredient": {
+        "item": "tfc:powder/coke"
+      }
+    },
+    {
+      "count": 1,
+      "base_ingredient": {
+        "item": "tfc_ie_addon:mineral/quartz_shard"
+      }
+    }
+  ],
+  "input": {
+    "count": 5,
+    "base_ingredient": {
+       "tag": "tfc:glass_batches"
+    }
+  },
+  "time": 400,
+  "energy": 102400
+}

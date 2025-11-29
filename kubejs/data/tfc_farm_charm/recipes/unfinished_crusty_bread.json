@@ -4,19 +4,16 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "farm_and_charm:dough"
+				"tag": "bakery:hardened_dough"
 			}
 		},
 		{
 			"item": "farm_and_charm:yeast"
 		},
 		{
-			"type": "tfc:fluid_item",
-			"fluid_ingredient": {
-				"ingredient": {
-					"fluid": "water"
-				},
-				"amount": 100
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/flour"
 			}
 		}
 	],

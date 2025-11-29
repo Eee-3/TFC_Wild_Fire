@@ -23,7 +23,7 @@ StartupEvents.registry('item', event => {
     event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key')//没烧的简易钥匙模具
     event.create('aerospace_suit_fabric', 'basic').texture('kubejs:item/ad/aerospace_suit_fabric')//ad航空服布料
     event.create('netherite_reinforcement_plate', 'basic').texture('kubejs:item/ad/netherite_reinforcement_plate')//ad下界合金强化片
-    event.create('heat-resistant_reinforcement_plate', 'basic').texture('kubejs:item/ad/heat-resistant_reinforcement_plate')//ad耐热强化片
+    event.create('heat_resistant_reinforcement_plate', 'basic').texture('kubejs:item/ad/heat_resistant_reinforcement_plate')//ad耐热强化片
     event.create('vellum', 'basic').texture('kubejs:item/vellum')//兽皮纸
     event.create('rock_powder', 'tfc:mold').capacity(100)//岩石粉末模具
     event.create('trachyandesite_alloy', 'basic').texture('kubejs:item/create/trachyandesite_alloy')//粗安山合金
@@ -78,6 +78,14 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
     event.create('cast_iron_indenter', 'basic')//铸铁压头
+
+
+    //硅以及相关材料注册
+    event.create('glass_mixture').texture('kubejs:item/create/glass_mixture');//玻璃混合物
+    event.create('silicon').texture('kubejs:item/create/silicon');//硅
+    event.create('silicon_board').texture('kubejs:item/create/silicon_board');//硅板
+    event.create('unshaped_silicon').texture('kubejs:item/create/unshaped_silicon');//硅粉
+    event.create('aluminum_mixture').texture('kubejs:item/create/aluminum_mixture');//玻璃混合物
 
 
     const metal = [//金属列表

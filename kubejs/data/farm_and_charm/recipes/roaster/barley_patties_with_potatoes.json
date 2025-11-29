@@ -4,13 +4,13 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/barley_grain"
+				"item": "firmalife:food/barley_dough"
 			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/barley_grain"
+				"item": "firmalife:food/barley_dough"
 			}
 		},
 		{
@@ -34,7 +34,7 @@
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "tfc:food/cabbage"
+				"tag": "tfc:foods/vegetables"
 			}
 		}
 	],

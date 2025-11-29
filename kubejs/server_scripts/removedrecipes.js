@@ -379,7 +379,6 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'scguns:lightning_battery' }) // 移除scg等离子电池配方
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
-  e.remove({ type: 'farm_and_charm:mincer' }) // 移除沉浸农艺搅碎配方
   e.remove({ type: 'butcher:pestleandmortar' }) // 移除butchery垃圾配方
   e.remove({ type: 'butcher:wetspongejeirecipetype' }) // 移除butchery垃圾配方
 
@@ -443,6 +442,14 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'farmersdelight:book_from_canvas' })
   e.remove({ id: 'create:crafting/appliances/book' })
   e.remove({ id: 'tfc_ie_addon:crafting/ersatz_leather_firmalife' })
+  e.remove({ id: 'createdieselgenerators:mixing/biodiesel' })
+  e.remove({ id: 'createdieselgenerators:bulk_fermenting/fermentable' })
+
+  e.remove({ id: 'create:crafting/kinetics/fluid_pipe_vertical' })
+  e.remove({ id: 'create:crafting/kinetics/fluid_pipe' })
+  e.remove({ id: 'woodencog:crafting/kinetics/fluid_pipe_vertical' })
+  e.remove({ id: 'woodencog:crafting/kinetics/fluid_pipe' })
+  
 
 
 

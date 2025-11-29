@@ -8,7 +8,7 @@
 	},
 	"recipe_type": "MEAT",
 	"result": {
-		"item": "farm_and_charm:minced_beef",
+		"item": "farmersdelight:minced_beef",
 		"count": 1
 	}
 }

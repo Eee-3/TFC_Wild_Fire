@@ -8,12 +8,21 @@
 			}
 		},
 		{
-			"item": "minecraft:sugar"
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/fruits"
+			}
 		},
 		{
 			"type": "tfc:not_rotten",
 			"ingredient": {
-				"item": "bakery:sweet_dough"
+				"tag": "tfc:sweetener"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:dough"
 			}
 		}
 	],
