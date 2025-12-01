@@ -384,6 +384,7 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'refurbished_furniture:slicing' }) // 移除小龙虾家具_切片配方
   e.remove({ type: 'createdieselgenerators:compression_molding' }) // 移除铸模冲压配方
   e.remove({ type: 'createdieselgenerators:casting' }) // 移除无用铸造配方
+  e.remove({ type: 'brewery:brewing' }) // 移除酿造站配方
 
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方

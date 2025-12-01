@@ -1693,16 +1693,7 @@
 		{
 			dependencies: ["43A874DF1D79892D"]
 			description: ["终于，你完成了一套完整的矿物处理流程。觉得很麻烦吗？是的，这确实很麻烦。"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:powder/limonite"
-			}
+			icon: "tfc:powder/limonite"
 			id: "26C27CAED8D101C4"
 			subtitle: "你已经很努力了"
 			tasks: [{
@@ -1732,16 +1723,7 @@
 				"加油吧，少年，你还有的是活要忙呢。"
 			]
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:powder/native_copper"
-			}
+			icon: "tfc:powder/native_copper"
 			id: "45C21923C740DB27"
 			subtitle: "你还有很长的路要走……"
 			tasks: [{
@@ -2403,16 +2385,7 @@
 				"越高级的支撑梁他的支撑效果会更强、忽略造价、为了更安全的下矿、用它是相当不错的选择"
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "kubejs:copper_support"
-			}
+			icon: "kubejs:copper_support"
 			id: "5D31147A604CA16C"
 			tasks: [{
 				id: "729C6C1802CB6E9E"

@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
       ' x'
     ]
   ).outsideSlotRequired(false)
-    event.recipes.tfc.knapping(
-   'kubejs:bone_fish_hook',
+  event.recipes.tfc.knapping(
+    'kubejs:bone_fish_hook',
     'kubejs:bone',
     [
       '  x',
@@ -77,8 +77,8 @@ ServerEvents.recipes(event => {
       'xxx'
     ]
   ).outsideSlotRequired(false)
-    event.recipes.tfc.knapping(
-   'kubejs:bone_fish_hook',
+  event.recipes.tfc.knapping(
+    'kubejs:bone_fish_hook',
     'kubejs:bone',
     [
       'x  ',
@@ -98,11 +98,9 @@ ServerEvents.recipes(event => {
 
 
 
-  const MODID = "kubejs:";
 
-  // ==============================
-  // 核心：定义工具部件通用配置（统一钻石/黑曜石的部件类型与产出）
-  // ==============================
+
+
   const toolPartConfigs = [
     // 1. 斧头头部（2种对称图案，单产出）
     {
@@ -172,17 +170,14 @@ ServerEvents.recipes(event => {
       simpleOutputCount: 1
     }
   ];
-
-  // ==============================
-  // 1. 注册钻石工具部件敲制配方
-  // ==============================
+  //钻石
   const diamondConfig = {
     material: "diamond",          // 材质名称（用于拼接物品ID和敲制类型）
     ingredient: Item.of("tfc:ore/diamond") // 原料：TFC钻石矿石
   };
 
   toolPartConfigs.forEach(part => {
-    const baseResult = `${MODID}${diamondConfig.material}_${part.partName}`;
+    const baseResult = `kubejs:${diamondConfig.material}_${part.partName}`;
 
     // 注册完整图案配方（多产出/单产出）
     part.patterns.forEach(pattern => {
@@ -202,9 +197,7 @@ ServerEvents.recipes(event => {
     }
   });
 
-  // ==============================
-  // 2. 注册黑曜石工具部件敲制配方（与钻石完全对称）
-  // ==============================
+  //黑曜石
   const obsidianConfig = {
     material: "obsidian",          // 材质名称（与钻石配置对称）
     ingredient: Item.of("kubejs:obsidian_shards") // 原料：黑曜石碎片
@@ -212,7 +205,7 @@ ServerEvents.recipes(event => {
 
   // 复用工具部件配置，仅替换材质和原料（保证配方逻辑完全一致）
   toolPartConfigs.forEach(part => {
-    const baseResult = `${MODID}${obsidianConfig.material}_${part.partName}`;
+    const baseResult = `kubejs:${obsidianConfig.material}_${part.partName}`;
 
     // 注册完整图案配方（与钻石相同的产出数量）
     part.patterns.forEach(pattern => {
@@ -231,4 +224,31 @@ ServerEvents.recipes(event => {
       });
     }
   });
+//燧石
+  const flintConfig = {
+    material: "flint",            // 燧石材质名称（用于拼接物品ID）
+    ingredient: Item.of("minecraft:flint") // 原料：原版燧石
+  };
+
+  // 复用工具部件配置，仅替换为燧石的材质和原料
+  toolPartConfigs.forEach(part => {
+    const baseResult = `kubejs:${flintConfig.material}_${part.partName}`;
+
+    // 注册完整图案配方（产出数量与钻石/黑曜石一致）
+    part.patterns.forEach(pattern => {
+      const result = part.outputCount > 1 ? `${part.outputCount}x ${baseResult}` : baseResult;
+      event.recipes.tfc.knapping(result, `kubejs:${flintConfig.material}`, pattern)
+        .ingredient(flintConfig.ingredient)
+        .outsideSlotRequired(false);
+    });
+
+    // 注册简化图案配方（与其他材质对称）
+    if (part.simplePatterns && part.simpleOutputCount) {
+      part.simplePatterns.forEach(simplePattern => {
+        event.recipes.tfc.knapping(baseResult, `kubejs:${flintConfig.material}`, simplePattern)
+          .ingredient(flintConfig.ingredient)
+          .outsideSlotRequired(false);
+      });
+    }
+  })
 })
