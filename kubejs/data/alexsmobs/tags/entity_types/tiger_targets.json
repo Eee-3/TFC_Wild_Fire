@@ -1,0 +1,13 @@
+{
+  "__comment": "all non-player targets of the tiger mob.",
+  "replace": false,
+  "values": [
+    "#tfc:land_prey",
+    "#alexsmobs:passive_land_animals",
+    "#alexsmobs:villagers",
+    "alexsmobs:kangaroo",
+    "alexsmobs:moose",
+    "alexsmobs:gelada_monkey",
+    "alexsmobs:caiman"
+  ]
+}

@@ -457,6 +457,9 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:crafting/kinetics/fluid_pipe' })
   e.remove({ id: 'woodencog:crafting/kinetics/fluid_pipe_vertical' })
   e.remove({ id: 'woodencog:crafting/kinetics/fluid_pipe' })
+
+  e.remove({ id: 'brewery:brewing/dark_brew' })
+  e.remove({ id: 'brewery:brewing/whiskey_hadarilabel' })
   
 
 

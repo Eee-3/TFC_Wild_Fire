@@ -1,1 +1,153 @@
-{}
+{
+  "pools": [
+    {
+      "name": "elephant",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "repas_de_survie:thick_meat",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 16,
+                "max": 20
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 6
+              }
+            },
+            {
+              "function": "minecraft:furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  },
+                  "entity": "this"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elephant",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tfc:large_raw_hide",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 4
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elephant",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "artisanal:suet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 7,
+                "max": 8
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "elephant",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "kubejs:sinew",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 7
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bison",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 10,
+                "max": 16
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

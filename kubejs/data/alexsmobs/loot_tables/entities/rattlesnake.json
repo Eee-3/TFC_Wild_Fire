@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "name": "rattlesnake",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "repas_de_survie:snake",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 0
+              }
+            },
+            {
+              "function": "minecraft:furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "predicate": {
+                    "flags": {
+                      "is_on_fire": true
+                    }
+                  },
+                  "entity": "this"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rattlesnake",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "alexsmobs:rattlesnake_rattle",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
