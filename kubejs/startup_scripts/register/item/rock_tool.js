@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/tfc/flint/${part}`);
     });
 
-function registerTFCTools(event, material, maxDamage) {
+function registerTFCTools(event, material, maxDamage,attackDamage) {
    
     const acheulianDmg = Math.floor(maxDamage * 0.8);
 
@@ -35,7 +35,7 @@ function registerTFCTools(event, material, maxDamage) {
     // 2. 标枪
     event.create(`kubejs:rock_tool/${material}_javelin`, 'tfc:javelin')
         .maxDamage(maxDamage)
-        .thrownDamage(7)
+        .thrownDamage(attackDamage)
         .texture(`kubejs:item/tfc/${material}/javelin`)
         .tag('tfc:usable_on_tool_rack');
 
@@ -43,7 +43,7 @@ function registerTFCTools(event, material, maxDamage) {
     event.create(`kubejs:rock_tool/${material}_hoe`, 'tfc:hoe')
         .maxDamage(maxDamage)
         .texture(`kubejs:item/tfc/${material}/hoe`)
-        .attackDamageBonus(8);
+        .attackDamageBonus(attackDamage);
 
     // 4. 小刀
     event.create(`kubejs:rock_tool/${material}_knife`, 'tfc:tool')
@@ -51,7 +51,7 @@ function registerTFCTools(event, material, maxDamage) {
         .texture(`kubejs:item/tfc/${material}/knife`)
         .tag('tfc:usable_on_tool_rack')
         .knife()
-        .attackDamageBonus(8);
+        .attackDamageBonus(attackDamage);
 
     // 5. 斧头
     event.create(`kubejs:rock_tool/${material}_axe`, "axe")
@@ -80,8 +80,8 @@ function registerTFCTools(event, material, maxDamage) {
         .texture(`kubejs:item/tfc/${material}/acheulian`);
 }
 
-// 批量注册三种材质的工具
-registerTFCTools(event, 'diamond', 700);    // 钻石基础耐久700 → 阿舍利手斧560（700×0.8）
-registerTFCTools(event, 'obsidian', 250);   // 黑曜石基础耐久250 → 阿舍利手斧200（250×0.8）
-registerTFCTools(event, 'flint', 120);      // 燧石基础耐久120 → 阿舍利手斧96（120×0.8）
+// 批量注册三种材质的工具//耐久  伤害
+registerTFCTools(event, 'diamond', 700,9);    // 钻石基础耐久700 → 阿舍利手斧560（700×0.8）
+registerTFCTools(event, 'obsidian', 250,9);   // 黑曜石基础耐久250 → 阿舍利手斧200（250×0.8）
+registerTFCTools(event, 'flint', 120,9);      // 燧石基础耐久120 → 阿舍利手斧96（120×0.8）
 })
