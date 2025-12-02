@@ -18,13 +18,13 @@ TFCEvents.data(event => {
 
     // 二、燃料炭块（压块）类（属性优于对应颗粒）
     // 木料炭块
-    event.fuel('kubejs:wood_briquette', 600, 20*30*9, 0.72);
+    event.fuel('kubejs:wood_briquette', 600, 20*30*9/2, 0.72);
     // 木炭块
-    event.fuel('kubejs:charcoal_briquette', 1250, 20*30*9, 0.82);
+    event.fuel('kubejs:charcoal_briquette', 1250, 20*30*9/2, 0.82);
     // 煤炭块
-    event.fuel('kubejs:coal_briquette', 1350, 20*60*9, 0.88);
+    event.fuel('kubejs:coal_briquette', 1350, 20*60*9/2, 0.88);
     // 焦煤块
-    event.fuel('kubejs:coke_briquette', 1600, 20*100*9, 0.96);
+    event.fuel('kubejs:coke_briquette', 1600, 20*100*9/2, 0.96);
     // 高性能燃料块
-    event.fuel('kubejs:high_performance_fuel_briquette', 2500, 20*120*9, 0.99);
+    event.fuel('kubejs:high_performance_fuel_briquette', 2500, 20*120*9/2, 0.99);
 });

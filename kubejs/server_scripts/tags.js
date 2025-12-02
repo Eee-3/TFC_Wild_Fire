@@ -2,6 +2,8 @@
 
 
 ServerEvents.tags("item", event => {
+ event.add('forge:tools/hammers', '#tfc:hammers')
+   
     const metals = [
         'bismuth_bronze',
         'black_bronze',
