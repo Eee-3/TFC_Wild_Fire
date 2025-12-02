@@ -176,7 +176,6 @@
 			id: "6CD157B12B1B4EAD"
 			tasks: [{
 				id: "6AED3C9EF817BAD7"
-				item: "ad_astra:oxygen_loader"
 				type: "item"
 			}]
 			x: 4.0d

@@ -3608,8 +3608,8 @@
 				}
 			]
 			title: "手记:卷尾猴"
-			x: -11.0d
-			y: 15.0d
+			x: -10.7d
+			y: 14.0d
 		}
 		{
 			dependencies: ["656D0AD7432FC404"]
@@ -3639,8 +3639,8 @@
 				}
 			]
 			title: "卷尾猴的详细了解"
-			x: -11.5d
-			y: 14.6d
+			x: -11.2d
+			y: 13.6d
 		}
 		{
 			dependencies: ["5CECA5CEE11AFB8F"]
@@ -3679,8 +3679,8 @@
 				}
 			]
 			title: "手记:大猩猩"
-			x: -11.0d
-			y: 13.0d
+			x: -10.7d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0165A28C72D4DF38"]
@@ -3718,8 +3718,8 @@
 				}
 			]
 			title: "大猩猩的详细了解"
-			x: -11.5d
-			y: 12.6d
+			x: -11.2d
+			y: 11.6d
 		}
 		{
 			dependencies: ["5CECA5CEE11AFB8F"]
@@ -3909,8 +3909,8 @@
 				}
 			]
 			title: "手记:狮尾狒狒"
-			x: -11.0d
-			y: 14.0d
+			x: -10.7d
+			y: 13.0d
 		}
 		{
 			dependencies: ["7C8905EB4E1E4687"]
@@ -3940,8 +3940,8 @@
 				}
 			]
 			title: "狮尾狒狒的详细了解"
-			x: -11.5d
-			y: 13.6d
+			x: -11.2d
+			y: 12.6d
 		}
 		{
 			dependencies: ["5CECA5CEE11AFB8F"]
@@ -5589,6 +5589,7 @@
 			hide_until_deps_complete: true
 			icon: "naturalist:hippo_spawn_egg"
 			id: "0B278150CD017348"
+			invisible: true
 			optional: true
 			rewards: [{
 				auto: "enabled"
@@ -5618,8 +5619,8 @@
 				}
 			]
 			title: "手记:河马"
-			x: -11.0d
-			y: 12.0d
+			x: -10.68571428571428d
+			y: 15.019642857142877d
 		}
 		{
 			dependencies: ["0B278150CD017348"]
@@ -5649,8 +5650,8 @@
 				}
 			]
 			title: "河马的详细了解"
-			x: -11.5d
-			y: 11.6d
+			x: -11.18571428571428d
+			y: 14.619642857142878d
 		}
 		{
 			dependencies: ["00DFB3F12E61B6F3"]
@@ -6471,77 +6472,6 @@
 			title: "蜗牛的详细了解"
 			x: 8.7d
 			y: 10.6d
-		}
-		{
-			dependencies: ["728B350B98915D16"]
-			dependency_requirement: "one_started"
-			description: ["【2】"]
-			hide_text_until_complete: true
-			hide_until_deps_complete: true
-			icon: "naturalist:dragonfly_spawn_egg"
-			id: "64ED0A94D60633D8"
-			optional: true
-			rewards: [{
-				auto: "enabled"
-				icon: "eidolon:parchment"
-				id: "00BDDDE56E437FB4"
-				title: "关于蜻蜓的了解"
-				type: "custom"
-			}]
-			subtitle: "&8&l[通过遭遇蜻蜓或提供经验来解锁]&r&r"
-			tasks: [
-				{
-					icon: "naturalist:dragonfly_spawn_egg"
-					id: "7E0B81818339DE3D"
-					observe_type: 5
-					optional_task: true
-					timer: 0L
-					title: "遇见蜻蜓"
-					to_observe: "naturalist:dragonfly"
-					type: "observation"
-				}
-				{
-					id: "4677F04D19BE7F3B"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 2L
-				}
-			]
-			title: "手记:蜻蜓"
-			x: 9.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["64ED0A94D60633D8"]
-			hide_text_until_complete: true
-			hide_until_deps_complete: true
-			icon: "born_in_chaos_v1:sea_terror_eye"
-			id: "21FAD02F8A8ECBB8"
-			shape: "pentagon"
-			size: 0.8d
-			subtitle: "&8&l[通过击杀蜻蜓或提供经验来解锁更多信息]&r&r"
-			tasks: [
-				{
-					entity: "naturalist:dragonfly"
-					icon: "naturalist:dragonfly_spawn_egg"
-					id: "1200804ADF83A996"
-					optional_task: true
-					title: "猎杀蜻蜓"
-					type: "kill"
-					value: 10L
-				}
-				{
-					id: "38BB988988105739"
-					optional_task: true
-					points: false
-					type: "xp"
-					value: 5L
-				}
-			]
-			title: "蜻蜓的详细了解"
-			x: 8.7d
-			y: 11.6d
 		}
 		{
 			dependencies: ["00DFB3F12E61B6F3"]
@@ -8596,7 +8526,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: "farmersdelight:horse_feed"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 6000L
+						traits: [ ]
+					}
+				}
+				id: "farmersdelight:horse_feed"
+			}
 			id: "7657DB921591A63F"
 			require_sequential_tasks: true
 			size: 1.5d

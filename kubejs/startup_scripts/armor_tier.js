@@ -8,4 +8,13 @@ ItemEvents.armorTierRegistry(event => {
     tier.toughness = 0 // diamond has 2, netherite 3
     tier.knockbackResistance = 0
   })
+  event.add('brass', tier => {
+    tier.durabilityMultiplier = 5 // Each slot will be multiplied with [13, 15, 16, 11]
+    tier.slotProtections = [1, 3, 1, 1] // Slot indicies are [FEET, LEGS, BODY, HEAD]
+    tier.enchantmentValue = 10
+    tier.equipSound = 'minecraft:item.armor.equip_leather'
+    tier.repairIngredient = 'tfc:metal/sheet/brass'
+    tier.toughness = 0 // diamond has 2, netherite 3
+    tier.knockbackResistance = 0
+  })
 })

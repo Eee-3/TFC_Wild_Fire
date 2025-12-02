@@ -154,4 +154,27 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:hologram_frontpanel_unfinished').texture('kubejs:item/ad/hologram_frontpanel_unfinished'); // 全息前面板_未完成
     event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
     event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
+})
+StartupEvents.registry("item", event => {   //工业线盔甲相关
+    // 半成品黄铜骑士盔甲
+    event.create('kubejs:prototype_finished_cogknight_helmet','helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass'); // 原型齿轮骑士头盔
+    event.create('kubejs:prototype_finished_cogknight_chestplate','chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass'); // 原型齿轮骑士胸甲
+    event.create('kubejs:prototype_finished_cogknight_leggings','leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass'); // 原型齿轮骑士护腿
+    // 未完成黄铜骑士盔甲中间产物
+    event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet'); // 未完成原型齿轮骑士头盔
+    event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate'); // 未完成原型齿轮骑士胸甲
+    event.create('kubejs:unfinished_prototype_cogknight_leggings').texture('kubejs:item/armor/unfinished_prototype_cogknight_leggings'); // 未完成原型齿轮骑士护腿
+    event.create('kubejs:unfinished_cogknight_boots').texture('kubejs:item/armor/unfinished_cogknight_boots'); // 未完成齿轮骑士靴子
+
+    // 未完成黄铜骑士盔甲第二步中间产物
+    event.create('kubejs:unfinished_cogknight_helmet').texture('kubejs:item/armor/unfinished_cogknight_helmet'); // 未完成齿轮骑士头盔
+    event.create('kubejs:unfinished_cogknight_chestplate').texture('kubejs:item/armor/unfinished_cogknight_chestplate'); // 未完成齿轮骑士胸甲
+    event.create('kubejs:unfinished_cogknight_leggings').texture('kubejs:item/armor/unfinished_cogknight_leggings'); // 未完成齿轮骑士护腿
+
+    // 未完成工业钢盔甲中间产物
+    event.create('kubejs:unfinished_steel_helmet').texture('kubejs:item/armor/unfinished_steel_helmet'); // 未完成工业钢头盔
+    event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate'); // 未完成工业钢胸甲
+    event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings'); // 未完成工业钢护腿
+    event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots'); // 未完成工业钢靴子
+
 });

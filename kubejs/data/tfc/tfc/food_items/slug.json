@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "repas_de_survie:slug"
+  },
+  "hunger": 2.0,
+  "saturation": 0.1,
+  "decay_modifier": 2.1,
+  "protein": 0.3
+}

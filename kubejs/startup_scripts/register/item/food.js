@@ -52,4 +52,35 @@ StartupEvents.registry('item', event => {
 	event.create("repas_de_survie:meat_mixture")
     .texture("kubejs:item/food/meat_mixture")
 	.displayName("肉末混合物")
+
+	event.create("repas_de_survie:thick_meat")
+    .texture("kubejs:item/food/thick_meat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.1)
+	})
+	event.create("repas_de_survie:cooked_thick_meat")
+    .texture("kubejs:item/food/cooked_thick_meat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(12)
+		foodBuilder.saturation(0.2)
+	})
+	event.create("repas_de_survie:snake")
+    .texture("kubejs:item/food/snake")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(3)
+		foodBuilder.saturation(0.1)
+	})
+	event.create("repas_de_survie:cooked_snake")
+    .texture("kubejs:item/food/cooked_snake")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(8)
+		foodBuilder.saturation(0.15)
+	})
+	event.create("repas_de_survie:slug")
+    .texture("kubejs:item/food/slug")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.1)
+	})
 })
