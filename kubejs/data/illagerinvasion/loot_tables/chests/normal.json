@@ -15,34 +15,6 @@
       "bonus_rolls": 0.1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "bsa:sabertooth_fang",
-          "weight": 2
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.1,
-      "entries": [
-        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -313,7 +285,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "bsa:sinew_string",
+          "name": "kubejs:sinew_thread",
           "weight": 2
         }
       ],
@@ -341,7 +313,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "bsa:sinew",
+          "name": "kubejs:sinew",
           "weight": 3
         }
       ],
@@ -587,13 +559,41 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kubejs:crown",
+          "weight": 1
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.05,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
                 "max": 4.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kubejs:crown",
+          "name": "kubejs:oldcrown",
           "weight": 1
         }
       ],
@@ -738,7 +738,7 @@
             "function": "minecraft:set_damage"
           }
         ],
-        "name": "bsa:stone/knife/flint",
+        "name": "kubejs:rock_tool/flint_knife",
           "weight": 2
         }
       ],
