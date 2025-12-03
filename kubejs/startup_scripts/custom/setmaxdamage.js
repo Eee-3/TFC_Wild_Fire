@@ -1,3 +1,4 @@
+// priority: -1
 ItemEvents.modification(event => {
 
 
@@ -15,7 +16,10 @@ ItemEvents.modification(event => {
 
         { name: 'butcher:skinning_knife', num: 2000 },
         { name: 'butcher:butchers_knife', num: 2000 },
-        { name: 'butcher:boneskinningknife', num: 50 }
+        { name: 'butcher:boneskinningknife', num: 50 },
+        { name: 'create:sand_paper', num: 32 },
+
+   
 
 
 
@@ -48,20 +52,36 @@ ItemEvents.modification(event => {
         { name: 'tfc:metal/hoe/steel', att: 4 },
         { name: 'tfc:metal/hoe/black_steel', att: 4 },
         { name: 'tfc:metal/hoe/red_steel', att: 5 },
-        { name: 'tfc:metal/hoe/blue_steel', att: 5 }
+        { name: 'tfc:metal/hoe/blue_steel', att: 5 },
+        // 新增：钻石材质工具（material: 'diamond', attackDamage: 1）
+        { name: 'kubejs:rock_tool/diamond_hammer', att: 4 },       // 钻石锤子：基础伤害4
+        { name: 'kubejs:rock_tool/diamond_javelin', att: 4 },      // 钻石标枪：3+1=4（代码明确）
+        { name: 'kubejs:rock_tool/diamond_hoe', att: 3 },          // 钻石锄头：基础伤害3
+        { name: 'kubejs:rock_tool/diamond_knife', att: 3.5 },      // 钻石小刀：基础伤害3.5
+        { name: 'kubejs:rock_tool/diamond_axe', att: 5 },          // 钻石斧头：基础伤害5
+        { name: 'kubejs:rock_tool/diamond_shovel', att: 4 },       // 钻石铲子：基础伤害4
+        { name: 'kubejs:rock_tool/diamond_acheulian', att: 3 },  // 钻石阿舍利手斧：略高于普通斧头
+
+        // 新增：黑曜石材质工具（material: 'obsidian', attackDamage: 3）
+        { name: 'kubejs:rock_tool/obsidian_hammer', att: 5 },      // 黑曜石锤子：基础伤害5
+        { name: 'kubejs:rock_tool/obsidian_javelin', att: 6 },     // 黑曜石标枪：3+3=6（代码明确）
+        { name: 'kubejs:rock_tool/obsidian_hoe', att: 4 },         // 黑曜石锄头：基础伤害4
+        { name: 'kubejs:rock_tool/obsidian_knife', att: 4.5 },     // 黑曜石小刀：基础伤害4.5
+        { name: 'kubejs:rock_tool/obsidian_axe', att: 7 },         // 黑曜石斧头：基础伤害7
+        { name: 'kubejs:rock_tool/obsidian_shovel', att: 5 },      // 黑曜石铲子：基础伤害5
+        { name: 'kubejs:rock_tool/obsidian_acheulian', att: 5 }, // 黑曜石阿舍利手斧：略高于普通斧头
+
+        // 新增：燧石材质工具（material: 'flint', attackDamage: 0.5）
+        { name: 'kubejs:rock_tool/flint_hammer', att: 3 },         // 燧石锤子：基础伤害3
+        { name: 'kubejs:rock_tool/flint_javelin', att: 3.5 },      // 燧石标枪：3+0.5=3.5（代码明确）
+        { name: 'kubejs:rock_tool/flint_hoe', att: 2.5 },          // 燧石锄头：基础伤害2.5
+        { name: 'kubejs:rock_tool/flint_knife', att: 2.8 },        // 燧石小刀：基础伤害2.8
+        { name: 'kubejs:rock_tool/flint_axe', att: 4.5 },          // 燧石斧头：基础伤害4.5
+        { name: 'kubejs:rock_tool/flint_shovel', att: 3.2 },       // 燧石铲子：基础伤害3.2
+        { name: 'kubejs:rock_tool/flint_acheulian', att: 3 },      // 燧石阿舍利手斧：略高于普通斧头
 
     ]
     attack.forEach(att =>
-        event.modify(att.name, modification => {
-            modification.setAttackDamage(att.att);
-        })
-    )
-    const attack2 = [
-        { name: 'kubejs:copper_greatsword', att: 6 },
-
-    ]
-
-    attack2.forEach(att =>
         event.modify(att.name, modification => {
             modification.setAttackDamage(att.att);
         })

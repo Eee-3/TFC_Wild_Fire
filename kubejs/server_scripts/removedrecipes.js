@@ -262,7 +262,10 @@ ServerEvents.recipes(e => {
     "butcher:butcherspapers",
     "patchouli:guide_book",
     "design_decor:mechanical_crafting/enchanted_golden_apple",
-    "supplementaries:strings"
+    "supplementaries:strings",
+    "tfc:crafting/sandpaper"
+  
+
   ]
   oeiremove1.forEach(ida => { e.remove({ output: ida }) })
   e.remove({ output: "minecraft:air" })

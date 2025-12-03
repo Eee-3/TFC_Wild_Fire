@@ -24,6 +24,10 @@ ServerEvents.recipes(event => {
         }
     ).id(`${id_prefix}large_water_wheel`)//大水车
 
-
+    const gem = ['amethyst', 'diamond', 'emerald', 'lapis_lazuli', 'opal', 'pyrite', 'ruby', 'sapphire', 'topaz']
+    gem.forEach(gem =>
+        event.custom(
+            { "type": "create:sandpaper_polishing", "ingredients": [{ "item": `tfc:ore/${gem}` }], "results": [{ "item": `tfc:gem/${gem}` }] }
+        ))
 
 })
