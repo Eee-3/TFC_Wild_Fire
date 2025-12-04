@@ -2,15 +2,22 @@ ServerEvents.recipes(event => {
     const create = event.recipes.create
 
     wash_ore.forEach(ore => {
-        create.splashing(//脏粉清洗
-            [
-                Item.of(`tfc:powder/${ore.ore}`).withChance(1),
-                Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),
-            ],
-            Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)
-        ).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+        if (ore.type == '/type_') {
+            if (ore.mod == 'tfc_ie_addon:ore') {
+                create.splashing([Item.of(`tfc_ie_addon:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+            }
+            if (ore.mod == 'firmalife:ore') {
+                create.splashing([Item.of(`firmalife:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+            }
+            if (ore.mod == 'tfc:ore') {
+                create.splashing([Item.of(`tfc:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+            }
+        }
 
 
+
+
+        //脏粉清洗 
         create.splashing(//多石清洗
             [
                 Item.of(`kubejs:item/ore/chunks/${ore.ore}`).withChance(1),
@@ -19,7 +26,18 @@ ServerEvents.recipes(event => {
             Item.of(`kubejs:item/ore/rocky_chunks/${ore.ore}`)
         ).id(`kubejs:wash_ore/createorewash/splashing/rocky_chunks/${ore.ore}`);
     })
-
+    create.splashing([Item.of('tfc:powder/sulfur').withChance(1)],
+        Item.of('kubejs:item/ore/dirty_dust/'))
+        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/sulfur`);
+    create.splashing([Item.of('tfc:powder/graphite').withChance(1)],
+        Item.of('kubejs:item/ore/dirty_dust/graphite'))
+        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/graphite`); 
+    create.splashing([Item.of('minecraft:redstone_wire').withChance(1)],
+        Item.of('kubejs:item/ore/dirty_dust/cryolite'))
+        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/cryolite`);
+    create.splashing([Item.of('minecraft:redstone_wire').withChance(1)],
+        Item.of('kubejs:item/ore/dirty_dust/cinnabar'))
+        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/cinnabar`);
 
 
 

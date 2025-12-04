@@ -92,16 +92,17 @@ ServerEvents.recipes(event => {
                 ]
             }).id(`${recipedid}mixing/heatslurry/refined_${ore.ore}`)//原浆发酵成精矿粉末
 
+
             event.custom({//加热矿浆蒸发
-                "type": "woodencog:heated_mixing",
-                "heatRequirement": 200,
+                "type": "create:mixing",
+                "heatRequirement": "heated",
                 "processingTime": 100,
                 "ingredients": [
 
                     {
                         "amount": 200,
                         "fluid": `kubejs:fluid/ore/slurry/${ore.ore}`,
-                        "nbt": {}
+
                     }
                 ],
                 "results": [
@@ -121,9 +122,12 @@ ServerEvents.recipes(event => {
                     "processingTime": 100,
                     "ingredients": [
                         {
+                            "type": "woodencog:heated",
                             "ingredient": {
                                 "item": `kubejs:item/ore/${ore1.type}/${ore.ore}`
-                            }
+                            },
+
+
                         }
                     ],
                     "results": [
