@@ -158,9 +158,30 @@ ServerEvents.recipes(event => {
       partName: "knife_blade",
       outputCount: 2, // 完整图案（5行）产出2个
       patterns: [
-        ["X  X ", "XX XX", "XX XX", "XX XX", "XX XX"],
-        [" X  X", "XX XX", "XX XX", "XX XX", "XX XX"],
-        ["X   X", "XX XX", "XX XX", "XX XX", "XX XX"]
+        [
+          "X  X ",
+          "XX XX",
+          "XX XX",
+          "XX XX",
+          "XX XX"],
+        [
+          " X  X",
+          "XX XX",
+          "XX XX",
+          "XX XX",
+          "XX XX"],
+        [
+          "X   X",
+          "XX XX",
+          "XX XX",
+          "XX XX",
+          "XX XX"],
+        [
+          " X X ",
+          "XX XX",
+          "XX XX",
+          "XX XX",
+          "XX XX"]
       ],
       // 简化图案（5行短版）单独配置（产出1个）
       simplePatterns: [
@@ -224,7 +245,7 @@ ServerEvents.recipes(event => {
       });
     }
   });
-//燧石
+  //燧石
   const flintConfig = {
     material: "flint",            // 燧石材质名称（用于拼接物品ID）
     ingredient: Item.of("minecraft:flint") // 原料：原版燧石

@@ -200,5 +200,18 @@ ServerEvents.recipes(event => {
 
         })
     })
+     metals.forEach(metal => {
+        tools.forEach(tools => {
+            advanced_shapeless_crafting(
+                TFC.itemStackProvider.of(`tfc:metal/${tools.name}/${metal}`, ['kubejs:binding_bonus']),
+                [
+                    `tfc:metal/${tools.type}/${metal}`,                 
+                    '#forge:rods/wooden'
+                ],
+                `tfc:metal/${tools.type}/${metal}`
+            ).id(`tfc:metal/no_binding_bonus/${tools.name}/${metal}`)
+
+        })
+    })
 
 })

@@ -263,7 +263,8 @@ ServerEvents.recipes(e => {
     "patchouli:guide_book",
     "design_decor:mechanical_crafting/enchanted_golden_apple",
     "supplementaries:strings",
-    "tfc:crafting/sandpaper"
+    "tfc:crafting/sandpaper",
+ 
   
 
   ]
