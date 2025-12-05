@@ -306,7 +306,7 @@ TFCEvents.data(event => {
 TFCEvents.data(event => {
   // 戒指配置表
   const rings = [
-    { name: "sterling_silver", temperature: 961, metal: "sterling_silver" }, // 纯银戒指
+    { name: "sterling_silver", temperature: 961, metal: "sterling_silver" }, // 纹银戒指
     { name: "silver", temperature: 961, metal: "silver" }, // 银戒指
     { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指
     { name: "rose_gold", temperature: 1064, metal: "rose_gold" }, // 玫瑰金戒指
