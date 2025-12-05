@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ammo",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "tag": "tfc:rock_knapping"
+    },
+    {
+      "tag": "tfc:rock_knapping"
+    },
+    {
+      "item": "farmersdelight:canvas"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "scguns:powder_and_ball"
+  }
+}
