@@ -13,49 +13,45 @@ TFCEvents.data(e => {
 
   materials.forEach(material => {
     e.itemSize(`kubejs:${material}_battle_hammer`, 'large', 'heavy') // 大锤
-    e.itemSize(`kubejs:${material}_warhammer`, 'large', 'heavy') // 战锤
-    e.itemSize(`kubejs:${material}_lance`, 'large', 'heavy') // 骑枪
+    e.itemSize(`kubejs:${material}_warhammer`, 'large', 'medium') // 战锤
+    e.itemSize(`kubejs:${material}_lance`, 'very_large', 'heavy') // 骑枪
     e.itemSize(`kubejs:${material}_flanged_mace`, 'large', 'heavy');        // 页锤
-    e.itemSize(`kubejs:${material}_scythe`, 'large', 'heavy');             // 战镰
-    e.itemSize(`kubejs:${material}_greatsword`, 'large', 'heavy');             // 大剑
+    e.itemSize(`kubejs:${material}_scythe`, 'very_large', 'heavy');             // 战镰
+    e.itemSize(`kubejs:${material}_greatsword`, 'very_large', 'heavy');             // 大剑
 
-    e.itemSize(`kubejs:${material}_halberd`, 'large', 'very_heavy');             // 戟
+    e.itemSize(`kubejs:${material}_halberd`, 'very_large', 'heavy');             // 戟
 
-    e.itemSize(`kubejs:${material}_throwing_knife`, 'large', 'light');      // 飞刀
-    e.itemSize(`kubejs:${material}_dagger`, 'large', 'light');              // 匕首
-    e.itemSize(`kubejs:${material}_parrying_dagger`, 'large', 'light');     // 格挡匕首
+    e.itemSize(`kubejs:${material}_throwing_knife`, 'normal', 'light');      // 飞刀
+    e.itemSize(`kubejs:${material}_dagger`, 'normal', 'light');              // 匕首
+    e.itemSize(`kubejs:${material}_parrying_dagger`, 'normal', 'light');     // 格挡匕首
 
+
+    e.itemSize(`kubejs:${material}_battle_hammer_weapon_part`, 'large', 'heavy') // 大锤部件
+    e.itemSize(`kubejs:${material}_warhammer_weapon_part`, 'normal', 'medium') // 战锤部件
+    e.itemSize(`kubejs:${material}_lance_weapon_part`, 'large', 'heavy') // 骑枪部件
+    e.itemSize(`kubejs:${material}_flanged_mace_weapon_part`, 'normal', 'medium');        // 页锤部件
+    e.itemSize(`kubejs:${material}_scythe_weapon_part`, 'large', 'heavy');             // 战镰部件
+    e.itemSize(`kubejs:${material}_greatsword_weapon_part`, 'large', 'heavy');             // 大剑部件
+    e.itemSize(`kubejs:${material}_halberd_weapon_part`, 'large', 'heavy');             // 戟部件
   });
 
-
+  //小、轻
   const small_light_items = [
-    'cuisinedelight:suspicious_mix',
-    'cuisinedelight:ham_fried_rice',
-    'cuisinedelight:fried_rice',
-    'cuisinedelight:mixed_fried_rice',
-    'cuisinedelight:meat_with_seafood',
-    'cuisinedelight:meat_with_vegetables',
-    'cuisinedelight:seafood_with_vegetables',
-    'cuisinedelight:fried_pasta',
-    'cuisinedelight:mixed_pasta',
-    'cuisinedelight:meat_fried_rice',
-    'cuisinedelight:meat_pasta',
-    'cuisinedelight:meat_platter',
-    'cuisinedelight:seafood_fried_rice',
-    'cuisinedelight:seafood_pasta',
-    'cuisinedelight:seafood_platter',
-    'cuisinedelight:vegetable_fried_rice',
-    'cuisinedelight:vegetable_pasta',
-    'cuisinedelight:vegetable_platter',
-    'cuisinedelight:fried_mushroom',
-    'cuisinedelight:fried_meat_and_melon',
-    'cuisinedelight:scrambled_egg_and_tomato',
+    '#kubejs:8ore',
+    'kubejs:silicon',
+    'kubejs:leather_plate',
+    'kubejs:leather_scrap',
+    'kubejs:silicon_board',
+    'kubejs:obsidian_shards',
+    'repas_de_survie:snake',
+    'repas_de_survie:cooked_snake',
+    'repas_de_survie:thick_meat',
+    'repas_de_survie:cooked_thick_meat'
   ]
   small_light_items.forEach(item => {
     e.itemSize(item, 'small', 'light')
-
-
   })
+  
 
   //极大、非常重
   const huge_very_heavy_items = [
@@ -97,11 +93,26 @@ TFCEvents.data(e => {
     "trotting_wagons:royal_wagon"]
   huge_very_heavy_items.forEach(item => {
     e.itemSize(item, 'huge', 'very_heavy')
-
   })
+
+  //非常大、中
+  const very_large_medium_items = [
+    "kubejs:wood_briquette",
+    "kubejs:charcoal_briquette",
+    "kubejs:coal_briquette",
+    "kubejs:coke_briquette",
+    "kubejs:high_performance_briquette",
+    "kubejs:cast_iron_indenter",
+    "kubejs:emergency_hammer"
+  ]
+  very_large_medium_items.forEach(item => {
+    e.itemSize(item, 'very_large', 'medium')
+  })
+
 
   //大、重
   const large_heavy_items = [
+    "#kubejs:triple_ingot",
     "siegemachines:turret_base",
     "siegemachines:beam",
     "siegemachines:giant_arrow",
@@ -173,6 +184,16 @@ TFCEvents.data(e => {
 
   //大,中
   const large_medium_items = [
+    '#kubejs:16ore',
+    '#kubejs:tongs',
+    "kubejs:wrought_iron_crowbar",
+    "kubejs:steel_crowbar",
+    "kubejs:black_steel_crowbar",
+    "kubejs:cervelliere",
+    "kubejs:leather_gamberson",
+    "kubejs:leather_plate_greaves",
+    "kubejs:leather_plate_boots",
+
     "tfc:ore/rich_cassiterite",
     "tfc:ore/rich_native_silver",
     "tfc:ore/rich_hematite",
@@ -774,7 +795,9 @@ TFCEvents.data(e => {
 
   //小、重
   const small_heavy_items = [
-    "#tfc:jars"
+    'farmersdelight:ham',
+    'farmersdelight:smoked_ham',
+    "#tfc:jars",
   ]
   small_heavy_items.forEach(item => {
     e.itemSize(item, 'small', 'heavy')

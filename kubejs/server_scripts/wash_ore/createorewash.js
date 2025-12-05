@@ -4,13 +4,13 @@ ServerEvents.recipes(event => {
     wash_ore.forEach(ore => {
         if (ore.type == '/type_') {
             if (ore.mod == 'tfc_ie_addon:ore') {
-                create.splashing([Item.of(`tfc_ie_addon:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+                create.splashing([Item.of(`tfc_ie_addon:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2), Item.of(`kubejs:rock_powder`).withChance(0.75),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
             }
             if (ore.mod == 'firmalife:ore') {
-                create.splashing([Item.of(`firmalife:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+                create.splashing([Item.of(`firmalife:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2), Item.of(`kubejs:rock_powder`).withChance(0.75),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
             }
             if (ore.mod == 'tfc:ore') {
-                create.splashing([Item.of(`tfc:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
+                create.splashing([Item.of(`tfc:powder/${ore.ore}`).withChance(1), Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2), Item.of(`kubejs:rock_powder`).withChance(0.75),], Item.of(`kubejs:item/ore/dirty_dust/${ore.ore}`)).id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/${ore.ore}`);
             }
         }
 
@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
             [
                 Item.of(`kubejs:item/ore/chunks/${ore.ore}`).withChance(1),
                 Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2),
+                Item.of(`kubejs:rock_powder`).withChance(0.75),
             ],
             Item.of(`kubejs:item/ore/rocky_chunks/${ore.ore}`)
         ).id(`kubejs:wash_ore/createorewash/splashing/rocky_chunks/${ore.ore}`);

@@ -5,14 +5,12 @@ ServerEvents.tags('item', event => {
         'tfc:jute',//黄麻
         'tfc:plant/ivy',//常春藤
         'farmersdelight:rope',//粗制草绳
-        'htm:plant_string',//植物纤维
         '#forge:fiber_hemp'//麻纤维
     ];
     const bindings_medium = [
         'minecraft:string',//线
         'tfc:glue',//胶水
         'tfc:wool_yarn',//羊毛线
-        'animaltrap:twine',//麻绳
         'minecraft:slime_ball',//粘液球
         '#forge:wires'//电线绑定标签
     ];
@@ -35,12 +33,10 @@ ServerEvents.tags('item', event => {
         'tfc:jute',//黄麻
         'tfc:plant/ivy',//常春藤
         'farmersdelight:rope',//粗制草绳
-        'htm:plant_string',//植物纤维
         '#forge:fiber_hemp',//麻纤维
         'minecraft:string',//线
         'tfc:glue',//胶水
         'tfc:wool_yarn',//羊毛线
-        'animaltrap:twine',//麻绳
         'minecraft:slime_ball',//粘液球
         '#forge:wires',//电线绑定标签
         'firmaciv:rope_coil',//黄麻
@@ -87,29 +83,33 @@ ServerEvents.recipes(event => {
                     `tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
                 ]
             ).id(`kubejs:stone/${tool.name}_${rock.name}/nobonus`)
+
             //weak
             event.recipes.kubejs.shapeless(
                 `tfc:stone/${tool.name}/${rock.name}`,
                 [
-                     "#kubejs:low_binding",`tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
+                    "#kubejs:low_binding",`tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
                 ]
             ).id(`kubejs:stone/${tool.name}_${rock.name}/low`)
+
             //medium
             event.recipes.kubejs.shapeless(
                 Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":2}'),
                 [
                     "#kubejs:medium_binding",`tfc:stone/${tool.type}/${rock.name}`, "#forge:rods/wooden"
-                   
+                
                 ]
             ).id(`kubejs:stone/${tool.name}_${rock.name}/medium`)
+
             //strong
             event.recipes.kubejs.shapeless(
                 Item.of(`tfc:stone/${tool.name}/${rock.name}`, '{"tfc:forging_bonus":4}'),
                 [
-                     "#kubejs:advanced_binding",`tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
+                    "#kubejs:advanced_binding",`tfc:stone/${tool.type}/${rock.name}`,"#forge:rods/wooden"
                     
                 ]
             ).id(`kubejs:stone/${tool.name}_${rock.name}/advanced`)
+
 
         });
 
@@ -152,12 +152,8 @@ ServerEvents.recipes(event => {
 
 
 
-
-
-
-
-
-
+    
+    //金属类在下面↓↓↓
 
 
 

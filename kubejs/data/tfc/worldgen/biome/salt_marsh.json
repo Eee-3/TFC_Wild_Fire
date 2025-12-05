@@ -59,12 +59,6 @@
                 "weight": 1,
                 "minCount": 1,
                 "maxCount": 3
-            },
-            {
-                "type": "alexsmobs:mudskipper",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 1
             }
         ],
         "water_creature": [
@@ -73,6 +67,12 @@
                 "weight": 1,
                 "minCount": 1,
                 "maxCount": 3
+            },
+            {
+                "type": "alexsmobs:mudskipper",
+                "weight": 1,
+                "minCount": 1,
+                "maxCount": 1
             },
             {
                 "type": "tfc:squid",

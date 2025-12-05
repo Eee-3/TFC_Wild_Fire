@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ammo",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "count": 12,
+    "item": "scguns:grapeshot"
+  }
+}

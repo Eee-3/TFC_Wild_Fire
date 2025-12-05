@@ -21,13 +21,16 @@ StartupEvents.registry('item', (event) => {
         'graphite_shovel_head_mold',
         'graphite_pickaxe_head_mold',
         'graphite_hoe_head_mold',
+        'graphite_fish_hook_mold',
+        'graphite_scraping_knife_blade_mold',
+        'graphite_circle_blade_mold',
 
 
     ];
 
 
     items.forEach((item) => {
-        event.create(item).texture(`kubejs:item/graphite_mold/${item}`);
+        event.create(item).texture(`kubejs:item/mold/${item}`);
     })
 });
 

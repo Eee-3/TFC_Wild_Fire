@@ -109,6 +109,20 @@ ServerEvents.tags("item", event => {
             "scguns:vehement_coal"
         ])
 
+    // 三锭
+    event.add('kubejs:triple_ingot',
+        [
+            "kubejs:triple_copper",
+            "kubejs:triple_bismuth_bronze",
+            "kubejs:triple_black_bronze",
+            "kubejs:triple_bronze",
+            "kubejs:triple_black_steel",
+            "kubejs:triple_blue_steel",
+            "kubejs:triple_red_steel",
+            "kubejs:triple_steel",
+            "kubejs:triple_wrought_iron"
+        ])
+
 })
 const registerAsticorCartsItemTags = (event) => {
 

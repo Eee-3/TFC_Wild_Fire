@@ -2,7 +2,7 @@
 let wash_ore = [
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'uraninite', temperature: 1130, color: 0x262626, out: 'tfc_ie_addon:metal/uranium' },
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'galena', temperature: 1157, color: 0x808080, out: 'tfc_ie_addon:metal/lead' },
-    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'bauxite', temperature: 2072, color: 0xA0522D, out: 'tfc_ie_addon:metal/aluminum_oxide' },
+    { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'bauxite', temperature: 2072, color: 0xA0522D, out: 'tfc_ie_addon:metal/aluminum' },
     { mod: 'firmalife:ore', type: '/type_', ore: 'chromite', temperature: 1907, color: 0x4F4F4F, out: 'firmalife:metal/chromium' },
     { mod: 'tfc:ore', type: '/type_', ore: 'limonite', color: 0xD2691E, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'limonite' },
     { mod: 'tfc:ore', type: '/type_', ore: 'magnetite', color: 0x363636, temperature: 1538, out: 'tfc:metal/cast_iron', metal: 'magnetite' },
@@ -43,18 +43,21 @@ ServerEvents.recipes(event => {
             })
             if (ore.mod == 'tfc_ie_addon:ore') {
                 tfc.heating(`tfc_ie_addon:powder/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/powder_${ore.ore}`)//粉末
+                tfc.heating(`tfc_ie_addon:ore/small_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/small_${ore.ore}`)//粒
                 tfc.heating(`tfc_ie_addon:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
                 tfc.heating(`tfc_ie_addon:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
                 tfc.heating(`tfc_ie_addon:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
             }
             if (ore.mod == 'firmalife:ore') {
                 tfc.heating(`firmalife:powder/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/powder_${ore.ore}`)//粉末
+                tfc.heating(`firmalife:ore/small_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/small_${ore.ore}`)//粒
                 tfc.heating(`firmalife:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
                 tfc.heating(`firmalife:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
                 tfc.heating(`firmalife:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
             }
             if (ore.mod == 'tfc:ore') {
                 tfc.heating(`tfc:powder/${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/powder_${ore.ore}`)//粉末
+                tfc.heating(`tfc:ore/small_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 5)).id(`${recipedid}heating/small_${ore.ore}`)//粒
                 tfc.heating(`tfc:ore/poor_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 10)).id(`${recipedid}heating/poor_${ore.ore}`)//贫瘠
                 tfc.heating(`tfc:ore/normal_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 15)).id(`${recipedid}heating/normal_${ore.ore}`)//普通
                 tfc.heating(`tfc:ore/rich_${ore.ore}`, `${ore.temperature}`).resultFluid(Fluid.of(`${ore.out}`, 25)).id(`${recipedid}heating/rich_${ore.ore}`)//富集
