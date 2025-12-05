@@ -51,6 +51,15 @@ TFCEvents.data(e => {
   small_light_items.forEach(item => {
     e.itemSize(item, 'small', 'light')
   })
+
+
+  //小、非常轻
+  const small_very_light_items = [
+    '#tfc:seeds'
+  ]
+  small_very_light_items.forEach(item => {
+    e.itemSize(item, 'small', 'very_light')
+  })
   
 
   //极大、非常重

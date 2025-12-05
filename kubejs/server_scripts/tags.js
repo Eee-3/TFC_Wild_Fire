@@ -49,6 +49,7 @@ ServerEvents.tags("item", event => {
 
 
 
+
     // 将手套加入进饰品tag
     event.add('kubejs:tongs', 'kubejs:wooden_tong')
     event.add('curios:hands', 'kubejs:glove')
