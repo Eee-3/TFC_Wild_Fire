@@ -1,0 +1,16 @@
+{
+  "type": "createmetallurgy:melting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:sand"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "amount": 50,
+      "fluid": "kubejs:molten_glass"
+    }
+  ]
+}

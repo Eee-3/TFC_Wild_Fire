@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
   event.remove({ type: 'createmetallurgy:casting_in_basin' })
 
   const recipes = [
-/*     {
+    /*{
       ingredients: [
         { item: 'immersiveengineering:treated_wood_horizontal' },
         { amount: 100, fluid: 'tfc:metal/brass', nbt: {} }
@@ -16,6 +16,15 @@ ServerEvents.recipes((event) => {
       result: { item: 'create:brass_casing' },
       id: `${id_prefix}brass_casing`
     }, */
+    {
+      ingredients: [
+        { amount: 1000, fluid: 'kubejs:molten_glass', nbt: {} }
+      ],
+      mold_consumed: true,
+      processingTime: 180,
+      result: { item: 'minecraft:glass' },
+      id: `${id_prefix}glass_foundry`
+    }, 
 
   ];
 

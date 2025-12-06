@@ -1,0 +1,16 @@
+{
+  "type": "createmetallurgy:melting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:glass"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "kubejs:molten_glass"
+    }
+  ]
+}

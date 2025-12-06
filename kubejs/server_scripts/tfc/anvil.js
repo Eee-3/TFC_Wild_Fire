@@ -111,8 +111,8 @@ ServerEvents.recipes(e => {
     ]
   ).tier(2).bonus(true).id("kubejs:tfc/anvil/brass_forge_door/anvil");
     tfc.anvil(// 机械手的铁砧配方
-   'create:brass_hand',
-   'tfc:metal/double_sheet/brass',
+    'create:brass_hand',
+    'tfc:metal/double_sheet/brass',
     [
       'hit_any',
       "draw_second_last",
@@ -181,7 +181,7 @@ ServerEvents.recipes(a => {
     { mod: "kubejs:", weaponname: "warhammer_weapon_part", metalnumber: "triple_", a1: "upset_last", a2: "upset_second_last", a3: "shrink_any" },//战锤(三锭)
     { mod: "kubejs:", weaponname: "flanged_mace_weapon_part", metalnumber: "triple_", a1: "hit_last", a2: "shrink_not_last", a3: "upset_any" },//钉锤（三锭）
     { mod: "kubejs:", weaponname: "glaive_weapon_part", metalnumber: "triple_", a1: "hit_last", a2: "draw_any", a3: "bend_not_last" },//长柄刀（三锭）
-    { mod: "tfc:metal/", weaponname: "quarterstaff_weapon_part", metalnumber: "ingot/", a1: "draw_any", a2: "shrink_last", a3: "hit_any" }//矛(单锭)
+    { mod: "tfc:metal/", weaponname: "quarterstaff_weapon_part", metalnumber: "ingot/", a1: "draw_any", a2: "shrink_last", a3: "hit_any" },//矛(单锭)
   ];
 
   weapon_part.forEach(abd => {
@@ -243,6 +243,17 @@ const metalhotf = [
       ]
     ).tier(metal.num).bonus(true).id(`kubejs:tfc/anvil/${metal.metal}_tong_part`);
 
+    });
+  metalhot.forEach(metal => {
+    tfc.anvil(// 鱼钩的铁砧配方
+      `tfc:metal/fish_hook/${metal.metal}`,
+      `tfc:metal/rod/${metal.metal}`,
+      [
+        'draw_not_last',
+        "bend_any",
+        "hit_any"
+      ]
+    ).tier(metal.num).bonus(true).id(`kubejs:tfc/anvil/${metal.metal}_fish_hook`);
   });
 
 

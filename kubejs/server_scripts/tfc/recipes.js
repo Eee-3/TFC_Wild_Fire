@@ -109,6 +109,169 @@ ServerEvents.recipes(event => {
     d: '#minecraft:logs',
     e: 'design_decor:industrial_gear_large',
   }) // 粉碎轮
+  create.mechanical_crafting('createdieselgenerators:pumpjack_bearing', [
+    " a a ",
+    "ebcbe",
+    " ada ",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/double_sheet/zinc',
+    c: 'create:mechanical_bearing',
+    d: 'create:percision_mechanism',
+    e: 'create:shaft',
+  }) // 抽油机轴承
+  create.mechanical_crafting('createdieselgenerators:pumpjack_head', [
+    " aba",
+    "cd  ",
+    " aba",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/sheet/zinc',
+    c: 'create:andesite_alloy_block',
+    d: 'tfc:metal/rod/steel',
+  }) // 抽油机驴头
+  event.shaped('createdieselgenerators:diesel_engine', [
+    "aba",
+    "aca",
+    "ded"
+  ], {
+    a: 'createdieselgenerators:engine_piston',
+    b: 'vintageimprovements:andesite_sheet',
+    c: 'minecraft:flint',
+    d: 'tfc:metal/sheet/cast_iron',
+    e: 'design_decor:gas_tank'
+  }) // 小型柴油引擎
+
+  create.mechanical_crafting('createdieselgenerators:large_diesel_engine', [
+    " b ",
+    "aca",
+    "dbd",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/block/wrought_iron_slab',
+    c: 'createdieselgenerators:diesel_engine',
+    d: 'tfc:metal/sheet/cast_iron',
+  }) // 模块柴油引擎
+  create.mechanical_crafting('createdieselgenerators:huge_diesel_engine', [
+    "aba c",
+    "defgh",
+    "aba c",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/sheet/wrought_iron',
+    c: 'create:andesite_alloy_block',
+    d: 'create:fluid_pipe',
+    e: 'tfc:metal/block/steel',
+    f: 'tfc:metal/rod/wrought_iron',
+    g: 'tfc:metal/sheet/bronze',
+    h: 'create:shaft',
+  }) // 大型柴油引擎
+  create.mechanical_crafting('createdieselgenerators:burner', [
+    "  e  ",
+    "facaf",
+    "gdbdg",
+  ], {
+    a: 'create:shaft',
+    b: 'create:fluid_valve',
+    c: 'create:fluid_pipe',
+    d: 'tfc:metal/sheet/wrought_iron',
+    e: 'minecraft:flint',
+    f: 'tfc:metal/rod/wrought_iron',
+    g: 'tfc:metal/sheet/cast_iron',
+  }) // 可控燃烧室
+  create.mechanical_crafting('createdieselgenerators:pumpjack_crank', [
+    "a a",
+    "dbd",
+    "cec",
+    "fbf",
+    "cec",
+  ], {
+    a: 'create:metal_girder',
+    b: 'create:shaft',
+    c: 'vintageimprovements:andesite_sheet',
+    d: 'vintageimprovements:iron_spring',
+    e: 'tfc:metal/double_sheet/zinc',
+    f: 'tfc:metal/sheet/cast_iron',
+  }) // 抽油机曲柄
+  create.mechanical_crafting('createdieselgenerators:engine_piston', [
+    "a",
+    "d",
+    "b",
+    "c",
+  ], {
+    a: 'tfc:metal/sheet/wrought_iron',
+    b: 'tfc:metal/rod/wrought_iron',
+    c: 'create:zinc_nugget',
+    d: 'tfc:brass_mechanisms',
+  }) // 引擎活塞
+  event.shaped('createdieselgenerators:engine_silencer',
+        [
+            'ca ',
+            'aca',
+            ' ab'
+        ],
+        {
+            a: 'vintageimprovements:andesite_sheet',
+            b: 'tfc:metal/rod/wrought_iron',
+            c: '#loot:clean_cloth'
+        }
+  ) //引擎消嘤器
+  create.mechanical_crafting('createdieselgenerators:engine_turbocharger', [
+    "cba",
+    "bdb",
+    " b ",
+  ], {
+    a: 'create:fluid_pipe',
+    b: 'vintageimprovements:andesite_sheet',
+    c: 'tfc:metal/sheet/wrought_iron',
+    d: 'create:propeller',
+  }) // 引擎涡轮增压器
+  event.shaped('createdieselgenerators:bulk_fermenter',
+        [
+            'dbd',
+            'a a',
+            'cbc'
+        ],
+        {
+            a: 'tfc:metal/sheet/wrought_iron',
+            b: 'vintageimprovements:andesite_sheet',
+            c: 'tfc:metal/sheet/cast_iron',
+            d: 'create:andesite_alloy'
+        }
+  ) //大型发酵储罐
+  event.shaped('createdieselgenerators:basin_lid',
+        [
+            ' a ',
+            'cbc'
+        ],
+        {
+            a: 'minecraft:clock',
+            b: 'vintageimprovements:andesite_sheet',
+            c: 'tfc:metal/sheet/cast_iron'
+        }
+  ) //工作盆盖板
+  event.shaped('createdieselgenerators:oil_barrel',
+        [
+            'b',
+            'c',
+            'b'
+        ],
+        {
+            b: 'tfc:metal/sheet/wrought_iron',
+            c: '#tfc:barrels'
+        }
+  ) //燃油储罐
+  event.shaped('design_decor:gas_tank',
+        [
+            'b',
+            'c'
+        ],
+        {
+            b: 'tfc:metal/sheet/wrought_iron',
+            c: '#tfc:barrels'
+        }
+  ) //小型铁流体储罐
+
 
 
 })

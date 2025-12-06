@@ -1,0 +1,107 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createmetallurgy:graphite_blank_mold"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "createmetallurgy:foundry_unit"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        },
+        {
+          "item": "tfc:metal/sheet/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        },
+        {
+          "item": "vintageimprovements:redstone_module"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        },
+        {
+          "item": "firmalife:reinforced_glass"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:graphite_blank_mold"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createmetallurgy:graphite_blank_mold"
+  }
+}

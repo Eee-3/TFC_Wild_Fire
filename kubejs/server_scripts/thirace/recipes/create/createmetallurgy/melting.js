@@ -21,6 +21,27 @@ ServerEvents.recipes((event) => {
             results: [{ amount: 50, fluid: 'tfc_ie_addon:metal/aluminum' }],
             id: `${id_prefix}aluminum_rod`
         },
+        {
+            ingredients: [{ tag: 'forge:glass' }],
+            heatRequirement: 'heated',
+            processingTime: 60,
+            results: [{ amount: 1000, fluid: 'kubejs:molten_glass' }],
+            id: `${id_prefix}molten_glass`
+        },
+        {
+            ingredients: [{ tag: 'forge:sand' }],
+            heatRequirement: 'heated',
+            processingTime: 240,
+            results: [{ amount: 50, fluid: 'kubejs:molten_glass' }],
+            id: `${id_prefix}molten_glass_from_sand`
+        },
+        {
+            ingredients: [{ tag: 'tfc:glass_batches' }],
+            heatRequirement: 'heated',
+            processingTime: 100,
+            results: [{ amount: 250, fluid: 'kubejs:molten_glass' }],
+            id: `${id_prefix}molten_glass_from_batches`
+        },
 
 
 

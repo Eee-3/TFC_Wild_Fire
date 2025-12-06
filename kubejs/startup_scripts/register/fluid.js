@@ -114,9 +114,18 @@ StartupEvents.registry("fluid",event=>{
     .noBlock()
     .noBucket()
 
+    //各种酒水流体
+
     event.create("kubejs:beetroot_juice")
     .thinTexture(0XE08888)
+    //甜菜汁
 
     event.create("kubejs:condensed_beetroot_juice")
     .thinTexture(0XC16051)
+    //浓缩甜菜汁
+
+    event.create("kubejs:molten_glass")
+    .stillTexture('kubejs:fluid/glass/molten_glass_still')
+    .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
+    //熔融玻璃
 })

@@ -33,10 +33,10 @@ ServerEvents.recipes(event => {
     create.splashing([Item.of('tfc:powder/graphite').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/graphite'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/graphite`); 
-    create.splashing([Item.of('minecraft:redstone_wire').withChance(1)],
+    create.splashing([Item.of('minecraft:redstone').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/cryolite'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/cryolite`);
-    create.splashing([Item.of('minecraft:redstone_wire').withChance(1)],
+    create.splashing([Item.of('minecraft:redstone').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/cinnabar'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/cinnabar`);
 

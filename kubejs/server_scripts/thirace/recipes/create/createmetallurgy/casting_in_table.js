@@ -15,9 +15,24 @@ ServerEvents.recipes((event) => {
       result: { item: 'kubejs:alumina_dioxide' },
       id: `${id_prefix}alumina_dioxide`
     },
-
-
-
+    {
+      ingredients: [
+        { amount: 250, fluid: 'kubejs:molten_glass' }
+      ],
+      processingTime: 150,
+      result: { item: 'minecraft:glass_pane' },
+      id: `${id_prefix}glass_pane`
+    },
+    {
+      ingredients: [
+        { item: 'tfc:powder/soda_ash' },
+        { amount: 250, fluid: 'kubejs:molten_glass' }
+      ],
+      mold_consumed: 'true',
+      processingTime: 300,
+      result: { item: 'firmalife:reinforced_glass' },
+      id: `${id_prefix}reinforced_glass`
+    },
   ];
 
   const metals = [
@@ -31,7 +46,8 @@ ServerEvents.recipes((event) => {
     'blue_steel',
     'red_steel'
   ];
-  const molds_1 = [
+  const molds_1 = [//100mb
+
     { mod: 'tfc', head: 'chisel_head' },
     { mod: 'tfc', head: 'propick_head' },
     { mod: 'tfc', head: 'knife_blade' },
@@ -46,21 +62,27 @@ ServerEvents.recipes((event) => {
     //{ mod: 'tfc', head: 'bell' },
     //{ mod: 'tfcchannelcasting', head: 'heart' },
   ]
-  const molds_2 = [
-    { mod: 'tfc', head: 'fish_hook' },
+  const molds_2 = [//200mb
+
     { mod: 'tfc', head: 'mace_head' },
     { mod: 'tfc', head: 'sword_blade' },
     { mod: 'tfcscraping', head: 'scraping_knife_blade' },
     { mod: 'precisionprospecting', head: 'mineral_prospector_head' },
     { mod: 'precisionprospecting', head: 'prospector_hammer_head' },
     { mod: 'tfc_hammer_time', head: 'excavator_head' },
+  ]
+  const molds_3 = [//300mb
+
     { mod: 'tfc_hammer_time', head: 'sledgehammer_head' },
   ]
-  const molds_3 = [
+  const molds_4 = [//400mb
+
     { mod: 'precisionprospecting', head: 'prospector_drill_head' },
   ]
-  const molds_4 = [
+  const molds_5 = [//50mb
+
     { mod: 'artisanal', head: 'circle_blade' },
+    { mod: 'tfc', head: 'fish_hook' },
   ]
   metals.forEach((metal) => {
     molds_1.forEach((mold) => {
@@ -69,7 +91,7 @@ ServerEvents.recipes((event) => {
           { item: `kubejs:graphite_${mold.head}_mold` },
           { amount: 100, fluid: `tfc:metal/${metal}`, nbt: {} }
         ],
-        processingTime: 100,
+        processingTime: 200,
         result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
         id: `${id_prefix}${mold.head}/${metal}`
       });
@@ -80,7 +102,7 @@ ServerEvents.recipes((event) => {
           { item: `kubejs:graphite_${mold.head}_mold` },
           { amount: 200, fluid: `tfc:metal/${metal}`, nbt: {} }
         ],
-        processingTime: 200,
+        processingTime: 400,
         result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
         id: `${id_prefix}${mold.head}/${metal}`
       });
@@ -91,7 +113,7 @@ ServerEvents.recipes((event) => {
           { item: `kubejs:graphite_${mold.head}_mold` },
           { amount: 300, fluid: `tfc:metal/${metal}`, nbt: {} }
         ],
-        processingTime: 300,
+        processingTime: 600,
         result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
         id: `${id_prefix}${mold.head}/${metal}`
       });
@@ -100,9 +122,20 @@ ServerEvents.recipes((event) => {
       recipes.push({
         ingredients: [
           { item: `kubejs:graphite_${mold.head}_mold` },
+          { amount: 400, fluid: `tfc:metal/${metal}`, nbt: {} }
+        ],
+        processingTime: 800,
+        result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
+        id: `${id_prefix}${mold.head}/${metal}`
+      });
+    });
+    molds_5.forEach((mold) => {
+      recipes.push({
+        ingredients: [
+          { item: `kubejs:graphite_${mold.head}_mold` },
           { amount: 50, fluid: `tfc:metal/${metal}`, nbt: {} }
         ],
-        processingTime: 50,
+        processingTime: 100,
         result: { item: `${mold.mod}:metal/${mold.head}/${metal}` },
         id: `${id_prefix}${mold.head}/${metal}`
       });
@@ -190,7 +223,7 @@ ServerEvents.recipes((event) => {
           { item: 'createmetallurgy:graphite_ingot_mold' },
           { amount: 100, fluid: `firmalife:metal/${metal.item}`, nbt: {} }
         ],
-        processingTime: 100,
+        processingTime: 150,
         result: { item: `firmalife:metal/ingot/${metal.item}` },
         id: `${id_prefix}ingot/${metal.item}`
       });
@@ -220,7 +253,7 @@ ServerEvents.recipes((event) => {
           { item: 'createmetallurgy:graphite_ingot_mold' },
           { amount: 100, fluid: `tfc_ie_addon:metal/${metal.item}`, nbt: {} }
         ],
-        processingTime: 100,
+        processingTime: 150,
         result: { item: `immersiveengineering:ingot_${metal.item}` },
         id: `${id_prefix}ingot/${metal.item}`
       });

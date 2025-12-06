@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:quern",
+  "ingredient": {
+    "tag": "minecraft:saplings"
+  },
+  "result": {
+    "item": "createdieselgenerators:wood_chip",
+    "count": 1
+  }
+}
