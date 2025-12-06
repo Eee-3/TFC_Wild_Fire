@@ -46,7 +46,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfc:barrel/candle",
-      "text": "将$(thing)线$()封入装有$(thing)蜡脂$()的$(thing)大桶$()中凝固就能制成蜡烛。"
+      "text": "将$(thing)线$()封入装有$(thing)油脂$()的$(thing)大桶$()中凝固就能制成蜡烛。"
     },
     {
       "type": "patchouli:multiblock",

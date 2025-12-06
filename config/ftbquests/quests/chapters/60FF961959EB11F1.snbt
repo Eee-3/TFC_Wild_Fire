@@ -1311,7 +1311,7 @@
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
-			description: ["制作防水皮需要橄榄油，蜡脂或者蜂蜡，任何一种都需要不小的功夫，但只要你成功制作出防水皮，就能制作现版本唯一能制作的最便捷的水上交通工具：独木舟。"]
+			description: ["制作防水皮需要橄榄油，油脂或者蜂蜡，任何一种都需要不小的功夫，但只要你成功制作出防水皮，就能制作现版本唯一能制作的最便捷的水上交通工具：独木舟。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "firmaciv:large_waterproof_hide"

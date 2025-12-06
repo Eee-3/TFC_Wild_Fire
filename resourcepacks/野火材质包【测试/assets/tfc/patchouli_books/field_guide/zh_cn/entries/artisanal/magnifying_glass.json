@@ -15,7 +15,7 @@
       {
           "type": "tfc:anvil_recipe",
           "recipe": "artisanal:anvil/metal/magnifying_glass_frame/brass",
-          "text": "要制作放大镜，首先用你选择的材料棒锻造一个$(thing)放大镜框架$()。放大镜可以由多种材料制成，包括：$(br2)铋$(br)黄铜$(br)金$(br)玫瑰金$(br)银$(br)纯银$(br)锡$(br2)"
+          "text": "要制作放大镜，首先用你选择的材料棒锻造一个$(thing)放大镜框架$()。放大镜可以由多种材料制成，包括：$(br2)铋$(br)黄铜$(br)金$(br)玫瑰金$(br)银$(br)纹银$(br)锡$(br2)"
       },
       {
           "type": "patchouli:crafting",

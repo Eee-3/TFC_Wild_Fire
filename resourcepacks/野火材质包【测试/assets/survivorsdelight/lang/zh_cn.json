@@ -52,6 +52,6 @@
   "gui.survivorsdelight.pot.fluid_menu": "流体菜单",
   "gui.survivorsdelight.pot.pot_menu": "锅具菜单",
   "tooltip.survivorsdelight.foodfallback": "该食物的实际营养值将基于你选择的食物原料变动",
-    "tooltip.survivorsdelight.cabinet_not_treated": "橱柜未被蜡脂处理过，在里面的食物仍按正常速度腐烂"
+    "tooltip.survivorsdelight.cabinet_not_treated": "橱柜未被油脂处理过，在里面的食物仍按正常速度腐烂"
 
 }
