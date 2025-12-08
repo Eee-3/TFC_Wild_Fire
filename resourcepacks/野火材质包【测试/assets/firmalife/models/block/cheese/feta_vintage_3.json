@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/cheese_alt_3",
+  "textures": {
+    "surface": "firmalife:block/cheese/feta_wheel_surface_vintage",
+    "particle": "firmalife:block/cheese/feta_wheel_surface_vintage",
+    "side": "firmalife:block/cheese/feta_wheel_side_vintage",
+    "down": "firmalife:block/cheese/feta_wheel_surface_vintage",
+    "inside": "firmalife:block/cheese/feta_wheel_inner_vintage"
+  }
+}

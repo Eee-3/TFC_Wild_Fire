@@ -141,7 +141,7 @@
 	[temperature.underground]
 		# How much a biomes temperature effects are multiplied when player is underground
 		#Range: 0.0 ~ 1000.0
-		"Underground Biome Temperature Multiplier" = 0.8
+		"Underground Biome Temperature Multiplier" = 1.3
 		# Distance to the World Surface where underground effect will start to be applied.
 		# Smaller distance, no underground effect are applied.
 		#Range: 0 ~ 400
