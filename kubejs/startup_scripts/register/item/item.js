@@ -73,6 +73,13 @@ StartupEvents.registry('item', event => {
     event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
     event.create('bone_butchersknife_blade', 'basic').texture('kubejs:item/tfc/bone_butchersknife_blade'); // 骨刮皮刀
 
+   
+   
+    event.create('aluminum_chromium_mix_powder', 'basic').texture('kubejs:item/tfc/bone_fish_hook');// 铝铬混合粉
+    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/bone_fish_hook');   // 刚玉砖
+    event.create('corundum_brick_block', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 刚玉砖块
+ 
+
     //万象瑞雪模型以及
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
@@ -157,9 +164,9 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
 })
 StartupEvents.registry("item", event => {   //工业线盔甲相关
     // 半成品黄铜骑士盔甲
-    event.create('kubejs:prototype_finished_cogknight_helmet','helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass'); // 原型齿轮骑士头盔
-    event.create('kubejs:prototype_finished_cogknight_chestplate','chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass'); // 原型齿轮骑士胸甲
-    event.create('kubejs:prototype_finished_cogknight_leggings','leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass'); // 原型齿轮骑士护腿
+    event.create('kubejs:prototype_finished_cogknight_helmet', 'helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass'); // 原型齿轮骑士头盔
+    event.create('kubejs:prototype_finished_cogknight_chestplate', 'chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass'); // 原型齿轮骑士胸甲
+    event.create('kubejs:prototype_finished_cogknight_leggings', 'leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass'); // 原型齿轮骑士护腿
     // 未完成黄铜骑士盔甲中间产物
     event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet'); // 未完成原型齿轮骑士头盔
     event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate'); // 未完成原型齿轮骑士胸甲

@@ -13,119 +13,122 @@ StartupEvents.registry("fluid", event => {
     event.create("legendary_ink")
         .thickTexture(0Xf9ad1c)
         .noBlock()
-        
+
+    event.create('synthetic_corundum',)
+        .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
+        .thinTexture(0XC16051) // 人造刚玉
 })
-StartupEvents.registry("fluid",event=>{
+StartupEvents.registry("fluid", event => {
     event.create("kubejs:heavy_oil")
-    .thickTexture(0X1F1826)
-    .noBlock()
+        .thickTexture(0X1F1826)
+        .noBlock()
 
     event.create("kubejs:light_oil")
-    .thickTexture(0X261A15)
-    .noBlock()
+        .thickTexture(0X261A15)
+        .noBlock()
 
     event.create("kubejs:beer_maize")
-    .stillTexture('kubejs:fluid/alcohol/beer_maize')
-    .flowingTexture('kubejs:fluid/alcohol/beer_maize_flowing')
-    .noBlock()
-    .noBucket()
+        .stillTexture('kubejs:fluid/alcohol/beer_maize')
+        .flowingTexture('kubejs:fluid/alcohol/beer_maize_flowing')
+        .noBlock()
+        .noBucket()
 
     event.create("kubejs:beer_barley")
-    .stillTexture('kubejs:fluid/alcohol/beer_barley')
-    .flowingTexture('kubejs:fluid/alcohol/beer_barley_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/beer_barley')
+        .flowingTexture('kubejs:fluid/alcohol/beer_barley_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:beer_hops")
-    .stillTexture('kubejs:fluid/alcohol/beer_hops')
-    .flowingTexture('kubejs:fluid/alcohol/beer_hops_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/beer_hops')
+        .flowingTexture('kubejs:fluid/alcohol/beer_hops_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:beer_rye")
-    .stillTexture('kubejs:fluid/alcohol/beer_rye')
-    .flowingTexture('kubejs:fluid/alcohol/beer_rye_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/beer_rye')
+        .flowingTexture('kubejs:fluid/alcohol/beer_rye_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:beer_oat")
-    .stillTexture('kubejs:fluid/alcohol/beer_oat')
-    .flowingTexture('kubejs:fluid/alcohol/beer_oat_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/beer_oat')
+        .flowingTexture('kubejs:fluid/alcohol/beer_oat_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:beer_haley")
-    .stillTexture('kubejs:fluid/alcohol/beer_haley')
-    .flowingTexture('kubejs:fluid/alcohol/beer_haley_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/beer_haley')
+        .flowingTexture('kubejs:fluid/alcohol/beer_haley_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_jojannik")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_jojannik')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_jojannik_flowing')
-    .noBlock()
-    .noBucket()
-    
+        .stillTexture('kubejs:fluid/alcohol/whiskey_jojannik')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_jojannik_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_lilitusinglemalt")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_lilitusinglemalt')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_lilitusinglemalt_flowing')
-    .noBlock()
-    .noBucket()
-        
+        .stillTexture('kubejs:fluid/alcohol/whiskey_lilitusinglemalt')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_lilitusinglemalt_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_cristelwalker")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_cristelwalker')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_cristelwalker_flowing')
-    .noBlock()
-    .noBucket()
-        
+        .stillTexture('kubejs:fluid/alcohol/whiskey_cristelwalker')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_cristelwalker_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_maggoallan")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_maggoallan')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_maggoallan_flowing')
-    .noBlock()
-    .noBucket()
-        
+        .stillTexture('kubejs:fluid/alcohol/whiskey_maggoallan')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_maggoallan_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_carrasconlabel")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_carrasconlabel')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_carrasconlabel_flowing')
-    .noBlock()
-    .noBucket()
-        
+        .stillTexture('kubejs:fluid/alcohol/whiskey_carrasconlabel')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_carrasconlabel_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_ak")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_ak')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_ak_flowing')
-    .noBlock()
-    .noBucket()
-        
+        .stillTexture('kubejs:fluid/alcohol/whiskey_ak')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_ak_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_highland_hearth")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_highland_hearth')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_highland_hearth_flowing')
-    .noBlock()
-    .noBucket()
-            
+        .stillTexture('kubejs:fluid/alcohol/whiskey_highland_hearth')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_highland_hearth_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_smokey_reverie")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_smokey_reverie')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_smokey_reverie_flowing')
-    .noBlock()
-    .noBucket()
-            
+        .stillTexture('kubejs:fluid/alcohol/whiskey_smokey_reverie')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_smokey_reverie_flowing')
+        .noBlock()
+        .noBucket()
+
     event.create("kubejs:whiskey_jamesons_malt")
-    .stillTexture('kubejs:fluid/alcohol/whiskey_jamesons_malt')
-    .flowingTexture('kubejs:fluid/alcohol/whiskey_jamesons_malt_flowing')
-    .noBlock()
-    .noBucket()
+        .stillTexture('kubejs:fluid/alcohol/whiskey_jamesons_malt')
+        .flowingTexture('kubejs:fluid/alcohol/whiskey_jamesons_malt_flowing')
+        .noBlock()
+        .noBucket()
 
     //各种酒水流体
 
     event.create("kubejs:beetroot_juice")
-    .thinTexture(0XE08888)
+        .thinTexture(0XE08888)
     //甜菜汁
 
     event.create("kubejs:condensed_beetroot_juice")
-    .thinTexture(0XC16051)
+        .thinTexture(0XC16051)
     //浓缩甜菜汁
 
     event.create("kubejs:molten_glass")
-    .stillTexture('kubejs:fluid/glass/molten_glass_still')
-    .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
+        .stillTexture('kubejs:fluid/glass/molten_glass_still')
+        .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
     //熔融玻璃
 })

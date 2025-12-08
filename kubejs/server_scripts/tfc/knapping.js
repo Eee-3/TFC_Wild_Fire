@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
     },
     // 6. 刀身（3种对称图案+2种简化图案，区分多产出/单产出）
     {
-      partName: "knife_blade",
+      partName: "knife_head",
       outputCount: 2, // 完整图案（5行）产出2个
       patterns: [
         [
