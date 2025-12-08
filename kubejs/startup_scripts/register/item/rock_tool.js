@@ -37,13 +37,8 @@ StartupEvents.registry('item', event => {
 
         // 2. 标枪
         event.create(`kubejs:rock_tool/${material}_javelin`, 'tfc:javelin')
-<<<<<<< HEAD
             .maxDamage(maxDamage)
             .thrownDamage(1 + javelinattackDamage)
-=======
-            .attackDamageBaseline(maxDamage)
-            .thrownDamage(3 + attackDamage)
->>>>>>> 84d95ffa070c72c9ab7dfee1e13dc1607d97882c
             .texture(`kubejs:item/tfc/${material}/javelin`)
             .tag('tfc:usable_on_tool_rack')
             .attackDamageBaseline(javelinattackDamage-3);
