@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "heating_coat",
+    "key": {
+      "a": {
+        "item": "legendarysurvivaloverhaul:warm_string"
+      },
+      "b": {
+      "item": "kubejs:iron_needle"
+    },
+    "c": {
+      "item": "tfc:metal/rod/copper"
+      }
+    },
+    "pattern": [
+      " a ",
+      "bac",
+      " a "
+    ],
+    "result": {
+      "item": "legendarysurvivaloverhaul:heating_coat_2"
+    },
+    "show_notification": true
+  }
+}

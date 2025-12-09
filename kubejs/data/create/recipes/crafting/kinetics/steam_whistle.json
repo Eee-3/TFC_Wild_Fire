@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "c": {
+      "item": "tfc:metal/sheet/brass"
+    }
+  },
+  "pattern": [
+    "c",
+    "b"
+  ],
+  "result": {
+    "item": "create:steam_whistle"
+  }
+}

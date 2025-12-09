@@ -11,9 +11,6 @@ ServerEvents.recipes(event => {
     event.shaped('createmetallurgy:foundry_basin', ['a a', 'bcb'], {
         a: 'vintageimprovements:andesite_sheet', b: 'tfc:metal/sheet/cast_iron', c: 'tfc:crucible'
     })//熔铸盆
-    event.shaped('createmetallurgy:foundry_basin', ['bcb'], {
-        b: 'tfc:metal/sheet/cast_iron', c: 'tfc:crucible', d: 'create:vertical_gearbox'
-    })//工作盆盖子
     event.shaped('createmetallurgy:foundry_lid', ['bcb', 'a a'], {
         a: 'vintageimprovements:andesite_sheet', b: 'tfc:metal/sheet/cast_iron', c: 'tfc:metal/tuyere/wrought_iron'
     }) //熔铸盆盖子
@@ -94,6 +91,8 @@ ServerEvents.recipes(event => {
          event.shaped(Item.of('butcher:bonebutchersknife'), ['kubejs:bone_skinningknife_blade','#forge:rods/wooden'])//骨头刀合成
           event.shaped(Item.of('kubejs:bone_fishing_rod'), [['#forge:rods/wooden','farmersdelight:rope'],['#forge:rods/wooden','kubejs:bone_fish_hook']])//骨头吊杆合成
 
+
+    event.shapeless('supplementaries:candle_holder', ['tfc:candle', 'tfc:metal/ingot/cast_iron']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
 
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'tfc:wood/log/oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  橡木
     event.shapeless('minecraft:oak_log', ['#tfc:chisels', 'afc:wood/log/ancient_oak']).keepIngredient({ item: '#tfc:chisels' })//橡木原木  古代

@@ -76,12 +76,13 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}support/${wood}_wood`
         });
 
-        //support > lumber
+        //support > lumber & sawdust
         recipes.push({
             ingredients: `tfc:wood/support/${wood}`,
             processingTime: 40,
             results: [
-                { item: `tfc:wood/lumber/${wood}`, count: 4 },
+                { item: `tfc:wood/lumber/${wood}`, count: 2 },
+                { item: `immersiveengineering:dust_wood`, count: 1 },
             ],
             id: `${id_prefix}lumber/${wood}`
         });

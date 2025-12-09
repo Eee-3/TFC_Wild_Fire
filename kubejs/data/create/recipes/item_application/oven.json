@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "firmalife:cured_oven_bottom"
+    },
+    {
+      "item": "tfc:wrought_iron_grill"
+    }
+  ],
+  "results": [
+    {
+    "item": "farmersdelight:stove"
+    }
+  ]
+}

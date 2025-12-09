@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "tfc:leather_knapping"
+    },
+    "b": {
+      "item": "create:sticker"
+    },
+    "c": {
+      "item": "create:brass_casing"
+    }
+  },
+  "pattern": [
+    "ca ",
+    "aaa",
+    " ab"
+  ],
+  "result": {
+    "item": "create:elevator_pulley"
+  }
+}

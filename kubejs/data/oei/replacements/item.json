@@ -49,12 +49,6 @@
     },
     {
         "matchItems": [
-            "vintageimprovements:belt_grinder"
-        ],
-        "resultItems": "createmetallurgy:mechanical_belt_grinder"
-    },
-    {
-        "matchItems": [
             "naturalist:venison"
         ],
         "resultItems": "tfc:food/venison"

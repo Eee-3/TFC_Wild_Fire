@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         { type: 'createmetallurgy:entity_melting' },
-        { type: 'createmetallurgy:grinding' },
+        //{ type: 'createmetallurgy:grinding' },
         { input: /createmetallurgy:raw_.*/ },
         { output: /createmetallurgy:raw_.*/ },
         { input: /createmetallurgy:tungsten_.*/ },
@@ -15,8 +15,8 @@ ServerEvents.recipes((event) => {
         { output: /createmetallurgy:.*_dust/ },
         { input: /createmetallurgy:obdurium_.*/ },
         { output: /createmetallurgy:obdurium_.*/ },
-        { input: 'createmetallurgy:coke' },
-        { output: 'createmetallurgy:coke' },
+        //{ input: 'createmetallurgy:coke' },
+        //{ output: 'createmetallurgy:coke' },
         { input: 'createmetallurgy:coke_block' },
         { output: 'createmetallurgy:coke_block' },
         { id: 'createmetallurgy:casting_in_table/slag_casting' },

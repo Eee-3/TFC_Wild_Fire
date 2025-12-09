@@ -1,0 +1,12 @@
+{
+  "type": "legendarysurvivaloverhaul:sewing",
+  "addition": {
+    "item": "legendarysurvivaloverhaul:cooling_coat_1"
+  },
+  "base": {
+    "item": "legendarysurvivaloverhaul:heating_coat_1"
+  },
+  "result": {
+    "item": "legendarysurvivaloverhaul:thermal_coat_1"
+  }
+}

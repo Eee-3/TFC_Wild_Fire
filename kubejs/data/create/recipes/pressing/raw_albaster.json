@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "tfc:limewater"
+    },
+    {
+        "item": "tfc:ore/gypsum"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:albaster/raw"
+    }
+  ]
+}

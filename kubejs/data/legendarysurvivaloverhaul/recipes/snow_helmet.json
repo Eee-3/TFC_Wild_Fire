@@ -1,0 +1,21 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+      "tag": "tfc:sewing_needles"
+      },
+      {
+      "item": "minecraft:leather_helmet"
+      },
+      {
+      "item": "tfc:wool_cloth"
+      }
+    ],
+  "result": {
+    "item": "legendarysurvivaloverhaul:snow_helmet"
+    },
+    "show_notification": true
+  }
+}

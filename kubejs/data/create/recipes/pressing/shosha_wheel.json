@@ -1,0 +1,30 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "tfc:salt_water"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/yak_curd"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/yak_curd"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/yak_curd"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:shosha_wheel"
+    }
+  ]
+}

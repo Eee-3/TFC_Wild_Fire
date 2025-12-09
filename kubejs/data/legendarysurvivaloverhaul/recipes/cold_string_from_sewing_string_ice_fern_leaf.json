@@ -7,6 +7,7 @@
     "item": "minecraft:string"
   },
   "result": {
+    "count": 12,
     "item": "legendarysurvivaloverhaul:cold_string"
   }
 }

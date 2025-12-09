@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "thermal_coat",
+    "key": {
+      "a": {
+        "item": "legendarysurvivaloverhaul:warm_string"
+      },
+      "b": {
+      "item": "kubejs:iron_needle"
+    },
+    "c": {
+      "item": "tfc:metal/rod/black_bronze"
+    },
+    "d": {
+      "item": "legendarysurvivaloverhaul:thermal_coat_1"
+    },
+    "e": {
+      "item": "legendarysurvivaloverhaul:cold_string"
+      }
+    },
+    "pattern": [
+      " e ",
+      "bdc",
+      " a "
+    ],
+    "result": {
+      "item": "legendarysurvivaloverhaul:thermal_coat_2"
+    },
+    "show_notification": true
+  }
+}

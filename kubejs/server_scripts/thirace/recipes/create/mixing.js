@@ -49,6 +49,50 @@ ServerEvents.recipes((event) => {
         })
     });
 
+    colors.forEach((color) => {
+        recipes.push({
+            results: [{ item: `minecraft:${color}_concrete_powder` }],
+            ingredients: [
+                { item: `tfc:aggregate` },
+                { fluid: `tfc:${color}_dye`, amount: 25 }
+            ],
+            id: `${id_prefix}color/${color}_concrete_powder`
+        })
+    });
+
+        colors.forEach((color) => {
+        recipes.push({
+            results: [{ item: `minecraft:${color}_carpet` }],
+            ingredients: [
+                { item: `minecraft:white_carpet` },
+                { fluid: `tfc:${color}_dye`, amount: 25 }
+            ],
+            id: `${id_prefix}color/${color}_carpet`
+        })
+    });
+
+            colors.forEach((color) => {
+        recipes.push({
+            results: [{ item: `tfc:ceramic/unfired_large_vessel/${color}` }],
+            ingredients: [
+                { item: `tfc:ceramic/unfired_large_vessel` },
+                { fluid: `tfc:${color}_dye`, amount: 25 }
+            ],
+            id: `${id_prefix}color/${color}_large_vessel`
+        })
+    });
+
+        colors.forEach((color) => {
+        recipes.push({
+            results: [{ item: `tfc:candle/${color}` }],
+            ingredients: [
+                { item: `tfc:candle` },
+                { fluid: `tfc:${color}_dye`, amount: 25 }
+            ],
+            id: `${id_prefix}color/${color}_candle`
+        })
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'create:mixing';
         event.custom(recipe).id(recipe.id);

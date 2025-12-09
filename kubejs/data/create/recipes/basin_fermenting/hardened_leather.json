@@ -3,16 +3,32 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "tfc:powder/sulfur"
+      "item": "tfc:powder/saltpeter"
     },
     {
-      "fluid": "afc:latex",
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "fluid": "tfc:tannin",
       "amount": 1000
     }
   ],
   "processingTime": 200,
   "results": [
     {
+      "count": 4,
       "item": "kubejs:hardened_leather"
     }
   ]

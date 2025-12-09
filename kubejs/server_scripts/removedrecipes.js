@@ -77,8 +77,37 @@ ServerEvents.recipes(e => {
     "farmersdelight:lead_from_straw",
     "tfc:crafting/lead",
     "minecraft:lead",
+    
+
+    "woodencog:crafting/item_application/copper_casing_from_log_using_deployer",
+    "woodencog:crafting/item_application/copper_casing_from_log",
+    "create:item_application/copper_casing_from_log_using_deployer",
+    "create:item_application/copper_casing_from_log",
+    "woodencog:crafting/item_application/copper_casing_from_wood_using_deployer",
+    "woodencog:crafting/item_application/copper_casing_from_wood",
+    "create:item_application/copper_casing_from_wood_using_deployer",
+    "create:item_application/copper_casing_from_wood",
+
+    "create:crafting/kinetics/spout",
+    "create:crafting/kinetics/copper_valve_handle",
+    "woodencog:crafting/kinetics/item_drain",
+    "woodencog:crafting/kinetics/hose_pulley",
+    "create:crafting/kinetics/hose_pulley",
+    "woodencog:crafting/kinetics/elevator_pulley",
+    "create:crafting/kinetics/elevator_pulley",
+
+    "scguns:treated_iron/treated_iron_cauldron",
+    "tfc:crafting/vanilla/cauldron",
+    "minecraft:cauldron",
+    "fluid:centrifugal_pump",
+    "fluid:fluid_interface",
+    
+
+
     "create:crafting/kinetics/super_glue",
     "butcher:tfcspitroastrecipe"
+
+    
 
 
 

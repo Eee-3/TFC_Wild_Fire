@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "tfc:foods/flour"
+    },
+    {
+      "amount": 100,
+      "fluid": "firmalife:yeast_starter"
+    }
+  ],
+  "results": [
+    {
+      "amount": 600,
+      "fluid": "firmalife:yeast_starter"
+    }
+  ]
+}

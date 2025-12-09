@@ -1,18 +1,2 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "BiB",
-    "B B"
-  ],
-  "key": {
-    "i": {
-      "item": "tfc:wrought_iron_grill"
-    },
-    "B": {
-      "item": "firmalife:cured_oven_bottom"
-    }
-  },
-  "result": {
-    "item": "farmersdelight:stove"
-  }
 }

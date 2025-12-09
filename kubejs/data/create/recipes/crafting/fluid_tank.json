@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "b": {
+      "tag": "tfc:barrels"
+    }
+  },
+  "pattern": [
+    "b",
+    "a",
+    "b"
+  ],
+  "result": {
+    "item": "create:fluid_tank"
+  }
+}
