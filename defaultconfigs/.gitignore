@@ -3,6 +3,10 @@
 !/create-server.toml
 !/ftbessentials-server.snbt
 !/sophisticatedbackpacks-server.toml
+<<<<<<< HEAD
 !/tfc-server.toml
 !/firmalife-server.toml
 !/firmaciv-server.toml
+=======
+!/tfc-server.toml
+>>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372

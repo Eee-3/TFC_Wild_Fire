@@ -6,6 +6,8 @@ StartupEvents.registry("block", event => {
 
 })//安山齿轮机箱
 StartupEvents.registry('block', event => {
+        event.create('unfired_crucible_mold' ) // 未烧制的坩埚模具
+        event.create('crucible_mold') // 坩埚模具
         event.create('dried_sinew')
                 .material('wood')
                 .hardness(0.5)

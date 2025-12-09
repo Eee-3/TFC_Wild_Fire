@@ -22,7 +22,7 @@ ServerEvents.tags('item', event => {
     bindings_medium.forEach(medium => {
         event.add("kubejs:medium_binding", medium);
     });
-    event.add("kubejs:advanced_binding", 'kubejs:sinew_string');//完美
+    event.add("kubejs:advanced_binding", 'kubejs:sinew_thread');//完美
     event.add("kubejs:advanced_binding", 'firmaciv:rope_coil');//完美
 
 
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         { name: "hoe", type: "hoe_head" },
         { name: "axe", type: "axe_head" },
         { name: "shovel", type: "shovel_head" },
-        { name: "knife", type: "knife_blade" }
+        { name: "knife", type: "knife_head" }
     ];
     rock_tools.forEach(tool => {//tfc石头绑定
         rocktype.forEach(rock => {

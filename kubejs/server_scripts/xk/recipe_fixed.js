@@ -22,14 +22,14 @@ ServerEvents.recipes(event => {
 
   //石磨
   create.milling('2x tfc:olive_paste', 'tfc:food/olive') // 橄榄 => 2个橄榄糊
-  create.milling('4x tfc:powder/sulfur', 'tfc:ore/sulfur') // 硫磺矿石 => 4份硫磺粉末
+  //create.milling('4x tfc:powder/sulfur', 'tfc:ore/sulfur') // 硫磺矿石 => 4份硫磺粉末
   create.milling('6x tfc:powder/flux', 'tfc:ore/borax') // 硼砂矿石 => 6份助熔剂粉末
   create.milling('2x tfc:powder/flux', '#tfc:fluxstone') // 标签为 #tfc:fluxstone 的物品 => 2份助熔剂粉末
   create.milling('tfc:ore/gypsum', 'tfc:rock/raw/limestone') // 原始石灰石 => 石膏矿石
   create.milling('4x tfc:powder/ruby', 'tfc:ore/ruby') // 红宝石矿石 => 4份红宝石粉末
   create.milling('4x tfc:powder/ruby', 'tfc:gem/ruby') // 红宝石宝石 => 4份红宝石粉末
-  create.milling('8x minecraft:redstone', 'tfc:ore/cinnabar') // 辰砂矿石 => 8个原版红石
-  create.milling('8x minecraft:redstone', 'tfc:ore/cryolite') // 冰晶石矿石 => 8个原版红石
+  //create.milling('8x minecraft:redstone', 'tfc:ore/cinnabar') // 辰砂矿石 => 8个原版红石
+  //create.milling('8x minecraft:redstone', 'tfc:ore/cryolite') // 冰晶石矿石 => 8个原版红石
   create.milling('4x tfc:powder/pyrite', 'tfc:gem/pyrite') // 黄铁矿宝石 => 4份黄铁矿粉末
   create.milling('4x tfc:powder/pyrite', 'tfc:ore/pyrite') // 黄铁矿矿石 => 4份黄铁矿粉末
   create.milling('4x tfc:powder/lapis_lazuli', 'tfc:ore/lapis_lazuli') // 青金石矿石 => 4份青金石粉末
