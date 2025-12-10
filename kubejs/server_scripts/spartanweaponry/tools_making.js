@@ -29,6 +29,21 @@ const metalaa = [
       return result;
     };
   }
+   function applyForgingBonus2(metala, weaponName) {
+    return (inputGrid, result) => {
+      const head = inputGrid.findAll().find(stack =>
+        stack.id.toString().startsWith(`tfc:metal/javelin_head/${metala.name}`)
+      );
+      const headTag = head.getOrCreateTag();
+      let level = headTag.getInt("tfc:forging_bonus");
+      level = Math.min(level, 4);
+      const resultTag = result.getOrCreateTag();
+      resultTag.contains("tfc:forging_bonus")
+        ? resultTag.remove("tfc:forging_bonus")
+        : resultTag.putInt("tfc:forging_bonus", level);
+      return result;
+    };
+  }
 
   // 生成所有武器配方
   metalaa.forEach(metala => {
@@ -225,7 +240,7 @@ const metalaa = [
         E: 'spartanweaponry:pole'
       }
     ).id(`kubejs:${metala.name}_javelin_shaped`)
-      .modifyResult(applyForgingBonus(metala, "javelin"));
+      .modifyResult(applyForgingBonus2(metala, "javelin"));
     // 矛
     e.shaped(
       `kubejs:${metala.name}_spear`, [" A", "E "],
@@ -234,7 +249,7 @@ const metalaa = [
         E: 'spartanweaponry:pole'
       }
     ).id(`kubejs:${metala.name}_spear_shaped`)
-      .modifyResult(applyForgingBonus(metala, "spear"));
+      .modifyResult(applyForgingBonus2(metala, "spear"));
     // 长矛
     e.shaped(
       `kubejs:${metala.name}_pike`, ["  A", " E ", "E  "],
@@ -243,7 +258,7 @@ const metalaa = [
         E: 'spartanweaponry:pole'
       }
     ).id(`kubejs:${metala.name}_pike_shaped`)
-      .modifyResult(applyForgingBonus(metala, "pike"));
+      .modifyResult(applyForgingBonus2(metala, "pike"));
 
   });
 

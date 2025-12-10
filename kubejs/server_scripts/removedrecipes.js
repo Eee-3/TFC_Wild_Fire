@@ -105,7 +105,10 @@ ServerEvents.recipes(e => {
 
 
     "create:crafting/kinetics/super_glue",
-    "butcher:tfcspitroastrecipe"
+    "butcher:tfcspitroastrecipe",
+    "scguns:treated_iron/treated_iron_cauldron",
+    "tfc:crafting/vanilla/cauldron",
+    "minecraft:cauldron"
 
     
 

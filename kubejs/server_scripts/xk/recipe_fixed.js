@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
       ]
     ).transitionalItem(input1).loops(1)//
   })
-  imdouble_ingots.forEach(di => {
+/*  imdouble_ingots.forEach(di => {
     const input1 = `tfc_ie_addon:metal/sheet/${di}`
     const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
     create.sequenced_assembly(output1, input1,
@@ -475,7 +475,8 @@ ServerEvents.recipes(event => {
       create.pressing(input1, input1),
       ]
     ).transitionalItem(input1).loops(1)//
-  })
+   
+  }) */
 
 
 
