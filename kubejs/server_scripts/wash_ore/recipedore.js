@@ -35,14 +35,14 @@ ServerEvents.recipes(event => {
             event.shapeless(Item.of(`4x kubejs:item/ore/dust_lump/${ore.ore}`), `kubejs:item/ore/dust_clump/${ore.ore}`).id(`${recipedid}shapeless/2/dust_lump/${ore.ore}`)//大团矿反向
             if (ore.mod == 'tfc_ie_addon:ore') {
                 event.shapeless(`kubejs:item/ore/dust_lump/${ore.ore}`, `4x tfc_ie_addon:powder/${ore.ore}`).id(`${recipedid}shapeless/1/dust_lump/powder/${ore.ore}`)
-                event.shapeless(`tfc_ie_addon:powder/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
+                event.shapeless(`kubejs:item/ore/dirty_dust/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
             }//小团矿
             if (ore.mod == 'firmalife:ore') {
-                event.shapeless(`firmalife:powder/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
+                event.shapeless(`kubejs:item/ore/dirty_dust/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
                 event.shapeless(`kubejs:item/ore/dust_lump/${ore.ore}`, `4x firmalife:powder/${ore.ore}`).id(`${recipedid}shapeless/1/dust_lump/powder/${ore.ore}`)
             }//小团矿
             if (ore.mod == 'tfc:ore') {
-                event.shapeless(`tfc:powder/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
+                event.shapeless(`kubejs:item/ore/dirty_dust/${ore.ore}`, `4x kubejs:item/ore/dirty_pile/${ore.ore}`).id(`${recipedid}shapeless/1/dirty_pile/powder/${ore.ore}`)
                 event.shapeless(`kubejs:item/ore/dust_lump/${ore.ore}`, `4x tfc:powder/${ore.ore}`).id(`${recipedid}shapeless/1/dust_lump/powder/${ore.ore}`)
             }//小团矿
         }

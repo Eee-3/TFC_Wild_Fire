@@ -13,11 +13,7 @@ familiarityDecayLimit = 0.3
 	#   doInsomnia = false (No phantoms)
 	#   doTraderSpawning = false (No wandering traders)
 	#   doPatrolSpawning = false (No pillager patrols)
-<<<<<<< HEAD
 	enableForcedTFCGameRules = false
-=======
-	enableForcedTFCGameRules = true
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 	#
 	# If true, TFC will stop time when no players are online on a running server.
 	# This prevents food from decaying, the calendar from advancing, and the sun from moving, etc.

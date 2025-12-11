@@ -46,6 +46,18 @@ ServerEvents.tags("item", event => {
 
     event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
+        event.add('kubejs:peel',
+        [
+            "kubejs:peel",
+            "kubejs:wrought_iron_peel",
+            "kubejs:stainless_steel_peel"
+        ])
+        event.add('firmalife:usable_on_oven',
+        [
+            "kubejs:peel",
+            "kubejs:wrought_iron_peel",
+            "kubejs:stainless_steel_peel"
+        ])
 
 
 

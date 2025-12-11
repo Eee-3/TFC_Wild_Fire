@@ -54,7 +54,7 @@ PlayerEvents.tick(event => {
     let playerData = player.persistentData
     if (!playerData.hotTimer) playerData.hotTimer = 0
     playerData.hotTimer++
-    if (playerData.hotTimer < 20) return
+    if (playerData.hotTimer < 21) return
     playerData.hotTimer = 0
 
     // 如果玩家不是生存模式不执行烫伤逻辑
@@ -62,10 +62,12 @@ PlayerEvents.tick(event => {
 
     var tong = /**@type {Internal.ItemStack} */ (null)
     var mittens = /**@type {Internal.ItemStack} */ (null)
+    var peel = /**@type {Internal.ItemStack} */ (null)
 
     let hurtPlayer = false
     let damageMittens = false
     let damageTong = false
+    let damagePeel = false
 
     // 检测饰品栏物品
     $CuriosApi.getCuriosHelper().findFirstCurio(player, 'kubejs:glove').ifPresent(slot => {
@@ -76,6 +78,9 @@ PlayerEvents.tick(event => {
         if (player.mainHandItem.hasTag('kubejs:tongs')) {
             tong = player.mainHandItem
         }
+        if (player.mainHandItem.hasTag('kubejs:peel')) {
+            peel = player.mainHandItem
+        }
         else if (player.mainHandItem.id == 'kubejs:glove') {
             mittens = player.mainHandItem
         }
@@ -85,12 +90,21 @@ PlayerEvents.tick(event => {
         if (player.offHandItem.hasTag('kubejs:tongs')) {
             tong = player.offHandItem
         }
+        else if (player.offHandItem.hasTag('kubejs:peel')) {
+            peel = player.offHandItem
+        }
         else if (player.offHandItem.id == 'kubejs:glove') {
             mittens = player.offHandItem
         }
         else {
             let dropHotItem = false
             if (player.offHandItem.hasTag('kubejs:hot_items')) {
+                if (tong != null) {
+                    damageTong = true
+                }
+                if (peel != null) {
+                    damagePeel = true
+                }
                 if (mittens != null) {
                     damageMittens = true
                 }
@@ -99,7 +113,10 @@ PlayerEvents.tick(event => {
 
             player.offHandItem.getCapability($HeatCapability.CAPABILITY).ifPresent(iHeat => {
                 if (iHeat.getTemperature() > 300){
-                    if (mittens != null && iHeat.getTemperature() < 1300) {
+                    if (peel != null && iHeat.getTemperature() < 700) {
+                    damagePeel = true
+                }
+                    else if (mittens != null && iHeat.getTemperature() < 1300) {
                     damageMittens = true
                 }
                 else dropHotItem = true
@@ -123,7 +140,9 @@ PlayerEvents.tick(event => {
         if (item.hasTag('kubejs:hot_items')) {
             if (tong != null) {
                 damageTong = true
-
+            }
+            else if (peel != null) {
+                damagePeel = true
             }
             else if (mittens != null) {
                 damageMittens = true
@@ -138,6 +157,9 @@ PlayerEvents.tick(event => {
             if (iHeat.getTemperature() > 300) {
                 if (tong != null) {
                     damageTong = true
+                }
+                else if (peel != null && iHeat.getTemperature() < 700) {
+                    damagePeel = true
                 }
                 else if (mittens != null && iHeat.getTemperature() < 1300) {
                     damageMittens = true
@@ -155,8 +177,10 @@ PlayerEvents.tick(event => {
         damageItem(mittens, 1)
     }
     if (damageTong) {
-
         damageItem(tong, 1)
+    }
+    if (damagePeel) {
+        damageItem(peel, 1)
     }
     if (hurtPlayer) {
         damagePlayer(server, player, 'kubejs:empyrosis', 1)
