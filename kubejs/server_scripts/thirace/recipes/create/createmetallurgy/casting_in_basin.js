@@ -24,7 +24,25 @@ ServerEvents.recipes((event) => {
       processingTime: 180,
       result: { item: 'minecraft:glass' },
       id: `${id_prefix}glass_foundry`
-    }, 
+    },
+    //浇筑刚玉坩埚
+    {
+      ingredients: [
+        {
+          "item": "kubejs:crucible_mold"
+        },
+        {
+          "amount": 1000,
+          "fluid": "tfc:metal/copper",
+          "nbt": {}
+        }
+      ],
+      mold_consumed: true ,
+      processingTime: 640,
+      result: {
+        item: "tfc:crucible"
+      }
+    }
 
   ];
 
@@ -69,4 +87,5 @@ ServerEvents.recipes((event) => {
     event.custom(recipe).id(recipe.id);
   });
 });
+
 
