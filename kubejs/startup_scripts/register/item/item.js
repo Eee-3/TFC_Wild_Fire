@@ -73,12 +73,19 @@ StartupEvents.registry('item', event => {
     event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
     event.create('bone_butchersknife_blade', 'basic').texture('kubejs:item/tfc/bone_butchersknife_blade'); // 骨刮皮刀
 
-   
-   
-    event.create('aluminum_chromium_mix_powder', 'basic').texture('kubejs:item/tfc/bone_fish_hook');// 铝铬混合粉
-    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/bone_fish_hook');   // 刚玉砖
-    event.create('corundum_brick_block', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 刚玉砖块
- 
+
+
+    event.create('alkalized_bauxite_raw_material', 'basic').texture('kubejs:item/tfc/alkalized_bauxite_raw_material').tag("kubejs:ore"); // 碱化铝土生料
+
+    event.create('bauxite_clinker', 'basic').texture('kubejs:item/tfc/bauxite_clinker');// 铝土熟料
+    
+    event.create('aluminum_chromium_mix_powder', 'basic').texture('kubejs:item/tfc/aluminum_chromium_mix_powder');// 铝铬混合粉
+
+    event.create('alumina_powder', 'basic').texture('kubejs:item/tfc/alumina_powder').tag("kubejs:ore"); // 氧化铝粉
+    event.create('unfired_corundum_brick', 'basic').texture('kubejs:item/tfc/unfired_corundum_brick').tag("kubejs:ore");   // 未完成的刚玉砖
+    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick').tag("kubejs:ore");   // 刚玉砖
+
+
 
     //万象瑞雪模型以及
     event.create('rock_powder_blank') //粗粗安山合金模型

@@ -29,5 +29,13 @@ ServerEvents.recipes(event => {
         event.custom(
             { "type": "create:sandpaper_polishing", "ingredients": [{ "item": `tfc:ore/${gem}` }], "results": [{ "item": `tfc:gem/${gem}` }] }
         ))
-
+    event.custom(
+        {
+            "type": "vintageimprovements:pressurizing",
+            "heatRequirement":"heated",
+            "processingTime": 800,
+            "ingredients": [
+                { "fluid": "tfc:limewater", "amount": 100 }, { "item": "kubejs:bauxite_clinker" }],
+            "results": [{ "item": "kubejs:alumina_powder" }]
+        })
 })
