@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
       b: TFC.ingredient.heatable('tfc:metal/sheet/wrought_iron', 1200, null),
     })//锯子
 
-      event.shaped('2x kubejs:corundum_brick_block',
+      event.shaped('1x kubejs:corundum_brick_block',
     [
       'aba',
       'bbb',
