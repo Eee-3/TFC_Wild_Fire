@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
   /*//灵魂火
   create.haunting(Item.of('minecraft:blaze_rod'), 'createaddition:electrum_rod')//烈焰棒
   create.mixing("minecraft:soul_sand", ['#forge:sand', 'minecraft:rotten_flesh'])//灵魂沙*/
-  
+
 
 
   //搅拌
@@ -95,9 +95,9 @@ ServerEvents.recipes(event => {
   event.forEachRecipe(//所有肉的烤制配方
     {
 
-
-      type: "smoking"
-      //output: '#forge:meats'
+      mod: 'butcher',
+      type: "smoking",
+      output: '#forge:meats'
     }, r => {
 
       var cookmeat_id = r.getOriginalRecipeResult().getId()
@@ -108,9 +108,52 @@ ServerEvents.recipes(event => {
         return;
       }
 
-      event.recipes.tfc.heating(meat_id, 200).resultItem(cookmeat_id)
+      event.recipes.tfc.heating(meat_id, 200).resultItem(TFC.itemStackProvider.of(cookmeat_id).addHeat(100))
     })
-  event.forEachRecipe(//所有的烤制配方烧糊
+
+
+
+  const burnt = ['tfc:food/cooked_tropical_fish', 'tfc:food/protein_soup',
+    'butcher:cookedbatmeat', 'butcher:cookedsalmon', 'butcher:cookedmincebeef',
+    'butcher:cookedmincedlamb', 'butcher:cookedpillagermeat', 'butcher:cookedspiderleg',
+    'butcher:cookedsausages', 'tfc:food/cooked_tropical_fish', 'tfc:food/cooked_calamari',
+    'tfc:food/cooked_shellfish', 'tfc:food/cooked_bluegill', 'tfc:food/cooked_crappie',
+    'tfc:food/cooked_lake_trout', 'tfc:food/cooked_largemouth_bass', 'tfc:food/cooked_rainbow_trout',
+    'tfc:food/cooked_smallmouth_bass', 'butcher:cookedintestines', 'butcher:cookedlungs',
+    'butcher:cookedliver', 'butcher:cookedkidney', 'butcher:cookedstomach', 'butcher:pork_belly',
+    'butcher:pork_loin', 'butcher:pork_shoulder', 'butcher:pork_leg', 'butcher:cooked_lamb_rib',
+    'butcher:lamb_loin', 'butcher:lamb_shoulder', 'butcher:lamb_sirloin', 'butcher:leg_of_lamb',
+    'butcher:cooked_villager_meat', 'butcher:cookedhoglinmeat', 'butcher:cooked_green_frogs_leg',
+    'butcher:cooked_orange_frog_leg', 'tfc:food/cooked_turtle', 'tfc:food/cooked_gran_feline',
+    'tfc:food/cooked_frog_legs', 'tfc:food/cooked_wolf', 'tfc:food/cooked_fox', 'tfc:food/cooked_hyena',
+    'tfc:food/cooked_duck', 'tfc:food/cooked_chevon', 'tfc:food/cooked_camelidae', 'farmersdelight:cooked_chicken_cuts',
+    'farmersdelight:cooked_bacon', 'farmersdelight:cooked_cod_slice', 'farmersdelight:cooked_salmon_slice',
+    'farmersdelight:cooked_mutton_chops', 'firmalife:food/cooked_bacon', 'firmalife:food/cooked_pizza',
+    'firmalife:food/cooked_pie', 'firmalife:food/cooked_lasagna', 'refurbished_furniture:cooked_vegetable_pizza',
+    'refurbished_furniture:cooked_meatlovers_pizza', 'tfc:food/cooked_pork', 'tfc:food/cooked_mutton',
+    'tfc:food/cooked_chicken', 'tfc:food/cooked_rabbit', 'tfc:food/cooked_cod', 'tfc:food/cooked_salmon',
+    'tfc:food/cooked_rice', 'tfc:food/cooked_beef', 'tfc:food/cooked_quail', 'tfc:food/cooked_bear',
+    'tfc:food/cooked_horse_meat', 'tfc:food/cooked_pheasant', 'tfc:food/cooked_turkey',
+    'tfc:food/cooked_peafowl', 'tfc:food/cooked_grouse', 'tfc:food/cooked_venison',
+    'butcher:cookedhumanmeat', 'butcher:cookedsniffermeat', 'alexsmobs:cooked_kangaroo_meat',
+    'aquaculture:fish_fillet_cooked', 'alexscaves:cooked_tripodfish', 'alexscaves:cooked_mussel',
+    'butcher:cookedhumanmeat', 'butcher:cookedblueexolotlmeat', 'butcher:cookedcyanaxolotlmeat',
+    'butcher:cookedgoldaxolotlmeat', 'butcher:creepermeat', 'butcher:creeperleg', 'butcher:cookedlucyaxolotlmeat',
+    'butcher:cookedwildaxolotlmeat', 'butcher:cookedocelotmeat', 'butcher:cookedsniffermeat',
+    'butcher:cookedstridermeat', 'butcher:cookedevokermeat', 'butcher:cookedguardianmeat',
+    'butcher:cookedshulkermeat', 'butcher:cookedcatmeat', 'butcher:cookedendermanlungs',
+    'butcher:cookedendermankidney', 'butcher:cookedendermanintestines', 'butcher:cookedendermanliver',
+    'butcher:cookedendermanstomach', 'butcher:cookedbloodsausage', 'butcher:cookedheart',
+    'alexsmobs:cooked_kangaroo_meat', 'alexsmobs:cooked_catfish', 'alexscaves:cooked_trilocaris_tail',
+    'alexscaves:cooked_radgill', 'alexscaves:cooked_lanternfish', 'firmalife:food/corn_tortilla',
+    'tfc:food/wheat_bread', 'tfc:food/rice_bread', 'tfc:food/rye_bread', 'tfc:food/oat_bread',
+    'tfc:food/maize_bread', 'tfc:food/barley_bread', 'firmalife:food/rye_flatbread'
+    , 'firmalife:food/rice_flatbread', 'firmalife:food/maize_flatbread', 'firmalife:food/barley_flatbread',
+    'firmalife:food/wheat_flatbread', 'firmalife:food/oat_flatbread']
+  burnt.forEach(burntfood => {
+    event.recipes.tfc.heating(burntfood, 700).resultItem('kubejs:burnt_food_residue')
+  })
+  /*event.forEachRecipe(//所有的烤制配方烧糊
     {
 
 
@@ -130,7 +173,7 @@ ServerEvents.recipes(event => {
       }
 
       event.recipes.tfc.heating(cookmeat_id, 700).resultItem('kubejs:burnt_food_residue')
-    })
+    })*/
 
   event.shaped('create:empty_blaze_burner', [
     'a a',
@@ -257,7 +300,7 @@ ServerEvents.recipes(e => {
 ServerEvents.recipes(event => {
   event.remove({ id: "create:splashing/gravel" })
   const create = event.recipes.create
- // create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], 'minecraft:gravel')
+  // create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], 'minecraft:gravel')
   //create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], '#tfc:rock/gravel')
 
   //create.crushing([Item.of('minecraft:flint').withChance(0.25),Item.of('tfc:ore/small_limonite').withChance(0.1)],"#forge:gravel")
@@ -463,20 +506,20 @@ ServerEvents.recipes(event => {
       ]
     ).transitionalItem(input1).loops(1)//
   })
-/*  imdouble_ingots.forEach(di => {
-    const input1 = `tfc_ie_addon:metal/sheet/${di}`
-    const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(input1, input1),
-      ]
-    ).transitionalItem(input1).loops(1)//
-   
-  }) */
+  /*  imdouble_ingots.forEach(di => {
+      const input1 = `tfc_ie_addon:metal/sheet/${di}`
+      const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
+      create.sequenced_assembly(output1, input1,
+        [create.deploying(input1, [input1, input1]),
+        event.custom({
+          "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+          "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+        }),
+        create.pressing(input1, input1),
+        ]
+      ).transitionalItem(input1).loops(1)//
+     
+    }) */
 
 
 
