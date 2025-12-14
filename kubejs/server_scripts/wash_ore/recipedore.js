@@ -7,6 +7,7 @@ ServerEvents.recipes(event => {
     wash_ore.forEach(ore => {
         event.shapeless(`3x kubejs:item/ore/rocky_chunks/${ore.ore}`,
             [`${ore.mod}/poor_${ore.ore}`, '#tfc:hammers'],
+<<<<<<< HEAD
         ).damageIngredient({ tag: '#tfc:hammers' }, 2)
         .id(`${recipedid}hammers/poor/${ore.ore}`)//贫瘠
         event.shapeless(`5x kubejs:item/ore/rocky_chunks/${ore.ore}`,
@@ -21,6 +22,27 @@ ServerEvents.recipes(event => {
             [`${ore.mod}/small_${ore.ore}`, '#tfc:hammers'],
         ).damageIngredient({ tag: '#tfc:hammers' }, 2)
         .id(`${recipedid}hammers/small/${ore.ore}`)//颗粒
+=======
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+            .id(`${recipedid}hammers/poor/${ore.ore}`)//贫瘠
+        event.shapeless(`5x kubejs:item/ore/rocky_chunks/${ore.ore}`,
+            [`${ore.mod}/normal_${ore.ore}`, '#tfc:hammers'],
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+            .id(`${recipedid}hammers/normal/${ore.ore}`)//普通
+        event.shapeless(`7x kubejs:item/ore/rocky_chunks/${ore.ore}`,
+            [`${ore.mod}/rich_${ore.ore}`, '#tfc:hammers'],
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+            .id(`${recipedid}hammers/rich/${ore.ore}`)//富集
+        event.shapeless(`2x kubejs:item/ore/rocky_chunks/${ore.ore}`,
+            [`${ore.mod}/small_${ore.ore}`, '#tfc:hammers'],
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+            .id(`${recipedid}hammers/small/${ore.ore}`)//颗粒
+
+
+
+
+
+>>>>>>> 3f58ab7be5253da75392360594af1ec3765649e0
 
         if (ore.type == '/type_') {
             event.shapeless(`kubejs:item/ore/dust_brick/${ore.ore}`, `9x kubejs:item/ore/refined_dust/${ore.ore}`).id(`${recipedid}shapeless/1/dust_brick/refined_dust/${ore.ore}`)//小团矿

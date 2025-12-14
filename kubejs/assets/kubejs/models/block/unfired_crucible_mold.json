@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"2": "kubejs:block/tfc/terracotta_mold",
-		"particle":"kubejs:block/tfc/terracotta_mold"
+		"2": "kubejs:block/tfc/clay_mold",
+		"particle": "kubejs:block/tfc/clay_mold"
 	},
 	"elements": [
 		{
@@ -111,35 +111,7 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [67.5, 45, 0],
-			"translation": [0, 0, -1.75],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [67.5, 45, 0],
-			"translation": [0, 0, -1.75],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"firstperson_righthand": {
-			"rotation": [19, 45, 0],
-			"translation": [0.75, 0, 0],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"firstperson_lefthand": {
-			"rotation": [19, 45, 0],
-			"translation": [0.75, 0, 0],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"ground": {
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"gui": {
-			"rotation": [48, -39, 28],
-			"scale": [0.5, 0.43, 0.5]
-		}
-	},
+	"display": {},
 	"groups": [
 		{
 			"name": "group",

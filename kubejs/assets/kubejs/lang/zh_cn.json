@@ -28,7 +28,6 @@
   "fluid.kubejs.light_oil": "轻油",
   "fluid.kubejs.rare_ink": "稀有墨水",
   "fluid.kubejs.uncommon_ink": "非凡墨水",
-
   "fluid.kubejs.beer_maize": "玉米啤酒",
   "fluid.kubejs.beer_barley": "大麦啤酒",
   "fluid.kubejs.beer_hops": "酒花啤酒",
@@ -44,7 +43,6 @@
   "fluid.kubejs.whiskey_highland_hearth": "高地炉心威士忌",
   "fluid.kubejs.whiskey_smokey_reverie": "烟熏幻梦威士忌",
   "fluid.kubejs.whiskey_jameson_malt": "尊美醇茅麦芽威士忌",
-
   "item.kubejs.advanced_cabin": "进阶个人舱体",
   "item.kubejs.advanced_plating": "进阶船体板",
   "item.kubejs.basic_cabin": "紧凑型舱体",
@@ -385,11 +383,9 @@
   "item.kubejs.graphite_shovel_head_mold": "石墨铲头模具",
   "item.kubejs.graphite_sledgehammer_head_mold": "石墨开掘锤头模具",
   "item.kubejs.graphite_sword_blade_mold": "石墨剑刃模具",
-
-"item.kubejs.graphite_fish_hook_mold": "石墨鱼钩模具",
-"item.kubejs.graphite_scraping_knife_blade_mold": "石墨刮削刀刃模具",
-"item.kubejs.graphite_circle_blade_mold": "石墨锯轮模具",
-
+  "item.kubejs.graphite_fish_hook_mold": "石墨鱼钩模具",
+  "item.kubejs.graphite_scraping_knife_blade_mold": "石墨刮削刀刃模具",
+  "item.kubejs.graphite_circle_blade_mold": "石墨锯轮模具",
   "item.kubejs.greatsword_weapon_part": "大剑刀刃",
   "item.kubejs.halberd_weapon_part": "戟头",
   "item.kubejs.handguard_weapon_part": "护手",
@@ -1187,5 +1183,14 @@
   "shiny_ornaments:silver_delicacy_ring": "银制精致戒指",
   "item.kubejs.silver_fragments": "银碎片",
   "item.kubejs.gold_fragments": "金碎片",
-  "item.kubejs.aluminum_mixture": "铝混合料"
+  "item.kubejs.aluminum_mixture": "铝混合料",
+  "item.kubejs.alkalized_bauxite_raw_material": "碱化铝土生料",
+  "item.kubejs.bauxite_clinker": "铝土熟料",
+  "item.kubejs.aluminum_chromium_mix_powder": "铝铬混合粉",
+  "item.kubejs.alumina_powder": "氧化铝粉",
+  "item.kubejs.unfired_corundum_brick": "未完成的刚玉砖",
+  "item.kubejs.corundum_brick": "刚玉砖",
+  "block.kubejs.corundum_brick_block": "刚玉砖块",
+  "fluid.kubejs.synthetic_corundum": "熔融刚玉",
+  "item.kubejs.synthetic_corundum_bucket": "熔融刚玉桶"
 }

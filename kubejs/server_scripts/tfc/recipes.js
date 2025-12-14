@@ -114,19 +114,25 @@ ServerEvents.recipes(event => {
 
 
   // 金属锭锤碎成碎片配方（TFC模组适配，需锤子工具）
-  event.shapeless('5x kubejs:copper_fragments', ['tfc:metal/ingot/copper', '#tfc:hammers']); // 铜锭 → 5个铜碎片
-  event.shapeless('5x kubejs:bismuth_bronze_fragments', ['tfc:metal/ingot/bismuth_bronze', '#tfc:hammers']); // 铋青铜锭 → 5个铋青铜碎片
-  event.shapeless('5x kubejs:black_bronze_fragments', ['tfc:metal/ingot/black_bronze', '#tfc:hammers']); // 黑青铜锭 → 5个黑青铜碎片
-  event.shapeless('5x kubejs:bronze_fragments', ['tfc:metal/ingot/bronze', '#tfc:hammers']); // 青铜锭 → 5个青铜碎片
-  event.shapeless('5x kubejs:red_steel_fragments', ['tfc:metal/ingot/red_steel', '#tfc:hammers']); // 红钢锭 → 5个红钢碎片
-  event.shapeless('5x kubejs:steel_fragments', ['tfc:metal/ingot/steel', '#tfc:hammers']); // 钢锭 → 5个钢碎片
-  event.shapeless('5x kubejs:wrought_iron_fragments', ['tfc:metal/ingot/wrought_iron', '#tfc:hammers']); // 锻铁锭 → 5个熟铁碎片
-  event.shapeless('5x kubejs:black_steel_fragments', ['tfc:metal/ingot/black_steel', '#tfc:hammers']); // 黑钢锭 → 5个黑钢碎片
-  event.shapeless('5x kubejs:blue_steel_fragments', ['tfc:metal/ingot/blue_steel', '#tfc:hammers']); // 蓝钢锭 → 5个蓝钢碎片
-  event.shapeless('5x kubejs:silver_fragments', ['tfc:metal/ingot/silver', '#tfc:hammers']); // 银锭 → 5个银碎片
-  event.shapeless('5x kubejs:gold_fragments', ['tfc:metal/ingot/gold', '#tfc:hammers']); // 金锭 → 5个金碎片
+  event.shapeless('5x kubejs:copper_fragments', ['tfc:metal/ingot/copper', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 铜锭 → 5个铜碎片
+  event.shapeless('5x kubejs:bismuth_bronze_fragments', ['tfc:metal/ingot/bismuth_bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 铋青铜锭 → 5个铋青铜碎片
+  event.shapeless('5x kubejs:black_bronze_fragments', ['tfc:metal/ingot/black_bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 黑青铜锭 → 5个黑青铜碎片
+  event.shapeless('5x kubejs:bronze_fragments', ['tfc:metal/ingot/bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 青铜锭 → 5个青铜碎片
+  event.shapeless('5x kubejs:red_steel_fragments', ['tfc:metal/ingot/red_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 红钢锭 → 5个红钢碎片
+  event.shapeless('5x kubejs:steel_fragments', ['tfc:metal/ingot/steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 钢锭 → 5个钢碎片
+  event.shapeless('5x kubejs:wrought_iron_fragments', ['tfc:metal/ingot/wrought_iron', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 锻铁锭 → 5个熟铁碎片
+  event.shapeless('5x kubejs:black_steel_fragments', ['tfc:metal/ingot/black_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 黑钢锭 → 5个黑钢碎片
+  event.shapeless('5x kubejs:blue_steel_fragments', ['tfc:metal/ingot/blue_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 蓝钢锭 → 5个蓝钢碎片
+  event.shapeless('5x kubejs:silver_fragments', ['tfc:metal/ingot/silver', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 银锭 → 5个银碎片
+  event.shapeless('5x kubejs:gold_fragments', ['tfc:metal/ingot/gold', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 金锭 → 5个金碎片
 
+  event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'tfc_ie_addon:powder/bauxite']); //碱化铝土生料
+  event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'kubejs:item/ore/purified_dust/bauxite']); //碱化铝土生料
+  event.shapeless('4x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'kubejs:item/ore/refined_dust/bauxite']); //碱化铝土生料
 
+  event.shapeless('kubejs:aluminum_chromium_mix_powder', ['kubejs:alumina_powder','kubejs:item/ore/refined_dust/chromite']); //铬铝混合粉
+
+ event.shapeless('kubejs:unfired_corundum_brick', ['kubejs:aluminum_chromium_mix_powder','minecraft:clay_ball','tfc:ceramic/ingot_mold']).keepIngredient({ item: 'tfc:ceramic/ingot_mold' }); //未完成的刚玉砖
 
   event.shaped('immersiveengineering:sawblade',
     [
@@ -137,6 +143,16 @@ ServerEvents.recipes(event => {
       a: TFC.ingredient.heatable('tfc:metal/rod/wrought_iron', 1200, null),
       b: TFC.ingredient.heatable('tfc:metal/sheet/wrought_iron', 1200, null),
     })//锯子
+
+      event.shaped('1x kubejs:corundum_brick_block',
+    [
+      'aba',
+      'bbb',
+      'aba'],
+    {
+      a: 'kubejs:corundum_brick',
+      b: 'tfc:mortar',
+    })//刚玉砖块
 
 
 
@@ -281,16 +297,16 @@ ServerEvents.recipes(event => {
     d: 'tfc:brass_mechanisms',
   }) // 引擎活塞
   event.shaped('createdieselgenerators:engine_silencer',
-        [
-            'ca ',
-            'aca',
-            ' ab'
-        ],
-        {
-            a: 'vintageimprovements:andesite_sheet',
-            b: 'tfc:metal/rod/wrought_iron',
-            c: '#loot:clean_cloth'
-        }
+    [
+      'ca ',
+      'aca',
+      ' ab'
+    ],
+    {
+      a: 'vintageimprovements:andesite_sheet',
+      b: 'tfc:metal/rod/wrought_iron',
+      c: '#loot:clean_cloth'
+    }
   ) //引擎消嘤器
   create.mechanical_crafting('createdieselgenerators:engine_turbocharger', [
     "cba",
@@ -303,49 +319,49 @@ ServerEvents.recipes(event => {
     d: 'create:propeller',
   }) // 引擎涡轮增压器
   event.shaped('createdieselgenerators:bulk_fermenter',
-        [
-            'dbd',
-            'a a',
-            'cbc'
-        ],
-        {
-            a: 'tfc:metal/sheet/wrought_iron',
-            b: 'vintageimprovements:andesite_sheet',
-            c: 'tfc:metal/sheet/cast_iron',
-            d: 'create:andesite_alloy'
-        }
+    [
+      'dbd',
+      'a a',
+      'cbc'
+    ],
+    {
+      a: 'tfc:metal/sheet/wrought_iron',
+      b: 'vintageimprovements:andesite_sheet',
+      c: 'tfc:metal/sheet/cast_iron',
+      d: 'create:andesite_alloy'
+    }
   ) //大型发酵储罐
   event.shaped('createdieselgenerators:basin_lid',
-        [
-            ' a ',
-            'cbc'
-        ],
-        {
-            a: 'minecraft:clock',
-            b: 'vintageimprovements:andesite_sheet',
-            c: 'tfc:metal/sheet/cast_iron'
-        }
+    [
+      ' a ',
+      'cbc'
+    ],
+    {
+      a: 'minecraft:clock',
+      b: 'vintageimprovements:andesite_sheet',
+      c: 'tfc:metal/sheet/cast_iron'
+    }
   ) //工作盆盖板
   event.shaped('createdieselgenerators:oil_barrel',
-        [
-            'b',
-            'c',
-            'b'
-        ],
-        {
-            b: 'tfc:metal/sheet/wrought_iron',
-            c: '#tfc:barrels'
-        }
+    [
+      'b',
+      'c',
+      'b'
+    ],
+    {
+      b: 'tfc:metal/sheet/wrought_iron',
+      c: '#tfc:barrels'
+    }
   ) //燃油储罐
   event.shaped('design_decor:gas_tank',
-        [
-            'b',
-            'c'
-        ],
-        {
-            b: 'tfc:metal/sheet/wrought_iron',
-            c: '#tfc:barrels'
-        }
+    [
+      'b',
+      'c'
+    ],
+    {
+      b: 'tfc:metal/sheet/wrought_iron',
+      c: '#tfc:barrels'
+    }
   ) //小型铁流体储罐
   event.shaped('kubejs:peel',
         [
