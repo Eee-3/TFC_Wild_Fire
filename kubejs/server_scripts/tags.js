@@ -58,6 +58,11 @@ ServerEvents.tags("item", event => {
             "kubejs:wrought_iron_peel",
             "kubejs:stainless_steel_peel"
         ])
+        event.add('kubejs:glue',
+        [
+            "tfc:glue",
+            "minecraft:slime_ball"
+        ])
 
 
 

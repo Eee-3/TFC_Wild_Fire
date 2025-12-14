@@ -222,11 +222,7 @@ familiarityDecayLimit = 0.3
 		#
 		# The boost to attack damage that is applied to a 'Perfectly Forged' tool.
 		#Range: 1.0 ~ 1000.0
-<<<<<<< HEAD
 		anvilMaxDamageMultiplier = 1.5
-=======
-		anvilMaxDamageMultiplier = 1.2
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 
 	[blocks.barrel]
 		#
@@ -278,29 +274,17 @@ familiarityDecayLimit = 0.3
 		#
 		# The maximum number of levels that can be built in a bloomery multiblock, for added capacity.
 		#Range: > 1
-<<<<<<< HEAD
 		bloomeryMaxChimneyHeight = 3
-=======
-		bloomeryMaxChimneyHeight = 12
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 
 	[blocks.blastFurnace]
 		#
 		# Inventory capacity (in number of items per level of chimney) of the blast furnace.
 		#Range: > 1
-<<<<<<< HEAD
 		blastFurnaceCapacity = 4
 		#
 		# Fluid capacity (in mB) of the output tank of the blast furnace.
 		#Range: > 1
 		blastFurnaceFluidCapacity = 10000
-=======
-		blastFurnaceCapacity = 8
-		#
-		# Fluid capacity (in mB) of the output tank of the blast furnace.
-		#Range: > 1
-		blastFurnaceFluidCapacity = 15000
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# A multiplier for how fast the blast furnace consumes fuel. Higher values = faster fuel consumption.
 		#Range: > 1
@@ -308,11 +292,7 @@ familiarityDecayLimit = 0.3
 		#
 		# The maximum number of levels that can be built in a blast furnace multiblock, for added capacity.
 		#Range: > 1
-<<<<<<< HEAD
 		blastFurnaceMaxChimneyHeight = 5
-=======
-		blastFurnaceMaxChimneyHeight = 8
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# If true, blast furnaces will interact with in-world automation such as hoppers on a side-specific basis.
 		blastFurnaceEnableAutomation = true
@@ -347,11 +327,7 @@ familiarityDecayLimit = 0.3
 		#
 		# The maximum size of items that can be placed as a single item on the ground with V. Items are checked to see if they're the right size to be placed in a group of 4 items first.
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-<<<<<<< HEAD
 		maxPlacedLargeItemSize = "HUGE"
-=======
-		maxPlacedLargeItemSize = "VERY_LARGE"
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# If true, players can place items on the ground with V.
 		enablePlacingItems = true
@@ -682,11 +658,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for how fast items cool. Higher = faster.
 		#Range: 0.0 ~ 1.7976931348623157E308
-<<<<<<< HEAD
 		itemCoolingModifier = 0.8
-=======
-		itemCoolingModifier = 0.3
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# Should hot item entities cool off when in contact with blocks like water or snow?
 		coolHotItemEntities = true
@@ -747,11 +719,7 @@ familiarityDecayLimit = 0.3
 		# A multiplier for how quickly the player gets thirsty.
 		# The player loses thirst in sync with when they lose hunger. This represents how much thirst they lose. 0 = None, 100 = the entire thirst bar.
 		#Range: 0.0 ~ 100.0
-<<<<<<< HEAD
 		thirstModifier1 = 2.0
-=======
-		thirstModifier1 = 5.0
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# Enables the player losing more thirst in hotter environments.
 		enableThirstOverheating = true
@@ -785,19 +753,11 @@ familiarityDecayLimit = 0.3
 		foodDecayModifier = 1.0
 		#
 		# Enables negative effects from carrying too many very heavy items, including potion effects.
-<<<<<<< HEAD
 		enableOverburdening = true
 		#
 		# A multiplier for the minimum health that the player will obtain, based on their nutrition
 		#Range: 0.001 ~ 1000.0
 		nutritionMinimumHealthModifier = 0.2
-=======
-		enableOverburdening = false
-		#
-		# A multiplier for the minimum health that the player will obtain, based on their nutrition
-		#Range: 0.001 ~ 1000.0
-		nutritionMinimumHealthModifier = 0.1
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# A multiplier for the default health that the player will have (this is at a average nutrition of 40%, aka the starting nutrition.
 		# Nutrition above this value will linearly scale to the maximum multiplier.
@@ -807,11 +767,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for the maximum health that the player will obtain, based on their nutrition
 		#Range: 0.001 ~ 1000.0
-<<<<<<< HEAD
 		nutritionMaximumHealthModifier = 3.0
-=======
-		nutritionMaximumHealthModifier = 1.8
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 
 	[mechanics.foodTraits]
 		#
@@ -868,11 +824,7 @@ familiarityDecayLimit = 0.3
 		enableVanillaSkeletonHorseSpawning = false
 		#
 		# If true, enables the default vanilla behavior of mobs spawning with enchanted weapons sometimes.
-<<<<<<< HEAD
 		enableVanillaMobsSpawningWithEnchantments = false
-=======
-		enableVanillaMobsSpawningWithEnchantments = true
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# If true, enables the default behavior of mobs spawning with vanilla armor and weapons
 		enableVanillaMobsSpawningWithVanillaEquipment = false
@@ -887,17 +839,13 @@ familiarityDecayLimit = 0.3
 		enableVanillaMonstersOnSurface = false
 		#
 		# If true, chicken jockies can spawn
-<<<<<<< HEAD
 		enableChickenJockies = false
-=======
-		enableChickenJockies = true
->>>>>>> 6c6a6a1ef77510ae6b87bfb59da13a80384ea372
 		#
 		# If true, eggs can be thrown.
 		enableVanillaEggThrowing = false
 		#
 		# If true, drinking milk will clear potion effects and restore no nutrition, as in vanilla.
-		enableVanillaDrinkingMilkClearsPotionEffects = false
+		enableVanillaDrinkingMilkClearsPotionEffects = true
 
 	[mechanics.animals]
 

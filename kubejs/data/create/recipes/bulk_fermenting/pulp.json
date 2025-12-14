@@ -1,0 +1,43 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "item": "createdieselgenerators:wood_chip"
+    },
+    {
+      "fluid": "tfc:lye",
+      "amount": 150
+    }
+  ],
+  "processingTime": 1800,
+  "results": [
+    {
+      "item": "create:pulp"
+    },
+    {
+      "item": "create:pulp",
+      "chance": 0.15
+    }
+  ]
+}

@@ -53,7 +53,10 @@ ServerEvents.recipes(e => {
     "create:pressing/steel_ingot",
 
     "ad_astra:steel_ingot",
+    "farmersdelight:cutting/saddle",
     "create:sequenced_assembly/sturdy_sheet",
+    "create:mixing/cardboard_pulp",
+    "createdieselgenerators:bulk_fermenting/pulp",
 
     "woodencog:crafting/kinetics/encased_fan",
     "woodencog:crafting/kinetics/millstone",
