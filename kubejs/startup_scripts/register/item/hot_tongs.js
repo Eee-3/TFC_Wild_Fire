@@ -28,8 +28,8 @@ StartupEvents.registry('item', event => {
 
     ]
     event.create('glove').maxDamage(200).texture(`kubejs:item/hot/glove`).tag('tfc:usable_on_tool_rack')
-    event.create('peel').maxDamage(200).texture(`kubejs:item/hot/peel`).tag('tfc:usable_on_tool_rack')
-    event.create('wrought_iron_peel').maxDamage(900).texture(`kubejs:item/hot/wrought_iron_peel`).tag('tfc:usable_on_tool_rack')
+    event.create('peel').maxDamage(300).texture(`kubejs:item/hot/peel`).tag('tfc:usable_on_tool_rack')
+    event.create('cast_iron_peel').maxDamage(1000).texture(`kubejs:item/hot/cast_iron_peel`).tag('tfc:usable_on_tool_rack')
     event.create('stainless_steel_peel').maxDamage(2200).texture(`kubejs:item/hot/steel_peel`).tag('tfc:usable_on_tool_rack')
     event.create('wooden_tong').maxDamage(60).texture(`kubejs:item/hot/wooden_tong`).tag('tfc:usable_on_tool_rack')
     metalhot.forEach(metal => {

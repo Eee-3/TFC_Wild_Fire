@@ -27,9 +27,9 @@ ServerEvents.recipes(event => {
         a: 'farmersdelight:rope'
     }) // 栓绳
     event.shaped(Item.of('create:super_glue', '{Damage:400}'), ['aba', 'cbc', ' d '], {
-        a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'minecraft:iron_nugget'
+        a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'tfc:jar_lid'
     }) // 强力胶
-    event.shapeless('create:super_glue', ['create:super_glue', 'tfc:glue']).modifyResult((inputItems, outputItem) => {
+    event.shapeless('create:super_glue', ['create:super_glue', '#kubejs:glue']).id("kubejs:crafting/super_glue_refill").modifyResult((inputItems, outputItem) => {
         const items = inputItems.findAll('create:super_glue')
         let glue = items[0].copy()
         let damageValue = Math.max(glue.damageValue - 50, 0)

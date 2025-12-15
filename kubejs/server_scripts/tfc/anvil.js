@@ -144,6 +144,22 @@ ServerEvents.recipes(e => {
     'tfc:metal/sheet/black_steel',
     4
   ).id(`kubejs:tfc/anvil/sturdy_whisk`);
+  tfc.anvil(// 铸铁锅铲的铁砧配方
+    'kubejs:cast_iron_peel',
+    'tfc:metal/rod/cast_iron',
+    [
+      'hit_last',
+      "draw_any"
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/cast_iron_peel");
+  tfc.anvil(// 不锈钢锅铲锅铲的铁砧配方
+    'kubejs:stainless_steel_peel',
+    'firmalife:metal/rod/stainless_steel',
+    [
+      'hit_last',
+      "draw_any"
+    ]
+  ).tier(3).bonus(false).id("kubejs:tfc/stainless_steel_peel");
 
 
 

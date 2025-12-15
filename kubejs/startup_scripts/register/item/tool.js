@@ -31,6 +31,6 @@ StartupEvents.registry('item', event => {
         .useAnimation("bow") // 同样使用拉弓的使用动画
         .finishUsing((itemstack, level, entity) => { // 使用完成后的回调
             const effects = entity.potionEffects
-            effects.add('minecraft:regeneration', 120 * 20) // 同样添加120秒的生命恢复效果
+            effects.add('minecraft:regeneration', 120 * 20) // 同样添加120秒的生命恢复效果(目前未正常生效)
         })
 })

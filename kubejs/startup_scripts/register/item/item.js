@@ -50,7 +50,7 @@ StartupEvents.registry('item', event => {
     event.create('crushed_sinew', 'basic').texture('kubejs:item/crushed_sinew'); // 捣碎的筋腱
     event.create('sinew_thread', 'basic').texture('kubejs:item/sinew_thread'); // 筋线
 
-    event.create('coal_powder', 'basic').texture('kubejs:item/coal_powder'); // 煤炭粉
+    event.create('coal_powder', 'basic').texture('kubejs:item/fuel/coal_powder'); // 煤炭粉
     event.create('kubejs:crushed_raw_desh') // 创建粉碎的原始Desh物品.texture('kubejs:item/crushed_raw_desh') 
     event.create('kubejs:crushed_raw_calorite') // 创建粉碎的原始Calorite物品.texture('kubejs:item/crushed_raw_calorite') 
     event.create('kubejs:crushed_raw_ostrum') // 创建粉碎的原始Ostrum物品.texture('kubejs:item/crushed_raw_ostrum')
@@ -190,5 +190,7 @@ StartupEvents.registry("item", event => {   //工业线盔甲相关
     event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate'); // 未完成工业钢胸甲
     event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings'); // 未完成工业钢护腿
     event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots'); // 未完成工业钢靴子
+
+    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer'); // 未完成温度计
 
 });

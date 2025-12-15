@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
             .id(`${recipedid}quern/chunks/${ore.ore}`)//手推磨磨粉
         create.milling([`kubejs:item/ore/dirty_dust/${ore.ore}`, Item.of(`kubejs:item/ore/dirty_pile/${ore.ore}`).withChance(0.2)], `kubejs:item/ore/chunks/${ore.ore}`)
             .id(`${recipedid}milling/chunks/${ore.ore}`)//机械动力磨粉
+        
 
 
         /*event.custom({
