@@ -14,12 +14,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:clay",
-          "weight": 15
+          "name": "minecraft:clay_ball",
+          "weight": 10
         },
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 90
         }
       ]
     }

@@ -114,17 +114,15 @@ ServerEvents.recipes(event => {
 
 
   // 金属锭锤碎成碎片配方（TFC模组适配，需锤子工具）
-  event.shapeless('5x kubejs:copper_fragments', ['tfc:metal/ingot/copper', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 铜锭 → 5个铜碎片
-  event.shapeless('5x kubejs:bismuth_bronze_fragments', ['tfc:metal/ingot/bismuth_bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 铋青铜锭 → 5个铋青铜碎片
-  event.shapeless('5x kubejs:black_bronze_fragments', ['tfc:metal/ingot/black_bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 黑青铜锭 → 5个黑青铜碎片
-  event.shapeless('5x kubejs:bronze_fragments', ['tfc:metal/ingot/bronze', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 青铜锭 → 5个青铜碎片
-  event.shapeless('5x kubejs:red_steel_fragments', ['tfc:metal/ingot/red_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 红钢锭 → 5个红钢碎片
+  event.shapeless('5x kubejs:copper_fragments', ['tfc:metal/ingot/copper', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 铜锭 → 5个铜碎片
+  event.shapeless('5x kubejs:bismuth_bronze_fragments', ['tfc:metal/ingot/bismuth_bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 铋青铜锭 → 5个铋青铜碎片
+  event.shapeless('5x kubejs:black_bronze_fragments', ['tfc:metal/ingot/black_bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 黑青铜锭 → 5个黑青铜碎片
+  event.shapeless('5x kubejs:bronze_fragments', ['tfc:metal/ingot/bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 青铜锭 → 5个青铜碎片
+  event.shapeless('5x kubejs:red_steel_fragments', ['tfc:metal/ingot/red_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 红钢锭 → 5个红钢碎片
   event.shapeless('5x kubejs:steel_fragments', ['tfc:metal/ingot/steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 钢锭 → 5个钢碎片
-  event.shapeless('5x kubejs:wrought_iron_fragments', ['tfc:metal/ingot/wrought_iron', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 锻铁锭 → 5个熟铁碎片
-  event.shapeless('5x kubejs:black_steel_fragments', ['tfc:metal/ingot/black_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 黑钢锭 → 5个黑钢碎片
-  event.shapeless('5x kubejs:blue_steel_fragments', ['tfc:metal/ingot/blue_steel', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 蓝钢锭 → 5个蓝钢碎片
-  event.shapeless('5x kubejs:silver_fragments', ['tfc:metal/ingot/silver', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 银锭 → 5个银碎片
-  event.shapeless('5x kubejs:gold_fragments', ['tfc:metal/ingot/gold', '#tfc:hammers']).keepIngredient({  tag: '#tfc:hammers' }).damageIngredient({ tag: '#tfc:hammers' },3); // 金锭 → 5个金碎片
+  event.shapeless('5x kubejs:wrought_iron_fragments', ['tfc:metal/ingot/wrought_iron', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 锻铁锭 → 5个熟铁碎片
+  event.shapeless('5x kubejs:black_steel_fragments', ['tfc:metal/ingot/black_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 黑钢锭 → 5个黑钢碎片
+  event.shapeless('5x kubejs:blue_steel_fragments', ['tfc:metal/ingot/blue_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 5); // 蓝钢锭 → 5个蓝钢碎片
 
   event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'tfc_ie_addon:powder/bauxite']); //碱化铝土生料
   event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'kubejs:item/ore/purified_dust/bauxite']); //碱化铝土生料

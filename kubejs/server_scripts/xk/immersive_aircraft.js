@@ -260,7 +260,7 @@ event.custom(
         }
     }
 )
-event.custom(
+/*event.custom(
     {
         "type":"siegemachines:siege_workbench",
         "pattern":[
@@ -291,8 +291,8 @@ event.custom(
             "count":1
         }
     }
-)
-event.custom(
+)*/
+/*event.custom(
     {
         "type":"siegemachines:siege_workbench",
         "pattern":[
@@ -327,7 +327,7 @@ event.custom(
             "count":1
         }
     }
-)
+)*/
 event.custom(
     {
         "type":"siegemachines:siege_workbench",

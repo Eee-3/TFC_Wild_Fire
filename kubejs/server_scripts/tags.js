@@ -49,13 +49,13 @@ ServerEvents.tags("item", event => {
         event.add('kubejs:peel',
         [
             "kubejs:peel",
-            "kubejs:wrought_iron_peel",
+            "kubejs:cast_iron_peel",
             "kubejs:stainless_steel_peel"
         ])
         event.add('firmalife:usable_on_oven',
         [
             "kubejs:peel",
-            "kubejs:wrought_iron_peel",
+            "kubejs:cast_iron_peel",
             "kubejs:stainless_steel_peel"
         ])
         event.add('kubejs:glue',
