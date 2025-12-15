@@ -7,19 +7,19 @@ ServerEvents.recipes(event => {
     wash_ore.forEach(ore => {
         event.shapeless(`3x kubejs:item/ore/rocky_chunks/${ore.ore}`,
             [`${ore.mod}/poor_${ore.ore}`, '#tfc:hammers'],
-        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2)
             .id(`${recipedid}hammers/poor/${ore.ore}`)//贫瘠
         event.shapeless(`5x kubejs:item/ore/rocky_chunks/${ore.ore}`,
             [`${ore.mod}/normal_${ore.ore}`, '#tfc:hammers'],
-        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2)
             .id(`${recipedid}hammers/normal/${ore.ore}`)//普通
         event.shapeless(`7x kubejs:item/ore/rocky_chunks/${ore.ore}`,
             [`${ore.mod}/rich_${ore.ore}`, '#tfc:hammers'],
-        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2)
             .id(`${recipedid}hammers/rich/${ore.ore}`)//富集
         event.shapeless(`2x kubejs:item/ore/rocky_chunks/${ore.ore}`,
             [`${ore.mod}/small_${ore.ore}`, '#tfc:hammers'],
-        ).damageIngredient({ tag: '#tfc:hammers' }, 2).keepIngredient({ tag: '#tfc:hammers' })
+        ).damageIngredient({ tag: '#tfc:hammers' }, 2)
             .id(`${recipedid}hammers/small/${ore.ore}`)//颗粒
 
 
