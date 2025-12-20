@@ -9,19 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfchotornot:mittens"
-				tag: {
-					Damage: 0
-				}
-			}
 			id: "2DB49F7DE2CD977C"
 			size: 1.5d
 			tasks: [{
@@ -763,55 +750,25 @@
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfchotornot:burlap_potholder"
+				id: "kubejs:wooden_tong"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "24A56687163D36FE"
+			ignore_reward_blocking: true
 			subtitle: "没人敢拿刚烧好的东西"
-			tasks: [
-				{
-					id: "32E0CA990575055B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfchotornot:burlap_potholder"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "02266A229827860B"
+				item: {
+					Count: 1
+					id: "kubejs:wooden_tong"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "49163749F6824021"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfchotornot:tongs/wood"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "好烫！！！"
 			x: -9.5d
 			y: 6.0d
@@ -889,91 +846,17 @@
 		{
 			dependencies: ["54D81CF17173B502"]
 			id: "4557CEE602F8136A"
-			tasks: [
-				{
-					id: "50A92CBD622BF8E7"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_axe"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "26BCD725201034B9"
+				item: {
+					Count: 1
+					id: "call_of_yucutan:obsidian_spear"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "5ABAD1E7723C8BEE"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_hoe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5C3D66444837DA14"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "557FEB06F62E13CD"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:obsidian_knife"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "45541BDC4F025580"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "65DCA7378C3DF119"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_javelin"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "26BCD725201034B9"
-					item: {
-						Count: 1
-						id: "call_of_yucutan:obsidian_spear"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -12.0d
 			y: 1.0d
 		}

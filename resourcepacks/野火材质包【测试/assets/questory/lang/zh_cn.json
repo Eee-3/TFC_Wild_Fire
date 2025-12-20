@@ -1,0 +1,38 @@
+{
+  "key.questory.open_quests": "打开任务菜单",
+  "key.categories.questory": "任务系统",
+  "key.questory.toggle_pin": "固定/取消固定任务到HUD",
+  "key.questory.fit_view": "适配任务图谱",
+  "key.questory.center_view": "居中任务图谱",
+  "key.questory.zoom_in": "放大（任务图谱）",
+  "key.questory.zoom_out": "缩小（任务图谱）",
+  "key.questory.pan_view": "平移/拖动视图（任务图谱）",
+  "key.questory.editor_undo": "撤销（编辑器）",
+  "key.questory.editor_redo": "重做（编辑器）",
+  "key.questory.editor_save": "保存（编辑器）",
+  "key.questory.editor_new": "新建任务（编辑器）",
+  "key.questory.editor_delete": "删除任务（编辑器）",
+  "key.questory.editor_search": "聚焦搜索（编辑器）",
+
+  "gui.questory.quests": "任务",
+  "gui.questory.close": "关闭",
+  "gui.questory.complete": "完成",
+  "gui.questory.all": "全部",
+  "gui.questory.requirements": "所需条件：",
+  "gui.questory.rewards": "奖励：",
+  "gui.questory.status": "状态：",
+  "gui.questory.status.completed": "✓ 已完成",
+  "gui.questory.status.ready": "可完成！",
+  "gui.questory.status.in_progress": "进行中",
+
+  "command.questory.list.title": "你的任务",
+  "command.questory.list.total": "总计：%s个任务",
+  "command.questory.progress.title": "任务进度",
+  "command.questory.progress.completed": "已完成：%s/%s",
+  "command.questory.progress.ready": "可完成任务（%s个）：",
+
+  "notification.questory.quest_unlocked": "新任务解锁：%s",
+  "notification.questory.quest_ready": "✓ 任务可完成：%s",
+  "notification.questory.quest_claimed": "任务已完成：%s",
+  "notification.questory.quest_instruction": "输入 /quest complete %s 领取奖励"
+}

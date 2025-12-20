@@ -27,9 +27,9 @@ let wash_ore = [
 StartupEvents.registry("item", event => {
 
     wash_ore.forEach(ore => {
-        event.create(`kubejs:item/ore/rocky_chunks/${ore.ore}`).texture(`kubejs:item/ore/rocky_chunks/${ore.ore}`).tag("kubejs:ore"); //注册多石 4mb
-        event.create(`kubejs:item/ore/chunks/${ore.ore}`).texture(`kubejs:item/ore/chunks/${ore.ore}`).tag("kubejs:ore"); //注册粗块 4mb
-        event.create(`kubejs:item/ore/dirty_dust/${ore.ore}`).texture(`kubejs:item/ore/dirty_dust/${ore.ore}`).tag("kubejs:ore").tag("tfc:usable_in_pot"); //注册脏粉 5mb
+        event.create(`kubejs:item/ore/rocky_chunks/${ore.ore}`).texture(`kubejs:item/ore/rocky_chunks/${ore.ore}`).tag("kubejs:ore").tag("sns:allowed_in_ore_sack").tag("tfc:ore_pieces"); //注册多石 4mb
+        event.create(`kubejs:item/ore/chunks/${ore.ore}`).texture(`kubejs:item/ore/chunks/${ore.ore}`).tag("kubejs:ore").tag("sns:allowed_in_ore_sack").tag("tfc:ore_pieces"); //注册粗块 4mb
+        event.create(`kubejs:item/ore/dirty_dust/${ore.ore}`).texture(`kubejs:item/ore/dirty_dust/${ore.ore}`).tag("kubejs:ore").tag("tfc:usable_in_pot").tag("sns:allowed_in_ore_sack"); //注册脏粉 5mb
         event.create(`kubejs:item/ore/dirty_pile/${ore.ore}`).texture(`kubejs:item/ore/dirty_pile/${ore.ore}`).tag("kubejs:dirty_pile"); //注册小堆脏粉 1mb
 
         if (ore.type == '/type_') {
