@@ -85,11 +85,11 @@ ServerEvents.recipes((event) => {
             timeInput = 40
         }
 
-        material.types.forEach((type) => {
+       /* material.types.forEach((type) => {
             let fluidOutput
-            /* if (type === 'dirty_dust') {
+             if (type === 'dirty_dust') {
                 fluidOutput = 5
-            } */
+            } 
             if (type === 'pellet') {
                 fluidOutput = 20
             }
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
                 results: { amount: fluidOutput, fluid: `${material.mod}:metal/${material.fluid}` },
                 id: `${id_prefix}${heatInput}/${type}_${material.name}`
             })
-        })
+        })*/
     })
 
 

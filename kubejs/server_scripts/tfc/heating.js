@@ -1,5 +1,45 @@
 ServerEvents.recipes(e => {
+
   const { tfc, create, kubejs, immersiveengineering } = e.recipes;
+  function crucible(input, output, amount, temperature) {
+    e.custom({
+      "type": "createmetallurgy:bulk_melting",
+      "conditions":
+        [{
+          "type": "forge:not", "value":
+            { "type": "forge:tag_empty", "tag": "forge:storage_blocks/iron" }
+        }],
+      "ingredients": [{ "item": input }],
+      "maxHeatRequirement": 50, "minHeatRequirement": Math.ceil(temperature / 300), "processingTime": 200,
+      "results": [{ "amount": amount, "fluid": output }]
+    })
+  }
+  const metaltype = [
+    { name: 'ingot', number: 100 },
+    { name: 'double_ingot', number: 200 },
+    { name: 'sheet', number: 200 },
+    { name: 'double_sheet', number: 400 },
+    { name: 'rod', number: 50 }]
+  const allmetal = [
+    { name: "bismuth", temperature: 271, metal: "bismuth" },
+    { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
+    { name: "black_bronze", temperature: 1050, metal: "black_bronze" },
+    { name: "bronze", temperature: 950, metal: "bronze" },
+    { name: "copper", temperature: 1080, metal: "copper" },
+    { name: "gold", temperature: 1064, metal: "gold" },
+    { name: "nickel", temperature: 1455, metal: "nickel" },
+    { name: "rose_gold", temperature: 1060, metal: "rose_gold" },
+    { name: "silver", temperature: 961, metal: "silver" },
+    { name: "tin", temperature: 232, metal: "tin" },
+    { name: "zinc", temperature: 420, metal: "zinc" },
+    { name: "sterling_silver", temperature: 925, metal: "sterling_silver" },
+    { name: "wrought_iron", temperature: 1535, metal: "cast_iron" },
+    { name: "cast_iron", temperature: 1150, metal: "cast_iron" },
+    { name: "steel", temperature: 1540, metal: "steel" },
+    { name: "black_steel", temperature: 1485, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
+    { name: "red_steel", temperature: 1538, metal: "red_steel" }
+  ]; 
   const metal = [
     { name: "copper", temperature: 1080, metal: "copper" },
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
@@ -11,6 +51,46 @@ ServerEvents.recipes(e => {
     { name: "steel", temperature: 1540, metal: "steel" },
     { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
   ];
+  allmetal.forEach(metala => {
+    metaltype.forEach(type => {
+      crucible(`tfc:metal/${type.name}/${metala.name}`, `tfc:metal/${metala.metal}`, type.number, metala.temperature)
+    })
+  })
+  const tfctool = [
+    // { mod: 'tfc:metal/', tool: 'tuyere/', number: 200 },        // 鼓风口
+    { mod: 'tfc:metal/', tool: 'propick_head/', number: 100 },       // 勘探镐
+    { mod: 'tfc:metal/', tool: 'axe_head/', number: 100 },           // 斧头
+    { mod: 'tfc:metal/', tool: 'shovel_head/', number: 100 },        // 铲子
+    { mod: 'tfc:metal/', tool: 'hoe_head/', number: 100 },           // 锄头
+    { mod: 'tfc:metal/', tool: 'chisel_head/', number: 100 },        // 凿子
+    { mod: 'tfc:metal/', tool: 'hammer_head/', number: 100 },        // 锤子
+    { mod: 'tfc:metal/', tool: 'saw_blade/', number: 100 },           // 锯子 
+    { mod: 'tfc:metal/', tool: 'knife_blade/', number: 100 },         // 小刀
+    { mod: 'tfc:metal/', tool: 'scythe_blade/', number: 100 },        // 镰刀
+    { mod: 'tfc:metal/', tool: 'sword_blade/', number: 200 },         // 剑
+    { mod: 'tfc:metal/', tool: 'mace_head/', number: 200 },          // 钉头锤
+    { mod: 'tfc:metal/', tool: 'fish_hook/', number: 50 },   // 钓鱼竿 
+    //{ mod: 'tfc:metal/', tool: 'shears_head/', number: 200 },        // 剪刀
+    //{ mod: 'tfc:metal/', tool: 'shield/', number: 200 },        // 盾牌
+    { mod: 'tfc:metal/unfinished_', tool: 'chestplate/', number: 400 },    // 胸甲
+    { mod: 'tfc:metal/unfinished_', tool: 'boots/', number: 200 },         // 靴子
+    { mod: 'tfc:metal/unfinished_', tool: 'greaves/', number: 400 },       // 护腿
+    { mod: 'tfc:metal/unfinished_', tool: 'helmet/', number: 400 },        // 头盔
+
+    { mod: 'artisanal:metal/', tool: 'circle_blade/', number: 50 },  // 开罐器
+    { mod: 'tfc_hammer_time:metal/', tool: 'excavator_head/', number: 200 },   // 挖掘器
+    { mod: 'tfc_hammer_time:metal/', tool: 'sledgehammer_head/', number: 300 },   // 大锤
+    { mod: 'precisionprospecting:metal/', tool: 'mineral_prospector_head/', number: 200 }, // 矿物勘探仪
+    { mod: 'precisionprospecting:metal/', tool: 'prospector_drill_head/', number: 400 },   // 勘探钻头
+    { mod: 'precisionprospecting:metal/', tool: 'prospector_hammer_head/', number: 200 }   // 勘探锤
+  ]
+  metal.forEach(metala => {
+    tfctool.forEach(tool => {
+      tfc.heating(`${tool.mod}${tool.tool}${metala.name}`, metala.temperature)
+        .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, tool.number))
+      crucible(`${tool.mod}${tool.tool}${metala.name}`, `tfc:metal/${metala.metal}`, tool.number, metala.temperature)
+    })
+  })//武器部件熔铸
   const weaponry = [
     { name: "quarterstaff", number: 200 },        // 长棍
     { name: "dagger", number: 100 },              // 匕首
@@ -59,7 +139,7 @@ ServerEvents.recipes(e => {
     weapon_part.forEach(weapon_parta => {
       tfc.heating(`kubejs:${metala.name}_${weapon_parta.name}`, metala.temperature)
         .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, weapon_parta.number))
-
+      crucible(`kubejs:${metala.name}_${weapon_parta.name}`, `tfc:metal/${metala.metal}`, weapon_parta.number, metala.temperature)
     })
   })//武器部件熔铸
   metal.forEach(metala => {
@@ -139,6 +219,7 @@ ServerEvents.recipes(e => {
 
     tfc.heating(`kubejs:${metala.name}`, metala.temperature)
       .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number)).useDurability(true);
+    crucible(`kubejs:${metala.name}`, `tfc:metal/${metala.metal}`, metala.number, metala.temperature)
 
   });
   const itemss = [
@@ -155,7 +236,7 @@ ServerEvents.recipes(e => {
 
     tfc.heating(`${metala.mods}${metala.name}`, metala.temperature)
       .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number))
-
+    crucible(`${metala.mods}${metala.name}`, `tfc:metal/${metala.metal}`, metala.number, metala.temperature)
   });
 
 
@@ -164,7 +245,7 @@ ServerEvents.recipes(e => {
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
   tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
-
+  crucible('tfc:brass_mechanisms', 'tfc:metal/brass', 50, 940)
   const metaltongs = [
     { name: "bismuth_bronze", temperature: 860, metal: "tfc:metal/bismuth_bronze" },
     { name: "black_bronze", temperature: 910, metal: "tfc:metal/black_bronze" },
@@ -191,9 +272,11 @@ ServerEvents.recipes(e => {
 
     tfc.heating(`kubejs:${metal.name}_tong`, metal.temperature).resultFluid(Fluid.of(metal.metal, 100))//完整融化
     tfc.heating(`kubejs:${metal.name}_tong_part`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//部件融化
+    crucible(`kubejs:${metal.name}_tong`, metal.metal, 100, metal.temperature)
+    crucible(`kubejs:${metal.name}_tong_part`, metal.metal, 50, metal.temperature)
   })
 
-  const metal_fish_hooks = [
+  /*const metal_fish_hooks = [
     { name: "bismuth_bronze", temperature: 985, metal: "tfc:metal/bismuth_bronze" },
     { name: "black_bronze", temperature: 1070, metal: "tfc:metal/black_bronze" },
     { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
@@ -205,11 +288,19 @@ ServerEvents.recipes(e => {
     { name: "red_steel", temperature: 1540, metal: "tfc:metal/red_steel" }
   ];
   metal_fish_hooks.forEach(metal => {
-
+ 
     tfc.heating(`tfc:metal/fish_hook/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//鱼钩融化
-  })
+    crucible(`tfc:metal/fish_hook/${metal.name}`, metal.metal, 50, metal.temperature)
+  })*/
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')
   tfc.heating('kubejs:unfired_corundum_brick', 2000).resultItem('kubejs:corundum_brick')
-  tfc.heating('kubejs:corundum_brick',2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 50))//刚玉融化
-  tfc.heating('kubejs:corundum_brick_block',2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 100))//刚玉融化
+  tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 50))//刚玉融化
+  tfc.heating('kubejs:corundum_brick_block', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 100))//刚玉融化
+  crucible('kubejs:corundum_brick', 'kubejs:synthetic_corundum', 50, 2600)
+  crucible('kubejs:corundum_brick_block', 'kubejs:synthetic_corundum', 100, 2600)
+
+
+
+
+
 });

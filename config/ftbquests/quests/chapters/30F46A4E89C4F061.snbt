@@ -4,6 +4,7 @@
 	filename: "30F46A4E89C4F061"
 	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	icon: "ad_astra:earth_globe"
 	id: "30F46A4E89C4F061"

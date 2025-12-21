@@ -5,7 +5,7 @@
 	group: "39B5DFD6C28A7E6E"
 	icon: "eidolon:notetaking_tools"
 	id: "3B3817CEB8ECA525"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -6011,7 +6011,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 33720000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -6805,7 +6805,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 33720000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -8530,7 +8530,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 6000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 				}

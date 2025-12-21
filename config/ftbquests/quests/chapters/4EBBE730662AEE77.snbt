@@ -27,7 +27,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2CEE61F6F19CA8F4"]
 			description: ["沉浸工程是一种注重于构建多方块机器的mod，该mod与群峦传说具有高度联动，通过沉浸工程的机器，你将完成一些原本群峦原版才能完成，连机械动力都做不到的自动化，最终使用最尖端的电弧炉完成金属的批量冶炼。"]
 			hide_until_deps_visible: true
 			icon: {

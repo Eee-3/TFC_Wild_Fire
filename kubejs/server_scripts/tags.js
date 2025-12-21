@@ -2,8 +2,8 @@
 
 
 ServerEvents.tags("item", event => {
- event.add('forge:tools/hammers', '#tfc:hammers')
-   
+    event.add('forge:tools/hammers', '#tfc:hammers')
+
     const metals = [
         'bismuth_bronze',
         'black_bronze',
@@ -53,19 +53,19 @@ ServerEvents.tags("item", event => {
     event.add('firmalife:smoking_fuel', 'kubejs:wood_briquette')
     event.add('tfc:firepit_fuel', 'kubejs:wood_briquette')
 
-        event.add('kubejs:peel',
+    event.add('kubejs:peel',
         [
             "kubejs:peel",
             "kubejs:cast_iron_peel",
             "kubejs:stainless_steel_peel"
         ])
-        event.add('firmalife:usable_on_oven',
+    event.add('firmalife:usable_on_oven',
         [
             "kubejs:peel",
             "kubejs:cast_iron_peel",
             "kubejs:stainless_steel_peel"
         ])
-        event.add('kubejs:glue',
+    event.add('kubejs:glue',
         [
             "tfc:glue",
             "minecraft:slime_ball"
@@ -148,6 +148,30 @@ ServerEvents.tags("item", event => {
             "kubejs:triple_wrought_iron"
         ])
 
+
+
+})
+
+ServerEvents.tags("item", event => {
+    //删除tag
+    event.remove('sns:allowed_in_ore_sack', [
+        "tfc:ore/rich_cassiterite",
+        "tfc:ore/rich_native_silver",
+        "tfc:ore/rich_hematite",
+        "tfc:ore/rich_native_gold",
+        "tfc:ore/rich_native_copper",
+        "tfc_ie_addon:ore/rich_uraninite",
+        "tfc_ie_addon:ore/rich_galena",
+        "tfc_ie_addon:ore/rich_bauxite",
+        "firmalife:ore/rich_chromite",
+        "tfc:ore/rich_bismuthinite",
+        "tfc:ore/rich_garnierite",
+        "tfc:ore/rich_malachite",
+        "tfc:ore/rich_magnetite",
+        "tfc:ore/rich_limonite",
+        "tfc:ore/rich_sphalerite",
+        "tfc:ore/rich_tetrahedrite",
+    ])
 })
 const registerAsticorCartsItemTags = (event) => {
 

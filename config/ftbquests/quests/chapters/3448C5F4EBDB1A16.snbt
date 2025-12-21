@@ -4,7 +4,7 @@
 	filename: "3448C5F4EBDB1A16"
 	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		ForgeCaps: {
@@ -907,7 +907,6 @@
 			dependencies: [
 				"4390977A27252D9E"
 				"16ED3FE9D5BD6956"
-				"7E668B651B6954CB"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -919,8 +918,10 @@
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			hide_until_deps_visible: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "1D0D581F153F3912"
+			optional: true
 			rewards: [{
 				id: "17688D8A2D4B24C2"
 				type: "xp"

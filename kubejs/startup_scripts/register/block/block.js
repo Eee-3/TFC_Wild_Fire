@@ -48,3 +48,29 @@ StartupEvents.registry('block', event => {
                         })
                 })
 })
+const $CrucibleBlock = Java.loadClass('net.dries007.tfc.common.blocks.devices.CrucibleBlock')
+const $ExtendedProperties = Java.loadClass('net.dries007.tfc.common.blocks.ExtendedProperties')
+const $TFCBlockEntities = Java.loadClass('net.dries007.tfc.common.blockentities.TFCBlockEntities')
+const $CrucibleBlockEntity = Java.loadClass('net.dries007.tfc.common.blockentities.CrucibleBlockEntity')
+const $TooltipBlockItem = Java.loadClass('net.dries007.tfc.common.items.TooltipBlockItem')
+const $ItemProperties = Java.loadClass('net.minecraft.world.item.Item$Properties')
+
+StartupEvents.registry('block', event => {
+        event.createCustom("kubejs:crucible", () => new $CrucibleBlock(
+                $ExtendedProperties
+                        .of()
+                        .strength(3.0)
+                        .sound(SoundType.METAL)
+                        .blockEntity($TFCBlockEntities.CRUCIBLE)
+                        .serverTicks((level, pos, state, entity) =>
+                                $CrucibleBlockEntity.serverTick(level, pos, state, entity)
+                        )
+        ))
+})
+
+StartupEvents.registry('item', event => {
+        event.createCustom("kubejs:crucible", () => new $TooltipBlockItem(
+                Block.id('kubejs:crucible').getBlockState().block,
+                new $ItemProperties()
+        ))
+})

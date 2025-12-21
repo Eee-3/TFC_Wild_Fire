@@ -1,0 +1,38 @@
+{
+  "key.questory.open_quests": "Open Quest Menu",
+  "key.categories.questory": "Questify",
+  "key.questory.toggle_pin": "Pin/Unpin Quest to HUD",
+  "key.questory.fit_view": "Fit Quest Graph",
+  "key.questory.center_view": "Center Quest Graph",
+  "key.questory.zoom_in": "Zoom In (Quest Graph)",
+  "key.questory.zoom_out": "Zoom Out (Quest Graph)",
+  "key.questory.pan_view": "Pan/Drag View (Quest Graph)",
+  "key.questory.editor_undo": "Undo (Editor)",
+  "key.questory.editor_redo": "Redo (Editor)",
+  "key.questory.editor_save": "Save (Editor)",
+  "key.questory.editor_new": "New Quest (Editor)",
+  "key.questory.editor_delete": "Delete Quest (Editor)",
+  "key.questory.editor_search": "Focus Search (Editor)",
+
+  "gui.questory.quests": "Quests",
+  "gui.questory.close": "Close",
+  "gui.questory.complete": "Complete",
+  "gui.questory.all": "All",
+  "gui.questory.requirements": "Requirements:",
+  "gui.questory.rewards": "Rewards:",
+  "gui.questory.status": "Status:",
+  "gui.questory.status.completed": "✓ Completed",
+  "gui.questory.status.ready": "Ready to complete!",
+  "gui.questory.status.in_progress": "In progress",
+
+  "command.questory.list.title": "Your Quests",
+  "command.questory.list.total": "Total: %s quests",
+  "command.questory.progress.title": "Quest Progress",
+  "command.questory.progress.completed": "Completed: %s/%s",
+  "command.questory.progress.ready": "Ready to complete (%s):",
+
+  "notification.questory.quest_unlocked": "New Quest Available: %s",
+  "notification.questory.quest_ready": "✓ Quest Complete: %s",
+  "notification.questory.quest_claimed": "Quest Completed: %s",
+  "notification.questory.quest_instruction": "Run /quest complete %s to claim rewards"
+}

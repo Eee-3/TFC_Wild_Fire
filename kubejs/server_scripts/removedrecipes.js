@@ -112,7 +112,9 @@ ServerEvents.recipes(e => {
     "butcher:tfcspitroastrecipe",
     "scguns:treated_iron/treated_iron_cauldron",
     "tfc:crafting/vanilla/cauldron",
-    "minecraft:cauldron"
+    "minecraft:cauldron",
+    'woodencog:crafting/kinetics/fluid_tank',
+    
 
     
 
