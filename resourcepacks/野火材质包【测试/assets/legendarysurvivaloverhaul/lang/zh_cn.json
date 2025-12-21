@@ -44,8 +44,8 @@
 	"tooltip.legendarysurvivaloverhaul.sponge.description": "佩戴时吸收身上的水分，防止增加湿度。",
 	"tooltip.legendarysurvivaloverhaul.water_purifier.description": "佩戴时任何饮用将自动净化，防止获得干渴Buff。",
 
-	"attribute.legendarysurvivaloverhaul.heating_temperature": "御寒",
-	"attribute.legendarysurvivaloverhaul.cooling_temperature": "凉爽",
+	"attribute.legendarysurvivaloverhaul.heating_temperature": "体温",
+	"attribute.legendarysurvivaloverhaul.cooling_temperature": "体温",
 	"attribute.legendarysurvivaloverhaul.heat_resistance": "抗暑",
 	"attribute.legendarysurvivaloverhaul.cold_resistance": "御寒",
 	"attribute.legendarysurvivaloverhaul.thermal_resistance": "恒温",

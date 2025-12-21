@@ -1,0 +1,30 @@
+{
+  "type": "survivorsdelight:nutrition_crafting",
+  "key": {
+    "C": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "firmalife:food/butter"
+      }
+    },
+    "P": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:sweetener"
+      }
+    },
+    "S": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:foods/flour"
+      }
+    }
+  },
+  "pattern": [
+    "SCS",
+    " P "
+  ],
+  "result": {
+    "item": "farmersdelight:pie_crust"
+  }
+}

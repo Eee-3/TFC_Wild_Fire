@@ -3,7 +3,10 @@
   "category": "misc",
   "key": {
     "a": {
-      "tag": "forge:plates/lead"
+      "item": "tfc_ie_addon:metal/sheet/lead"
+    },
+    "b": {
+      "item": "tfc:metal/sheet/zinc"
     },
     "e": {
       "type": "immersiveengineering:fluid",
@@ -20,7 +23,7 @@
   "pattern": [
     "waw",
     "fef",
-    "waw"
+    "wbw"
   ],
   "result": {
     "item": "immersiveengineering:capacitor_lv"
