@@ -37,7 +37,7 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_red_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-        event.create('sinew', 'tfc:wild_crop')
+        event.create('sinew')
                 .material('wood')
                 .hardness(0.5)
                 .box(0, 0, 0, 16, 1, 16)
