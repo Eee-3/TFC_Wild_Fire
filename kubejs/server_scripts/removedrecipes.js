@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
     "farmersdelight:lead_from_straw",
     "tfc:crafting/lead",
     "minecraft:lead",
-    
+
 
     "woodencog:crafting/item_application/copper_casing_from_log_using_deployer",
     "woodencog:crafting/item_application/copper_casing_from_log",
@@ -105,7 +105,7 @@ ServerEvents.recipes(e => {
     "minecraft:cauldron",
     "fluid:centrifugal_pump",
     "fluid:fluid_interface",
-    
+
 
 
     "create:crafting/kinetics/super_glue",
@@ -114,9 +114,9 @@ ServerEvents.recipes(e => {
     "tfc:crafting/vanilla/cauldron",
     "minecraft:cauldron",
     'woodencog:crafting/kinetics/fluid_tank',
-    
 
-    
+
+
 
 
 
@@ -302,8 +302,8 @@ ServerEvents.recipes(e => {
     "design_decor:mechanical_crafting/enchanted_golden_apple",
     "supplementaries:strings",
     "tfc:crafting/sandpaper",
- 
-  
+
+
 
   ]
   oeiremove1.forEach(ida => { e.remove({ output: ida }) })
@@ -342,7 +342,27 @@ ServerEvents.recipes(e => {
   })
 
 
+  //移除原版配方
 
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_sword' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_pickaxe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_axe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_shovel' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_hoe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_helmet' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_chestplate' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_greaves' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_boots' }) // 移除配方
+
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_sword' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_pickaxe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_axe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_shovel' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_hoe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_helmet' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_chestplate' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_greaves' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_boots' }) // 移除配方
 
   e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
@@ -490,21 +510,21 @@ ServerEvents.recipes(e => {
 
 
 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_electrum' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_copper' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_brass' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_steel' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_uranium' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_constantan' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_bronze' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_nickel' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_rose_gold' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_tin' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_silver' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_lead_from_rod' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_aluminum' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/bullet_casing' }) 
-  e.remove({ id: 'immersiveengineering:crusher/ore_redstone' }) 
+  e.remove({ id: 'immersiveengineering:metalpress/wire_electrum' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_copper' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_brass' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_steel' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_uranium' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_constantan' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_bronze' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_nickel' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_rose_gold' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_tin' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_silver' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_lead_from_rod' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_aluminum' })
+  e.remove({ id: 'immersiveengineering:metalpress/bullet_casing' })
+  e.remove({ id: 'immersiveengineering:crusher/ore_redstone' })
 
 
   e.remove({ id: 'farmersdelight:book_from_canvas' })
@@ -646,7 +666,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc:quern/sulfur' })
   e.remove({ id: 'tfc:quern/graphite' })
   e.remove({ id: 'tfc:quern/cinnabar' })
-  
+
   e.remove({ id: 'tfc:anvil/bismuth_bronze_fish_hook' })
   e.remove({ id: 'tfc:anvil/bronze_fish_hook' })
   e.remove({ id: 'tfc:anvil/black_bronze_fish_hook' })
@@ -682,7 +702,7 @@ ServerEvents.recipes(e => {
 
   e.remove({ id: 'brewery:brewing/dark_brew' })
   e.remove({ id: 'brewery:brewing/whiskey_hadarilabel' })
-  
+
 
 
 
