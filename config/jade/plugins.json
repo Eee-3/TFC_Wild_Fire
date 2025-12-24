@@ -75,11 +75,6 @@
     "registry_name": "OFF",
     "mod_name": false
   },
-  "infinitybuttons": {
-    "hide_secret_buttons": true,
-    "hide_lantern_buttons": true,
-    "hide_torch_buttons": true
-  },
   "functionalstorage": {
     "armory": true
   },
@@ -130,7 +125,6 @@
     "decaying": true,
     "wall_torch": true,
     "windmill": true,
-    "drying_sinew": true,
     "ocelot": true,
     "candle_cake": true,
     "horse": true,
@@ -170,6 +164,11 @@
   },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "workshop_for_handsome_adventurer": {
+    "jade_plugin2": true,
+    "jade_plugin3": true,
+    "jade_plugin1": true
   },
   "exposure": {
     "lightroom": true,

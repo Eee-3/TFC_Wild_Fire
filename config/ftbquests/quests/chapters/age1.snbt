@@ -552,9 +552,9 @@
 			]
 			hide_dependency_lines: true
 			hide_text_until_complete: true
+			hide_until_deps_visible: true
 			icon: "tfc:firepit"
 			id: "7E60DB1DFF798B1C"
-			invisible: true
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "火……温暖的火"
@@ -657,7 +657,6 @@
 			hide_until_deps_visible: true
 			icon: "tfc:thatch"
 			id: "19CAFD0FAE153C2F"
-			invisible: true
 			size: 1.5d
 			subtitle: "先不做也可以"
 			tasks: [
@@ -817,7 +816,7 @@
 			]
 			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
 			hide_dependency_lines: true
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_planks"
 			id: "49367AA483E68761"
 			shape: "gear"
