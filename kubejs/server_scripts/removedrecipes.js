@@ -26,6 +26,7 @@ ServerEvents.recipes(e => {
     "tfc_metal_items:seq_pressing/sheets/lead",
     "tfc_metal_items:crafting/vanilla_anvil",
     "vintageimprovements:mechanical_crafting/helve_hammer",
+    "vintageimprovements:mechanical_crafting/laser",
     "createmetallurgy:crafting/content/foundry_basin",
     "woodencog:crafting/kinetics/basin",
     "create:crafting/kinetics/basin",
@@ -349,12 +350,31 @@ ServerEvents.recipes(e => {
   })
 
 
+  //移除原版配方
 
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_sword' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_pickaxe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_axe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_shovel' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_hoe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_helmet' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_chestplate' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_greaves' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_boots' }) // 移除配方
+
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_sword' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_pickaxe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_axe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_shovel' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_hoe' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_helmet' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_chestplate' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_greaves' }) // 移除配方
+  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_boots' }) // 移除配方
 
   e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
   e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
   e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
-  e.remove({ mod: 'eidolon' }) // 移除幻梦全部配方
   e.remove({ mod: 'vc_gliders' }) // 移除图腾全部配方 
 
 
@@ -599,6 +619,16 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'vintageimprovements:crushing/basalt_recycling' })
   e.remove({ id: 'vintageimprovements:crushing/basalt' })
 
+  e.remove({ id: 'refurbished_furniture:combining/glow_berry_jam_toast' })
+  e.remove({ id: 'refurbished_furniture:combining/sweet_berry_jam_toast' })
+
+  e.remove({ id: 'refurbished_furniture:frying/cheese_toastie' })
+  e.remove({ id: 'refurbished_furniture:baking/cooked_vegetable_pizza' })
+  e.remove({ id: 'refurbished_furniture:baking/cooked_meatlovers_pizza' })
+  e.remove({ id: 'refurbished_furniture:toasting/toast' })
+  e.remove({ id: 'refurbished_furniture:toasting/cheese_toastie' })
+
+  e.remove({ id: 'scguns:treated_iron/treated_iron_bucket' })
   e.remove({ id: 'scguns:create/treated_iron_crushing' })
   e.remove({ id: 'scguns:create/raw_anthralite' })
   e.remove({ id: 'scguns:create/anthralite_ore' })
@@ -633,6 +663,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:milling/poppy' })
   e.remove({ id: 'create:milling/oxeye_daisy' })
   e.remove({ id: 'create:milling/wool' })
+  e.remove({ id: 'brewinandchewin:quiche_from_bacon' })
+  e.remove({ id: 'farmersdelight:chocolate_pie' })
   e.remove({ id: 'farmersdelight:integration/create/milling/wild_beetroots' })
   e.remove({ id: 'farmersdelight:integration/create/milling/wild_onions' })
   e.remove({ id: 'farmersdelight:integration/create/milling/wild_carrots' })

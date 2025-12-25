@@ -23,7 +23,7 @@
       "item": "tfc:dirt/sandy_loam"
     }
   ],
-  "time": 128000,
+  "time": 64000,
   "render": {
     "type": "generic",
     "block": "firmalife:plant/pineapple_bush"

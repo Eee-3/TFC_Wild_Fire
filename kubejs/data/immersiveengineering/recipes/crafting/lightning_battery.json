@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " d ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "create:brass_casing"
+    },
+    "b": {
+      "item": "immersiveengineering:component_iron"
+    },
+    "c": {
+      "item": "immersiveengineering:coil_lv"
+    },
+    "d": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item":"scguns:lightning_battery"
+  }
+}

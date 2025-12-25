@@ -21,12 +21,12 @@
         {
           "biome": "minecraft:deep_dark",
           "parameters": {
-            "temperature": 0,
-            "humidity": 0,
+            "temperature": 1,
+            "humidity": -1,
             "continentalness": -1.0,
             "erosion": 0.5,
             "weirdness": -1.5,
-            "depth": 1.0,
+            "depth": 0.0,
             "offset": 0
           }
         }

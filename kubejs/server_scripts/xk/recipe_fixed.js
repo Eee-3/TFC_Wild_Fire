@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
 //沃土系数更改
 ServerEvents.recipes(e => {
   const CROP_GROWTH_TIME_MULTIPLIER = 0.8;// 沃土加速系数，暂定 0.8
-  const BASE_GROWTH_TIME = 12800;// 基础生长时间
+  const BASE_GROWTH_TIME = 51200;// 基础生长时间
   const ADJUSTED_GROWTH_TIME = BASE_GROWTH_TIME * CROP_GROWTH_TIME_MULTIPLIER;// 计算调整后的生长时间
   const RICH_SOIL = 'farmersdelight:rich_soil';// 沃土土壤类型
 
@@ -284,8 +284,7 @@ ServerEvents.recipes(e => {
     e.custom({
       "type": "immersiveengineering:cloche",
       "results": [
-        { "item": crop.product, "count": 2 },
-        { "item": crop.seed }
+        { "item": crop.product, "count": 2 }
       ],
       "input": { "item": crop.seed },
       "soil": { "item": RICH_SOIL },

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "immersiveengineering:ersatz_leather"
+    },
+    "b": {
+      "item": "vc_gliders:reinforced_paper_gold"
+    },
+    "c": {
+      "item": "vc_gliders:copper_upgrade"
+    },
+    "d": {
+      "item": "immersiveengineering:stick_aluminum"
+    }
+  },
+  "result": {
+    "item":"immersiveengineering:glider"
+  }
+}

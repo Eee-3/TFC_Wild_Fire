@@ -3,6 +3,8 @@
 ServerEvents.recipes((event) => {
 
     const recipes = [
+        { type: 'refurbished_furniture:freezer_solidifying' },
+        { type: 'refurbished_furniture:cutting_board_slicing' },
         { type: 'createmetallurgy:entity_melting' },
         //{ type: 'createmetallurgy:grinding' },
         { input: /createmetallurgy:raw_.*/ },

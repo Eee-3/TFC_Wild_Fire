@@ -115,10 +115,11 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:vellum', ['#tfc:knives', 'tfc:treated_hide']).damageIngredient({ tag: '#tfc:knives' }, 5).id(`${id_in}vellum`)//兽皮纸
 
 
-    event.shaped('minecraft:chest', ['aaa', 'b b', 'aaa'], {
+    event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
         a: '#tfc:lumber',
-        b: 'firmaciv:copper_bolt'
-    }) //箱子合成
+        b: 'firmaciv:copper_bolt',
+        c: '#tfc:saws'
+    }).damageIngredient({ tag: '#tfc:saws' }, 5) //箱子合成
 
     event.shaped('minecraft:barrel', ['aba', 'a a', 'aba'], {
         a: '#tfc:lumber',
@@ -193,7 +194,7 @@ ServerEvents.recipes(event => {
 
 
 
-    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'aca', 'ddd'], { a: '#kubejs:advanced_binding', b: 'tfc:metal/double_sheet/wrought_iron', c: 'backpacked_tfc:backpack', d: '#forge:leather' })//背包合成困难
+    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'aca', 'ddd'], { a: '#kubejs:advanced_binding', b: 'tfc:metal/double_sheet/wrought_iron', c: 'sns:frame_pack', d: '#forge:leather' })//背包合成困难
 
     //event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
 

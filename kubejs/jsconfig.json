@@ -1,4 +1,4 @@
-/*{
+{
     "compilerOptions": {
         "lib": [
             "ES5",
@@ -13,4 +13,4 @@
         ],
         "target": "ES2015"
     }
-}*/
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "super_heated",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:dust_hop_graphite"
+    },
+    {
+      "item": "immersiveengineering:dust_hop_graphite"
+    }
+  ],
+  "results": [
+    {
+      "item": "immersiveengineering:ingot_hop_graphite"
+    }
+  ]
+}

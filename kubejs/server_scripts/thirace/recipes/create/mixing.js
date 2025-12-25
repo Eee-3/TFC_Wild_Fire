@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
             results: [{ fluid: 'immersiveengineering:redstone_acid', amount: 1000 }],
             ingredients: [
                 { item: 'minecraft:redstone' },
-                { fluid: 'minecraft:water', amount: 1000 }
+                { fluid: 'vintageimprovements:sulfuric_acid', amount: 500 }
             ],
             id: `${id_prefix}redstone_acid`
         },

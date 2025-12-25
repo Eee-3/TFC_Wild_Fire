@@ -9,7 +9,7 @@
 	# The number of days in a month, for newly created worlds.
 	# This can be modified in existing worlds using the /time command
 	#Range: > 1
-	defaultMonthLength = 31
+	defaultMonthLength = 20
 	#
 	# The start date for newly created worlds, in a number of ticks, for newly created worlds
 	# This represents a number of days offset from January 1, 1000

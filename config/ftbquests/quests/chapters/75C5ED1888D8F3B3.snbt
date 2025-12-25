@@ -1603,7 +1603,7 @@
 								Size: 16
 							}
 						}
-						id: "backpacked_tfc:backpack"
+						id: "sns:frame_pack"
 					}
 					type: "item"
 				}

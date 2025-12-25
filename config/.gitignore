@@ -4,6 +4,9 @@
 !/tfc*
 !/ae2
 !/almostunified
+!/alexscaves-client.toml
+!/alexscaves-general.toml
+!/alexsmobs.toml
 !/artifacts
 !/fancymenu
 !/ftb*
@@ -38,3 +41,6 @@
 !/visual_workbench.json
 !/visualworkbench-client.toml
 !/woodencog-common.toml
+!/parcool-client.toml
+!/parcool-client-1.toml.bak
+!/ShieldExpansion-common.toml
