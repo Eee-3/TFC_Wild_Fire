@@ -14,7 +14,7 @@
     "type": "tfc:heatable",
     "min_temp": 540,
     "ingredient": {
-      "tag": "forge:rods/electrum"
+      "tag": "forge:ingots/electrum"
     }
   },
   "mold":"immersiveengineering:mold_wire",
@@ -22,6 +22,6 @@
       "base_ingredient":{
           "tag":"forge:wires/electrum"
       },
-      "count":2
+      "count":4
   }
 }

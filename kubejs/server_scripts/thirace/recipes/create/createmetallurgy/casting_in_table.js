@@ -43,8 +43,8 @@ ServerEvents.recipes((event) => {
     'wrought_iron',
     'steel',
     'black_steel',
-    'blue_steel',
-    'red_steel'
+    //'blue_steel',
+    //'red_steel'
   ];
   const molds_1 = [//100mb
 

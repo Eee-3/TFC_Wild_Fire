@@ -120,12 +120,12 @@ ServerEvents.recipes(e => {
 
 
 
-"tfc:crafting/small_sheepskin",
-"tfc:crafting/medium_sheepskin",
-"tfc:crafting/large_sheepskin",
+    "tfc:crafting/small_sheepskin",
+    "tfc:crafting/medium_sheepskin",
+    "tfc:crafting/large_sheepskin",
 
-"textile:hide_from_fur",
-"immersiveengineering:crafting/sawblade"
+    "textile:hide_from_fur",
+    "immersiveengineering:crafting/sawblade"
 
 
 
@@ -348,35 +348,168 @@ ServerEvents.recipes(e => {
     e.remove({ id: `woodencog:heated_pressing/sheet_${tfc_metal}` })
 
   })
+//删除sguns的动力合成配方
+  const scguns_guns = [   
+    "arc_worker",
+    "astella",
+    "auttomag",
+    "basker",
+    "big_bore",
+    "birdfeeder",
+    "blooper",
+    "blunderbuss",
+    "bomb_lance",
+    "boomstick",
+    "brawler",
+    "bruiser",
+    "callwell",
+    "callwell_conversion",
+    "callwell_terminal",
+    "carapice",
+    "cogloader",
+    "combat_shotgun",
+    "cr4k_mining_laser",
+    "crusader",
+    "cyclone",
+    "dark_matter",
+    "defender",
+    "double_pistol",
+    "doublet",
+    "dozier_rl",
+    "drill",
+    "drill_conversion",
+    "earths_corpse",
+    "echoes_2",
+    "empty_blasphemy",
+    "fencer_carbine",
+    "fencer_thumper",
+    "flayed_god",
+    "flintlock_pistol",
+    "floundergat",
+    "forlorn_hope",
+    "frey",
+    "gale",
+    "gattaler",
+    "gauss_rifle",
+    "grandle",
+    "grandle_og",
+    "greaser_smg",
+    "gyrojet_pistol",
+    "handcannon",
+    "homemaker",
+    "howler",
+    "howler_conversion",
+    "hullbreaker",
+    "hyperbaria",
+    "inertial",
+    "inquisitor",
+    "iron_javelin",
+    "iron_spear",
+    "jackhammer",
+    "jr_wristbreaker",
+    "kalash",
+    "killer_23",
+    "krauser",
+    "laser_musket",
+    "libertas",
+    "lr_director",
+    "lockewood",
+    "locust",
+    "lone_wonder",
+    "longarm",
+    "m3_carbine",
+    "m3_marksman",
+    "m22_waltz",
+    "mak_mk11",
+    "makeshift_rifle",
+    "mangalitsa",
+    "marlin",
+    "mas_55",
+    "mas_peddler",
+    "micina",
+    "minksy",
+    "mk43_title",
+    "mokova",
+    "musket",
+    "nailer",
+    "nervepinch",
+    "newborn_cyst",
+    "miami",
+    "osgood_50",
+    "pax",
+    "plasmanbus",
+    "plasma",
+    "prima_materia",
+    "brush_gun",
+    "pulsar",
+    "pyroclastic_flow",
+    "railworker",
+    "rat_king_and_queen",
+    "raygun",
+    "red_raydar",
+    "repeating_musket",
+    "rg_jigsaw",
+    "rocket_rifle",
+    "rusty_gnat",
+    "sakitini",
+    "sakitini_ironport",
+    "scrapper",
+    "scratches",
+    "sculk_resonator",
+    "sequoia",
+    "shard_culler",
+    "shellurker",
+    "soul_drummer",
+    "spirulida",
+    "spitfire",
+    "sterilizer",
+    "stigg",
+    "stiletto",
+    "terra_incognita",
+    "teslock_rifle",
+    "thunderhead",
+    "tl_runner",
+    "trenchur",
+    "triquetra",
+    "trotters",
+    "truntpike",
+    "turnpike",
+    "ultra_knight_hawk",
+    "umax_pistol",
+    "uppercut",
+    "valoraj",
+    "venturi",
+    "vulcanic_repeater",
+    "waltz_conversion",
+    "weevil",
+    "whispers",
+    "whistler",
+    "whizzbanger",
+    "winnie",
+    "winnie_millend",
+    "zikl_45",
+    "hammer_gl",
+    "niami",
+    "zilk_45",
+    "prush_gun",
+    "plasgun",
+    "valora",
+    "truant",
+    "freyr",
+  ];
+  scguns_guns.forEach(guns => {
+    e.remove({ id: `scguns:create/mechanical_crafting/${guns}` })
+
+  })
 
 
-  //移除原版配方
 
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_sword' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_pickaxe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_axe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_shovel' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_hoe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_helmet' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_chestplate' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_greaves' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.diamond_boots' }) // 移除配方
+  //移除棍木配方
 
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_sword' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_pickaxe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_axe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_shovel' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_hoe' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_helmet' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_chestplate' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_greaves' }) // 移除配方
-  e.remove({ id: 'minecraft:materials_repair.minecraft.iron_boots' }) // 移除配方
-
-  e.remove({ mod: 'spartanweaponry' }) // 移除斯巴达武器全部配方
-  e.remove({ mod: 'immersive_aircraft' }) // 移除沉浸式飞机全部配方
-  e.remove({ mod: 'irons_spellbooks' }) // 移除铁魔法全部配方
-  e.remove({ mod: 'vc_gliders' }) // 移除图腾全部配方 
-
+  e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/pig_iron_double_sheet' })
+  e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/heated_chromium' })
+  e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/double_pig_iron' })
+  e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/pig_iron_plate' })
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
@@ -455,6 +588,7 @@ ServerEvents.recipes(e => {
   e.remove({ type: 'createdieselgenerators:compression_molding' }) // 移除铸模冲压配方
   e.remove({ type: 'createdieselgenerators:casting' }) // 移除无用铸造配方
   e.remove({ type: 'brewery:brewing' }) // 移除酿造站配方
+  e.remove({ type: 'scguns:gun_bench' }) // 移除枪械工作台配方
 
 
   e.remove({ type: 'woodencog:heated_pressing' }) // 移除woodencog加热敲制配方
@@ -710,6 +844,34 @@ ServerEvents.recipes(e => {
 
   e.remove({ id: 'brewery:brewing/dark_brew' })
   e.remove({ id: 'brewery:brewing/whiskey_hadarilabel' })
+  e.remove({ id: 'bakery:jam_roll' })
+  e.remove({ id: 'farm_and_charm:stove/improved_bread' })
+  e.remove({ id: 'farm_and_charm:mincer/minced_beef' })
+  e.remove({ id: 'butcher:pestle_and_mortar_recipe' })
+  e.remove({ id: 'farm_and_charm:drying/fertilizer_from_rotten_flesh' })
+  e.remove({ id: 'farm_and_charm:drying/fertilizer_from_bone_meal' })
+
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_black_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_blue_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_red_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_weak_red_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/alloying_weak_red_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_weak_blue_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/alloying_weak_blue_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_high_carbon_red_stee' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_high_carbon_blue_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_high_carbon_black_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_wrought_iron' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_high_carbon_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/alloying_weak_steel' })
+  e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_weak_steel' })
+
+
+  e.remove({ id: 'warriorsofpastepoch:musket_craft' })
+  e.remove({ id: 'warriorsofpastepoch:pistol_craft' })
+  
+  e.remove({ id: 'scguns:scorched_blueprint' })
 
 
 
