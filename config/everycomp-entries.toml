@@ -56,7 +56,7 @@
 			scorched = true
 
 		[types.wood_type.alexscaves]
-			pewen = false
+			pewen = true
 			thornwood = false
 
 		[types.wood_type.eidolon]
@@ -101,9 +101,9 @@
 			chair = true
 
 		[entries.wood_type.functionalstorage]
-			1 = false
-			4 = false
-			2 = false
+			1 = true
+			4 = true
+			2 = true
 
 		[entries.wood_type.refurbished_furniture]
 			storage_cabinet = true
@@ -148,7 +148,7 @@
 			window = true
 
 		[entries.wood_type.farmersdelight]
-			cabinet = false
+			cabinet = true
 
 		[entries.wood_type.workshop_for_handsome_adventurer]
 			dual_table_bottom_left = true
@@ -171,5 +171,5 @@
 	[entries.leaves_type]
 
 		[entries.leaves_type.refurbished_furniture]
-			hedge = false
+			hedge = true
 
