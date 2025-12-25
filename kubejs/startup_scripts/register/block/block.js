@@ -15,8 +15,8 @@ StartupEvents.registry('block', event => {
                 .box(0, 0, 0, 16, 1, 16)
                 .noCollision()
 
-        event.create('kubejs:tfc/sinew')
-                event.create('kubejs:wild_brown_mushroom')
+
+        event.create('kubejs:wild_brown_mushroom')
                 .material('moss')
                 .soundType('crop')
                 .hardness('0.5')
@@ -27,7 +27,7 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_brown_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-                event.create('kubejs:wild_red_mushroom')
+        event.create('kubejs:wild_red_mushroom')
                 .material('moss')
                 .soundType('crop')
                 .hardness('0.5')
@@ -38,7 +38,7 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_red_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-        event.create('sinew')
+        event.create('kubejs:tfc/sinew')
                 .material('wood')
                 .hardness(0.5)
                 .box(0, 0, 0, 16, 1, 16)
