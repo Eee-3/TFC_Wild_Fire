@@ -22,7 +22,7 @@ ServerEvents.tags('item', event => {
     bindings_medium.forEach(medium => {
         event.add("kubejs:medium_binding", medium);
     });
-    event.add("kubejs:advanced_binding", 'kubejs:sinew_thread');//完美
+    event.add("kubejs:advanced_binding", 'kubejs:tfc/sinew_thread');//完美
     event.add("kubejs:advanced_binding", 'firmaciv:rope_coil');//完美
 
 

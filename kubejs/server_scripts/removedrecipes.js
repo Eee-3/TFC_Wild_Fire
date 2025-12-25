@@ -80,7 +80,7 @@ ServerEvents.recipes(e => {
     "farmersdelight:lead_from_straw",
     "tfc:crafting/lead",
     "minecraft:lead",
-    
+
 
     "woodencog:crafting/item_application/copper_casing_from_log_using_deployer",
     "woodencog:crafting/item_application/copper_casing_from_log",
@@ -104,7 +104,10 @@ ServerEvents.recipes(e => {
     "minecraft:cauldron",
     "fluid:centrifugal_pump",
     "fluid:fluid_interface",
-    
+
+    "tfc:crafting/sandpaper",
+    "create:crafting/materials/red_sand_paper",
+    "create_enchantment_industry:crafting/disenchanter",
 
 
     "create:crafting/kinetics/super_glue",
@@ -113,10 +116,15 @@ ServerEvents.recipes(e => {
     "tfc:crafting/vanilla/cauldron",
     "minecraft:cauldron",
     'woodencog:crafting/kinetics/fluid_tank',
-    
 
-    
 
+
+"tfc:crafting/small_sheepskin",
+"tfc:crafting/medium_sheepskin",
+"tfc:crafting/large_sheepskin",
+
+"textile:hide_from_fur",
+"immersiveengineering:crafting/sawblade"
 
 
 
@@ -301,8 +309,8 @@ ServerEvents.recipes(e => {
     "design_decor:mechanical_crafting/enchanted_golden_apple",
     "supplementaries:strings",
     "tfc:crafting/sandpaper",
- 
-  
+
+
 
   ]
   oeiremove1.forEach(ida => { e.remove({ output: ida }) })
@@ -490,21 +498,21 @@ ServerEvents.recipes(e => {
 
 
 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_electrum' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_copper' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_brass' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_steel' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_uranium' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_constantan' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_bronze' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_nickel' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_rose_gold' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_tin' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_silver' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_lead_from_rod' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/wire_aluminum' }) 
-  e.remove({ id: 'immersiveengineering:metalpress/bullet_casing' }) 
-  e.remove({ id: 'immersiveengineering:crusher/ore_redstone' }) 
+  e.remove({ id: 'immersiveengineering:metalpress/wire_electrum' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_copper' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_brass' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_steel' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_uranium' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_constantan' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_bronze' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_nickel' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_rose_gold' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_tin' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_silver' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_lead_from_rod' })
+  e.remove({ id: 'immersiveengineering:metalpress/wire_aluminum' })
+  e.remove({ id: 'immersiveengineering:metalpress/bullet_casing' })
+  e.remove({ id: 'immersiveengineering:crusher/ore_redstone' })
 
 
   e.remove({ id: 'farmersdelight:book_from_canvas' })
@@ -634,7 +642,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc:quern/sulfur' })
   e.remove({ id: 'tfc:quern/graphite' })
   e.remove({ id: 'tfc:quern/cinnabar' })
-  
+
   e.remove({ id: 'tfc:anvil/bismuth_bronze_fish_hook' })
   e.remove({ id: 'tfc:anvil/bronze_fish_hook' })
   e.remove({ id: 'tfc:anvil/black_bronze_fish_hook' })
@@ -670,7 +678,7 @@ ServerEvents.recipes(e => {
 
   e.remove({ id: 'brewery:brewing/dark_brew' })
   e.remove({ id: 'brewery:brewing/whiskey_hadarilabel' })
-  
+
 
 
 

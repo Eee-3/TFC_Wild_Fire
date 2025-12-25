@@ -1,4 +1,4 @@
-// priority: 1
+//priority: 1
 let wash_ore = [
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'uraninite', temperature: 1130, color: 0x262626, out: 'tfc_ie_addon:metal/uranium' },
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'galena', temperature: 1157, color: 0x808080, out: 'tfc_ie_addon:metal/lead' },
