@@ -25,18 +25,35 @@ JEIEvents.removeRecipes(event => {
     { item: 'minecraft:stone_pickaxe', material: 'minecraft:cobblestone' },
     { item: 'minecraft:stone_axe', material: 'minecraft:cobblestone' },
     { item: 'minecraft:stone_hoe', material: 'minecraft:cobblestone' },
+    { item: 'tfc:stone/knife/igneous_extrusive', material: 'minecraft:cobblestone' },
+    { item: 'tfc:stone/hoe/igneous_extrusive', material: 'minecraft:cobblestone' },
+    { item: 'tfc:stone/hammer/igneous_extrusive', material: 'minecraft:cobblestone' },
+    { item: 'tfc:stone/axe/igneous_extrusive', material: 'minecraft:cobblestone' },
+    { item: 'tfc:stone/shovel/igneous_extrusive', material: 'minecraft:cobblestone' },
+
 
     // 铁制工具
-    { item: 'minecraft:iron_sword', material: 'minecraft:iron_ingot' },
-    { item: 'minecraft:iron_shovel', material: 'minecraft:iron_ingot' },
-    { item: 'minecraft:iron_pickaxe', material: 'minecraft:iron_ingot' },
-    { item: 'minecraft:iron_axe', material: 'minecraft:iron_ingot' },
-    { item: 'minecraft:iron_hoe', material: 'minecraft:iron_ingot' },
+    { item: 'tfc:metal/sword/wrought_iron', material: 'minecraft:iron_ingot' },
+    { item: 'tfc:metal/shovel/wrought_iron', material: 'minecraft:iron_ingot' },
+    { item: 'tfc:metal/pickaxe/wrought_iron', material: 'minecraft:iron_ingot' },
+    { item: 'tfc:metal/axe/wrought_iron', material: 'minecraft:iron_ingot' },
+    { item: 'tfc:metal/hoe/wrought_iron', material: 'minecraft:iron_ingot' },
+    
+    { item: 'tfc:metal/sword/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/shovel/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/pickaxe/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/axe/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/hoe/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/helmet/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/chestplate/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/greaves/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'tfc:metal/boots/wrought_iron', material: 'tfc:metal/ingot/wrought_iron' },
     // 铁制盔甲
     { item: 'minecraft:iron_helmet', material: 'minecraft:iron_ingot' },
     { item: 'minecraft:iron_chestplate', material: 'minecraft:iron_ingot' },
     { item: 'minecraft:iron_leggings', material: 'minecraft:iron_ingot' },
     { item: 'minecraft:iron_boots', material: 'minecraft:iron_ingot' },
+    
 
     // 金制工具
     { item: 'minecraft:golden_sword', material: 'minecraft:gold_ingot' },
@@ -49,7 +66,16 @@ JEIEvents.removeRecipes(event => {
     { item: 'minecraft:golden_chestplate', material: 'minecraft:gold_ingot' },
     { item: 'minecraft:golden_leggings', material: 'minecraft:gold_ingot' },
     { item: 'minecraft:golden_boots', material: 'minecraft:gold_ingot' },
-
+    
+    { item: 'tfc:metal/sword/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/shovel/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/pickaxe/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/axe/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/hoe/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/helmet/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/chestplate/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/greaves/copper', material: 'tfc:metal/ingot/gold' },
+    { item: 'tfc:metal/boots/copper', material: 'tfc:metal/ingot/gold' },
     // 钻石工具
     { item: 'minecraft:diamond_sword', material: 'minecraft:diamond' },
     { item: 'minecraft:diamond_shovel', material: 'minecraft:diamond' },
@@ -61,6 +87,16 @@ JEIEvents.removeRecipes(event => {
     { item: 'minecraft:diamond_chestplate', material: 'minecraft:diamond' },
     { item: 'minecraft:diamond_leggings', material: 'minecraft:diamond' },
     { item: 'minecraft:diamond_boots', material: 'minecraft:diamond' },
+    
+    { item: 'tfc:metal/sword/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/shovel/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/pickaxe/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/axe/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/hoe/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/helmet/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/chestplate/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/greaves/steel', material: 'tfc:gem/diamond' },
+    { item: 'tfc:metal/boots/steel', material: 'tfc:gem/diamond' },
 
     // 下界合金工具
     { item: 'minecraft:netherite_sword', material: 'minecraft:netherite_ingot' },
@@ -84,7 +120,12 @@ JEIEvents.removeRecipes(event => {
     { item: 'minecraft:chainmail_helmet', material: 'minecraft:iron_ingot' },
     { item: 'minecraft:chainmail_chestplate', material: 'minecraft:iron_ingot' },
     { item: 'minecraft:chainmail_leggings', material: 'minecraft:iron_ingot' },
-    { item: 'minecraft:chainmail_boots', material: 'minecraft:iron_ingot' }
+    { item: 'minecraft:chainmail_boots', material: 'minecraft:iron_ingot' },
+    
+    { item: 'minecraft:chainmail_helmet', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'minecraft:chainmail_chestplate', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'minecraft:chainmail_leggings', material: 'tfc:metal/ingot/wrought_iron' },
+    { item: 'minecraft:chainmail_boots', material: 'tfc:metal/ingot/wrought_iron' }
   ]
   repairRecipesToHide.forEach(recipe => {
     HideAnvilRecipe(recipe.item, recipe.material)

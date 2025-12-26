@@ -8,5 +8,7 @@
   
   "block.create.copper_valve_handle": "黄铜阀门",
   "create.ponder.encased_fluid_pipe.text_1": "黄铜管道机壳可以用于装饰流体管道",
-  "block.create.copper_casing": "黄铜管道机壳"
+  "block.create.copper_casing": "黄铜管道机壳",
+  
+  "item.create.empty_blaze_burner": "燃烧室框架"
 }

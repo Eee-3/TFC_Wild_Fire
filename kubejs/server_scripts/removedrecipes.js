@@ -348,8 +348,8 @@ ServerEvents.recipes(e => {
     e.remove({ id: `woodencog:heated_pressing/sheet_${tfc_metal}` })
 
   })
-//删除sguns的动力合成配方
-  const scguns_guns = [   
+  //删除sguns的动力合成配方
+  const scguns_guns = [
     "arc_worker",
     "astella",
     "auttomag",
@@ -502,6 +502,44 @@ ServerEvents.recipes(e => {
 
   })
 
+  //删除sguns的蓝图配方
+  const scguns_blueprint = [
+    'antique_blueprint',
+    'frontier_blueprint',
+    'copper_blueprint',
+    'iron_blueprint',
+    'wrecker_blueprint',
+    'treated_brass_blueprint',
+    'diamond_steel_blueprint',
+    'ocean_blueprint',
+    'piglin_blueprint',
+    'deep_dark_blueprint',
+    'end_blueprint',
+    'exo_suit_blueprint'
+
+  ];
+  scguns_blueprint.forEach(blueprint => {
+    e.remove({ id: `scguns:${blueprint}` })
+
+  })
+
+  //删除喂食盆配方
+  const tfc_metals = [
+    'bronze',
+    'black_bronze',
+    'bismuth_bronze',
+    'copper',
+    'wrought_iron',
+    'steel',
+    'black_steel',
+    'blue_steel',
+    'red_steel'
+
+  ];
+  tfc_metals.forEach(metals => {
+    e.remove({ id: `tfcgroomer:${metals}_grooming_station` })
+
+  })
 
 
   //移除棍木配方
@@ -510,6 +548,10 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/heated_chromium' })
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/double_pig_iron' })
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/pig_iron_plate' })
+  e.remove({ id: 'supplementaries:rope_arrow_create_display' })
+  e.remove({ id: 'supplementaries:rope_arrow_add_display' })
+
+
 
 
   //在这里ban掉一些比较逃课，或者比较偏离群峦原本玩法的配方（比如CCA的铜工具）
@@ -797,6 +839,9 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'create:milling/poppy' })
   e.remove({ id: 'create:milling/oxeye_daisy' })
   e.remove({ id: 'create:milling/wool' })
+  e.remove({ id: 'vintageimprovements:craft/spring_coiling_machine' })
+  e.remove({ id: 'vintageimprovements:craft/spring_coiling_machine_wheel' })
+  e.remove({ id: 'vintageimprovements:craft/vacuum_chamber' })
   e.remove({ id: 'brewinandchewin:quiche_from_bacon' })
   e.remove({ id: 'farmersdelight:chocolate_pie' })
   e.remove({ id: 'farmersdelight:integration/create/milling/wild_beetroots' })
@@ -866,16 +911,60 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_high_carbon_steel' })
   e.remove({ id: 'woodencog:heated_mixing/alloying_weak_steel' })
   e.remove({ id: 'woodencog:heated_mixing/ingot_to_liquid_weak_steel' })
+  e.remove({ id: 'woodencog:crafting/kinetics/wrench' })
+  e.remove({ id: 'woodencog:crafting/kinetics/empty_blaze_burner' })
 
 
   e.remove({ id: 'warriorsofpastepoch:musket_craft' })
   e.remove({ id: 'warriorsofpastepoch:pistol_craft' })
-  
+
   e.remove({ id: 'scguns:scorched_blueprint' })
 
+  e.remove({ id: 'farmersdelight:cooking/pasta_with_meatballs' })
+  e.remove({ id: 'butcher:meatballrecipe' })
+
+  e.remove({ id: 'moreburners:electric_burner' })
+
+  e.remove({ id: 'minecraft:brewing_stand' })
+  e.remove({ id: 'supplementaries:sack' })
+  e.remove({ id: 'trotting_wagons:conestoga_wagon' })
+  e.remove({ id: 'trotting_wagons:royal_wagon' })
+  e.remove({ id: 'irons_spellbooks:inscription_table' })
+  e.remove({ id: 'createmetallurgy:crafting/content/faucet' })
+  e.remove({ id: 'fluid:copper_tap' })
+  e.remove({ id: 'farmersdelight:iron_knife' })
+  e.remove({ id: 'supplementaries:wicker_fence' })
+  e.remove({ id: 'alexsmobs:vine_lasso' })
 
 
+  //水产2不合理配方移除
+  e.remove({ id: 'aquaculture:iron_fishing_rod' })
+  e.remove({ id: 'aquaculture:golden_fishing_rod' })
+  e.remove({ id: 'aquaculture:diamond_fishing_rod' })
+  e.remove({ id: 'aquaculture:wooden_fillet_knife' })
+  e.remove({ id: 'aquaculture:stone_fillet_knife' })
+  e.remove({ id: 'aquaculture:iron_fillet_knife' })
+  e.remove({ id: 'aquaculture:gold_fillet_knife' })
+  e.remove({ id: 'aquaculture:diamond_fillet_knife' })
+  e.remove({ id: 'aquaculture:iron_hook' })
+  e.remove({ id: 'aquaculture:gold_hook' })
+  e.remove({ id: 'aquaculture:diamond_hook' })
+  e.remove({ id: 'aquaculture:light_hook' })
+  e.remove({ id: 'aquaculture:heavy_hook' })
+  e.remove({ id: 'aquaculture:double_hook' })
+  e.remove({ id: 'aquaculture:redstone_hook' })
+  e.remove({ id: 'aquaculture:note_hook' })
+  e.remove({ id: 'aquaculture:nether_star_hook' })
+  e.remove({ id: 'aquaculture:bobber' })
+  e.remove({ id: 'aquaculture:fishing_line' })
 
+  
+  e.remove({ id: 'irons_restrictions:unfinished_manuscript' })
+  e.remove({ id: 'irons_restrictions:common_upgrade' })
+  e.remove({ id: 'irons_restrictions:uncommon_upgrade' })
+  e.remove({ id: 'irons_restrictions:rare_upgrade' })
+  e.remove({ id: 'irons_restrictions:epic_upgrade' })
+  e.remove({ id: 'irons_restrictions:legendary_upgrade' })
 
   //刷物品
   e.remove({ input: '#forge:plates', output: '#forge:plates' }) //板子

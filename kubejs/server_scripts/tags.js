@@ -148,7 +148,17 @@ ServerEvents.tags("item", event => {
             "kubejs:triple_wrought_iron"
         ])
 
-
+    //打火tag
+event.add('kubejs:flint',
+        [
+            "minecraft:flint_and_steel",
+            "artisanal:stone/flint_and/pyrite",
+            "artisanal:stone/flint_and/cut_pyrite",
+            "artisanal:metal/flint_and/black_steel",
+            "artisanal:metal/flint_and/blue_steel",
+            "artisanal:metal/flint_and/red_steel",
+            "createdieselgenerators:lighter"
+        ])
 
 })
 

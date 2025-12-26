@@ -17,14 +17,14 @@ ServerEvents.recipes((event) => {
 
         //手写铸铁融化配方
         {
-            ingredients: [{ item: `tfc:metal/ingots/cast_iron` }],
+            ingredients: [{ item: `tfc:metal/ingot/cast_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/cast_iron`
         },
         {
-            ingredients: [{ item: `tfc:metal/double_ingots/cast_iron` }],
+            ingredients: [{ item: `tfc:metal/double_ingot/cast_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
@@ -44,42 +44,56 @@ ServerEvents.recipes((event) => {
             results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/cast_iron`
         },
+        {
+            ingredients: [{ item: `tfc:metal/rod/cast_iron` }],
+            heatRequirement: 'superheated',
+            processingTime: 240,
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
+            id: `${id_prefix}rod/cast_iron`
+        },
 
         //锻铁
         {
-            ingredients: [{ item: `tfc:metal/ingots/wrought_iron` }],
+            ingredients: [{ item: `tfc:metal/ingot/wrought_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
-            results: [{ amount: 100, fluid: `tfc:metal/wrought_iron` }],
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}ingots/wrought_iron`
         },
         {
-            ingredients: [{ item: `tfc:metal/double_ingots/wrought_iron` }],
+            ingredients: [{ item: `tfc:metal/double_ingot/wrought_iron` }],
             heatRequirement: 'superheated',
             processingTime: 60,
-            results: [{ amount: 100, fluid: `tfc:metal/wrought_iron` }],
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_ingots/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/sheet/wrought_iron` }],
             heatRequirement: 'superheated',
             processingTime: 120,
-            results: [{ amount: 100, fluid: `tfc:metal/wrought_iron` }],
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/double_sheet/wrought_iron` }],
             heatRequirement: 'superheated',
             processingTime: 240,
-            results: [{ amount: 100, fluid: `tfc:metal/wrought_iron` }],
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}double_sheets/wrought_iron`
         },
         {
             ingredients: [{ item: `tfc:metal/rod/wrought_iron` }],
             heatRequirement: 'superheated',
             processingTime: 240,
-            results: [{ amount: 100, fluid: `tfc:metal/wrought_iron` }],
+            results: [{ amount: 100, fluid: `tfc:metal/cast_iron` }],
             id: `${id_prefix}rod/wrought_iron`
+        },
+        {
+            ingredients: [{ item: `tfc:metal/tuyere/wrought_iron` }],
+            heatRequirement: 'superheated',
+            processingTime: 240,
+            results: [{ amount: 400, fluid: `tfc:metal/cast_iron` }],
+            id: `${id_prefix}tuyere/wrought_iron`
         },
 
         //生铁
@@ -209,7 +223,6 @@ ServerEvents.recipes((event) => {
     });
     const tfc_metal_tuyere_super_heated = [
         'cast_iron',
-        'wrought_iron',
         'steel',
         'black_steel',
         'blue_steel',
@@ -559,7 +572,7 @@ ServerEvents.recipes((event) => {
 
 
 
-    const tfccore_powders = [
+/*   const tfccore_powders = [
         { dust: 'chromium', fluid: 'chromium', type: 'heated' },
     ]
     tfccore_powders.forEach((powder) => {
@@ -572,7 +585,7 @@ ServerEvents.recipes((event) => {
                 id: `${id_prefix}heated_${powder.dust}`
             })
     });
-
+*/
 
 
 

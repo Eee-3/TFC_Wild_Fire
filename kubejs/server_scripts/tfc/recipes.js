@@ -261,19 +261,20 @@ ServerEvents.recipes(event => {
     g: 'tfc:metal/sheet/bronze',
     h: 'create:shaft',
   }) // 大型柴油引擎
-  create.mechanical_crafting('createdieselgenerators:burner', [
-    "  e  ",
-    "facaf",
-    "gdbdg",
+  create.mechanical_crafting('moreburners:electric_burner', [
+    " aaa ",
+    "cbbbc",
+    " ede ",
+    " gfg ",
   ], {
-    a: 'create:shaft',
-    b: 'create:fluid_valve',
-    c: 'create:fluid_pipe',
-    d: 'tfc:metal/sheet/wrought_iron',
-    e: 'minecraft:flint',
-    f: 'tfc:metal/rod/wrought_iron',
-    g: 'tfc:metal/sheet/cast_iron',
-  }) // 可控燃烧室
+    a: 'firmalife:reinforced_glass',
+    b: 'moreburners:copper_coil',
+    c: 'tfc:metal/rod/steel',
+    d: 'immersiveengineering:furnace_heater',
+    e: 'tfc:metal/double_sheet/wrought_iron',
+    f: 'create:empty_blaze_burner',
+    g: 'tfc:metal/sheet/wrought_iron',
+  }) // 电磁炉
   create.mechanical_crafting('createdieselgenerators:pumpjack_crank', [
     "a a",
     "dbd",

@@ -1,8 +1,8 @@
 {
   "type": "siegemachines:siege_workbench",
   "pattern": [
-    "l  ",
-    "bl ",
+    "b b",
+    "glg",
     "wBw"
   ],
   "key": {
@@ -12,7 +12,7 @@
     },
     "b": {
       "item": "siegemachines:beam",
-      "count": 20
+      "count": 13
     },
     "l": {
       "item": "minecraft:ladder",
@@ -20,6 +20,10 @@
     },
     "w": {
       "item": "siegemachines:wheel",
+      "count": 2
+    },
+    "g": {
+      "item": "tfc:metal/sheet/wrought_iron",
       "count": 2
     }
   },
