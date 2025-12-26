@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
     d: 'tfc:metal/sheet/wrought_iron',
     e: 'tfc:metal/double_sheet/wrought_iron'
   })//燃烧室框架
-    event.shaped('createdieselgenerators:burner', [
+  event.shaped('createdieselgenerators:burner', [
     ' ab',
     'cdc',
     'efe'
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     e: 'tfc:metal/double_sheet/wrought_iron',
     f: 'create:fluid_valve',
   })//燃气炉
-    event.shaped('vintageimprovements:spring_coiling_machine_wheel', [
+  event.shaped('vintageimprovements:spring_coiling_machine_wheel', [
     ' a',
     'cbc',
     ' a '
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
     b: 'create:andesite_alloy_block',
     c: 'vintageimprovements:andesite_sheet',
   })//卷簧轮
-    event.shaped('vintageimprovements:spring_coiling_machine_wheel', [
+  event.shaped('vintageimprovements:spring_coiling_machine_wheel', [
     'abc',
     'ded'
   ], {
@@ -217,8 +217,8 @@ ServerEvents.recipes(event => {
     d: 'vintageimprovements:andesite_sheet',
     e: 'create:andesite_casing',
   })//卷簧机
-  
-    event.shaped('vintageimprovements:vacuum_chamber', [
+
+  event.shaped('vintageimprovements:vacuum_chamber', [
     ' a ',
     'ebe',
     'cdc'
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
     e: 'vintageimprovements:andesite_sheet',
   })//压缩机
 
-    event.shaped('supplementaries:sack', [
+  event.shaped('supplementaries:sack', [
     ' a ',
     'b b',
     ' b '
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
     b: 'tfc:burlap_cloth',
   })//麻布袋
 
-    event.shaped('born_in_chaos_v1:hound_trap', [
+  event.shaped('born_in_chaos_v1:hound_trap', [
     'aba',
     'cdc'
   ], {
@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
     d: 'vintageimprovements:iron_spring',
   })//捕兽夹
 
-    event.shaped('create_enchantment_industry:disenchanter', [
+  event.shaped('create_enchantment_industry:disenchanter', [
     'bab',
     'cdc'
   ], {
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
     d: 'tfc:metal/sheet/brass',
   })//祛魔池
 
-    event.shaped('fluid:copper_tap', [
+  event.shaped('fluid:copper_tap', [
     ' ab',
     ' c '
   ], {
@@ -268,7 +268,7 @@ ServerEvents.recipes(event => {
     c: 'tfc:metal/sheet/steel',
   })//钢龙头
 
-    event.shaped('createmetallurgy:faucet', [
+  event.shaped('createmetallurgy:faucet', [
     'a a',
     ' b '
   ], {
@@ -276,21 +276,22 @@ ServerEvents.recipes(event => {
     b: 'tfc:metal/sheet/cast_iron',
   })//龙头
 
-      event.shaped('supplementaries:wicker_fence', [
+  event.shaped('supplementaries:wicker_fence', [
     'aba',
-    'aba '
+    'aba'
   ], {
     a: 'minecraft:stick',
     b: 'farmersdelight:rope',
   })//藤条栅栏
 
-      event.shaped('alexsmobs:vine_lasso', [
+  event.shaped('alexsmobs:vine_lasso', [
     ' aa',
     ' aa',
     'a  '
   ], {
     a: 'farmersdelight:rope',
   })//藤蔓套索
+
 
   //event.custom({ "type": "tfc:heating", "ingredient": { "item": 'create:empty_blaze_burner' }, "result_item": { "item": 'create:blaze_burner' }, "temperature": 1538 })//烈焰人燃烧室
   event.custom({//海带烧
@@ -345,7 +346,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.tfc.welding('tfc:metal/double_ingot/cast_iron', 'tfc:metal/ingot/cast_iron', 'tfc:metal/ingot/cast_iron')//铸铁焊接
 
-const tfc_metals = [
+  const tfc_metals = [
     'bronze',
     'black_bronze',
     'bismuth_bronze',
@@ -359,14 +360,34 @@ const tfc_metals = [
   ];
   tfc_metals.forEach((tfc_metals) => {
     event.shaped(`tfcgroomer:${tfc_metals}_grooming_station`, [
-    'a a',
-    'cbc',
-    'c c'
-  ], {
-    a: `tfc:metal/sheet/${tfc_metals}`,
-    b: `tfc:metal/double_sheet/${tfc_metals}`,
-    c: '#forge:rods/wooden'
-  })//喂食盆
+      'a a',
+      'cbc',
+      'c c'
+    ], {
+      a: `tfc:metal/sheet/${tfc_metals}`,
+      b: `tfc:metal/double_sheet/${tfc_metals}`,
+      c: '#forge:rods/wooden'
+    })//喂食盆
+
+    event.shaped('moreburners:copper_coil', [
+      ' a ',
+      'aba',
+      ' a '
+    ], {
+      a: 'immersiveengineering:wirecoil_copper',
+      b: 'immersiveengineering:coil_lv',
+    })//铜线圈
+
+    event.shaped('moreburners:nickel_coil', [
+      'cac',
+      'aba',
+      'cac'
+    ], {
+      a: 'immersiveengineering:wirecoil_electrum',
+      b: 'immersiveengineering:coil_mv',
+      c: 'immersiveengineering:wirecoil_steel',
+    })//电阻线圈
+
   })
 
 

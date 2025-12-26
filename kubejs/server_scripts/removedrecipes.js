@@ -965,6 +965,12 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'irons_restrictions:rare_upgrade' })
   e.remove({ id: 'irons_restrictions:epic_upgrade' })
   e.remove({ id: 'irons_restrictions:legendary_upgrade' })
+  
+  e.remove({ id: 'supplementaries:rope_arrow_create_display' })
+  e.remove({ id: 'supplementaries:rope_arrow_add_display' })
+  
+  e.remove({ id: 'moreburners:copper_coil' })
+  e.remove({ id: 'moreburners:resistance_coil' })
 
   //刷物品
   e.remove({ input: '#forge:plates', output: '#forge:plates' }) //板子
