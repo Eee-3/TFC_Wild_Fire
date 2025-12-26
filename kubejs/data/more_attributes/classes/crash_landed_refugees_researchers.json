@@ -1,0 +1,24 @@
+{
+    "name": "crash_landed_refugees_researchers",
+    "attributes": {
+        "strength": 9,
+        "health": 8,
+        "focus": 15,
+        "stamina": 9,
+        "endurance": 9,
+        "intelligence": 12,
+        "agility": 7,
+        "skill": 16,
+        "luck": 5
+    },
+    "startItems": {
+        "minecraft:compass": 1,
+        "create:goggles": 1,
+        "create:wrench": 1,
+        "create:extendo_grip": 1,
+        "artisanal:metal/magnifying_glass/gold": 1,
+        "repas_de_survie:instant_gel_nature": 5,
+        "immersiveengineering:toolbox": 1
+    },
+    "displayCondition": []
+}

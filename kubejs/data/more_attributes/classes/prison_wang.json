@@ -1,0 +1,23 @@
+{
+    "name": "prison_wang",
+    "attributes": {
+        "strength": 6,
+        "health": 6,
+        "focus": 6,
+        "stamina": 727,
+        "endurance": 6,
+        "intelligence": 6,
+        "agility": 6,
+        "skill": 6,
+        "luck": 6
+    },
+    "startItems": {
+        "minecraft:gunpowder": 1,
+        "create:schematicannon": 1,
+        "create:schematic_table": 1,
+        "create:empty_schematic": 1,
+        "create:clipboard": 1,
+        "minecraft:barrel": 1
+    },
+    "displayCondition": []
+}

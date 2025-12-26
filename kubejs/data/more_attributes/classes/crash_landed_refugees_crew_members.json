@@ -1,0 +1,23 @@
+{
+    "name": "crash_landed_refugees_crew_members",
+    "attributes": {
+        "strength": 8,
+        "health": 13,
+        "focus": 11,
+        "stamina": 11,
+        "endurance": 8,
+        "intelligence": 12,
+        "agility": 10,
+        "skill": 10,
+        "luck": 7
+    },
+    "startItems": {
+        "ad_astra:ti_69": 1,
+        "legendarysurvivaloverhaul:morphine": 1,
+        "minecraft:spyglass": 1,
+        "textile:cotton_shirt": 1,
+        "firmalife:food/hardtack": 5,
+        "repas_de_survie:instant_gel_classic": 5
+    },
+    "displayCondition": []
+}

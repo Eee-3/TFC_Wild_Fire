@@ -523,7 +523,7 @@ ServerEvents.recipes(e => {
 
   })
 
-  //删除喂食盆配方
+  //删除喂食盆、钓鱼竿配方
   const tfc_metals = [
     'bronze',
     'black_bronze',
@@ -538,6 +538,7 @@ ServerEvents.recipes(e => {
   ];
   tfc_metals.forEach(metals => {
     e.remove({ id: `tfcgroomer:${metals}_grooming_station` })
+    e.remove({ id: `tfc:crafting/metal/fishing_rod/${metals}` })
 
   })
 

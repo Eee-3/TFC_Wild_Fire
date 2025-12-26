@@ -1,0 +1,21 @@
+{
+    "name": "aborigines_hunters",
+    "attributes": {
+        "strength": 10,
+        "health": 9,
+        "focus": 10,
+        "stamina": 7,
+        "endurance": 14,
+        "intelligence": 7,
+        "agility": 13,
+        "skill": 11,
+        "luck": 9
+    },
+    "startItems": {
+        "minecraft:bow": 1,
+        "spartanweaponry:wooden_arrow": 12,
+        "textile:caribou_hat": 1,
+        "butcher:boneskinningknife": 1
+    },
+    "displayCondition": []
+}

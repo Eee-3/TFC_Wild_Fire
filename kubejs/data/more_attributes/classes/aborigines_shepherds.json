@@ -1,0 +1,21 @@
+{
+    "name": "aborigines_shepherds",
+    "attributes": {
+        "strength": 10,
+        "health": 12,
+        "focus": 9,
+        "stamina": 13,
+        "endurance": 10,
+        "intelligence": 7,
+        "agility": 9,
+        "skill": 9,
+        "luck": 11
+    },
+    "startItems": {
+        "tfc:spawn_egg/sheep": 3,
+        "minecraft:lead": 3,
+        "textile:wool_hat": 1,
+        "tfc:ceramic/jug": 1
+    },
+    "displayCondition": []
+}

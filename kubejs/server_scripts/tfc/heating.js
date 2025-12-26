@@ -43,7 +43,7 @@ ServerEvents.recipes(e => {
   const metal = [
     { name: "copper", temperature: 1080, metal: "copper" },
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
-    { name: "black_bronze", temperature: 1050, metal: "black_bronze" },
+    { name: "black_bronze", temperature: 1070, metal: "black_bronze" },
     { name: "bronze", temperature: 950, metal: "bronze" },
     { name: "black_steel", temperature: 1485, metal: "black_steel" },
     { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
@@ -69,7 +69,7 @@ ServerEvents.recipes(e => {
     { mod: 'tfc:metal/', tool: 'scythe_blade/', number: 100 },        // 镰刀
     { mod: 'tfc:metal/', tool: 'sword_blade/', number: 200 },         // 剑
     { mod: 'tfc:metal/', tool: 'mace_head/', number: 200 },          // 钉头锤
-    { mod: 'tfc:metal/', tool: 'fish_hook/', number: 50 },   // 钓鱼竿 
+    { mod: 'tfc:metal/', tool: 'fishing_rod/', number: 150 },   // 钓鱼竿 
     //{ mod: 'tfc:metal/', tool: 'shears_head/', number: 200 },        // 剪刀
     //{ mod: 'tfc:metal/', tool: 'shield/', number: 200 },        // 盾牌
     { mod: 'tfc:metal/unfinished_', tool: 'chestplate/', number: 400 },    // 胸甲
@@ -276,7 +276,7 @@ ServerEvents.recipes(e => {
     crucible(`kubejs:${metal.name}_tong_part`, metal.metal, 50, metal.temperature)
   })
 
-  /*const metal_fish_hooks = [
+  const metal_fish_hooks = [
     { name: "bismuth_bronze", temperature: 985, metal: "tfc:metal/bismuth_bronze" },
     { name: "black_bronze", temperature: 1070, metal: "tfc:metal/black_bronze" },
     { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
@@ -291,7 +291,7 @@ ServerEvents.recipes(e => {
  
     tfc.heating(`tfc:metal/fish_hook/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//鱼钩融化
     crucible(`tfc:metal/fish_hook/${metal.name}`, metal.metal, 50, metal.temperature)
-  })*/
+  })
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')
   tfc.heating('kubejs:unfired_corundum_brick', 2000).resultItem('kubejs:corundum_brick')
   tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 50))//刚玉融化

@@ -1,0 +1,21 @@
+{
+    "name": "aborigines_primitive_people",
+    "attributes": {
+        "strength": 14,
+        "health": 13,
+        "focus": 8,
+        "stamina": 15,
+        "endurance": 9,
+        "intelligence": 5,
+        "agility": 10,
+        "skill": 7,
+        "luck": 9
+    },
+    "startItems": {
+        "spartanweaponry:wooden_club": 1,
+        "alexscaves:primordial_tunic": 1,
+        "farmersdelight:ham": 1,
+        "minecraft:bone": 3
+    },
+    "displayCondition": []
+}

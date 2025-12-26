@@ -163,6 +163,7 @@ ServerEvents.recipes((event) => {
     { item: 'steel', type: '1' },
     { item: 'tin', type: '1' },
     { item: 'zinc', type: '1' },
+    { item: 'unknown', type: '1' },
 
     { item: 'blue_steel', type: '2' },
     { item: 'red_steel', type: '2' },
