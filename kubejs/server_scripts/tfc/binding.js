@@ -40,7 +40,7 @@ ServerEvents.tags('item', event => {
         'minecraft:slime_ball',//粘液球
         '#forge:wires',//电线绑定标签
         'firmaciv:rope_coil',//黄麻
-        'kubejs:sinew_string',//筋线
+        'kubejs:tfc/sinew_thread',//筋线
 
     ]
     event.add('kubejs:bindings', bindings)

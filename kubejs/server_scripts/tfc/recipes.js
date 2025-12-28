@@ -21,6 +21,12 @@ ServerEvents.recipes(event => {
     ]
   ).damageIngredient("#forge:tools/hammers").id("tfcorewashing:rock_powder/hammering")
 
+  event.shapeless('2x kubejs:wood_pellet', ['3x createdieselgenerators:wood_chip', 'tfc:daub']);//木屑颗粒
+  event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', 'tfc:daub']);//木炭颗粒
+  event.shapeless('2x kubejs:coal_pellet', ['kubejs:coal_powder', '2x tfc:powder/charcoal', 'tfc:daub']);//煤炭颗粒
+  event.shapeless('2x kubejs:charcoal_briquette', ['8x kubejs:charcoal_pellet', 'tfc:daub']);//木屑块
+  event.shapeless('2x kubejs:wood_briquette', ['8x kubejs:wood_pellet', 'tfc:daub']);//木料炭块（木屑颗粒原料3倍倍增，贴合炭块为颗粒压缩形态）
+  event.shapeless('2x kubejs:coal_briquette', ['8x kubejs:coal_pellet', 'tfc:daub']);//煤炭块（煤炭颗粒原料8倍倍增，匹配木炭块的原料数量级）
 
   event.shapeless('2x kubejs:wood_pellet', ['3x createdieselgenerators:wood_chip', '#kubejs:glue']);//木屑颗粒
   event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', '#kubejs:glue']);//木炭颗粒
@@ -424,13 +430,13 @@ ServerEvents.recipes(event => {
   for (var i = 0; i < furAndLeatherItems.length; i++) {
     var ore = furAndLeatherItems[i];
     // console.log("开始调用");
-    farmersdelight_cutting('tfc:large_raw_hide',`textile:${ore}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理大生皮
+    farmersdelight_cutting('tfc:large_raw_hide', `textile:${ore}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理大生皮
 
-     tfc.scraping(
-        'tfc:large_raw_hide',
-        `textile:${ore}`,
-        'kubejs:item/tfc/fur/large_raw_hide',
-        `kubejs:item/tfc/fur/${ore}`
+    tfc.scraping(
+      'tfc:large_raw_hide',
+      `textile:${ore}`,
+      'kubejs:item/tfc/fur/large_raw_hide',
+      `kubejs:item/tfc/fur/${ore}`
     )
   }
 
@@ -442,7 +448,7 @@ ServerEvents.recipes(event => {
     , "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_large_sheepskin_hide`)//大羊毛
-   event.custom({
+  event.custom({
 
     "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_sheepskin_hide' }]
     , "result": [{ "item": 'tfc:medium_raw_hide' },
@@ -450,7 +456,7 @@ ServerEvents.recipes(event => {
     , "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_medium_sheepskin_hide`)//中羊毛
-    event.custom({
+  event.custom({
 
     "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_sheepskin_hide' }]
     , "result": [{ "item": 'tfc:small_raw_hide' },
