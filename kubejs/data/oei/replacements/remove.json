@@ -192,5 +192,5 @@
         "immersiveengineering:dust_uranium",
         "immersiveengineering:dust_aluminum"
     ],
-    "resultItems": "minecraft:air"
+    "resultItems": "minecraft:barrier"
 }
