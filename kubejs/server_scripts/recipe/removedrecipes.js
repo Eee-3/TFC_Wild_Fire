@@ -126,14 +126,21 @@ ServerEvents.recipes(e => {
 
     "textile:hide_from_fur",
     "immersiveengineering:crafting/sawblade",
-'woodencog:crafting/kinetics/belt_connector',
-'create:crafting/kinetics/belt_connector',
-'sns:crafting/frame_pack'
-
-
-
+    'woodencog:crafting/kinetics/belt_connector',
+    'create:crafting/kinetics/belt_connector',
+    'sns:crafting/frame_pack',
+    'woodencog:crafting/schematics/schematicannon',
+    'create:crafting/schematics/schematicannon',
+    'minecraft:minecart',
+    'tfc:crafting/vanilla/redstone/minecart',
+    'tfc:crafting/vanilla/redstone/steel_minecart',
+    'immersiveengineering:crafting/redstone_acid',
+    'tfc:pot/sulfuric_acid_primitive',
+    'tfc_ie_addon:barrel/redstone_acid',
+    'create:crafting/materials/rose_quartz'
   ]
   iddd.forEach(id => { e.remove({ id: id }); });
+
   const oeiremove1 = [
     "vintageimprovements:small_pig_iron_spring",
     "vintageimprovements:sulfur_chunk",

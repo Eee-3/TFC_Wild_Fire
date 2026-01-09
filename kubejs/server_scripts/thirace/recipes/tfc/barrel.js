@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 
 
 //region barrel_sealed
-ServerEvents.recipes((event) => {
+/*ServerEvents.recipes((event) => {
 
     const id_prefix = 'kubejs:thirace/tfc/barrel_sealed/';
 
@@ -40,4 +40,4 @@ ServerEvents.recipes((event) => {
         event.custom(recipe).id(recipe.id);
     })
 })
-
+*/

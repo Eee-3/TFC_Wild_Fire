@@ -1,14 +1,34 @@
 ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
   //安山合金合成
+  tfc.barrel_sealed(16000)
+    .outputItem('create:rose_quartz_block')
+    .inputs('tfc_ie_addon:mineral/quartz_block', TFC.fluidStackIngredient('immersiveengineering:redstone_acid', 1000))
+
+
+
   tfc.casting(
     'kubejs:trachyandesite_alloy',
     'kubejs:rock_powder',
     TFC.fluidStackIngredient('tfc:metal/zinc', 100),
     1
   )
+  tfc.pot(
+    [
+      'minecraft:redstone',
+      'minecraft:redstone',
+      'minecraft:redstone',
+      'minecraft:redstone'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 1000),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    2000
+  ).outputs([], Fluid.of('immersiveengineering:redstone_acid', 200),
+  )//红石酸
 
-  //岩石粉末替换
   tfc.pot(
 
     [
@@ -37,202 +57,7 @@ ServerEvents.recipes(event => {
     'kubejs:rock_powder',
     "tfc:rock/loose/andesite",
   ).id("tfcorewashing:rock_powder/milling")
-  kubejs.shapeless(
-    "kubejs:rock_powder",
-    [
-      "tfc:rock/loose/andesite",
-      "#forge:tools/hammers"
-    ]
-  ).damageIngredient("#forge:tools/hammers").id("tfcorewashing:rock_powder/hammering")
 
-  event.shapeless('2x kubejs:wood_pellet', ['3x createdieselgenerators:wood_chip', 'tfc:daub']);//木屑颗粒
-  event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', 'tfc:daub']);//木炭颗粒
-  event.shapeless('2x kubejs:coal_pellet', ['kubejs:coal_powder', '2x tfc:powder/charcoal', 'tfc:daub']);//煤炭颗粒
-  event.shapeless('2x kubejs:charcoal_briquette', ['8x kubejs:charcoal_pellet', 'tfc:daub']);//木屑块
-  event.shapeless('2x kubejs:wood_briquette', ['8x kubejs:wood_pellet', 'tfc:daub']);//木料炭块（木屑颗粒原料3倍倍增，贴合炭块为颗粒压缩形态）
-  event.shapeless('2x kubejs:coal_briquette', ['8x kubejs:coal_pellet', 'tfc:daub']);//煤炭块（煤炭颗粒原料8倍倍增，匹配木炭块的原料数量级）
-
-  event.shapeless('2x kubejs:wood_pellet', ['3x createdieselgenerators:wood_chip', '#kubejs:glue']);//木屑颗粒
-  event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', '#kubejs:glue']);//木炭颗粒
-  event.shapeless('2x kubejs:coal_pellet', ['kubejs:coal_powder', '2x tfc:powder/charcoal', '#kubejs:glue']);//煤炭颗粒
-  event.shapeless('2x kubejs:coke_pellet', ['immersiveengineering:dust_coke', '2x kubejs:coal_powder', '#kubejs:glue']);//焦煤颗粒
-  event.shapeless('2x kubejs:high_performance_fuel_pellet', ['tfc:powder/graphite', '2x immersiveengineering:dust_coke', '#kubejs:glue']);//高性能颗粒
-
-  event.shapeless('2x kubejs:charcoal_briquette', ['8x kubejs:charcoal_pellet', '#kubejs:glue']);//木屑块
-  event.shapeless('2x kubejs:wood_briquette', ['8x kubejs:wood_pellet', '#kubejs:glue']);//木料炭块（木屑颗粒原料3倍倍增，贴合炭块为颗粒压缩形态）
-  event.shapeless('2x kubejs:coal_briquette', ['8x kubejs:coal_pellet', '#kubejs:glue']);//煤炭块（煤炭颗粒原料8倍倍增，匹配木炭块的原料数量级）
-  event.shapeless('2x kubejs:coke_briquette', ['8x kubejs:coke_pellet', '#kubejs:glue']);//焦煤块（焦煤颗粒原料8倍倍增）
-  event.shapeless('2x kubejs:high_performance_fuel_briquette', ['8x kubejs:high_performance_fuel_pellet', '#kubejs:glue']);//高性能燃料块（高性能颗粒原料8倍倍增，粘结剂沿用glue）
-
-
-
-  event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x #kubejs:glue']);//木屑保温燃料块
-  event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x #kubejs:glue']);//煤炭保温燃料块
-  event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x #kubejs:glue']);//高性能保温燃料块
-
-  event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x tfc:daub']);//木屑保温燃料块
-  event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x tfc:daub']);//煤炭保温燃料块
-  //event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x tfc:daub']);//高性能保温燃料块
-
-  event.shaped('minecraft:bucket',
-    ['cbc',
-      ' c '],
-    {
-      c: TFC.ingredient.heatable('artisanal:metal/tinplate', 1200, null),
-      b: '#tfc:hammers'
-    }).damageIngredient({ tag: '#tfc:hammers' }, 10)//水桶
-  kubejs.shapeless(
-    "2x kubejs:wood_briquette",
-    [
-      "8x kubejs:wood_pellet",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/wood_briquette_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:charcoal_briquette",
-    [
-      "8x kubejs:charcoal_pellet",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/charcoal_briquette_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:coal_briquette",
-    [
-      "8x kubejs:coal_pellet",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/coal_briquette_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:coke_briquette",
-    [
-      "8x kubejs:coke_pellet",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/coke_briquette_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:high_performance_fuel_briquette",
-    [
-      "8x kubejs:high_performance_fuel_pellet",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/high_performance_fuel_briquette_from_super_glue")
-
-
-  kubejs.shapeless(
-    "2x kubejs:wood_pellet",
-    [
-      "3x createdieselgenerators:wood_chip",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/wood_pellet_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:charcoal_pellet",
-    [
-      "createdieselgenerators:wood_chip",
-      "2x tfc:powder/charcoal",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/charcoal_pellet_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:coal_pellet",
-    [
-      "kubejs:coal_powder",
-      "2x tfc:powder/charcoal",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/coal_pellet_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:coke_pellet",
-    [
-      "immersiveengineering:dust_coke",
-      "2x tfc:powder/charcoal",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/coke_pellet_from_super_glue")
-  kubejs.shapeless(
-    "2x kubejs:high_performance_fuel_pellet",
-    [
-      "tfc:powder/graphite",
-      "2x immersiveengineering:dust_coke",
-      "create:super_glue"
-    ]
-  ).damageIngredient("create:super_glue").id("kubejs:crafting/high_performance_fuel_from_super_glue")
-
-
-
-
-  /*
-    // 金属锭锤碎成碎片配方（TFC模组适配，需锤子工具）
-    event.shapeless('5x kubejs:copper_fragments', ['tfc:metal/ingot/copper', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 铜锭 → 5个铜碎片
-    event.shapeless('5x kubejs:bismuth_bronze_fragments', ['tfc:metal/ingot/bismuth_bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 铋青铜锭 → 5个铋青铜碎片
-    event.shapeless('5x kubejs:black_bronze_fragments', ['tfc:metal/ingot/black_bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 黑青铜锭 → 5个黑青铜碎片
-    event.shapeless('5x kubejs:bronze_fragments', ['tfc:metal/ingot/bronze', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 青铜锭 → 5个青铜碎片
-    event.shapeless('5x kubejs:red_steel_fragments', ['tfc:metal/ingot/red_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 红钢锭 → 5个红钢碎片
-    event.shapeless('5x kubejs:steel_fragments', ['tfc:metal/ingot/steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 钢锭 → 5个钢碎片
-    event.shapeless('5x kubejs:wrought_iron_fragments', ['tfc:metal/ingot/wrought_iron', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 锻铁锭 → 5个熟铁碎片
-    event.shapeless('5x kubejs:black_steel_fragments', ['tfc:metal/ingot/black_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 黑钢锭 → 5个黑钢碎片
-    event.shapeless('5x kubejs:blue_steel_fragments', ['tfc:metal/ingot/blue_steel', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 蓝钢锭 → 5个蓝钢碎片
-    //event.shapeless('5x kubejs:silver_fragments', ['tfc:metal/ingot/silver', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 银锭 → 5个银碎片
-    //event.shapeless('5x kubejs:gold_fragments', ['tfc:metal/ingot/gold', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' },3); // 金锭 → 5个金碎片
-    */
-
-  event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'tfc_ie_addon:powder/bauxite']); //碱化铝土生料
-  event.shapeless('3x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'kubejs:item/ore/purified_dust/bauxite']); //碱化铝土生料
-  event.shapeless('4x kubejs:alkalized_bauxite_raw_material', ['tfc:powder/salt', 'tfc:powder/flux', 'kubejs:item/ore/refined_dust/bauxite']); //碱化铝土生料
-
-  event.shapeless('kubejs:aluminum_chromium_mix_powder', ['kubejs:alumina_powder', 'kubejs:item/ore/refined_dust/chromite']); //铬铝混合粉
-
-  event.shapeless('kubejs:unfired_corundum_brick', ['kubejs:aluminum_chromium_mix_powder', 'minecraft:clay_ball', 'tfc:ceramic/ingot_mold']).keepIngredient({ item: 'tfc:ceramic/ingot_mold' }); //未完成的刚玉砖
-
-  event.shaped('immersiveengineering:sawblade',
-    [
-      ' a ',
-      'aba',
-      ' a '],
-    {
-      a: TFC.ingredient.heatable('tfc:metal/rod/wrought_iron', 1200, null),
-      b: TFC.ingredient.heatable('tfc:metal/sheet/wrought_iron', 1200, null),
-    })//锯子
-
-  event.shaped('1x kubejs:corundum_brick_block',
-    [
-      'aba',
-      'bbb',
-      'aba'],
-    {
-      a: 'kubejs:corundum_brick',
-      b: 'tfc:mortar',
-    })//刚玉砖块
-
-  event.shaped('2x create:belt_connector',
-    [
-      'aba',
-    ],
-    {
-      a: 'minecraft:leather',
-      b: 'tfc:wool_yarn',
-    })//传送带
-event.shaped('legendarysurvivaloverhaul:sewing_table',
-    [
-      'abc',
-      'bbb'
-    ],
-    {
-      a: '#tfc:sewing_needles',
-      b: '#tfc:lumber',
-      c: 'tfc:brass_mechanisms',
-    })//缝纫台
-    event.shaped('sns:frame_pack',
-    [
-      'aaa',
-      'bcb',
-      'bcb'
-    ],
-    {
-      a: 'tfc:metal/rod/bronze',
-      b: 'farmersdelight:rope',
-      c: '#forge:leather',
-    })//背包
 
 
 
@@ -400,61 +225,7 @@ event.shaped('legendarysurvivaloverhaul:sewing_table',
     c: 'tfc:metal/sheet/wrought_iron',
     d: 'create:propeller',
   }) // 引擎涡轮增压器
-  event.shaped('createdieselgenerators:bulk_fermenter',
-    [
-      'dbd',
-      'a a',
-      'cbc'
-    ],
-    {
-      a: 'tfc:metal/sheet/wrought_iron',
-      b: 'vintageimprovements:andesite_sheet',
-      c: 'tfc:metal/sheet/cast_iron',
-      d: 'create:andesite_alloy'
-    }
-  ) //大型发酵储罐
-  event.shaped('createdieselgenerators:basin_lid',
-    [
-      ' a ',
-      'cbc'
-    ],
-    {
-      a: 'minecraft:clock',
-      b: 'vintageimprovements:andesite_sheet',
-      c: 'tfc:metal/sheet/cast_iron'
-    }
-  ) //工作盆盖板
-  event.shaped('createdieselgenerators:oil_barrel',
-    [
-      'b',
-      'c',
-      'b'
-    ],
-    {
-      b: 'tfc:metal/sheet/wrought_iron',
-      c: '#tfc:barrels'
-    }
-  ) //燃油储罐
-  event.shaped('design_decor:gas_tank',
-    [
-      'b',
-      'c'
-    ],
-    {
-      b: 'tfc:metal/sheet/wrought_iron',
-      c: '#tfc:barrels'
-    }
-  ) //小型铁流体储罐
-  event.shaped('kubejs:peel',
-    [
-      'b',
-      'c'
-    ],
-    {
-      c: '#forge:rods/wooden',
-      b: '#tfc:lumber'
-    }
-  ) //小型铁流体储罐
+
 
   function farmersdelight_cutting(outputitem, inputitem, num, tool, id) {
     let processedTool = tool; // 先定义变量接收原始tool值
