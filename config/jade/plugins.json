@@ -103,6 +103,7 @@
     "shelf": true,
     "oven_top": true,
     "pumping_station": true,
+    "stovetop_pot": true,
     "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
@@ -165,11 +166,6 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "workshop_for_handsome_adventurer": {
-    "jade_plugin2": true,
-    "jade_plugin3": true,
-    "jade_plugin1": true
-  },
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
@@ -185,9 +181,6 @@
   },
   "survivorsdelight": {
     "feast_decay": true
-  },
-  "waystones": {
-    "waystone": true
   },
   "corpse": {
     "corpse": true

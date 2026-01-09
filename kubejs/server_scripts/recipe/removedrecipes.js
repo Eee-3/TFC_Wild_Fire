@@ -561,6 +561,19 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/pig_iron_plate' })
   e.remove({ id: 'supplementaries:rope_arrow_create_display' })
   e.remove({ id: 'supplementaries:rope_arrow_add_display' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_copper' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_iron' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_nickel' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_aluminum' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_lead' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_gold' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_uranium' })
+  e.remove({ id: 'immersiveengineering:arcfurnace/dust_silver' })
+  e.remove({ id: 'immersiveengineering:bottling/grindingdisk' })
+  e.remove({ id: 'kubejs:heating/rods/pig_iron' })
+  e.remove({ id: 'kubejs:heating/wires/pig_iron' })
+  e.remove({ id: 'legendarysurvivaloverhaul:healing_herbs' })
+  e.remove({ id: 'immersiveengineering:mixer/herbicide' })
 
 
 
