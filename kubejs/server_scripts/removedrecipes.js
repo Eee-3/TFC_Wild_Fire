@@ -117,7 +117,7 @@ ServerEvents.recipes(e => {
     "tfc:crafting/vanilla/cauldron",
     "minecraft:cauldron",
     'woodencog:crafting/kinetics/fluid_tank',
-
+    'woodencog:crafting/materials/rose_quartz',
 
 
     "tfc:crafting/small_sheepskin",
@@ -125,7 +125,10 @@ ServerEvents.recipes(e => {
     "tfc:crafting/large_sheepskin",
 
     "textile:hide_from_fur",
-    "immersiveengineering:crafting/sawblade"
+    "immersiveengineering:crafting/sawblade",
+'woodencog:crafting/kinetics/belt_connector',
+'create:crafting/kinetics/belt_connector',
+'sns:crafting/frame_pack'
 
 
 
@@ -959,17 +962,17 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'aquaculture:bobber' })
   e.remove({ id: 'aquaculture:fishing_line' })
 
-  
+
   e.remove({ id: 'irons_restrictions:unfinished_manuscript' })
   e.remove({ id: 'irons_restrictions:common_upgrade' })
   e.remove({ id: 'irons_restrictions:uncommon_upgrade' })
   e.remove({ id: 'irons_restrictions:rare_upgrade' })
   e.remove({ id: 'irons_restrictions:epic_upgrade' })
   e.remove({ id: 'irons_restrictions:legendary_upgrade' })
-  
+
   e.remove({ id: 'supplementaries:rope_arrow_create_display' })
   e.remove({ id: 'supplementaries:rope_arrow_add_display' })
-  
+
   e.remove({ id: 'moreburners:copper_coil' })
   e.remove({ id: 'moreburners:resistance_coil' })
 

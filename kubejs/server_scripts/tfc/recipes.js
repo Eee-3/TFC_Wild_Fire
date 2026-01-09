@@ -7,8 +7,32 @@ ServerEvents.recipes(event => {
     TFC.fluidStackIngredient('tfc:metal/zinc', 100),
     1
   )
-  //岩石粉末替换
 
+  //岩石粉末替换
+  tfc.pot(
+
+    [
+      'kubejs:rubber_hot_water_bag'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:rubber_hot_water_bag').addHeat(500))// 输出物品：橡胶热水袋
+  tfc.pot(
+
+    [
+      'kubejs:leather_hot_water_bag'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:leather_hot_water_bag').addHeat(500))// 输出物品：皮革热水袋
   create.milling(
     'kubejs:rock_powder',
     "tfc:rock/loose/andesite",
@@ -40,6 +64,23 @@ ServerEvents.recipes(event => {
   event.shapeless('2x kubejs:coke_briquette', ['8x kubejs:coke_pellet', '#kubejs:glue']);//焦煤块（焦煤颗粒原料8倍倍增）
   event.shapeless('2x kubejs:high_performance_fuel_briquette', ['8x kubejs:high_performance_fuel_pellet', '#kubejs:glue']);//高性能燃料块（高性能颗粒原料8倍倍增，粘结剂沿用glue）
 
+
+
+  event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x #kubejs:glue']);//木屑保温燃料块
+  event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x #kubejs:glue']);//煤炭保温燃料块
+  event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x #kubejs:glue']);//高性能保温燃料块
+
+  event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x tfc:daub']);//木屑保温燃料块
+  event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x tfc:daub']);//煤炭保温燃料块
+  //event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x tfc:daub']);//高性能保温燃料块
+
+  event.shaped('minecraft:bucket',
+    ['cbc',
+      ' c '],
+    {
+      c: TFC.ingredient.heatable('artisanal:metal/tinplate', 1200, null),
+      b: '#tfc:hammers'
+    }).damageIngredient({ tag: '#tfc:hammers' }, 10)//水桶
   kubejs.shapeless(
     "2x kubejs:wood_briquette",
     [
@@ -162,6 +203,37 @@ ServerEvents.recipes(event => {
       a: 'kubejs:corundum_brick',
       b: 'tfc:mortar',
     })//刚玉砖块
+
+  event.shaped('2x create:belt_connector',
+    [
+      'aba',
+    ],
+    {
+      a: 'minecraft:leather',
+      b: 'tfc:wool_yarn',
+    })//传送带
+event.shaped('legendarysurvivaloverhaul:sewing_table',
+    [
+      'abc',
+      'bbb'
+    ],
+    {
+      a: '#tfc:sewing_needles',
+      b: '#tfc:lumber',
+      c: 'tfc:brass_mechanisms',
+    })//缝纫台
+    event.shaped('sns:frame_pack',
+    [
+      'aaa',
+      'bcb',
+      'bcb'
+    ],
+    {
+      a: 'tfc:metal/rod/bronze',
+      b: 'farmersdelight:rope',
+      c: '#forge:leather',
+    })//背包
+
 
 
 

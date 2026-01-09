@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-   
+
     const id_in = "kubejs:reciped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
 })//region木板，箱子
 ServerEvents.recipes(event => {
 
-      function farmersdelight_cutting(outputitem, inputitem, num, tool) {
+    function farmersdelight_cutting(outputitem, inputitem, num, tool) {
         let processedTool = tool; // 先定义变量接收原始tool值
         if (processedTool.startsWith('#')) { // 判断是否以#开头
             processedTool = processedTool.substring(1); // 截取从第2个字符开始的字符串，移除#
@@ -234,12 +234,15 @@ ServerEvents.recipes(event => {
     ])
     //.replaceIngredient({ item:'kubejs:old_key', }, 'kubejs:old_key',)//这是不消耗钥匙
 
-   // event.shapeless('kubejs:tfc/crushed_sinew', ['kubejs:tfc/dried_sinew', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 1)//捣碎筋腱
-   //event.shapeless('2x kubejs:tfc/sinew_thread', ['kubejs:tfc/crushed_sinew', '#tfc:knives']).damageIngredient({ tag: '#tfc:knives' }, 1)//筋线
+    // event.shapeless('kubejs:tfc/crushed_sinew', ['kubejs:tfc/dried_sinew', '#tfc:hammers']).damageIngredient({ tag: '#tfc:hammers' }, 1)//捣碎筋腱
+    //event.shapeless('2x kubejs:tfc/sinew_thread', ['kubejs:tfc/crushed_sinew', '#tfc:knives']).damageIngredient({ tag: '#tfc:knives' }, 1)//筋线
     //有序配方
     //event.shaped('create:fluid_tank', [['#forge:plates/copper'], ['immersiveengineering:wooden_barrel'], ['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault', [['#forge:plates/iron'], ['immersiveengineering:crate'], ['#forge:plates/iron']])//机械动力保险箱
 
-  farmersdelight_cutting('kubejs:tfc/crushed_sinew', 'kubejs:tfc/dried_sinew',1,'tfc:hammers')//捣碎筋腱
-  farmersdelight_cutting('kubejs:tfc/sinew_thread', 'kubejs:tfc/crushed_sinew',2,'tfc:knives')//筋线
+    // event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
+   
+
+    farmersdelight_cutting('kubejs:tfc/crushed_sinew', 'kubejs:tfc/dried_sinew', 1, 'tfc:hammers')//捣碎筋腱
+    farmersdelight_cutting('kubejs:tfc/sinew_thread', 'kubejs:tfc/crushed_sinew', 2, 'tfc:knives')//筋线
 })

@@ -48,6 +48,9 @@ StartupEvents.registry('item', event => {
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 
+    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
+    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag');// 橡胶热水袋
+
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
     event.create('kubejs:tfc/sinew_thread', 'basic').texture('kubejs:item/tfc/sinew_thread'); // 筋线
 
@@ -69,6 +72,11 @@ StartupEvents.registry('item', event => {
     event.create('coal_briquette', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭块
     event.create('coke_briquette', 'basic').texture('kubejs:item/fuel/coke_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 焦煤块
     event.create('high_performance_fuel_briquette', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能燃料块
+    //保温碳
+    event.create('wood_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/wood_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 木料保温块
+    event.create('coal_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭保温块
+    event.create('high_performance_fuel_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能保温块
+
 
     event.create('bone_fish_hook', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 骨钩
     event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
@@ -79,7 +87,7 @@ StartupEvents.registry('item', event => {
     event.create('alkalized_bauxite_raw_material', 'basic').texture('kubejs:item/tfc/alkalized_bauxite_raw_material').tag("kubejs:ore"); // 碱化铝土生料
 
     event.create('bauxite_clinker', 'basic').texture('kubejs:item/tfc/bauxite_clinker');// 铝土熟料
-    
+
     event.create('aluminum_chromium_mix_powder', 'basic').texture('kubejs:item/tfc/aluminum_chromium_mix_powder');// 铝铬混合粉
 
     event.create('alumina_powder', 'basic').texture('kubejs:item/tfc/alumina_powder').tag("kubejs:ore"); // 氧化铝粉

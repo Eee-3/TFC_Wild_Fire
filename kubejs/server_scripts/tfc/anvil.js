@@ -120,6 +120,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(2).bonus(false).id("kubejs:tfc/anvil/brass_hand");
 
+  
   tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',
     'tfc:metal/rod/wrought_iron',

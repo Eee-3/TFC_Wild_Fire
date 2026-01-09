@@ -18,7 +18,7 @@ TFCEvents.data(event => {
 
     // 二、燃料炭块（压块）类（属性优于对应颗粒）
     // 木料炭块
-    event.fuel('kubejs:wood_briquette', 600, 20*30*9/2, 0.72);
+    event.fuel('kubejs:wood_briquette', 840, 20*30*9/2, 0.72);
     // 木炭块
     event.fuel('kubejs:charcoal_briquette', 1250, 20*30*9/2, 0.82);
     // 煤炭块
@@ -27,4 +27,14 @@ TFCEvents.data(event => {
     event.fuel('kubejs:coke_briquette', 1600, 20*100*9/2, 0.96);
     // 高性能燃料块
     event.fuel('kubejs:high_performance_fuel_briquette', 2500, 20*120*9/2, 0.99);
+
+
+ 
+    // 三、保温燃料块类（属性优于对应炭块）
+    // 木料保温块
+    event.fuel('kubejs:wood_sustained_heat_pellet', 480, 20*30*27/2, 0.75);
+    // 煤炭保温块
+    event.fuel('kubejs:coal_sustained_heat_pellet', 700, 20*60*27/2, 0.9);
+    // 高性能保温块
+    event.fuel('kubejs:high_performance_fuel_sustained_heat_pellet', 1200, 20*120*27/2, 0.995);
 });

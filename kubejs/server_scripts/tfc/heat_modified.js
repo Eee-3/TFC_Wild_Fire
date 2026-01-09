@@ -1,4 +1,7 @@
 TFCEvents.data(e => {
+  e.itemHeat('artisanal:metal/tinplate', 2.8, null, 1200)//马口铁
+  e.itemHeat('kubejs:leather_hot_water_bag', 1000, null, null)
+  e.itemHeat('kubejs:rubber_hot_water_bag', 1000, null, null)
   //烤肉
   e.itemHeat('#forge:meats', 1, null, null)
   e.itemHeat('#forge:weapons', 1, null, null)
