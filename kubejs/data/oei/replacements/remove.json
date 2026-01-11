@@ -183,14 +183,7 @@
         "ad_astra:nasa_workbench",
         "ad_astra:etrionic_blast_furnace",
         "immersiveengineering:dust_silver",
-        "scguns:anthralite_dust",
-        "immersiveengineering:dust_nickel",
-        "immersiveengineering:dust_gold",
-        "immersiveengineering:dust_copper",
-        "immersiveengineering:dust_lead",
-        "immersiveengineering:dust_iron",
-        "immersiveengineering:dust_uranium",
-        "immersiveengineering:dust_aluminum"
+        "scguns:anthralite_dust"
     ],
     "resultItems": "minecraft:barrier"
 }

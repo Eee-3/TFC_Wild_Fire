@@ -14,7 +14,7 @@
     "entity_armor.max_for_render": 40,
     "breaking_progress": true,
     "tnt_stability": true,
-    "item_storage.items_per_line": 9,
+    "item_storage.items_per_line": 12,
     "item_frame": true,
     "crop_progress": true,
     "command_block": true,
