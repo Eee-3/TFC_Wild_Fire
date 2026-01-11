@@ -20,8 +20,34 @@ ServerEvents.recipes(e => {
       item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红蓝钢
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
-
-
+  tfc.anvil(
+    '4x kubejs:copper_arrow',
+    'tfc:metal/rod/copper',
+    [
+      'hit_any',
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/copper_arrow/anvil")//铜箭头
+  tfc.anvil(
+    '4x kubejs:wrought_iron_arrow',
+    'tfc:metal/rod/wrought_iron',
+    [
+      'hit_any',
+    ]
+  ).tier(3).bonus(false).id("kubejs:tfc/anvil/wrought_iron_arrow/anvil")//锻铁箭头
+  tfc.anvil(
+    '4x kubejs:steel_arrow',
+    'tfc:metal/rod/steel',
+    [
+      'hit_any',
+    ]
+  ).tier(4).bonus(false).id("kubejs:tfc/anvil/steel_arrow/anvil")//钢箭头
+  tfc.anvil(
+    '4x kubejs:black_steel_arrow',
+    'tfc:metal/rod/black_steel',
+    [
+      'hit_any',
+    ]
+  ).tier(5).bonus(false).id("kubejs:tfc/anvil/black_steel_arrow/anvil")//黑钢箭头
   tfc.anvil(
     'create:andesite_alloy',
     'kubejs:trachyandesite_alloy',
@@ -110,7 +136,7 @@ ServerEvents.recipes(e => {
       "bend_last"
     ]
   ).tier(2).bonus(true).id("kubejs:tfc/anvil/brass_forge_door/anvil");
-    tfc.anvil(// 机械手的铁砧配方
+  tfc.anvil(// 机械手的铁砧配方
     'create:brass_hand',
     'tfc:metal/double_sheet/brass',
     [
@@ -120,7 +146,7 @@ ServerEvents.recipes(e => {
     ]
   ).tier(2).bonus(false).id("kubejs:tfc/anvil/brass_hand");
 
-  
+
   tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',
     'tfc:metal/rod/wrought_iron',
@@ -214,7 +240,7 @@ ServerEvents.recipes(a => {
     })
   })
 
-const metalhot = [
+  const metalhot = [
     { metal: 'bismuth_bronze', num: 2 },
     { metal: 'black_bronze', num: 2 },
     { metal: 'bronze', num: 2 },
@@ -233,13 +259,13 @@ const metalhot = [
     { metal: 'black_steel', num: 5 },
     { metal: 'blue_steel', num: 6 },
     { metal: 'red_steel', num: 6 },
-];
+  ];
 
-const metalhotf = [
+  const metalhotf = [
     { metal: 'chromium', num: 1 },
     { metal: 'stainless_steel', num: 4 }
-];
-   metalhotf.forEach(metal => {
+  ];
+  metalhotf.forEach(metal => {
     tfc.anvil(// 钳子的铁砧配方
       `kubejs:${metal.metal}_tong_part`,
       `firmalife:metal/rod/${metal.metal}`,
@@ -260,7 +286,7 @@ const metalhotf = [
       ]
     ).tier(metal.num).bonus(true).id(`kubejs:tfc/anvil/${metal.metal}_tong_part`);
 
-    });
+  });
   metalhot.forEach(metal => {
     tfc.anvil(// 鱼钩的铁砧配方
       `tfc:metal/fish_hook/${metal.metal}`,

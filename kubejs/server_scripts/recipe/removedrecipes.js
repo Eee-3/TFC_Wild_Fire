@@ -1,7 +1,13 @@
 ServerEvents.recipes(e => {
+  e.remove({ mod: 'born_in_chaos_v1' })
+  e.remove({ mod: 'immersive_aircraft' })
+  e.remove({ mod: 'eidolon' })
+  e.remove({ mod: 'immersive_melodies' })
 
   const iddd = [
+    "minecraft:stonecutter",
     "create:crafting/kinetics/water_wheel",//水车
+    'minecraft:arrow',
     "create:crafting/kinetics/large_water_wheel",//大水车
     "createdieselgenerators:compat/immersiveengineering/nickel_sheet",//锤子锤板子
     "createdieselgenerators:hammering/brass_sheet",

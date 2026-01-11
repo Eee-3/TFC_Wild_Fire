@@ -656,7 +656,7 @@
 			}]
 			title: "战略包围"
 			x: -10.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
@@ -683,14 +683,14 @@
 			}]
 			title: "来点种子"
 			x: -9.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1063BE4F6A66D335"]
 			description: ["木材是手工业的核心，手工业的内容离不开木材及其制品，不过最重要的是，你终于能造出工作台了。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: "tfc:wood/lumber/hickory"
+			icon: "tfc:wood/lumber/oak"
 			id: "1942F387C2F19008"
 			subtitle: "木材万岁"
 			tasks: [{
@@ -706,7 +706,7 @@
 				type: "item"
 			}]
 			x: -16.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1942F387C2F19008"]
@@ -715,11 +715,12 @@
 				""
 				"除了工作台，还有一个由木板制成的工作站值得制作：砧板。使用方法很简单，将有配方的物品放置在砧板上，手持加工的工具对其右键，即可获得产物。"
 			]
-			icon: "tfc:wood/planks/hickory"
+			icon: "minecraft:oak_planks"
 			id: "210AB4533CD5A8A7"
 			subtitle: "老友重逢的感觉"
 			tasks: [
 				{
+					icon: "minecraft:crafting_table"
 					id: "607E9F0A0985FB5C"
 					item: {
 						Count: 1
@@ -758,7 +759,7 @@
 			]
 			title: "老相好"
 			x: -14.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
@@ -768,7 +769,7 @@
 				"箱子无法容纳工具，这个时候就需要工具架的出场了。工具架可以放在墙上，一个工具架可以放置四把工具。"
 			]
 			hide_until_deps_complete: true
-			icon: "tfc:wood/chest/hickory"
+			icon: "tfc:wood/trapped_chest/oak"
 			id: "0E4EDC2573553FFB"
 			subtitle: "箱子在任何硬核mod里面都逃不掉被砍的命运"
 			tasks: [
@@ -798,8 +799,8 @@
 				}
 			]
 			title: "存储用方块"
-			x: -14.5d
-			y: -3.0d
+			x: -13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["210AB4533CD5A8A7"]
@@ -809,7 +810,7 @@
 				"木桶是一个能容纳1000mb单种类流体的工具，能容纳除熔岩以外的绝大部分流体，木桶绝大多数情况用于转移流体，小部分情况参与合成配方。注意：与原版铁桶不同，木桶只采集流体，不采集流体源，将木桶里的水倒出来会让其消失而不是在原地形成一格新的水。"
 			]
 			hide_until_deps_complete: true
-			icon: "tfc:wood/barrel/hickory"
+			icon: "tfc:wood/barrel/oak"
 			id: "3CCAB31FBEEE494C"
 			subtitle: "小桶爵士"
 			tasks: [
@@ -820,7 +821,7 @@
 					type: "item"
 				}
 				{
-					icon: "afc:wood/barrel/cypress"
+					icon: "tfc:wood/barrel/oak"
 					id: "4AE092044D6FEC89"
 					observe_type: 1
 					optional_task: true
@@ -839,7 +840,7 @@
 			description: ["洗矿槽是一种用于清洗沉积物和碎矿中间产物的机器，要使用洗矿槽，需要从一格水源方块引出水流，并将水流干涸前的最后一格下方的方块挖掉，放置洗矿槽使水流的最后一格流在洗矿槽的顶端，若洗矿槽有水流经则代表洗矿槽搭建成功。将沉积物或碎矿中间产物丢在洗矿槽顶部，经过一段时间后清洗产物就会在底部出现，洗矿槽一次只能同时处理一个物品。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "tfc:wood/sluice/hickory"
+			icon: "tfc:wood/sluice/oak"
 			id: "4FADA80691359ED3"
 			size: 1.0d
 			subtitle: "重复劳动的开端"
@@ -889,14 +890,11 @@
 				}
 			]
 			title: "札扎弄机杼"
-			x: -10.5d
+			x: -11.5d
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"0D63792C1A36411F"
-				"7D97D80EA47C810E"
-			]
+			dependencies: ["7D97D80EA47C810E"]
 			description: ["终于，你可以做床了。这张床可以正常度过夜晚，也可以保存重生点，除此之外没有别的了。"]
 			hide_until_deps_complete: true
 			id: "1A00219943638F23"
@@ -1154,7 +1152,7 @@
 			]
 			title: "浸泡皮革"
 			x: -12.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1226,7 +1224,7 @@
 			]
 			title: "鞣制皮革"
 			x: -10.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7F83D1B9298B5393"]
@@ -1321,7 +1319,7 @@
 			}]
 			title: "畜牧业"
 			x: -10.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1360,7 +1358,7 @@
 			]
 			title: "无处可逃"
 			x: -9.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
@@ -1373,7 +1371,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["34A3E922DB7A6883"]
@@ -1391,7 +1389,7 @@
 			}]
 			title: "养蜂"
 			x: -8.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["170AA7EF27C269F2"]
@@ -1432,7 +1430,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1454,8 +1452,8 @@
 					type: "item"
 				}
 			]
-			x: -7.5d
-			y: 1.5d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1597,8 +1595,8 @@
 				}
 			]
 			title: "一件像样的衣服"
-			x: -9.5d
-			y: 2.0d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1618,7 +1616,7 @@
 			}]
 			title: "强风吹拂"
 			x: -7.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41513B8F3A7B3810"]
@@ -1642,8 +1640,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: 2.0d
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2894CF3972892690"]
@@ -1839,7 +1837,16 @@
 		{
 			dependencies: ["43A874DF1D79892D"]
 			description: [""]
-			icon: "tfc:powder/native_copper"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:powder/native_copper"
+			}
 			id: "26C27CAED8D101C4"
 			subtitle: "矿物处理最终步"
 			tasks: [{
@@ -1870,7 +1877,16 @@
 				"加油吧，少年，你还有的是活要忙呢。"
 			]
 			hide_until_deps_visible: true
-			icon: "tfc:powder/native_copper"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:powder/native_copper"
+			}
 			id: "45C21923C740DB27"
 			subtitle: "你还有很长的路要走……"
 			tasks: [{
@@ -2160,7 +2176,7 @@
 			}]
 			title: "跋山涉水"
 			x: -13.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2894CF3972892690"]
@@ -2407,8 +2423,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: 1.5d
+			x: -11.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -2449,11 +2465,11 @@
 				"然而，传动杆无法连接太长，此时就需要齿轮箱的帮助了。齿轮箱能够延长传动杆的连接距离，还能将动力传递到额外三个方向。手持锤子右击齿轮箱的任意一面来使该面能够与传动杆相连接。"
 			]
 			hide_until_deps_visible: true
-			icon: "tfc:wood/axle/hickory"
+			icon: "tfc:wood/axle/oak"
 			id: "78E7C759E7460612"
-			subtitle: "原始动力"
 			tasks: [
 				{
+					icon: "tfc:wood/axle/oak"
 					id: "2E7EAAAA90471F1B"
 					item: {
 						Count: 1
@@ -2466,6 +2482,7 @@
 					type: "item"
 				}
 				{
+					icon: "tfc:wood/gear_box/oak"
 					id: "6A211F4358AA77B6"
 					item: {
 						Count: 1
@@ -2478,7 +2495,8 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			title: "原始传动"
+			x: -13.0d
 			y: 3.5d
 		}
 		{
@@ -2495,11 +2513,12 @@
 				"在风车中、田园风车的效率最强、他也最好看！"
 				"风车也不能连接在一起"
 			]
-			icon: "tfc:wood/water_wheel/hickory"
+			icon: "tfc:wood/water_wheel/oak"
 			id: "7AEDC7D17F3A9676"
 			subtitle: "自动化的苗头"
 			tasks: [
 				{
+					icon: "tfc:wood/water_wheel/oak"
 					id: "6064BD96A9BA06CB"
 					item: {
 						Count: 1
@@ -2525,7 +2544,7 @@
 				}
 			]
 			title: "自然之力"
-			x: -11.0d
+			x: -14.0d
 			y: 3.5d
 		}
 		{
@@ -2540,7 +2559,7 @@
 				type: "checkmark"
 			}]
 			title: "鬼推磨"
-			x: -10.0d
+			x: -15.0d
 			y: 3.5d
 		}
 		{
@@ -2553,7 +2572,7 @@
 				item: "tfc:glue"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
@@ -2616,7 +2635,7 @@
 			]
 			title: "制皮术"
 			x: -13.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["74D9BA72E3A53351"]
@@ -2634,7 +2653,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0D6D7D4274FAB7AF"]
@@ -2665,7 +2684,7 @@
 				}
 			]
 			x: -11.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1063BE4F6A66D335"]
@@ -2756,8 +2775,19 @@
 		{
 			description: [
 				"啊、你好像发现了宝石原石"
-				"宝石矿物在群峦里面是比较稀少的物品、他们会成堆生成不过没那么密集"
+				"宝石矿物在群峦里面是比较稀少的存在"
+				"他们虽然会成堆生成、不过不会像矿物一样密集"
 			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ore/opal"
+			}
 			id: "44AEF52B78E27184"
 			invisible: true
 			subtitle: "美丽的石头"
@@ -2899,6 +2929,262 @@
 			title: "焊接与修复"
 			x: -23.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["41513B8F3A7B3810"]
+			id: "225B60A48BF88DFA"
+			tasks: [{
+				id: "6C33225B55F961D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							voidSlots: [I; ]
+						}
+					}
+					id: "sns:leather_sack"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D97D80EA47C810E"]
+			description: [
+				"&f黄麻&r是一种非常原始的布料材料、虽然没有皮革耐用也没有羊毛柔顺、但是他的造价便宜、光是纤维都可以作为绑定材料、制成的&f黄麻布&r也有很大的用处"
+				""
+				"黄麻的自然生长条件比较广"
+				"只要是在："
+				"    &f[5°C-37°C]&r下的温带和热带气温环境"
+				"和"
+				"    &f[100mm-410mm]&r的平均降雨环境"
+				" "
+				"    下都能被发现！"
+				""
+				"黄麻是一种比较耐活的植物！如果你有幸找到了那么不要错过它"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: "tfc:wild_crop/jute"
+			id: "2659E061BD2964D1"
+			subtitle: "中世纪布料"
+			tasks: [
+				{
+					id: "27E100D96D0A3AC7"
+					item: "tfc:jute"
+					type: "item"
+				}
+				{
+					id: "009E271D1DE7C693"
+					item: "tfc:seeds/jute"
+					type: "item"
+				}
+			]
+			title: "黄麻？"
+			x: -11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2659E061BD2964D1"]
+			hide_until_deps_complete: true
+			id: "657F2F5D029310AE"
+			tasks: [{
+				id: "2DA40EBE7B747CAC"
+				item: "tfc:burlap_cloth"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7D97D80EA47C810E"]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			icon: "textile:wild_crop/flax"
+			id: "39621E4040226A39"
+			subtitle: "不太舒适的材料"
+			tasks: [
+				{
+					id: "46519F5AECFF962E"
+					item: "textile:flax"
+					type: "item"
+				}
+				{
+					id: "2655A2066CC1BD54"
+					item: "textile:seeds/flax"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["657F2F5D029310AE"]
+			hide_until_deps_complete: true
+			id: "263DB6F4924D0790"
+			subtitle: "避暑衣"
+			tasks: [
+				{
+					id: "2F4B8F7249A9E6A8"
+					item: {
+						Count: 1
+						id: "textile:burlap_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "568CA5882D47610B"
+					item: {
+						Count: 1
+						id: "textile:burlap_shirt"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A6DFB2F181245CB"
+					item: {
+						Count: 1
+						id: "textile:burlap_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "麻布衣"
+			x: -13.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["657F2F5D029310AE"]
+			hide_until_deps_complete: true
+			id: "588A8954F42DAC9F"
+			tasks: [{
+				id: "5F491C7A6CC6626A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							voidSlots: [I; ]
+						}
+					}
+					id: "sns:burlap_sack"
+				}
+				type: "item"
+			}]
+			x: -13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44AEF52B78E27184"]
+			description: [
+				"如果你意外获得了黄铁、那么你就可以做一个简易打火石"
+				"用黄铁原矿可以直接和燧石合成简易打火石、只不过耐久较低、"
+				""
+				"如果有条件最好切制黄铁制作黄铁打火石"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ore/pyrite"
+			}
+			id: "39E604603D2C0373"
+			invisible: true
+			shape: "circle"
+			subtitle: "FeS2"
+			tasks: [
+				{
+					id: "377E3B01CF99432F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(artisanal:stone/flint_and/pyrite)item(artisanal:stone/flint_and/cut_pyrite))"
+						}
+					}
+					optional_task: true
+					title: "任意黄铁打火石"
+					type: "item"
+				}
+				{
+					id: "6AF71D7F2AD9B8A7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/pyrite"
+					}
+					type: "item"
+				}
+			]
+			title: "黄铁"
+			x: -26.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["210AB4533CD5A8A7"]
+			icon: "astikorcarts:animal_cart"
+			id: "46C4B594FF41E4A3"
+			tasks: [
+				{
+					id: "2846D48BCCA9D2F7"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
+						}
+					}
+					title: "任意货运车"
+					type: "item"
+				}
+				{
+					id: "71D12688045165FE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:plow)"
+						}
+					}
+					title: "任意犁车"
+					type: "item"
+				}
+				{
+					id: "688F33910A7E6491"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:animal_cart)"
+						}
+					}
+					title: "任意畜力车"
+					type: "item"
+				}
+			]
+			title: "背井离乡"
+			x: -15.5d
+			y: -0.5d
 		}
 	]
 	title: "第一章：铜砂"

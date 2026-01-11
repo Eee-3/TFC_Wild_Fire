@@ -8556,7 +8556,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: "majruszsaccessories:horseshoe"
+			icon: "butcher:cowhoof"
 			id: "5CECA5CEE11AFB8F"
 			require_sequential_tasks: true
 			size: 1.5d
@@ -8670,16 +8670,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "majruszsaccessories:ancient_scarab"
-				tag: {
-					Bonus: {
-						Boosters: [ ]
-						Value: -0.6f
-					}
-				}
-			}
+			icon: "born_in_chaos_v1:fried_maggot"
 			id: "728B350B98915D16"
 			require_sequential_tasks: true
 			size: 1.5d

@@ -109,6 +109,16 @@ ServerEvents.recipes(event => {
         c: '#minecraft:logs',
         d: '#minecraft:slabs'
     }) //蓝图大炮
+      event.shaped('minecraft:stonecutter',
+        [
+            ' a ',
+            'bcb'
+            ], {
+         a: 'immersiveengineering:sawblade',
+        b: '#tfc:rock/smooth',
+        c: 'tfc:brass_mechanisms'
+    }) //石切机
+
 
 
     /*event.forEachRecipe( //合成箱子
@@ -129,6 +139,87 @@ ServerEvents.recipes(event => {
                 b: 'firmaciv:copper_bolt'
             })
         })*/
+    event.shaped('spartanweaponry:wooden_arrow',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'kubejs:stone_arrow',
+            b: '#forge:rods/wooden',
+            c: 'artisanal:trimmed_feather'
+        })//石箭头
+    event.shaped('spartanweaponry:copper_arrow',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'kubejs:copper_arrow',
+            b: 'minecraft:stick',
+            c: 'artisanal:trimmed_feather'
+        })//铜箭头
+    event.shaped('spartanweaponry:iron_arrow',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'kubejs:wrought_iron_arrow',
+            b: 'minecraft:stick',
+            c: 'artisanal:trimmed_feather'
+        })//铁箭头
+    event.shaped('spartanweaponry:diamond_arrow',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'kubejs:steel_arrow',
+            b: 'immersiveengineering:stick_treated',
+            c: 'artisanal:trimmed_feather'
+        })//钢箭头
+    event.shaped('spartanweaponry:netherite_arrow',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'kubejs:black_steel_arrow',
+            b: 'immersiveengineering:stick_treated',
+            c: 'artisanal:trimmed_feather'
+        })//黑钢箭头
+    event.shaped('2x spartanweaponry:netherite_bolt',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'tfc:metal/rod/black_steel',
+            b: 'immersiveengineering:stick_treated',
+            c: 'artisanal:trimmed_feather'
+        })//黑钢弩箭
+    event.shaped('2x spartanweaponry:bolt',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'tfc:metal/rod/wrought_iron',
+            b: 'minecraft:stick',
+            c: 'artisanal:trimmed_feather'
+        })//铁弩箭
+
+    event.shaped('2x spartanweaponry:diamond_bolt',
+        ['a',
+            'b',
+            'c'],
+        {
+            a: 'tfc:metal/rod/steel',
+            b: 'immersiveengineering:stick_treated',
+            c: 'artisanal:trimmed_feather'
+        })//钢弩箭
+
+
+    event.shaped('4x kubejs:stone_arrow',
+        ['aa',
+            ' a'],
+        {
+            a: '#tfc:loose_rocks'
+        })//石箭头
     event.shaped('minecraft:bucket',
         ['cbc',
             ' c '],

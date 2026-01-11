@@ -9,6 +9,7 @@ ServerEvents.recipes((event) => {
     event.remove({ id: 'create:crafting/kinetics/millstone' })
     event.remove({ id: 'create:crafting/kinetics/mechanical_press' })
 
+    
     const recipes = [
         {
             ingredients: [{ item: 'create:andesite_casing' }, { tag: 'tfc:chisels' }],
@@ -31,7 +32,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}millstone`
         },
         {
-            ingredients: [{ item: 'kubejs:andesite_chassis' }, Item.of('immersiveengineering:sawblade', '{Damage:0}')],
+            ingredients: [{ item: 'minecraft:stonecutter' }, 'vintageimprovements:andesite_sheet'],
             results: [{ item: 'create:mechanical_saw' }],
             id: `${id_prefix}mechanical_saw`
         },

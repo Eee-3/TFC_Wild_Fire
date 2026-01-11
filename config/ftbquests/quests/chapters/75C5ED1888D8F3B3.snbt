@@ -139,6 +139,7 @@
 			}
 			id: "3CD4B3897381D686"
 			shape: "hexagon"
+			size: 1.5d
 			subtitle: "接下来，让我们步入合金铜时代"
 			tasks: [{
 				id: "2C85EF8DEC27864C"
@@ -1224,7 +1225,6 @@
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "firmalife:gouda_wheel"
 			id: "69AA5A517FBED61A"
 			subtitle: "某种真正意义上不会腐烂的食物"
 			tasks: [{
@@ -2099,11 +2099,6 @@
 			]
 			icon: "minecraft:hopper"
 			id: "79C70447D297FD9A"
-			rewards: [{
-				id: "738A57240039D3CB"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
 			subtitle: "漏斗的更改"
 			tasks: [{
 				icon: "design_decor:capitalism_warning_sign"

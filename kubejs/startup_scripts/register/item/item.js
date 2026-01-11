@@ -169,6 +169,16 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:moon_propeller').texture('kubejs:item/ad/moon_propeller'); // 月球螺旋桨
     event.create('kubejs:venus_plating').texture('kubejs:item/ad/venus_plating'); // 金星镀层
 
+
+event.create('kubejs:stone_arrow').texture('kubejs:item/tfc/stone_arrow'); // 石箭头
+event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
+event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
+event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
+event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
+
+
+   
+
     // 未完成部件
     event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成
     event.create('kubejs:basic_crystal_pannel_unfinished').texture('kubejs:item/ad/basic_crystal_pannel_unfinished'); // 基础水晶面板_未完成
