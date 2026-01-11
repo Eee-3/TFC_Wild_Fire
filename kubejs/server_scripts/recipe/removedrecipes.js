@@ -842,6 +842,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'scguns:create/phosphorite_recycling' })
   e.remove({ id: 'scguns:create/glowstone_dust_milling' })
   e.remove({ id: 'scguns:create/plasma_nugget_from_plasma_milling' })
+  e.remove({ id: 'scguns:flare_pistol' })
 
   e.remove({ id: 'design_decor:crafting/gas_tank' })
   e.remove({ id: 'create:milling/sugar_cane' })
@@ -995,6 +996,14 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'irons_restrictions:rare_upgrade' })
   e.remove({ id: 'irons_restrictions:epic_upgrade' })
   e.remove({ id: 'irons_restrictions:legendary_upgrade' })
+  e.remove({ id: 'irons_restrictions:lightning_manuscript' })
+  e.remove({ id: 'irons_restrictions:fire_manuscript' })
+  e.remove({ id: 'irons_restrictions:ice_manuscript' })
+  e.remove({ id: 'irons_restrictions:nature_manuscript' })
+  e.remove({ id: 'irons_restrictions:holy_manuscript' })
+  e.remove({ id: 'irons_restrictions:ender_manuscript' })
+  e.remove({ id: 'irons_restrictions:evocation_manuscript' })
+  e.remove({ id: 'irons_restrictions:blood_manuscript' })
 
   e.remove({ id: 'supplementaries:rope_arrow_create_display' })
   e.remove({ id: 'supplementaries:rope_arrow_add_display' })
