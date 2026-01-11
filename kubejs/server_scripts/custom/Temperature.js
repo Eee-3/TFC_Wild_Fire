@@ -35,7 +35,7 @@ PlayerEvents.tick(event => {
     let amount = foodTemperature * 0.001
     
     // 如果玩家体温低于10，就将食物热量添加到体温中（食物加热效果）
-    if (Temperature < 12) {
+    if (Temperature < 8) {
         Temperature += amount
     }
     

@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         ).id(`kubejs:wash_ore/createorewash/splashing/rocky_chunks/${ore.ore}`);
     })
     create.splashing([Item.of('tfc:powder/sulfur').withChance(1)],
-        Item.of('kubejs:item/ore/dirty_dust/'))
+        Item.of('kubejs:item/ore/dirty_dust/sulfur'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/sulfur`);
     create.splashing([Item.of('tfc:powder/graphite').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/graphite'))

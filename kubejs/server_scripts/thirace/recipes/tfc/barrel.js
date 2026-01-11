@@ -4,8 +4,6 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'kubejs:thirace/tfc/barrel_instant/';
 
-    event.remove({ id: 'tfc_ie_addon:barrel/redstone_acid' })
-    event.remove({ id: 'create:crafting/materials/rose_quartz' })
 
 });
 
