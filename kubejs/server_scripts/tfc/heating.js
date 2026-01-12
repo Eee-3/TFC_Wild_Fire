@@ -301,10 +301,10 @@ ServerEvents.recipes(e => {
   })
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')
   tfc.heating('kubejs:unfired_corundum_brick', 2000).resultItem('kubejs:corundum_brick')
-  tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 50))//刚玉融化
-  tfc.heating('kubejs:corundum_brick_block', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 200))//刚玉融化
-  crucible('kubejs:corundum_brick', 'kubejs:synthetic_corundum', 50, 2600)
-  crucible('kubejs:corundum_brick_block', 'kubejs:synthetic_corundum', 200, 2600)
+  tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:molten_corundum", 50))//刚玉融化
+  tfc.heating('kubejs:corundum_brick_block', 2600).resultFluid(Fluid.of("kubejs:molten_corundum", 200))//刚玉融化
+  crucible('kubejs:corundum_brick', 'kubejs:molten_corundum', 50, 2600)
+  crucible('kubejs:corundum_brick_block', 'kubejs:molten_corundum', 200, 2600)
 
 
 

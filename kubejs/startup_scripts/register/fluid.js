@@ -14,10 +14,10 @@ StartupEvents.registry("fluid", event => {
         .thickTexture(0Xf9ad1c)
         .noBlock()
 
-    event.create('synthetic_corundum',)
-        .stillTexture('kubejs:fluid/glass/molten_glass_still')
-        .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
-        .color(0XC16051) // 人造刚玉
+    event.create('molten_corundum',)
+        .stillTexture('kubejs:fluid/glass/molten_corundum_still')
+        .flowingTexture('kubejs:fluid/glass/molten_corundum_flowing')
+    // 人造刚玉
 })
 StartupEvents.registry("fluid", event => {
     event.create("kubejs:heavy_oil")

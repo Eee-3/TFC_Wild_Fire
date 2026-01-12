@@ -30,12 +30,12 @@ ServerEvents.recipes((event) => {
     {
       ingredients: [
         { item: 'kubejs:crucible_mold' },
-        { amount: 1000, fluid: 'kubejs:synthetic_corundum', nbt: {} }
+        { amount: 1000, fluid: 'kubejs:molten_corundum', nbt: {} }
       ],
       mold_consumed: true,
       processingTime: 640,
       result: { item:'tfc:crucible' },
-      id: `${id_prefix}synthetic_corundum_crucible`
+      id: `${id_prefix}molten_corundum_crucible`
     }
   ];
 

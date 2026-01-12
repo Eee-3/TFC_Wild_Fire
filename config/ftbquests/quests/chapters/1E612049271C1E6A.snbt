@@ -2316,7 +2316,7 @@
 				"用1000mb的熔融刚玉来浇筑坩埚模具可以得到刚玉坩埚！功能是和坩埚一模一样的"
 			]
 			hide_until_deps_complete: true
-			icon: "kubejs:crucible_mold"
+			icon: "kubejs:molten_corundum_bucket"
 			id: "1A7E7EB359A970F3"
 			optional: true
 			subtitle: "黏土坩埚代替品"

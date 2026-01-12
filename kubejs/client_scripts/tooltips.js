@@ -15,8 +15,8 @@ let tooltips = [
     ["tfc:gem/ruby", "§8切制的§r", "§8polishing§r"],
     ["tfc:gem/sapphire", "§8切制的§r", "§8polishing§r"], 
     ["tfc:gem/topaz", "§8切制的§r", "§8polishing§r"],
-    ["kubejs:corundum_brick_block", "§7在§r2600°C温度下可熔化成 200 mb 刚玉", "§7Fluids can be melted at §r2600°C to 200 mb of synthetic_corundum"],
-    ["kubejs:corundum_brick", "§7在§r2600°C温度下可熔化成 50 mb 刚玉", "§7Fluids can be melted at §r2600°C to 50 mb of synthetic_corundum"]
+    ["kubejs:corundum_brick_block", "§7在§r2600°C温度下可熔化成 200 mb 刚玉", "§7Fluids can be melted at §r2600°C to 200 mb of molten_corundum"],
+    ["kubejs:corundum_brick", "§7在§r2600°C温度下可熔化成 50 mb 刚玉", "§7Fluids can be melted at §r2600°C to 50 mb of molten_corundum"]
 ]
 tooltips.forEach(([key, zh_cn, en_us]) => {
     // 添加key

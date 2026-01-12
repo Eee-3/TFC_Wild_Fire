@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
     {
       ingredients: [
         { item: 'createmetallurgy:graphite_ingot_mold' },
-        { amount: 50, fluid: 'kubejs:synthetic_corundum' }
+        { amount: 50, fluid: 'kubejs:molten_corundum' }
       ],
       processingTime: 150,
       result: { item: 'kubejs:corundum_brick' },
