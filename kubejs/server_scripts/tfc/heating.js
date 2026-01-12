@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
     { name: "black_steel", temperature: 1485, metal: "black_steel" },
     { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
     { name: "red_steel", temperature: 1538, metal: "red_steel" }
-  ]; 
+  ];
   const metal = [
     { name: "copper", temperature: 1080, metal: "copper" },
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
@@ -167,6 +167,12 @@ ServerEvents.recipes(e => {
     { name: "rose_gold_fragments", metal: "rose_gold", number: 20, temperature: 1064 }, // 玫瑰金碎片
     { name: "amber_gold_fragments", metal: "amber_gold", number: 20, temperature: 1064 }, // 琥珀金碎片
 
+    //箭类
+    { name: "copper_arrow", metal: "copper", number: 12, temperature: 1080 }, // 铜箭头
+    { name: "wrought_iron_arrow", metal: "cast_iron", number: 12, temperature: 1535 }, // 铁箭头
+    { name: "steel_arrow", metal: "steel", number: 12, temperature: 1540 }, // 钢箭头
+    { name: "black_steel_arrow", metal: "black_steel", number: 12, temperature: 1485 }, // 黑钢箭头
+
     { name: "copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 铜甲片
     { name: "rusty_copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 生锈的铜甲片
     { name: "rusty_bronze_scrap", metal: "bronze", number: 75, temperature: 950 }, // 生锈的青铜甲片
@@ -241,7 +247,8 @@ ServerEvents.recipes(e => {
 
 
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
-  tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold__simple_key')//钥匙模具
+  tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
+  tfc.heating('kubejs:unfired_crucible_mold', 1399).resultItem('kubejs:crucible_mold')//坩埚模具
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
   tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
@@ -288,16 +295,16 @@ ServerEvents.recipes(e => {
     { name: "red_steel", temperature: 1540, metal: "tfc:metal/red_steel" }
   ];
   metal_fish_hooks.forEach(metal => {
- 
+
     tfc.heating(`tfc:metal/fish_hook/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//鱼钩融化
     crucible(`tfc:metal/fish_hook/${metal.name}`, metal.metal, 50, metal.temperature)
   })
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')
   tfc.heating('kubejs:unfired_corundum_brick', 2000).resultItem('kubejs:corundum_brick')
   tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 50))//刚玉融化
-  tfc.heating('kubejs:corundum_brick_block', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 100))//刚玉融化
+  tfc.heating('kubejs:corundum_brick_block', 2600).resultFluid(Fluid.of("kubejs:synthetic_corundum", 200))//刚玉融化
   crucible('kubejs:corundum_brick', 'kubejs:synthetic_corundum', 50, 2600)
-  crucible('kubejs:corundum_brick_block', 'kubejs:synthetic_corundum', 100, 2600)
+  crucible('kubejs:corundum_brick_block', 'kubejs:synthetic_corundum', 200, 2600)
 
 
 

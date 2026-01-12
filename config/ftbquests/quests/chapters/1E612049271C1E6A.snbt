@@ -378,8 +378,9 @@
 				"所以本任务只是用于让你提前得知单桅帆船以便不需要从头收集材料"
 			]
 			hide_until_deps_complete: true
-			icon: "firmaciv:cannon"
+			icon: "firmaciv:sloop_icon_only"
 			id: "3933AA974EAACD79"
+			optional: true
 			shape: "gear"
 			subtitle: "为了远航，这是[不是]必要的"
 			tasks: [
@@ -405,7 +406,7 @@
 							value: "firmaciv:planks_that_make_ships"
 						}
 					}
-					title: "Any #firmaciv:planks_that_make_ships"
+					title: "可以作为船只框架的木材"
 					type: "item"
 				}
 				{
@@ -601,7 +602,7 @@
 		}
 		{
 			dependencies: ["0B73FDEF3EF6266A"]
-			description: ["塑形耐火黏土可得到未烧制的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
+			description: ["塑形耐火黏土可得到未硬化的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "tfc:fire_bricks"
@@ -1905,7 +1906,6 @@
 			id: "71E483F24F891577"
 			ignore_reward_blocking: true
 			shape: "hexagon"
-			subtitle: "另一条路？"
 			tasks: [{
 				id: "40EA7F474ADFA7C8"
 				title: "我已了解"

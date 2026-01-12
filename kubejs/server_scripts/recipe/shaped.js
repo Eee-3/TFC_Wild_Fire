@@ -109,12 +109,12 @@ ServerEvents.recipes(event => {
         c: '#minecraft:logs',
         d: '#minecraft:slabs'
     }) //蓝图大炮
-      event.shaped('minecraft:stonecutter',
+    event.shaped('minecraft:stonecutter',
         [
             ' a ',
             'bcb'
-            ], {
-         a: 'immersiveengineering:sawblade',
+        ], {
+        a: 'immersiveengineering:sawblade',
         b: '#tfc:rock/smooth',
         c: 'tfc:brass_mechanisms'
     }) //石切机
@@ -479,6 +479,28 @@ ServerEvents.recipes(event => {
         b: 'immersiveengineering:coil_mv',
         c: 'immersiveengineering:wirecoil_steel',
     })//电阻线圈
+
+    event.shaped('kubejs:unfired_crucible_mold', [
+        'a',
+        'b'
+    ],
+    {
+        a: 'tfc:ceramic/large_vessel',
+        b: 'minecraft:clay',
+    }).replaceIngredient({ item: 'tfc:ceramic/large_vessel', }, 'tfc:ceramic/large_vessel',)//不消耗物品 
+    //未完成的黏土坩埚模具_1
+
+    event.shaped('kubejs:unfired_crucible_mold', [
+        
+        'a',
+        'b'
+    ],
+     {
+        a: 'minecraft:cauldron',
+        b: 'minecraft:clay',
+
+    }).replaceIngredient({ item: 'minecraft:cauldron', }, 'minecraft:cauldron',)//不消耗物品
+    //未完成的黏土坩埚模具_2
 
     const tfc_metals = [
         'bronze',

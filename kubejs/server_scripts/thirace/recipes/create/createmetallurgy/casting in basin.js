@@ -34,8 +34,8 @@ ServerEvents.recipes((event) => {
       ],
       mold_consumed: true,
       processingTime: 640,
-      result: { item:'kubejs:crucible' },
-      id: `${id_prefix}synthetic_corundum`
+      result: { item:'tfc:crucible' },
+      id: `${id_prefix}synthetic_corundum_crucible`
     }
   ];
 
