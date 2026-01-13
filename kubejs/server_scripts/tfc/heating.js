@@ -83,6 +83,7 @@ ServerEvents.recipes(e => {
     { mod: 'precisionprospecting:metal/', tool: 'mineral_prospector_head/', number: 200 }, // 矿物勘探仪
     { mod: 'precisionprospecting:metal/', tool: 'prospector_drill_head/', number: 400 },   // 勘探钻头
     { mod: 'precisionprospecting:metal/', tool: 'prospector_hammer_head/', number: 200 }   // 勘探锤
+  
   ]
   metal.forEach(metala => {
     tfctool.forEach(tool => {
@@ -220,6 +221,17 @@ ServerEvents.recipes(e => {
     { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
 
 
+    // 支撑梁
+    { name: "copper_support", temperature: 1080, metal: "copper", number: 10 },//铜支撑梁
+    { name: "bismuth_bronze_support", temperature: 960, metal: "bismuth_bronze", number: 10 },//铋铜支撑梁
+    { name: "black_bronze_support", temperature: 1050, metal: "black_bronze", number: 10 },//黑铜支撑梁
+    { name: "bronze_support", temperature: 950, metal: "bronze", number: 10 },//青铜支撑梁
+    { name: "wrought_iron_support", temperature: 1535, metal: "cast_iron", number: 10 },//锻铁支撑梁
+    { name: "cast_iron_support", temperature: 1150, metal: "cast_iron", number: 10 },//铸铁支撑梁
+    { name: "steel_support", temperature: 1540, metal: "steel", number: 10 },//钢支撑梁
+    { name: "black_steel_support", temperature: 1485, metal: "black_steel", number: 10 },//黑钢支撑梁
+    { name: "blue_steel_support", temperature: 1538, metal: "blue_steel", number: 10 },//蓝钢支撑梁
+    { name: "red_steel_support", temperature: 1538, metal: "red_steel", number: 10 },//红钢支撑梁
   ];
   items.forEach(metala => {
 
@@ -298,7 +310,515 @@ ServerEvents.recipes(e => {
 
     tfc.heating(`tfc:metal/fish_hook/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//鱼钩融化
     crucible(`tfc:metal/fish_hook/${metal.name}`, metal.metal, 50, metal.temperature)
+    
+    tfc.heating(`tfcgroomer:${metal.name}_grooming_station`, metal.temperature).resultFluid(Fluid.of(metal.metal, 400))//喂食盆融化
+    crucible(`tfcgroomer:${metal.name}_grooming_station`, metal.metal, 400, metal.temperature)
   })
+  const metal_block = [
+
+    { name: "iron", temperature: 1535, molten_metal: "tfc:metal/cast_iron" },//锻铁
+    { name: "electrum", temperature: 900, molten_metal: "tfc_ie_addon:metal/electrum" },//琥珀金
+    { name: "aluminum", temperature: 650, molten_metal: "tfc_ie_addon:metal/aluminum" },//铝
+    { name: "lead", temperature: 500, molten_metal: "tfc_ie_addon:metal/lead" },//铅
+    { name: "silver", temperature: 961, molten_metal: "tfc:metal/silver" },//银
+    { name: "nickel", temperature: 1453, molten_metal: "tfc:metal/nickel" },//镍
+    { name: "copper", temperature: 1080, molten_metal: "tfc:metal/copper" },//铜
+    { name: "uranium", temperature: 747, molten_metal: "tfc_ie_addon:metal/uranium" },//铀
+    { name: "constantan", temperature: 750, molten_metal: "tfc_ie_addon:metal/constantan" },//康铜
+    { name: "steel", temperature: 1540, molten_metal: "tfc:metal/steel" },//钢
+    { name: "gold", temperature: 1060, molten_metal: "tfc:metal/gold" },//金
+
+  ];
+  metal_block.forEach(block => {
+
+    tfc.heating(`immersiveengineering:sheetmetal_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 100))//金属板方块融化
+    crucible(`immersiveengineering:sheetmetal_${block.name}`, block.molten_metal, 100, block.temperature)
+
+    tfc.heating(`immersiveengineering:slab_sheetmetal_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 50))//金属台阶方块融化
+    crucible(`immersiveengineering:slab_sheetmetal_${block.name}`, block.molten_metal, 50, block.temperature)
+
+  })
+  const metal_block_2 = [
+
+    { name: "iron", temperature: 1535, molten_metal: "tfc:metal/cast_iron" },//锻铁
+    { name: "aluminum", temperature: 650, molten_metal: "tfc_ie_addon:metal/aluminum" },//铝
+    { name: "copper", temperature: 1080, molten_metal: "tfc:metal/copper" },//铜
+    { name: "steel", temperature: 1540, molten_metal: "tfc:metal/steel" },//钢
+
+  ];
+  metal_block_2.forEach(block => {
+    tfc.heating(`immersiveengineering:chute_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 50))//金属滑道方块融化
+    crucible(`immersiveengineering:chute_${block.name}`, block.molten_metal, 50, block.temperature)
+  })
+  const color_block = [
+
+    { name: "white" },
+    { name: "orange" },
+    { name: "magenta" },
+    { name: "light_blue" },
+    { name: "yellow" },
+    { name: "lime" },
+    { name: "pink" },
+    { name: "gray" },
+    { name: "light_gray" },
+    { name: "cyan" },
+    { name: "purple" },
+    { name: "blue" },
+    { name: "brown" },
+    { name: "green" },
+    { name: "red" },
+    { name: "black" },
+
+  ];
+  color_block.forEach(block => {
+
+    tfc.heating(`immersiveengineering:sheetmetal_colored_${block.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 100))//金属方块融化
+    crucible(`immersiveengineering:sheetmetal_colored_${block.name}`, "tfc:metal/unknown", 100, 400)
+
+    tfc.heating(`immersiveengineering:slab_sheetmetal_colored_${block.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 50))//金属台阶融化
+    crucible(`immersiveengineering:slab_sheetmetal_colored_${block.name}`, "tfc:metal/unknown", 40, 400)
+  })
+  const color_block_2 = [
+
+    { name: "white" },
+    { name: "orange" },
+    { name: "magenta" },
+    { name: "light_blue" },
+    { name: "yellow" },
+    { name: "lime" },
+    { name: "pink" },
+    { name: "gray" },
+    { name: "light_gray" },
+    { name: "cyan" },
+    { name: "purple" },
+    { name: "blue" },
+    { name: "brown" },
+    { name: "green" },
+    { name: "red" },
+    { name: "black" },
+
+  ];
+  color_block_2.forEach(block => {
+
+    tfc.heating(`design_decor:${block.name}_metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${block.name}_metal_plate`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${block.name}_metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${block.name}_metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${block.name}_metal_plate_slab`, "tfc:metal/cast_iron", 25, 1535)
+
+
+
+    tfc.heating(`design_decor:${block.name}_metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${block.name}_metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${block.name}_metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${block.name}_metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
+
+    tfc.heating(`design_decor:${block.name}_metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${block.name}_metal_sheet_slab`, "tfc:metal/cast_iron", 25, 1535)
+
+  })
+  const light_color = [
+
+    { name: "white" },
+    { name: "orange" },
+    { name: "magenta" },
+    { name: "light_blue" },
+    { name: "yellow" },
+    { name: "lime" },
+    { name: "pink" },
+    { name: "gray" },
+    { name: "light_gray" },
+    { name: "cyan" },
+    { name: "purple" },
+    { name: "blue" },
+    { name: "brown" },
+    { name: "green" },
+    { name: "red" },
+    { name: "black" },
+
+  ];
+  light_color.forEach(block => {
+    //工业灯融化
+    tfc.heating(`ad_astra:${block.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 50))
+    crucible(`ad_astra:${block.name}_industrial_lamp`, "tfc:metal/cast_iron", 50, 1535)
+
+    tfc.heating(`ad_astra:small_${block.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
+    crucible(`ad_astra:small_${block.name}_industrial_lamp`, "tfc:metal/cast_iron", 12, 1535)
+  })
+
+  const large_chain = [
+
+    { name: "bronze", temperature: 950, metal: "tfc:metal/bronze" },
+    { name: "copper", temperature: 1085, metal: "tfc:metal/copper" },
+    { name: "iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
+    { name: "steel", temperature: 1540, metal: "tfc:metal/steel" },
+    { name: "cast_iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
+    { name: "gold", temperature: 1060, metal: "tfc:metal/gold" },
+    { name: "brass", temperature: 930, metal: "tfc:metal/brass" },
+    { name: "silver", temperature: 961, metal: "tfc:metal/silver" },
+    { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
+    { name: "electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum" },//琥珀金
+    { name: "aluminium", temperature: 650, metal: "tfc_ie_addon:metal/aluminum" },//铝
+    { name: "lead", temperature: 500, metal: "tfc_ie_addon:metal/lead" },//铅
+    { name: "silver", temperature: 961, metal: "tfc:metal/silver" },//银
+    { name: "tin", temperature: 961, metal: "tfc:metal/tin" },//锡
+
+  ];
+  large_chain.forEach(block => {
+    //大型锁链融化
+    tfc.heating(`design_decor:${block.name}_large_chain`, block.temperature).resultFluid(Fluid.of(block.metal, 25))
+    crucible(`design_decor:${block.name}_large_chain`, block.metal, 25, block.temperature)
+
+  })
+  const metal_block_3 = [
+    // 金属
+    { name: "create:zinc_block", temperature: 419, metal: "tfc:metal/zinc", number: 1000 },
+    { name: "minecraft:iron_block", temperature: 1535, metal: "tfc:metal/cast_iron", number: 1000 },
+    { name: "minecraft:gold_block", temperature: 1060, metal: "tfc:metal/gold", number: 1000 },
+    { name: "create:brass_block", temperature: 930, metal: "tfc:metal/brass", number: 1000 },
+    { name: "immersiveengineering:storage_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 1000 },
+    { name: "immersiveengineering:storage_steel", temperature: 1540, metal: "tfc:metal/steel", number: 1000 },
+    { name: "immersiveengineering:storage_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 1000 },
+    { name: "immersiveengineering:storage_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 1000 },
+    { name: "immersiveengineering:storage_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 1000 },
+    { name: "immersiveengineering:storage_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 1000 },
+    { name: "immersiveengineering:storage_silver", temperature: 961, metal: "tfc:metal/silver", number: 1000 },
+
+    //温室方块
+    //铁温室
+    { name: "firmalife:iron_greenhouse_wall", temperature: 1535, metal: "tfc:metal/cast_iron", number: 35 },
+    { name: "firmalife:iron_greenhouse_panel_wall", temperature: 1535, metal: "tfc:metal/cast_iron", number: 35 },
+    { name: "firmalife:iron_greenhouse_panel_roof", temperature: 1535, metal: "tfc:metal/cast_iron", number: 35 },
+    { name: "firmalife:iron_greenhouse_roof", temperature: 1535, metal: "tfc:metal/cast_iron", number: 35 },
+    { name: "firmalife:iron_greenhouse_roof_top", temperature: 1535, metal: "tfc:metal/cast_iron", number: 17 },
+    { name: "firmalife:iron_greenhouse_trapdoor", temperature: 1535, metal: "tfc:metal/cast_iron", number: 17 },
+    { name: "firmalife:iron_greenhouse_door", temperature: 1535, metal: "tfc:metal/cast_iron", number: 75 },
+    { name: "firmalife:iron_greenhouse_port", temperature: 1535, metal: "tfc:metal/cast_iron", number: 4 },
+    { name: "firmalife:rusted_iron_greenhouse_wall", temperature: 1535, metal: "tfc:metal/cast_iron", number: 30 },
+    { name: "firmalife:rusted_iron_greenhouse_panel_wall", temperature: 1535, metal: "tfc:metal/cast_iron", number: 30 },
+    { name: "firmalife:rusted_iron_greenhouse_panel_roof", temperature: 1535, metal: "tfc:metal/cast_iron", number: 30 },
+    { name: "firmalife:rusted_iron_greenhouse_roof", temperature: 1535, metal: "tfc:metal/cast_iron", number: 30 },
+    { name: "firmalife:rusted_iron_greenhouse_roof_top", temperature: 1535, metal: "tfc:metal/cast_iron", number: 13 },
+    { name: "firmalife:rusted_iron_greenhouse_trapdoor", temperature: 1535, metal: "tfc:metal/cast_iron", number: 13 },
+    { name: "firmalife:rusted_iron_greenhouse_port", temperature: 1535, metal: "tfc:metal/cast_iron", number: 2 },
+    //铜温室
+    { name: "firmalife:copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 35 },
+    { name: "firmalife:copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 35 },
+    { name: "firmalife:copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 35 },
+    { name: "firmalife:copper_greenhouse_roof", temperature: 1085, metal: "tfc:metal/copper", number: 35 },
+    { name: "firmalife:copper_greenhouse_roof_top", temperature: 1085, metal: "tfc:metal/copper", number: 17 },
+    { name: "firmalife:copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 17 },
+    { name: "firmalife:copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
+    { name: "firmalife:copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 4 },
+    
+    { name: "firmalife:exposed_copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
+    { name: "firmalife:exposed_copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
+    { name: "firmalife:exposed_copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
+    { name: "firmalife:exposed_copper_greenhouse_roof", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
+    { name: "firmalife:exposed_copper_greenhouse_roof_top", temperature: 1085, metal: "tfc:metal/copper", number: 16 },
+    { name: "firmalife:exposed_copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 16 },
+    { name: "firmalife:exposed_copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 73 },
+    { name: "firmalife:exposed_copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 3 },
+    
+    { name: "firmalife:weathered_copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
+    { name: "firmalife:weathered_copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
+    { name: "firmalife:weathered_copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
+    { name: "firmalife:weathered_copper_greenhouse_roof", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
+    { name: "firmalife:weathered_copper_greenhouse_roof_top", temperature: 1085, metal: "tfc:metal/copper", number: 14 },
+    { name: "firmalife:weathered_copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 14 },
+    { name: "firmalife:weathered_copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 70 },
+    { name: "firmalife:weathered_copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 2 },
+
+    { name: "firmalife:oxidized_copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 30 },
+    { name: "firmalife:oxidized_copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 30 },
+    { name: "firmalife:oxidized_copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 30 },
+    { name: "firmalife:oxidized_copper_greenhouse_roof", temperature: 1085, metal: "tfc:metal/copper", number: 30 },
+    { name: "firmalife:oxidized_copper_greenhouse_roof_top", temperature: 1085, metal: "tfc:metal/copper", number: 11 },
+    { name: "firmalife:oxidized_copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 11 },
+    { name: "firmalife:oxidized_copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 67 },
+    { name: "firmalife:oxidized_copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 1 },
+
+    //铁工业方块
+    { name: "ad_astra:iron_plating", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
+    { name: "ad_astra:iron_plating_stairs", temperature: 1535, metal: "tfc:metal/cast_iron", number: 40 },
+    { name: "ad_astra:iron_plating_slab", temperature: 1535, metal: "tfc:metal/cast_iron", number: 13 },
+    { name: "ad_astra:iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
+    { name: "ad_astra:glowing_iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
+    { name: "ad_astra:marked_iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
+
+    //钢工业方块
+    { name: "immersiveengineering:steel_scaffolding_standard", temperature: 1540, metal: "tfc:metal/steel", number: 50 },
+    { name: "immersiveengineering:slab_steel_scaffolding_standard", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "immersiveengineering:stairs_steel_scaffolding_standard", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
+    { name: "immersiveengineering:steel_scaffolding_grate_top", temperature: 1540, metal: "tfc:metal/steel", number: 50 },
+    { name: "immersiveengineering:slab_steel_scaffolding_grate_top", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "immersiveengineering:stairs_steel_scaffolding_grate_top", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
+    { name: "immersiveengineering:steel_scaffolding_wooden_top", temperature: 1540, metal: "tfc:metal/steel", number: 50 },
+    { name: "immersiveengineering:slab_steel_scaffolding_wooden_top", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "immersiveengineering:stairs_steel_scaffolding_wooden_top", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
+    { name: "ad_astra:steel_factory_block", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "ad_astra:encased_steel_block", temperature: 1540, metal: "tfc:metal/steel", number: 15 },
+    { name: "ad_astra:steel_panel", temperature: 1540, metal: "tfc:metal/steel", number: 18 },
+    { name: "ad_astra:steel_plating", temperature: 1540, metal: "tfc:metal/steel", number: 27 },
+    { name: "ad_astra:steel_plating_stairs", temperature: 1540, metal: "tfc:metal/steel", number: 40 },
+    { name: "ad_astra:steel_plating_slab", temperature: 1540, metal: "tfc:metal/steel", number: 13 },
+    { name: "ad_astra:steel_pillar", temperature: 1540, metal: "tfc:metal/steel", number: 27 },
+    { name: "immersiveengineering:steel_fence", temperature: 1540, metal: "tfc:metal/steel", number: 165 },
+    { name: "immersiveengineering:steel_wallmount", temperature: 1540, metal: "tfc:metal/steel", number: 85 },
+    { name: "immersiveengineering:steel_post", temperature: 1540, metal: "tfc:metal/steel", number: 330 },
+    { name: "immersiveengineering:steel_slope", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
+    
+    { name: "fluid:copper_tap", temperature: 1540, metal: "tfc:metal/steel", number: 250 },//钢龙头
+    
+    //铝工业方块
+    { name: "immersiveengineering:alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },
+    { name: "immersiveengineering:slab_alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 25 },
+    { name: "immersiveengineering:stairs_alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 75 },
+    { name: "immersiveengineering:alu_scaffolding_grate_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },
+    { name: "immersiveengineering:slab_alu_scaffolding_grate_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 25 },
+    { name: "immersiveengineering:stairs_alu_scaffolding_grate_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 75 },
+    { name: "immersiveengineering:alu_scaffolding_wooden_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },
+    { name: "immersiveengineering:slab_alu_scaffolding_wooden_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 25 },
+    { name: "immersiveengineering:stairs_alu_scaffolding_wooden_top", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 75 },
+    { name: "immersiveengineering:alu_slope", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 75 },
+
+    //冲压头
+    { name: "vintageimprovements:convex_curving_head", temperature: 1535, metal: "tfc:metal/cast_iron", number: 800 },
+    { name: "vintageimprovements:concave_curving_head", temperature: 1535, metal: "tfc:metal/cast_iron", number: 800 },
+    { name: "vintageimprovements:w_shaped_curving_head", temperature: 1535, metal: "tfc:metal/cast_iron", number: 800 },
+    { name: "vintageimprovements:v_shaped_curving_head", temperature: 1535, metal: "tfc:metal/cast_iron", number: 800 },
+
+    // 铜方块
+    { name: "minecraft:waxed_copper_block", temperature: 1085, metal: "tfc:metal/copper", number: 1000 },
+    { name: "minecraft:copper_block", temperature: 1085, metal: "tfc:metal/copper", number: 1000 },
+    { name: "minecraft:cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 1000 },
+    { name: "minecraft:waxed_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 1000 },
+    { name: "minecraft:exposed_copper", temperature: 1085, metal: "tfc:metal/copper", number: 980 },
+    { name: "minecraft:exposed_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 980 },
+    { name: "minecraft:weathered_copper", temperature: 1085, metal: "tfc:metal/copper", number: 950 },
+    { name: "minecraft:weathered_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 950 },
+    { name: "minecraft:oxidized_copper", temperature: 1085, metal: "tfc:metal/copper", number: 900 },
+    { name: "minecraft:oxidized_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 900 },
+    { name: "minecraft:waxed_exposed_copper", temperature: 1085, metal: "tfc:metal/copper", number: 980 },
+    { name: "minecraft:waxed_exposed_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 980 },
+    { name: "minecraft:waxed_weathered_copper", temperature: 1085, metal: "tfc:metal/copper", number: 950 },
+    { name: "minecraft:waxed_weathered_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 950 },
+    { name: "minecraft:waxed_oxidized_copper", temperature: 1085, metal: "tfc:metal/copper", number: 900 },
+    { name: "minecraft:waxed_oxidized_cut_copper", temperature: 1085, metal: "tfc:metal/copper", number: 900 },
+    { name: "createprism:copper_glass_casing", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "createprism:copper_clear_glass_casing", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "createprism:copper_illumination_casing", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "create:copper_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "createprism:copper_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "createprism:copper_clear_glass_scaffolding", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+
+    //黄铜制品
+    { name: "create:brass_ladder", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "create:brass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "create:brass_table_cloth", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "create:brass_bars", temperature: 930, metal: "tfc:metal/brass", number: 25 },
+    { name: "design_decor:brass_floor", temperature: 930, metal: "tfc:metal/brass", number: 25 },
+    { name: "create:brass_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
+    { name: "create:copper_casing", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "createprism:brass_glass_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
+    { name: "createprism:brass_clear_glass_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
+    { name: "createprism:brass_illumination_casing", temperature: 930, metal: "tfc:metal/brass", number: 100 },
+    { name: "create:brass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "createprism:brass_glass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+    { name: "createprism:brass_clear_glass_scaffolding", temperature: 930, metal: "tfc:metal/brass", number: 50 },
+
+    // 铜台阶（已删除重复）
+    { name: "minecraft:cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 500 },
+    { name: "minecraft:waxed_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 500 },
+    { name: "minecraft:exposed_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 490 },
+    { name: "minecraft:weathered_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 475 },
+    { name: "minecraft:oxidized_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 450 },
+    { name: "minecraft:waxed_exposed_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 490 },
+    { name: "minecraft:waxed_weathered_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 475 },
+    { name: "minecraft:waxed_oxidized_cut_copper_slab", temperature: 1085, metal: "tfc:metal/copper", number: 450 },
+    //铜楼梯
+    { name: "minecraft:cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 500 },
+    { name: "minecraft:waxed_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 500 },
+    { name: "minecraft:exposed_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 490 },
+    { name: "minecraft:weathered_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 475 },
+    { name: "minecraft:oxidized_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 450 },
+    { name: "minecraft:waxed_exposed_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 490 },
+    { name: "minecraft:waxed_weathered_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 475 },
+    { name: "minecraft:waxed_oxidized_cut_copper_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 450 },
+
+    // 工业工程金属台阶
+    { name: "immersiveengineering:slab_storage_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 500 },
+    { name: "immersiveengineering:slab_storage_steel", temperature: 1540, metal: "tfc:metal/steel", number: 500 },
+    { name: "immersiveengineering:slab_storage_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 500 },
+    { name: "immersiveengineering:slab_storage_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 500 },
+    { name: "immersiveengineering:slab_storage_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 500 },
+    { name: "immersiveengineering:slab_storage_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 500 },
+    { name: "immersiveengineering:slab_storage_silver", temperature: 961, metal: "tfc:metal/silver", number: 500 },
+
+    // 铜楼梯（已删除重复）
+
+
+    // 机械动力铜方块
+    { name: "create:copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "create:exposed_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 96 },
+    { name: "create:weathered_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 88 },
+    { name: "create:oxidized_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 80 },
+    { name: "create:copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "create:exposed_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 48 },
+    { name: "create:weathered_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 44 },
+    { name: "create:oxidized_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 40 },
+    { name: "create:copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
+    { name: "create:exposed_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 72 },
+    { name: "create:weathered_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 66 },
+    { name: "create:oxidized_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 60 },
+    { name: "create:waxed_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "create:waxed_exposed_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 96 },
+    { name: "create:waxed_weathered_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 88 },
+    { name: "create:waxed_oxidized_copper_shingles", temperature: 1085, metal: "tfc:metal/copper", number: 80 },
+    { name: "create:waxed_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "create:waxed_exposed_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 48 },
+    { name: "create:waxed_weathered_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 44 },
+    { name: "create:waxed_oxidized_copper_shingle_slab", temperature: 1085, metal: "tfc:metal/copper", number: 40 },
+    { name: "create:waxed_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
+    { name: "create:waxed_exposed_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 72 },
+    { name: "create:waxed_weathered_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 66 },
+    { name: "create:waxed_oxidized_copper_shingle_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 60 },
+    { name: "create:copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "create:exposed_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 96 },
+    { name: "create:weathered_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 88 },
+    { name: "create:oxidized_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 80 },
+    { name: "create:copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "create:exposed_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 48 },
+    { name: "create:weathered_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 44 },
+    { name: "create:oxidized_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 40 },
+    { name: "create:copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
+    { name: "create:exposed_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 72 },
+    { name: "create:weathered_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 66 },
+    { name: "create:oxidized_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 60 },
+    { name: "create:waxed_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 100 },
+    { name: "create:waxed_exposed_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 96 },
+    { name: "create:waxed_weathered_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 88 },
+    { name: "create:waxed_oxidized_copper_tiles", temperature: 1085, metal: "tfc:metal/copper", number: 80 },
+    { name: "create:waxed_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "create:waxed_exposed_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 48 },
+    { name: "create:waxed_weathered_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 44 },
+    { name: "create:waxed_oxidized_copper_tile_slab", temperature: 1085, metal: "tfc:metal/copper", number: 40 },
+    { name: "create:waxed_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
+    { name: "create:waxed_exposed_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 72 },
+    { name: "create:waxed_weathered_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 66 },
+    { name: "create:waxed_oxidized_copper_tile_stairs", temperature: 1085, metal: "tfc:metal/copper", number: 60 },
+
+    //锌制品和伪装方块的融化
+    { name: "design_decor:zinc_screw", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_byte", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_vertical_stairs", temperature: 419, metal: "tfc:metal/zinc", number: 90 },
+    { name: "copycats:copycat_vertical_half_layer", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
+    { name: "design_decor:zinc_bolt", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_half_panel", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_vertical_slice", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
+    { name: "copycats:copycat_wooden_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 15 },
+    { name: "copycats:copycat_layer", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_slope", temperature: 419, metal: "tfc:metal/zinc", number: 40 },
+    { name: "design_decor:zinc_railing", temperature: 419, metal: "tfc:metal/zinc", number: 22 },
+    { name: "copycats:copycat_half_layer", temperature: 419, metal: "tfc:metal/zinc", number: 5 },
+    { name: "copycats:copycat_trapdoor", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_wooden_button", temperature: 419, metal: "tfc:metal/zinc", number: 2 },
+    { name: "copycats:copycat_folding_door", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "copycats:copycat_slab", temperature: 419, metal: "tfc:metal/zinc", number: 35 },
+    { name: "copycats:copycat_stairs", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "design_decor:zinc_catwalk", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_block", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "copycats:copycat_sliding_door", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "create:copycat_panel", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_vertical_slope", temperature: 419, metal: "tfc:metal/zinc", number: 40 },
+    { name: "copycats:copycat_board", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_ladder", temperature: 419, metal: "tfc:metal/zinc", number: 12 },
+    { name: "copycats:copycat_corner_slice", temperature: 419, metal: "tfc:metal/zinc", number: 3 },
+    { name: "copycats:copycat_door", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "copycats:copycat_beam", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_stacked_half_layer", temperature: 419, metal: "tfc:metal/zinc", number: 3 },
+    { name: "create:copycat_step", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_stone_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 12 },
+    { name: "copycats:copycat_stone_button", temperature: 419, metal: "tfc:metal/zinc", number: 2 },
+    { name: "copycats:copycat_slice", temperature: 419, metal: "tfc:metal/zinc", number: 3 },
+    { name: "copycats:copycat_fence", temperature: 419, metal: "tfc:metal/zinc", number: 60 },
+    { name: "copycats:copycat_pane", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_wall", temperature: 419, metal: "tfc:metal/zinc", number: 80 },
+    { name: "copycats:copycat_fence_gate", temperature: 419, metal: "tfc:metal/zinc", number: 60 },
+    { name: "copycats:copycat_byte_panel", temperature: 419, metal: "tfc:metal/zinc", number: 3 },
+    { name: "copycats:copycat_shaft", temperature: 419, metal: "tfc:metal/zinc", number: 15 },
+    { name: "copycats:copycat_iron_trapdoor", temperature: 419, metal: "tfc:metal/zinc", number: 45 },
+    { name: "copycats:copycat_heavy_weighted_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 30 },
+    { name: "copycats:copycat_flat_pane", temperature: 419, metal: "tfc:metal/zinc", number: 10 },
+    { name: "copycats:copycat_light_weighted_pressure_plate", temperature: 419, metal: "tfc:metal/zinc", number: 30 },
+    { name: "design_decor:zinc_floor", temperature: 419, metal: "tfc:metal/zinc", number: 20 },
+    { name: "copycats:copycat_ghost_block", temperature: 419, metal: "tfc:metal/zinc", number: 45 },
+    { name: "copycats:copycat_slope_layer", temperature: 419, metal: "tfc:metal/zinc", number: 9 },
+    { name: "copycats:copycat_vertical_step", temperature: 419, metal: "tfc:metal/zinc", number: 19 },
+    { name: "design_decor:zinc_checker_tiles", temperature: 419, metal: "tfc:metal/zinc", number: 23 },
+    
+    // ==========================================
+    //非方块凑数的
+    // ==========================================
+
+    //钻头
+    { name: "immersiveengineering:drillhead_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 350 },
+    { name: "immersiveengineering:drillhead_steel", temperature: 1540, metal: "tfc:metal/steel", number: 350 },
+    { name: "tfc_ie_addon:drillhead_black_steel", temperature: 1485, metal: "tfc:metal/black_steel", number: 350 },
+    { name: "tfc_ie_addon:drillhead_blue_steel", temperature: 1540, metal: "tfc:metal/blue_steel", number: 350 },
+    { name: "tfc_ie_addon:drillhead_red_steel", temperature: 1538, metal: "tfc:metal/red_steel", number: 350 },
+
+    //弹簧
+    { name: "vintageimprovements:iron_spring", temperature: 1538, metal: "tfc:metal/cast_iron", number: 50 },
+    { name: "vintageimprovements:steel_spring", temperature: 1540, metal: "tfc:metal/steel", number: 50 },
+    { name: "vintageimprovements:bronze_spring", temperature: 950, metal: "tfc:metal/cast_iron", number: 50 },
+    { name: "vintageimprovements:copper_spring", temperature: 1085, metal: "tfc:metal/copper", number: 50 },
+    { name: "vintageimprovements:golden_spring", temperature: 1060, metal: "tfc:metal/gold", number: 50 },
+    { name: "vintageimprovements:small_iron_spring", temperature: 1538, metal: "tfc:metal/cast_iron", number: 25 },
+    { name: "vintageimprovements:small_steel_spring", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "vintageimprovements:small_bronze_spring", temperature: 950, metal: "tfc:metal/cast_iron", number: 25 },
+    { name: "vintageimprovements:small_copper_spring", temperature: 1085, metal: "tfc:metal/copper", number: 25 },
+    { name: "vintageimprovements:small_golden_spring", temperature: 1060, metal: "tfc:metal/gold", number: 25 },
+
+    //箭
+    { name: "spartanweaponry:copper_arrow", temperature: 1085, metal: "tfc:metal/copper", number: 12 },
+    { name: "spartanweaponry:iron_arrow", temperature: 1535, metal: "tfc:metal/cast_iron", number: 12 },
+    { name: "spartanweaponry:diamond_arrow", temperature: 1540, metal: "tfc:metal/steel", number: 12 },
+    { name: "spartanweaponry:netherite_arrow", temperature: 1485, metal: "tfc:metal/black_steel", number: 12 },
+    
+    { name: "spartanweaponry:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 25 },
+    { name: "spartanweaponry:bolt", temperature: 1535, metal: "tfc:metal/cast_iron", number: 25 },
+    { name: "spartanweaponry:diamond_bolt", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
+    { name: "spartanweaponry:netherite_bolt", temperature: 1485, metal: "tfc:metal/black_steel", number: 25 },
+    
+    { name: "firmalife:sprinkler", temperature: 1085, metal: "tfc:metal/copper", number: 200 },//洒水器
+    
+    { name: "scguns:small_copper_casing", temperature: 1085, metal: "tfc:metal/copper", number: 8 },//弹壳
+    { name: "scguns:medium_copper_casing", temperature: 1085, metal: "tfc:metal/copper", number: 9 },//弹壳
+    { name: "scguns:small_iron_casing", temperature: 1535, metal: "tfc:metal/cast_iron", number: 8 },//弹壳
+    { name: "scguns:large_iron_casing", temperature: 1535, metal: "tfc:metal/cast_iron", number: 15 },//弹壳
+    { name: "scguns:small_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 8 },//弹壳
+    { name: "scguns:medium_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 9 },//弹壳
+    { name: "scguns:large_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 15 },//弹壳
+  ];
+  metal_block_3.forEach(metal_block => {
+    //金属方块融化
+    tfc.heating(`${metal_block.name}`, metal_block.temperature).resultFluid(Fluid.of(metal_block.metal, metal_block.number))
+    crucible(`${metal_block.name}`, metal_block.metal, metal_block.number, metal_block.temperature)
+  })
+
+
+
   tfc.heating('kubejs:alkalized_bauxite_raw_material', 1500).resultItem('kubejs:bauxite_clinker')
   tfc.heating('kubejs:unfired_corundum_brick', 2000).resultItem('kubejs:corundum_brick')
   tfc.heating('kubejs:corundum_brick', 2600).resultFluid(Fluid.of("kubejs:molten_corundum", 50))//刚玉融化
@@ -306,8 +826,99 @@ ServerEvents.recipes(e => {
   crucible('kubejs:corundum_brick', 'kubejs:molten_corundum', 50, 2600)
   crucible('kubejs:corundum_brick_block', 'kubejs:molten_corundum', 200, 2600)
 
+  tfc.heating('create:metal_girder', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 70))//金属梁融化
+  crucible('create:metal_girder', 'tfc:metal/cast_iron', 70, 1535)
+
+  tfc.heating('design_decor:diagonal_girder', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 70))//金属斜梁融化
+  crucible('design_decor:diagonal_girder', 'tfc:metal/cast_iron', 70, 1535)
+
+  tfc.heating('design_decor:metal_support', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 20))//金属支柱融化
+  crucible('design_decor:metal_support', 'tfc:metal/cast_iron', 20, 1535)
+
+  tfc.heating('design_decor:diagonal_metal_support', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 20))//金属斜柱融化
+  crucible('design_decor:diagonal_metal_support', 'tfc:metal/cast_iron', 20, 1535)
+
+  tfc.heating('create:metal_bracket', 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 80))//金属支架融化
+  crucible('create:metal_bracket', 'tfc:metal/cast_iron', 80, 1535)
 
 
+  tfc.heating(`design_decor:metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+  crucible(`design_decor:metal_plate`, "tfc:metal/cast_iron", 25, 1535)
 
+  tfc.heating(`design_decor:metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+  crucible(`design_decor:metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+  crucible(`design_decor:metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+  crucible(`design_decor:metal_plate_slab`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+  crucible(`design_decor:metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+  crucible(`design_decor:metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+  crucible(`design_decor:metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`design_decor:metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+  crucible(`design_decor:metal_sheet_slab`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`create:industrial_iron_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
+  crucible(`create:industrial_iron_block`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:industrial_plating_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
+  crucible(`design_decor:industrial_plating_block`, "tfc:metal/cast_iron", 25, 1535)
+
+
+  tfc.heating(`create:industrial_iron_window`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 35))//工业窗户融化
+  crucible(`create:industrial_iron_window`, "tfc:metal/cast_iron", 35, 1535)
+  tfc.heating(`create:weathered_iron_window`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 28))
+  crucible(`create:weathered_iron_window`, "tfc:metal/cast_iron", 28, 1535)
+  tfc.heating(`create:industrial_iron_window_pane`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 15))
+  crucible(`create:industrial_iron_window_pane`, "tfc:metal/cast_iron", 15, 1535)
+  tfc.heating(`create:weathered_iron_window_pane`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 11))
+  crucible(`create:weathered_iron_window_pane`, "tfc:metal/cast_iron", 11, 1535)
+  tfc.heating(`design_decor:industrial_iron_floor`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 3))
+  crucible(`design_decor:industrial_iron_floor`, "tfc:metal/cast_iron", 3, 1535)
+  tfc.heating(`design_decor:industrial_iron_large_chain`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
+  crucible(`design_decor:industrial_iron_large_chain`, "tfc:metal/cast_iron", 12, 1535)
+  tfc.heating(`design_decor:industrial_gear_large`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))
+  crucible(`design_decor:industrial_gear_large`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:industrial_gear`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))
+  crucible(`design_decor:industrial_gear`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:industrial_iron_boiler_large`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
+  crucible(`design_decor:industrial_iron_boiler_large`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:industrial_iron_boiler`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
+  crucible(`design_decor:industrial_iron_boiler`, "tfc:metal/cast_iron", 25, 1535)
+
+  tfc.heating(`create:weathered_iron_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 18))//锈蚀工业铁块融化
+  crucible(`create:weathered_iron_block`, "tfc:metal/cast_iron", 18, 1535)
+
+  tfc.heating(`immersiveengineering:wirecoil_copper`, 1085).resultFluid(Fluid.of("tfc:metal/copper", 100))//低压线圈和铜线圈融化
+  crucible(`immersiveengineering:wirecoil_copper`, "tfc:metal/copper", 100, 1085)
+  tfc.heating(`immersiveengineering:coil_lv`, 1085).resultFluid(Fluid.of("tfc:metal/copper", 800))
+  crucible(`immersiveengineering:coil_lv`, "tfc:metal/copper", 800, 1085)
+
+  tfc.heating(`immersiveengineering:wirecoil_electrum`, 1085).resultFluid(Fluid.of("tfc_ie_addon:metal/electrum", 100))//中压线圈和琥珀金线圈融化
+  crucible(`immersiveengineering:wirecoil_electrum`, "tfc_ie_addon:metal/electrum", 100, 1085)
+  tfc.heating(`immersiveengineering:coil_mv`, 1085).resultFluid(Fluid.of("tfc_ie_addon:metal/electrum", 800))
+  crucible(`immersiveengineering:coil_mv`, "tfc_ie_addon:metal/electrum", 800, 1085)
+
+
+  tfc.heating(`create:whisk`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 300))//锻铁搅拌头和锻铁搅拌器以及锻铁双杆融化
+  crucible(`create:whisk`, "tfc:metal/cast_iron", 300, 1535)
+  tfc.heating(`kubejs:whisk_stirrer_head_blank`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 100))
+  crucible(`kubejs:whisk_stirrer_head_blank`, "tfc:metal/cast_iron", 100, 1535)
+  tfc.heating(`kubejs:wrought_iron_double_rod`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 100))
+  crucible(`kubejs:wrought_iron_double_rod`, "tfc:metal/cast_iron", 100, 1535)
+  
+  tfc.heating(`createmetallurgy:sturdy_whisk`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 300))//黑钢搅拌头和坚固搅拌器以及黑钢双杆融化
+  crucible(`createmetallurgy:sturdy_whisk`, "tfc:metal/black_steel", 300, 1485)
+  tfc.heating(`kubejs:whisk_black_steel_head_blank`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
+  crucible(`kubejs:whisk_black_steel_head_blank`, "tfc:metal/black_steel", 100, 1485)
+  tfc.heating(`kubejs:black_steel_double_rod`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
+  crucible(`kubejs:black_steel_double_rod`, "tfc:metal/black_steel", 100, 1485)
 
 });

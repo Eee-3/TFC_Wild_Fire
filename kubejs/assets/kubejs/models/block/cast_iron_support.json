@@ -7,8 +7,8 @@
         32
     ],
     "textures": {
-        "1": "kubejs:block/pig_iron_support",
-        "particle": "kubejs:block/pig_iron_support"
+        "1": "kubejs:block/cast_iron_support",
+        "particle": "kubejs:block/cast_iron_support"
     },
     "elements": [
         {

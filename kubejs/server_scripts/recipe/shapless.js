@@ -20,7 +20,6 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:coke_briquette', ['8x kubejs:coke_pellet', '#kubejs:glue']);//焦煤块（焦煤颗粒原料8倍倍增）
     event.shapeless('2x kubejs:high_performance_fuel_briquette', ['8x kubejs:high_performance_fuel_pellet', '#kubejs:glue']);//高性能燃料块（高性能颗粒原料8倍倍增，粘结剂沿用glue）
 
-    event.shapeless('9x tfc:metal/ingot/wrought_iron', ['minecraft:iron_block']);//铁块合成锻铁
 
 
     event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x #kubejs:glue']);//木屑保温燃料块
@@ -177,7 +176,6 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('create_new_age:magnetite_block'), ['9x tfcorewashing:rocky_chunks_magnetite']);//磁铁矿块
 
     //event.shapeless(Item.of('4x tfcorewashing:pellet_malachite'),['tfcorewashing:briquet_malachite'])
-    event.shapeless(Item.of('minecraft:lantern'), ['8x minecraft:iron_nugget', 'minecraft:torch'])
     event.shapeless(Item.of('minecraft:kelp'), ['tfc:plant/leafy_kelp'])
     event.shapeless(Item.of('4x tfc:plant/moss'), ['tfc:plant/moss', 'tfc:groundcover/humus'])
     event.shapeless(Item.of('minecraft:moss_block'), ['tfc:plant/moss', '#minecraft:dirt'])

@@ -408,6 +408,25 @@ ServerEvents.recipes(event => {
         b: 'tfc:burlap_cloth',
     })//麻布袋
 
+    event.shaped('spartanweaponry:small_arrow_quiver', [
+        'a a',
+        'bcb',
+        ' b '
+    ], {
+        a: '#kubejs:bindings',
+        b: 'minecraft:leather',
+        c: 'sns:unfinished_leather_sack',
+    })//箭袋
+
+    event.shaped('spartanweaponry:small_bolt_quiver', [
+        'a a',
+        'bcb'
+    ], {
+        a: '#kubejs:bindings',
+        b: 'minecraft:leather',
+        c: 'sns:unfinished_leather_sack',
+    })//弩箭袋
+
     event.shaped('born_in_chaos_v1:hound_trap', [
         'aba',
         'cdc'
@@ -432,7 +451,7 @@ ServerEvents.recipes(event => {
         ' ab',
         ' c '
     ], {
-        a: 'immersiveengineering:component_steel',
+        a: 'kubejs:material_component_steel',
         b: 'minecraft:dried_kelp',
         c: 'tfc:metal/sheet/steel',
     })//钢龙头
@@ -480,27 +499,81 @@ ServerEvents.recipes(event => {
         c: 'immersiveengineering:wirecoil_steel',
     })//电阻线圈
 
+    event.shaped('create:schematic_and_quill', [
+        'ab'
+    ], {
+        a: 'create:empty_schematic',
+        b: 'artisanal:quill',
+    })//蓝图与笔
+
+    event.shaped('supplementaries:soap', [
+        ' b ',
+        'bab',
+        ' b '
+    ], {
+        a: 'artisanal:soap',
+        b: 'minecraft:pink_dye',
+    })//香皂
+
+        event.shaped('create:copper_backtank', [
+        'ece ',
+        'bab',
+        ' d '
+    ], {
+        a: 'design_decor:copper_gas_tank',
+        b: 'tfc:metal/sheet/copper',
+        d: 'tfc:metal/unfinished_chestplate/copper',
+        c: 'create:shaft',
+        e: 'create:andesite_alloy'
+    })//铜背罐
+
     event.shaped('kubejs:unfired_crucible_mold', [
         'a',
         'b'
     ],
-    {
-        a: 'tfc:ceramic/large_vessel',
-        b: 'minecraft:clay',
-    }).replaceIngredient({ item: 'tfc:ceramic/large_vessel', }, 'tfc:ceramic/large_vessel',)//不消耗物品 
+        {a: 'tfc:ceramic/large_vessel',b: 'minecraft:clay',})
+        .replaceIngredient({ item: 'tfc:ceramic/large_vessel', }, 'tfc:ceramic/large_vessel',)//不消耗物品 
     //未完成的黏土坩埚模具_1
 
     event.shaped('kubejs:unfired_crucible_mold', [
-        
+
         'a',
         'b'
     ],
-     {
-        a: 'minecraft:cauldron',
-        b: 'minecraft:clay',
+        {
+            a: 'minecraft:cauldron',
+            b: 'minecraft:clay',
 
-    }).replaceIngredient({ item: 'minecraft:cauldron', }, 'minecraft:cauldron',)//不消耗物品
+        }).replaceIngredient({ item: 'minecraft:cauldron', }, 'minecraft:cauldron',)//不消耗物品
     //未完成的黏土坩埚模具_2
+
+
+
+    event.shaped('immersiveengineering:steel_scaffolding_grate_top', [
+        'ab'
+    ],
+        {a: 'immersiveengineering:steel_scaffolding_standard',b: 'immersiveengineering:wirecutter',})
+        .replaceIngredient({ item: 'immersiveengineering:wirecutter', }, 'immersiveengineering:wirecutter',)//不消耗物品
+    //格栅钢脚手架
+
+    event.shaped('immersiveengineering:steel_scaffolding_wooden_top', [
+        'bbb',
+        ' a '],
+        { a: 'immersiveengineering:steel_scaffolding_standard', b: 'tfc_ie_addon:treated_wood_lumber', })
+    //防腐木钢脚手架
+
+        event.shaped('immersiveengineering:alu_scaffolding_grate_top', [
+        'ab'
+    ],
+        {a: 'immersiveengineering:alu_scaffolding_standard',b: 'immersiveengineering:wirecutter',})
+        .replaceIngredient({ item: 'immersiveengineering:wirecutter', }, 'immersiveengineering:wirecutter',)//不消耗物品
+    //格栅铝脚手架
+
+    event.shaped('immersiveengineering:alu_scaffolding_wooden_top', [
+        'bbb',
+        ' a '],
+        { a: 'immersiveengineering:alu_scaffolding_standard', b: 'tfc_ie_addon:treated_wood_lumber', })
+    //防腐木铝脚手架
 
     const tfc_metals = [
         'bronze',

@@ -7,8 +7,8 @@ ServerEvents.tags('block', event => {
     event.add('tfc:toughness_1', 'kubejs:bronze_support_horizontal')
     event.add('tfc:toughness_1', 'kubejs:black_bronze_support') // 黑铜
     event.add('tfc:toughness_1', 'kubejs:black_bronze_support_horizontal')
-    event.add('tfc:toughness_2', 'kubejs:pig_iron_support') // 铸铁
-    event.add('tfc:toughness_2', 'kubejs:pig_iron_support_horizontal')
+    event.add('tfc:toughness_2', 'kubejs:cast_iron_support') // 铸铁
+    event.add('tfc:toughness_2', 'kubejs:cast_iron_support_horizontal')
     event.add('tfc:toughness_2', 'kubejs:wrought_iron_support') // 锻铁
     event.add('tfc:toughness_2', 'kubejs:wrought_iron_support_horizontal')
     event.add('tfc:toughness_2', 'kubejs:steel_support') // 钢

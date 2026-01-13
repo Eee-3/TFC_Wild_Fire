@@ -275,8 +275,124 @@
     },
     {
         "matchItems": [
-            "illagerinvasion:platinum_infused_hatchet"
+            "butcher:endermanhead",
+            "spartanweaponry:enderman_head"
         ],
-        "resultItems": "kubejs:bronze_tomahawk"
+        "resultItems": "supplementaries:enderman_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:spiderhead"
+        ],
+        "resultItems": "spartanweaponry:spider_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:cavespiderhead"
+        ],
+        "resultItems": "spartanweaponry:cave_spider_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:huskhead"
+        ],
+        "resultItems": "spartanweaponry:husk_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:drownedhead"
+        ],
+        "resultItems": "spartanweaponry:drowned_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "spartanweaponry:illager_head"
+        ],
+        "resultItems": "butcher:pillagerhead"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:witchhead"
+        ],
+        "resultItems": "spartanweaponry:witch_head"
+    }
+    ,
+    {
+        "matchItems": [
+            "minecraft:iron_nugget"
+        ],
+        "resultItems": "kubejs:wrought_iron_fragments"
+    }
+    ,
+    {
+        "matchItems": [
+            "minecraft:gold_nugget"
+        ],
+        "resultItems": "kubejs:gold_fragments"
+    }
+    ,
+    {
+        "matchItems": [
+            "ad_astra:steel_nugget",
+            "immersiveengineering:nugget_steel"
+        ],
+        "resultItems": "kubejs:steel_fragments"
+    }
+    ,
+    {
+        "matchItems": [
+            "create:copper_nugget",
+            "immersiveengineering:nugget_copper"
+        ],
+        "resultItems": "kubejs:copper_fragments"
+    }
+    ,
+    {
+        "matchItems": [
+            "eidolon:silver_nugget",
+            "immersiveengineering:nugget_silver"
+        ],
+        "resultItems": "kubejs:silver_fragments"
+    }
+    ,
+    {
+        "matchItems": [
+            "immersiveengineering:nugget_electrum"
+        ],
+        "resultItems": "kubejs:amber_gold_fragments "
+    }
+    ,
+    {
+        "matchItems": [
+            "1111111111111111111111"
+        ],
+        "resultItems": "1111111111111111111111111"
+    }
+    ,
+    {
+        "matchItems": [
+            "1111111111111111111111"
+        ],
+        "resultItems": "1111111111111111111111111"
+    }
+    ,
+    {
+        "matchItems": [
+            "1111111111111111111111"
+        ],
+        "resultItems": "1111111111111111111111111"
+    }
+    ,
+    {
+        "matchItems": [
+            "1111111111111111111111"
+        ],
+        "resultItems": "1111111111111111111111111"
     }
 ]

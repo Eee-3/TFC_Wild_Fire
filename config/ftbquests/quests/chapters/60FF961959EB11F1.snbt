@@ -682,8 +682,8 @@
 				type: "item"
 			}]
 			title: "来点种子"
-			x: -9.0d
-			y: -3.5d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1063BE4F6A66D335"]
@@ -1318,8 +1318,8 @@
 				type: "checkmark"
 			}]
 			title: "畜牧业"
-			x: -10.5d
-			y: -2.0d
+			x: -11.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1388,8 +1388,8 @@
 				type: "item"
 			}]
 			title: "养蜂"
-			x: -8.0d
-			y: -3.0d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["170AA7EF27C269F2"]
@@ -2594,7 +2594,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(kubejs:copper_support)item(kubejs:bronze_support)item(kubejs:bismuth_bronze_support)item(kubejs:black_bronze_support)item(kubejs:pig_iron_support))"
+						"ftbfiltersystem:filter": "or(item(kubejs:copper_support)item(kubejs:bronze_support)item(kubejs:bismuth_bronze_support)item(kubejs:black_bronze_support)item(kubejs:cast_iron_support))"
 					}
 				}
 				title: "制作金属梁"
@@ -3185,6 +3185,26 @@
 			title: "背井离乡"
 			x: -15.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["34A3E922DB7A6883"]
+			hide_until_deps_visible: true
+			id: "01CA18937A6DEADD"
+			subtitle: "解放双手"
+			tasks: [{
+				id: "6E8178525689A1E3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfcgroomer:bismuth_bronze_grooming_station)item(tfcgroomer:black_bronze_grooming_station)item(tfcgroomer:bronze_grooming_station)item(tfcgroomer:copper_grooming_station))"
+					}
+				}
+				type: "item"
+			}]
+			title: "自己吃饭！"
+			x: -9.0d
+			y: -3.5d
 		}
 	]
 	title: "第一章：铜砂"

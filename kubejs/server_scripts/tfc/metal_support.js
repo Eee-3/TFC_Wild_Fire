@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
         { name: "copper", number: 1 },
         { name: "bismuth_bronze", number: 2 },
         { name: "black_bronze", number: 2 },
+        { name: "cast_iron", number: 2 },
         { name: "bronze", number: 2 },
         { name: "black_steel", number: 5 },
         { name: "blue_steel", number: 6 },

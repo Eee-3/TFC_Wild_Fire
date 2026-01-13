@@ -151,8 +151,6 @@
         "shieldexp:golden_shield",
         "shieldexp:diamond_shield",
         "supplementaries:lunch_basket",
-        "supplementaries:bubble_blower",
-        "supplementaries:soap",
         "supplementaries:slingshot",
         "supplementaries:rope_arrow",
         "supplementaries:faucet",
@@ -163,7 +161,6 @@
         "shieldeexp:iron_shield",
         "shieldeexp:wooden_shield",
         "butcher:butcherspapers",
-        "patchouli:guide_book",
         "supplementaries:strings",
         "sophisticatedbackpacks:auto_blasting_upgrade",
         "sophisticatedbackpacks:auto_smoking_upgrade",
@@ -183,7 +180,8 @@
         "ad_astra:nasa_workbench",
         "ad_astra:etrionic_blast_furnace",
         "immersiveengineering:dust_silver",
-        "scguns:anthralite_dust"
+        "scguns:anthralite_dust",
+        "alexsmobs:animal_dictionary"
     ],
-    "resultItems": "minecraft:barrier"
+    "resultItems": "minecraft:air"
 }

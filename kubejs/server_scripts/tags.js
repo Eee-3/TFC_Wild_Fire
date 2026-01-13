@@ -80,7 +80,7 @@ ServerEvents.tags("item", event => {
     // 将手套加入进饰品tag
     event.add('kubejs:tongs', 'kubejs:wooden_tong')
     event.add('curios:hands', 'kubejs:glove')
-    // 熔岩桶和熔融桶是热的物品
+    // 熔岩桶和熔融桶是烫的物品
     event.add('kubejs:hot_items',
         [
             'minecraft:lava_bucket',
@@ -118,7 +118,11 @@ ServerEvents.tags("item", event => {
             "tfc:bucket/metal/high_carbon_black_steel",
             "tfc:bucket/metal/high_carbon_blue_steel",
             "tfc:bucket/metal/high_carbon_red_steel",
-            "tfc:bucket/metal/unknown"
+            "tfc:bucket/metal/unknown",
+            "kubejs:molten_corundum_bucket",
+            "kubejs:molten_glass_bucket",
+            "survivorsaquaculture:bucket/metal/neptunian_steel",
+            "survivorsaquaculture:bucket/metal/neptunium"
         ])
 
     // 灼热的物品

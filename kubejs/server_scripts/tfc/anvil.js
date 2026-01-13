@@ -20,6 +20,41 @@ ServerEvents.recipes(e => {
       item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红蓝钢
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
+    tfc.anvil(
+    'supplementaries:bubble_blower',
+    'immersiveengineering:stick_aluminum',
+    [
+      'hit_any',
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/bubble_blower/anvil")//泡泡环
+
+    tfc.anvil(
+    'spartanweaponry:medium_quiver_brace',
+    'tfc:metal/sheet/copper',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/medium_quiver_brace/anvil")//铜箭袋垫板
+
+    tfc.anvil(
+    'spartanweaponry:large_quiver_brace',
+    'tfc:metal/sheet/wrought_iron',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(3).bonus(false).id("kubejs:tfc/anvil/large_quiver_brace/anvil")//铁箭袋垫板
+  
+    tfc.anvil(
+    'spartanweaponry:huge_quiver_brace',
+    'tfc:metal/sheet/steel',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(4).bonus(false).id("kubejs:tfc/anvil/huge_quiver_brace/anvil")//钢箭袋垫板
+
   tfc.anvil(
     '4x kubejs:copper_arrow',
     'tfc:metal/rod/copper',
