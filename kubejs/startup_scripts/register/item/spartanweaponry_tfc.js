@@ -333,7 +333,7 @@ e.create("black_steel_boomerang", "spartanweaponry:boomerang").material(black_st
 // 22. 标枪javelin
 e.create("black_steel_javelin", "spartanweaponry:javelin").material(black_steel).setAttackDamage(5.5 - 1).setAttackSpeed(1).setAmmo(4).setDuration(600).tag('tfc:usable_on_tool_rack');
 
-// 八、红钢（red_steel）系列武器（攻击速度=铜武器×0.8，伤害=表格数值）
+// 八、精金（red_steel）系列武器（攻击速度=铜武器×0.8，伤害=表格数值）
 // 1. 长枪spear（原2 → 2×0.8=1.6）
 e.create("red_steel_spear", "spartanweaponry:spear").material(red_steel).setAttackDamage(12.6 - 1).setAttackSpeed(1.6).setDuration(2100).tag('tfc:usable_on_tool_rack');
 // 2. 大剑greatsword（原1.4 → 1.4×0.8=1.12）
@@ -379,7 +379,7 @@ e.create("red_steel_boomerang", "spartanweaponry:boomerang").material(red_steel)
 // 22. 标枪javelin（原1 → 1×0.8=0.8）
 e.create("red_steel_javelin", "spartanweaponry:javelin").material(red_steel).setAttackDamage(9.35 - 1).setAttackSpeed(0.8).setAmmo(4).setDuration(300).tag('tfc:usable_on_tool_rack');
 
-// 九、蓝钢（blue_steel）系列武器（攻击速度=铜武器×1.15，伤害=表格数值）
+// 九、秘银（blue_steel）系列武器（攻击速度=铜武器×1.15，伤害=表格数值）
 // 1. 长枪spear（原2 → 2×1.15=2.3）
 e.create("blue_steel_spear", "spartanweaponry:spear").material(blue_steel).setAttackDamage(8.65 - 1).setAttackSpeed(2.3).setDuration(2100).tag('tfc:usable_on_tool_rack');
 // 2. 大剑greatsword（原1.4 → 1.4×1.15=1.61）

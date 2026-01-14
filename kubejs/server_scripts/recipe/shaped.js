@@ -515,8 +515,17 @@ ServerEvents.recipes(event => {
         b: 'minecraft:pink_dye',
     })//香皂
 
+    event.shaped('create:item_drain', [
+        ' a ',
+        'b b',
+        ' b '
+    ], {
+        a: 'tfc:pan/empty',
+        b: 'tfc:metal/sheet/brass',
+    })//分液池
+
         event.shaped('create:copper_backtank', [
-        'ece ',
+        'ece',
         'bab',
         ' d '
     ], {
@@ -526,6 +535,18 @@ ServerEvents.recipes(event => {
         c: 'create:shaft',
         e: 'create:andesite_alloy'
     })//铜背罐
+
+        event.shaped('vintageimprovements:vibrating_table', [
+        'ece',
+        'bab',
+        ' d '
+    ], {
+        a: '#minecraft:wooden_slabs',
+        b: 'vintageimprovements:iron_spring',
+        d: 'create:mechanical_piston',
+        c: 'tfc:pan/empty',
+        e: 'vintageimprovements:andesite_sheet'
+    })//振动筛
 
     event.shaped('kubejs:unfired_crucible_mold', [
         'a',

@@ -6,6 +6,16 @@
 	group: "257B93C8F82BA053"
 	icon: "design_decor:warning_sign"
 	id: "21A6B461EC9F0A5B"
+	images: [{
+		click: "#606E9CE3B7411694"
+		height: 1.5d
+		hover: ["点击跳转主线"]
+		image: "tfc:item/loose_rock/andesite"
+		rotation: 0.0d
+		width: 1.5d
+		x: -1.0d
+		y: 9.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

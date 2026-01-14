@@ -249,11 +249,11 @@ ServerEvents.recipes(event => {
   farmersdelight_cutting(`kubejs:bismuth_bronze_fragments`, 'tfc:metal/ingot/bismuth_bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_bismuth_bronze_fragments`)// 铋青铜锭 → 5个铋青铜碎片
   farmersdelight_cutting(`kubejs:black_bronze_fragments`, 'tfc:metal/ingot/black_bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_bronze_fragments`)// 黑青铜锭 → 5个黑青铜碎片
   farmersdelight_cutting(`kubejs:bronze_fragments`, 'tfc:metal/ingot/bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_bronze_fragments`)// 青铜锭 → 5个青铜碎片
-  farmersdelight_cutting(`kubejs:red_steel_fragments`, 'tfc:metal/ingot/red_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_red_steel_fragments`)// 红钢锭 →
+  farmersdelight_cutting(`kubejs:red_steel_fragments`, 'tfc:metal/ingot/red_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_red_steel_fragments`)// 精金锭 →
   farmersdelight_cutting(`kubejs:steel_fragments`, 'tfc:metal/ingot/steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_steel_fragments`)// 钢锭 → 5个钢碎片
   farmersdelight_cutting(`kubejs:wrought_iron_fragments`, 'tfc:metal/ingot/wrought_iron', 5, 'tfc:hammers', `kubejs:cutting_reciped_wrought_iron_fragments`)// 锻铁锭 → 5个熟铁碎片
   farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 黑钢锭 → 5个黑钢碎片
-  farmersdelight_cutting(`kubejs:blue_steel_fragments`, 'tfc:metal/ingot/blue_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_blue_steel_fragments`)// 蓝钢锭 → 5个蓝钢碎片
+  farmersdelight_cutting(`kubejs:blue_steel_fragments`, 'tfc:metal/ingot/blue_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_blue_steel_fragments`)// 秘银锭 → 5个秘银碎片
 
   // 皮毛/皮革 JS 数组
   const furAndLeatherItems = [

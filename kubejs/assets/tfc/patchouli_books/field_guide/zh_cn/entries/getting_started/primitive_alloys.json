@@ -39,7 +39,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "其他的合金不适合用来制造工具。它们是：$(thing)黄铜$()，$(thing)玫瑰金$()，与$(thing)纹银$()。$(br2)$(thing)黄铜$()合金适合用于制作各种装置，包括$(l:mechanics/mechanical_power)力作用装置$()。$(br2)$(thing)玫瑰金$()与$(thing)纹银$()可以被用于合成$(l:mechanics/steel#red_steel)红钢$()与$(l:mechanics/steel#blue_steel)蓝钢$()。",
+      "text": "其他的合金不适合用来制造工具。它们是：$(thing)黄铜$()，$(thing)玫瑰金$()，与$(thing)纹银$()。$(br2)$(thing)黄铜$()合金适合用于制作各种装置，包括$(l:mechanics/mechanical_power)力作用装置$()。$(br2)$(thing)玫瑰金$()与$(thing)纹银$()可以被用于合成$(l:mechanics/steel#red_steel)精金$()与$(l:mechanics/steel#blue_steel)秘银$()。",
       "title": "实用合金"
     },
     {

@@ -113,13 +113,13 @@ TFCEvents.data(event => {
     Math.floor(metaltp.black_steel * 0.8)
   );
 
-  //蓝钢三层锭
+  //秘银三层锭
   event.itemHeat('kubejs:triple_blue_steel', triplemetaltp,
     Math.floor(metaltp.blue_steel * 0.6),
     Math.floor(metaltp.blue_steel * 0.8)
   );
 
-  //红钢三层锭
+  //精金三层锭
   event.itemHeat('kubejs:triple_red_steel', triplemetaltp,
     Math.floor(metaltp.red_steel * 0.6),
     Math.floor(metaltp.red_steel * 0.8)
@@ -314,7 +314,7 @@ TFCEvents.data(event => {
     { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指
     { name: "rose_gold", temperature: 1064, metal: "rose_gold" }, // 玫瑰金戒指
     { name: "steel", temperature: 1540, metal: "steel" }, // 钢戒指
-    { name: "black_steel", temperature: 1540, metal: "black_steel" } // 黑钢戒指
+    { name: "black_steel", temperature: 1784, metal: "black_steel" } // 黑钢戒指
   ];
 
   // 遍历生成所有戒指的热力配置

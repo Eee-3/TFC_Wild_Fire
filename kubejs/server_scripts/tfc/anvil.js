@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
       `kubejs:triple_${item.name}`,       // 输出
       `tfc:metal/double_ingot/${item.name}`,
       `tfc:metal/ingot/${item.name}`,
-      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红蓝钢
+      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红秘银
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
     tfc.anvil(

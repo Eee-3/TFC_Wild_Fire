@@ -77,7 +77,8 @@ ServerEvents.recipes(e => {
     { mod: 'tfc:metal/unfinished_', tool: 'greaves/', number: 400 },       // 护腿
     { mod: 'tfc:metal/unfinished_', tool: 'helmet/', number: 400 },        // 头盔
 
-    { mod: 'artisanal:metal/', tool: 'circle_blade/', number: 50 },  // 开罐器
+    { mod: 'artisanal:metal/', tool: 'circle_blade/', number: 50 },  // 开罐刀片
+    { mod: 'artisanal:metal/', tool: 'can_opener/', number: 100 },  // 开罐刀片
     { mod: 'tfc_hammer_time:metal/', tool: 'excavator_head/', number: 200 },   // 挖掘器
     { mod: 'tfc_hammer_time:metal/', tool: 'sledgehammer_head/', number: 300 },   // 大锤
     { mod: 'precisionprospecting:metal/', tool: 'mineral_prospector_head/', number: 200 }, // 矿物勘探仪
@@ -158,8 +159,8 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron_fragments", metal: "cast_iron", number: 20, temperature: 1535 }, // 锻铁碎片
     { name: "steel_fragments", metal: "steel_fragments", number: 20, temperature: 1535 }, // 钢碎片
     { name: "black_steel_fragments", metal: "black_steel", number: 20, temperature: 1784 }, // 黑钢碎片
-    { name: "red_steel_fragments", metal: "red_steel", number: 20, temperature: 2066 }, // 红钢碎片
-    { name: "blue_steel_fragments", metal: "blue_steel", number: 20, temperature: 1863 }, // 蓝钢碎片
+    { name: "red_steel_fragments", metal: "red_steel", number: 20, temperature: 2066 }, // 精金碎片
+    { name: "blue_steel_fragments", metal: "blue_steel", number: 20, temperature: 1863 }, // 秘银碎片
     { name: "copper_fragments", metal: "copper", number: 20, temperature: 1080 }, // 铜碎片
     { name: "bronze_fragments", metal: "bronze", number: 20, temperature: 950 }, // 青铜碎片
     { name: "rusty_iron_fragments", metal: 'cast_iron', number: 20, temperature: 1535 }, // 生锈的铁碎片
@@ -172,7 +173,7 @@ ServerEvents.recipes(e => {
     { name: "copper_arrow", metal: "copper", number: 12, temperature: 1080 }, // 铜箭头
     { name: "wrought_iron_arrow", metal: "cast_iron", number: 12, temperature: 1535 }, // 铁箭头
     { name: "steel_arrow", metal: "steel", number: 12, temperature: 1540 }, // 钢箭头
-    { name: "black_steel_arrow", metal: "black_steel", number: 12, temperature: 1485 }, // 黑钢箭头
+    { name: "black_steel_arrow", metal: "black_steel", number: 12, temperature: 1784 }, // 黑钢箭头
 
     { name: "copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 铜甲片
     { name: "rusty_copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 生锈的铜甲片
@@ -213,12 +214,12 @@ ServerEvents.recipes(e => {
     { name: "cast_iron_lockpick", temperature: 1150, metal: "cast_iron", number: 50 },    // 铸铁开锁器（kubejs:cast_iron_lockpick）
     { name: "wrought_iron_lockpick", temperature: 1535, metal: "cast_iron", number: 50 },    // 锻铁开锁器（kubejs:wrought_iron_lockpick）
     { name: "steel_lockpick", temperature: 1540, metal: "steel", number: 50 },    // 钢制开锁器（kubejs:steel_lockpick）
-    { name: "black_steel_lockpick", temperature: 1485, metal: "black_steel", number: 50 },    // 黑钢开锁器（kubejs:black_steel_lockpick）
+    { name: "black_steel_lockpick", temperature: 1784, metal: "black_steel", number: 50 },    // 黑钢开锁器（kubejs:black_steel_lockpick）
 
     // 撬棍类
     { name: "wrought_iron_crowbar", temperature: 1535, metal: "cast_iron", number: 200 },    // 锻铁撬棍（kubejs:wrought_iron_crowbar）
     { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },    // 钢撬棍（kubejs:steel_crowbar）
-    { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
+    { name: "black_steel_crowbar", temperature: 1784, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
 
 
     // 支撑梁
@@ -230,8 +231,8 @@ ServerEvents.recipes(e => {
     { name: "cast_iron_support", temperature: 1150, metal: "cast_iron", number: 10 },//铸铁支撑梁
     { name: "steel_support", temperature: 1540, metal: "steel", number: 10 },//钢支撑梁
     { name: "black_steel_support", temperature: 1784, metal: "black_steel", number: 10 },//黑钢支撑梁
-    { name: "blue_steel_support", temperature: 1863, metal: "blue_steel", number: 10 },//蓝钢支撑梁
-    { name: "red_steel_support", temperature: 2066, metal: "red_steel", number: 10 },//红钢支撑梁
+    { name: "blue_steel_support", temperature: 1863, metal: "blue_steel", number: 10 },//秘银支撑梁
+    { name: "red_steel_support", temperature: 2066, metal: "red_steel", number: 10 },//精金支撑梁
   ];
   items.forEach(metala => {
 
@@ -245,7 +246,7 @@ ServerEvents.recipes(e => {
     { name: "chipped_anvil", temperature: 1535, metal: "cast_iron", number: 1200, mods: "minecraft:" },
     { name: "damaged_anvil", temperature: 1535, metal: "cast_iron", number: 1000, mods: "minecraft:" },
     { name: "material_component_steel", temperature: 1580, metal: "steel", number: 50, mods: "kubejs:" },
-    { name: "material_component_black_steel", temperature: 1620, metal: "black_steel", number: 50, mods: "kubejs:" },
+    { name: "material_component_black_steel", temperature: 1784, metal: "black_steel", number: 50, mods: "kubejs:" },
     { name: "material_component_wrought_iron", temperature: 1500, metal: "cast_iron", number: 50, mods: "kubejs:" },
     { name: "brass_forge_door", temperature: 930, metal: "brass", number: 400, mods: "kubejs:" },
     { name: "bloomery", temperature: 930, metal: "brass", number: 1800, mods: "tfc:" }
@@ -314,42 +315,7 @@ ServerEvents.recipes(e => {
     tfc.heating(`tfcgroomer:${metal.name}_grooming_station`, metal.temperature).resultFluid(Fluid.of(metal.metal, 400))//喂食盆融化
     crucible(`tfcgroomer:${metal.name}_grooming_station`, metal.metal, 400, metal.temperature)
   })
-  const metal_block = [
 
-    { name: "iron", temperature: 1535, molten_metal: "tfc:metal/cast_iron" },//锻铁
-    { name: "electrum", temperature: 900, molten_metal: "tfc_ie_addon:metal/electrum" },//琥珀金
-    { name: "aluminum", temperature: 650, molten_metal: "tfc_ie_addon:metal/aluminum" },//铝
-    { name: "lead", temperature: 500, molten_metal: "tfc_ie_addon:metal/lead" },//铅
-    { name: "silver", temperature: 961, molten_metal: "tfc:metal/silver" },//银
-    { name: "nickel", temperature: 1453, molten_metal: "tfc:metal/nickel" },//镍
-    { name: "copper", temperature: 1080, molten_metal: "tfc:metal/copper" },//铜
-    { name: "uranium", temperature: 747, molten_metal: "tfc_ie_addon:metal/uranium" },//铀
-    { name: "constantan", temperature: 750, molten_metal: "tfc_ie_addon:metal/constantan" },//康铜
-    { name: "steel", temperature: 1540, molten_metal: "tfc:metal/steel" },//钢
-    { name: "gold", temperature: 1060, molten_metal: "tfc:metal/gold" },//金
-
-  ];
-  metal_block.forEach(block => {
-
-    tfc.heating(`immersiveengineering:sheetmetal_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 100))//金属板方块融化
-    crucible(`immersiveengineering:sheetmetal_${block.name}`, block.molten_metal, 100, block.temperature)
-
-    tfc.heating(`immersiveengineering:slab_sheetmetal_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 50))//金属台阶方块融化
-    crucible(`immersiveengineering:slab_sheetmetal_${block.name}`, block.molten_metal, 50, block.temperature)
-
-  })
-  const metal_block_2 = [
-
-    { name: "iron", temperature: 1535, molten_metal: "tfc:metal/cast_iron" },//锻铁
-    { name: "aluminum", temperature: 650, molten_metal: "tfc_ie_addon:metal/aluminum" },//铝
-    { name: "copper", temperature: 1080, molten_metal: "tfc:metal/copper" },//铜
-    { name: "steel", temperature: 1540, molten_metal: "tfc:metal/steel" },//钢
-
-  ];
-  metal_block_2.forEach(block => {
-    tfc.heating(`immersiveengineering:chute_${block.name}`, block.temperature).resultFluid(Fluid.of(block.molten_metal, 50))//金属滑道方块融化
-    crucible(`immersiveengineering:chute_${block.name}`, block.molten_metal, 50, block.temperature)
-  })
   const color_block = [
 
     { name: "white" },
@@ -370,90 +336,47 @@ ServerEvents.recipes(e => {
     { name: "black" },
 
   ];
-  color_block.forEach(block => {
+  color_block.forEach(color => {
 
-    tfc.heating(`immersiveengineering:sheetmetal_colored_${block.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 100))//金属方块融化
-    crucible(`immersiveengineering:sheetmetal_colored_${block.name}`, "tfc:metal/unknown", 100, 400)
+    tfc.heating(`immersiveengineering:sheetmetal_colored_${color.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 100))//金属方块融化
+    crucible(`immersiveengineering:sheetmetal_colored_${color.name}`, "tfc:metal/unknown", 100, 400)
 
-    tfc.heating(`immersiveengineering:slab_sheetmetal_colored_${block.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 50))//金属台阶融化
-    crucible(`immersiveengineering:slab_sheetmetal_colored_${block.name}`, "tfc:metal/unknown", 40, 400)
-  })
-  const color_block_2 = [
+    tfc.heating(`immersiveengineering:slab_sheetmetal_colored_${color.name}`, 400).resultFluid(Fluid.of("tfc:metal/unknown", 50))//金属台阶融化
+    crucible(`immersiveengineering:slab_sheetmetal_colored_${color.name}`, "tfc:metal/unknown", 40, 400)
 
-    { name: "white" },
-    { name: "orange" },
-    { name: "magenta" },
-    { name: "light_blue" },
-    { name: "yellow" },
-    { name: "lime" },
-    { name: "pink" },
-    { name: "gray" },
-    { name: "light_gray" },
-    { name: "cyan" },
-    { name: "purple" },
-    { name: "blue" },
-    { name: "brown" },
-    { name: "green" },
-    { name: "red" },
-    { name: "black" },
 
-  ];
-  color_block_2.forEach(block => {
+    tfc.heating(`design_decor:${color.name}_metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${color.name}_metal_plate`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_plate`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${block.name}_metal_plate`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${color.name}_metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_plate_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${block.name}_metal_plate_wall`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
+    crucible(`design_decor:${color.name}_metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${block.name}_metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
-
-    tfc.heating(`design_decor:${block.name}_metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-    crucible(`design_decor:${block.name}_metal_plate_slab`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))//金属板材融化
+    crucible(`design_decor:${color.name}_metal_plate_slab`, "tfc:metal/cast_iron", 12, 1535)
 
 
 
-    tfc.heating(`design_decor:${block.name}_metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${block.name}_metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${color.name}_metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${block.name}_metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_sheet_wall`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${color.name}_metal_sheet_wall`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${block.name}_metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
+    crucible(`design_decor:${color.name}_metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
 
-    tfc.heating(`design_decor:${block.name}_metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-    crucible(`design_decor:${block.name}_metal_sheet_slab`, "tfc:metal/cast_iron", 25, 1535)
+    tfc.heating(`design_decor:${color.name}_metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))//金属镶板融化
+    crucible(`design_decor:${color.name}_metal_sheet_slab`, "tfc:metal/cast_iron", 12, 1535)
 
-  })
-  const light_color = [
-
-    { name: "white" },
-    { name: "orange" },
-    { name: "magenta" },
-    { name: "light_blue" },
-    { name: "yellow" },
-    { name: "lime" },
-    { name: "pink" },
-    { name: "gray" },
-    { name: "light_gray" },
-    { name: "cyan" },
-    { name: "purple" },
-    { name: "blue" },
-    { name: "brown" },
-    { name: "green" },
-    { name: "red" },
-    { name: "black" },
-
-  ];
-  light_color.forEach(block => {
     //工业灯融化
-    tfc.heating(`ad_astra:${block.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 50))
-    crucible(`ad_astra:${block.name}_industrial_lamp`, "tfc:metal/cast_iron", 50, 1535)
+    tfc.heating(`ad_astra:${color.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 50))
+    crucible(`ad_astra:${color.name}_industrial_lamp`, "tfc:metal/cast_iron", 50, 1535)
 
-    tfc.heating(`ad_astra:small_${block.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
-    crucible(`ad_astra:small_${block.name}_industrial_lamp`, "tfc:metal/cast_iron", 12, 1535)
+    tfc.heating(`ad_astra:small_${color.name}_industrial_lamp`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 12))
+    crucible(`ad_astra:small_${color.name}_industrial_lamp`, "tfc:metal/cast_iron", 12, 1535)
   })
 
   const large_chain = [
@@ -480,8 +403,93 @@ ServerEvents.recipes(e => {
     crucible(`design_decor:${block.name}_large_chain`, block.metal, 25, block.temperature)
 
   })
-  const metal_block_3 = [
-    // 金属
+
+  //精金秘银黑钢工具熔融补充
+  const steel = [
+    //精金
+    { name: "tfc_hammer_time:metal/excavator/red_steel", number: 250, color: "red", temperature: 2066 },
+    { name: "sns:metal/horseshoes/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "sns:metal/horseshoe/red_steel", number: 50, color: "red", temperature: 2066 },
+    { name: "waterflasks:unfinished_red_steel_flask", number: 200, color: "red", temperature: 2066 },
+    { name: "waterflasks:red_steel_flask", number: 200, color: "red", temperature: 2066 },
+    { name: "survivorsdelight:skillet_head/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "survivorsdelight:unfinished_skillet/red_steel", number: 250, color: "red", temperature: 2066 },
+    { name: "survivorsdelight:skillet/red_steel", number: 250, color: "red", temperature: 2066 },
+    { name: "tfc_hammer_time:metal/sledgehammer/red_steel", number: 350, color: "red", temperature: 2066 },
+    { name: "precisionprospecting:metal/mineral_prospector_head/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "precisionprospecting:metal/prospector_drill/red_steel", number: 400, color: "red", temperature: 2066 },
+    { name: "precisionprospecting:metal/mineral_prospector/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "precisionprospecting:metal/prospector_hammer/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "tfcscraping:metal/scraping_knife/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "tfcscraping:metal/scraping_knife_blade/red_steel", number: 200, color: "red", temperature: 2066 },
+    { name: "tfc:metal/bucket/red_steel", number: 200, color: "red", temperature: 2066 },
+    //秘银
+    { name: "tfc_hammer_time:metal/excavator/blue_steel", number: 250, color: "blue", temperature: 1863 },
+    { name: "sns:metal/horseshoes/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "sns:metal/horseshoe/blue_steel", number: 50, color: "blue", temperature: 1863 },
+    { name: "survivorsdelight:skillet_head/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "survivorsdelight:unfinished_skillet/blue_steel", number: 250, color: "blue", temperature: 1863 },
+    { name: "survivorsdelight:skillet/blue_steel", number: 250, color: "blue", temperature: 1863 },
+    { name: "tfc_hammer_time:metal/sledgehammer/blue_steel", number: 350, color: "blue", temperature: 1863 },
+    { name: "precisionprospecting:metal/mineral_prospector_head/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "precisionprospecting:metal/prospector_drill/blue_steel", number: 400, color: "blue", temperature: 1863 },
+    { name: "precisionprospecting:metal/mineral_prospector/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "precisionprospecting:metal/prospector_hammer/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "tfcscraping:metal/scraping_knife/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "tfcscraping:metal/scraping_knife_blade/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    { name: "tfc:metal/bucket/blue_steel", number: 200, color: "blue", temperature: 1863 },
+    //黑钢
+    { name: "tfcscraping:metal/scraping_knife/black_steel", number: 200, color: "black", temperature: 1784 },
+    { name: "tfcscraping:metal/scraping_knife_blade/black_steel", number: 200, color: "black", temperature: 1784 },
+    { name: "tfc_hammer_time:metal/sledgehammer/black_steel", number: 350, color: "black", temperature: 1784 },
+    { name: "tfc_hammer_time:metal/excavator/black_steel", number: 250, color: "black", temperature: 1784 },
+    { name: "precisionprospecting:metal/prospector_drill/black_steel", number: 400, color: "black", temperature: 1784 },
+    { name: "precisionprospecting:metal/prospector_hammer/black_steel", number: 200, color: "black", temperature: 1784 },
+    { name: "sns:metal/horseshoe/black_steel", number: 50, color: "black", temperature: 1784 },
+    { name: "sns:metal/horseshoes/black_steel", number: 200, color: "black", temperature: 1784 },
+    { name: "survivorsdelight:skillet_head/black_steel", number: 200, color: "black", temperature: 1784 },
+    { name: "survivorsdelight:unfinished_skillet/black_steel", number: 250, color: "black", temperature: 1784 },
+    { name: "survivorsdelight:skillet/black_steel", number: 250, color: "black", temperature: 1784 },
+
+  ];
+  steel.forEach(steel => {
+    tfc.heating(`${steel.name}`, steel.temperature).resultFluid(Fluid.of(`tfc:metal/${steel.color}_steel`, steel.number))
+      .useDurability(true);
+    crucible(`${steel.name}`, `tfc:metal/${steel.color}_steel`, steel.number, steel.temperature)
+
+  })
+  const metal_block = [
+    //金属板材
+    //方块
+    { name: "immersiveengineering:sheetmetal_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 100 },//锻铁
+    { name: "immersiveengineering:sheetmetal_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 100 },//琥珀金
+    { name: "immersiveengineering:sheetmetal_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 100 },//铝
+    { name: "immersiveengineering:sheetmetal_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 100 },//铅
+    { name: "immersiveengineering:sheetmetal_silver", temperature: 961, metal: "tfc:metal/silver", number: 100 },//银
+    { name: "immersiveengineering:sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 100 },//镍
+    { name: "immersiveengineering:sheetmetal_copper", temperature: 1080, metal: "tfc:metal/copper", number: 100 },//铜
+    { name: "immersiveengineering:sheetmetal_uranium", temperature: 747, metal: "tfc_ie_addon:metal/uranium", number: 100 },//铀
+    { name: "immersiveengineering:sheetmetal_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 100 },//康铜
+    { name: "immersiveengineering:sheetmetal_steel", temperature: 1540, metal: "tfc:metal/steel", number: 100 },//钢
+    { name: "immersiveengineering:sheetmetal_gold", temperature: 1060, metal: "tfc:metal/gold", number: 100 },//金
+    //台阶
+    { name: "immersiveengineering:slab_sheetmetal_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 50 },//锻铁
+    { name: "immersiveengineering:slab_sheetmetal_electrum", temperature: 900, metal: "tfc_ie_addon:metal/electrum", number: 50 },//琥珀金
+    { name: "immersiveengineering:slab_sheetmetal_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },//铝
+    { name: "immersiveengineering:slab_sheetmetal_lead", temperature: 500, metal: "tfc_ie_addon:metal/lead", number: 50 },//铅
+    { name: "immersiveengineering:slab_sheetmetal_silver", temperature: 961, metal: "tfc:metal/silver", number: 50 },//银
+    { name: "immersiveengineering:slab_sheetmetal_nickel", temperature: 1453, metal: "tfc:metal/nickel", number: 50 },//镍
+    { name: "immersiveengineering:slab_sheetmetal_copper", temperature: 1080, metal: "tfc:metal/copper", number: 50 },//铜
+    { name: "immersiveengineering:slab_sheetmetal_uranium", temperature: 747, metal: "tfc_ie_addon:metal/uranium", number: 50 },//铀
+    { name: "immersiveengineering:slab_sheetmetal_constantan", temperature: 750, metal: "tfc_ie_addon:metal/constantan", number: 50 },//康铜
+    { name: "immersiveengineering:slab_sheetmetal_steel", temperature: 1540, metal: "tfc:metal/steel", number: 50 },//钢
+    { name: "immersiveengineering:slab_sheetmetal_gold", temperature: 1060, metal: "tfc:metal/gold", number: 50 },//金
+    //金属滑道
+    { name: "immersiveengineering:chute_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 50 },//锻铁
+    { name: "immersiveengineering:chute_aluminum", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },//铝
+    { name: "immersiveengineering:chute_copper", temperature: 1080, metal: "tfc:metal/copper", number: 50 },//铜
+    { name: "immersiveengineering:chute_steel", temperature: 1540, metal: "tfc:metal/steel", number: 50 },//钢
+    // 实心金属块
     { name: "create:zinc_block", temperature: 419, metal: "tfc:metal/zinc", number: 1000 },
     { name: "minecraft:iron_block", temperature: 1535, metal: "tfc:metal/cast_iron", number: 1000 },
     { name: "minecraft:gold_block", temperature: 1060, metal: "tfc:metal/gold", number: 1000 },
@@ -772,11 +780,11 @@ ServerEvents.recipes(e => {
     // ==========================================
 
     //钻头
-    { name: "immersiveengineering:drillhead_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 350 },
-    { name: "immersiveengineering:drillhead_steel", temperature: 1540, metal: "tfc:metal/steel", number: 350 },
-    { name: "tfc_ie_addon:drillhead_black_steel", temperature: 1485, metal: "tfc:metal/black_steel", number: 350 },
-    { name: "tfc_ie_addon:drillhead_blue_steel", temperature: 1540, metal: "tfc:metal/blue_steel", number: 350 },
-    { name: "tfc_ie_addon:drillhead_red_steel", temperature: 1538, metal: "tfc:metal/red_steel", number: 350 },
+    { name: "immersiveengineering:drillhead_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 400 },
+    { name: "immersiveengineering:drillhead_steel", temperature: 1540, metal: "tfc:metal/steel", number: 400 },
+    { name: "tfc_ie_addon:drillhead_black_steel", temperature: 1784, metal: "tfc:metal/black_steel", number: 400 },
+    { name: "tfc_ie_addon:drillhead_blue_steel", temperature: 1863, metal: "tfc:metal/blue_steel", number: 400 },
+    { name: "tfc_ie_addon:drillhead_red_steel", temperature: 2066, metal: "tfc:metal/red_steel", number: 400 },
 
     //弹簧
     { name: "vintageimprovements:iron_spring", temperature: 1538, metal: "tfc:metal/cast_iron", number: 50 },
@@ -794,12 +802,12 @@ ServerEvents.recipes(e => {
     { name: "spartanweaponry:copper_arrow", temperature: 1085, metal: "tfc:metal/copper", number: 12 },
     { name: "spartanweaponry:iron_arrow", temperature: 1535, metal: "tfc:metal/cast_iron", number: 12 },
     { name: "spartanweaponry:diamond_arrow", temperature: 1540, metal: "tfc:metal/steel", number: 12 },
-    { name: "spartanweaponry:netherite_arrow", temperature: 1485, metal: "tfc:metal/black_steel", number: 12 },
+    { name: "spartanweaponry:netherite_arrow", temperature: 1784, metal: "tfc:metal/black_steel", number: 12 },
 
     { name: "spartanweaponry:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 25 },
     { name: "spartanweaponry:bolt", temperature: 1535, metal: "tfc:metal/cast_iron", number: 25 },
     { name: "spartanweaponry:diamond_bolt", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
-    { name: "spartanweaponry:netherite_bolt", temperature: 1485, metal: "tfc:metal/black_steel", number: 25 },
+    { name: "spartanweaponry:netherite_bolt", temperature: 1784, metal: "tfc:metal/black_steel", number: 25 },
 
     { name: "firmalife:sprinkler", temperature: 1085, metal: "tfc:metal/copper", number: 200 },//洒水器
 
@@ -810,10 +818,14 @@ ServerEvents.recipes(e => {
     { name: "scguns:small_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 7 },//弹壳
     { name: "scguns:medium_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 9 },//弹壳
     { name: "scguns:large_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 15 },//弹壳
+    //扳手
+    { name: "create:wrench", temperature: 1060, metal: "tfc:metal/gold", number: 600 },//弹壳
+    { name: "ad_astra:wrench", temperature: 1535, metal: "tfc:metal/cast_iron", number: 500 },//弹壳
   ];
-  metal_block_3.forEach(metal_block => {
+  metal_block.forEach(metal_block => {
     //金属方块融化
     tfc.heating(`${metal_block.name}`, metal_block.temperature).resultFluid(Fluid.of(metal_block.metal, metal_block.number))
+      .useDurability(true);
     crucible(`${metal_block.name}`, metal_block.metal, metal_block.number, metal_block.temperature)
   })
 
@@ -851,8 +863,8 @@ ServerEvents.recipes(e => {
   tfc.heating(`design_decor:metal_plate_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
   crucible(`design_decor:metal_plate_stairs`, "tfc:metal/cast_iron", 25, 1535)
 
-  tfc.heating(`design_decor:metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属板材融化
-  crucible(`design_decor:metal_plate_slab`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:metal_plate_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 13))//金属板材融化
+  crucible(`design_decor:metal_plate_slab`, "tfc:metal/cast_iron", 13, 1535)
 
   tfc.heating(`design_decor:metal_sheet`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
   crucible(`design_decor:metal_sheet`, "tfc:metal/cast_iron", 25, 1535)
@@ -863,8 +875,8 @@ ServerEvents.recipes(e => {
   tfc.heating(`design_decor:metal_sheet_stairs`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
   crucible(`design_decor:metal_sheet_stairs`, "tfc:metal/cast_iron", 25, 1535)
 
-  tfc.heating(`design_decor:metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//金属镶板融化
-  crucible(`design_decor:metal_sheet_slab`, "tfc:metal/cast_iron", 25, 1535)
+  tfc.heating(`design_decor:metal_sheet_slab`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 13))//金属镶板融化
+  crucible(`design_decor:metal_sheet_slab`, "tfc:metal/cast_iron", 13, 1535)
 
   tfc.heating(`create:industrial_iron_block`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 25))//工业铁块融化
   crucible(`create:industrial_iron_block`, "tfc:metal/cast_iron", 25, 1535)
@@ -914,12 +926,12 @@ ServerEvents.recipes(e => {
   tfc.heating(`kubejs:wrought_iron_double_rod`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 100))
   crucible(`kubejs:wrought_iron_double_rod`, "tfc:metal/cast_iron", 100, 1535)
 
-  tfc.heating(`createmetallurgy:sturdy_whisk`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 300))//黑钢搅拌头和坚固搅拌器以及黑钢双杆融化
-  crucible(`createmetallurgy:sturdy_whisk`, "tfc:metal/black_steel", 300, 1485)
-  tfc.heating(`kubejs:whisk_black_steel_head_blank`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
-  crucible(`kubejs:whisk_black_steel_head_blank`, "tfc:metal/black_steel", 100, 1485)
-  tfc.heating(`kubejs:black_steel_double_rod`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
-  crucible(`kubejs:black_steel_double_rod`, "tfc:metal/black_steel", 100, 1485)
+  tfc.heating(`createmetallurgy:sturdy_whisk`, 1784).resultFluid(Fluid.of("tfc:metal/black_steel", 300))//黑钢搅拌头和坚固搅拌器以及黑钢双杆融化
+  crucible(`createmetallurgy:sturdy_whisk`, "tfc:metal/black_steel", 300, 1784)
+  tfc.heating(`kubejs:whisk_black_steel_head_blank`, 1784).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
+  crucible(`kubejs:whisk_black_steel_head_blank`, "tfc:metal/black_steel", 100, 1784)
+  tfc.heating(`kubejs:black_steel_double_rod`, 1784).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
+  crucible(`kubejs:black_steel_double_rod`, "tfc:metal/black_steel", 100, 1784)
   tfc.heating('kubejs:leather_hot_water_bag', 1000)
     .resultItem(Item.of('kubejs:leather_hot_water_bag'))
 });
