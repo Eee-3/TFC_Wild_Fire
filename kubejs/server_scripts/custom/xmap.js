@@ -1,12 +1,11 @@
 PlayerEvents.tick(event => {
     const { player } = event
 
-    let playerData = player.persistentData
-    if (!playerData.hotTimer) playerData.hotTimer = 0
-    playerData.hotTimer++
-    if (playerData.hotTimer < 11) return
-    playerData.hotTimer = 0
-
+    let playerData2 = player.persistentData
+    if (!playerData2.mapTimer) playerData2.mapTimer = 0
+    playerData2.mapTimer++
+    if (playerData2.mapTimer < 11) return
+    playerData2.mapTimer = 0
     const waypoints = ['minecraft:compass']
     const minimap = ['minecraft:spyglass']
     //!player.mainHandItem.isEmpty() 

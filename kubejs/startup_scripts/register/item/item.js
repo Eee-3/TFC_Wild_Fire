@@ -50,6 +50,10 @@ StartupEvents.registry('item', event => {
 
     event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
     event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
+    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1);// 金属热水袋
+    event.create('warm_warmer', 'basic').texture('kubejs:item/tfc/warm_warmer').maxStackSize(4);//暖手宝
+    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(4);//暖手宝
+
 
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
     event.create('kubejs:tfc/sinew_thread', 'basic').texture('kubejs:item/tfc/sinew_thread'); // 筋线
@@ -170,14 +174,14 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:venus_plating').texture('kubejs:item/ad/venus_plating'); // 金星镀层
 
 
-event.create('kubejs:stone_arrow').texture('kubejs:item/tfc/stone_arrow'); // 石箭头
-event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
-event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
-event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
-event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
-event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
+    event.create('kubejs:stone_arrow').texture('kubejs:item/tfc/stone_arrow'); // 石箭头
+    event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
+    event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
+    event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
+    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
+    event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
 
-   
+
 
     // 未完成部件
     event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成

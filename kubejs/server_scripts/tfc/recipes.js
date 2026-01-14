@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     200,
     // 熬制时间：
     200
-  ).itemOutput(TFC.itemStackProvider.of('kubejs:rubber_hot_water_bag').addHeat(500))// 输出物品：橡胶热水袋
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:rubber_hot_water_bag').addHeat(100))// 输出物品：橡胶热水袋
   tfc.pot(
 
     [
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     200,
     // 熬制时间：
     200
-  ).itemOutput(TFC.itemStackProvider.of('kubejs:leather_hot_water_bag').addHeat(500))// 输出物品：皮革热水袋
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:leather_hot_water_bag').addHeat(60))// 输出物品：皮革热水袋
   create.milling(
     'kubejs:rock_powder',
     "tfc:rock/loose/andesite",

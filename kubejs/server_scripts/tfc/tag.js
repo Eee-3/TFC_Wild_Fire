@@ -17,6 +17,11 @@ ServerEvents.tags('minecraft:item', event => {//
     event.add('curios:necklace', 'kubejs:leather_hot_water_bag');
     event.add('curios:belt', 'kubejs:leather_hot_water_bag');
     event.add('curios:body', 'kubejs:leather_hot_water_bag');
+
+    event.add('kubejs:nohot', 'kubejs:leather_hot_water_bag');
+    event.add('kubejs:nohot', 'kubejs:rubber_hot_water_bag');
+
+
 const ore=['tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
 
     ore.forEach(item=> {

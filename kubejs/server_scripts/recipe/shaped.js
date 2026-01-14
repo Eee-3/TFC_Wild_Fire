@@ -86,7 +86,22 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('butcher:bonebutchersknife'), ['kubejs:bone_skinningknife_blade', '#forge:rods/wooden'])//骨头刀合成
     event.shaped(Item.of('kubejs:bone_fishing_rod'), [['#forge:rods/wooden', 'farmersdelight:rope'], ['#forge:rods/wooden', 'kubejs:bone_fish_hook']])//骨头吊杆合成
 
-
+    event.shaped("kubejs:leather_hot_water_bag", [' a ', 'bcb', 'dbd'], {
+        a: '#tfc:lumber',
+        b: 'minecraft:leather',
+        c: "waterflasks:bladder",
+        d: '#forge:string'
+    }) //皮热水袋
+    event.shaped("kubejs:rubber_hot_water_bag", [' a ', 'b b', ' b '], {
+        a: '#tfc:lumber',
+        b: "afc:rubber_bar"
+    }) //橡胶热水袋
+ event.shaped("kubejs:leather_hot_water_bag", [' a ', 'bcb', 'dbd'], {
+        a: '#tfc:lumber',
+        b: 'minecraft:leather',
+        c: '#forge:sheets',
+        d: '#forge:string'
+    }) //皮热水袋
 
 
     event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {
@@ -524,7 +539,7 @@ ServerEvents.recipes(event => {
         b: 'tfc:metal/sheet/brass',
     })//分液池
 
-        event.shaped('create:copper_backtank', [
+    event.shaped('create:copper_backtank', [
         'ece',
         'bab',
         ' d '
@@ -536,7 +551,7 @@ ServerEvents.recipes(event => {
         e: 'create:andesite_alloy'
     })//铜背罐
 
-        event.shaped('vintageimprovements:vibrating_table', [
+    event.shaped('vintageimprovements:vibrating_table', [
         'ece',
         'bab',
         ' d '
@@ -552,7 +567,7 @@ ServerEvents.recipes(event => {
         'a',
         'b'
     ],
-        {a: 'tfc:ceramic/large_vessel',b: 'minecraft:clay',})
+        { a: 'tfc:ceramic/large_vessel', b: 'minecraft:clay', })
         .replaceIngredient({ item: 'tfc:ceramic/large_vessel', }, 'tfc:ceramic/large_vessel',)//不消耗物品 
     //未完成的黏土坩埚模具_1
 
@@ -573,7 +588,7 @@ ServerEvents.recipes(event => {
     event.shaped('immersiveengineering:steel_scaffolding_grate_top', [
         'ab'
     ],
-        {a: 'immersiveengineering:steel_scaffolding_standard',b: 'immersiveengineering:wirecutter',})
+        { a: 'immersiveengineering:steel_scaffolding_standard', b: 'immersiveengineering:wirecutter', })
         .replaceIngredient({ item: 'immersiveengineering:wirecutter', }, 'immersiveengineering:wirecutter',)//不消耗物品
     //格栅钢脚手架
 
@@ -583,10 +598,10 @@ ServerEvents.recipes(event => {
         { a: 'immersiveengineering:steel_scaffolding_standard', b: 'tfc_ie_addon:treated_wood_lumber', })
     //防腐木钢脚手架
 
-        event.shaped('immersiveengineering:alu_scaffolding_grate_top', [
+    event.shaped('immersiveengineering:alu_scaffolding_grate_top', [
         'ab'
     ],
-        {a: 'immersiveengineering:alu_scaffolding_standard',b: 'immersiveengineering:wirecutter',})
+        { a: 'immersiveengineering:alu_scaffolding_standard', b: 'immersiveengineering:wirecutter', })
         .replaceIngredient({ item: 'immersiveengineering:wirecutter', }, 'immersiveengineering:wirecutter',)//不消耗物品
     //格栅铝脚手架
 

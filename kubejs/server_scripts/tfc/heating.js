@@ -932,6 +932,8 @@ ServerEvents.recipes(e => {
   crucible(`kubejs:whisk_black_steel_head_blank`, "tfc:metal/black_steel", 100, 1784)
   tfc.heating(`kubejs:black_steel_double_rod`, 1784).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
   crucible(`kubejs:black_steel_double_rod`, "tfc:metal/black_steel", 100, 1784)
-  tfc.heating('kubejs:leather_hot_water_bag', 1000)
+  tfc.heating('kubejs:leather_hot_water_bag', 60)
     .resultItem(Item.of('kubejs:leather_hot_water_bag'))
+  tfc.heating('kubejs:rubber_hot_water_bag', 100)
+    .resultItem(Item.of('kubejs:rubber_hot_water_bag'))
 });

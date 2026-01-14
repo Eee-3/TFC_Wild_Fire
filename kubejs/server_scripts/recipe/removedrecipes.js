@@ -768,7 +768,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'artisanal:heating/metal/circle_blade/black_steel' })
   e.remove({ id: 'tfcscraping:heating/metal/black_steel_scraping_knife' })
   e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer/black_steel' })
-  e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/red_steel ' })
+  e.remove({ id: 'precisionprospecting:heating/metal/prospector_hammer_head/red_steel' })
   e.remove({ id: 'tfc_hammer_time:heating/excavator_head/red_steel' })
   e.remove({ id: '11111111111111111111111' })
   e.remove({ id: '11111111111111111111111' })

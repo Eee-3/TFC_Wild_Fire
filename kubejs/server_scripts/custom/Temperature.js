@@ -29,7 +29,7 @@ PlayerEvents.tick(event => {
     let Temperature = persistentData.getFloat("Temperature")
     
     // 体温自然衰减：每次tick减少当前体温的0.03%（模拟热量自然流失）
-    Temperature -= Temperature * 0.0003
+   /// Temperature -= Temperature * 0.0003
     
     // 计算本次tick可从食物中获取的热量（食物温度 × 0.001）
     let amount = foodTemperature * 0.001
@@ -44,7 +44,7 @@ PlayerEvents.tick(event => {
     // 2. 轻微提升体温（可能是模拟寒冷环境下的生理反应）
     if (CapabilityUtil.getTempCapability(player).getTemperatureLevel() < 12) {
         player.foodData.addExhaustion(0.02)
-        Temperature += 0.005
+      ///  Temperature += 0.005
     }
     
     // 更新食物温度：减去本次消耗的热量，且不低于0（防止负值）
