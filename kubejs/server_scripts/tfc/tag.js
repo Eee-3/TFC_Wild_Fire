@@ -18,16 +18,30 @@ ServerEvents.tags('minecraft:item', event => {//
     event.add('curios:belt', 'kubejs:leather_hot_water_bag');
     event.add('curios:body', 'kubejs:leather_hot_water_bag');
 
+    event.add('curios:any', "kubejs:metal_hot_water_bag");
+    event.add('curios:necklace', "kubejs:metal_hot_water_bag");
+    event.add('curios:belt', "kubejs:metal_hot_water_bag");
+    event.add('curios:body', "kubejs:metal_hot_water_bag");
+
+    event.add('curios:any',  'kubejs:heating_warmer');
+    event.add('curios:necklace',  'kubejs:heating_warmer');
+    event.add('curios:belt',  'kubejs:heating_warmer');
+    event.add('curios:body',  'kubejs:heating_warmer');
+   
+
+
+
     event.add('kubejs:nohot', 'kubejs:leather_hot_water_bag');
     event.add('kubejs:nohot', 'kubejs:rubber_hot_water_bag');
+    event.add('kubejs:nohot', 'kubejs:metal_hot_water_bag');
 
 
-const ore=['tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
+    const ore = ['tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
 
-    ore.forEach(item=> {
+    ore.forEach(item => {
         event.add('kubejs:ore', item);//热矿粉
-    
-})
+
+    })
 
 })
 
@@ -35,5 +49,5 @@ ServerEvents.tags('minecraft:fluid', event => {//
 
 
     event.add('tfc:usable_in_pot', 'immersiveengineering:redstone_acid');//红石酸
-    
+
 })

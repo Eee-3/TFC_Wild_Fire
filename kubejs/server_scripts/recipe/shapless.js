@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x tfc:daub']);//木屑保温燃料块
     event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x tfc:daub']);//煤炭保温燃料块
     //event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x tfc:daub']);//高性能保温燃料块
-
+   event.shapeless("4x kubejs:warm_warmer", ["tfc:powder/salt","tfc:powder/charcoal","immersiveengineering:dust_iron","kubejs:rock_powder","tfc:glue","minecraft:paper"]);//暖宝宝
     kubejs.shapeless(
         "kubejs:rock_powder",
         [

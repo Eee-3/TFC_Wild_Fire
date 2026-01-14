@@ -936,4 +936,8 @@ ServerEvents.recipes(e => {
     .resultItem(Item.of('kubejs:leather_hot_water_bag'))
   tfc.heating('kubejs:rubber_hot_water_bag', 100)
     .resultItem(Item.of('kubejs:rubber_hot_water_bag'))
+  tfc.heating('kubejs:metal_hot_water_bag', 110)
+    .resultItem(Item.of('kubejs:metal_hot_water_bag'))
+  tfc.heating('kubejs:heating_warmer', 100)
+    .resultItem(Item.of('kubejs:heating_warmer'))
 });

@@ -96,12 +96,12 @@ ServerEvents.recipes(event => {
         a: '#tfc:lumber',
         b: "afc:rubber_bar"
     }) //橡胶热水袋
- event.shaped("kubejs:leather_hot_water_bag", [' a ', 'bcb', 'dbd'], {
+ event.shaped('kubejs:metal_hot_water_bag', [' a ', 'bcb', 'dbd'], {
         a: '#tfc:lumber',
         b: 'minecraft:leather',
         c: '#forge:sheets',
         d: '#forge:string'
-    }) //皮热水袋
+    }) //金属热水袋'kubejs:heating_warmer'
 
 
     event.shaped('minecraft:chest', ['aaa', 'bcb', 'aaa'], {

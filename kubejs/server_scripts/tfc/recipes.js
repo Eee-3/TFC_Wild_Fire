@@ -57,6 +57,18 @@ ServerEvents.recipes(event => {
     'kubejs:rock_powder',
     "tfc:rock/loose/andesite",
   ).id("tfcorewashing:rock_powder/milling")
+  tfc.pot(
+
+    [
+      "kubejs:metal_hot_water_bag"
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of("kubejs:metal_hot_water_bag").addHeat(100))// 输出物品：金属热水袋
 
 
 
@@ -307,7 +319,13 @@ ServerEvents.recipes(event => {
     , "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_sheepskin_hide`)//小羊毛 
+  tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
+    //手推磨磨粉
+  create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
+//机械动力磨粉
 
-
-
+  tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
+   //手推磨磨粉
+  create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
+   //机械动力磨粉
 })
