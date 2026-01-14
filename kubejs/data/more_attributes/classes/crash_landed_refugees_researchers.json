@@ -11,14 +11,35 @@
         "skill": 16,
         "luck": 5
     },
-    "startItems": {
-        "minecraft:compass": 1,
-        "create:goggles": 1,
-        "create:wrench": 1,
-        "create:extendo_grip": 1,
-        "artisanal:metal/magnifying_glass/gold": 1,
-        "repas_de_survie:instant_gel_nature": 5,
-        "immersiveengineering:toolbox": 1
-    },
+    "startItems": [
+        {
+            "item": "minecraft:compass",
+            "count": 1
+        },
+        {
+            "item": "create:goggles",
+            "count": 1
+        },
+        {
+            "item": "create:wrench",
+            "count": 1
+        },
+        {
+            "item": "create:extendo_grip",
+            "count": 1
+        },
+        {
+            "item": "artisanal:metal/magnifying_glass/gold",
+            "count": 1
+        },
+        {
+            "item": "repas_de_survie:instant_gel_nature",
+            "count": 5
+        },
+        {
+            "item": "immersiveengineering:toolbox",
+            "count": 1
+        }
+    ],
     "displayCondition": []
 }

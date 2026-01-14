@@ -36,18 +36,18 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron", temperature: 1535, metal: "cast_iron" },
     { name: "cast_iron", temperature: 1150, metal: "cast_iron" },
     { name: "steel", temperature: 1540, metal: "steel" },
-    { name: "black_steel", temperature: 1485, metal: "black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "red_steel" }
+    { name: "black_steel", temperature: 1784, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "red_steel" }
   ];
   const metal = [
     { name: "copper", temperature: 1080, metal: "copper" },
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
     { name: "black_bronze", temperature: 1070, metal: "black_bronze" },
     { name: "bronze", temperature: 950, metal: "bronze" },
-    { name: "black_steel", temperature: 1485, metal: "black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "red_steel" },
     { name: "steel", temperature: 1540, metal: "steel" },
     { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
   ];
@@ -83,7 +83,7 @@ ServerEvents.recipes(e => {
     { mod: 'precisionprospecting:metal/', tool: 'mineral_prospector_head/', number: 200 }, // 矿物勘探仪
     { mod: 'precisionprospecting:metal/', tool: 'prospector_drill_head/', number: 400 },   // 勘探钻头
     { mod: 'precisionprospecting:metal/', tool: 'prospector_hammer_head/', number: 200 }   // 勘探锤
-  
+
   ]
   metal.forEach(metala => {
     tfctool.forEach(tool => {
@@ -157,9 +157,9 @@ ServerEvents.recipes(e => {
     { name: "bismuth_bronze_fragments", metal: "bismuth_bronze", number: 20, temperature: 1080 }, // 铋铜碎片
     { name: "wrought_iron_fragments", metal: "cast_iron", number: 20, temperature: 1535 }, // 锻铁碎片
     { name: "steel_fragments", metal: "steel_fragments", number: 20, temperature: 1535 }, // 钢碎片
-    { name: "black_steel_fragments", metal: "black_steel", number: 20, temperature: 1535 }, // 黑钢碎片
-    { name: "red_steel_fragments", metal: "red_steel", number: 20, temperature: 1535 }, // 红钢碎片
-    { name: "blue_steel_fragments", metal: "blue_steel", number: 20, temperature: 1535 }, // 蓝钢碎片
+    { name: "black_steel_fragments", metal: "black_steel", number: 20, temperature: 1784 }, // 黑钢碎片
+    { name: "red_steel_fragments", metal: "red_steel", number: 20, temperature: 2066 }, // 红钢碎片
+    { name: "blue_steel_fragments", metal: "blue_steel", number: 20, temperature: 1863 }, // 蓝钢碎片
     { name: "copper_fragments", metal: "copper", number: 20, temperature: 1080 }, // 铜碎片
     { name: "bronze_fragments", metal: "bronze", number: 20, temperature: 950 }, // 青铜碎片
     { name: "rusty_iron_fragments", metal: 'cast_iron', number: 20, temperature: 1535 }, // 生锈的铁碎片
@@ -193,9 +193,9 @@ ServerEvents.recipes(e => {
     { name: "triple_bismuth_bronze", temperature: 960, metal: "bismuth_bronze", number: 300 },
     { name: "triple_black_bronze", temperature: 1050, metal: "black_bronze", number: 300 },
     { name: "triple_bronze", temperature: 950, metal: "bronze", number: 300 },
-    { name: "triple_black_steel", temperature: 1485, metal: "black_steel", number: 300 },
-    { name: "triple_blue_steel", temperature: 1538, metal: "blue_steel", number: 300 },
-    { name: "triple_red_steel", temperature: 1538, metal: "red_steel", number: 300 },
+    { name: "triple_black_steel", temperature: 1784, metal: "black_steel", number: 300 },
+    { name: "triple_blue_steel", temperature: 1863, metal: "blue_steel", number: 300 },
+    { name: "triple_red_steel", temperature: 2066, metal: "red_steel", number: 300 },
     { name: "triple_steel", temperature: 1540, metal: "steel", number: 300 },
     // 钥匙类
     { name: "brass_simple_key", temperature: 940, metal: "brass", number: 100 },    // 黄铜简易钥匙（kubejs:brass_simple_key）
@@ -229,9 +229,9 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron_support", temperature: 1535, metal: "cast_iron", number: 10 },//锻铁支撑梁
     { name: "cast_iron_support", temperature: 1150, metal: "cast_iron", number: 10 },//铸铁支撑梁
     { name: "steel_support", temperature: 1540, metal: "steel", number: 10 },//钢支撑梁
-    { name: "black_steel_support", temperature: 1485, metal: "black_steel", number: 10 },//黑钢支撑梁
-    { name: "blue_steel_support", temperature: 1538, metal: "blue_steel", number: 10 },//蓝钢支撑梁
-    { name: "red_steel_support", temperature: 1538, metal: "red_steel", number: 10 },//红钢支撑梁
+    { name: "black_steel_support", temperature: 1784, metal: "black_steel", number: 10 },//黑钢支撑梁
+    { name: "blue_steel_support", temperature: 1863, metal: "blue_steel", number: 10 },//蓝钢支撑梁
+    { name: "red_steel_support", temperature: 2066, metal: "red_steel", number: 10 },//红钢支撑梁
   ];
   items.forEach(metala => {
 
@@ -272,9 +272,9 @@ ServerEvents.recipes(e => {
     { name: "copper", temperature: 1085, metal: "tfc:metal/copper" },
     { name: "wrought_iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
     { name: "steel", temperature: 1540, metal: "tfc:metal/steel" },
-    { name: "black_steel", temperature: 1385, metal: "tfc:metal/black_steel" },
-    { name: "blue_steel", temperature: 1540, metal: "tfc:metal/blue_steel" },
-    { name: "red_steel", temperature: 1540, metal: "tfc:metal/red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "tfc:metal/black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "tfc:metal/red_steel" },
     { name: "cast_iron", temperature: 1200, metal: "tfc:metal/cast_iron" },
     { name: "gold", temperature: 1060, metal: "tfc:metal/gold" },
     { name: "rose_gold", temperature: 960, metal: "tfc:metal/rose_gold" },
@@ -302,15 +302,15 @@ ServerEvents.recipes(e => {
     { name: "copper", temperature: 1080, metal: "tfc:metal/copper" },
     { name: "wrought_iron", temperature: 1535, metal: "tfc:metal/cast_iron" },
     { name: "steel", temperature: 1540, metal: "tfc:metal/steel" },
-    { name: "black_steel", temperature: 1385, metal: "tfc:metal/black_steel" },
-    { name: "blue_steel", temperature: 1540, metal: "tfc:metal/blue_steel" },
-    { name: "red_steel", temperature: 1540, metal: "tfc:metal/red_steel" }
+    { name: "black_steel", temperature: 1784, metal: "tfc:metal/black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "tfc:metal/red_steel" }
   ];
   metal_fish_hooks.forEach(metal => {
 
     tfc.heating(`tfc:metal/fish_hook/${metal.name}`, metal.temperature).resultFluid(Fluid.of(metal.metal, 50))//鱼钩融化
     crucible(`tfc:metal/fish_hook/${metal.name}`, metal.metal, 50, metal.temperature)
-    
+
     tfc.heating(`tfcgroomer:${metal.name}_grooming_station`, metal.temperature).resultFluid(Fluid.of(metal.metal, 400))//喂食盆融化
     crucible(`tfcgroomer:${metal.name}_grooming_station`, metal.metal, 400, metal.temperature)
   })
@@ -520,7 +520,7 @@ ServerEvents.recipes(e => {
     { name: "firmalife:copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 17 },
     { name: "firmalife:copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 75 },
     { name: "firmalife:copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 4 },
-    
+
     { name: "firmalife:exposed_copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
     { name: "firmalife:exposed_copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
     { name: "firmalife:exposed_copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 34 },
@@ -529,7 +529,7 @@ ServerEvents.recipes(e => {
     { name: "firmalife:exposed_copper_greenhouse_trapdoor", temperature: 1085, metal: "tfc:metal/copper", number: 16 },
     { name: "firmalife:exposed_copper_greenhouse_door", temperature: 1085, metal: "tfc:metal/copper", number: 73 },
     { name: "firmalife:exposed_copper_greenhouse_port", temperature: 1085, metal: "tfc:metal/copper", number: 3 },
-    
+
     { name: "firmalife:weathered_copper_greenhouse_wall", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
     { name: "firmalife:weathered_copper_greenhouse_panel_wall", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
     { name: "firmalife:weathered_copper_greenhouse_panel_roof", temperature: 1085, metal: "tfc:metal/copper", number: 32 },
@@ -577,9 +577,9 @@ ServerEvents.recipes(e => {
     { name: "immersiveengineering:steel_wallmount", temperature: 1540, metal: "tfc:metal/steel", number: 85 },
     { name: "immersiveengineering:steel_post", temperature: 1540, metal: "tfc:metal/steel", number: 330 },
     { name: "immersiveengineering:steel_slope", temperature: 1540, metal: "tfc:metal/steel", number: 75 },
-    
+
     { name: "fluid:copper_tap", temperature: 1540, metal: "tfc:metal/steel", number: 250 },//钢龙头
-    
+
     //铝工业方块
     { name: "immersiveengineering:alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 50 },
     { name: "immersiveengineering:slab_alu_scaffolding_standard", temperature: 650, metal: "tfc_ie_addon:metal/aluminum", number: 25 },
@@ -766,7 +766,7 @@ ServerEvents.recipes(e => {
     { name: "copycats:copycat_slope_layer", temperature: 419, metal: "tfc:metal/zinc", number: 9 },
     { name: "copycats:copycat_vertical_step", temperature: 419, metal: "tfc:metal/zinc", number: 19 },
     { name: "design_decor:zinc_checker_tiles", temperature: 419, metal: "tfc:metal/zinc", number: 23 },
-    
+
     // ==========================================
     //非方块凑数的
     // ==========================================
@@ -795,19 +795,19 @@ ServerEvents.recipes(e => {
     { name: "spartanweaponry:iron_arrow", temperature: 1535, metal: "tfc:metal/cast_iron", number: 12 },
     { name: "spartanweaponry:diamond_arrow", temperature: 1540, metal: "tfc:metal/steel", number: 12 },
     { name: "spartanweaponry:netherite_arrow", temperature: 1485, metal: "tfc:metal/black_steel", number: 12 },
-    
+
     { name: "spartanweaponry:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 25 },
     { name: "spartanweaponry:bolt", temperature: 1535, metal: "tfc:metal/cast_iron", number: 25 },
     { name: "spartanweaponry:diamond_bolt", temperature: 1540, metal: "tfc:metal/steel", number: 25 },
     { name: "spartanweaponry:netherite_bolt", temperature: 1485, metal: "tfc:metal/black_steel", number: 25 },
-    
+
     { name: "firmalife:sprinkler", temperature: 1085, metal: "tfc:metal/copper", number: 200 },//洒水器
-    
-    { name: "scguns:small_copper_casing", temperature: 1085, metal: "tfc:metal/copper", number: 8 },//弹壳
+
+    { name: "scguns:small_copper_casing", temperature: 1085, metal: "tfc:metal/copper", number: 7 },//弹壳
     { name: "scguns:medium_copper_casing", temperature: 1085, metal: "tfc:metal/copper", number: 9 },//弹壳
-    { name: "scguns:small_iron_casing", temperature: 1535, metal: "tfc:metal/cast_iron", number: 8 },//弹壳
+    { name: "scguns:small_iron_casing", temperature: 1535, metal: "tfc:metal/cast_iron", number: 7 },//弹壳
     { name: "scguns:large_iron_casing", temperature: 1535, metal: "tfc:metal/cast_iron", number: 15 },//弹壳
-    { name: "scguns:small_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 8 },//弹壳
+    { name: "scguns:small_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 7 },//弹壳
     { name: "scguns:medium_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 9 },//弹壳
     { name: "scguns:large_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 15 },//弹壳
   ];
@@ -913,12 +913,13 @@ ServerEvents.recipes(e => {
   crucible(`kubejs:whisk_stirrer_head_blank`, "tfc:metal/cast_iron", 100, 1535)
   tfc.heating(`kubejs:wrought_iron_double_rod`, 1535).resultFluid(Fluid.of("tfc:metal/cast_iron", 100))
   crucible(`kubejs:wrought_iron_double_rod`, "tfc:metal/cast_iron", 100, 1535)
-  
+
   tfc.heating(`createmetallurgy:sturdy_whisk`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 300))//黑钢搅拌头和坚固搅拌器以及黑钢双杆融化
   crucible(`createmetallurgy:sturdy_whisk`, "tfc:metal/black_steel", 300, 1485)
   tfc.heating(`kubejs:whisk_black_steel_head_blank`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
   crucible(`kubejs:whisk_black_steel_head_blank`, "tfc:metal/black_steel", 100, 1485)
   tfc.heating(`kubejs:black_steel_double_rod`, 1485).resultFluid(Fluid.of("tfc:metal/black_steel", 100))
   crucible(`kubejs:black_steel_double_rod`, "tfc:metal/black_steel", 100, 1485)
-
+  tfc.heating('kubejs:leather_hot_water_bag', 1000)
+    .resultItem(Item.of('kubejs:leather_hot_water_bag'))
 });

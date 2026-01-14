@@ -11,11 +11,23 @@
         "skill": 9,
         "luck": 11
     },
-    "startItems": {
-        "tfc:spawn_egg/sheep": 3,
-        "minecraft:lead": 3,
-        "textile:wool_hat": 1,
-        "tfc:ceramic/jug": 1
-    },
+    "startItems": [
+        {
+            "item": "tfc:spawn_egg/sheep",
+            "count": 3
+        },
+        {
+            "item": "minecraft:lead",
+            "count": 3
+        },
+        {
+            "item": "textile:wool_hat",
+            "count": 1
+        },
+        {
+            "item": "tfc:ceramic/jug",
+            "count": 1
+        }
+    ],
     "displayCondition": []
 }

@@ -170,8 +170,8 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:cherry_log', ['#tfc:chisels', 'afc:wood/log/ancient_fig']).keepIngredient({ item: '#tfc:chisels' })//樱花原木  橡皮树
 
     event.shapeless('2x kubejs:vellum', ['#tfc:knives', 'tfc:treated_hide']).damageIngredient({ tag: '#tfc:knives' }, 5).id(`${id_in}vellum`)//兽皮纸
-    event.shapeless(Item.of('create_power_loader:brass_chunk_loader'), ['create_power_loader:empty_brass_chunk_loader']);//黄铜区块加载器
-    event.shapeless(Item.of('create_power_loader:andesite_chunk_loader'), ['create_power_loader:empty_andesite_chunk_loader']);//安山区块加载
+    //event.shapeless(Item.of('create_power_loader:brass_chunk_loader'), ['create_power_loader:empty_brass_chunk_loader']);//黄铜区块加载器
+    //event.shapeless(Item.of('create_power_loader:andesite_chunk_loader'), ['create_power_loader:empty_andesite_chunk_loader']);//安山区块加载
 
     event.shapeless(Item.of('create_new_age:magnetite_block'), ['9x tfcorewashing:rocky_chunks_magnetite']);//磁铁矿块
 

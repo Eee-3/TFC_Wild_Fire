@@ -11,11 +11,23 @@
         "skill": 11,
         "luck": 9
     },
-    "startItems": {
-        "minecraft:bow": 1,
-        "spartanweaponry:wooden_arrow": 12,
-        "textile:caribou_hat": 1,
-        "butcher:boneskinningknife": 1
-    },
+    "startItems": [
+        {
+            "item": "minecraft:bow",
+            "count": 1
+        },
+        {
+            "item": "spartanweaponry:wooden_arrow",
+            "count": 12
+        },
+        {
+            "item": "textile:caribou_hat",
+            "count": 1
+        },
+        {
+            "item": "butcher:boneskinningknife",
+            "count": 1
+        }
+    ],
     "displayCondition": []
 }

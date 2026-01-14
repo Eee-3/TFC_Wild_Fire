@@ -11,13 +11,31 @@
         "skill": 12,
         "luck": 9
     },
-    "startItems": {
-        "warriorsofpastepoch:anti_plague_serum": 1,
-        "legendarysurvivaloverhaul:morphine": 2,
-        "legendarysurvivaloverhaul:bandage": 15,
-        "legendarysurvivaloverhaul:medikit": 1,
-        "textile:cotton_hat": 1,
-        "repas_de_survie:instant_gel_love": 5
-    },
+    "startItems": [
+        {
+            "item": "warriorsofpastepoch:anti_plague_serum",
+            "count": 1
+        },
+        {
+            "item": "legendarysurvivaloverhaul:morphine",
+            "count": 2
+        },
+        {
+            "item": "legendarysurvivaloverhaul:bandage",
+            "count": 15
+        },
+        {
+            "item": "legendarysurvivaloverhaul:medikit",
+            "count": 1
+        },
+        {
+            "item": "textile:cotton_hat",
+            "count": 1
+        },
+        {
+            "item": "repas_de_survie:instant_gel_love",
+            "count": 5
+        }
+    ],
     "displayCondition": []
 }

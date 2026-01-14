@@ -11,11 +11,23 @@
         "skill": 10,
         "luck": 12
     },
-    "startItems": {
-        "sns:leather_sack": 1,
-        "tfccanes:walking_cane": 1,
-        "map_atlases:atlas": 1,
-        "minecraft:bread": 3
-    },
+    "startItems": [
+        {
+            "item": "sns:leather_sack",
+            "count": 1
+        },
+        {
+            "item": "tfccanes:walking_cane",
+            "count": 1
+        },
+        {
+            "item": "map_atlases:atlas",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bread",
+            "count": 3
+        }
+    ],
     "displayCondition": []
 }

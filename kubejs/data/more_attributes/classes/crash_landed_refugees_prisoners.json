@@ -11,10 +11,19 @@
         "skill": 12,
         "luck": 11
     },
-    "startItems": {
-        "kubejs:homemade_lockpick": 1,
-        "scguns:exo_suit_chestplate": 1,
-        "butcher:cookedsilverfishchunks": 4
-    },
+    "startItems": [
+        {
+            "item": "kubejs:homemade_lockpick",
+            "count": 1
+        },
+        {
+            "item": "scguns:exo_suit_chestplate",
+            "count": 1
+        },
+        {
+            "item": "butcher:cookedsilverfishchunks",
+            "count": 4
+        }
+    ],
     "displayCondition": []
 }

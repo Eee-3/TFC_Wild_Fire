@@ -48,8 +48,8 @@ StartupEvents.registry('item', event => {
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
 
-    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
-    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag');// 橡胶热水袋
+    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
+    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
 
     event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
     event.create('kubejs:tfc/sinew_thread', 'basic').texture('kubejs:item/tfc/sinew_thread'); // 筋线
@@ -175,7 +175,7 @@ event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 
 event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
 event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
 event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
-
+event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
 
    
 
@@ -190,26 +190,26 @@ event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_ar
 })
 StartupEvents.registry("item", event => {   //工业线盔甲相关
     // 半成品黄铜骑士盔甲
-    event.create('kubejs:prototype_finished_cogknight_helmet', 'helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass'); // 原型齿轮骑士头盔
-    event.create('kubejs:prototype_finished_cogknight_chestplate', 'chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass'); // 原型齿轮骑士胸甲
-    event.create('kubejs:prototype_finished_cogknight_leggings', 'leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass'); // 原型齿轮骑士护腿
+    event.create('kubejs:prototype_finished_cogknight_helmet', 'helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass').maxStackSize(1); // 原型齿轮骑士头盔
+    event.create('kubejs:prototype_finished_cogknight_chestplate', 'chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass').maxStackSize(1); // 原型齿轮骑士胸甲
+    event.create('kubejs:prototype_finished_cogknight_leggings', 'leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass').maxStackSize(1); // 原型齿轮骑士护腿
     // 未完成黄铜骑士盔甲中间产物
-    event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet'); // 未完成原型齿轮骑士头盔
-    event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate'); // 未完成原型齿轮骑士胸甲
-    event.create('kubejs:unfinished_prototype_cogknight_leggings').texture('kubejs:item/armor/unfinished_prototype_cogknight_leggings'); // 未完成原型齿轮骑士护腿
-    event.create('kubejs:unfinished_cogknight_boots').texture('kubejs:item/armor/unfinished_cogknight_boots'); // 未完成齿轮骑士靴子
+    event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet').maxStackSize(1); // 未完成原型齿轮骑士头盔
+    event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate').maxStackSize(1) // 未完成原型齿轮骑士胸甲
+    event.create('kubejs:unfinished_prototype_cogknight_leggings').texture('kubejs:item/armor/unfinished_prototype_cogknight_leggings').maxStackSize(1); // 未完成原型齿轮骑士护腿
+    event.create('kubejs:unfinished_cogknight_boots').texture('kubejs:item/armor/unfinished_cogknight_boots').maxStackSize(1); // 未完成齿轮骑士靴子
 
     // 未完成黄铜骑士盔甲第二步中间产物
-    event.create('kubejs:unfinished_cogknight_helmet').texture('kubejs:item/armor/unfinished_cogknight_helmet'); // 未完成齿轮骑士头盔
-    event.create('kubejs:unfinished_cogknight_chestplate').texture('kubejs:item/armor/unfinished_cogknight_chestplate'); // 未完成齿轮骑士胸甲
-    event.create('kubejs:unfinished_cogknight_leggings').texture('kubejs:item/armor/unfinished_cogknight_leggings'); // 未完成齿轮骑士护腿
+    event.create('kubejs:unfinished_cogknight_helmet').texture('kubejs:item/armor/unfinished_cogknight_helmet').maxStackSize(1); // 未完成齿轮骑士头盔
+    event.create('kubejs:unfinished_cogknight_chestplate').texture('kubejs:item/armor/unfinished_cogknight_chestplate').maxStackSize(1); // 未完成齿轮骑士胸甲
+    event.create('kubejs:unfinished_cogknight_leggings').texture('kubejs:item/armor/unfinished_cogknight_leggings').maxStackSize(1); // 未完成齿轮骑士护腿
 
     // 未完成工业钢盔甲中间产物
-    event.create('kubejs:unfinished_steel_helmet').texture('kubejs:item/armor/unfinished_steel_helmet'); // 未完成工业钢头盔
-    event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate'); // 未完成工业钢胸甲
-    event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings'); // 未完成工业钢护腿
-    event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots'); // 未完成工业钢靴子
+    event.create('kubejs:unfinished_steel_helmet').texture('kubejs:item/armor/unfinished_steel_helmet').maxStackSize(1); // 未完成工业钢头盔
+    event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate').maxStackSize(1); // 未完成工业钢胸甲
+    event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings').maxStackSize(1); // 未完成工业钢护腿
+    event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots').maxStackSize(1); // 未完成工业钢靴子
 
-    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer'); // 未完成温度计
+    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer').maxStackSize(1); // 未完成温度计
 
 });

@@ -11,11 +11,23 @@
         "skill": 7,
         "luck": 9
     },
-    "startItems": {
-        "spartanweaponry:wooden_club": 1,
-        "alexscaves:primordial_tunic": 1,
-        "farmersdelight:ham": 1,
-        "minecraft:bone": 3
-    },
+    "startItems": [
+        {
+            "item": "spartanweaponry:wooden_club",
+            "count": 1
+        },
+        {
+            "item": "alexscaves:primordial_tunic",
+            "count": 1
+        },
+        {
+            "item": "farmersdelight:ham",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 3
+        }
+    ],
     "displayCondition": []
 }
