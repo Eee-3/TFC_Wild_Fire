@@ -135,9 +135,9 @@ TFCEvents.data(event => {
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
     { name: "black_bronze", temperature: 1050, metal: "black_bronze" },
     { name: "bronze", temperature: 950, metal: "bronze" },
-    { name: "black_steel", temperature: 1485, metal: "black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "red_steel" },
     { name: "steel", temperature: 1540, metal: "steel" },
     { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
   ];
@@ -239,11 +239,11 @@ TFCEvents.data(event => {
     { name: "cast_iron_lockpick", temperature: 1150, metal: "cast_iron", number: 50 },
     { name: "wrought_iron_lockpick", temperature: 1535, metal: "cast_iron", number: 50 },
     { name: "steel_lockpick", temperature: 1540, metal: "steel", number: 50 },
-    { name: "black_steel_lockpick", temperature: 1485, metal: "black_steel", number: 50 },
+    { name: "black_steel_lockpick", temperature: 1784, metal: "black_steel", number: 50 },
     // 撬棍类
     { name: "wrought_iron_crowbar", temperature: 1535, metal: "cast_iron", number: 200 },
     { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },
-    { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },
+    { name: "black_steel_crowbar", temperature: 1784, metal: "black_steel", number: 200 },
   ];
   items.forEach(item => {
     const itemId = `kubejs:${item.name}`; // 物品ID直接使用物件name字段
@@ -293,9 +293,9 @@ TFCEvents.data(event => {
     { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
     { name: "stainless_steel", temperature: 1400, metal: "firmalife:bucket/metal/stainless_steel" },
     { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "tfc:metal/blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "tfc:metal/red_steel" },
-    { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" }
+    { name: "blue_steel", temperature: 1863, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "tfc:metal/red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "tfc:metal/black_steel" }
   ];
 
   metaltongs.forEach(metal => {

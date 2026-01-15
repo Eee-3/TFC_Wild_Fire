@@ -24,6 +24,26 @@
     "healingValue": 5.0,
     "healingTime": 500
   },
+  "scguns:enchanted_bandage": {
+    "healingCharges": 3,
+    "healingValue": 12.0,
+    "healingTime": 500
+  },
+  "scguns:dragon_salve": {
+    "healingCharges": 0,
+    "healingValue": 8.0,
+    "healingTime": 2400
+  },
+  "scguns:basic_poultice": {
+    "healingCharges": 2,
+    "healingValue": 3.0,
+    "healingTime": 1200
+  },
+  "scguns:honey_sulfur_poultice": {
+    "healingCharges": 3,
+    "healingValue": 6.0,
+    "healingTime": 1200
+  },
   "kubejs:weak_bandage": {
     "healingCharges": 2,
     "healingValue": 2.5,
