@@ -402,7 +402,7 @@
 		}
 		{
 			dependencies: ["58B1D2FE24BF1134"]
-			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红秘银。"]
+			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
 			hide_until_deps_visible: true
 			id: "4DFF7818B50623B5"
 			optional: true
@@ -453,7 +453,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作秘银需要先制作脆秘银，一种黑钢、钢、铋铜和纹银的合金。"]
+			description: ["制作蓝钢需要先制作脆蓝钢，一种黑钢、钢、铋铜和纹银的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
@@ -556,7 +556,7 @@
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
-			description: ["制作精金需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
+			description: ["制作红钢需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {

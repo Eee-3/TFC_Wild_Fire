@@ -43,9 +43,9 @@ ServerEvents.tags("item", event => {
     }
     )
 
-    event.add('tfcscraping:quarter_scraping','butcher:boneskinningknife')
-    event.add('tfc:usable_on_tool_rack','butcher:boneskinningknife')
-    event.add('tfc:sharp_tools','butcher:boneskinningknife' )
+    event.add('tfcscraping:quarter_scraping', 'butcher:boneskinningknife')
+    event.add('tfc:usable_on_tool_rack', 'butcher:boneskinningknife')
+    event.add('tfc:sharp_tools', 'butcher:boneskinningknife')
 
     event.add('kubejs:tongs', 'create:extendo_grip')//机械臂
 
@@ -165,6 +165,82 @@ ServerEvents.tags("item", event => {
             "artisanal:metal/flint_and/blue_steel",
             "artisanal:metal/flint_and/red_steel",
             "createdieselgenerators:lighter"
+        ])
+
+    //可以制作草药的植物
+    event.add('kubejs:can_make_herb',
+        [
+            "tfc:plant/canna",
+            "tfc:plant/goldenrod",
+            "tfc:plant/pampas_grass",
+            "tfc:plant/allium",
+            "tfc:plant/anthurium",
+            "tfc:plant/blood_lily",
+            "tfc:plant/blue_orchid",
+            "tfc:plant/bur_reed",
+            "tfc:plant/butterfly_milkweed",
+            "tfc:plant/hibiscus",
+            "tfc:plant/heliconia",
+            "tfc:plant/guzmania",
+            "tfc:plant/grape_hyacinth",
+            "tfc:plant/foxglove",
+            "tfc:plant/desert_flame",
+            "tfc:plant/dandelion",
+            "tfc:plant/black_orchid",
+            "tfc:plant/houstonia",
+            "tfc:plant/kangaroo_paw",
+            "tfc:plant/labrador_tea",
+            "tfc:plant/lady_fern",
+            "tfc:plant/lily_of_the_valley",
+            "tfc:plant/lilac",
+            "tfc:plant/marigold",
+            "tfc:plant/meads_milkweed",
+            "tfc:plant/nasturtium",
+            "tfc:plant/snapdragon_red",
+            "tfc:plant/snapdragon_pink",
+            "tfc:plant/primrose",
+            "tfc:plant/poppy",
+            "tfc:plant/sacred_datura",
+            "tfc:plant/pickerelweed",
+            "tfc:plant/rose",
+            "tfc:plant/oxeye_daisy",
+            "tfc:plant/pulsatilla",
+            "tfc:plant/calendula",
+            "tfc:plant/snapdragon_white",
+            "tfc:plant/snapdragon_yellow",
+            "tfc:plant/sapphire_tower",
+            "tfc:plant/tulip_orange",
+            "tfc:plant/tulip_pink",
+            "tfc:plant/tulip_red",
+            "tfc:plant/tulip_white",
+            "tfc:plant/vriesea",
+            "tfc:plant/water_canna",
+            "minecraft:red_tulip",
+            "minecraft:torchflower",
+            "minecraft:cornflower",
+            "minecraft:lily_of_the_valley",
+            "minecraft:oxeye_daisy",
+            "minecraft:pink_tulip",
+            "minecraft:white_tulip",
+            "minecraft:orange_tulip",
+            "tfc:plant/yucca",
+            "minecraft:azure_bluet",
+            "minecraft:allium",
+            "minecraft:blue_orchid",
+            "minecraft:poppy",
+            "minecraft:dandelion"
+
+        ])
+
+    //可以制作更好更多草药的植物
+    event.add('kubejs:can_better_make_herb',
+        [
+            "tfc:plant/sea_lavender",
+            "tfc:plant/strelitzia",
+            "tfc:plant/trillium",
+            "tfc:plant/blue_ginger",
+            "tfc:plant/field_horsetail"
+
         ])
 
     //磁力物品
@@ -381,7 +457,7 @@ ServerEvents.tags("item", event => {
             "kubejs:red_steel_scythe",
             "kubejs:red_steel_spear"
         ])
-    
+
 })
 
 ServerEvents.tags("item", event => {

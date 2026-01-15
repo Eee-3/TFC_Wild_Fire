@@ -826,7 +826,9 @@ ServerEvents.recipes(e => {
     { name: "scguns:large_brass_casing", temperature: 940, metal: "tfc:metal/brass", number: 15 },//弹壳
     //扳手
     { name: "create:wrench", temperature: 1060, metal: "tfc:metal/gold", number: 600 },//弹壳
-    { name: "ad_astra:wrench", temperature: 1535, metal: "tfc:metal/cast_iron", number: 500 },//弹壳
+    { name: "ad_astra:wrench", temperature: 1535, metal: "tfc:metal/cast_iron", number: 500 },//弹壳    
+    { name: "create:goggles", temperature: 1060, metal: "tfc:metal/gold", number: 200 },//工程师护目镜
+    { name: "create:item_drain", temperature: 940, metal: "tfc:metal/brass", number: 600 },//分液池
   ];
   metal_block.forEach(metal_block => {
     //金属方块融化

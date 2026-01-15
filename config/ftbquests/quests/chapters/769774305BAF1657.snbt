@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "769774305BAF1657"
@@ -10,7 +11,7 @@
 		tag: { }
 	}
 	id: "769774305BAF1657"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
 	title: "终章：何以为家"

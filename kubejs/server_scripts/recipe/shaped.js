@@ -247,6 +247,38 @@ ServerEvents.recipes(event => {
 
 
 
+    event.shaped('legendarysurvivaloverhaul:healing_herbs',
+        [
+            'aa',
+            'aa'
+        ],
+        {
+            a: '#kubejs:can_make_herb',
+        }), 
+    event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
+        [
+            'aa',
+            'aa'
+        ],
+        {
+            a: '#kubejs:can_better_make_herb',
+        }), 
+            event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
+        [
+            'aa',
+            'aa'
+        ],
+        {
+            a: '#loot:herbal',
+        }), 
+    event.shaped('legendarysurvivaloverhaul:healing_herbs',
+        [
+            'aa'
+        ],
+        {
+            a: '#kubejs:can_better_make_herb',  
+        })
+    //草药
 
     event.shaped('immersiveengineering:sawblade',
         [

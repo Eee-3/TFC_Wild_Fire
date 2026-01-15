@@ -13,7 +13,7 @@ familiarityDecayLimit = 0.3
 	#   doInsomnia = false (No phantoms)
 	#   doTraderSpawning = false (No wandering traders)
 	#   doPatrolSpawning = false (No pillager patrols)
-	enableForcedTFCGameRules = true
+	enableForcedTFCGameRules = false
 	#
 	# If true, TFC will stop time when no players are online on a running server.
 	# This prevents food from decaying, the calendar from advancing, and the sun from moving, etc.
@@ -82,7 +82,7 @@ familiarityDecayLimit = 0.3
 		#
 		# The chance that snow will melt during a storm. Lower values = faster snow melting, but also more block updates (aka lag).
 		#Range: > 1
-		snowMeltChance = 36
+		snowMeltChance = 70
 
 	[blocks.plants]
 		#
