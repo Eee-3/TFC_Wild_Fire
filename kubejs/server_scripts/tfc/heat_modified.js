@@ -3,7 +3,7 @@ TFCEvents.data(e => {
   e.itemHeat('kubejs:leather_hot_water_bag', 150, null, null)
   e.itemHeat('kubejs:rubber_hot_water_bag', 200, null, null)
   e.itemHeat("kubejs:metal_hot_water_bag", 180, null, null)
-  e.itemHeat('kubejs:heating_warmer', 400, null, null)
+  e.itemHeat('kubejs:heating_warmer', 200, null, null)
 
   //烤肉
   e.itemHeat('#forge:meats', 1, null, null)

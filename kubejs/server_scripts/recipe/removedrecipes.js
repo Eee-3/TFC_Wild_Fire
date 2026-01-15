@@ -5,6 +5,8 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_melodies' })
 
   const iddd = [
+    "sns:heating/pack_frame",
+    "sns:crafting/pack_frame",
     "minecraft:stonecutter",
     "create:crafting/kinetics/water_wheel",//水车
     'minecraft:arrow',

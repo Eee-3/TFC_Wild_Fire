@@ -104,7 +104,7 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
     event.create('cast_iron_indenter', 'basic')//铸铁压头
-
+    event.create('noheating_warmer', 'basic')//燃尽暖手宝
 
     //硅以及相关材料注册
     event.create('glass_mixture').texture('kubejs:item/create/glass_mixture');//玻璃混合物

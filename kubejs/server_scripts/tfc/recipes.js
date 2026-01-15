@@ -324,8 +324,15 @@ ServerEvents.recipes(event => {
   create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
 //机械动力磨粉
 
-  tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
+  tfc.quern('3x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
    //手推磨磨粉
-  create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
+  create.milling(['3x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
    //机械动力磨粉
+
+   "kubejs:wrought_iron_fragments"
+
+    tfc.quern("immersiveengineering:dust_iron","kubejs:wrought_iron_fragments")
+   //手推磨磨粉 铁粉
+  create.milling(["immersiveengineering:dust_iron"], "kubejs:wrought_iron_fragments")
+   //机械动力磨粉 铁粉
 })

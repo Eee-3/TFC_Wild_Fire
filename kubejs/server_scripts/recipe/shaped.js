@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         a: '#tfc:lumber',
         b: "afc:rubber_bar"
     }) //橡胶热水袋
- event.shaped('kubejs:metal_hot_water_bag', [' a ', 'bcb', 'dbd'], {
+    event.shaped('kubejs:metal_hot_water_bag', [' a ', 'bcb', 'dbd'], {
         a: '#tfc:lumber',
         b: 'minecraft:leather',
         c: '#forge:sheets',
@@ -342,15 +342,28 @@ ServerEvents.recipes(event => {
         })//缝纫台
     event.shaped('sns:frame_pack',
         [
-            'aaa',
-            'bcb',
-            'bcb'
+            'aba',
+            'cec',
+            'fef'
         ],
         {
-            a: 'tfc:metal/rod/bronze',
-            b: 'farmersdelight:rope',
+            a: '#kubejs:advanced_binding',
+            b: "sns:pack_frame",
             c: '#forge:leather',
-        })//背包
+            e: "sns:unfinished_leather_sack",
+            f: "kubejs:hardened_leather"
+
+        })//皮革背包
+    event.shaped("sns:pack_frame",
+        [
+            ' a ',
+            'a a',
+            ' a '
+        ],
+        {
+            a: TFC.ingredient.heatable('tfc:metal/rod/wrought_iron', 1200, null)
+
+        })//背包框架
 
     event.shaped('minecraft:minecart', [
         'd d',
@@ -652,8 +665,14 @@ ServerEvents.recipes(event => {
 
     //event.shaped('create:fluid_tank', [['#forge:plates/copper'], ['immersiveengineering:wooden_barrel'], ['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault', [['#forge:plates/iron'], ['immersiveengineering:crate'], ['#forge:plates/iron']])//机械动力保险箱
-    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'aca', 'ddd'], { a: '#kubejs:advanced_binding', b: 'tfc:metal/double_sheet/wrought_iron', c: 'sns:frame_pack', d: '#forge:leather' })//背包合成困难
-
+    event.shaped('sophisticatedbackpacks:backpack', ['aba', 'cdc', 'eee'],
+        {
+            a: "sns:pack_frame",
+            b: "kubejs:steel_handguard_weapon_part",
+            c: "sns:unfinished_leather_sack",
+            d: "kubejs:hardened_leather",
+            e: "kubejs:leather_plate"
+        })//背包合成困难
 
 
 

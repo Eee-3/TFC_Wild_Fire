@@ -262,10 +262,16 @@ ServerEvents.recipes(e => {
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
   tfc.heating('kubejs:unfired_crucible_mold', 1399).resultItem('kubejs:crucible_mold')//坩埚模具
+
+  tfc.heating("immersiveengineering:dust_iron", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))//铁粉
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
   tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
+  tfc.heating("sns:pack_frame", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 200))//背包框架融化
+  crucible('sns:pack_frame', 'tfc:metal/cast_iron', 200, 1535)
+  crucible('immersiveengineering:dust_iron', 'tfc:metal/cast_iron', 20, 1535)
   crucible('tfc:brass_mechanisms', 'tfc:metal/brass', 50, 940)
+
   const metaltongs = [
     { name: "bismuth_bronze", temperature: 860, metal: "tfc:metal/bismuth_bronze" },
     { name: "black_bronze", temperature: 910, metal: "tfc:metal/black_bronze" },
@@ -938,6 +944,6 @@ ServerEvents.recipes(e => {
     .resultItem(Item.of('kubejs:rubber_hot_water_bag'))
   tfc.heating('kubejs:metal_hot_water_bag', 110)
     .resultItem(Item.of('kubejs:metal_hot_water_bag'))
-  tfc.heating('kubejs:heating_warmer', 100)
+  tfc.heating('kubejs:heating_warmer', 60)
     .resultItem(Item.of('kubejs:heating_warmer'))
 });

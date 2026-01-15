@@ -7,25 +7,19 @@ ServerEvents.tags('minecraft:block', event => {//
 })
 ServerEvents.tags('minecraft:item', event => {//
 
+ event.add('kubejs:4ore', "immersiveengineering:dust_iron");//热矿粉
+   
 
-    event.add('curios:any', 'kubejs:rubber_hot_water_bag');//热水袋
-    event.add('curios:necklace', 'kubejs:rubber_hot_water_bag');//热水袋
-    event.add('curios:belt', 'kubejs:rubber_hot_water_bag');//热水袋
     event.add('curios:body', 'kubejs:rubber_hot_water_bag');//热水袋
 
-    event.add('curios:any', 'kubejs:leather_hot_water_bag');
-    event.add('curios:necklace', 'kubejs:leather_hot_water_bag');
-    event.add('curios:belt', 'kubejs:leather_hot_water_bag');
+
     event.add('curios:body', 'kubejs:leather_hot_water_bag');
 
-    event.add('curios:any', "kubejs:metal_hot_water_bag");
-    event.add('curios:necklace', "kubejs:metal_hot_water_bag");
-    event.add('curios:belt', "kubejs:metal_hot_water_bag");
+
     event.add('curios:body', "kubejs:metal_hot_water_bag");
 
-    event.add('curios:any',  'kubejs:heating_warmer');
-    event.add('curios:necklace',  'kubejs:heating_warmer');
-    event.add('curios:belt',  'kubejs:heating_warmer');
+    event.add('curios:feet',  'kubejs:heating_warmer');
+    event.add('curios:charm',  'kubejs:heating_warmer');
     event.add('curios:body',  'kubejs:heating_warmer');
    
 
@@ -40,6 +34,7 @@ ServerEvents.tags('minecraft:item', event => {//
 
     ore.forEach(item => {
         event.add('kubejs:ore', item);//热矿粉
+        
 
     })
 
