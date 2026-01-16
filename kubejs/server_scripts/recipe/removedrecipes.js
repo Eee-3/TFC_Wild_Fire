@@ -3,6 +3,8 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'immersive_aircraft' })
   e.remove({ mod: 'eidolon' })
   e.remove({ mod: 'immersive_melodies' })
+  e.remove({ mod: 'functionalstorage' })
+  
 
   const iddd = [
     "sns:heating/pack_frame",
@@ -560,6 +562,66 @@ ServerEvents.recipes(e => {
 
   })
 
+  //移除泛用兼容里面不太好的兼容配方
+
+  const wooden = [
+    { mod: 'createdieselgenerators', wooden: 'chip_wood' },
+    { mod: 'tfc', wooden: 'acacia' },
+    { mod: 'tfc', wooden: 'ash' },
+    { mod: 'tfc', wooden: 'aspen' },
+    { mod: 'tfc', wooden: 'birch' },
+    { mod: 'tfc', wooden: 'blackwood' },
+    { mod: 'tfc', wooden: 'chestnut' },
+    { mod: 'tfc', wooden: 'douglas_fir' },
+    { mod: 'tfc', wooden: 'hickory' },
+    { mod: 'tfc', wooden: 'kapok' },
+    { mod: 'tfc', wooden: 'mangrove' },
+    { mod: 'tfc', wooden: 'maple' },
+    { mod: 'tfc', wooden: 'oak' },
+    { mod: 'tfc', wooden: 'palm' },
+    { mod: 'tfc', wooden: 'pine' },
+    { mod: 'tfc', wooden: 'rosewood' },
+    { mod: 'tfc', wooden: 'sequoia' },
+    { mod: 'tfc', wooden: 'spruce' },
+    { mod: 'tfc', wooden: 'sycamore' },
+    { mod: 'tfc', wooden: 'white_cedar' },
+    { mod: 'tfc', wooden: 'willow' },
+    { mod: 'afc', wooden: 'baobab' },
+    { mod: 'afc', wooden: 'eucalyptus' },
+    { mod: 'afc', wooden: 'mahogany' },
+    { mod: 'afc', wooden: 'hevea' },
+    { mod: 'afc', wooden: 'tualang' },
+    { mod: 'afc', wooden: 'teak' },
+    { mod: 'afc', wooden: 'cypress' },
+    { mod: 'afc', wooden: 'fig' },
+    { mod: 'afc', wooden: 'ironwood' },
+    { mod: 'afc', wooden: 'ipe' },
+    { mod: 'valhelsia_structures', wooden: 'lapidified_jungle' },
+    { mod: 'born_in_chaos_v1', wooden: 'scorched' },
+    { mod: 'eidolon', wooden: 'illwood' },
+    { mod: 'alexscaves', wooden: 'pewen' },
+    { mod: 'alexscaves', wooden: 'thornwood' },
+    { mod: 'ad_astra', wooden: 'glacian' },
+    { mod: 'ad_astra', wooden: 'strophar' },
+    { mod: 'vinery', wooden: 'dark_cherry' },
+    { mod: 'ad_astra', wooden: 'aeronos' }
+  ];
+  wooden.forEach(wood => {
+
+    e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_table` })
+    e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_chair` })
+    e.remove({ id: `everycomp:vf/${wood.mod}/hay_${wood.wooden}_chair` })
+    e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_desk` })
+    e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_desk_drawer` })
+    e.remove({ id: `everycomp:fs/${wood.mod}/${wood.wooden}_1` })
+    e.remove({ id: `everycomp:fs/${wood.mod}/${wood.wooden}_2` })
+    e.remove({ id: `everycomp:fs/${wood.mod}/${wood.wooden}_4` })
+    e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_stool` })
+  })
+
+
+
+
 
   //移除棍木配方
 
@@ -707,7 +769,18 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'butcher:crushedflowersrecipe' })
   e.remove({ id: 'sns:leather_knapping/quiver' })
   e.remove({ id: 'sns:crafting/mob_net' })
-  
+  e.remove({ id: 'woodencog:crafting/kinetics/item_vault' })
+  e.remove({ id: 'create:crafting/kinetics/item_vault' })
+  e.remove({ id: 'firmalife:crafting/cheesecloth' })
+  e.remove({ id: 'aquaculture:tackle_box' })
+  e.remove({ id: 'vinery:dark_cherry_drawer' })
+  e.remove({ id: 'scguns:treated_iron/treated_iron_hopper' })
+  e.remove({ id: 'create:crafting/kinetics/water_wheel' })
+  e.remove({ id: 'create:crafting/kinetics/large_water_wheel' })
+  e.remove({ id: 'majruszsdifficulty:bandage_reversed' })
+  e.remove({ id: 'majruszsdifficulty:bandage' })
+  e.remove({ id: 'minecraft:bread' })
+
   //删除精金秘银不对温度的熔融配方
   e.remove({ id: 'woodencog:welding/redsteel_backtank' })
   e.remove({ id: 'vintageimprovements:craft/vibrating_table' })
@@ -728,7 +801,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'tfc_hammer_time:heating/sledgehammer_head/red_steel' })
   e.remove({ id: 'tfcscraping:heating/metal/red_steel_scraping_knife' })
   e.remove({ id: 'tfcscraping:heating/metal/red_steel_scraping_knife_blade' })
-  
+
   e.remove({ id: 'woodencog:welding/bluesteel_backtank' })
   e.remove({ id: 'vintageimprovements:craft/vibrating_table' })
   e.remove({ id: 'tfc_hammer_time:heating/excavator/blue_steel' })
@@ -784,7 +857,7 @@ ServerEvents.recipes(e => {
 
 
 
-//删除原版9粒=1锭的配方
+  //删除原版9粒=1锭的配方
   e.remove({ id: 'minecraft:iron_ingot_from_nuggets' })
   e.remove({ id: 'minecraft:iron_nugget' })
   e.remove({ id: 'minecraft:gold_nugget' })

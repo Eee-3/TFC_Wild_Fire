@@ -1,9 +1,0 @@
-{
-  "ingredient": {
-    "item": "butcher:heart"
-  },
-  "hunger": 0.5,
-  "saturation": 1,
-  "decay_modifier": 2,
-  "protein": 1
-}

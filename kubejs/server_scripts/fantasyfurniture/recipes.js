@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     {b:'minecraft:gold_nugget',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:royal/dresser',['aba'],
     {b:'minecraft:gold_nugget',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:royal/lockbox'),['#forge:chests/wooden','minecraft:gold_nugget'])
+  event.shapeless(Item.of('fantasyfurniture:royal/lockbox'),['#handcrafted:chests','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['minecraft:painting','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['fantasyfurniture:royal/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_wide'),['fantasyfurniture:royal/painting_small'])

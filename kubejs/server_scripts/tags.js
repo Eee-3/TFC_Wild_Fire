@@ -460,6 +460,7 @@ ServerEvents.tags("item", event => {
 
 })
 
+
 ServerEvents.tags("item", event => {
     //删除tag
     event.remove('sns:allowed_in_ore_sack', [
@@ -480,6 +481,98 @@ ServerEvents.tags("item", event => {
         "tfc:ore/rich_sphalerite",
         "tfc:ore/rich_tetrahedrite",
     ])
+    /*
+    
+    //删除群峦的箱子tag
+    const remove_tag = [
+        'forge:chests',
+        'forge:chests/wooden',
+        'create:chests',
+        'handcraft:chests',
+        'balm:wooden_chests',
+    ];
+    remove_tag.forEach((tag) => {
+        event.remove(
+            `${tag}`,
+            [
+                "afc:wood/chest/baobab",
+                "afc:wood/chest/eucalyptus",
+                "afc:wood/chest/mahogany",
+                "afc:wood/chest/hevea",
+                "afc:wood/chest/tualang",
+                "createutilities:void_chest",
+                "lootr:lootr_trapped_chest",
+                "afc:wood/chest/teak",
+                "afc:wood/chest/cypress",
+                "afc:wood/chest/fig",
+                "afc:wood/chest/ironwood",
+                "afc:wood/chest/ipe",
+                "tfc:wood/chest/acacia",
+                "tfc:wood/chest/ash",
+                "tfc:wood/chest/aspen",
+                "tfc:wood/chest/birch",
+                "tfc:wood/chest/blackwood",
+                "tfc:wood/chest/chestnut",
+                "tfc:wood/chest/douglas_fir",
+                "tfc:wood/chest/hickory",
+                "tfc:wood/chest/kapok",
+                "tfc:wood/chest/sycamore",
+                "tfc:wood/chest/spruce",
+                "tfc:wood/chest/sequoia",
+                "tfc:wood/chest/rosewood",
+                "tfc:wood/chest/pine",
+                "tfc:wood/chest/palm",
+                "tfc:wood/chest/oak",
+                "tfc:wood/chest/maple",
+                "tfc:wood/chest/mangrove",
+                "tfc:wood/chest/white_cedar",
+                "tfc:wood/chest/willow"
+            ])
+    })
+    const add_tag = [
+        'forge:chests/wooden',
+    ];
+
+    add_tag.forEach((tag) => {
+        event.add(
+            `${tag}`,
+            [
+                "afc:wood/chest/baobab",
+                "afc:wood/chest/eucalyptus",
+                "afc:wood/chest/mahogany",
+                "afc:wood/chest/hevea",
+                "afc:wood/chest/tualang",
+                "createutilities:void_chest",
+                "lootr:lootr_trapped_chest",
+                "afc:wood/chest/teak",
+                "afc:wood/chest/cypress",
+                "afc:wood/chest/fig",
+                "afc:wood/chest/ironwood",
+                "afc:wood/chest/ipe",
+                "tfc:wood/chest/acacia",
+                "tfc:wood/chest/ash",
+                "tfc:wood/chest/aspen",
+                "tfc:wood/chest/birch",
+                "tfc:wood/chest/blackwood",
+                "tfc:wood/chest/chestnut",
+                "tfc:wood/chest/douglas_fir",
+                "tfc:wood/chest/hickory",
+                "tfc:wood/chest/kapok",
+                "tfc:wood/chest/sycamore",
+                "tfc:wood/chest/spruce",
+                "tfc:wood/chest/sequoia",
+                "tfc:wood/chest/rosewood",
+                "tfc:wood/chest/pine",
+                "tfc:wood/chest/palm",
+                "tfc:wood/chest/oak",
+                "tfc:wood/chest/maple",
+                "tfc:wood/chest/mangrove",
+                "tfc:wood/chest/white_cedar",
+                "tfc:wood/chest/willow"
+            ])
+    })
+            */
+
 })
 const registerAsticorCartsItemTags = (event) => {
 

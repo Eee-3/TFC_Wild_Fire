@@ -254,30 +254,30 @@ ServerEvents.recipes(event => {
         ],
         {
             a: '#kubejs:can_make_herb',
-        }), 
-    event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
-        [
-            'aa',
-            'aa'
-        ],
-        {
-            a: '#kubejs:can_better_make_herb',
-        }), 
-            event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
-        [
-            'aa',
-            'aa'
-        ],
-        {
-            a: '#loot:herbal',
-        }), 
-    event.shaped('legendarysurvivaloverhaul:healing_herbs',
-        [
-            'aa'
-        ],
-        {
-            a: '#kubejs:can_better_make_herb',  
-        })
+        }),
+        event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
+            [
+                'aa',
+                'aa'
+            ],
+            {
+                a: '#kubejs:can_better_make_herb',
+            }),
+        event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
+            [
+                'aa',
+                'aa'
+            ],
+            {
+                a: '#loot:herbal',
+            }),
+        event.shaped('legendarysurvivaloverhaul:healing_herbs',
+            [
+                'aa'
+            ],
+            {
+                a: '#kubejs:can_better_make_herb',
+            })
     //草药
 
     event.shaped('immersiveengineering:sawblade',
@@ -629,6 +629,16 @@ ServerEvents.recipes(event => {
     //未完成的黏土坩埚模具_2
 
 
+    event.shaped('12x firmalife:cheesecloth', [
+
+        'a a',
+        ' a '
+    ],
+        {
+            a: 'tfc:wool_cloth',
+
+        })
+    //奶酪布配方
 
     event.shaped('immersiveengineering:steel_scaffolding_grate_top', [
         'ab'
@@ -691,10 +701,261 @@ ServerEvents.recipes(event => {
             h: `tfc:metal/fish_hook/${tfc_metals}`
 
         })
+    })
+    //泛用兼容木材配方修改【TFC】
+    const tfc_wooden = [
+        { mod: 'tfc', wooden: 'acacia' },
+        { mod: 'tfc', wooden: 'ash' },
+        { mod: 'tfc', wooden: 'aspen' },
+        { mod: 'tfc', wooden: 'birch' },
+        { mod: 'tfc', wooden: 'blackwood' },
+        { mod: 'tfc', wooden: 'chestnut' },
+        { mod: 'tfc', wooden: 'douglas_fir' },
+        { mod: 'tfc', wooden: 'hickory' },
+        { mod: 'tfc', wooden: 'kapok' },
+        { mod: 'tfc', wooden: 'mangrove' },
+        { mod: 'tfc', wooden: 'maple' },
+        { mod: 'tfc', wooden: 'oak' },
+        { mod: 'tfc', wooden: 'palm' },
+        { mod: 'tfc', wooden: 'pine' },
+        { mod: 'tfc', wooden: 'rosewood' },
+        { mod: 'tfc', wooden: 'sequoia' },
+        { mod: 'tfc', wooden: 'spruce' },
+        { mod: 'tfc', wooden: 'sycamore' },
+        { mod: 'tfc', wooden: 'white_cedar' },
+        { mod: 'tfc', wooden: 'willow' },
+        { mod: 'afc', wooden: 'baobab' },
+        { mod: 'afc', wooden: 'eucalyptus' },
+        { mod: 'afc', wooden: 'mahogany' },
+        { mod: 'afc', wooden: 'hevea' },
+        { mod: 'afc', wooden: 'tualang' },
+        { mod: 'afc', wooden: 'teak' },
+        { mod: 'afc', wooden: 'cypress' },
+        { mod: 'afc', wooden: 'fig' },
+        { mod: 'afc', wooden: 'ironwood' },
+        { mod: 'afc', wooden: 'ipe' }
+    ];
+    tfc_wooden.forEach(wood => {
+        //============================================================
+        //==========================抽屉===============================
+        //============================================================
 
+        //单格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_1`, [
+            'bbb',
+            'cac',
+            'bbb'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:wood/lumber/${wood.wooden}`,
+            c: 'firmaciv:copper_bolt'
 
+        })
+        //双格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_2`, [
+            'bab',
+            'cbc',
+            'bab'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:wood/lumber/${wood.wooden}`,
+            c: 'firmaciv:copper_bolt'
+
+        })
+        //四格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_4`, [
+            'aba',
+            'cbc',
+            'aba'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:wood/lumber/${wood.wooden}`,
+            c: 'firmaciv:copper_bolt'
+        })
+
+        //============================================================
+        //==========================家具===============================
+        //============================================================
+
+        //板凳
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_stool`, [
+            'bb',
+            'aa'
+        ], {
+            a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+
+        })
+        //椅子
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_chair`, [
+            'a ',
+            'bb',
+            'aa'
+        ], {
+            a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+
+        })
+        //草垫椅子
+        event.shaped(`everycomp:vf/${wood.mod}/hay_${wood.wooden}_chair`, [
+            'ab'
+        ], {
+            a: `everycomp:vf/${wood.mod}/${wood.wooden}_chair`,
+            b: `minecraft:hay_block`,
+
+        })
+        //桌子
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_table`, [
+            'bbb',
+            'a a',
+            'a a'
+        ], {
+            a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+
+        })
+        //书桌
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_desk`, [
+            'bbb',
+            'aca',
+            'a a'
+        ], {
+            a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+            c: `${wood.mod}:wood/planks/${wood.wooden}`,//木板
+
+        })
+
+        //抽屉桌
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_desk_drawer`, [
+            'bbb',
+            'aca',
+            'a a'
+        ], {
+            a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+            c: `minecraft:chest`,
+
+        })
     })
 
+
+    //泛用兼容木材配方修改【非TFC】
+    const wooden = [
+        { mod: 'valhelsia_structures', wooden: 'lapidified_jungle' },
+        { mod: 'born_in_chaos_v1', wooden: 'scorched' },
+        { mod: 'eidolon', wooden: 'illwood' },
+        { mod: 'alexscaves', wooden: 'pewen' },
+        { mod: 'alexscaves', wooden: 'thornwood' },
+        { mod: 'ad_astra', wooden: 'glacian' },
+        { mod: 'ad_astra', wooden: 'strophar' },
+        { mod: 'vinery', wooden: 'dark_cherry' },
+        { mod: 'ad_astra', wooden: 'aeronos' }
+    ];
+    wooden.forEach(wood => {
+        //单格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_1`, [
+            'bbb',
+            'cac',
+            'bbb'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:${wood.wooden}_planks`,
+            c: 'firmaciv:copper_bolt'
+
+        })
+        //双格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_2`, [
+            'bab',
+            'cbc',
+            'bab'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:${wood.wooden}_planks`,
+            c: 'firmaciv:copper_bolt'
+
+        })
+        //四格抽屉
+        event.shaped(`everycomp:fs/${wood.mod}/${wood.wooden}_4`, [
+            'aba',
+            'cbc',
+            'aba'
+        ], {
+            a: `create:item_vault`,
+            b: `${wood.mod}:${wood.wooden}_planks`,
+            c: 'firmaciv:copper_bolt'
+        })
+
+        //============================================================
+        //==========================家具===============================
+        //============================================================
+
+        //板凳
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_stool`, [
+            'bb',
+            'aa'
+        ], {
+            a: `${wood.mod}:${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:${wood.wooden}_slab`,//台阶
+
+        })
+        /*
+        //椅子
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_chair`, [
+            'a ',
+            'bb',
+            'aa'
+        ], {
+            a: `${wood.mod}:${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:${wood.wooden}_slab`,//台阶
+
+        })
+        */
+        //草垫椅子
+        event.shaped(`everycomp:vf/${wood.mod}/hay_${wood.wooden}_chair`, [
+            'ab'
+        ], {
+            a: `everycomp:vf/${wood.mod}/${wood.wooden}_chair`,
+            b: `minecraft:hay_block`,
+
+        })
+        /*
+        //桌子
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_table`, [
+            'bbb',
+            'a a',
+            'a a'
+        ], {
+            a: `${wood.mod}:${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:${wood.wooden}_slab`,//台阶
+
+        })
+        */
+        //书桌
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_desk`, [
+            'bbb',
+            'aca',
+            'a a'
+        ], {
+            a: `${wood.mod}:${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:${wood.wooden}_slab`,//台阶
+            c: `${wood.mod}:${wood.wooden}_plank`,//木板
+
+        })
+
+        //抽屉桌
+        event.shaped(`everycomp:vf/${wood.mod}/${wood.wooden}_desk_drawer`, [
+            'bbb',
+            'aca',
+            'a a'
+        ], {
+            a: `${wood.mod}:${wood.wooden}_fence`,//栅栏
+            b: `${wood.mod}:${wood.wooden}_slab`,//台阶
+            c: `minecraft:chest`,
+
+        })
+
+    })
     //event.shaped('create:fluid_tank', [['#forge:plates/copper'], ['immersiveengineering:wooden_barrel'], ['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault', [['#forge:plates/iron'], ['immersiveengineering:crate'], ['#forge:plates/iron']])//机械动力保险箱
     event.shaped('sophisticatedbackpacks:backpack', ['aba', 'cdc', 'eee'],
@@ -705,7 +966,7 @@ ServerEvents.recipes(event => {
             d: "kubejs:hardened_leather",
             e: "kubejs:leather_plate"
         })//背包合成困难
-
-
-
 })
+
+
+

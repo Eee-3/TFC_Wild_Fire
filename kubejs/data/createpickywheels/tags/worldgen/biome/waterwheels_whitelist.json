@@ -16,5 +16,6 @@
     "tfc:volcanic_mountains",
     "tfc:volcanic_oceanic_mountains",
     "tfc:shore"
-  ]
+  ],
+  "replace": true
 }

@@ -16,5 +16,6 @@
     "tfc:plateau_lake",
     "tfc:river",    
     "tfc:shore"    
-  ]
+  ],
+  "replace": true
 }

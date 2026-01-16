@@ -370,23 +370,23 @@
     ,
     {
         "matchItems": [
-            "1111111111111111111111"
+            "majruszsdifficulty:bandage"
         ],
-        "resultItems": "1111111111111111111111111"
+        "resultItems": "legendarysurvivaloverhaul:bandage"
     }
     ,
     {
         "matchItems": [
-            "1111111111111111111111"
+            "majruszsdifficulty:golden_bandage"
         ],
-        "resultItems": "1111111111111111111111111"
+        "resultItems": "scguns:enchanted_bandage"
     }
     ,
     {
         "matchItems": [
-            "1111111111111111111111"
+            "minecraft:bread"
         ],
-        "resultItems": "1111111111111111111111111"
+        "resultItems": "tfc:food/wheat_bread"
     }
     ,
     {

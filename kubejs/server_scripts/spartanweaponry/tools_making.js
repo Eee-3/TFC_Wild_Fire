@@ -59,7 +59,7 @@ const metalaa = [
 
     // 匕首
     e.shaped(
-      `kubejs:${metala.name}_dagger`, ["A", "B"],
+      `kubejs:${metala.name}_dagger`, [" A", "B "],
       {
         A: `kubejs:${metala.name}_dagger_weapon_part`,
         B: 'spartanweaponry:handle'
@@ -69,9 +69,12 @@ const metalaa = [
 
     // 格挡匕首
     e.shaped(
-      `kubejs:${metala.name}_parrying_dagger`, ["A", "C", "B"],
+      `kubejs:${metala.name}_parrying_dagger`, [
+        "  A", 
+        " C ", 
+        "B"],
       {
-        A: `kubejs:${metala.name}_parrying_dagger_weapon_part`,
+        A: `kubejs:${metala.name}_dagger_weapon_part`,
         B: 'spartanweaponry:handle',
         C: `tfc:metal/rod/${metala.name}`
       }
@@ -91,7 +94,7 @@ const metalaa = [
 
     // 大剑
     e.shaped(
-      `kubejs:${metala.name}_greatsword`, ["A", "D", "B"],
+      `kubejs:${metala.name}_greatsword`, ["  A", " D ", "B  "],
       {
         A: `kubejs:${metala.name}_greatsword_weapon_part`,
         B: 'spartanweaponry:handle',
@@ -195,7 +198,7 @@ const metalaa = [
 
     // 飞刀
     e.shaped(
-      `kubejs:${metala.name}_throwing_knife`, ["A ", " B"],
+      `kubejs:${metala.name}_throwing_knife`, [" A", "B "],
       {
         A: `kubejs:${metala.name}_throwing_knife_weapon_part`,
         B: 'spartanweaponry:handle'
@@ -225,7 +228,7 @@ const metalaa = [
 
     // 页锤
     e.shaped(
-      `kubejs:${metala.name}_flanged_mace`, ["A ", " B"],
+      `kubejs:${metala.name}_flanged_mace`, [" A", "B "],
       {
         A: `kubejs:${metala.name}_flanged_mace_weapon_part`,
         B: 'spartanweaponry:handle'
