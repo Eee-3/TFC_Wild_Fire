@@ -524,22 +524,22 @@ ServerEvents.recipes(e => {
 
   //删除sguns的蓝图配方
   const scguns_blueprint = [
-    'antique_blueprint',
-    'frontier_blueprint',
-    'copper_blueprint',
-    'iron_blueprint',
-    'wrecker_blueprint',
-    'treated_brass_blueprint',
-    'diamond_steel_blueprint',
-    'ocean_blueprint',
-    'piglin_blueprint',
-    'deep_dark_blueprint',
-    'end_blueprint',
-    'exo_suit_blueprint'
+    'antique',
+    'frontier',
+    'copper',
+    'iron',
+    'wrecker',
+    'treated_brass',
+    'diamond_steel',
+    'ocean',
+    'piglin',
+    'deep_dark',
+    'end',
+    'exo_suit'
 
   ];
   scguns_blueprint.forEach(blueprint => {
-    e.remove({ id: `scguns:${blueprint}` })
+    e.remove({ id: `scguns:${blueprint}_blueprint_dupe` })
 
   })
 
@@ -780,7 +780,20 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'majruszsdifficulty:bandage_reversed' })
   e.remove({ id: 'majruszsdifficulty:bandage' })
   e.remove({ id: 'minecraft:bread' })
+  e.remove({ id: 'create:pressing/apple_juice' })
+  e.remove({ id: 'artisanal:crafting/animal_fat' })
+  e.remove({ id: 'createdieselgenerators:crafting/asphalt_block' })
+  e.remove({ id: 'tfc:crafting/vanilla/map' })
+  e.remove({ id: 'supplementaries:slice_map' })
+  e.remove({ id: 'artisanal:barrel/dry_bagasse' })
 
+  //删除ie左轮手枪及其相关组件配方
+  e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
+  e.remove({ id: 'tfc_ie_addon:anvil/toolupgrade_revolver_bayonet' })
+  e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_electro' })
+  e.remove({ id: 'immersiveengineering:crafting/speedloader' })
+  e.remove({ id: 'immersiveengineering:crafting/revolver' })
+  e.remove({ id: 'immersiveengineering:crafting/turret_gun' })
   //删除精金秘银不对温度的熔融配方
   e.remove({ id: 'woodencog:welding/redsteel_backtank' })
   e.remove({ id: 'vintageimprovements:craft/vibrating_table' })

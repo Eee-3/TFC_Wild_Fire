@@ -1,6 +1,11 @@
 // priority: 0
 
 
+ServerEvents.tags("fluid", event => {
+
+    
+    event.add('kubejs:petroleum_gas', 'kubejs:petroleum_gas')
+}),
 ServerEvents.tags("item", event => {
     event.add('forge:tools/hammers', '#tfc:hammers')
 
@@ -235,6 +240,10 @@ ServerEvents.tags("item", event => {
     //可以制作更好更多草药的植物
     event.add('kubejs:can_better_make_herb',
         [
+            "kubejs:marigold",
+            "kubejs:trillium",
+            "kubejs:labrador_tea",
+            "kubejs:horsetail",
             "tfc:plant/sea_lavender",
             "tfc:plant/strelitzia",
             "tfc:plant/trillium",
@@ -242,7 +251,32 @@ ServerEvents.tags("item", event => {
             "tfc:plant/field_horsetail"
 
         ])
+    //石墨铸模
+    event.add('forge:graphite_molds',
+        [
+            "kubejs:graphite_mineral_prospector_head_mold",
+            "kubejs:graphite_prospector_drill_head_mold",
+            "kubejs:graphite_prospector_hammer_head_mold",
+            "kubejs:graphite_excavator_head_mold",
+            "kubejs:graphite_excavator_head_mold",
+            "kubejs:graphite_sledgehammer_head_mold",
+            "kubejs:graphite_hammer_head_mold",
+            "kubejs:graphite_chisel_head_mold",
+            "kubejs:graphite_propick_head_mold",
+            "kubejs:graphite_scythe_blade_mold",
+            "kubejs:graphite_saw_blade_mold",
+            "kubejs:graphite_javelin_head_mold",
+            "kubejs:graphite_mace_head_mold",
+            "kubejs:graphite_sword_blade_mold",
+            "kubejs:graphite_axe_head_mold",
+            "kubejs:graphite_shovel_head_mold",
+            "kubejs:graphite_pickaxe_head_mold",
+            "kubejs:graphite_fish_hook_mold",
+            "kubejs:graphite_hoe_head_mold",
+            "kubejs:graphite_scraping_knife_blade_mold",
+            "kubejs:graphite_circle_blade_mold" 
 
+        ])
     //磁力物品
     event.add('alexscaves:ferromagnetic_items',
         [

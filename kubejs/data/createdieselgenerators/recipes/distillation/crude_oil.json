@@ -18,12 +18,12 @@
       "amount": 40
     },
     {
-      "fluid": "minecraft:water",
-      "amount": 40
+      "fluid": "createdieselgenerators:diesel",
+      "amount": 3
     },
     {
-      "fluid": "tfcoreprocessing:slurry_malachite",
-      "amount": 20
+      "fluid": "kubejs:petroleum_gas",
+      "amount": 50
     }
   ]
 }

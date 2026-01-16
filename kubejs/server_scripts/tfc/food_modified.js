@@ -73,7 +73,6 @@ TFCEvents.data(event => {
     "vinery:bolvar_wine",
     "vinery:aegis_wine",
     "vinery:jellie_wine",
-    "farmersdelight:milk_bottle",
     "alexscaves:hot_chocolate_bottle",
     "alexscaves:purple_soda_bottle"
 
@@ -82,7 +81,12 @@ TFCEvents.data(event => {
 
     event.foodItem(drink, f => {
       f.water(20);
+      f.decayModifier(0)
     })
+
+    event.foodItem("farmersdelight:milk_bottle", f => {f.water(20);f.dairy(3);})
+    event.foodItem("alexscaves:purple_soda_bottle", f => {f.water(20);})
+    event.foodItem("alexscaves:hot_chocolate_bottle", f => {f.water(20);f.dairy(3);})
   })
   const butcher = [
     //格式{ id: "1111111111111", hunger: 11111111, saturation: 11111111, protein: 1111111111, decayModifier: 111111111 },//

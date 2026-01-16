@@ -12,13 +12,31 @@ ServerEvents.recipes(event => {
   //搅拌
   create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
   create.compacting('tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
+
+  
+  create.mixing(Fluid.of('kubejs:pulp', 75), ['4x createdieselgenerators:wood_chip', Fluid.of('tfc:lye', 50)]).heated()//纸浆
+  create.compacting('kubejs:pulp_film', Fluid.of('kubejs:pulp', 5))//纸浆薄膜
+  create.compacting('kubejs:paper_film', '5x kubejs:pulp_film')//纸膜
+
   /* create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
    create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', 'tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
    create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', Fluid.of('tfc:metal/unknown', 100)]).superheated()//下界合金碎片（金星
  */
   //辊压
 
+  create.compacting(Fluid.of('artisanal:lard', 100), "artisanal:pork_fat").heated()//猪脂
+  create.compacting(Fluid.of('artisanal:schmaltz', 100), "artisanal:poultry_fat").heated()//鸡脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:suet").heated()//牛脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:animal_fat").heated()//动物脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "butcher:animalfat").heated()//butchery的动物脂肪
 
+  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:pork_belly").heated()//猪五花榨油
+  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:ham").heated()//猪肘榨油
+
+  create.compacting(
+    ['4x createdieselgenerators:asphalt_block', Fluid.of('createdieselgenerators:diesel', 20)],
+    [Fluid.of('kubejs:heavy_oil', 50), '2x #forge:gravel', '2x #forge:sand']
+  ).heated()//沥青制作
 
   //石磨
   create.milling('2x tfc:olive_paste', 'tfc:food/olive') // 橄榄 => 2个橄榄糊
@@ -54,9 +72,44 @@ ServerEvents.recipes(event => {
   create.compacting('4x minecraft:cobbled_deepslate', '4x minecraft:cobblestone').heated()//深板岩
   create.compacting('minecraft:smooth_stone', 'minecraft:cobblestone').superheated()//平滑石头
   create.deploying('minecraft:paper', ['tfc:unrefined_paper', '#tfc:knives']).keepHeldItem()
+  //注液
   create.filling('minecraft:glowstone_dust', ['kubejs:rock_powder', Fluid.of('minecraft:lava', 20)]).superheated()//萤石
 
+  create.filling('kubejs:galvanized_steel_support', ['kubejs:steel_support', Fluid.of('tfc:metal/zinc', 10)]).superheated()//镀锌方钢梁
 
+  create.filling('brewery:beer_wheat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)]).superheated()//玉米啤酒
+  create.filling('brewery:beer_barley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)]).superheated()//大麦啤酒
+  create.filling('brewery:beer_hops', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)]).superheated()//酒花啤酒
+  create.filling('brewery:beer_nettle', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)]).superheated()//玉米啤酒
+  create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)]).superheated()//玉米啤酒
+  create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)]).superheated()//海利啤酒
+
+  create.filling('brewery:whiskey_jojannik', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_lilitusinglemalt', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_cristelwalker', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_maggoallan', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_carrasconlabel', ['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_ak', ['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_highland_hearth', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_smokey_reverie', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)]).superheated()//酒
+  create.filling('brewery:whiskey_jamesons_malt', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)]).superheated()//酒
+
+  //分液
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'brewery:beer_wheat').superheated()//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)], 'brewery:beer_barley').superheated()//大麦啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)], 'brewery:beer_hops').superheated()//酒花啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle').superheated()//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley').superheated()//海利啤酒
+
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik').superheated()//酒
+  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt').superheated()//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker').superheated()//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan').superheated()//酒
+  create.emptying(['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel').superheated()//酒
+  create.emptying(['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak').superheated()//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth').superheated()//酒
+  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie').superheated()//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt').superheated()//酒
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
@@ -66,7 +119,7 @@ ServerEvents.recipes(event => {
 
 
   //获取树皮
-  
+
 
 
 
@@ -75,7 +128,7 @@ ServerEvents.recipes(event => {
 
       mod: 'butcher',
       type: "smoking",
-      output: '#forge:meats'
+      output: '#minecraft:meat'
     }, r => {
 
       var cookmeat_id = r.getOriginalRecipeResult().getId()
@@ -208,7 +261,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.tfc.welding('tfc:metal/double_ingot/cast_iron', 'tfc:metal/ingot/cast_iron', 'tfc:metal/ingot/cast_iron')//铸铁焊接
 
-  
+
 
 
 

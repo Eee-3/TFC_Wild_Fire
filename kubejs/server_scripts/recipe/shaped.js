@@ -263,21 +263,6 @@ ServerEvents.recipes(event => {
             {
                 a: '#kubejs:can_better_make_herb',
             }),
-        event.shaped('2x legendarysurvivaloverhaul:healing_herbs',
-            [
-                'aa',
-                'aa'
-            ],
-            {
-                a: '#loot:herbal',
-            }),
-        event.shaped('legendarysurvivaloverhaul:healing_herbs',
-            [
-                'aa'
-            ],
-            {
-                a: '#kubejs:can_better_make_herb',
-            })
     //草药
 
     event.shaped('immersiveengineering:sawblade',
@@ -299,6 +284,79 @@ ServerEvents.recipes(event => {
             a: 'kubejs:corundum_brick',
             b: 'tfc:mortar',
         })//刚玉砖块
+
+    event.shaped('4x kubejs:charcoal_stick',
+        [
+            'ab',
+            'a '
+        ],
+        {
+            a: 'minecraft:charcoal',
+            b: '#forge:tools/knives',
+        })
+    event.shaped('4x kubejs:charcoal_stick',
+        [
+            'ab',
+            'a '
+        ],
+        {
+            a: 'minecraft:coal',
+            b: '#forge:tools/knives',
+        })
+    //炭笔
+
+    event.shaped('minecraft:map',
+        [
+            'aa',
+            'ab'
+        ],
+        {
+            a: 'tfc:unrefined_paper',
+            b: 'kubejs:charcoal_stick',
+        })
+    event.shaped('minecraft:map',
+        [
+            'aa',
+            ' b'
+        ],
+        {
+            a: 'kubejs:vellum',
+            b: 'kubejs:charcoal_stick',
+        })
+
+    event.shaped('minecraft:map',
+        [
+            'ab'
+        ],
+        {
+            a: 'minecraft:paper',
+            b: 'kubejs:charcoal_stick',
+        })
+    //地图
+
+    event.shaped('map_atlases:atlas',
+        [
+            'ab ',
+            'bbc'
+        ],
+        {
+            a: '#forge:leather',
+            b: 'minecraft:map',
+            c: 'artisanal:quill'
+        })
+    //地图册
+
+    event.shaped('3x supplementaries:slice_map',
+        [
+            'a',
+            'a',
+            'a'
+        ],
+        {
+            a: 'minecraft:map',
+        })
+    //切面地图
+
     event.shaped('createdieselgenerators:bulk_fermenter',
         [
             'dbd',

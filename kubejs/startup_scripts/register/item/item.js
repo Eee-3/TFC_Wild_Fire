@@ -81,11 +81,14 @@ StartupEvents.registry('item', event => {
     event.create('coal_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭保温块
     event.create('high_performance_fuel_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能保温块
 
+    event.create('charcoal_stick', 'basic').texture('kubejs:item/charcoal_stick'); // 炭笔
 
     event.create('bone_fish_hook', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 骨钩
     event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
     event.create('bone_butchersknife_blade', 'basic').texture('kubejs:item/tfc/bone_butchersknife_blade'); // 骨刮皮刀
 
+    event.create('pulp_film', 'basic').texture('kubejs:item/pulp_film'); // 纸浆膜
+    event.create('paper_film', 'basic').texture('kubejs:item/paper_film'); // 纸膜
 
 
     event.create('alkalized_bauxite_raw_material', 'basic').texture('kubejs:item/tfc/alkalized_bauxite_raw_material').tag("kubejs:ore"); // 碱化铝土生料

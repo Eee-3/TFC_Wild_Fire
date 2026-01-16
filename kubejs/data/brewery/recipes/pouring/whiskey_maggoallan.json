@@ -2,7 +2,7 @@
   "type": "brewinandchewin:keg_pouring",
   "amount": 250,
   "container": {
-    "item": "brewinandchewin:tankard"
+    "item": "tfc:silica_glass_bottle"
   },
   "filling": true,
   "filling": true,

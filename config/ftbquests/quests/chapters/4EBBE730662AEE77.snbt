@@ -397,7 +397,10 @@
 							Size: 21
 						}
 					}
-					id: "immersiveengineering:revolver"
+					id: "scguns:longarm"
+					tag: {
+						Damage: 0
+					}
 				}
 				type: "item"
 			}]

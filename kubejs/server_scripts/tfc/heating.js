@@ -569,6 +569,7 @@ ServerEvents.recipes(e => {
     { name: "ad_astra:iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
     { name: "ad_astra:glowing_iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
     { name: "ad_astra:marked_iron_pillar", temperature: 1535, metal: "tfc:metal/cast_iron", number: 27 },
+    { name: "minecraft:cauldron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 1000 },
 
     //钢工业方块
     { name: "immersiveengineering:steel_scaffolding_standard", temperature: 1540, metal: "tfc:metal/steel", number: 50 },

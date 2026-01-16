@@ -54,14 +54,15 @@ StartupEvents.registry("fluid", event => {
                 .tag("tfc:usable_in_wooden_bucket")
                 .tag("tfc:usable_in_barrel")
                 .density(5)
-                //.color(ore.color)
+                .noBlock()
+            //.color(ore.color)
         }
     })
 
-     event.create(`tfc_ie_addon:metal/aluminum_oxide`)//氧化铝
-                .stillTexture(`tfc_ie_addon:metal/aluminum`)
-                .flowingTexture(`tfc_ie_addon:metal/aluminum_flowing`)
-                .density(5)
+    event.create(`tfc_ie_addon:metal/aluminum_oxide`)//氧化铝
+        .stillTexture(`tfc_ie_addon:metal/aluminum`)
+        .flowingTexture(`tfc_ie_addon:metal/aluminum_flowing`)
+        .density(5)
 
-    
+
 })

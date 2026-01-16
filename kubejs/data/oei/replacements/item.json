@@ -391,8 +391,15 @@
     ,
     {
         "matchItems": [
-            "1111111111111111111111"
+            "immersiveengineering:revolver"
         ],
-        "resultItems": "1111111111111111111111111"
+        "resultItems": "scguns:longarm"
+    }
+    ,
+    {
+        "matchItems": [
+            "immersiveengineering:dust_wood"
+        ],
+        "resultItems": "createdieselgenerators:wood_chip"
     }
 ]

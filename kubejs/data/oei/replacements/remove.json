@@ -182,6 +182,11 @@
         "immersiveengineering:dust_silver",
         "scguns:anthralite_dust",
         "patchouli:guide_book",
+        "immersiveengineering:speedloader",
+        "immersiveengineering:toolupgrade_revolver_bayonet",
+        "immersiveengineering:toolupgrade_revolver_magazine",
+        "immersiveengineering:toolupgrade_revolver_electro",
+        "immersiveengineering:turret_gun",
         "alexsmobs:animal_dictionary"
     ],
     "resultItems": "minecraft:air"

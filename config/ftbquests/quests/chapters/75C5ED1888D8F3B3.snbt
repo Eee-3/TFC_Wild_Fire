@@ -1799,8 +1799,8 @@
 			hide_until_deps_complete: true
 			id: "4F573E92AB8D8E7F"
 			tasks: [{
-				id: "0F19FA9A1D28769C"
-				item: "create:water_wheel"
+				id: "6A69FC2BBADAC575"
+				item: "woodencog:wooden_generator"
 				type: "item"
 			}]
 			x: 81.0d

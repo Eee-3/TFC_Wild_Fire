@@ -31,58 +31,6 @@
 				}
 				{
 					auto: "invisible"
-					command: "/gamerule doPatrolSpawning false"
-					elevate_perms: true
-					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
-					id: "38BEB2B704D4B71B"
-					ignore_reward_blocking: true
-					silent: true
-					team_reward: true
-					title: "禁用掠夺者巡逻队刷新"
-					type: "command"
-				}
-				{
-					auto: "invisible"
-					command: "/gamerule doTraderSpawning false"
-					elevate_perms: true
-					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
-					id: "569E2C6E1C08CE31"
-					ignore_reward_blocking: true
-					silent: true
-					team_reward: true
-					title: "禁用流浪商人刷新"
-					type: "command"
-				}
-				{
-					auto: "invisible"
-					command: "/gamerule doInsomnia false"
-					elevate_perms: true
-					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
-					id: "3EA645F6A5334B3B"
-					ignore_reward_blocking: true
-					silent: true
-					team_reward: true
-					title: "禁用幻翼生成"
-					type: "command"
-				}
-				{
-					auto: "invisible"
-					command: "/gamerule naturalRegeneration false"
-					elevate_perms: true
-					exclude_from_claim_all: true
-					icon: "design_decor:gear_sign"
-					id: "4C0727D857865D70"
-					ignore_reward_blocking: true
-					silent: true
-					team_reward: true
-					title: "自然回血减速"
-					type: "command"
-				}
-				{
-					auto: "invisible"
 					command: "/gamerule spawnRadius 100"
 					elevate_perms: true
 					exclude_from_claim_all: true
