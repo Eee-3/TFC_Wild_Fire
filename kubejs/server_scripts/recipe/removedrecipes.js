@@ -705,6 +705,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'scguns:disc_mold' })
   e.remove({ id: 'create:crafting/kinetics/brass_hand' })
   e.remove({ id: 'butcher:crushedflowersrecipe' })
+  e.remove({ id: 'sns:leather_knapping/quiver' })
+  e.remove({ id: 'sns:crafting/mob_net' })
   
   //删除精金秘银不对温度的熔融配方
   e.remove({ id: 'woodencog:welding/redsteel_backtank' })

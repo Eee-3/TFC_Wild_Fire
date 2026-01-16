@@ -81,6 +81,19 @@
 					title: "自然回血减速"
 					type: "command"
 				}
+				{
+					auto: "invisible"
+					command: "/gamerule spawnRadius 100"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					icon: "design_decor:gear_sign"
+					id: "3BEF0E9A10CD2988"
+					ignore_reward_blocking: true
+					silent: true
+					team_reward: true
+					title: "重生点半径重设"
+					type: "command"
+				}
 			]
 			tasks: [{
 				advancement: "tfc:story/root"
