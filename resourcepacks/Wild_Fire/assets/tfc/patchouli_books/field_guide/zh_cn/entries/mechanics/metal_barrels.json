@@ -1,0 +1,17 @@
+{
+    "name": "金属桶",
+    "category": "tfc:mechanics",
+    "icon": "tfcoreprocessing:metal/barrel/gold",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "与普通的木桶相比，金属桶只有一个优点：它们不会燃烧。你可以放心地将它们放在锻造炉或火坑附近。不过，它们的价格要贵得多。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfcoreprocessing:metal/barrel/steel_barrel",
+            "text": "制作它需要 7 片所需金属板材，这和制作一个铁砧所需的金属量相同，只是还需要进一步加工。它们几乎有所有金属材质的变体！"
+        }
+    ],
+    "read_by_default": true
+}

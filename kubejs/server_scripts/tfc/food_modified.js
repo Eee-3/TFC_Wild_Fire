@@ -84,9 +84,9 @@ TFCEvents.data(event => {
       f.decayModifier(0)
     })
 
-    event.foodItem("farmersdelight:milk_bottle", f => {f.water(20);f.dairy(3);})
-    event.foodItem("alexscaves:purple_soda_bottle", f => {f.water(20);})
-    event.foodItem("alexscaves:hot_chocolate_bottle", f => {f.water(20);f.dairy(3);})
+    event.foodItem("farmersdelight:milk_bottle", f => { f.water(20); f.dairy(3); })
+    event.foodItem("alexscaves:purple_soda_bottle", f => { f.water(20); })
+    event.foodItem("alexscaves:hot_chocolate_bottle", f => { f.water(20); f.dairy(3); })
   })
   const butcher = [
     //格式{ id: "1111111111111", hunger: 11111111, saturation: 11111111, protein: 1111111111, decayModifier: 111111111 },//
@@ -278,7 +278,25 @@ TFCEvents.data(event => {
   event.foodItem('cuisinedelight:suspicious_mix', f => { // 油炸蛆
     f.hunger(5 / 5); f.saturation(2 / 5); f.protein(2); f.water(0.1); f.decayModifier(7);
   })
-  food_data("minecraft:enchanted_golden_apple", 100, 100, 100, 0, 100, 100, 100, 100, 100)
+  event.foodItem('butcher:pigcorpse', f => { // 猪
+    f.decayModifier(7);
+  })
+  event.foodItem('butcher:pig_corpse_item', f => { // 猪
+    f.decayModifier(7);
+  })
+
+  event.foodItem('minecraft:enchanted_golden_apple', food => { // 附魔金苹果
+    food.hunger(100)
+    food.saturation(100 / 5)
+    food.water(100)
+    food.protein(100)
+    food.fruit(100)
+    food.grain(100)
+    food.vegetables(100)
+    food.dairy(100)
+    food.decayModifier(0)
+  })
+  /*food_data("minecraft:enchanted_golden_apple", 100, 100, 100, 0, 100, 100, 100, 100, 100)*/
   food_data("cuisinedelight:suspicious_mix", 2, 0, null, 3)
   /*
     event.foodItem('cuisinedelight:suspicious_mix', food => { // 炒锅乐事-可疑大杂烩

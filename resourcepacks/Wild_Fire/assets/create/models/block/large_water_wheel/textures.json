@@ -1,0 +1,13 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"axis": "create:block/axis",
+		"axis_top": "create:block/axis_top",
+		"metal": "create:block/waterwheel_metal",
+		"log": "block/stripped_dark_oak_log",
+		"planks": "immersiveengineering:block/wooden_decoration/treated_wood_horizontal",
+		"log_top": "block/dark_oak_log_top",
+		"particle": "#planks"
+	}
+}

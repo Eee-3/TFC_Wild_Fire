@@ -1,0 +1,22 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/stone/hoe/igneous_intrusive/0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "tfc:item/stone/hoe/igneous_intrusive/1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "tfc:item/stone/hoe/igneous_intrusive/2"
+        }
+    ]
+}

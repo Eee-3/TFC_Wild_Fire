@@ -1,0 +1,76 @@
+{
+  "name": "特种锻造燃料",
+  "category": "tfc:mechanics",
+  "icon": "tfcoreprocessing:kindle/coke_briquette",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "你的锻造炉只能使用以煤炭为基础的燃料。这通常指的是 $(thing)木炭$()，但也包括挖掘得到的煤炭，如 $(thing)烟煤$() 或 $(thing)褐煤$()。在本章中，我们将了解这些燃料的加工版本。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "anchor": "charcoal_pellets",
+          "item": "tfcoreprocessing:kindle/charcoal_pellets",
+          "title": "煤炭颗粒",
+          "link_recipes": false,
+          "text": "就像木材一样，$(thing)木炭$() 可以被研磨成粉末。这种粉末可以再次被压缩，制成 $(thing)木炭颗粒$()。这些颗粒的燃烧时间比普通煤炭略长，但会消耗磨盘的耐久度。"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "tfcoreprocessing:quern/kindle/coal_dust_lignite",
+          "title": "研磨煤炭",
+          "text": "为了制作煤炭颗粒，你需要在 $(thing)磨盘$() 中将 $(thing)木炭$()、$(thing)烟煤$() 或 $(thing)褐煤$() 研磨成粉。与褐煤相比，烟煤的产出更高（可获得 6 份煤粉）。"
+      },
+      {
+          "type": "patchouli:text",
+          "title": "焦炭",
+          "text": "焦炭是一种经过加工的煤炭，将煤炭在类似于烧制木炭的条件下（无氧环境）燃烧以进行提纯，从而产生更高的温度。"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "tfcoreprocessing:heating/coke_baking",
+          "text": "$(thing)煤粉$() 可以在任何地方加热，燃烧后变成 $(thing)焦粉$()。煤粉有 20% 的几率完全烧尽，否则就会变成焦炭。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "tfcoreprocessing:compress/coke_pellets",
+          "text": "$(thing)焦粉$() 需要被压缩成 $(thing)焦炭颗粒$() 才能燃烧。$(thing)煤粉$() 制成 $(thing)煤炭颗粒$() 也是同样的道理。你也可以压缩 $(thing)石墨颗粒$()，但它们本身不能燃烧。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "title": "煤块",
+          "recipe": "tfcoreprocessing:compress/charcoal_briquette",
+          "text": "使用一些胶水进一步压缩这些颗粒，你将得到 $(thing)煤块$()。它们的燃烧时间是制作它们所用颗粒的 5 倍，并且可以堆放在原木堆里！"
+      },
+      {
+          "type": "patchouli:text",
+          "title": "特种煤块",
+          "text": "有些煤块可以由两种或更多类型的颗粒混合而成。这里将详细介绍这些混合煤块。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "title": "焦 - 木炭块",
+          "recipe": "tfcoreprocessing:compress/coke_charcoal_briquette",
+          "text": "使用一半木炭和一半焦炭，你可以制作出一种燃烧温度高于木炭且燃烧时间更长的煤块。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "title": "稀释木炭块",
+          "recipe": "tfcoreprocessing:compress/charcoal_wood_briquette",
+          "text": "使用一半木炭和一半木材，你可以制作出一种燃烧温度低于木炭但燃烧时间更长的煤块。它的燃烧温度低于青铜的熔点。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "title": "低温木炭块",
+          "recipe": "tfcoreprocessing:compress/low_charcoal_briquette",
+          "text": "使用 1/4 的木炭和 3/4 的木材，你可以制作出一种燃烧温度比木炭更低、燃烧时间更长的煤块！它的燃烧温度略高于 $(thing)竹制燃烧木段$()，也可以在火坑中使用。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "title": "高强度木炭块",
+          "recipe": "tfcoreprocessing:compress/charcoal_graphite_briquette",
+          "text": "使用 6 份木炭、1 份石墨和 1 份焦炭，你可以制作出一种燃烧温度极高但燃烧时间较短的煤块。"
+      }
+  ],
+  "read_by_default": true
+}

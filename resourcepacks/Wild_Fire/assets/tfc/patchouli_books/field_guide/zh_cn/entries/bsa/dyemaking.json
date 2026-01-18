@@ -1,0 +1,19 @@
+{
+  "name": "染料制作",
+  "category": "tfc:bsa",
+  "icon": "tfc:wooden_bucket{fluid:{Amount:1000, FluidName:\"tfc:purple_dye\"}}",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "除了将固体染料放在水中煮沸来制作液体染料之外，现在你还可以直接将能制成固体染料的花朵拿来煮。<br><br>与煮固体染料相比，这样制成的液体染料更少——每放入一朵花只能得到 100 毫巴的液体染料。<br><br>在煮沸过程中，锅的温度必须至少达到 <br>$(c)$(bold)亮红色$()。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "bsa:textures/gui/book/yellow_dye_recipe.png"
+          ],
+          "text": ""
+      }
+  ],
+  "read_by_default": true
+}

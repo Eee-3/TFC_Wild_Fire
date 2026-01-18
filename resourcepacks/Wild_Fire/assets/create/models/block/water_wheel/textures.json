@@ -1,0 +1,13 @@
+{
+	"parent": "create:block/large_wheels",
+	"ambientocclusion": false,
+	"textures": {
+		"axis": "create:block/axis",
+		"gearbox": "create:block/gearbox",
+		"axis_top": "create:block/axis_top",
+		"metal": "create:block/waterwheel_metal",
+		"log": "block/stripped_dark_oak_log",
+		"planks": "immersiveengineering:block/wooden_decoration/treated_wood_horizontal",
+		"particle": "#planks"
+	}
+}

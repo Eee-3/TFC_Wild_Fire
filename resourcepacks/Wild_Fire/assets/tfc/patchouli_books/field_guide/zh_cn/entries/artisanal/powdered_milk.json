@@ -1,0 +1,52 @@
+{
+  "name": "奶粉",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:powdered_milk",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "将牛奶制成奶粉是一种高效储存牛奶的好方法，无论是在地窖中还是用于长途旅行。$(br2)制作奶粉的第一步是制作$(thing)炼乳$()。$(br2)然后，炼乳会进一步煮成$(thing)奶片$()。如果持续加热，这一过程会自动发生。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/condensed_milk_recipe.png",
+              "artisanal:textures/gui/book/milk_flakes_recipe.png"
+          ]
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "artisanal:quern/powdered_milk",
+          "text": "最后，奶片可以用$(l:tfc:mechanics/quern)手推磨$()磨成奶粉。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/milk",
+          "text": "之后，奶粉可以随时与水混合还原成牛奶。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/milk_1",
+          "text": "如果你想在外出时使用，奶粉也可以与水壶合成，变成牛奶壶。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/milk_8",
+          "text": "你还可以用任意液体容器与最多8份奶粉合成，每份奶粉可产出100 mb的牛奶。"
+      },
+      {
+          "type": "tfc:quern_recipe",
+          "recipe": "artisanal:quern/powdered_goat_milk",
+          "text": "如果你安装了Fermalife插件，你也可以制作山羊奶和牦牛奶的奶粉变体。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/yak_milk"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:milk_flakes": 1,
+      "artisanal:powdered_milk": 2
+  }
+}

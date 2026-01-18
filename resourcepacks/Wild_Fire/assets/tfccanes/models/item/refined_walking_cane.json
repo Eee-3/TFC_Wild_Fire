@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "tfccanes:item/refined_walking_cane"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [48, 89, -39],
+			"translation": [0, -1.75, -4.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-139, -90, -146],
+			"translation": [0, -1.75, -4.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-59, 105, 25],
+			"translation": [1.13, 3.95, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-5, -96, 25],
+			"translation": [1.13, 3.45, 1.13],
+			"scale": [0.68, 0.68, 0.68]
+		},
+		"ground": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, -3.75, 0]
+		},
+		"gui": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "name": "群峦带流道铸造",
+  "description": "关于带流道铸造插件的所有内容，该插件允许你将金属从坩埚中浇铸到多个模具中。",
+  "icon": "tfcchannelcasting:channel",
+  "sortnum": 60
+}

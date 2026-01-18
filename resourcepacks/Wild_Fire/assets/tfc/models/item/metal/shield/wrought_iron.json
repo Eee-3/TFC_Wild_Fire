@@ -1,0 +1,16 @@
+{
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 0
+            },
+            "model": "tfc:item/metal/shield/wrought_iron_unblocking"
+        },
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "tfc:item/metal/shield/wrought_iron_blocking"
+        }
+    ]
+}

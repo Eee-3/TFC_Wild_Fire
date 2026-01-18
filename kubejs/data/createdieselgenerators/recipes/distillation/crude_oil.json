@@ -6,7 +6,7 @@
       "amount": 100
     }
   ],
-  "heatRequirement": "heated",
+  "heatRequirement": "superheated",
   "processingTime": 100,
   "results": [
     {

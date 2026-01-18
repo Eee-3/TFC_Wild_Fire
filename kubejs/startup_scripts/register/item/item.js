@@ -99,7 +99,7 @@ StartupEvents.registry('item', event => {
 
     event.create('alumina_powder', 'basic').texture('kubejs:item/tfc/alumina_powder').tag("kubejs:ore"); // 氧化铝粉
     event.create('unfired_corundum_brick', 'basic').texture('kubejs:item/tfc/unfired_corundum_brick').tag("kubejs:ore");   // 未完成的刚玉砖
-    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick').tag("kubejs:ore");   // 刚玉砖
+    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick');   // 刚玉砖
 
 
 
@@ -109,6 +109,7 @@ StartupEvents.registry('item', event => {
     event.create('cast_iron_indenter', 'basic')//铸铁压头
     event.create('noheating_warmer', 'basic')//燃尽暖手宝
 
+    event.create('wooden_slat_grid', 'basic').tag("vintageimprovements:curving_heads");//木条编网
     //硅以及相关材料注册
     event.create('glass_mixture').texture('kubejs:item/create/glass_mixture');//玻璃混合物
     event.create('silicon').texture('kubejs:item/create/silicon');//硅

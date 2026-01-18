@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/metal/scythe/steel_3"
+    }
+}

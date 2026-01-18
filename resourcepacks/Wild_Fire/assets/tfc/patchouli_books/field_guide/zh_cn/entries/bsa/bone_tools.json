@@ -1,0 +1,48 @@
+{
+  "name": "骨制工具",
+  "category": "tfc:bsa",
+  "icon": "bsa:bone/fish_hook",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "现在，骨头也能像石头一样被打制成工具了。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:bone_knapping/fish_hook",
+          "text": "可以用骨头打制出$(thing)骨制鱼钩$()，然后用它制作$(thing)骨制鱼竿$()。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/bone/fishing_rod",
+          "recipe2": "bsa:crafting/hide_sewing/2_plus_2"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:bone_knapping/needle",
+          "text": "$(l:tfc:mechanics/sewing_tables)骨针$()同样是用骨头打制而成的，可用于缝合兽皮。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/hide_sewing/1_plus_2",
+          "recipe2": "bsa:crafting/hide_sewing/1_plus_1"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/bone_needle",
+          "text": "骨针也可以用$(thing)剑齿虎獠牙$()制作，$(l:tfc:the_world/wild_animals#predators)$(thing)剑齿虎$()会掉落这种獠牙。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "bsa:bone_knapping/bone/arrowhead/4_7_0_0",
+          "text": "骨头还能被打制成$(l:tfc:bsa/arrowheads)箭头$()。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "minecraft:bone": 0,
+      "bsa:bone/fish_hook": 0,
+      "bsa:bone/fishing_rod": 0,
+      "bsa:sabertooth_fang": 5
+  }
+}

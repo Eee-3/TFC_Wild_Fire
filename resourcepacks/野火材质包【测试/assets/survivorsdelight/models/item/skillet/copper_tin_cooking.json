@@ -1,9 +1,0 @@
-{
-  "parent": "survivorsdelight:item/skillet/cookingup",
-  "textures": {
-    "0": "survivorsdelight:block/custom/copper",
-    "1": "survivorsdelight:block/custom/copper_tin",
-    "2": "tfc:block/wood/planks/hickory",
-    "particle": "tfc:block/metal/smooth/copper"
-  }
-}

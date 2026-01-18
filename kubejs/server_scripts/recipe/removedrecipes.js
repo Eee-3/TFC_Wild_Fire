@@ -625,6 +625,7 @@ ServerEvents.recipes(e => {
 
   //移除棍木配方
 
+  e.remove({ id: 'createdieselgenerators:distillation/superheated_crude_oil' })
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/pig_iron_double_sheet' })
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/heated_chromium' })
   e.remove({ id: 'kubejs:thirace/create/createmetallurgy/melting/double_pig_iron' })

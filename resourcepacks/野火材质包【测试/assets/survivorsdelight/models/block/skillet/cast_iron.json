@@ -1,8 +1,0 @@
-{
-  "parent": "survivorsdelight:block/skillet/skillet",
-  "textures": {
-    "1": "survivorsdelight:block/custom/cast_iron",
-    "2": "tfc:block/wood/planks/oak",
-    "particle": "tfc:block/metal/smooth/cast_iron"
-  }
-}

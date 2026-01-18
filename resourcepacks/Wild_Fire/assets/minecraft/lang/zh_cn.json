@@ -1,0 +1,8 @@
+{
+  "rarity.common.name": "普通",
+  "rarity.uncommon.name": "少见",
+  "rarity.rare.name": "稀有",
+  "rarity.epic.name": "珍贵",
+  "item.minecraft.glow_berries": "云莓",
+  "item.minecraft.sweet_berries": "蔓越莓"
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "tfc_hammer_time:item/metal/sledgehammer/red_steel_0"
-    }
-}

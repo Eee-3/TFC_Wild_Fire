@@ -1,0 +1,59 @@
+{
+  "name": "肥皂",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:soap",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "$(thing)肥皂$()是一种能更快速清洁物品的有用工具。"
+      },
+      {
+          "type": "patchouli:spotlight",
+          "item": {
+              "tag": "artisanal:fats"
+          },
+          "text": "制作肥皂的第一步是获取一些动物脂肪，大多数动物死亡时会掉落。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/suet_to_tallow.png",
+              "artisanal:textures/gui/book/pork_fat_to_lard.png",
+              "artisanal:textures/gui/book/poultry_fat_to_schmaltz.png"
+          ],
+          "anchor": "rendered_fats",
+          "text": "然后，将动物脂肪放入锅中，每个脂肪物品搭配100 mb水进行熬煮，提炼脂肪。"
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/soap_mixture.png"
+          ],
+          "text": "将提炼后的脂肪（或$(l:tfc:mechanics/lamps#olives)橄榄油$()）与碱液以9 : 1的比例混合，制成液体肥皂。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "artisanal:barrel/soap_solid",
+          "text": "液体肥皂放在密封桶中会凝固。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/soapy_water",
+          "text": "要使用肥皂，将其与水混合制成$(thing)肥皂水$()。肥皂水可用于更高效地清洗诸如罐子、黄麻网和汤碗之类的物品。"
+      },
+      {
+          "type": "tfc:artisanal/three_instant_barrel_recipes",
+          "recipe": "artisanal:barrel/clean_empty_jar_soapy_water",
+          "recipe2": "artisanal:barrel/clean_jute_net_soapy_water",
+          "recipe3": "artisanal:barrel/clean_soup_bowl_soapy_water"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:suet": 0,
+      "artisanal:bear_fat": 0,
+      "artisanal:pork_fat": 0,
+      "artisanal:poultry_fat": 0,
+      "artisanal:soap": 4
+  }
+}

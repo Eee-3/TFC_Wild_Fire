@@ -1,0 +1,29 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/metal/chestplate/black_steel_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.40
+            },
+            "model": "tfc:item/metal/chestplate/damage/black_steel_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.80
+            },
+            "model": "tfc:item/metal/chestplate/damage/black_steel_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "tfc:item/metal/chestplate/damage/black_steel_3"
+        }
+    ]
+}

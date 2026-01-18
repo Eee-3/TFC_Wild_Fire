@@ -402,4 +402,18 @@
         ],
         "resultItems": "createdieselgenerators:wood_chip"
     }
+    ,
+    {
+        "matchItems": [
+            "firmalife:peel"
+        ],
+        "resultItems": "kubejs:peel"
+    }
+    ,
+    {
+        "matchItems": [
+            "butcher:animalfat"
+        ],
+        "resultItems": "artisanal:animal_fat"
+    }
 ]

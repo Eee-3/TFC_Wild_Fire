@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "tfc:item/metal/chestplate/bismuth_bronze_1"
-    }
-}

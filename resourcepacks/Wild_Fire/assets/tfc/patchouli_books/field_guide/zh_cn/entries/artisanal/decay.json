@@ -1,0 +1,135 @@
+{
+  "name": "食物保存",
+  "category": "tfc:artisanal",
+  "icon": "artisanal:metal/sealed_tin_can",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "有多种方法能让食物保存超过其正常保质期。$(br2)$(bold)内容$(br)$(li)$(l:tfc:artisanal/decay#potted_food)罐装食物$(/t)$(li)$(l:tfc:artisanal/decay#canned_food)罐头食品$(/t)"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "artisanal:clay_knapping/unfired_small_pot",
+          "text": "保存食物的一种方法是将其装罐，这个过程是把食物隔离在液态脂肪中，并放在罐子里。",
+          "anchor": "potted_food"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "artisanal:heating/ceramic/unfired_small_pot",
+          "text": "此过程的第一步是用粘土制作一个小罐子，并在$(l:tfc:getting_started/pit_kiln)坑窑$()中烧制。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/pot_1",
+          "text": "然后，用烧制好的小罐子与$(l:tfc:artisanal/soap#rendered_fats)提炼出的脂肪$()、$(l:tfc:the_world/ores_and_minerals#saltpeter)硝石$()，以及最多六种你想要装罐的$(thing)肉类$()或$(thing)蔬菜$()制作。罐子一次只能装一种食物。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/pot_2",
+          "recipe2": "artisanal:crafting/pot_6"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/pot_4_butter",
+          "text": "如果你安装了Fermalife插件，你也可以用$(thing)黄油$()代替提炼出的脂肪。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "其他保存形式也有用，但最终的保存形式是$(thing)制作罐头$()。这个过程包括将食物密封在一个气密容器中，使微生物无法接触到它，然后加热容器以杀死食物上已有的所有微生物。",
+          "anchor": "canned_food"
+      },
+      {
+          "type": "tfc:welding_recipe",
+          "recipe": "artisanal:welding/metal/tinplate_from_steel",
+          "text": "制作罐头的原材料叫做$(thing)马口铁$()。它是通过将锡板焊接到双层钢板上制成的。"
+      },
+      {
+          "type": "tfc:welding_recipe",
+          "recipe": "artisanal:welding/metal/tinplate_from_iron",
+          "text": "可以用熟铁双层板代替钢板，但效率会降低。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "artisanal:anvil/metal/tin_can",
+          "text": "焊接完成后，马口铁可以锻造成一个空的锡罐。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/can_1",
+          "recipe2": "artisanal:crafting/can_2"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/can_6",
+          "text": "一个加热过的锡罐可以用一个$(thing)锤子$()、$(thing)助熔剂$()，以及最多6个$(thing)可制罐食物$()制作成一个密封锡罐。一个罐子里只能保存一种食物。"
+      },
+      {
+          "type": "tfc:heat_recipe",
+          "recipe": "artisanal:heating/metal/sterilized_tin_can",
+          "text": "然后将罐子加热以杀死里面的微生物，从而得到一个$(thing)消毒锡罐$()。罐子里的食物可以永远保存，直到罐子被打开，此时其保质期将重新开始计算。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/open_sterilized_tin_can_can_opener",
+          "text": "要打开罐头，用一个$(thing)开罐器$()与罐头合成。这个配方会产出罐头里的食物。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "artisanal:barrel/clean_tin_can_soapy_water",
+          "text": "打开罐头也会得到一个$(thing)脏锡罐$()。脏罐子可以用肥皂水或普通水清洗。详见$(l:tfc:artisanal/soap)肥皂$()。清洗后，罐子可以重复使用。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/metal/can_opener/steel",
+          "text": "开罐器是用一个$(thing)黄铜机械部件$()、两个任何工具金属制成的$(thing)金属棒$()，以及两个$(thing)圆形刀片$()制作而成。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "artisanal:anvil/metal/circle_blade/black_bronze",
+          "text": "圆形刀片是由金属锭$(l:tfc:mechanics/anvils)锻造$()而成。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/open_sterilized_tin_can_hammer",
+          "text": "如果你没有开罐器，也可以用锤子打开罐头。这样会得到一个$(thing)脏的凹痕锡罐$()。"
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "artisanal:anvil/metal/repair_tin_can",
+          "text": "这个罐子必须像普通脏锡罐一样先清洗干净。然后可以在$(thing)铁砧$()上修复。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "artisanal:crafting/metal/remove_can_traits",
+          "text": "由于罐头是通过加热消毒的，它们有时会获得食物特性，如$(thing)木炭烤制$()或$(thing)木材烤制$()。这些特性没有实际效果，因为消毒后的罐头不会过期，但为了美观或堆叠目的，可以将罐头放在合成栏中移除这些特性。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "artisanal:metal/tinplate": 1,
+      "artisanal:metal/tin_can": 3,
+      "artisanal:metal/sealed_tin_can": 4,
+      "artisanal:metal/sterilized_tin_can": 6,
+      "artisanal:metal/dirty_tin_can": 8,
+      "artisanal:metal/dirty_dented_tin_can": 8,
+      "artisanal:metal/can_opener/bismuth_bronze": 9,
+      "artisanal:metal/can_opener/black_bronze": 9,
+      "artisanal:metal/can_opener/bronze": 9,
+      "artisanal:metal/can_opener/copper": 9,
+      "artisanal:metal/can_opener/wrought_iron": 9,
+      "artisanal:metal/can_opener/steel": 9,
+      "artisanal:metal/can_opener/black_steel": 9,
+      "artisanal:metal/can_opener/blue_steel": 9,
+      "artisanal:metal/can_opener/red_steel": 9,
+      "artisanal:metal/circle_blade/bismuth_bronze": 10,
+      "artisanal:metal/circle_blade/black_bronze": 10,
+      "artisanal:metal/circle_blade/bronze": 10,
+      "artisanal:metal/circle_blade/copper": 10,
+      "artisanal:metal/circle_blade/wrought_iron": 10,
+      "artisanal:metal/circle_blade/steel": 10,
+      "artisanal:metal/circle_blade/black_steel": 10,
+      "artisanal:metal/circle_blade/blue_steel": 10,
+      "artisanal:metal/circle_blade/red_steel": 10,
+      "artisanal:metal/dented_tin_can": 12
+  }
+}

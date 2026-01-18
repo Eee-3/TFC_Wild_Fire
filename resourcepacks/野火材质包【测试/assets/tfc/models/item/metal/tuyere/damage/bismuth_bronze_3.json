@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "tfc:item/metal/tuyere/bismuth_bronze_3"
-    }
-}

@@ -1,0 +1,50 @@
+{
+  "name": "筋腱加工",
+  "category": "tfc:bsa",
+  "icon": "bsa:sinew_string",
+  "pages": [
+      {
+          "type": "patchouli:spotlight",
+          "item": {
+              "tag": "bsa:sinew_display"
+          },
+          "text": "大多数大型动物会掉落筋腱，筋腱可以被加工成$(thing)筋腱线$()。$(br)$(br)加工筋腱的第一步是将其放在地上晾干。这需要48小时（两个游戏日），之后会得到$(thing)干筋腱$()。"
+      },
+      {
+          "type": "patchouli:multiblock",
+          "name": "晾干筋腱",
+          "multiblock": {
+              "mapping": {
+                  "0": "bsa:sinew[dried=false]",
+                  "D": "tfc:grass/loam"
+              },
+              "pattern": [
+                  [
+                      "0"
+                  ],
+                  [
+                      "D"
+                  ]
+              ]
+          },
+          "enable_visualize": false
+      },
+      {
+          "type": "tfc:anvil_recipe",
+          "recipe": "bsa:anvil/pounded_sinew",
+          "text": "筋腱晾干后，可以在铁砧上捶打，制成$(thing)捶打后的筋腱$()。$(br)$(br)如果你还没有金属铁砧，也可以在$(l:tfc:getting_started/primitive_anvils)原始铁砧$()上进行这个操作。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/sinew_string",
+          "text": "最后，捶打后的筋腱可以制作成$(thing)筋腱线$()。$(br)$(br)此外，筋腱线可以用作$(l:tfc:bsa/tool_bindings)工具绑定材料$()，让你的石器工具获得$(thing)完美锻造！$()特性。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "bsa:sinew": 0,
+      "bsa:dried_sinew": 0,
+      "bsa:pounded_sinew": 0,
+      "bsa:sinew_string": 0
+  }
+}

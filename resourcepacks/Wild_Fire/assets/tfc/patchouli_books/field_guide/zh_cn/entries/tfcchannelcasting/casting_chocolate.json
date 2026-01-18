@@ -1,0 +1,40 @@
+{
+  "name": "巧克力浇铸",
+  "category": "tfc:tfcchannelcasting",
+  "icon": "tfcchannelcasting:food/milk_chocolate_heart",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "以下内容仅在安装了Fermalife时可用。$(thing)巧克力$()不必只做成单调的块状！将$(thing)白巧克力$()、$(thing)牛奶巧克力$()或$(thing)黑巧克力$()在$(thing)容器$()或$(thing)坩埚$()中融化，然后倒入模具中，就能得到巧克力甜点。巧克力甜点有三种类型：$(thing)心形巧克力$()、$(thing)铃铛巧克力$()和$(thing)小刀巧克力$()。每种都是通过将巧克力倒入不同的模具中制成的。"
+      },
+      {
+          "type": "tfc:knapping_recipe",
+          "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+          "text": "制作一个$(thing)心形模具$()，用于制作$(thing)心形$()巧克力。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "巧克力甜点提供与巧克力棒相同的营养，但食用速度更快。然而，如果在一年中的特定时间制作这些甜点，它们将获得一种特性，使营养加倍。$(thing)巧克力心形甜点$()在2月获得$(thing)浪漫的$()特性，$(thing)巧克力冬季铃铛甜点$()在12月获得$(thing)节日的$()特性，$(thing)巧克力糖果小刀甜点$()在10月获得$(thing)惊悚的$()特性。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "此外，甜点可以$(thing)填充馅料$()以获得额外的好处。填充$(thing)果酱$()的甜点有额外的$(thing)水果$()营养。填充$(thing)酒精$()的甜点会给予正面的药水效果。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+          "text": "食用填充$(thing)甜酒$()的巧克力会获得速度加成。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+          "text": "食用填充$(thing)烈酒$()的巧克力会获得伤害抗性。"
+      },
+      {
+          "type": "tfc:sealed_barrel_recipe",
+          "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+          "text": "食用填充$(thing)威士忌$()的巧克力会获得急迫效果。"
+      }
+  ],
+  "read_by_default": true
+}

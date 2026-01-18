@@ -1,0 +1,8 @@
+{
+  "filter":{
+    "rarity":"common"
+},
+  "priority": 1501,
+  "panel": "obscure_tooltips:common"
+
+}

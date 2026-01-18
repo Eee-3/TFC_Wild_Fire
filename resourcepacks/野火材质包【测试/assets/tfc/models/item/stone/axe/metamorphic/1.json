@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "tfc:item/stone/axe/metamorphic/1"
-    }
-}

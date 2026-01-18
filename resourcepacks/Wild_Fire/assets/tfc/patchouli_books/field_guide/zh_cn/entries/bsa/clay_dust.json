@@ -1,0 +1,35 @@
+{
+  "name": "回收利用黏土制品",
+  "category": "tfc:bsa",
+  "icon": "bsa:dust/clay",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": "现在，所有陶瓷制品都可以被砸成黏土粉，其所含的黏土可重新用于其他物品的制作。$(br2)如果该物品的制作配方产出为一个物品，砸毁后可获得 5 份黏土粉；若配方产出超过 1 个物品，则砸毁后可获得 1 份黏土粉。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:ceramic/dust_1",
+          "recipe2": "bsa:ceramic/dust_5"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/clay_from_clay_dust_1",
+          "recipe2": "bsa:crafting/clay_from_clay_dust_4"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/clay_from_clay_dust_8",
+          "text": "通过将黏土粉与水罐合成，可以将其重新制成黏土。"
+      },
+      {
+          "type": "tfc:instant_barrel_recipe",
+          "recipe": "bsa:barrel/clay_from_clay_dust",
+          "text": "一旦你拥有了一个桶，就能更高效地将黏土粉重新制成黏土。"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "bsa:dust/clay": 0
+  }
+}

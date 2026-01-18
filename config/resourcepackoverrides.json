@@ -1,0 +1,19 @@
+{
+  "schema_version": "2",
+  "default_packs": [
+    "Wild_Fire",
+    "Vexxed_Visuals_TFC_v1.2.7.1",
+    "IE Reimmersed v1.0 Forge",
+    "§3§l水产业2 §f§l材质 §a§l0.2.1.zip",
+    "MCA_resourcepack-V3.1.1.zip",
+    "3D itens",
+    "Parcool Refurbishment V1.0.zip",
+    "ImmersiveResprites-1.1.zip",
+    "Create Touch-Ups v1.0"
+  ],
+  "server": {
+    "default_position": "TOP",
+    "force_compatible": true,
+    "fixed_position": false
+    }
+  }

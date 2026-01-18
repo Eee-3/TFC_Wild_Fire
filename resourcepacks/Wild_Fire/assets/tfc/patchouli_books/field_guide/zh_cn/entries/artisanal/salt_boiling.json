@@ -1,0 +1,22 @@
+{
+  "name": "盐的制作",
+  "category": "tfc:artisanal",
+  "icon": "tfc:powder/salt",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": ""
+      },
+      {
+          "type": "patchouli:image",
+          "images": [
+              "artisanal:textures/gui/book/salt_pot_recipe.png"
+          ],
+          "text": "可以通过在锅中煮干盐水来提取盐！"
+      }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+      "tfc:powder/salt": 1
+  }
+}

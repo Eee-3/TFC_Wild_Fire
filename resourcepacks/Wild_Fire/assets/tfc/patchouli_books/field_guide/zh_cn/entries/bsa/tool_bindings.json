@@ -1,0 +1,50 @@
+{
+  "name": "工具绑定",
+  "category": "tfc:bsa",
+  "icon": "minecraft:string",
+  "pages": [
+      {
+          "type": "patchouli:text",
+          "text": ""
+      },
+      {
+          "type": "patchouli:text",
+          "text": "在《更好的石器时代》中，石头和$(l:tfc:bsa/flint)Flint$()工具头可以与它们的手柄绑定。如果没有绑定，工具的耐久度会受到惩罚。然而，更坚固的绑定也会为用于制作的工具提供更高的锻造加成。"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "当你首次加载群峦传说的世界时，你的第一批工具很可能在工具头和手柄之间完全没有任何形式的绑定。这是通过一种称为“装柄”的过程完成的，即把手柄劈开，将工具头楔入裂缝中，靠摩擦力固定在那里。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "text": "由于没有任何东西将工具头固定在手柄上，这种工具极其脆弱，制作出来时只有一半的耐久度。",
+          "recipe": "bsa:crafting/stone/knife/igneous_extrusive/no_binding"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "一旦你装柄制作好了一把石刀，你可以用它来割破高草，从而获得$(bold)Straw$()，这些可以用来更牢固地绑定工具。$(br)$(br)如果你运气好，可能会在地上找到一些$(bold)Dead Grass$()，这样你甚至无需装柄制作石刀就能做到这一点。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/axe/igneous_extrusive/weak_binding"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "在你的旅程中，你可能会发现其他更坚韧的植物，用它们能更有效地绑定你的工具。用这些植物绑定的工具具有$(bold)Well Forged$()特性。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/shovel/flint/medium_binding"
+      },
+      {
+          "type": "patchouli:text",
+          "text": "最高等级的工具绑定材料是经过加工的线状物品，如$(bold)Jute Fibers$()、$(bold)Wool Yarn$()，或$(bold)$(l:tfc:bsa/sinew_processing)Sinew String$()。$(bold)Spider Silk$()，由蜘蛛和蜘蛛网掉落，也属于这一等级。$(br)$(br)用这些材料绑定的工具具有$(bold)Perfectly Forged$()特性。"
+      },
+      {
+          "type": "patchouli:crafting",
+          "recipe": "bsa:crafting/stone/javelin/igneous_extrusive/strong_binding"
+      }
+  ],
+  "read_by_default": true,
+  "sortnum": -1
+}

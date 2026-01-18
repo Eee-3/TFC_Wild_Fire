@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tfc:item/metal/shovel/black_steel_3"
+    }
+}
