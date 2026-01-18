@@ -18,7 +18,8 @@
         },
         {
             "item": "alexscaves:primordial_tunic",
-            "count": 1
+            "count": 1,
+            "nbt":"{Damage:240}"
         },
         {
             "item": "farmersdelight:ham",

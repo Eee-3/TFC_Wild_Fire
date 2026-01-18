@@ -13,8 +13,9 @@
     },
     "startItems": [
         {
-            "item": "tfc:spawn_egg/sheep",
-            "count": 3
+            "item": "supplementaries:trapped_present",
+            "count": 3,
+            "nbt":"{BlockEntityTag:{ForgeCaps:{},ForgeData:{},Items:[{Count:1b,Slot:0b,id:\"tfc:spawn_egg/sheep\"}],id:\"supplementaries:trapped_present\"},RepairCost:0,display:{Lore:['\"(+NBT)\"'],Name:'{\"text\":\"牧羊包裹\"}'}}"
         },
         {
             "item": "minecraft:lead",
@@ -26,7 +27,8 @@
         },
         {
             "item": "tfc:ceramic/jug",
-            "count": 1
+            "count": 1,
+            "nbt":"{fluid:{Amount:100,FluidName:\"firmalife:goat_milk\"}}"
         }
     ],
     "displayCondition": []
