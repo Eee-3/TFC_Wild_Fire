@@ -617,6 +617,7 @@ ServerEvents.recipes(e => {
     e.remove({ id: `everycomp:fs/${wood.mod}/${wood.wooden}_2` })
     e.remove({ id: `everycomp:fs/${wood.mod}/${wood.wooden}_4` })
     e.remove({ id: `everycomp:vf/${wood.mod}/${wood.wooden}_stool` })
+    e.remove({ id: `everycomp:rfm/${wood.mod}/${wood.wooden}_crate` })
   })
 
 

@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
         {
             a: 'minecraft:charcoal',
             b: '#forge:tools/knives',
-        })
+        }).replaceIngredient({ item: '#forge:tools/knives', }, '#forge:tools/knives',)//不消耗物品
     event.shaped('4x kubejs:charcoal_stick',
         [
             'ab',
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
         {
             a: 'minecraft:coal',
             b: '#forge:tools/knives',
-        })
+        }).replaceIngredient({ item: '#forge:tools/knives', }, '#forge:tools/knives',)//不消耗物品
     //炭笔
 
     event.shaped('minecraft:map',
@@ -343,8 +343,8 @@ ServerEvents.recipes(event => {
 
     event.shaped('map_atlases:atlas',
         [
-            'ab ',
-            'bbc'
+            'a ',
+            'bc'
         ],
         {
             a: '#forge:leather',
@@ -960,6 +960,17 @@ ServerEvents.recipes(event => {
         ], {
             a: `${wood.mod}:wood/planks/${wood.wooden}_fence`,//栅栏
             b: `${wood.mod}:wood/planks/${wood.wooden}_slab`,//台阶
+            c: `minecraft:chest`,
+
+        })
+        
+        event.shaped(`everycomp:rfm/${wood.mod}/${wood.wooden}_crate`, [
+            'bab',
+            'bcb',
+            'bab'
+        ], {
+            a: 'firmaciv:copper_bolt',
+            b: `${wood.mod}:wood/lumber/${wood.wooden}`,//木材
             c: `minecraft:chest`,
 
         })

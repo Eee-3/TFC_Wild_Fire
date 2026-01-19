@@ -323,6 +323,7 @@ ServerEvents.tags("block", event => {
                 "tfc:plant/field_horsetail"
 
             ])
+        event.add('sliceanddice:allowed_tools','#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',
             [
