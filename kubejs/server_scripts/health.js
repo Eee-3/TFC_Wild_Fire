@@ -1,10 +1,12 @@
+/*暂时禁用肾上腺素效果
+
 const $BodyDamageUtil = Java.loadClass('sfiomn.legendarysurvivaloverhaul.api.bodydamage.BodyDamageUtil')
 const $BodyPartEnum = Java.loadClass("sfiomn.legendarysurvivaloverhaul.api.bodydamage.BodyPartEnum")
 /**
  * @param {Internal.LivingEntityHurtEventJS} event 
  * @param {number} time 单位是s
- */
-function cooldown(event, time){
+ *//*
+function cooldown(event, time) {
   //设置冷却为1，防止重复触发
   wait = 1
   //计时器计时time秒后，将冷却设为0
@@ -16,6 +18,7 @@ function cooldown(event, time){
  * 
  * @param {Internal.LivingEntityHurtEventJS} e 
  */
+/*
 function adrenaline(e){
   //首先给予玩家painkiller以及speed效果，持续600tick
   e.entity.potionEffects.add("legendarysurvivaloverhaul:painkiller", 600)
@@ -32,7 +35,8 @@ function adrenaline(e){
     })
   })
 }
-
+*/
+/*
 PlayerEvents.tick(e =>{
   const { player } = e
   // 每400tick恢复一次 HealthRatio 小于 1 的部位
@@ -104,3 +108,4 @@ EntityEvents.hurt(e => {
     }
   }
 })
+*/

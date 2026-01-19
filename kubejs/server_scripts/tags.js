@@ -569,24 +569,27 @@ ServerEvents.tags("block", event => {
 
 ServerEvents.tags("item", event => {
     //删除tag
-    event.remove('sns:allowed_in_ore_sack', [
-        "tfc:ore/rich_cassiterite",
-        "tfc:ore/rich_native_silver",
-        "tfc:ore/rich_hematite",
-        "tfc:ore/rich_native_gold",
-        "tfc:ore/rich_native_copper",
-        "tfc_ie_addon:ore/rich_uraninite",
-        "tfc_ie_addon:ore/rich_galena",
-        "tfc_ie_addon:ore/rich_bauxite",
-        "firmalife:ore/rich_chromite",
-        "tfc:ore/rich_bismuthinite",
-        "tfc:ore/rich_garnierite",
-        "tfc:ore/rich_malachite",
-        "tfc:ore/rich_magnetite",
-        "tfc:ore/rich_limonite",
-        "tfc:ore/rich_sphalerite",
-        "tfc:ore/rich_tetrahedrite",
-    ])
+    event.remove('tfc:lumber', 'tfc_ie_addon:treated_wood_lumber'
+    ),
+
+        event.remove('sns:allowed_in_ore_sack', [
+            "tfc:ore/rich_cassiterite",
+            "tfc:ore/rich_native_silver",
+            "tfc:ore/rich_hematite",
+            "tfc:ore/rich_native_gold",
+            "tfc:ore/rich_native_copper",
+            "tfc_ie_addon:ore/rich_uraninite",
+            "tfc_ie_addon:ore/rich_galena",
+            "tfc_ie_addon:ore/rich_bauxite",
+            "firmalife:ore/rich_chromite",
+            "tfc:ore/rich_bismuthinite",
+            "tfc:ore/rich_garnierite",
+            "tfc:ore/rich_malachite",
+            "tfc:ore/rich_magnetite",
+            "tfc:ore/rich_limonite",
+            "tfc:ore/rich_sphalerite",
+            "tfc:ore/rich_tetrahedrite",
+        ])
     /*
     
     //删除群峦的箱子tag

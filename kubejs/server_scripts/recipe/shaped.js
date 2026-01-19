@@ -244,7 +244,14 @@ ServerEvents.recipes(event => {
         }).damageIngredient({ tag: '#tfc:hammers' }, 10)//水桶
 
 
-
+    event.shaped('4x brewinandchewin:tankard',
+        [
+            'a a',
+            'a a',
+            ' a '],
+        {
+            a: '#tfc:lumber'
+        })//木杯
 
 
     event.shaped('legendarysurvivaloverhaul:healing_herbs',
@@ -263,17 +270,17 @@ ServerEvents.recipes(event => {
             {
                 a: '#kubejs:can_better_make_herb',
             }),
-    //草药
+        //草药
 
-    event.shaped('immersiveengineering:sawblade',
-        [
-            ' a ',
-            'aba',
-            ' a '],
-        {
-            a: TFC.ingredient.heatable('tfc:metal/rod/wrought_iron', 1200, null),
-            b: TFC.ingredient.heatable('tfc:metal/sheet/wrought_iron', 1200, null),
-        })//锯子
+        event.shaped('immersiveengineering:sawblade',
+            [
+                ' a ',
+                'aba',
+                ' a '],
+            {
+                a: TFC.ingredient.heatable('tfc:metal/rod/wrought_iron', 1200, null),
+                b: TFC.ingredient.heatable('tfc:metal/sheet/wrought_iron', 1200, null),
+            })//锯子
 
     event.shaped('1x kubejs:corundum_brick_block',
         [
@@ -697,7 +704,68 @@ ServerEvents.recipes(event => {
 
         })
     //奶酪布配方
+//=============================================================
+//=======================功能性存储配方==========================
+//=============================================================
+    event.shaped('functionalstorage:linking_tool',
+        [
+            'aab',
+            'cc'],
+        {
+            a: 'tfc:metal/sheet/wrought_iron',
+            b: 'immersiveengineering:wire_copper',
+            c: 'minecraft:light_blue_dye'
+        })//链接工具
 
+    event.shaped('functionalstorage:configuration_tool',
+        [
+            'aab',
+            'cc'],
+        {
+            a: 'tfc:metal/sheet/wrought_iron',
+            b: 'immersiveengineering:wire_copper',
+            c: 'minecraft:lime_dye'
+        })//配置工具
+
+    event.shaped('functionalstorage:fluid_1',
+        [
+            'dad',
+            'abc',
+            'dad'
+        ],
+        {
+            a: 'tfc:metal/sheet/wrought_iron',
+            b: 'create:fluid_tank',
+            c: '#forge:glass',
+            d: 'firmaciv:copper_bolt'
+        })//流体储罐
+        
+    event.shaped('functionalstorage:fluid_2',
+        [
+            'dad',
+            'bcb',
+            'dad'
+        ],
+        {
+            a: 'tfc:metal/sheet/wrought_iron',
+            b: 'create:fluid_tank',
+            c: '#forge:glass',
+            d: 'firmaciv:copper_bolt'
+        })//流体储罐2
+        
+    event.shaped('functionalstorage:fluid_4',
+        [
+            'bcb',
+            'dad',
+            'bcb'
+        ],
+        {
+            a: 'tfc:metal/double_sheet/wrought_iron',
+            b: 'create:fluid_tank',
+            c: '#forge:glass',
+            d: 'firmaciv:copper_bolt'
+        })//流体储罐4
+//=============================================================
     event.shaped('immersiveengineering:steel_scaffolding_grate_top', [
         'ab'
     ],
