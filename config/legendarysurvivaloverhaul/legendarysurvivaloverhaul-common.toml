@@ -235,7 +235,7 @@
 		[temperature.advanced.temperature-modification]
 			# Amount of time in ticks between 2 player temperature modification. The bigger is this value, the more time it takes between temperature adjustments.
 			#Range: > 5
-			"Temperature Tick Time" = 20
+			"Temperature Tick Time" = 40
 			# Maximum amount of temperature the player's temperature can be modified at each temperature tick time.
 			# Correspond to the amount of temperature given when temperature difference is maximum, meaning 40.
 			#Range: 0.1 ~ 2.147483647E9

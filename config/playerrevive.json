@@ -33,7 +33,7 @@
   "revive": {
     "requiredReviveProgress": 100.0,
     "progressPerPlayer": 1.0,
-    "exhaustion": 0.5,
+    "exhaustion": 0.2,
     "haltBleedTime": true,
     "abortOnDamage": false,
     "resetProgress": false,
