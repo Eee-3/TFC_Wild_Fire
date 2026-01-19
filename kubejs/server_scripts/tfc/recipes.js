@@ -280,6 +280,7 @@ ServerEvents.recipes(event => {
     'caribou_fur',
     'grizzly_bear_fur',
     'black_bear_fur',
+    
     //'tfc:large_sheepskin_hide'
   ];
   for (var i = 0; i < furAndLeatherItems.length; i++) {

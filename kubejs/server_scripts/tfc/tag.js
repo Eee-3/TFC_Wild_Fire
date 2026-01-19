@@ -29,6 +29,9 @@ ServerEvents.tags('minecraft:item', event => {//
     event.add('kubejs:nohot', 'kubejs:rubber_hot_water_bag');
     event.add('kubejs:nohot', 'kubejs:metal_hot_water_bag');
 
+     event.add('textile:animal_furs', 'textile:crocodile_leather');//鳄鱼皮
+     event.add('tfc:scrapable', 'textile:crocodile_leather');//鳄鱼皮
+
 
     const ore = ['tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
 
