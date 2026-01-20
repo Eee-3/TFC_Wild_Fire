@@ -546,7 +546,7 @@ ServerEvents.recipes(event => {
                     "count": 2
                 },
                 "c": {
-                    "item": "tfcoreprocessing:kindle/coke_charcoal_briquette",
+                    "item": "kubejs:charcoal_briquette",
                     "count": 1
                 },
                 "d": {
@@ -578,7 +578,7 @@ ServerEvents.recipes(event => {
                     "count": 2
                 },
                 "c": {
-                    "item": "tfcoreprocessing:kindle/coke_charcoal_briquette",
+                    "item": "kubejs:charcoal_briquette",
                     "count": 1
                 },
                 "d": {

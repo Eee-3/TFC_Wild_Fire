@@ -42,7 +42,7 @@ PlayerEvents.tick(event => {
     // 如果玩家的温度等级（可能是另一种温度计量方式）低于10：
     // 1. 增加玩家的 exhaustion（饥饿消耗速度）
     // 2. 轻微提升体温（可能是模拟寒冷环境下的生理反应）
-    if (CapabilityUtil.getTempCapability(player).getTemperatureLevel() < 12) {
+    if (CapabilityUtil.getTempCapability(player).getTemperatureLevel() < 5) {
         player.foodData.addExhaustion(0.02)
        Temperature += 0.005
     }
