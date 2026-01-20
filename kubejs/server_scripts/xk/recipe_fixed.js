@@ -66,6 +66,13 @@ ServerEvents.recipes(event => {
   create.milling('4x tfc:powder/amethyst', 'tfc:gem/amethyst') // 紫水晶宝石 => 4份紫水晶粉末
   create.milling('4x tfc:powder/amethyst', 'tfc:ore/amethyst') // 紫水晶矿石 => 4份紫水晶粉末 
 
+  create.milling('4x createdieselgenerators:wood_chip', 'farmersdelight:tree_bark') // 树皮=木屑
+  create.milling('6x createdieselgenerators:wood_chip', 'tfc:stick_bunch') // 木棍堆=木屑
+  create.milling('12x createdieselgenerators:wood_chip', 'tfc:stick_bundle') // 木棍捆=木屑
+  create.milling('1x createdieselgenerators:wood_chip', '#minecraft:saplings') // 树苗=木屑
+
+  
+  create.milling('1x immersiveengineering:dust_coke', 'immersiveengineering:coal_coke') // 焦煤粉
 
   event.custom({
     "type": "vintageimprovements:curving",

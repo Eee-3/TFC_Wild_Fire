@@ -18,11 +18,11 @@ ServerEvents.recipes(event => {
     event.shaped('tfc:blast_furnace', ['aba', 'cdc', 'aea'], {
         a: 'tfc:metal/sheet/cast_iron', b: 'createmetallurgy:foundry_lid', c: 'tfc:metal/tuyere/wrought_iron', d: 'tfc:metal/bars/wrought_iron', e: 'tfc:crucible'
     }) //高炉
-    event.shaped('2x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
+    event.shaped('6x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
         a: 'tfc:metal/sheet/steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'
     }) //轻型工程块
-    event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
-        a: 'tfc:metal/sheet/black_steel', b: 'kubejs:material_component_black_steel', c: 'create:precision_mechanism'
+    event.shaped('4x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
+        a: 'tfc:metal/sheet/black_steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'
     }) //重型工程块
     event.shaped('minecraft:lead', ['aa ', 'aa ', '  a'], {
         a: 'farmersdelight:rope'
@@ -704,9 +704,20 @@ ServerEvents.recipes(event => {
 
         })
     //奶酪布配方
-//=============================================================
-//=======================功能性存储配方==========================
-//=============================================================
+    
+    event.shaped('siegemachines:beam', [
+
+        'aaa'
+    ],
+        {
+            a: '#valhelsia_structures:posts',
+
+        })
+    //木梁
+
+    //=============================================================
+    //=======================功能性存储配方==========================
+    //=============================================================
     event.shaped('functionalstorage:linking_tool',
         [
             'aab',
@@ -739,7 +750,7 @@ ServerEvents.recipes(event => {
             c: '#forge:glass',
             d: 'firmaciv:copper_bolt'
         })//流体储罐
-        
+
     event.shaped('functionalstorage:fluid_2',
         [
             'dad',
@@ -752,7 +763,7 @@ ServerEvents.recipes(event => {
             c: '#forge:glass',
             d: 'firmaciv:copper_bolt'
         })//流体储罐2
-        
+
     event.shaped('functionalstorage:fluid_4',
         [
             'bcb',
@@ -765,7 +776,46 @@ ServerEvents.recipes(event => {
             c: '#forge:glass',
             d: 'firmaciv:copper_bolt'
         })//流体储罐4
-//=============================================================
+
+    event.shaped('functionalstorage:simple_compacting_drawer',
+        [
+            'dbd',
+            'aca',
+            'dbd'
+        ],
+        {
+            a: 'minecraft:piston',
+            b: '#functionalstorage:drawer',
+            c: 'tfc:metal/sheet/wrought_iron',
+            d: 'tfc:metal/rod/wrought_iron'
+        })//压缩抽屉2
+
+    event.shaped('functionalstorage:compacting_drawer',
+        [
+            'dbd',
+            'aca',
+            'bdb'
+        ],
+        {
+            a: 'minecraft:piston',
+            b: '#functionalstorage:drawer',
+            c: 'tfc:metal/sheet/wrought_iron',
+            d: 'tfc:metal/rod/wrought_iron'
+        })//压缩抽屉3
+
+    event.shaped('functionalstorage:storage_controller',
+        [
+            'aba',
+            'dcd',
+            'aba'
+        ],
+        {
+            a: 'tfc:metal/double_sheet/wrought_iron',
+            b: 'tfc:metal/rod/wrought_iron',
+            c: 'functionalstorage:configuration_tool',
+            d: 'firmaciv:copper_bolt'
+        })//存储控制器
+    //=============================================================
     event.shaped('immersiveengineering:steel_scaffolding_grate_top', [
         'ab'
     ],
@@ -963,7 +1013,7 @@ ServerEvents.recipes(event => {
             c: `minecraft:chest`,
 
         })
-        
+
         event.shaped(`everycomp:rfm/${wood.mod}/${wood.wooden}_crate`, [
             'bab',
             'bcb',

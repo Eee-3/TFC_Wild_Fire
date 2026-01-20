@@ -789,6 +789,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'supplementaries:slice_map' })
   e.remove({ id: 'artisanal:barrel/dry_bagasse' })
   e.remove({ id: 'minecraft:shears' })
+  e.remove({ id: 'siegemachines:turret_base' })
+  e.remove({ id: 'siegemachines:beam' })
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })

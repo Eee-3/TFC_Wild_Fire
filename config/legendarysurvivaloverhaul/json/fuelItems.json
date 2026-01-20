@@ -35,10 +35,45 @@
     "thermalType": "COOLING",
     "fuelValue": 1620
   },
+
+
   "minecraft:charcoal": {
     "thermalType": "HEATING",
-    "fuelValue": 30
+    "fuelValue": 80
   },
+  "tfc:powder/charcoal": {
+    "thermalType": "HEATING",
+    "fuelValue": 20
+  },
+  "kubejs:charcoal_pellet": {
+    "thermalType": "HEATING",
+    "fuelValue": 40
+  },
+  "kubejs:coal_sustained_heat_pellet": {
+    "thermalType": "HEATING",
+    "fuelValue": 800
+  },
+  "kubejs:coal_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 800
+  },
+  "kubejs:charcoal_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 360
+  },
+  "kubejs:high_performance_fuel_briquette": {
+    "thermalType": "HEATING",
+    "fuelValue": 3000
+  },
+  "kubejs:high_performance_fuel_sustained_heat_pellet": {
+    "thermalType": "HEATING",
+    "fuelValue": 9000
+  },
+
+
+
+
+
   "minecraft:packed_ice": {
     "thermalType": "COOLING",
     "fuelValue": 180

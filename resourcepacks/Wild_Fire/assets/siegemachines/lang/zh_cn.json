@@ -17,8 +17,8 @@
 	"entity.siegemachines.ballista": "床弩",
 	"entity.siegemachines.battering_ram": "攻城锤",
 
-	"item.siegemachines.turret_base": "炮塔底座",
-	"item.siegemachines.beam": "发射横梁",
+	"item.siegemachines.turret_base": "木梁支架",
+	"item.siegemachines.beam": "大块木梁",
 	"item.siegemachines.counterweight": "配重块",
 	"item.siegemachines.barrel": "炮管",
 	"item.siegemachines.wheel": "攻城车轮",
