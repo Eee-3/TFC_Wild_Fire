@@ -1207,5 +1207,6 @@
   "item.kubejs.copper_arrow": "铜箭头",
   "item.kubejs.wrought_iron_arrow": "锻铁箭头",
   "item.kubejs.steel_arrow": "钢箭头",
-  "item.kubejs.black_steel_arrow": "黑钢箭头"
+  "item.kubejs.black_steel_arrow": "黑钢箭头",
+  "death.attack.empyrosis":"%s 被烫成了熟人"
 }

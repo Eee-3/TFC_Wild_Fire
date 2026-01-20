@@ -46,7 +46,7 @@
 		#If true, guns will automatically start reloading when fired with an empty magazine if ammo is available
 		enableAutoReload = true
 		#If true, allows flamethrowers to place fire on blocks
-		enableFirePlacement = true
+		enableFirePlacement = false
 		#Global multiplier for all turret gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from turrets.
 		#Range: 0.01 ~ 100.0
 		globalTurretDamageMultiplier = 1.0
@@ -54,10 +54,10 @@
 		enableSculkPurification = true
 		#The volume for Player Gunfire. Default is 8
 		#Range: 1 ~ 10
-		playerGunfireVolume = 8
+		playerGunfireVolume = 5
 		#The volume for Mob Gunfire. Default is 8
 		#Range: 1 ~ 10
-		mobGunfireVolume = 8
+		mobGunfireVolume = 5
 		#Global multiplier for mob fire rate. 1.0 = normal speed, 0.5 = faster (half delay), 2.0 = slower (double delay). Lower values = faster shooting.
 		#Range: 0.1 ~ 5.0
 		mobFireRateMultiplier = 1.0
@@ -218,7 +218,7 @@
 		#Base chance for progression-based gunner mobs to spawn (0.0 = never, 1.0 = always).
 		#This is the spawn chance on NORMAL difficulty. Thematic mobs use their own config.
 		#Range: 0.0 ~ 1.0
-		gunnerSpawnChance = 0.3
+		gunnerSpawnChance = 0.01
 		#If enabled, spawn chances scale with game difficulty.
 		#PEACEFUL: 50% of base chance, EASY: 75%, NORMAL: 100%, HARD: 150%
 		scaleToDifficulty = true
@@ -232,7 +232,7 @@
 	#Mini-Raid Configuration
 	[common.raids]
 		#If enabled, mini-raids can spawn at night based on player progression.
-		raidsEnabled = true
+		raidsEnabled = false
 		#Chance each night for a raid to spawn near a valid player (0.0 = never, 1.0 = always).
 		#Set to 0.0 to effectively disable raids without turning off the system entirely.
 		#Range: 0.0 ~ 1.0

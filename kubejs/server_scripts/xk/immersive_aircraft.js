@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
             ],
             "key": {
                 "a": {
-                    "item": 'textile:linen_cloth',
+                    "tag": 'kubejs:can_make_sail',
                     "count": 1
                 },
                 "c": {

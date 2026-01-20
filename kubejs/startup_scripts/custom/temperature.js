@@ -19,13 +19,13 @@ StartupEvents.init(event => {
     Config.setTemperatureEnum("heat_stroke", 32, 99)
     */
     // 霜冻：非常寒冷，可能导致冻伤
-    Config.setTemperatureEnum("frostbite", 0, 1)
+    Config.setTemperatureEnum("frostbite", 0, 4)
 
     // 寒冷：需要保暖的温度
-    Config.setTemperatureEnum("cold", 3, 10)
+    Config.setTemperatureEnum("cold", 4, 12)
 
     // 正常：舒适的温度范围
-    Config.setTemperatureEnum("normal", 10, 28)
+    Config.setTemperatureEnum("normal", 12, 28)
 
     // 炎热：需要降温的温度
     Config.setTemperatureEnum("hot", 28, 35)

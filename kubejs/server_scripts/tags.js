@@ -323,7 +323,15 @@ ServerEvents.tags("block", event => {
                 "tfc:plant/field_horsetail"
 
             ])
-        event.add('sliceanddice:allowed_tools','#minecraft:tools')
+        //能制作风帆的材料
+        event.add('kubejs:can_make_sail',
+            [
+                "textile:linen_cloth",
+                "sns:reinforced_fabric",
+                "tfc:burlap_cloth"
+
+            ])
+        event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',
             [

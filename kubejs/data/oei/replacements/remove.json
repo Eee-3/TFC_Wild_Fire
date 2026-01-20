@@ -164,8 +164,7 @@
             "immersiveengineering:toolupgrade_revolver_bayonet",
             "immersiveengineering:toolupgrade_revolver_magazine",
             "immersiveengineering:toolupgrade_revolver_electro",
-            "immersiveengineering:turret_gun",
-            "alexsmobs:animal_dictionary"
+            "immersiveengineering:turret_gun"
         ],
         "resultItems": "minecraft:barrier"
     },
@@ -179,7 +178,8 @@
             "artifacts:snorkel",
             "artifacts:everlasting_beef",
             "artifacts:digging_claws",
-            "patchouli:guide_book"
+            "patchouli:guide_book",
+            "alexsmobs:animal_dictionary"
         ],
         "resultItems": "minecraft:air"
     }

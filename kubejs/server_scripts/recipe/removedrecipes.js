@@ -791,7 +791,9 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'minecraft:shears' })
   e.remove({ id: 'siegemachines:turret_base' })
   e.remove({ id: 'siegemachines:beam' })
-
+  e.remove({ id: 'immersiveengineering:crafting/watermill' })
+  e.remove({ id: 'immersiveengineering:crafting/waterwheel_segment' })
+  e.remove({ id: 'scguns:create/mechanical_crafting/fencer_carabine' })
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
   e.remove({ id: 'tfc_ie_addon:anvil/toolupgrade_revolver_bayonet' })
