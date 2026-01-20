@@ -44,7 +44,7 @@ PlayerEvents.tick(event => {
     // 2. 轻微提升体温（可能是模拟寒冷环境下的生理反应）
     if (CapabilityUtil.getTempCapability(player).getTemperatureLevel() < 5) {
         player.foodData.addExhaustion(0.02)
-       Temperature += 0.005
+       Temperature += 0.1
     }
     
     // 更新食物温度：减去本次消耗的热量，且不低于0（防止负值）
