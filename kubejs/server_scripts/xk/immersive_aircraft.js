@@ -311,7 +311,7 @@ ServerEvents.recipes(event => {
             },
             "result": {
                 "item": "immersive_aircraft:sail",
-                "count": 1
+                "count": 3
             }
         }
     ).id('kubejs:immersive_aircraft/sail')

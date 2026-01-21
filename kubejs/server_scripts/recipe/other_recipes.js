@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
   tfc.casting(
     'kubejs:trachyandesite_alloy',
     'kubejs:rock_powder',
-    TFC.fluidStackIngredient('tfc:metal/zinc', 100),
+    TFC.fluidStackIngredient('tfc:metal/zinc', 50),
     1
   )
   tfc.pot(
@@ -428,6 +428,8 @@ ServerEvents.recipes(event => {
   create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
   create.compacting('tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
 
+  create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/cast_iron', 25)]).heated()//粗安山合金-铸铁
+  create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/zinc', 40)]).heated()//粗安山合金-锌
 
   create.mixing(Fluid.of('kubejs:pulp', 75), ['4x createdieselgenerators:wood_chip', Fluid.of('tfc:lye', 50)]).heated()//纸浆
   create.compacting('kubejs:pulp_film', Fluid.of('kubejs:pulp', 5))//纸浆薄膜

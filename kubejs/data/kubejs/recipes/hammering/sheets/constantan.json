@@ -13,7 +13,7 @@
     }
   ],
   "type": "vintageimprovements:hammering",
-	"hammerBlows": 8,
+	"hammerBlows": 4,
 	"ingredients": [
 	  {
 	    "type": "tfc:heatable",

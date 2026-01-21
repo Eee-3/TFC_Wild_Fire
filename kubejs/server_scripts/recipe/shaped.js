@@ -140,6 +140,19 @@ ServerEvents.recipes(event => {
     }) //石切机
 
 
+    event.shaped('minecraft:stonecutter',
+        [
+            ' a ',
+            'bbc',
+            'd e'
+        ], {
+        a: 'immersiveengineering:hammer',
+        b: '#forge:treated_wood_slab',
+        c: 'create:empty_schematic',
+        d: 'immersiveengineering:craftingtable',
+        e: 'immersiveengineering:treated_fence'
+    }).replaceIngredient({ item: 'immersiveengineering:hammer', }, 'immersiveengineering:hammer',)//不消耗物品
+    //工程师装配台
 
     /*event.forEachRecipe( //合成箱子
         {
@@ -424,7 +437,7 @@ ServerEvents.recipes(event => {
             b: '#tfc:lumber'
         }
     ) //小型铁流体储罐
-    event.shaped('2x create:belt_connector',
+    event.shaped('4x create:belt_connector',
         [
             'aba',
         ],
@@ -432,7 +445,7 @@ ServerEvents.recipes(event => {
             a: '#kubejs:fabric',
             b: '#kubejs:bindings',
         })//传送带
-    event.shaped('2x create:belt_connector',
+    event.shaped('5x create:belt_connector',
         [
             'aaa',
         ],
