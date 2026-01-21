@@ -6,7 +6,10 @@ ServerEvents.tags('minecraft:block', event => {//
 
 })
 ServerEvents.tags('minecraft:item', event => {//
-
+    const buliao =['immersiveengineering:ersatz_leather', 'firmalife:pineapple_leather', 'tfc:wool_cloth', 'textile:cotton_cloth', 'textile:linen_cloth', 'minecraft:leather']
+buliao.forEach(item => {
+    event.add('kubejs:fabric', item);//布料
+})
  event.add('kubejs:4ore', "immersiveengineering:dust_iron");//热矿粉
    
 

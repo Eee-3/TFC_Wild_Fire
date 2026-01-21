@@ -429,9 +429,16 @@ ServerEvents.recipes(event => {
             'aba',
         ],
         {
-            a: 'minecraft:leather',
-            b: 'tfc:wool_yarn',
+            a: '#kubejs:fabric',
+            b: '#kubejs:bindings',
         })//传送带
+        event.shaped('2x create:belt_connector',
+        [
+            'aaa',
+        ],
+        {
+            a: "afc:rubber_bar",
+        })//传送带2
     event.shaped('legendarysurvivaloverhaul:sewing_table',
         [
             'abc',

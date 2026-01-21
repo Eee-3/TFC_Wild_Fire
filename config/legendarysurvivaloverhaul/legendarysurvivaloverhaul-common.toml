@@ -219,7 +219,7 @@
 	[temperature.advanced]
 		# Maximum influence distance, in blocks, where thermal sources will have an effect on temperature.
 		#Range: 1 ~ 40
-		"Temperature Influence Maximum Distance" = 20
+		"Temperature Influence Maximum Distance" = 15
 		# How strongly influence distance above the player is reduced for thermal sources to have an effect on temperature.
 		# Example max dist is 10, up mult is 0.75 -> max distance is 10 * 0.75 = 7.5 blocks above the player.
 		# Logic is that heat goes up, the strength of the heat source above the player is decreased faster with distance.
