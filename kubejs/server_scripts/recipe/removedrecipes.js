@@ -4,9 +4,10 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'eidolon' })
   e.remove({ mod: 'immersive_melodies' })
   e.remove({ mod: 'functionalstorage' })
-  
+  e.remove({ mod: 'scguns' })
 
   const iddd = [
+    'firmaciv:anvil/copper_bolt',
     "sns:heating/pack_frame",
     "sns:crafting/pack_frame",
     "minecraft:stonecutter",
@@ -148,6 +149,7 @@ ServerEvents.recipes(e => {
     'tfc:pot/sulfuric_acid_primitive',
     'tfc_ie_addon:barrel/redstone_acid',
     'create:crafting/materials/rose_quartz'
+
   ]
   iddd.forEach(id => { e.remove({ id: id }); });
 
@@ -791,9 +793,7 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'minecraft:shears' })
   e.remove({ id: 'siegemachines:turret_base' })
   e.remove({ id: 'siegemachines:beam' })
-  e.remove({ id: 'immersiveengineering:crafting/watermill' })
-  e.remove({ id: 'immersiveengineering:crafting/waterwheel_segment' })
-  e.remove({ id: 'scguns:create/mechanical_crafting/fencer_carabine' })
+
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })
   e.remove({ id: 'tfc_ie_addon:anvil/toolupgrade_revolver_bayonet' })

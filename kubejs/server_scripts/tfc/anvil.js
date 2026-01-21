@@ -20,11 +20,27 @@ ServerEvents.recipes(e => {
       item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红秘银
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
+   tfc.anvil(
+    "scguns:stone_gun_barrel",
+    "tfc:metal/sheet/cast_iron",
+    [
+      'hit_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false)//土枪管
+   tfc.anvil(
+    "scguns:heavy_gun_barrel",
+    "tfc:metal/double_sheet/cast_iron",
+    [
+      'hit_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false)//重型土枪管
     tfc.anvil(
     'supplementaries:bubble_blower',
     'immersiveengineering:stick_aluminum',
     [
-      'hit_any',
+      'hit_any'
     ]
   ).tier(1).bonus(false).id("kubejs:tfc/anvil/bubble_blower/anvil")//泡泡环
 

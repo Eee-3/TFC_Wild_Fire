@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
-    event.shapeless('2x kubejs:wood_pellet', ['3x createdieselgenerators:wood_chip', 'tfc:daub']);//木屑颗粒
     event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', 'tfc:daub']);//木炭颗粒
     event.shapeless('2x kubejs:coal_pellet', ['kubejs:coal_powder', '2x tfc:powder/charcoal', 'tfc:daub']);//煤炭颗粒
     event.shapeless('2x kubejs:charcoal_briquette', ['8x kubejs:charcoal_pellet', 'tfc:daub']);//木屑块
@@ -29,7 +28,15 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:wood_sustained_heat_pellet', ['7x kubejs:charcoal_pellet', '2x tfc:daub']);//木屑保温燃料块
     event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x tfc:daub']);//煤炭保温燃料块
     //event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x tfc:daub']);//高性能保温燃料块
-   event.shapeless("4x kubejs:warm_warmer", ["tfc:powder/salt","tfc:powder/charcoal","immersiveengineering:dust_iron","kubejs:rock_powder","tfc:glue","minecraft:paper"]);//暖宝宝
+
+    event.shapeless("2x scguns:powder_and_ball", ["2x minecraft:flint", "minecraft:gunpowder", "minecraft:paper"]);//纸包火药弹
+    event.shapeless("2x scguns:grapeshot", ["3x minecraft:flint", "2x minecraft:gunpowder", "minecraft:paper"]);//纸包火药弹
+
+
+
+
+
+    event.shapeless("4x kubejs:warm_warmer", ["tfc:powder/salt", "tfc:powder/charcoal", "immersiveengineering:dust_iron", "kubejs:rock_powder", "tfc:glue", "minecraft:paper"]);//暖宝宝
     kubejs.shapeless(
         "kubejs:rock_powder",
         [

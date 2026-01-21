@@ -1,3 +1,77 @@
+ServerEvents.recipes(event => {
+  const { tfc, create, kubejs, immersiveengineering } = event.recipes;
+  function crucible(input, output, amount, temperature) {
+    event.custom({
+      "type": "createmetallurgy:bulk_melting",
+      "conditions":
+        [{
+          "type": "forge:not", "value":
+            { "type": "forge:tag_empty", "tag": "forge:storage_blocks/iron" }
+        }],
+      "ingredients": [{ "item": input }],
+      "maxHeatRequirement": 50, "minHeatRequirement": Math.ceil(temperature / 300), "processingTime": 200,
+      "results": [{ "amount": amount, "fluid": output }]
+    })
+  }
+
+  const metalHeatingConfig = {
+    "bismuth": { temp: 271, fluid: "tfc:metal/bismuth" },
+    "bismuth_bronze": { temp: 960, fluid: "tfc:metal/bismuth_bronze" },
+    "black_bronze": { temp: 1050, fluid: "tfc:metal/black_bronze" },
+    "bronze": { temp: 950, fluid: "tfc:metal/bronze" },
+    "copper": { temp: 1085, fluid: "tfc:metal/copper" },
+    "gold": { temp: 1064, fluid: "tfc:metal/gold" },
+    "nickel": { temp: 1455, fluid: "tfc:metal/nickel" },
+    "rose_gold": { temp: 1060, fluid: "tfc:metal/rose_gold" },
+    "silver": { temp: 961, fluid: "tfc:metal/silver" },
+    "tin": { temp: 232, fluid: "tfc:metal/tin" },
+    "zinc": { temp: 420, fluid: "tfc:metal/zinc" },
+    "sterling_silver": { temp: 925, fluid: "tfc:metal/sterling_silver" },
+    "cast_iron": { temp: 1150, fluid: "tfc:metal/cast_iron" },
+    "wrought_iron": { temp: 1535, fluid: "tfc:metal/cast_iron" },
+    "steel": { temp: 1540, fluid: "tfc:metal/steel" },
+    "black_steel": { temp: 1784, fluid: "tfc:metal/black_steel" },
+    "blue_steel": { temp: 1863, fluid: "tfc:metal/blue_steel" },
+    "red_steel": { temp: 2066, fluid: "tfc:metal/red_steel" },
+    "brass": { temp: 930, fluid: "tfc:metal/brass" },
+    "electrum": { temp: 900, fluid: "tfc_ie_addon:metal/electrum" },
+    "aluminum": { temp: 650, fluid: "tfc_ie_addon:metal/aluminum" },
+    "lead": { temp: 500, fluid: "tfc_ie_addon:metal/lead" },
+    "constantan": { temp: 750, fluid: "tfc_ie_addon:metal/constantan" },
+    "uranium": { temp: 747, fluid: "tfc_ie_addon:metal/uranium" },
+    "chromium": { temp: 1907, fluid: "firmalife:bucket/metal/chromium" },
+    "stainless_steel": { temp: 1400, fluid: "firmalife:bucket/metal/stainless_steel" },
+    "unknown": { temp: 400, fluid: "tfc:metal/unknown" }
+  };
+
+  function tfc_heating(input, amount, metalName, useDurability) {
+    const metalConfig = metalHeatingConfig[metalName];
+    try {
+      //群峦烧金属
+      let heatingLogic = tfc.heating(input, metalConfig.temp).resultFluid(Fluid.of(metalConfig.fluid, amount));
+      if (useDurability === true) {
+        heatingLogic.useDurability(true);
+      }
+      //坩埚加热
+      crucible(input, metalConfig.fluid, amount, metalConfig.temp);
+    } catch (error) { console.log(`[TFC加热] 处理 ${input} (金属: ${metalName}) 时出错: ${error.message}`, error); }
+  }
+
+  const metalList = [
+   // { name: 'minecraft:netherite_ingot', number: 100, metal: "bismuth" },
+  ];
+
+
+  metalList.forEach(metalItem => {
+    tfc_heating(metalItem.name, metalItem.number, metalItem.metal, false);
+  });
+
+
+})
+
+
+
+
 ServerEvents.recipes(e => {
 
   const { tfc, create, kubejs, immersiveengineering } = e.recipes;
@@ -265,7 +339,7 @@ ServerEvents.recipes(e => {
 
   tfc.heating("immersiveengineering:dust_iron", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))//铁粉
   tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
-  tfc.casting('4x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
+  tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
   tfc.heating("sns:pack_frame", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 200))//背包框架融化
   crucible('sns:pack_frame', 'tfc:metal/cast_iron', 200, 1535)
@@ -464,7 +538,12 @@ ServerEvents.recipes(e => {
     crucible(`${steel.name}`, `tfc:metal/${steel.color}_steel`, steel.number, steel.temperature)
 
   })
+
   const metal_block = [
+    { name: "firmaciv:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 20 },//铜螺栓
+
+
+
     //金属板材
     //方块
     { name: "immersiveengineering:sheetmetal_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 100 },//锻铁
@@ -782,9 +861,9 @@ ServerEvents.recipes(e => {
     { name: "copycats:copycat_vertical_step", temperature: 419, metal: "tfc:metal/zinc", number: 19 },
     { name: "design_decor:zinc_checker_tiles", temperature: 419, metal: "tfc:metal/zinc", number: 23 },
 
-    // ==========================================
+    // ============================
     //非方块凑数的
-    // ==========================================
+    // ============================
 
     //钻头
     { name: "immersiveengineering:drillhead_iron", temperature: 1535, metal: "tfc:metal/cast_iron", number: 400 },

@@ -1,9 +1,9 @@
 TFCEvents.data(e => {
   e.itemHeat('artisanal:metal/tinplate', 2.8, null, 1200)//马口铁
-  e.itemHeat('kubejs:leather_hot_water_bag', 150, null, null)
-  e.itemHeat('kubejs:rubber_hot_water_bag', 200, null, null)
-  e.itemHeat("kubejs:metal_hot_water_bag", 180, null, null)
-  e.itemHeat('kubejs:heating_warmer', 200, null, null)
+  e.itemHeat('kubejs:leather_hot_water_bag', 300, null, null)
+  e.itemHeat('kubejs:rubber_hot_water_bag', 400, null, null)
+  e.itemHeat("kubejs:metal_hot_water_bag", 360, null, null)
+  e.itemHeat('kubejs:heating_warmer', 350, null, null)
 
   //烤肉
   e.itemHeat('#forge:meats', 1, null, null)

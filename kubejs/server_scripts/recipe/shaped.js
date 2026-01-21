@@ -5,7 +5,12 @@ ServerEvents.recipes(event => {
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
     })//杠杠锤
-
+ event.shaped("scguns:flintlock_pistol", ['ab', 'c '], {
+        a: "tfc:brass_mechanisms", b: "scguns:stone_gun_barrel", c: '#tfc:lumber'
+    })//燧发枪
+     event.shaped("scguns:handcannon", ['ab', 'cc'], {
+        a: "tfc:brass_mechanisms", b: "scguns:heavy_gun_barrel", c: '#tfc:lumber'
+    })//手炮
     event.shaped('create:basin', ['a a', 'bcb'], {
         a: 'vintageimprovements:andesite_sheet', b: 'tfc:metal/sheet/cast_iron', c: 'tfc:metal/double_ingot/cast_iron'
     })//工作盆
