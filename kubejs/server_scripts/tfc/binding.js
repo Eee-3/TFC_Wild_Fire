@@ -169,6 +169,7 @@ ServerEvents.recipes(event => {
         "black_bronze",
         "black_steel",
         "blue_steel",
+        "steel",
         "bronze",
         "copper",
         "red_steel",

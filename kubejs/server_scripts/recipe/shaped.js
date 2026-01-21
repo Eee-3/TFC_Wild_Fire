@@ -5,10 +5,10 @@ ServerEvents.recipes(event => {
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
     })//杠杠锤
- event.shaped("scguns:flintlock_pistol", ['ab', 'c '], {
+    event.shaped("scguns:flintlock_pistol", ['ab', 'c '], {
         a: "tfc:brass_mechanisms", b: "scguns:stone_gun_barrel", c: '#tfc:lumber'
     })//燧发枪
-     event.shaped("scguns:handcannon", ['ab', 'cc'], {
+    event.shaped("scguns:handcannon", ['ab', 'cc'], {
         a: "tfc:brass_mechanisms", b: "scguns:heavy_gun_barrel", c: '#tfc:lumber'
     })//手炮
     event.shaped('create:basin', ['a a', 'bcb'], {
@@ -432,7 +432,7 @@ ServerEvents.recipes(event => {
             a: '#kubejs:fabric',
             b: '#kubejs:bindings',
         })//传送带
-        event.shaped('2x create:belt_connector',
+    event.shaped('2x create:belt_connector',
         [
             'aaa',
         ],
@@ -716,7 +716,7 @@ ServerEvents.recipes(event => {
 
         })
     //奶酪布配方
-    
+
     event.shaped('siegemachines:beam', [
 
         'aaa'
@@ -1159,6 +1159,8 @@ ServerEvents.recipes(event => {
     })
     //event.shaped('create:fluid_tank', [['#forge:plates/copper'], ['immersiveengineering:wooden_barrel'], ['#forge:plates/copper']])//流体储罐
     event.shaped('create:item_vault', [['#forge:plates/iron'], ['immersiveengineering:crate'], ['#forge:plates/iron']])//机械动力保险箱
+    event.shaped('2x create:item_vault', [["tfc:metal/sheet/steel"], ['immersiveengineering:crate'], ["tfc:metal/sheet/steel"]])//机械动力保险箱
+
     event.shaped('sophisticatedbackpacks:backpack', ['aba', 'cdc', 'eee'],
         {
             a: "sns:pack_frame",

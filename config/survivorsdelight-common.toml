@@ -5,7 +5,7 @@
 	skilletSlotNumber = 8
 	#How many ticks rich soil should boost the growth of the block above it.
 	#Range: 0 ~ 240000
-	richSoilGrowthBoostTick = 12000
+	richSoilGrowthBoostTick = 36000
 	#How many degrees of temperature deviated from usual range is allowed for crops planted on rich soil farmlands to grow.
 	#Range: 0 ~ 100
 	richSoilFarmlandTemperatureExpansion = 5

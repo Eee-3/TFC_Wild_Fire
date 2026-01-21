@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
                 .id(`${recipedid}barrel_sealed/slurry/${ore.ore}`)
             tfc.pot(//矿浆处理
                 [],
-                Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 1000), 20 * 60, 100).itemOutput(`5x kubejs:item/ore/purified_dust/${ore.ore}`)
+                Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 1000), 20 * 25, 100).itemOutput(`5x kubejs:item/ore/purified_dust/${ore.ore}`)
                 .id(`${recipedid}pot/slurry/${ore.ore}`)
 
 
