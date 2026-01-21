@@ -721,7 +721,8 @@ ServerEvents.recipes(event => {
     event.shaped('functionalstorage:linking_tool',
         [
             'aab',
-            'cc'],
+            'cc '
+        ],
         {
             a: 'tfc:metal/sheet/wrought_iron',
             b: 'immersiveengineering:wire_copper',
@@ -731,7 +732,8 @@ ServerEvents.recipes(event => {
     event.shaped('functionalstorage:configuration_tool',
         [
             'aab',
-            'cc'],
+            'cc '
+        ],
         {
             a: 'tfc:metal/sheet/wrought_iron',
             b: 'immersiveengineering:wire_copper',
