@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     }) //石切机
 
 
-    event.shaped('minecraft:stonecutter',
+    event.shaped('immersiveengineering:workbench',
         [
             ' a ',
             'bbc',

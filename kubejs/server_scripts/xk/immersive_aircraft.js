@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
                     "count": 5
                 },
                 "h": {
-                    "tag": 'linteriors:chairs',
+                    "tag": 'interiors:chairs',
                     "count": 1
                 },
                 "U": {
