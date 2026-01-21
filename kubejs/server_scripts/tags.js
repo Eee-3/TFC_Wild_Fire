@@ -331,6 +331,29 @@ ServerEvents.tags("block", event => {
                 "tfc:burlap_cloth"
 
             ])
+
+        //可以作为杠杆锤的砧的砧
+        event.add('vintageimprovements:anvils',
+            [
+                "irons_spellbooks:arcane_anvil",
+                "tfc:metal/anvil/wrought_iron",
+                "tfc:metal/anvil/bismuth_bronze",
+                "tfc:metal/anvil/black_bronze",
+                "tfc:metal/anvil/bronze",
+                "tfc:metal/anvil/copper",
+                "tfc:metal/anvil/red_steel",
+                "tfc:metal/anvil/steel",
+                "tfc:metal/anvil/black_steel",
+                "tfc:metal/anvil/blue_steel",
+                "tfc:rock/anvil/granite",
+                "tfc:rock/anvil/dacite",
+                "tfc:rock/anvil/diorite",
+                "tfc:rock/anvil/gabbro",
+                "tfc:rock/anvil/rhyolite",
+                "tfc:rock/anvil/andesite",
+                "tfc:rock/anvil/basalt"
+            ])
+
         event.add('sliceanddice:allowed_tools', '#minecraft:tools')
         //石墨铸模
         event.add('forge:graphite_molds',

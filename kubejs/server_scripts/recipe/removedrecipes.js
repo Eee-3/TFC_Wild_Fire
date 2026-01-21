@@ -793,6 +793,8 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'minecraft:shears' })
   e.remove({ id: 'siegemachines:turret_base' })
   e.remove({ id: 'siegemachines:beam' })
+  e.remove({ id: 'vintageimprovements:centrifugation/magma_cream' })
+  e.remove({ id: 'woodencog:crafting/sequenced_assembly/precision_mechanism' })  
 
   //删除ie左轮手枪及其相关组件配方
   e.remove({ id: 'immersiveengineering:crafting/toolupgrade_revolver_magazine' })

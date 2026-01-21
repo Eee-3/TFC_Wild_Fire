@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
     'caribou_fur',
     'grizzly_bear_fur',
     'black_bear_fur',
-    
+
     //'tfc:large_sheepskin_hide'
   ];
   for (var i = 0; i < furAndLeatherItems.length; i++) {
@@ -321,39 +321,39 @@ ServerEvents.recipes(event => {
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_sheepskin_hide`)//小羊毛 
   tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
-    //手推磨磨粉
+  //手推磨磨粉
   create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
-//机械动力磨粉
+  //机械动力磨粉
 
   tfc.quern('3x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
-   //手推磨磨粉
+  //手推磨磨粉
   create.milling(['3x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
-   //机械动力磨粉
+  //机械动力磨粉
 
-   "kubejs:wrought_iron_fragments"
+  "kubejs:wrought_iron_fragments"
 
-    tfc.quern("immersiveengineering:dust_iron","kubejs:wrought_iron_fragments")
-   //手推磨磨粉 铁粉
+  tfc.quern("immersiveengineering:dust_iron", "kubejs:wrought_iron_fragments")
+  //手推磨磨粉 铁粉
   create.milling(["immersiveengineering:dust_iron"], "kubejs:wrought_iron_fragments")
-   //机械动力磨粉 铁粉
+  //机械动力磨粉 铁粉
 })
 ServerEvents.recipes(event => {
 
-    
 
 
-    event.forEachRecipe(//合成木板
-        {
-            not: { mod: 'quark' },
-            type: "crafting_shapeless",
-            output: "#minecraft:planks"
-        }, r => {
-            var slab_id = r.getOriginalRecipeResult().getId()
-            var block_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
-            event.shapeless(Item.of(slab_id, 2), [block_id, '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1)
-        })
-    event.remove([{ not: { mod: "kubejs" }, input: "#minecraft:logs", type: "crafting_shapeless", output: "#minecraft:planks" }])//移除所有合成木板配方
-    event.remove([{ not: { mod: "kubejs" }, input: ["#minecraft:logs", "#minecraft:planks"], type: "crafting_shaped", output: "#forge:chests" }])//移除所有箱子配方
+
+  event.forEachRecipe(//合成木板
+    {
+      not: { mod: 'quark' },
+      type: "crafting_shapeless",
+      output: "#minecraft:planks"
+    }, r => {
+      var slab_id = r.getOriginalRecipeResult().getId()
+      var block_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
+      event.shapeless(Item.of(slab_id, 2), [block_id, '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1)
+    })
+  event.remove([{ not: { mod: "kubejs" }, input: "#minecraft:logs", type: "crafting_shapeless", output: "#minecraft:planks" }])//移除所有合成木板配方
+  event.remove([{ not: { mod: "kubejs" }, input: ["#minecraft:logs", "#minecraft:planks"], type: "crafting_shaped", output: "#forge:chests" }])//移除所有箱子配方
 
 
 
@@ -362,25 +362,25 @@ ServerEvents.recipes(event => {
 })//region木板，箱子
 ServerEvents.recipes(event => {
 
-    function farmersdelight_cutting(outputitem, inputitem, num, tool) {
-        let processedTool = tool; // 先定义变量接收原始tool值
-        if (processedTool.startsWith('#')) { // 判断是否以#开头
-            processedTool = processedTool.substring(1); // 截取从第2个字符开始的字符串，移除#
-        }
-
-        event.custom({
-            "type": "farmersdelight:cutting",
-            "ingredients": [{ "item": inputitem }],
-            "result": [{ "count": num, "item": outputitem }],
-            "tool": { "tag": processedTool } // 使用处理后的tool参数
-        });
+  function farmersdelight_cutting(outputitem, inputitem, num, tool) {
+    let processedTool = tool; // 先定义变量接收原始tool值
+    if (processedTool.startsWith('#')) { // 判断是否以#开头
+      processedTool = processedTool.substring(1); // 截取从第2个字符开始的字符串，移除#
     }
 
-    event.replaceInput({ output: 'ars_nouveau:scribes_table' }, '#forge:logs/archwood', '#forge:ingots/steel')
-    event.replaceInput({ output: 'ars_nouveau:scribes_table' }, 'ars_nouveau:archwood_slab', 'immersiveengineering:slab_treated_wood_horizontal')
-    event.replaceInput({ output: 'create:tree_fertilizer' }, '#forge:coral', 'coralstfc:coral_powder')//珊瑚
-    event.replaceInput({ output: '@mekanism' }, "tfc:metal/ingot/wrought_iron", 'tfc:metal/ingot/steel')
-    event.replaceInput({ output: '@mekanism' }, 'minecraft:iron_ingot', 'tfc:metal/ingot/steel')
+    event.custom({
+      "type": "farmersdelight:cutting",
+      "ingredients": [{ "item": inputitem }],
+      "result": [{ "count": num, "item": outputitem }],
+      "tool": { "tag": processedTool } // 使用处理后的tool参数
+    });
+  }
+
+  event.replaceInput({ output: 'ars_nouveau:scribes_table' }, '#forge:logs/archwood', '#forge:ingots/steel')
+  event.replaceInput({ output: 'ars_nouveau:scribes_table' }, 'ars_nouveau:archwood_slab', 'immersiveengineering:slab_treated_wood_horizontal')
+  event.replaceInput({ output: 'create:tree_fertilizer' }, '#forge:coral', 'coralstfc:coral_powder')//珊瑚
+  event.replaceInput({ output: '@mekanism' }, "tfc:metal/ingot/wrought_iron", 'tfc:metal/ingot/steel')
+  event.replaceInput({ output: '@mekanism' }, 'minecraft:iron_ingot', 'tfc:metal/ingot/steel')
 
 
 
@@ -388,30 +388,30 @@ ServerEvents.recipes(event => {
 
 
 
-    //event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
+  //event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
 
-    //event.shaped('tfc_metal_items:steel_tilt_hammer_head', ['BAB', 'B B', 'AAA'], { A: 'tfc:metal/double_ingot/wrought_iron', B: 'tfc:metal/ingot/wrought_iron' })//杠杆锤头变简单
-
-
-
-    event.replaceInput({ output: 'minecraft:slime_ball' }, 'create:dough', '#tfc:foods/dough')//粘液球面团替换
-    event.replaceInput({ input: 'minecraft:iron_ingot', type: "crafting_shaped" }, 'minecraft:iron_ingot', 'tfc:metal/ingot/wrought_iron')//锻铁替换铁
-    event.replaceOutput({}, 'create_power_loader:empty_andesite_chunk_loader', 'create_power_loader:andesite_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_andesite_chunk_loader” 替换为 “create_power_loader:andesite_chunk_loader”
-    event.replaceOutput({}, 'create_power_loader:empty_brass_chunk_loader', 'create_power_loader:brass_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_brass_chunk_loader” 替换为 “create_power_loader:brass_chunk_loader”
-    event.replaceInput({ id: 'create:crafting/kinetics/super_glue' }, 'minecraft:slime_ball', '#forge:glue') //强力胶
-    event.replaceInput({ id: 'create:crafting/materials/sand_paper' }, 'minecraft:sand', '#forge:sand')//砂纸
-    event.replaceInput({ input: 'firmalife:food/bacon' }, 'firmalife:food/bacon', 'farmersdelight:bacon')//培根替换
-    event.replaceInput({ input: 'immersiveengineering:plate_steel' }, 'immersiveengineering:plate_steel', 'tfc:metal/sheet/steel') // 将配方中钢板换成钢薄板
+  //event.shaped('tfc_metal_items:steel_tilt_hammer_head', ['BAB', 'B B', 'AAA'], { A: 'tfc:metal/double_ingot/wrought_iron', B: 'tfc:metal/ingot/wrought_iron' })//杠杆锤头变简单
 
 
 
+  event.replaceInput({ output: 'minecraft:slime_ball' }, 'create:dough', '#tfc:foods/dough')//粘液球面团替换
+  event.replaceInput({ input: 'minecraft:iron_ingot', type: "crafting_shaped" }, 'minecraft:iron_ingot', 'tfc:metal/ingot/wrought_iron')//锻铁替换铁
+  event.replaceOutput({}, 'create_power_loader:empty_andesite_chunk_loader', 'create_power_loader:andesite_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_andesite_chunk_loader” 替换为 “create_power_loader:andesite_chunk_loader”
+  event.replaceOutput({}, 'create_power_loader:empty_brass_chunk_loader', 'create_power_loader:brass_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_brass_chunk_loader” 替换为 “create_power_loader:brass_chunk_loader”
+  event.replaceInput({ id: 'create:crafting/kinetics/super_glue' }, 'minecraft:slime_ball', '#forge:glue') //强力胶
+  event.replaceInput({ id: 'create:crafting/materials/sand_paper' }, 'minecraft:sand', '#forge:sand')//砂纸
+  event.replaceInput({ input: 'firmalife:food/bacon' }, 'firmalife:food/bacon', 'farmersdelight:bacon')//培根替换
+  event.replaceInput({ input: 'immersiveengineering:plate_steel' }, 'immersiveengineering:plate_steel', 'tfc:metal/sheet/steel') // 将配方中钢板换成钢薄板
 
 
-    // event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
 
 
-    farmersdelight_cutting('kubejs:tfc/crushed_sinew', 'kubejs:tfc/dried_sinew', 1, 'tfc:hammers')//捣碎筋腱
-    farmersdelight_cutting('kubejs:tfc/sinew_thread', 'kubejs:tfc/crushed_sinew', 2, 'tfc:knives')//筋线
+
+  // event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
+
+
+  farmersdelight_cutting('kubejs:tfc/crushed_sinew', 'kubejs:tfc/dried_sinew', 1, 'tfc:hammers')//捣碎筋腱
+  farmersdelight_cutting('kubejs:tfc/sinew_thread', 'kubejs:tfc/crushed_sinew', 2, 'tfc:knives')//筋线
 })
 //基础修改
 ServerEvents.recipes(event => {
@@ -488,7 +488,7 @@ ServerEvents.recipes(event => {
   create.milling('12x createdieselgenerators:wood_chip', 'tfc:stick_bundle') // 木棍捆=木屑
   create.milling('1x createdieselgenerators:wood_chip', '#minecraft:saplings') // 树苗=木屑
 
-  
+
   create.milling('1x immersiveengineering:dust_coke', 'immersiveengineering:coal_coke') // 焦煤粉
 
   event.custom({
@@ -654,6 +654,24 @@ ServerEvents.recipes(event => {
     "temperature": 200
   })
 
+  const gold_sheet = 'tfc:metal/sheet/gold'
+  create.sequenced_assembly([
+    Item.of("create:precision_mechanism").withChance(0.8),
+    Item.of("petrolsparts:large_coaxial_gear").withChance(0.02),
+    Item.of("kubejs:wrought_iron_fragments").withChance(0.05),
+    Item.of("create:shaft").withChance(0.02),
+    Item.of("tfc:metal/sheet/gold").withChance(0.1),
+    Item.of("minecraft:clock").withChance(0.01)
+  ], 'tfc:metal/sheet/gold',
+    [
+      create.pressing(gold_sheet, gold_sheet),
+      create.deploying(gold_sheet, [gold_sheet, 'petrolsparts:coaxial_gear']),
+      create.deploying(gold_sheet, [gold_sheet, 'petrolsparts:large_coaxial_gear']),
+      create.deploying(gold_sheet, [gold_sheet, 'create:shaft']),
+      create.deploying(gold_sheet, [gold_sheet, 'kubejs:wrought_iron_fragments']),
+      create.deploying(gold_sheet, [gold_sheet, 'design_decor:industrial_gear_large'])
+    ]
+  ).transitionalItem(gold_sheet).loops(2)//精密构建
 
   const inputcailiao = 'tfc:metal/sheet/black_steel'
   create.sequenced_assembly('kubejs:basic_crystal_pannel', 'tfc:metal/sheet/black_steel',
