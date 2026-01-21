@@ -2,6 +2,16 @@ ServerEvents.recipes(event => {
 
     const id_in = "kubejs:recipe/shaped/"
     event.shaped('minecraft:anvil', ['aaa', ' a ', 'aaa'], { a: 'tfc:metal/double_ingot/cast_iron' })//铁砧
+    event.shaped("immersiveengineering:rs_engineering", [' a ', 'aba', ' a '], {
+        a: "tfc:metal/sheet/steel", b: "create:rose_quartz_block"
+    })//红石工程块
+       event.shaped("tfcchannelcasting:unfired_mold_table", ['a a', 'aaa'], {
+        a: "kubejs:unfired_corundum_brick"
+    })//刚玉模具桌
+       event.shaped("tfcchannelcasting:unfired_channel", ['a a', ' a '], {
+        a: "kubejs:unfired_corundum_brick"
+    })//刚玉铸造流体通道
+    
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
     })//杠杠锤
@@ -23,11 +33,11 @@ ServerEvents.recipes(event => {
     event.shaped('tfc:blast_furnace', ['aba', 'cdc', 'aea'], {
         a: 'tfc:metal/sheet/cast_iron', b: 'createmetallurgy:foundry_lid', c: 'tfc:metal/tuyere/wrought_iron', d: 'tfc:metal/bars/wrought_iron', e: 'tfc:crucible'
     }) //高炉
-    event.shaped('6x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
-        a: 'tfc:metal/sheet/steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'
+    event.shaped('3x immersiveengineering:light_engineering', ['aba', 'bcb', 'aba'], {
+        a: 'tfc:metal/sheet/steel', b: "kubejs:material_component_steel", c: 'create:precision_mechanism'
     }) //轻型工程块
-    event.shaped('4x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
-        a: 'tfc:metal/sheet/black_steel', b: 'immersiveengineering:component_steel', c: 'create:precision_mechanism'
+    event.shaped('2x immersiveengineering:heavy_engineering', ['aba', 'bcb', 'aba'], {
+        a: "tfc:metal/double_sheet/steel", b: "kubejs:material_component_steel", c: 'create:precision_mechanism'
     }) //重型工程块
     event.shaped('minecraft:lead', ['aa ', 'aa ', '  a'], {
         a: 'farmersdelight:rope'

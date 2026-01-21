@@ -1,8 +1,19 @@
-/*ServerEvents.recipes(event =>{
+ServerEvents.recipes(event =>{
     const create = event.recipes.create
 
-    
-    create.mechanical_crafting("kubejs:brass_cartridge_nest", [
+   create.mechanical_crafting("design_decor:scorchia_crushing_wheel", [
+        " aba ",
+        "accca",
+        "bdedb",
+        "accca",
+        " aba "
+    ], {a:"tfc:metal/sheet/steel",
+        b:"tfc:metal/ingot/steel",
+        c:"tfc:metal/rod/steel",
+        d:"immersiveengineering:steel_scaffolding_standard",
+        e:"design_decor:industrial_gear_large"
+    }) // 钢粉碎轮 动力合成
+   /* create.mechanical_crafting("kubejs:brass_cartridge_nest", [
         "ba",
         "ab"
     ], {a:'tfc:metal/sheet/brass',
@@ -137,6 +148,6 @@
         " ag"
     ], { a:'tfc:metal/sheet/brass',
         g:'#tfc:lumber'
-    }) // 制式枪托配件（铜） 动力合成
+    }) // 制式枪托配件（铜） 动力合成*/
   
-})*/
+})

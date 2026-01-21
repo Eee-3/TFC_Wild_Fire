@@ -7,6 +7,14 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'scguns' })
 
   const iddd = [
+    'tfc:crafting/fire_clay_recycle_1',
+    'vintageimprovements:pressing/andesite_alloy',
+    'immersiveengineering:crafting/wire_aluminum',
+    'immersiveengineering:crafting/wire_electrum',
+    'immersiveengineering:crafting/wire_lead',
+    'immersiveengineering:crafting/wire_copper',
+    'immersiveengineering:crafting/wire_steel' ,
+    'immersiveengineering:crafting/rs_engineering',
     'firmaciv:anvil/copper_bolt',
     "sns:heating/pack_frame",
     "sns:crafting/pack_frame",
