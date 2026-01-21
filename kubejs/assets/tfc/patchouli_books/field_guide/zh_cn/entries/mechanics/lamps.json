@@ -72,7 +72,7 @@
         }
       },
       "name": "熔岩灯",
-      "text": "熔岩灯是一种$(thing)永久光源$()。不过，只有$(l:mechanics/steel#blue_steel)蓝钢$()灯才能盛装熔岩。",
+      "text": "熔岩灯是一种$(thing)永久光源$()。不过，只有$(l:mechanics/steel#blue_steel)秘银$()灯才能盛装熔岩。",
       "enable_visualize": false
     },
     {

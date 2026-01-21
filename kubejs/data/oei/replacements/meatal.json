@@ -131,5 +131,30 @@
             "ad_astra:steel_rod"
         ],
         "resultItems": "tfc:metal/rod/steel"
+    },
+    {
+        "matchItems": [
+            "minecraft:iron_bars"
+        ],
+        "resultItems": "tfc:metal/bars/wrought_iron"
+    },
+    {
+        "matchItems": [
+            "ad_astra:steel_block",
+            "createmetallurgy:steel_block"
+        ],
+        "resultItems": "immersiveengineering:storage_steel"
+    },
+    {
+        "matchItems": [
+            "eidolon:lead_block"
+        ],
+        "resultItems": "immersiveengineering:storage_lead"
+    },
+    {
+        "matchItems": [
+            "eidolon:silver_block"
+        ],
+        "resultItems": "immersiveengineering:storage_silver"
     }
 ]

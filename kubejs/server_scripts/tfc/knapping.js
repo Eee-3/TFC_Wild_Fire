@@ -86,8 +86,85 @@ ServerEvents.recipes(event => {
       'xxx'
     ]
   ).outsideSlotRequired(false)
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/flint_acheulian',
+    'kubejs:flint',
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false)
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/obsidian_acheulian',
+    'kubejs:obsidian',
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false)
 
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/diamond_acheulian',
+    'kubejs:diamond',
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false)
 
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/extrusive_acheulian',
+    "tfc:rock",
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false).ingredient("#tfc:igneous_extrusive_rock")
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/intrusive_acheulian',
+    "tfc:rock",
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false).ingredient("#tfc:igneous_intrusive_rock")
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/metamorphic_acheulian',
+    "tfc:rock",
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false).ingredient("#tfc:metamorphic_rock")
+  event.recipes.tfc.knapping(
+    'kubejs:rock_tool/sedimentary_acheulian',
+    "tfc:rock",
+    [
+      '  x  ',
+      ' xxx ',
+      'xxxxx',
+      'xxxxx',
+      ' xxx '
+    ]
+  ).outsideSlotRequired(false).ingredient("#tfc:sedimentary_rock")
 
 
 

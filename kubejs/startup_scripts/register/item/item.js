@@ -47,8 +47,16 @@ StartupEvents.registry('item', event => {
     event.create('bad_brass_forge_door', 'basic').texture('kubejs:item/bad_brass_forge_door');   // 黄铜坏门
     event.create('oldcrown', 'basic').texture('kubejs:item/scraps/oldcrown');   // 古老金币
     event.create('rotten_platter', 'basic').texture('kubejs:item/rotten_platter'); // 注册一盘腐烂物
-    event.create('crushed_sinew', 'basic').texture('kubejs:item/crushed_sinew'); // 捣碎的筋腱
-    event.create('sinew_thread', 'basic').texture('kubejs:item/sinew_thread'); // 筋线
+
+    event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag').maxStackSize(1);// 皮革热水袋
+    event.create('rubber_hot_water_bag', 'basic').texture('kubejs:item/tfc/rubber_hot_water_bag').maxStackSize(1);// 橡胶热水袋
+    event.create('metal_hot_water_bag', 'basic').texture('kubejs:item/tfc/metal_hot_water_bag').maxStackSize(1);// 金属热水袋
+    event.create('warm_warmer', 'basic').texture('kubejs:item/tfc/warm_warmer').maxStackSize(4);//暖手宝
+    event.create('heating_warmer', 'basic').texture('kubejs:item/tfc/heating_warmer').maxStackSize(4);//暖手宝
+
+
+    event.create('kubejs:tfc/crushed_sinew', 'basic').texture('kubejs:item/tfc/crushed_sinew'); // 捣碎的筋腱
+    event.create('kubejs:tfc/sinew_thread', 'basic').texture('kubejs:item/tfc/sinew_thread'); // 筋线
 
     event.create('coal_powder', 'basic').texture('kubejs:item/fuel/coal_powder'); // 煤炭粉
     event.create('kubejs:crushed_raw_desh') // 创建粉碎的原始Desh物品.texture('kubejs:item/crushed_raw_desh') 
@@ -68,22 +76,30 @@ StartupEvents.registry('item', event => {
     event.create('coal_briquette', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭块
     event.create('coke_briquette', 'basic').texture('kubejs:item/fuel/coke_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 焦煤块
     event.create('high_performance_fuel_briquette', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能燃料块
+    //保温碳
+    event.create('wood_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/wood_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 木料保温块
+    event.create('coal_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/coal_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 煤炭保温块
+    event.create('high_performance_fuel_sustained_heat_pellet', 'basic').texture('kubejs:item/fuel/high_performance_fuel_briquette').tag("tfc:firepit_fuel").tag("tfc:forge_fuel").tag("tfc:log_pile_logs"); // 高性能保温块
+
+    event.create('charcoal_stick', 'basic').texture('kubejs:item/charcoal_stick'); // 炭笔
 
     event.create('bone_fish_hook', 'basic').texture('kubejs:item/tfc/bone_fish_hook'); // 骨钩
     event.create('bone_skinningknife_blade', 'basic').texture('kubejs:item/tfc/bone_skinningknife_blade'); // 骨刀
     event.create('bone_butchersknife_blade', 'basic').texture('kubejs:item/tfc/bone_butchersknife_blade'); // 骨刮皮刀
 
+    event.create('pulp_film', 'basic').texture('kubejs:item/pulp_film'); // 纸浆膜
+    event.create('paper_film', 'basic').texture('kubejs:item/paper_film'); // 纸膜
 
 
     event.create('alkalized_bauxite_raw_material', 'basic').texture('kubejs:item/tfc/alkalized_bauxite_raw_material').tag("kubejs:ore"); // 碱化铝土生料
 
     event.create('bauxite_clinker', 'basic').texture('kubejs:item/tfc/bauxite_clinker');// 铝土熟料
-    
+
     event.create('aluminum_chromium_mix_powder', 'basic').texture('kubejs:item/tfc/aluminum_chromium_mix_powder');// 铝铬混合粉
 
     event.create('alumina_powder', 'basic').texture('kubejs:item/tfc/alumina_powder').tag("kubejs:ore"); // 氧化铝粉
     event.create('unfired_corundum_brick', 'basic').texture('kubejs:item/tfc/unfired_corundum_brick').tag("kubejs:ore");   // 未完成的刚玉砖
-    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick').tag("kubejs:ore");   // 刚玉砖
+    event.create('corundum_brick', 'basic').texture('kubejs:item/tfc/corundum_brick');   // 刚玉砖
 
 
 
@@ -91,8 +107,9 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
     event.create('cast_iron_indenter', 'basic')//铸铁压头
+    event.create('noheating_warmer', 'basic')//燃尽暖手宝
 
-
+    event.create('wooden_slat_grid', 'basic').tag("vintageimprovements:curving_heads");//木条编网
     //硅以及相关材料注册
     event.create('glass_mixture').texture('kubejs:item/create/glass_mixture');//玻璃混合物
     event.create('silicon').texture('kubejs:item/create/silicon');//硅
@@ -160,6 +177,16 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
     event.create('kubejs:moon_propeller').texture('kubejs:item/ad/moon_propeller'); // 月球螺旋桨
     event.create('kubejs:venus_plating').texture('kubejs:item/ad/venus_plating'); // 金星镀层
 
+
+    event.create('kubejs:stone_arrow').texture('kubejs:item/tfc/stone_arrow'); // 石箭头
+    event.create('kubejs:copper_arrow').texture('kubejs:item/tfc/copper_arrow'); // 铜箭头
+    event.create('kubejs:wrought_iron_arrow').texture('kubejs:item/tfc/wrought_iron_arrow'); // 锻铁箭头
+    event.create('kubejs:steel_arrow').texture('kubejs:item/tfc/steel_arrow'); // 钢箭头
+    event.create('kubejs:black_steel_arrow').texture('kubejs:item/tfc/black_steel_arrow'); // 黑钢箭头
+    event.create('kubejs:gps').texture('kubejs:item/gps').maxStackSize(1); // 全球定位器
+
+
+
     // 未完成部件
     event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成
     event.create('kubejs:basic_crystal_pannel_unfinished').texture('kubejs:item/ad/basic_crystal_pannel_unfinished'); // 基础水晶面板_未完成
@@ -171,26 +198,26 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
 })
 StartupEvents.registry("item", event => {   //工业线盔甲相关
     // 半成品黄铜骑士盔甲
-    event.create('kubejs:prototype_finished_cogknight_helmet', 'helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass'); // 原型齿轮骑士头盔
-    event.create('kubejs:prototype_finished_cogknight_chestplate', 'chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass'); // 原型齿轮骑士胸甲
-    event.create('kubejs:prototype_finished_cogknight_leggings', 'leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass'); // 原型齿轮骑士护腿
+    event.create('kubejs:prototype_finished_cogknight_helmet', 'helmet').texture('kubejs:item/armor/prototype_cogknight_helmet').tier('brass').maxStackSize(1); // 原型齿轮骑士头盔
+    event.create('kubejs:prototype_finished_cogknight_chestplate', 'chestplate').texture('kubejs:item/armor/prototype_cogknight_chestplate').tier('brass').maxStackSize(1); // 原型齿轮骑士胸甲
+    event.create('kubejs:prototype_finished_cogknight_leggings', 'leggings').texture('kubejs:item/armor/prototype_cogknight_leggings').tier('brass').maxStackSize(1); // 原型齿轮骑士护腿
     // 未完成黄铜骑士盔甲中间产物
-    event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet'); // 未完成原型齿轮骑士头盔
-    event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate'); // 未完成原型齿轮骑士胸甲
-    event.create('kubejs:unfinished_prototype_cogknight_leggings').texture('kubejs:item/armor/unfinished_prototype_cogknight_leggings'); // 未完成原型齿轮骑士护腿
-    event.create('kubejs:unfinished_cogknight_boots').texture('kubejs:item/armor/unfinished_cogknight_boots'); // 未完成齿轮骑士靴子
+    event.create('kubejs:unfinished_prototype_cogknight_helmet').texture('kubejs:item/armor/unfinished_prototype_cogknight_helmet').maxStackSize(1); // 未完成原型齿轮骑士头盔
+    event.create('kubejs:unfinished_prototype_cogknight_chestplate').texture('kubejs:item/armor/unfinished_prototype_cogknight_chestplate').maxStackSize(1) // 未完成原型齿轮骑士胸甲
+    event.create('kubejs:unfinished_prototype_cogknight_leggings').texture('kubejs:item/armor/unfinished_prototype_cogknight_leggings').maxStackSize(1); // 未完成原型齿轮骑士护腿
+    event.create('kubejs:unfinished_cogknight_boots').texture('kubejs:item/armor/unfinished_cogknight_boots').maxStackSize(1); // 未完成齿轮骑士靴子
 
     // 未完成黄铜骑士盔甲第二步中间产物
-    event.create('kubejs:unfinished_cogknight_helmet').texture('kubejs:item/armor/unfinished_cogknight_helmet'); // 未完成齿轮骑士头盔
-    event.create('kubejs:unfinished_cogknight_chestplate').texture('kubejs:item/armor/unfinished_cogknight_chestplate'); // 未完成齿轮骑士胸甲
-    event.create('kubejs:unfinished_cogknight_leggings').texture('kubejs:item/armor/unfinished_cogknight_leggings'); // 未完成齿轮骑士护腿
+    event.create('kubejs:unfinished_cogknight_helmet').texture('kubejs:item/armor/unfinished_cogknight_helmet').maxStackSize(1); // 未完成齿轮骑士头盔
+    event.create('kubejs:unfinished_cogknight_chestplate').texture('kubejs:item/armor/unfinished_cogknight_chestplate').maxStackSize(1); // 未完成齿轮骑士胸甲
+    event.create('kubejs:unfinished_cogknight_leggings').texture('kubejs:item/armor/unfinished_cogknight_leggings').maxStackSize(1); // 未完成齿轮骑士护腿
 
     // 未完成工业钢盔甲中间产物
-    event.create('kubejs:unfinished_steel_helmet').texture('kubejs:item/armor/unfinished_steel_helmet'); // 未完成工业钢头盔
-    event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate'); // 未完成工业钢胸甲
-    event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings'); // 未完成工业钢护腿
-    event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots'); // 未完成工业钢靴子
+    event.create('kubejs:unfinished_steel_helmet').texture('kubejs:item/armor/unfinished_steel_helmet').maxStackSize(1); // 未完成工业钢头盔
+    event.create('kubejs:unfinished_steel_chestplate').texture('kubejs:item/armor/unfinished_steel_chestplate').maxStackSize(1); // 未完成工业钢胸甲
+    event.create('kubejs:unfinished_steel_leggings').texture('kubejs:item/armor/unfinished_steel_leggings').maxStackSize(1); // 未完成工业钢护腿
+    event.create('kubejs:unfinished_steel_boots').texture('kubejs:item/armor/unfinished_steel_boots').maxStackSize(1); // 未完成工业钢靴子
 
-    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer'); // 未完成温度计
+    event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer').maxStackSize(1); // 未完成温度计
 
 });

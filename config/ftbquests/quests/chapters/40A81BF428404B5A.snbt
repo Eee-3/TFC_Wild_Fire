@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "40A81BF428404B5A"
+	group: "257B93C8F82BA053"
+	icon: "design_decor:capitalism_warning_sign"
+	id: "40A81BF428404B5A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "成就"
+}

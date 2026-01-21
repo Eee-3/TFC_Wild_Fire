@@ -12,7 +12,8 @@ ServerEvents.tags('item', event => {
         'tfc:glue',//胶水
         'tfc:wool_yarn',//羊毛线
         'minecraft:slime_ball',//粘液球
-        '#forge:wires'//电线绑定标签
+        '#forge:wires',//电线绑定标签
+        'sns:leather_strip'//皮革条
     ];
 
     bindings_weak.forEach(low => {
@@ -22,8 +23,10 @@ ServerEvents.tags('item', event => {
     bindings_medium.forEach(medium => {
         event.add("kubejs:medium_binding", medium);
     });
-    event.add("kubejs:advanced_binding", 'kubejs:sinew_thread');//完美
+    event.add("kubejs:advanced_binding", 'kubejs:tfc/sinew_thread');//完美
     event.add("kubejs:advanced_binding", 'firmaciv:rope_coil');//完美
+    event.add("kubejs:advanced_binding", 'sns:bound_leather_strip');
+
 
 
 
@@ -40,7 +43,9 @@ ServerEvents.tags('item', event => {
         'minecraft:slime_ball',//粘液球
         '#forge:wires',//电线绑定标签
         'firmaciv:rope_coil',//黄麻
-        'kubejs:sinew_string',//筋线
+        'kubejs:tfc/sinew_thread',//筋线
+        'sns:leather_strip',//皮革条
+        'sns:bound_leather_strip'//强化皮革条
 
     ]
     event.add('kubejs:bindings', bindings)
@@ -164,6 +169,7 @@ ServerEvents.recipes(event => {
         "black_bronze",
         "black_steel",
         "blue_steel",
+        "steel",
         "bronze",
         "copper",
         "red_steel",

@@ -6,16 +6,17 @@ StartupEvents.registry("block", event => {
 
 })//安山齿轮机箱
 StartupEvents.registry('block', event => {
-        event.create('unfired_crucible_mold') // 未烧制的坩埚模具
+        event.create('unfired_crucible_mold') // 未硬化的坩埚模具
         event.create('corundum_brick_block').tag("tfc:blast_furnace_insulation").tag("tfc:bloomery_insulation")// 刚玉砖块
         event.create('crucible_mold') // 坩埚模具
-        event.create('dried_sinew')
+        event.create('kubejs:tfc/dried_sinew')
                 .material('wood')
                 .hardness(0.5)
                 .box(0, 0, 0, 16, 1, 16)
                 .noCollision()
 
-                event.create('kubejs:wild_brown_mushroom')
+
+        event.create('kubejs:wild_brown_mushroom')
                 .material('moss')
                 .soundType('crop')
                 .hardness('0.5')
@@ -26,7 +27,7 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_brown_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-                event.create('kubejs:wild_red_mushroom')
+        event.create('kubejs:wild_red_mushroom')
                 .material('moss')
                 .soundType('crop')
                 .hardness('0.5')
@@ -37,14 +38,14 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_red_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
-        event.create('sinew')
+        event.create('kubejs:tfc/sinew')
                 .material('wood')
                 .hardness(0.5)
                 .box(0, 0, 0, 16, 1, 16)
                 .noCollision()
                 .blockEntity(info => {
                         info.serverTick(24001, 24000, entity => {
-                                entity.getBlock().set('kubejs:dried_sinew')
+                                entity.getBlock().set('kubejs:tfc/dried_sinew')
                         })
                 })
 })

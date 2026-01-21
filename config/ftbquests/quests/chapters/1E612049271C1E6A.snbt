@@ -378,8 +378,9 @@
 				"所以本任务只是用于让你提前得知单桅帆船以便不需要从头收集材料"
 			]
 			hide_until_deps_complete: true
-			icon: "firmaciv:cannon"
+			icon: "firmaciv:sloop_icon_only"
 			id: "3933AA974EAACD79"
+			optional: true
 			shape: "gear"
 			subtitle: "为了远航，这是[不是]必要的"
 			tasks: [
@@ -405,7 +406,7 @@
 							value: "firmaciv:planks_that_make_ships"
 						}
 					}
-					title: "Any #firmaciv:planks_that_make_ships"
+					title: "可以作为船只框架的木材"
 					type: "item"
 				}
 				{
@@ -601,7 +602,7 @@
 		}
 		{
 			dependencies: ["0B73FDEF3EF6266A"]
-			description: ["塑形耐火黏土可得到未烧制的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
+			description: ["塑形耐火黏土可得到未硬化的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "tfc:fire_bricks"
@@ -708,31 +709,53 @@
 				type: "checkmark"
 			}]
 			title: "搭建高炉"
-			x: 11.700000000000001d
-			y: 1.3d
+			x: 11.5d
+			y: 1.2142857142857082d
 		}
 		{
 			dependencies: ["6817416877252461"]
 			description: ["熔融生铁在锭模具中凝固后会变成生铁锭，与生铁方坯一样，需要锻打两次才能变成钢锭。"]
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/pig_iron"
+			}
 			id: "4A96D0BED6BD4151"
 			min_required_dependencies: 2
 			shape: "hexagon"
 			subtitle: "就像对生铁方坯那样"
-			tasks: [{
-				id: "5E810A53CE62B9B8"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "5E810A53CE62B9B8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/pig_iron"
 					}
-					id: "tfc:metal/ingot/pig_iron"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "17D76583D1B5BB5F"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
 			x: 13.0d
 			y: 0.2142857142857082d
 		}
@@ -740,23 +763,45 @@
 			dependencies: ["4A96D0BED6BD4151"]
 			description: ["生铁锭锻打后会变成高碳钢锭，再锻打一次吧。"]
 			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/high_carbon_steel"
+			}
 			id: "320016DCB488E572"
 			shape: "hexagon"
 			subtitle: "最后的一点碳"
-			tasks: [{
-				id: "7281125B5E1F86CF"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "7281125B5E1F86CF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/high_carbon_steel"
 					}
-					id: "tfc:metal/ingot/high_carbon_steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "0F784A702C1E3073"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
 			x: 14.5d
 			y: 0.2142857142857082d
 		}
@@ -769,20 +814,31 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "上帝通过铁器创造了我们。然后他升高温度，将其中一些铸造成钢。——玛莉·奥斯蒙"
-			tasks: [{
-				id: "34434A8D2E02E67A"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "34434A8D2E02E67A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/steel"
 					}
-					id: "tfc:metal/ingot/steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					advancement: "createmetallurgy:steel_age"
+					criterion: ""
+					id: "0D62B5A9D94CD79B"
+					optional_task: true
+					title: "钢铁时代"
+					type: "advancement"
+				}
+			]
 			title: "&6钢铁是怎样炼成的"
 			x: 14.0d
 			y: 2.0d
@@ -1361,12 +1417,21 @@
 			dependencies: ["5ABCEA9D66EB2104"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
+			icon: "createdieselgenerators:bulk_fermenter"
 			id: "50EFCD7C10FA0994"
-			tasks: [{
-				id: "7193FCEDEC4E6BB6"
-				item: "createdieselgenerators:bulk_fermenter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7193FCEDEC4E6BB6"
+					item: "createdieselgenerators:bulk_fermenter"
+					type: "item"
+				}
+				{
+					id: "4A30AA2D0A153433"
+					item: "createdieselgenerators:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "发酵桶"
 			x: 3.15067939759318d
 			y: 2.2905335517135157d
@@ -1830,7 +1895,7 @@
 				"高岭土是搭建炼钢高炉的必要材料、且高炉也需要大量的铁板、造价颇高让人苦不堪言"
 				""
 				"不过、探寻高岭土的路途"
-				"对于有些人来说也是在观光来自Terrafirmacraft的自然风景"
+				"对于一些人来说也是在观光来自TFC的自然风景"
 				"对于一些熟知tfc的玩家中、高岭土对他们来说并不困难"
 				""
 				"所以在整合包中、我们保留了原有高岭土的获取方式、制作了一条支线！"
@@ -1841,7 +1906,6 @@
 			id: "71E483F24F891577"
 			ignore_reward_blocking: true
 			shape: "hexagon"
-			subtitle: "另一条路？"
 			tasks: [{
 				id: "40EA7F474ADFA7C8"
 				title: "我已了解"
@@ -2155,11 +2219,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "797E70374DC5D08D"
-			rewards: [{
-				id: "738CFD5D0333CDE8"
-				type: "xp"
-				xp: 50
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2217,6 +2276,11 @@
 			icon: "immersiveengineering:creosote_bucket"
 			id: "50E3DC2119EEF05E"
 			shape: "hexagon"
+			tasks: [{
+				id: "701C4B3A95E6E26C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "杂酚油"
 			x: 4.5d
 			y: 7.0d
@@ -2252,7 +2316,7 @@
 				"用1000mb的熔融刚玉来浇筑坩埚模具可以得到刚玉坩埚！功能是和坩埚一模一样的"
 			]
 			hide_until_deps_complete: true
-			icon: "kubejs:crucible_mold"
+			icon: "kubejs:molten_corundum_bucket"
 			id: "1A7E7EB359A970F3"
 			optional: true
 			subtitle: "黏土坩埚代替品"
@@ -2265,6 +2329,11 @@
 				{
 					id: "32A40AE6CF9DDA84"
 					item: "tfc:crucible"
+					type: "item"
+				}
+				{
+					id: "64C4D0DA5C0A734C"
+					item: "createmetallurgy:casting_basin"
 					type: "item"
 				}
 			]
@@ -2323,11 +2392,6 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6EDE7AE43DA1D146"
-			rewards: [{
-				id: "2F8DCE6BBFBB9685"
-				type: "xp"
-				xp: 50
-			}]
 			tasks: [
 				{
 					id: "48F69E47750C4251"
@@ -2357,11 +2421,6 @@
 			]
 			description: ["防腐木板是用于制作沉浸工程各项木质结构以及工作方块的基础。首先需要将木材放进有杂酚油的大桶内浸泡8分钟变成防腐木材，4个防腐木材可以合成防腐木板。每一个普通木材变成防腐木材需要消耗50mb杂酚油。"]
 			id: "23773F37400D8ACB"
-			rewards: [{
-				id: "2D6D7BFBF8904A11"
-				type: "xp"
-				xp: 50
-			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "0999B7E2C84E86E4"
@@ -2379,8 +2438,8 @@
 				item: "create:item_vault"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.5d
+			x: 6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["23773F37400D8ACB"]
@@ -2399,8 +2458,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.5d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["23773F37400D8ACB"]
@@ -2410,8 +2469,8 @@
 				item: "immersiveengineering:crate"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 8.5d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["23773F37400D8ACB"]
@@ -2421,7 +2480,7 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 7.0d
 		}
 	]

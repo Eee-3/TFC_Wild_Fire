@@ -1,9 +1,0 @@
-{
-  "ingredient": {
-    "item": "butcher:cookedliver"
-  },
-  "hunger": 1.5,
-  "saturation": 2,
-  "decay_modifier": 1.5,
-  "protein": 1.5
-}

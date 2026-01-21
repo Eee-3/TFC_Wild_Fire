@@ -17,11 +17,88 @@ ServerEvents.recipes(e => {
       `kubejs:triple_${item.name}`,       // 输出
       `tfc:metal/double_ingot/${item.name}`,
       `tfc:metal/ingot/${item.name}`,
-      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红蓝钢
+      item.number // 砧等级 0是石头 1铜 2铜合金 3锻铁 4钢 5黑钢 6红秘银
     ).id(`kubejs:tfc/anvil/triple_${item.name}`);;
   });
+   tfc.anvil(
+    "scguns:stone_gun_barrel",
+    "tfc:metal/sheet/cast_iron",
+    [
+      'hit_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false)//土枪管
+   tfc.anvil(
+    "scguns:heavy_gun_barrel",
+    "tfc:metal/double_sheet/cast_iron",
+    [
+      'hit_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false)//重型土枪管
+    tfc.anvil(
+    'supplementaries:bubble_blower',
+    'immersiveengineering:stick_aluminum',
+    [
+      'hit_any'
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/bubble_blower/anvil")//泡泡环
 
+    tfc.anvil(
+    'spartanweaponry:medium_quiver_brace',
+    'tfc:metal/sheet/copper',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/medium_quiver_brace/anvil")//铜箭袋垫板
 
+    tfc.anvil(
+    'spartanweaponry:large_quiver_brace',
+    'tfc:metal/sheet/wrought_iron',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(3).bonus(false).id("kubejs:tfc/anvil/large_quiver_brace/anvil")//铁箭袋垫板
+  
+    tfc.anvil(
+    'spartanweaponry:huge_quiver_brace',
+    'tfc:metal/sheet/steel',
+    [
+      'draw_any',
+      'draw_any'
+    ]
+  ).tier(4).bonus(false).id("kubejs:tfc/anvil/huge_quiver_brace/anvil")//钢箭袋垫板
+
+  tfc.anvil(
+    '4x kubejs:copper_arrow',
+    'tfc:metal/rod/copper',
+    [
+      'hit_any',
+    ]
+  ).tier(1).bonus(false).id("kubejs:tfc/anvil/copper_arrow/anvil")//铜箭头
+  tfc.anvil(
+    '4x kubejs:wrought_iron_arrow',
+    'tfc:metal/rod/wrought_iron',
+    [
+      'hit_any',
+    ]
+  ).tier(3).bonus(false).id("kubejs:tfc/anvil/wrought_iron_arrow/anvil")//锻铁箭头
+  tfc.anvil(
+    '4x kubejs:steel_arrow',
+    'tfc:metal/rod/steel',
+    [
+      'hit_any',
+    ]
+  ).tier(4).bonus(false).id("kubejs:tfc/anvil/steel_arrow/anvil")//钢箭头
+  tfc.anvil(
+    '4x kubejs:black_steel_arrow',
+    'tfc:metal/rod/black_steel',
+    [
+      'hit_any',
+    ]
+  ).tier(5).bonus(false).id("kubejs:tfc/anvil/black_steel_arrow/anvil")//黑钢箭头
   tfc.anvil(
     'create:andesite_alloy',
     'kubejs:trachyandesite_alloy',
@@ -110,7 +187,7 @@ ServerEvents.recipes(e => {
       "bend_last"
     ]
   ).tier(2).bonus(true).id("kubejs:tfc/anvil/brass_forge_door/anvil");
-    tfc.anvil(// 机械手的铁砧配方
+  tfc.anvil(// 机械手的铁砧配方
     'create:brass_hand',
     'tfc:metal/double_sheet/brass',
     [
@@ -119,6 +196,7 @@ ServerEvents.recipes(e => {
       "bend_last"
     ]
   ).tier(2).bonus(false).id("kubejs:tfc/anvil/brass_hand");
+
 
   tfc.welding(//双棒焊接
     'kubejs:wrought_iron_double_rod',
@@ -213,7 +291,7 @@ ServerEvents.recipes(a => {
     })
   })
 
-const metalhot = [
+  const metalhot = [
     { metal: 'bismuth_bronze', num: 2 },
     { metal: 'black_bronze', num: 2 },
     { metal: 'bronze', num: 2 },
@@ -232,13 +310,13 @@ const metalhot = [
     { metal: 'black_steel', num: 5 },
     { metal: 'blue_steel', num: 6 },
     { metal: 'red_steel', num: 6 },
-];
+  ];
 
-const metalhotf = [
+  const metalhotf = [
     { metal: 'chromium', num: 1 },
     { metal: 'stainless_steel', num: 4 }
-];
-   metalhotf.forEach(metal => {
+  ];
+  metalhotf.forEach(metal => {
     tfc.anvil(// 钳子的铁砧配方
       `kubejs:${metal.metal}_tong_part`,
       `firmalife:metal/rod/${metal.metal}`,
@@ -259,7 +337,7 @@ const metalhotf = [
       ]
     ).tier(metal.num).bonus(true).id(`kubejs:tfc/anvil/${metal.metal}_tong_part`);
 
-    });
+  });
   metalhot.forEach(metal => {
     tfc.anvil(// 鱼钩的铁砧配方
       `tfc:metal/fish_hook/${metal.metal}`,

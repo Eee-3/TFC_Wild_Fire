@@ -14,12 +14,23 @@ StartupEvents.registry("fluid", event => {
         .thickTexture(0Xf9ad1c)
         .noBlock()
 
-    event.create('synthetic_corundum',)
-        .stillTexture('kubejs:fluid/glass/molten_glass_still')
-        .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
-        .color(0XC16051) // 人造刚玉
+    event.create('molten_corundum',)
+        .stillTexture('kubejs:fluid/glass/molten_corundum_still')
+        .flowingTexture('kubejs:fluid/glass/molten_corundum_flowing')
+        .noBlock()
+    // 人造刚玉
 })
 StartupEvents.registry("fluid", event => {
+    
+    event.create("kubejs:petroleum_gas")//石油气
+        .thinTexture(0Xffffff)
+        .noBlock()
+        .noBucket()
+
+    event.create("kubejs:pulp")//纸浆
+        .thinTexture(0Xd4cbb5)
+        .noBlock()
+
     event.create("kubejs:heavy_oil")
         .thickTexture(0X1F1826)
         .noBlock()
@@ -131,5 +142,6 @@ StartupEvents.registry("fluid", event => {
     event.create("kubejs:molten_glass")
         .stillTexture('kubejs:fluid/glass/molten_glass_still')
         .flowingTexture('kubejs:fluid/glass/molten_glass_flowing')
+        .noBlock()
     //熔融玻璃
 })

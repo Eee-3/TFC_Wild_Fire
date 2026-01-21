@@ -1,0 +1,33 @@
+{
+    "name": "aborigines_explorers",
+    "attributes": {
+        "strength": 8,
+        "health": 10,
+        "focus": 8,
+        "stamina": 12,
+        "endurance": 11,
+        "intelligence": 7,
+        "agility": 12,
+        "skill": 10,
+        "luck": 12
+    },
+    "startItems": [
+        {
+            "item": "sns:leather_sack",
+            "count": 1
+        },
+        {
+            "item": "tfccanes:walking_cane",
+            "count": 1
+        },
+        {
+            "item": "map_atlases:atlas",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bread",
+            "count": 3
+        }
+    ],
+    "displayCondition": []
+}

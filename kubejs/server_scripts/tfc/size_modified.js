@@ -60,7 +60,62 @@ TFCEvents.data(e => {
   small_very_light_items.forEach(item => {
     e.itemSize(item, 'small', 'very_light')
   })
-  
+
+  //实心金属块
+  //大、非常重
+  const large_very_heavy_items = [
+    "moreburners:electric_burner",
+    "immersiveengineering:coil_lv",
+    "immersiveengineering:coil_mv",
+    "immersiveengineering:coil_hv",
+    "create:zinc_block",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:copper_block",
+    "create:brass_block",
+    "immersiveengineering:storage_electrum",
+    "immersiveengineering:storage_silver",
+    "immersiveengineering:storage_nickel",
+    "immersiveengineering:storage_lead",
+    "immersiveengineering:storage_aluminum",
+    "immersiveengineering:storage_steel",
+    "immersiveengineering:storage_constantan",
+    "create:andesite_alloy_block",
+    "minecraft:cut_copper",
+    "minecraft:cut_copper_stairs",
+    "minecraft:cut_copper_slab",
+    "minecraft:exposed_copper",
+    "minecraft:exposed_cut_copper",
+    "minecraft:oxidized_cut_copper_stairs",
+    "minecraft:oxidized_cut_copper",
+    "minecraft:oxidized_copper",
+    "minecraft:weathered_cut_copper_slab",
+    "minecraft:weathered_cut_copper_stairs",
+    "minecraft:weathered_cut_copper",
+    "minecraft:weathered_copper",
+    "minecraft:exposed_cut_copper_stairs",
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:exposed_oxidized_cut_copper_slab",
+    "minecraft:waxed_copper_block",
+    "minecraft:waxed_cut_copper",
+    "minecraft:waxed_cut_copper_stairs",
+    "minecraft:waxed_cut_copper_slab",
+    "minecraft:waxed_exposed_copper",
+    "minecraft:waxed_exposed_cut_copper",
+    "minecraft:waxed_exposed_cut_copper_stairs",
+    "minecraft:waxed_exposed_cut_copper_slab",
+    "minecraft:waxed_oxidized_cut_copper_slab",
+    "minecraft:waxed_oxidized_cut_copper_stairs",
+    "minecraft:waxed_oxidized_cut_copper",
+    "minecraft:waxed_oxidized_copper",
+    "minecraft:waxed_weathered_cut_copper_slab",
+    "minecraft:waxed_weathered_cut_copper_stairs",
+    "minecraft:waxed_weathered_cut_copper",
+    "minecraft:waxed_weathered_copper"
+  ]
+  large_very_heavy_items.forEach(item => {
+    e.itemSize(item, 'large', 'very_heavy')
+  })
 
   //极大、非常重
   const huge_very_heavy_items = [
@@ -540,6 +595,7 @@ TFCEvents.data(e => {
   })
   //非常大,重
   const very_large_heavy_items = [
+
     "create:track_station",
     "create:mechanical_press",
     "create:mechanical_roller",
@@ -796,7 +852,7 @@ TFCEvents.data(e => {
     "kubejs:black_steel_support",
     "kubejs:red_steel_support",
     "kubejs:blue_steel_support",
-    "kubejs:pig_iron_support",
+    "kubejs:cast_iron_support",
     "kubejs:galvanized_steel_support"]
   support_items.forEach(item => {
     e.itemSize(item, 'large', 'Light')
@@ -814,6 +870,54 @@ TFCEvents.data(e => {
 
   //大、轻
   const large_light_items = [
+    "create:copper_shingles",
+    "create:exposed_copper_shingles",
+    "create:weathered_copper_shingles",
+    "create:oxidized_copper_shingles",
+    "create:copper_shingle_slab",
+    "create:exposed_copper_shingle_slab",
+    "create:weathered_copper_shingle_slab",
+    "create:oxidized_copper_shingle_slab",
+    "create:copper_shingle_stairs",
+    "create:exposed_copper_shingle_stairs",
+    "create:weathered_copper_shingle_stairs",
+    "create:oxidized_copper_shingle_stairs",
+    "create:waxed_copper_shingles",
+    "create:waxed_exposed_copper_shingles",
+    "create:waxed_weathered_copper_shingles",
+    "create:waxed_oxidized_copper_shingles",
+    "create:waxed_copper_shingle_slab",
+    "create:waxed_exposed_copper_shingle_slab",
+    "create:waxed_weathered_copper_shingle_slab",
+    "create:waxed_oxidized_copper_shingle_slab",
+    "create:waxed_copper_shingle_stairs",
+    "create:waxed_exposed_copper_shingle_stairs",
+    "create:waxed_weathered_copper_shingle_stairs",
+    "create:waxed_oxidized_copper_shingle_stairs",
+    "create:copper_tiles",
+    "create:exposed_copper_tiles",
+    "create:weathered_copper_tiles",
+    "create:oxidized_copper_tiles",
+    "create:copper_tile_slab",
+    "create:exposed_copper_tile_slab",
+    "create:weathered_copper_tile_slab",
+    "create:oxidized_copper_tile_slab",
+    "create:copper_tile_stairs",
+    "create:exposed_copper_tile_stairs",
+    "create:weathered_copper_tile_stairs",
+    "create:oxidized_copper_tile_stairs",
+    "create:waxed_copper_tiles",
+    "create:waxed_exposed_copper_tiles",
+    "create:waxed_weathered_copper_tiles",
+    "create:waxed_oxidized_copper_tiles",
+    "create:waxed_copper_tile_slab",
+    "create:waxed_exposed_copper_tile_slab",
+    "create:waxed_weathered_copper_tile_slab",
+    "create:waxed_oxidized_copper_tile_slab",
+    "create:waxed_copper_tile_stairs",
+    "create:waxed_exposed_copper_tile_stairs",
+    "create:waxed_weathered_copper_tile_stairs",
+    "create:waxed_oxidized_copper_tile_stairs",
     "#tfc:looms",
     "#tfc:tool_racks",
     "create:cardboard_leggings",
@@ -872,7 +976,7 @@ TFCEvents.data(e => {
   large_light_items.forEach(item => {
     e.itemSize(item, 'large', 'light')
   })
-  
+
 
 
 

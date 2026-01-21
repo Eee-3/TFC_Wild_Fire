@@ -1,0 +1,11 @@
+{
+  "type": "firmalife:drying",
+  "ingredient": {
+    "item": "kubejs:paper_film"
+  },
+  "result": {
+    "stack": {
+      "item": "minecraft:paper"
+    }
+  }
+}

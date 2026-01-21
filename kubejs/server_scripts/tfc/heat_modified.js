@@ -1,4 +1,10 @@
 TFCEvents.data(e => {
+  e.itemHeat('artisanal:metal/tinplate', 2.8, null, 1200)//马口铁
+  e.itemHeat('kubejs:leather_hot_water_bag', 300, null, null)
+  e.itemHeat('kubejs:rubber_hot_water_bag', 400, null, null)
+  e.itemHeat("kubejs:metal_hot_water_bag", 360, null, null)
+  e.itemHeat('kubejs:heating_warmer', 350, null, null)
+
   //烤肉
   e.itemHeat('#forge:meats', 1, null, null)
   e.itemHeat('#forge:weapons', 1, null, null)
@@ -110,13 +116,13 @@ TFCEvents.data(event => {
     Math.floor(metaltp.black_steel * 0.8)
   );
 
-  //蓝钢三层锭
+  //秘银三层锭
   event.itemHeat('kubejs:triple_blue_steel', triplemetaltp,
     Math.floor(metaltp.blue_steel * 0.6),
     Math.floor(metaltp.blue_steel * 0.8)
   );
 
-  //红钢三层锭
+  //精金三层锭
   event.itemHeat('kubejs:triple_red_steel', triplemetaltp,
     Math.floor(metaltp.red_steel * 0.6),
     Math.floor(metaltp.red_steel * 0.8)
@@ -129,9 +135,9 @@ TFCEvents.data(event => {
     { name: "bismuth_bronze", temperature: 960, metal: "bismuth_bronze" },
     { name: "black_bronze", temperature: 1050, metal: "black_bronze" },
     { name: "bronze", temperature: 950, metal: "bronze" },
-    { name: "black_steel", temperature: 1485, metal: "black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "black_steel" },
+    { name: "blue_steel", temperature: 1863, metal: "blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "red_steel" },
     { name: "steel", temperature: 1540, metal: "steel" },
     { name: "wrought_iron", temperature: 1535, metal: 'cast_iron' }
   ];
@@ -196,7 +202,7 @@ TFCEvents.data(event => {
 TFCEvents.data(event => {
 
   const items = [
-   
+
     { name: "rusty_iron_fragments", metal: 'cast_iron', number: 35, temperature: 1535 },
     { name: "silver_fragments", metal: "silver", number: 35, temperature: 961 },
     { name: "gold_fragments", metal: "gold", number: 35, temperature: 1064 },
@@ -233,11 +239,11 @@ TFCEvents.data(event => {
     { name: "cast_iron_lockpick", temperature: 1150, metal: "cast_iron", number: 50 },
     { name: "wrought_iron_lockpick", temperature: 1535, metal: "cast_iron", number: 50 },
     { name: "steel_lockpick", temperature: 1540, metal: "steel", number: 50 },
-    { name: "black_steel_lockpick", temperature: 1485, metal: "black_steel", number: 50 },
+    { name: "black_steel_lockpick", temperature: 1784, metal: "black_steel", number: 50 },
     // 撬棍类
     { name: "wrought_iron_crowbar", temperature: 1535, metal: "cast_iron", number: 200 },
     { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },
-    { name: "black_steel_crowbar", temperature: 1485, metal: "black_steel", number: 200 },
+    { name: "black_steel_crowbar", temperature: 1784, metal: "black_steel", number: 200 },
   ];
   items.forEach(item => {
     const itemId = `kubejs:${item.name}`; // 物品ID直接使用物件name字段
@@ -287,9 +293,9 @@ TFCEvents.data(event => {
     { name: "zinc", temperature: 419, metal: "tfc:metal/zinc" },
     { name: "stainless_steel", temperature: 1400, metal: "firmalife:bucket/metal/stainless_steel" },
     { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" },
-    { name: "blue_steel", temperature: 1538, metal: "tfc:metal/blue_steel" },
-    { name: "red_steel", temperature: 1538, metal: "tfc:metal/red_steel" },
-    { name: "black_steel", temperature: 1538, metal: "tfc:metal/black_steel" }
+    { name: "blue_steel", temperature: 1863, metal: "tfc:metal/blue_steel" },
+    { name: "red_steel", temperature: 2066, metal: "tfc:metal/red_steel" },
+    { name: "black_steel", temperature: 1784, metal: "tfc:metal/black_steel" }
   ];
 
   metaltongs.forEach(metal => {
@@ -311,7 +317,7 @@ TFCEvents.data(event => {
     { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指
     { name: "rose_gold", temperature: 1064, metal: "rose_gold" }, // 玫瑰金戒指
     { name: "steel", temperature: 1540, metal: "steel" }, // 钢戒指
-    { name: "black_steel", temperature: 1540, metal: "black_steel" } // 黑钢戒指
+    { name: "black_steel", temperature: 1784, metal: "black_steel" } // 黑钢戒指
   ];
 
   // 遍历生成所有戒指的热力配置

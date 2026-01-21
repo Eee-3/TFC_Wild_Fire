@@ -7,13 +7,13 @@
 		#Should create handle temperature ?
 		handle_temperature = false
 		#Should deploying copy input item temperature (ignored if handle temperature disabled)
-		deployer_copy_temperature = false
+		deployer_copy_temperature = true
 		#Blaze Burner Temperature
 		blaze_burner_none = 0.0
-		blaze_burner_smouldering = 80.0
-		blaze_burner_fading = 580.0
-		blaze_burner_kindled = 930.0
-		blaze_burner_seething = 1600.0
+		blaze_burner_smouldering = 90.0
+		blaze_burner_fading = 680.0
+		blaze_burner_kindled = 1230.0
+		blaze_burner_seething = 2500.0
 
 	[woodencog.stress]
 		#Stress impact of the transformer

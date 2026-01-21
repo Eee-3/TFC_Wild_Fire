@@ -57,7 +57,7 @@
         "matchItems": [
             "minecraft:iron_hoe"
         ],
-        "resultItems": "tfc:metal/hoe/steel"
+        "resultItems": "tfc:metal/hoe/wrought_iron"
     },
     {
         "matchItems": [
@@ -87,7 +87,7 @@
         "matchItems": [
             "minecraft:golden_hoe"
         ],
-        "resultItems": "tfc:metal/hoe/steel"
+        "resultItems": "tfc:metal/hoe/copper"
     },
     {
         "matchItems": [

@@ -1,4 +1,4 @@
-// priority: 1
+//priority: 1
 let wash_ore = [
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'uraninite', temperature: 1130, color: 0x262626, out: 'tfc_ie_addon:metal/uranium' },
     { mod: 'tfc_ie_addon:ore', type: '/type_', ore: 'galena', temperature: 1157, color: 0x808080, out: 'tfc_ie_addon:metal/lead' },
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
                 .id(`${recipedid}barrel_sealed/slurry/${ore.ore}`)
             tfc.pot(//矿浆处理
                 [],
-                Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 1000), 20 * 60, 100).itemOutput(`5x kubejs:item/ore/purified_dust/${ore.ore}`)
+                Fluid.of(`kubejs:fluid/ore/slurry/${ore.ore}`, 1000), 20 * 25, 100).itemOutput(`5x kubejs:item/ore/purified_dust/${ore.ore}`)
                 .id(`${recipedid}pot/slurry/${ore.ore}`)
 
 

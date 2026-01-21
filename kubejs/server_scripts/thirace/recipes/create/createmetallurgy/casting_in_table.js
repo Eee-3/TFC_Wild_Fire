@@ -25,6 +25,15 @@ ServerEvents.recipes((event) => {
     },
     {
       ingredients: [
+        { item: 'createmetallurgy:graphite_ingot_mold' },
+        { amount: 50, fluid: 'kubejs:molten_corundum' }
+      ],
+      processingTime: 150,
+      result: { item: 'kubejs:corundum_brick' },
+      id: `${id_prefix}corundum_brick`
+    },
+    {
+      ingredients: [
         { item: 'tfc:powder/soda_ash' },
         { amount: 250, fluid: 'kubejs:molten_glass' }
       ],
@@ -43,8 +52,8 @@ ServerEvents.recipes((event) => {
     'wrought_iron',
     'steel',
     'black_steel',
-    'blue_steel',
-    'red_steel'
+    //'blue_steel',
+    //'red_steel'
   ];
   const molds_1 = [//100mb
 
@@ -163,6 +172,7 @@ ServerEvents.recipes((event) => {
     { item: 'steel', type: '1' },
     { item: 'tin', type: '1' },
     { item: 'zinc', type: '1' },
+    { item: 'unknown', type: '1' },
 
     { item: 'blue_steel', type: '2' },
     { item: 'red_steel', type: '2' },

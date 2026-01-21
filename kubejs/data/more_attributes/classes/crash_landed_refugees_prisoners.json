@@ -1,0 +1,25 @@
+{
+    "name": "crash_landed_refugees_prisoners",
+    "attributes": {
+        "strength": 15,
+        "health": 5,
+        "focus": 10,
+        "stamina": 10,
+        "endurance": 5,
+        "intelligence": 11,
+        "agility": 12,
+        "skill": 12,
+        "luck": 11
+    },
+    "startItems": [
+        {
+            "item": "kubejs:homemade_lockpick",
+            "count": 1
+        },
+        {
+            "item": "butcher:cookedsilverfishchunks",
+            "count": 4
+        }
+    ],
+    "displayCondition": []
+}

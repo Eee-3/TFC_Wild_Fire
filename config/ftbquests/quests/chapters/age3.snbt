@@ -2436,7 +2436,20 @@
 			dependencies: ["6DB6ABFCFA39DC76"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "totemic:rattle"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "spartanweaponry:wooden_boomerang"
+				tag: {
+					AmmoUsed: 0
+					Damage: 0
+				}
+			}
 			id: "7F7FC3329C3A6F62"
 			shape: "pentagon"
 			size: 0.8d
@@ -3839,6 +3852,10 @@
 			icon: {
 				Count: 1
 				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 999060000L
+						traits: [ ]
+					}
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L
@@ -3916,7 +3933,7 @@
 			dependencies: ["7C8905EB4E1E4687"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
-			icon: "endermanoverhaul:enderman_tooth"
+			icon: "alexsmobs:bear_fur"
 			id: "211C149CD6FF90B4"
 			shape: "pentagon"
 			size: 0.8d
@@ -4062,6 +4079,10 @@
 			icon: {
 				Count: 1
 				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 999060000L
+						traits: [ ]
+					}
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L
@@ -8257,6 +8278,10 @@
 			icon: {
 				Count: 1
 				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 999060000L
+						traits: [ ]
+					}
 					"tfc:item_heat": {
 						heat: 0.0f
 						ticks: 0L
@@ -8556,7 +8581,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: "majruszsaccessories:horseshoe"
+			icon: "butcher:cowhoof"
 			id: "5CECA5CEE11AFB8F"
 			require_sequential_tasks: true
 			size: 1.5d
@@ -8670,16 +8695,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "majruszsaccessories:ancient_scarab"
-				tag: {
-					Bonus: {
-						Boosters: [ ]
-						Value: -0.6f
-					}
-				}
-			}
+			icon: "born_in_chaos_v1:fried_maggot"
 			id: "728B350B98915D16"
 			require_sequential_tasks: true
 			size: 1.5d

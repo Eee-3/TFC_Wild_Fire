@@ -1,0 +1,1038 @@
+ServerEvents.recipes(event => {
+  const { tfc, create, kubejs, immersiveengineering } = event.recipes;
+  //安山合金合成
+  tfc.barrel_sealed(16000)
+    .outputItem('create:rose_quartz_block')
+    .inputs('tfc_ie_addon:mineral/quartz_block', TFC.fluidStackIngredient('immersiveengineering:redstone_acid', 1000))
+
+
+
+  tfc.casting(
+    'kubejs:trachyandesite_alloy',
+    'kubejs:rock_powder',
+    TFC.fluidStackIngredient('tfc:metal/zinc', 50),
+    1
+  )
+  tfc.pot(
+    [
+      'minecraft:redstone',
+      'minecraft:redstone',
+      'minecraft:redstone',
+      'minecraft:redstone'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 1000),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    2000
+  ).outputs([], Fluid.of('immersiveengineering:redstone_acid', 200),
+  )//红石酸
+
+  tfc.pot(
+
+    [
+      'kubejs:rubber_hot_water_bag'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:rubber_hot_water_bag').addHeat(100))// 输出物品：橡胶热水袋
+  tfc.pot(
+
+    [
+      'kubejs:leather_hot_water_bag'
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of('kubejs:leather_hot_water_bag').addHeat(60))// 输出物品：皮革热水袋
+  create.milling(
+    'kubejs:rock_powder',
+    "tfc:rock/loose/andesite",
+  ).id("tfcorewashing:rock_powder/milling")
+  tfc.pot(
+
+    [
+      "kubejs:metal_hot_water_bag"
+    ],
+    // 输入流体：100mb 水
+    Fluid.of('minecraft:water', 100),
+    // 熬制温度：
+    200,
+    // 熬制时间：
+    200
+  ).itemOutput(TFC.itemStackProvider.of("kubejs:metal_hot_water_bag").addHeat(100))// 输出物品：金属热水袋
+
+
+
+
+
+  const rockinout = [
+
+    { in: "granite", out: "granite" },
+    { in: "diorite", out: "diorite" },
+    { in: "gabbro", out: "tuff" },
+    { in: "rhyolite", out: "dripstone" },
+    { in: "basalt", out: "deepslate" },
+    { in: "dacite", out: "limestone" }
+  ];
+  rockinout.forEach(rock => {
+
+    event.shaped(`design_decor:${rock.out}_millstone`, [
+      'tfc:handstone', 'kubejs:andesite_chassis', `tfc:rock/smooth/${rock.in}`
+    ]);//石磨
+    create.mechanical_crafting(`design_decor:${rock.out}_crushing_wheel`, [
+      " aba ",
+      "acdca",
+      "bdedb",
+      "acdca",
+      " aba ",
+    ], {
+      a: `tfc:rock/smooth/${rock.in}`,
+      b: 'tfc:metal/sheet/wrought_iron',
+      c: 'vintageimprovements:andesite_sheet',
+      d: '#minecraft:logs',
+      e: 'design_decor:industrial_gear_large',
+    }) // 粉碎轮
+  })
+
+  event.shaped('create:millstone', [
+    'tfc:handstone', 'kubejs:andesite_chassis', 'tfc:rock/smooth/andesite'
+  ]);//石磨
+  create.mechanical_crafting('create:crushing_wheel', [
+    " aba ",
+    "acdca",
+    "bdedb",
+    "acdca",
+    " aba ",
+  ], {
+    a: 'tfc:rock/smooth/andesite',
+    b: 'tfc:metal/sheet/wrought_iron',
+    c: 'vintageimprovements:andesite_sheet',
+    d: '#minecraft:logs',
+    e: 'design_decor:industrial_gear_large',
+  }) // 粉碎轮
+  create.mechanical_crafting('createdieselgenerators:pumpjack_bearing', [
+    " a a ",
+    "ebcbe",
+    " ada ",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/double_sheet/zinc',
+    c: 'create:mechanical_bearing',
+    d: 'create:percision_mechanism',
+    e: 'create:shaft',
+  }) // 抽油机轴承
+  create.mechanical_crafting('createdieselgenerators:pumpjack_head', [
+    " aba",
+    "cd  ",
+    " aba",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/sheet/zinc',
+    c: 'create:andesite_alloy_block',
+    d: 'tfc:metal/rod/steel',
+  }) // 抽油机驴头
+  event.shaped('createdieselgenerators:diesel_engine', [
+    "aba",
+    "aca",
+    "ded"
+  ], {
+    a: 'createdieselgenerators:engine_piston',
+    b: 'vintageimprovements:andesite_sheet',
+    c: 'minecraft:flint',
+    d: 'tfc:metal/sheet/cast_iron',
+    e: 'design_decor:gas_tank'
+  }) // 小型柴油引擎
+
+  create.mechanical_crafting('createdieselgenerators:large_diesel_engine', [
+    " b ",
+    "aca",
+    "dbd",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/block/wrought_iron_slab',
+    c: 'createdieselgenerators:diesel_engine',
+    d: 'tfc:metal/sheet/cast_iron',
+  }) // 模块柴油引擎
+  create.mechanical_crafting('createdieselgenerators:huge_diesel_engine', [
+    "aba c",
+    "defgh",
+    "aba c",
+  ], {
+    a: 'vintageimprovements:andesite_sheet',
+    b: 'tfc:metal/sheet/wrought_iron',
+    c: 'create:andesite_alloy_block',
+    d: 'create:fluid_pipe',
+    e: 'tfc:metal/block/steel',
+    f: 'tfc:metal/rod/wrought_iron',
+    g: 'tfc:metal/sheet/bronze',
+    h: 'create:shaft',
+  }) // 大型柴油引擎
+  create.mechanical_crafting('moreburners:electric_burner', [
+    " aaa ",
+    "cbbbc",
+    " ede ",
+    " gfg ",
+  ], {
+    a: 'firmalife:reinforced_glass',
+    b: 'moreburners:copper_coil',
+    c: 'tfc:metal/rod/steel',
+    d: 'immersiveengineering:furnace_heater',
+    e: 'tfc:metal/double_sheet/wrought_iron',
+    f: 'create:empty_blaze_burner',
+    g: 'tfc:metal/sheet/wrought_iron',
+  }) // 电磁炉
+  create.mechanical_crafting('createdieselgenerators:pumpjack_crank', [
+    "a a",
+    "dbd",
+    "cec",
+    "fbf",
+    "cec",
+  ], {
+    a: 'create:metal_girder',
+    b: 'create:shaft',
+    c: 'vintageimprovements:andesite_sheet',
+    d: 'vintageimprovements:iron_spring',
+    e: 'tfc:metal/double_sheet/zinc',
+    f: 'tfc:metal/sheet/cast_iron',
+  }) // 抽油机曲柄
+  create.mechanical_crafting('createdieselgenerators:engine_piston', [
+    "a",
+    "d",
+    "b",
+    "c",
+  ], {
+    a: 'tfc:metal/sheet/wrought_iron',
+    b: 'tfc:metal/rod/wrought_iron',
+    c: 'create:zinc_nugget',
+    d: 'tfc:brass_mechanisms',
+  }) // 引擎活塞
+  event.shaped('createdieselgenerators:engine_silencer',
+    [
+      'ca ',
+      'aca',
+      ' ab'
+    ],
+    {
+      a: 'vintageimprovements:andesite_sheet',
+      b: 'tfc:metal/rod/wrought_iron',
+      c: '#loot:clean_cloth'
+    }
+  ) //引擎消嘤器
+  create.mechanical_crafting('createdieselgenerators:engine_turbocharger', [
+    "cba",
+    "bdb",
+    " b ",
+  ], {
+    a: 'create:fluid_pipe',
+    b: 'vintageimprovements:andesite_sheet',
+    c: 'tfc:metal/sheet/wrought_iron',
+    d: 'create:propeller',
+  }) // 引擎涡轮增压器
+
+
+  function farmersdelight_cutting(outputitem, inputitem, num, tool, id) {
+    let processedTool = tool; // 先定义变量接收原始tool值
+    if (processedTool.startsWith('#')) { // 判断是否以#开头
+      processedTool = processedTool.substring(1); // 截取从第2个字符开始的字符串，移除#
+    }
+
+    event.custom({
+      "type": "farmersdelight:cutting",
+      "ingredients": [{ "item": inputitem }],
+      "result": [{ "count": num, "item": outputitem }],
+      "tool": { "tag": processedTool } // 使用处理后的tool参数
+    }).id(id);
+
+    //console.log(`调用成功`);
+  }
+
+
+
+  farmersdelight_cutting(`kubejs:copper_fragments`, 'tfc:metal/ingot/copper', 5, 'tfc:hammers', `kubejs:cutting_reciped_copper_fragments`)// 铜锭 → 5个铜碎片
+  farmersdelight_cutting(`kubejs:bismuth_bronze_fragments`, 'tfc:metal/ingot/bismuth_bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_bismuth_bronze_fragments`)// 铋青铜锭 → 5个铋青铜碎片
+  farmersdelight_cutting(`kubejs:black_bronze_fragments`, 'tfc:metal/ingot/black_bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_bronze_fragments`)// 黑青铜锭 → 5个黑青铜碎片
+  farmersdelight_cutting(`kubejs:bronze_fragments`, 'tfc:metal/ingot/bronze', 5, 'tfc:hammers', `kubejs:cutting_reciped_bronze_fragments`)// 青铜锭 → 5个青铜碎片
+  farmersdelight_cutting(`kubejs:red_steel_fragments`, 'tfc:metal/ingot/red_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_red_steel_fragments`)// 精金锭 →
+  farmersdelight_cutting(`kubejs:steel_fragments`, 'tfc:metal/ingot/steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_steel_fragments`)// 钢锭 → 5个钢碎片
+  farmersdelight_cutting(`kubejs:wrought_iron_fragments`, 'tfc:metal/ingot/wrought_iron', 5, 'tfc:hammers', `kubejs:cutting_reciped_wrought_iron_fragments`)// 锻铁锭 → 5个熟铁碎片
+  farmersdelight_cutting(`kubejs:black_steel_fragments`, 'tfc:metal/ingot/black_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_black_steel_fragments`)// 黑钢锭 → 5个黑钢碎片
+  farmersdelight_cutting(`kubejs:blue_steel_fragments`, 'tfc:metal/ingot/blue_steel', 5, 'tfc:hammers', `kubejs:cutting_reciped_blue_steel_fragments`)// 秘银锭 → 5个秘银碎片
+
+  // 皮毛/皮革 JS 数组
+  const furAndLeatherItems = [
+    'crocodile_leather',
+    'lion_fur',
+    'tiger_fur',
+    'panther_fur',
+    'sabertooth_fur',
+    'cougar_fur',
+    'direwolf_fur',
+    'polar_bear_fur',
+    'caribou_fur',
+    'grizzly_bear_fur',
+    'black_bear_fur',
+    
+    //'tfc:large_sheepskin_hide'
+  ];
+  for (var i = 0; i < furAndLeatherItems.length; i++) {
+    var ore = furAndLeatherItems[i];
+    // console.log("开始调用");
+    farmersdelight_cutting('tfc:large_raw_hide', `textile:${ore}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理大生皮
+
+    tfc.scraping(
+      'tfc:large_raw_hide',
+      `textile:${ore}`,
+      'kubejs:item/tfc/fur/large_raw_hide',
+      `kubejs:item/tfc/fur/${ore}`
+    )
+  }
+
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:large_sheepskin_hide' }]
+    , "result": [{ "item": 'tfc:large_raw_hide' },
+    { "item": 'tfc:wool', "count": 3 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_large_sheepskin_hide`)//大羊毛
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_sheepskin_hide' }]
+    , "result": [{ "item": 'tfc:medium_raw_hide' },
+    { "item": 'tfc:wool', "count": 2 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_medium_sheepskin_hide`)//中羊毛
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_sheepskin_hide' }]
+    , "result": [{ "item": 'tfc:small_raw_hide' },
+    { "item": 'tfc:wool', "count": 1 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_small_sheepskin_hide`)//小羊毛 
+  tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
+    //手推磨磨粉
+  create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
+//机械动力磨粉
+
+  tfc.quern('3x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
+   //手推磨磨粉
+  create.milling(['3x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
+   //机械动力磨粉
+
+   "kubejs:wrought_iron_fragments"
+
+    tfc.quern("immersiveengineering:dust_iron","kubejs:wrought_iron_fragments")
+   //手推磨磨粉 铁粉
+  create.milling(["immersiveengineering:dust_iron"], "kubejs:wrought_iron_fragments")
+   //机械动力磨粉 铁粉
+})
+ServerEvents.recipes(event => {
+
+    
+
+
+    event.forEachRecipe(//合成木板
+        {
+            not: { mod: 'quark' },
+            type: "crafting_shapeless",
+            output: "#minecraft:planks"
+        }, r => {
+            var slab_id = r.getOriginalRecipeResult().getId()
+            var block_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
+            event.shapeless(Item.of(slab_id, 2), [block_id, '#tfc:saws']).damageIngredient({ tag: '#tfc:saws' }, 1)
+        })
+    event.remove([{ not: { mod: "kubejs" }, input: "#minecraft:logs", type: "crafting_shapeless", output: "#minecraft:planks" }])//移除所有合成木板配方
+    event.remove([{ not: { mod: "kubejs" }, input: ["#minecraft:logs", "#minecraft:planks"], type: "crafting_shaped", output: "#forge:chests" }])//移除所有箱子配方
+
+
+
+
+
+})//region木板，箱子
+ServerEvents.recipes(event => {
+
+    function farmersdelight_cutting(outputitem, inputitem, num, tool) {
+        let processedTool = tool; // 先定义变量接收原始tool值
+        if (processedTool.startsWith('#')) { // 判断是否以#开头
+            processedTool = processedTool.substring(1); // 截取从第2个字符开始的字符串，移除#
+        }
+
+        event.custom({
+            "type": "farmersdelight:cutting",
+            "ingredients": [{ "item": inputitem }],
+            "result": [{ "count": num, "item": outputitem }],
+            "tool": { "tag": processedTool } // 使用处理后的tool参数
+        });
+    }
+
+    event.replaceInput({ output: 'ars_nouveau:scribes_table' }, '#forge:logs/archwood', '#forge:ingots/steel')
+    event.replaceInput({ output: 'ars_nouveau:scribes_table' }, 'ars_nouveau:archwood_slab', 'immersiveengineering:slab_treated_wood_horizontal')
+    event.replaceInput({ output: 'create:tree_fertilizer' }, '#forge:coral', 'coralstfc:coral_powder')//珊瑚
+    event.replaceInput({ output: '@mekanism' }, "tfc:metal/ingot/wrought_iron", 'tfc:metal/ingot/steel')
+    event.replaceInput({ output: '@mekanism' }, 'minecraft:iron_ingot', 'tfc:metal/ingot/steel')
+
+
+
+
+
+
+
+    //event.shaped('12x create:shaft', ['A','B','A'],{A:'create:andesite_alloy',B:'minecraft:iron_nugget'})//传动杆变难
+
+    //event.shaped('tfc_metal_items:steel_tilt_hammer_head', ['BAB', 'B B', 'AAA'], { A: 'tfc:metal/double_ingot/wrought_iron', B: 'tfc:metal/ingot/wrought_iron' })//杠杆锤头变简单
+
+
+
+    event.replaceInput({ output: 'minecraft:slime_ball' }, 'create:dough', '#tfc:foods/dough')//粘液球面团替换
+    event.replaceInput({ input: 'minecraft:iron_ingot', type: "crafting_shaped" }, 'minecraft:iron_ingot', 'tfc:metal/ingot/wrought_iron')//锻铁替换铁
+    event.replaceOutput({}, 'create_power_loader:empty_andesite_chunk_loader', 'create_power_loader:andesite_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_andesite_chunk_loader” 替换为 “create_power_loader:andesite_chunk_loader”
+    event.replaceOutput({}, 'create_power_loader:empty_brass_chunk_loader', 'create_power_loader:brass_chunk_loader') // 将配方中的产出物品 “create_power_loader:empty_brass_chunk_loader” 替换为 “create_power_loader:brass_chunk_loader”
+    event.replaceInput({ id: 'create:crafting/kinetics/super_glue' }, 'minecraft:slime_ball', '#forge:glue') //强力胶
+    event.replaceInput({ id: 'create:crafting/materials/sand_paper' }, 'minecraft:sand', '#forge:sand')//砂纸
+    event.replaceInput({ input: 'firmalife:food/bacon' }, 'firmalife:food/bacon', 'farmersdelight:bacon')//培根替换
+    event.replaceInput({ input: 'immersiveengineering:plate_steel' }, 'immersiveengineering:plate_steel', 'tfc:metal/sheet/steel') // 将配方中钢板换成钢薄板
+
+
+
+
+
+    // event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
+
+
+    farmersdelight_cutting('kubejs:tfc/crushed_sinew', 'kubejs:tfc/dried_sinew', 1, 'tfc:hammers')//捣碎筋腱
+    farmersdelight_cutting('kubejs:tfc/sinew_thread', 'kubejs:tfc/crushed_sinew', 2, 'tfc:knives')//筋线
+})
+//基础修改
+ServerEvents.recipes(event => {
+  const create = event.recipes.create
+
+
+  /*//灵魂火
+  create.haunting(Item.of('minecraft:blaze_rod'), 'createaddition:electrum_rod')//烈焰棒
+  create.mixing("minecraft:soul_sand", ['#forge:sand', 'minecraft:rotten_flesh'])//灵魂沙*/
+
+
+
+  //搅拌
+  create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
+  create.compacting('tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
+
+  create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/cast_iron', 25)]).heated()//粗安山合金-铸铁
+  create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/zinc', 40)])//粗安山合金-锌
+
+  create.mixing(Fluid.of('kubejs:pulp', 75), ['4x createdieselgenerators:wood_chip', Fluid.of('tfc:lye', 50)]).heated()//纸浆
+  create.compacting('kubejs:pulp_film', Fluid.of('kubejs:pulp', 5))//纸浆薄膜
+  create.compacting('kubejs:paper_film', '5x kubejs:pulp_film')//纸膜
+
+  /* create.compacting(Item.of('minecraft:netherite_ingot'), ['ad_astra:ostrum_ingot', 'tfc:metal/ingot/unknown', 'tfc:metal/ingot/gold']).superheated()//下界合金锭
+   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', 'tfc:metal/ingot/unknown']).superheated()//下界合金碎片（金星
+   create.mixing(Item.of('minecraft:ancient_debris').withChance(0.1), ['ad_astra:infernal_spire_block', Fluid.of('tfc:metal/unknown', 100)]).superheated()//下界合金碎片（金星
+ */
+  //辊压
+
+  create.compacting(Fluid.of('artisanal:lard', 100), "artisanal:pork_fat").heated()//猪脂
+  create.compacting(Fluid.of('artisanal:schmaltz', 100), "artisanal:poultry_fat").heated()//鸡脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:suet").heated()//牛脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:animal_fat").heated()//动物脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "artisanal:bear_fat").heated()//熊脂
+  create.compacting(Fluid.of('tfc:tallow', 100), "butcher:animalfat").heated()//butchery的动物脂肪
+
+  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:pork_belly").heated()//猪五花榨油
+  create.compacting([Fluid.of('artisanal:lard', 100), "3x butcher:porkscratchings", "kubejs:burnt_food_residue"], "butcher:ham").heated()//猪肘榨油
+
+  create.compacting(
+    ['4x createdieselgenerators:asphalt_block', Fluid.of('createdieselgenerators:diesel', 20)],
+    [Fluid.of('kubejs:heavy_oil', 50), '2x #forge:gravel', '2x #forge:sand']
+  ).heated()//沥青制作
+
+  //石磨
+  create.milling('2x tfc:olive_paste', 'tfc:food/olive') // 橄榄 => 2个橄榄糊
+  //create.milling('4x tfc:powder/sulfur', 'tfc:ore/sulfur') // 硫磺矿石 => 4份硫磺粉末
+  create.milling('6x tfc:powder/flux', 'tfc:ore/borax') // 硼砂矿石 => 6份助熔剂粉末
+  create.milling('2x tfc:powder/flux', '#tfc:fluxstone') // 标签为 #tfc:fluxstone 的物品 => 2份助熔剂粉末
+  create.milling('tfc:ore/gypsum', 'tfc:rock/raw/limestone') // 原始石灰石 => 石膏矿石
+  create.milling('4x tfc:powder/ruby', 'tfc:ore/ruby') // 红宝石矿石 => 4份红宝石粉末
+  create.milling('4x tfc:powder/ruby', 'tfc:gem/ruby') // 红宝石宝石 => 4份红宝石粉末
+  //create.milling('8x minecraft:redstone', 'tfc:ore/cinnabar') // 辰砂矿石 => 8个原版红石
+  //create.milling('8x minecraft:redstone', 'tfc:ore/cryolite') // 冰晶石矿石 => 8个原版红石
+  create.milling('4x tfc:powder/pyrite', 'tfc:gem/pyrite') // 黄铁矿宝石 => 4份黄铁矿粉末
+  create.milling('4x tfc:powder/pyrite', 'tfc:ore/pyrite') // 黄铁矿矿石 => 4份黄铁矿粉末
+  create.milling('4x tfc:powder/lapis_lazuli', 'tfc:ore/lapis_lazuli') // 青金石矿石 => 4份青金石粉末
+  create.milling('4x tfc:powder/lapis_lazuli', 'tfc:gem/lapis_lazuli') // 青金石宝石 => 4份青金石粉末
+  create.milling('4x tfc:powder/diamond', 'tfc:gem/diamond') // 钻石宝石 => 4份钻石粉末
+  create.milling('4x tfc:powder/diamond', 'tfc:ore/diamond') // 钻石矿石 => 4份钻石粉末
+  create.milling('4x tfc:powder/opal', 'tfc:gem/opal') // 蛋白石宝石 => 4份蛋白石粉末
+  create.milling('4x tfc:powder/opal', 'tfc:ore/opal') // 蛋白石矿石 => 4份蛋白石粉末
+  create.milling('4x tfc:powder/emerald', 'tfc:gem/emerald') // 祖母绿宝石 => 4份祖母绿粉末
+  create.milling('4x tfc:powder/emerald', 'tfc:ore/emerald') // 祖母绿矿石 => 4份祖母绿粉末
+  create.milling('4x tfc:powder/topaz', 'tfc:gem/topaz') // 黄玉宝石 => 4份黄玉粉末
+  create.milling('4x tfc:powder/topaz', 'tfc:ore/topaz') // 黄玉矿石 => 4份黄玉粉末
+  create.milling('4x tfc:powder/sapphire', 'tfc:gem/sapphire') // 蓝宝石宝石 => 4份蓝宝石粉末
+  create.milling('4x tfc:powder/sapphire', 'tfc:ore/sapphire') // 蓝宝石矿石 => 4份蓝宝石粉末
+  create.milling('4x tfc:powder/amethyst', 'tfc:gem/amethyst') // 紫水晶宝石 => 4份紫水晶粉末
+  create.milling('4x tfc:powder/amethyst', 'tfc:ore/amethyst') // 紫水晶矿石 => 4份紫水晶粉末 
+
+  create.milling('4x createdieselgenerators:wood_chip', 'farmersdelight:tree_bark') // 树皮=木屑
+  create.milling('6x createdieselgenerators:wood_chip', 'tfc:stick_bunch') // 木棍堆=木屑
+  create.milling('12x createdieselgenerators:wood_chip', 'tfc:stick_bundle') // 木棍捆=木屑
+  create.milling('1x createdieselgenerators:wood_chip', '#minecraft:saplings') // 树苗=木屑
+
+  
+  create.milling('1x immersiveengineering:dust_coke', 'immersiveengineering:coal_coke') // 焦煤粉
+
+  event.custom({
+    "type": "vintageimprovements:curving",
+    "itemAsHead": "kubejs:wooden_slat_grid",
+    "ingredients": [
+      { "fluid": ('kubejs:pulp', 5) }],
+    "results": [
+      { "item": "kubejs:pulp_film" }]
+  }),
+
+
+    create.compacting('4x minecraft:cobbled_deepslate', '4x minecraft:cobblestone').heated()//深板岩
+  create.compacting('minecraft:smooth_stone', 'minecraft:cobblestone').superheated()//平滑石头
+  create.deploying('minecraft:paper', ['tfc:unrefined_paper', '#tfc:knives']).keepHeldItem()
+  //注液
+  create.filling('minecraft:glowstone_dust', ['kubejs:rock_powder', Fluid.of('minecraft:lava', 20)])//萤石
+
+  create.filling('kubejs:galvanized_steel_support', ['kubejs:steel_support', Fluid.of('tfc:metal/zinc', 10)])//镀锌方钢梁
+
+  create.filling('brewery:beer_wheat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)])//玉米啤酒
+  create.filling('brewery:beer_barley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)])//大麦啤酒
+  create.filling('brewery:beer_hops', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)])//酒花啤酒
+  create.filling('brewery:beer_nettle', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)])//玉米啤酒
+  create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//玉米啤酒
+  create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
+
+  create.filling('brewery:whiskey_jojannik', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
+  create.filling('brewery:whiskey_lilitusinglemalt', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
+  create.filling('brewery:whiskey_cristelwalker', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)])//酒
+  create.filling('brewery:whiskey_maggoallan', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)])//酒
+  create.filling('brewery:whiskey_carrasconlabel', ['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)])//酒
+  create.filling('brewery:whiskey_ak', ['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)])//酒
+  create.filling('brewery:whiskey_highland_hearth', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)])//酒
+  create.filling('brewery:whiskey_smokey_reverie', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)])//酒
+  create.filling('brewery:whiskey_jamesons_malt', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
+
+  //分液
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'brewery:beer_wheat')//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)], 'brewery:beer_barley')//大麦啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)], 'brewery:beer_hops')//酒花啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle')//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley')//海利啤酒
+
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
+  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker')//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan')//酒
+  create.emptying(['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel')//酒
+  create.emptying(['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak')//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth')//酒
+  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
+  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
+  //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
+  event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
+
+
+
+
+
+
+  //获取树皮
+
+
+
+
+  event.forEachRecipe(//所有肉的烤制配方
+    {
+
+      mod: 'butcher',
+      type: "smoking",
+      output: '#minecraft:meat'
+    }, r => {
+
+      var cookmeat_id = r.getOriginalRecipeResult().getId()
+      var meat_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
+
+      if ((!cookmeat_id || (!meat_id || meat_id.length === 0) || (!meat_id || meat_id.length === 0))) {
+
+        return;
+      }
+
+      event.recipes.tfc.heating(meat_id, 200).resultItem(TFC.itemStackProvider.of(cookmeat_id).addHeat(100))
+    })
+
+
+
+  const burnt = ['tfc:food/cooked_tropical_fish', 'tfc:food/protein_soup',
+    'butcher:cookedbatmeat', 'butcher:cookedsalmon', 'butcher:cookedmincebeef',
+    'butcher:cookedmincedlamb', 'butcher:cookedpillagermeat', 'butcher:cookedspiderleg',
+    'butcher:cookedsausages', 'tfc:food/cooked_tropical_fish', 'tfc:food/cooked_calamari',
+    'tfc:food/cooked_shellfish', 'tfc:food/cooked_bluegill', 'tfc:food/cooked_crappie',
+    'tfc:food/cooked_lake_trout', 'tfc:food/cooked_largemouth_bass', 'tfc:food/cooked_rainbow_trout',
+    'tfc:food/cooked_smallmouth_bass', 'butcher:cookedintestines', 'butcher:cookedlungs',
+    'butcher:cookedliver', 'butcher:cookedkidney', 'butcher:cookedstomach', 'butcher:pork_belly',
+    'butcher:pork_loin', 'butcher:pork_shoulder', 'butcher:pork_leg', 'butcher:cooked_lamb_rib',
+    'butcher:lamb_loin', 'butcher:lamb_shoulder', 'butcher:lamb_sirloin', 'butcher:leg_of_lamb',
+    'butcher:cooked_villager_meat', 'butcher:cookedhoglinmeat', 'butcher:cooked_green_frogs_leg',
+    'butcher:cooked_orange_frog_leg', 'tfc:food/cooked_turtle', 'tfc:food/cooked_gran_feline',
+    'tfc:food/cooked_frog_legs', 'tfc:food/cooked_wolf', 'tfc:food/cooked_fox', 'tfc:food/cooked_hyena',
+    'tfc:food/cooked_duck', 'tfc:food/cooked_chevon', 'tfc:food/cooked_camelidae', 'farmersdelight:cooked_chicken_cuts',
+    'farmersdelight:cooked_bacon', 'farmersdelight:cooked_cod_slice', 'farmersdelight:cooked_salmon_slice',
+    'farmersdelight:cooked_mutton_chops', 'firmalife:food/cooked_bacon', 'firmalife:food/cooked_pizza',
+    'firmalife:food/cooked_pie', 'firmalife:food/cooked_lasagna', 'refurbished_furniture:cooked_vegetable_pizza',
+    'refurbished_furniture:cooked_meatlovers_pizza', 'tfc:food/cooked_pork', 'tfc:food/cooked_mutton',
+    'tfc:food/cooked_chicken', 'tfc:food/cooked_rabbit', 'tfc:food/cooked_cod', 'tfc:food/cooked_salmon',
+    'tfc:food/cooked_rice', 'tfc:food/cooked_beef', 'tfc:food/cooked_quail', 'tfc:food/cooked_bear',
+    'tfc:food/cooked_horse_meat', 'tfc:food/cooked_pheasant', 'tfc:food/cooked_turkey',
+    'tfc:food/cooked_peafowl', 'tfc:food/cooked_grouse', 'tfc:food/cooked_venison',
+    'butcher:cookedhumanmeat', 'butcher:cookedsniffermeat', 'alexsmobs:cooked_kangaroo_meat',
+    'aquaculture:fish_fillet_cooked', 'alexscaves:cooked_tripodfish', 'alexscaves:cooked_mussel',
+    'butcher:cookedhumanmeat', 'butcher:cookedblueexolotlmeat', 'butcher:cookedcyanaxolotlmeat',
+    'butcher:cookedgoldaxolotlmeat', 'butcher:creepermeat', 'butcher:creeperleg', 'butcher:cookedlucyaxolotlmeat',
+    'butcher:cookedwildaxolotlmeat', 'butcher:cookedocelotmeat', 'butcher:cookedsniffermeat',
+    'butcher:cookedstridermeat', 'butcher:cookedevokermeat', 'butcher:cookedguardianmeat',
+    'butcher:cookedshulkermeat', 'butcher:cookedcatmeat', 'butcher:cookedendermanlungs',
+    'butcher:cookedendermankidney', 'butcher:cookedendermanintestines', 'butcher:cookedendermanliver',
+    'butcher:cookedendermanstomach', 'butcher:cookedbloodsausage', 'butcher:cookedheart',
+    'alexsmobs:cooked_kangaroo_meat', 'alexsmobs:cooked_catfish', 'alexscaves:cooked_trilocaris_tail',
+    'alexscaves:cooked_radgill', 'alexscaves:cooked_lanternfish', 'firmalife:food/corn_tortilla',
+    'tfc:food/wheat_bread', 'tfc:food/rice_bread', 'tfc:food/rye_bread', 'tfc:food/oat_bread',
+    'tfc:food/maize_bread', 'tfc:food/barley_bread', 'firmalife:food/rye_flatbread'
+    , 'firmalife:food/rice_flatbread', 'firmalife:food/maize_flatbread', 'firmalife:food/barley_flatbread',
+    'firmalife:food/wheat_flatbread', 'firmalife:food/oat_flatbread']
+  burnt.forEach(burntfood => {
+    event.recipes.tfc.heating(burntfood, 700).resultItem('kubejs:burnt_food_residue')
+  })
+  /*event.forEachRecipe(//所有的烤制配方烧糊
+    {
+
+
+      type: "smoking"
+
+    }, r => {
+
+      var cookmeat_id = r.getOriginalRecipeResult().getId()
+      var meat_id = r.getOriginalRecipeIngredients()[0].getItemIds()[0]
+
+      if ((!cookmeat_id || (!meat_id || meat_id.length === 0) || (!meat_id || meat_id.length === 0))) {
+
+        return;
+      }
+      if (cookmeat_id == 'immersiveengineering:clinker_brick' || cookmeat_id == 'tfc:food/dried_kelp' || cookmeat_id == 'tfc:food/dried_seaweed' || cookmeat_id == 'tfc:powder/soda_ash' || cookmeat_id == 'tfc:torch' || cookmeat_id == 'tfc:stick_bunch') {
+        return;
+      }
+
+      event.recipes.tfc.heating(cookmeat_id, 700).resultItem('kubejs:burnt_food_residue')
+    })*/
+
+
+
+  //event.custom({ "type": "tfc:heating", "ingredient": { "item": 'create:empty_blaze_burner' }, "result_item": { "item": 'create:blaze_burner' }, "temperature": 1538 })//烈焰人燃烧室
+  event.custom({//海带烧
+    "type": "tfc:heating",
+    "ingredient": { "tag": 'tfc:plants/kelp' },
+    "result_item": { "item": "tfc:food/dried_kelp" },
+    "temperature": 200
+  })
+  event.custom({//海带烧
+    "type": "tfc:heating",
+    "ingredient": { "item": 'tfc:plant/laminaria' },
+    "result_item": { "item": "tfc:food/dried_kelp" },
+    "temperature": 200
+  })
+
+
+  const inputcailiao = 'tfc:metal/sheet/black_steel'
+  create.sequenced_assembly('kubejs:basic_crystal_pannel', 'tfc:metal/sheet/black_steel',
+    [create.deploying(inputcailiao, [inputcailiao, 'create:andesite_alloy']),
+    create.pressing(inputcailiao, inputcailiao),
+    create.deploying(inputcailiao, [inputcailiao, 'create_new_age:copper_circuit']),
+    create.deploying(inputcailiao, [inputcailiao, 'create:precision_mechanism']),
+    create.deploying(inputcailiao, [inputcailiao, 'create:electron_tube']),
+    create.pressing(inputcailiao, inputcailiao)]
+  ).transitionalItem(inputcailiao).loops(2)//基础晶体面板
+  create.sequenced_assembly('kubejs:moon_crystal_panel', 'tfc:metal/sheet/black_steel',
+    [create.deploying(inputcailiao, [inputcailiao, 'tfc:metal/double_sheet/brass']),
+    create.deploying(inputcailiao, [inputcailiao, 'immersiveengineering:circuit_board']),
+    create.deploying(inputcailiao, [inputcailiao, 'create_new_age:copper_circuit']),
+    create.deploying(inputcailiao, [inputcailiao, 'create:precision_mechanism']),
+    create.deploying(inputcailiao, [inputcailiao, 'create:electron_tube']),
+    create.pressing(inputcailiao, inputcailiao)]
+  ).transitionalItem(inputcailiao).loops(2)//月球晶体面板
+  create.sequenced_assembly('kubejs:hologram_frontpanel', 'tfc:metal/sheet/black_steel',
+    [create.deploying(inputcailiao, [inputcailiao, 'tfc:metal/double_sheet/wrought_iron']),
+    create.deploying(inputcailiao, [inputcailiao, 'mekanism:elite_control_circuit']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_calculation_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_engineering_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ad_astra:photovoltaic_etrium_cell']),
+    create.pressing(inputcailiao, inputcailiao)]
+  ).transitionalItem(inputcailiao).loops(2)//六方全息面板
+
+
+
+  //TFC
+  event.recipes.tfc.knapping('2x kubejs:unfired_mold_mechanical', 'tfc:clay', [
+    'XXXXX',
+    'X X X',
+    'X X X',
+    'X X X',
+    'XXXXX']).outsideSlotRequired(false)
+
+  event.recipes.tfc.welding('tfc:metal/double_ingot/cast_iron', 'tfc:metal/ingot/cast_iron', 'tfc:metal/ingot/cast_iron')//铸铁焊接
+
+
+
+
+
+
+
+
+
+
+
+})
+//沃土系数更改
+ServerEvents.recipes(e => {
+  const CROP_GROWTH_TIME_MULTIPLIER = 0.8;// 沃土加速系数，暂定 0.8
+  const BASE_GROWTH_TIME = 51200;// 基础生长时间
+  const ADJUSTED_GROWTH_TIME = BASE_GROWTH_TIME * CROP_GROWTH_TIME_MULTIPLIER;// 计算调整后的生长时间
+  const RICH_SOIL = 'farmersdelight:rich_soil';// 沃土土壤类型
+
+  const crops = [// 定义作物列表，每个作物包含名称、产出物品、种子物品和作物方块
+    { name: 'wheat', product: 'tfc:food/wheat', seed: 'tfc:seeds/wheat', cropBlock: 'tfc:crop/wheat' },
+    { name: 'tomato', product: 'tfc:food/tomato', seed: 'tfc:seeds/tomato', cropBlock: 'tfc:crop/tomato' },
+    { name: 'sugarcane', product: 'tfc:food/sugarcane', seed: 'tfc:seeds/sugarcane', cropBlock: 'tfc:crop/sugarcane' },
+    { name: 'squash', product: 'tfc:food/squash', seed: 'tfc:seeds/squash', cropBlock: 'tfc:crop/squash' },
+    { name: 'soybean', product: 'tfc:food/soybean', seed: 'tfc:seeds/soybean', cropBlock: 'tfc:crop/soybean' },
+    { name: 'rye', product: 'tfc:food/rye', seed: 'tfc:seeds/rye', cropBlock: 'tfc:crop/rye' },
+    { name: 'rice', product: 'tfc:food/rice', seed: 'tfc:seeds/rice', cropBlock: 'tfc:crop/rice' },
+    { name: 'pumpkin', product: 'tfc:pumpkin', seed: 'tfc:seeds/pumpkin', cropBlock: 'tfc:crop/pumpkin' },
+    { name: 'potato', product: 'tfc:food/potato', seed: 'tfc:seeds/potato', cropBlock: 'tfc:crop/potato' },
+    { name: 'onion', product: 'tfc:food/onion', seed: 'tfc:seeds/onion', cropBlock: 'tfc:crop/onion' },
+    { name: 'oat', product: 'tfc:food/oat', seed: 'tfc:seeds/oat', cropBlock: 'tfc:crop/oat' },
+    { name: 'melon', product: 'tfc:melon', seed: 'tfc:seeds/melon', cropBlock: 'tfc:crop/melon' },
+    { name: 'maize', product: 'tfc:food/maize', seed: 'tfc:seeds/maize', cropBlock: 'tfc:crop/maize' },
+    { name: 'jute', product: 'tfc:jute', seed: 'tfc:seeds/jute', cropBlock: 'tfc:crop/jute' },
+    { name: 'green_bean', product: 'tfc:food/green_bean', seed: 'tfc:seeds/green_bean', cropBlock: 'tfc:crop/green_bean' },
+    { name: 'garlic', product: 'tfc:food/garlic', seed: 'tfc:seeds/garlic', cropBlock: 'tfc:crop/garlic' },
+    { name: 'carrot', product: 'tfc:food/carrot', seed: 'tfc:seeds/carrot', cropBlock: 'tfc:crop/carrot' },
+    { name: 'cabbage', product: 'tfc:food/cabbage', seed: 'tfc:seeds/cabbage', cropBlock: 'tfc:crop/cabbage' },
+    { name: 'beet', product: 'tfc:food/beet', seed: 'tfc:seeds/beet', cropBlock: 'tfc:crop/beet' },
+    { name: 'barley', product: 'tfc:food/barley', seed: 'tfc:seeds/barley', cropBlock: 'tfc:crop/barley' }
+  ];
+
+  crops.forEach(crop => {
+    e.custom({
+      "type": "immersiveengineering:cloche",
+      "results": [
+        { "item": crop.product, "count": 2 }
+      ],
+      "input": { "item": crop.seed },
+      "soil": { "item": RICH_SOIL },
+      "time": ADJUSTED_GROWTH_TIME,
+      "render": { "type": "crop", "block": crop.cropBlock }
+    });
+    console.log(`为 ${crop.name} 创建了种植配方`);
+  });
+})
+
+//刷铁机产线
+ServerEvents.recipes(event => {
+  event.remove({ id: "create:splashing/gravel" })
+  const create = event.recipes.create
+  // create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], 'minecraft:gravel')
+  //create.splashing([Item.of('minecraft:flint').withChance(0.25), Item.of('tfc:ore/small_limonite').withChance(0.12)], '#tfc:rock/gravel')
+
+  //create.crushing([Item.of('minecraft:flint').withChance(0.25),Item.of('tfc:ore/small_limonite').withChance(0.1)],"#forge:gravel")
+  // 定义生成生铁液体合成配方的函数
+  function createCastIronMixing(fluidAmount, oreItem) {
+    try {
+      event.custom({
+        "type": "woodencog:heated_mixing",
+        "heatRequirement": 1500,
+        "processingTime": 2000,
+        "ingredients": [
+          {
+            "ingredient": {
+              "item": oreItem
+            }
+          }
+        ],
+        "results": [
+          {
+            "amount": fluidAmount,
+            "fluid": 'tfc:metal/cast_iron',
+            "nbt": {}
+          }
+        ]
+      })
+
+
+
+      //  create.mixing(Fluid.of('tfc:metal/cast_iron', fluidAmount), [oreItem]).heated();
+    } catch (error) {
+      console.error(`生成 ${oreItem} 对应的生铁液体合成配方时出错:`, error);
+    }
+  }
+
+  // 定义不同品质矿石对应的液体量
+  const oreAmountMap = {
+    'small': 5,
+    'poor': 10,
+    'normal': 20,
+    'rich': 30
+  };
+
+  // 定义不同类型的铁矿石
+  const ironOres = ['limonite', 'hematite', 'magnetite'];
+
+  // 遍历不同品质和类型的铁矿石进行合成操作
+  Object.keys(oreAmountMap).forEach(quality => {
+    const fluidAmount = oreAmountMap[quality];
+    ironOres.forEach(ore => {
+      const oreItem = `tfc:ore/${quality}_${ore}`;
+      createCastIronMixing(fluidAmount, oreItem);
+    });
+  });
+  const oreAmountMap2 = {
+    'powder': 5,
+    'tfcorewashing:pellet': 20,
+    'tfcorewashing:briquet': 80,
+  };
+  Object.keys(oreAmountMap2).forEach(quality => {
+    const fluidAmount = oreAmountMap2[quality];
+    ironOres.forEach(ore => {
+      const oreItem = `${quality}_${ore}`;
+      createCastIronMixing(fluidAmount, oreItem);
+    });
+  });
+  create.mixing(Fluid.of('tfc:metal/cast_iron', 100), ['tfc:metal/ingot/cast_iron']).heated()
+
+
+
+
+
+})
+//弓箭工艺
+/*ServerEvents.recipes(event => {
+  const INITIAL_HEATING_TEMPERATURE = 200;
+  // 定义每次温度递增常量
+  const TEMPERATURE_INCREMENT = 30;
+  // 定义大桶浸油时间，8 分钟，假设游戏刻速为 20 刻/秒，8 分钟就是 8 * 60 * 20 = 9600 刻
+  const BARREL_DURATION = 9600;
+
+
+
+  // 泡过水的弓臂 -> 正在烧制的弓臂
+  event.recipes.tfc.heating('kubejs:soaked_bow_arm', INITIAL_HEATING_TEMPERATURE)
+    .resultItem('kubejs:burning_bow_arm');
+
+  // 正在烧制的弓臂 -> 烧制正好的弓臂
+  event.recipes.tfc.heating('kubejs:burning_bow_arm', INITIAL_HEATING_TEMPERATURE + TEMPERATURE_INCREMENT)
+    .resultItem('kubejs:perfectly_burned_bow_arm');
+
+  // 烧制正好的弓臂 -> 烧过了头的弓臂
+  event.recipes.tfc.heating('kubejs:perfectly_burned_bow_arm', INITIAL_HEATING_TEMPERATURE + 2 * TEMPERATURE_INCREMENT)
+    .resultItem('kubejs:overburned_bow_arm');
+
+  // 烧过了头的弓臂 -> 烧糊了的弓臂
+  event.recipes.tfc.heating('kubejs:overburned_bow_arm', INITIAL_HEATING_TEMPERATURE + 3 * TEMPERATURE_INCREMENT)
+    .resultItem('kubejs:charred_bow_arm');
+
+  // 正在烧制的弓臂浸油配方，锻造奖励设为 2
+  event.recipes.tfc.barrel_sealed(BARREL_DURATION)
+    .inputItem('kubejs:burning_bow_arm')
+    .inputFluid(Fluid.of('tfc:oil', 1000))
+    .outputItem(Item.of("kubejs:oiled_bow_arm", '{"tfc:forging_bonus":2}'))
+    .sound('minecraft:block.barrel.open');
+
+  // 烧制正好的弓臂浸油配方，锻造奖励设为 4
+  event.recipes.tfc.barrel_sealed(BARREL_DURATION)
+    .inputItem('kubejs:perfectly_burned_bow_arm')
+    .inputFluid(Fluid.of('tfc:oil', 1000))
+    .outputItem(Item.of("kubejs:oiled_bow_arm", '{"tfc:forging_bonus":4}'))
+    .sound('minecraft:block.barrel.open');
+
+  // 烧过了头的弓臂浸油配方，锻造奖励设为 1
+  event.recipes.tfc.barrel_sealed(BARREL_DURATION)
+    .inputItem('kubejs:overburned_bow_arm')
+    .inputFluid(Fluid.of('tfc:oil', 1000))
+    .outputItem(Item.of("kubejs:oiled_bow_arm", '{"tfc:forging_bonus":1}'))
+    .sound('minecraft:block.barrel.open');
+
+  // 烧糊了的弓臂浸油配方，锻造奖励设为 0
+  event.recipes.tfc.barrel_sealed(BARREL_DURATION)
+    .inputItem('kubejs:charred_bow_arm')
+    .inputFluid(Fluid.of('tfc:oil', 1000))
+    .outputItem(Item.of("kubejs:oiled_bow_arm", '{"tfc:forging_bonus":0}'))
+    .sound('minecraft:block.barrel.open');
+})*/
+
+//辊压机碎矿一次处理
+ServerEvents.recipes(event => {
+  const create = event.recipes.create
+  const double_ingots = ['bismuth', 'bismuth_bronze', 'black_bronze', 'black_steel', 'blue_steel',
+    'brass', 'bronze', 'cast_iron', 'copper', 'gold', 'nickel', 'steel', 'sterling_silver', 'wrought_iron', 'zinc', 'tin', 'red_steel', 'rose_gold', 'silver'];
+  const fdouble_ingots = ['chromium', 'stainless_steel'];
+  const imdouble_ingots = ['aluminum', 'uranium', 'constantan', 'electrum', 'lead'];
+
+
+  //激光焊接-锭>双锭
+
+  double_ingots.forEach(di => {
+    const input1 = `tfc:metal/ingot/${di}`
+    const output1 = `tfc:metal/double_ingot/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)//
+  })
+  fdouble_ingots.forEach(di => {
+    const input1 = `firmalife:metal/ingot/${di}`
+    const output1 = `firmalife:metal/double_ingot/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)//
+  })
+  imdouble_ingots.forEach(di => {
+    const input1 = `immersiveengineering:ingot_${di}`
+    const output1 = `tfc_ie_addon:metal/double_ingot/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)
+  })
+  //激光焊接-板>双板
+
+  double_ingots.forEach(di => {
+    const input1 = `tfc:metal/sheet/${di}`
+    const output1 = `tfc:metal/double_sheet/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)//
+  })
+  fdouble_ingots.forEach(di => {
+    const input1 = `firmalife:metal/sheet/${di}`
+    const output1 = `firmalife:metal/double_sheet/${di}`
+    create.sequenced_assembly(output1, input1,
+      [create.deploying(input1, [input1, input1]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+      }),
+      create.pressing(input1, input1),
+      ]
+    ).transitionalItem(input1).loops(1)//
+  })
+  /*  imdouble_ingots.forEach(di => {
+      const input1 = `tfc_ie_addon:metal/sheet/${di}`
+      const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
+      create.sequenced_assembly(output1, input1,
+        [create.deploying(input1, [input1, input1]),
+        event.custom({
+          "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
+          "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+        }),
+        create.pressing(input1, input1),
+        ]
+      ).transitionalItem(input1).loops(1)//
+     
+    }) */
+
+  //--------------------------------------------------------------------------
+  //--------------------------关于自动化屠宰【WIP】-----------------------------
+  //--------------------------------------------------------------------------
+  /*
+    const pig_corpse = 'butcher:pig_corpse_item'
+    create.sequenced_assembly(
+      'butcher:drained_pig_corpse_item',
+      'butcher:pig_corpse_item',
+      [
+        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
+        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
+        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] }),
+        event.custom({ "type": "create:cutting", "ingredients": [{ "item": pig_corpse }], "processingTime": 200, "results": [{ "item": pig_corpse }] })
+      ]
+    ).transitionalItem(pig_corpse).loops(1)//重复
+    //切猪
+  
+  event.custom({
+    "type": "create:cutting",
+    "ingredients": [
+      { "item": "butcher:drained_pig_corpse_item" }],
+    "results": [
+      { "item": "butcher:pig_corpse_0_leg" },
+      { "item": "4x butcher:raw_pork_leg" }]
+  }) //给猪去腿
+  event.custom({
+    "type": "create:cutting",
+    "ingredients": [
+      { "item": "butcher:pig_corpse_0_leg" }],
+    "results": [
+      { "item": "butcher:pig_corpse_headless" },
+      { "item": "butcher:pighead" }]
+  })//去头
+  event.custom({
+    "type": "create:cutting",
+    "ingredients": [
+      { "item": "butcher:pig_corpse_headless" }],
+    "results": [
+      { "item": "butcher:pig_pork_loin" },
+      { "item": "butcher:raw_pork_loin" },
+      { "item": "butcher:raw_pork_belly" },
+      { "item": "2x artisanal:animal_fat" },
+      { "item": "butcher:stomach" },
+      { "item": "butcher:intestines" },
+      { "item": "2x butcher:kidney" }]
+  })//开腹
+  event.custom({
+    "type": "create:cutting",
+    "ingredients": [
+      { "item": "butcher:pig_pork_loin" }],
+    "results": [
+      { "item": "butcher:pig_skeleton" },
+      { "item": "butcher:heart" },
+      { "item": "butcher:lungs" },
+      { "item": "butcher:liver" },
+      { "item": "2x artisanal:animal_fat" },
+      { "item": "butcher:raw_pork_ham" },
+      { "item": "butcher:raw_pork_shoulder" }]
+  })//开胸
+  create.milling('12x minecraft:bone_meal', 'butcher:pig_skeleton') // 粉碎猪鼓
+ */
+})

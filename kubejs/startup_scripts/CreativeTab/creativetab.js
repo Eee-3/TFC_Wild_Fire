@@ -39,7 +39,7 @@
         "kubejs:black_bronze_support",
         "kubejs:bronze_support",
         "kubejs:copper_support",
-        "kubejs:pig_iron_support",
+        "kubejs:cast_iron_support",
         "kubejs:wrought_iron_support",
         "kubejs:steel_support",
         "kubejs:black_steel_support",

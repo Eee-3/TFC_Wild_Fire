@@ -1,0 +1,6 @@
+{
+  "playerrevive.chat.bleeding": "%s 倒地不起……需要帮助……",
+  "playerrevive.gui.label.time_left": "剩余进度：%s",
+  "playerrevive.gui.hold": "等待其他人协助或是长按「%s」%s 秒自我了断",
+  "playerrevive.revive.item": "你需要 %s"
+}

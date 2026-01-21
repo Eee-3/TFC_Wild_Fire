@@ -4,10 +4,10 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            results: [{ fluid: 'immersiveengineering:redstone_acid', amount: 1000 }],
+            results: [{ fluid: 'immersiveengineering:redstone_acid', amount: 50 }],
             ingredients: [
                 { item: 'minecraft:redstone' },
-                { fluid: 'vintageimprovements:sulfuric_acid', amount: 500 }
+                { fluid: 'minecraft:water', amount: 50 }
             ],
             id: `${id_prefix}redstone_acid`
         },

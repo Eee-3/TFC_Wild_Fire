@@ -1,0 +1,41 @@
+{
+    "name": "crash_landed_refugees_merchants",
+    "attributes": {
+        "strength": 6,
+        "health": 12,
+        "focus": 14,
+        "stamina": 9,
+        "endurance": 12,
+        "intelligence": 8,
+        "agility": 8,
+        "skill": 12,
+        "luck": 9
+    },
+    "startItems": [
+        {
+            "item": "warriorsofpastepoch:anti_plague_serum",
+            "count": 1
+        },
+        {
+            "item": "legendarysurvivaloverhaul:morphine",
+            "count": 2
+        },
+        {
+            "item": "legendarysurvivaloverhaul:bandage",
+            "count": 15
+        },
+        {
+            "item": "legendarysurvivaloverhaul:medikit",
+            "count": 1
+        },
+        {
+            "item": "textile:cotton_hat",
+            "count": 1
+        },
+        {
+            "item": "repas_de_survie:instant_gel_love",
+            "count": 5
+        }
+    ],
+    "displayCondition": []
+}

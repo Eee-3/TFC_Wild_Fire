@@ -28,11 +28,11 @@ ServerEvents.recipes(event => {
         ).id(`kubejs:wash_ore/createorewash/splashing/rocky_chunks/${ore.ore}`);
     })
     create.splashing([Item.of('tfc:powder/sulfur').withChance(1)],
-        Item.of('kubejs:item/ore/dirty_dust/'))
+        Item.of('kubejs:item/ore/dirty_dust/sulfur'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/sulfur`);
     create.splashing([Item.of('tfc:powder/graphite').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/graphite'))
-        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/graphite`); 
+        .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/graphite`);
     create.splashing([Item.of('minecraft:redstone').withChance(1)],
         Item.of('kubejs:item/ore/dirty_dust/cryolite'))
         .id(`kubejs:wash_ore/createorewash/splashing/dirty_dust/cryolite`);
@@ -257,6 +257,22 @@ ServerEvents.recipes(event => {
             ],
             Item.of(ore.name)
         ).id(`kubejs:orewash/${ore.rock}`);
+
+        event.custom({
+            "type": "vintageimprovements:vibrating",
+            "ingredients": [{ "item": `${ore.name}` }],
+            "results": [
+                { "chance": 0.08, "item": `${ore.t1}`, "count": 1 },
+                { "chance": 0.08, "item": `${ore.t2}`, "count": 1 },
+                { "chance": 0.08, "item": `${ore.t3}`, "count": 1 },
+                { "chance": 0.08, "item": `${ore.t4}`, "count": 1 },
+                { "chance": 0.08, "item": `${ore.t5}`, "count": 1 }],
+            "processingTime": 300
+        }).id(`kubejs:orewash/vibrating_table/${ore.rock}`)
+
+
+
+
     })
     orea.forEach(ore => {
         oree.forEach(deposit => {
@@ -273,6 +289,21 @@ ServerEvents.recipes(event => {
                 ],
                 Item.of(`tfc:deposit/${deposit.name}/${ore.rock}`)
             ).id(`kubejs:orewash/${deposit.name}/${ore.rock}`);
+            event.custom({
+                "type": "vintageimprovements:vibrating",
+                "ingredients": [{ "item": `tfc:deposit/${deposit.name}/${ore.rock}` }],
+                "results": [
+                    { "chance": 1, "item": `${deposit.ore}`, "count": 1 },
+                    { "chance": 0.5, "item": `${deposit.ore}`, "count": 1 },
+                    { "chance": 0.08, "item": `${ore.t1}`, "count": 1 },
+                    { "chance": 0.08, "item": `${ore.t2}`, "count": 1 },
+                    { "chance": 0.08, "item": `${ore.t3}`, "count": 1 },
+                    { "chance": 0.08, "item": `${ore.t4}`, "count": 1 },
+                    { "chance": 0.08, "item": `${ore.t5}`, "count": 1 }],
+                "processingTime": 300
+            }).id(`kubejs:orewash/vibrating_table/${deposit.name}/${ore.rock}`)
+
+
         })
     })
 

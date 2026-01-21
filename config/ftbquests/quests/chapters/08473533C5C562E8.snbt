@@ -19,7 +19,10 @@
 				}
 				id: "tfc:metal/anvil/wrought_iron"
 			}
+			icon_scale: 1.3d
 			id: "09EEA60B10948B0E"
+			optional: true
+			size: 1.2d
 			tasks: [
 				{
 					id: "050FBDDC7793BD31"
@@ -54,6 +57,11 @@
 			}
 			id: "6B36071A17B179D5"
 			subtitle: "刀锋利刃"
+			tasks: [{
+				id: "32573CCB8B8012F0"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "斩击伤害"
 			x: -2.0d
 			y: -1.5d
@@ -75,6 +83,11 @@
 			}
 			id: "4DA79A2BB466C9B4"
 			subtitle: "硬碰硬"
+			tasks: [{
+				id: "3441EE26EF178368"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "打击伤害"
 			x: 0.0d
 			y: -2.5d
@@ -96,6 +109,11 @@
 			}
 			id: "0DA1E7DE85A0F39D"
 			subtitle: "穿肠破肚"
+			tasks: [{
+				id: "0DDA795EFECB35BA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "穿刺伤害"
 			x: 2.0d
 			y: -1.5d

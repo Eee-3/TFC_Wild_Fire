@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
   //家具>右键互动>死亡领主系列
-  event.recipes.create.item_application('fantasyfurniture:necrolord/lockbox',['#forge:chests/wooden','majruszsdifficulty:cloth'])
+  event.recipes.create.item_application('fantasyfurniture:necrolord/lockbox',['#handcrafted:chests','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/counter',['#handcrafted:cupboards','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/chandelier',['#tfc:lamps','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/oven',['minecraft:furnace','majruszsdifficulty:cloth'])
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     {b:'majruszsdifficulty:cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:necrolord/dresser',['aba'],
     {b:'majruszsdifficulty:cloth',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:necrolord/lockbox'),['#forge:chests/wooden','majruszsdifficulty:cloth'])
+  event.shapeless(Item.of('fantasyfurniture:necrolord/lockbox'),['#handcrafted:chests','majruszsdifficulty:cloth'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_small'),['minecraft:painting','majruszsdifficulty:cloth'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_small'),['fantasyfurniture:necrolord/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_wide'),['fantasyfurniture:necrolord/painting_small'])
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     {b:'minecraft:gold_nugget',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:royal/dresser',['aba'],
     {b:'minecraft:gold_nugget',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:royal/lockbox'),['#forge:chests/wooden','minecraft:gold_nugget'])
+  event.shapeless(Item.of('fantasyfurniture:royal/lockbox'),['#handcrafted:chests','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['minecraft:painting','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['fantasyfurniture:royal/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_wide'),['fantasyfurniture:royal/painting_small'])
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
     {b:'tfc:wool_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:nordic/dresser',['aba'],
     {b:'tfc:wool_cloth',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:nordic/lockbox'),['#forge:chests/wooden','tfc:wool_cloth'])
+  event.shapeless(Item.of('fantasyfurniture:nordic/lockbox'),['#handcrafted:chests','tfc:wool_cloth'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_small'),['minecraft:painting','tfc:wool_cloth'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_small'),['fantasyfurniture:nordic/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_wide'),['fantasyfurniture:nordic/painting_small'])
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     {b:'tfc:burlap_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:dunmer/dresser',['aba'],
     {b:'tfc:burlap_cloth',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:dunmer/lockbox'),['#forge:chests/wooden','tfc:burlap_cloth'])
+  event.shapeless(Item.of('fantasyfurniture:dunmer/lockbox'),['#handcrafted:chests','tfc:burlap_cloth'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_small'),['minecraft:painting','tfc:burlap_cloth'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_small'),['fantasyfurniture:dunmer/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_wide'),['fantasyfurniture:dunmer/painting_small'])
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
     {b:'textile:cotton_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:venthyr/dresser',['aba'],
     {b:'textile:cotton_cloth',a:'#handcrafted:desks'})
-    event.shapeless(Item.of('fantasyfurniture:venthyr/lockbox'),['#forge:chests/wooden','textile:cotton_cloth'])
+    event.shapeless(Item.of('fantasyfurniture:venthyr/lockbox'),['#handcrafted:chests','textile:cotton_cloth'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_small'),['minecraft:painting','textile:cotton_cloth'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_small'),['fantasyfurniture:venthyr/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_wide'),['fantasyfurniture:venthyr/painting_small'])
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
     {b:'minecraft:bone',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:bone/skeleton/dresser',['aba'],
     {b:'minecraft:bone',a:'#handcrafted:desks'})
-  event.shapeless(Item.of('fantasyfurniture:bone/skeleton/lockbox'),['#forge:chests/wooden','minecraft:bone'])
+  event.shapeless(Item.of('fantasyfurniture:bone/skeleton/lockbox'),['#handcrafted:chests','minecraft:bone'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_small'),['minecraft:painting','minecraft:bone'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_small'),['fantasyfurniture:bone/skeleton/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_wide'),['fantasyfurniture:bone/skeleton/painting_small'])

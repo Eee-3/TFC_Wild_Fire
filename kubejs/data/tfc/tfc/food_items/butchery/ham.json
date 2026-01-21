@@ -1,9 +1,0 @@
-{
-  "ingredient": {
-    "item": "butcher:ham"
-  },
-  "hunger": 3,
-  "saturation": 2.5,
-  "decay_modifier": 1.5,
-  "protein": 2.8
-}

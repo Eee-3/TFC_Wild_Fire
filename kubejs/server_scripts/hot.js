@@ -108,18 +108,21 @@ PlayerEvents.tick(event => {
                 if (mittens != null) {
                     damageMittens = true
                 }
-                else dropHotItem = true
+                else if(!player.offHandItem.hasTag('kubejs:nohot')) dropHotItem = true
+                   
             }
 
             player.offHandItem.getCapability($HeatCapability.CAPABILITY).ifPresent(iHeat => {
-                if (iHeat.getTemperature() > 300){
+                if (iHeat.getTemperature() > 300) {
                     if (peel != null && iHeat.getTemperature() < 700) {
-                    damagePeel = true
-                }
+                        damagePeel = true
+                    }
                     else if (mittens != null && iHeat.getTemperature() < 1300) {
-                    damageMittens = true
-                }
-                else dropHotItem = true
+                        damageMittens = true
+                    }
+                    else if(!player.offHandItem.hasTag('kubejs:nohot')){
+                        dropHotItem = true
+                    }
                 }
             })
 
@@ -147,7 +150,7 @@ PlayerEvents.tick(event => {
             else if (mittens != null) {
                 damageMittens = true
             }
-            else {
+            else if(!item.hasTag('kubejs:nohot')){
                 DropInventoryItem(player, i, item)
                 hurtPlayer = true
             }
@@ -164,7 +167,7 @@ PlayerEvents.tick(event => {
                 else if (mittens != null && iHeat.getTemperature() < 1300) {
                     damageMittens = true
                 }
-                else {
+                else if(!item.hasTag('kubejs:nohot')){
                     DropInventoryItem(player, i, item)
                     hurtPlayer = true
                 }
