@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(e => {
 
-  const { tfc, create, kubejs, immersiveengineering } = e.recipes;
+  const { tfc, create, kubejs, shiny_ornaments, immersiveengineering } = e.recipes;
   function crucible(input, output, amount, temperature) {
     e.custom({
       "type": "createmetallurgy:bulk_melting",
@@ -226,6 +226,29 @@ ServerEvents.recipes(e => {
     });
   });
 
+
+  const item = [
+
+    //戒指
+    { name: "copper_ring", metal: "copper", number: 50, temperature: 1080 }, // 铜戒指
+    { name: "bronze_ring", metal: "bronze", number: 50, temperature: 950 }, // 青铜戒指
+    { name: "black_bronze_ring", metal: "black_bronze", number: 50, temperature: 1080 }, // 黑铜戒指
+    { name: "bismuth_bronze_ring", metal: "bismuth_bronze", number: 50, temperature: 1080 }, // 铋铜戒指
+    { name: "silver_ring", metal: "silver", number: 50, temperature: 961 }, // 银戒指
+    { name: "sterling_silver_ring", metal: "sterling_silver", number: 50, temperature: 950 }, // 纹银戒指
+    { name: "gold_ring", metal: "gold", number: 50, temperature: 1064 }, // 金戒指
+    { name: "rose_gold_ring", metal: "rose_gold", number: 50, temperature: 1064 }, // 玫瑰金戒指
+    { name: "steel_ring", metal: "steel", number: 50, temperature: 1535 }, // 钢戒指
+    { name: "black_steel_ring", metal: "black_steel", number: 50, temperature: 1784 }, // 黑钢戒指
+  ];
+  item.forEach(metala => {
+
+    tfc.heating(`shiny_ornaments:${metala.name}`, metala.temperature)
+      .resultFluid(Fluid.of(`tfc:metal/${metala.metal}`, metala.number)).useDurability(true);
+    crucible(`shiny_ornaments:${metala.name}`, `tfc:metal/${metala.metal}`, metala.number, metala.temperature)
+
+  });
+
   const items = [
 
     { name: "black_bronze_fragments", metal: "black_bronze", number: 20, temperature: 1080 }, // 黑铜碎片
@@ -249,6 +272,7 @@ ServerEvents.recipes(e => {
     { name: "steel_arrow", metal: "steel", number: 12, temperature: 1540 }, // 钢箭头
     { name: "black_steel_arrow", metal: "black_steel", number: 12, temperature: 1784 }, // 黑钢箭头
 
+    //废料
     { name: "copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 铜甲片
     { name: "rusty_copper_scrap", metal: "copper", number: 75, temperature: 1080 }, // 生锈的铜甲片
     { name: "rusty_bronze_scrap", metal: "bronze", number: 75, temperature: 950 }, // 生锈的青铜甲片
@@ -264,6 +288,7 @@ ServerEvents.recipes(e => {
     { name: "rusty_iron_link", metal: 'cast_iron', number: 25, temperature: 1535 }, // 生锈的铁链环
     { name: "iron_link", metal: 'cast_iron', number: 25, temperature: 1535 }, // 铁链环
     { name: "crown", metal: "gold", number: 5, temperature: 1064 }, // 金币
+    //三锭
     { name: "triple_copper", temperature: 1080, metal: "copper", number: 300 },
     { name: "triple_bismuth_bronze", temperature: 960, metal: "bismuth_bronze", number: 300 },
     { name: "triple_black_bronze", temperature: 1050, metal: "black_bronze", number: 300 },
@@ -294,8 +319,6 @@ ServerEvents.recipes(e => {
     { name: "wrought_iron_crowbar", temperature: 1535, metal: "cast_iron", number: 200 },    // 锻铁撬棍（kubejs:wrought_iron_crowbar）
     { name: "steel_crowbar", temperature: 1540, metal: "steel", number: 200 },    // 钢撬棍（kubejs:steel_crowbar）
     { name: "black_steel_crowbar", temperature: 1784, metal: "black_steel", number: 200 },    // 黑钢撬棍（kubejs:black_steel_crowbar）
-
-
     // 支撑梁
     { name: "copper_support", temperature: 1080, metal: "copper", number: 10 },//铜支撑梁
     { name: "bismuth_bronze_support", temperature: 960, metal: "bismuth_bronze", number: 10 },//铋铜支撑梁
@@ -889,6 +912,13 @@ ServerEvents.recipes(e => {
     { name: "spartanweaponry:iron_arrow", temperature: 1535, metal: "tfc:metal/cast_iron", number: 12 },
     { name: "spartanweaponry:diamond_arrow", temperature: 1540, metal: "tfc:metal/steel", number: 12 },
     { name: "spartanweaponry:netherite_arrow", temperature: 1784, metal: "tfc:metal/black_steel", number: 12 },
+    //金属粒
+    { name: "immersiveengineering:nugget_lead", temperature: 1060, metal: "tfc_ie_addon:metal/lead", number: 10 },//弹壳
+    { name: "immersiveengineering:nugget_aluminum", temperature: 1535, metal: "tfc_ie_addon:metal/aluminum", number: 10 },//弹壳    
+    { name: "immersiveengineering:nugget_nickel", temperature: 1060, metal: "tfc:metal/nickel", number: 10 },//工程师护目镜
+    { name: "immersiveengineering:nugget_uranium", temperature: 940, metal: "tfc_ie_addon:metal/uranium", number: 10 },//分液池
+    { name: "immersiveengineering:nugget_constantan", temperature: 1060, metal: "tfc_ie_addon:metal/constantan", number: 10 },//工程师护目镜
+    { name: "immersiveengineering:nugget_electrum", temperature: 940, metal: "tfc_ie_addon:metal/electrum", number: 10 },//分液池
 
     { name: "spartanweaponry:copper_bolt", temperature: 1085, metal: "tfc:metal/copper", number: 25 },
     { name: "spartanweaponry:bolt", temperature: 1535, metal: "tfc:metal/cast_iron", number: 25 },
@@ -909,6 +939,7 @@ ServerEvents.recipes(e => {
     { name: "ad_astra:wrench", temperature: 1535, metal: "tfc:metal/cast_iron", number: 500 },//弹壳    
     { name: "create:goggles", temperature: 1060, metal: "tfc:metal/gold", number: 200 },//工程师护目镜
     { name: "create:item_drain", temperature: 940, metal: "tfc:metal/brass", number: 600 },//分液池
+
   ];
   metal_block.forEach(metal_block => {
     //金属方块融化

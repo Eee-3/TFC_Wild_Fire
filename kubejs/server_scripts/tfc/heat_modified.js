@@ -37,6 +37,13 @@ TFCEvents.data(e => {
   e.itemHeat('#forge:rods/all_metal', 1, null, null)
   e.itemHeat('#tfc:rock/gravel', 1, null, null)
 
+  e.itemHeat('immersiveengineering:nugget_lead', 0.2, null, null)
+  e.itemHeat('immersiveengineering:nugget_aluminum', 0.2, null, null)
+  e.itemHeat('immersiveengineering:nugget_nickel', 0.2, null, null)
+  e.itemHeat('immersiveengineering:nugget_uranium', 0.2, null, null)
+  e.itemHeat('immersiveengineering:nugget_constantan', 0.2, null, null)
+  e.itemHeat('immersiveengineering:nugget_electrum', 0.2, null, null)
+
   /*e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
   const heatitem = [
     '#forge:ores/rocky_chunks',
@@ -312,6 +319,10 @@ TFCEvents.data(event => {
 TFCEvents.data(event => {
   // 戒指配置表
   const rings = [
+    { name: "copper", temperature: 1080, metal: "copper" }, // 铜戒指
+    { name: "bronze", temperature: 950, metal: "bronze" }, // 铜戒指
+    { name: "bismuth_bronze", temperature: 1080, metal: "bismuth_bronze" }, // 铜戒指
+    { name: "black_bronze", temperature: 1080, metal: "black_bronze" }, // 铜戒指
     { name: "sterling_silver", temperature: 961, metal: "sterling_silver" }, // 纹银戒指
     { name: "silver", temperature: 961, metal: "silver" }, // 银戒指
     { name: "gold", temperature: 1064, metal: "golden" }, // 金戒指

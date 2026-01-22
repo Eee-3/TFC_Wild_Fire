@@ -1,0 +1,10 @@
+{
+    "type": "tfc:heating",
+    "ingredient": {
+        "item": "repas_de_survie:thick_meat"
+    },
+    "result_item": {
+        "item": "repas_de_survie:cooked_thick_meat"
+    },
+    "temperature": 220
+}

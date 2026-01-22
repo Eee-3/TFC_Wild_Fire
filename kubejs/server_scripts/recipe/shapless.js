@@ -30,8 +30,14 @@ ServerEvents.recipes(event => {
     event.shapeless('2x kubejs:coal_sustained_heat_pellet', ['7x kubejs:coal_pellet', '2x tfc:daub']);//煤炭保温燃料块
     //event.shapeless('2x kubejs:high_performance_fuel_sustained_heat_pellet', ['7x kubejs:high_performance_fuel_pellet', '2x tfc:daub']);//高性能保温燃料块
 
-    event.shapeless("2x scguns:powder_and_ball", ["2x minecraft:flint", "minecraft:gunpowder", "minecraft:paper"]);//纸包火药弹
-    event.shapeless("2x scguns:grapeshot", ["3x minecraft:flint", "2x minecraft:gunpowder", "minecraft:paper"]);//纸包火药弹
+    event.shapeless("6x scguns:powder_and_ball", ["2x minecraft:flint", "minecraft:gunpowder", "minecraft:paper"]);//纸包火药弹
+    event.shapeless("6x scguns:grapeshot", ["3x minecraft:flint", "2x minecraft:gunpowder", "minecraft:paper"]);//纸包葡萄弹
+
+    event.shapeless("12x scguns:powder_and_ball", ["2x immersiveengineering:nugget_lead", "minecraft:gunpowder", "minecraft:paper"]);//铅弹纸包火药弹
+    event.shapeless("10x scguns:grapeshot", ["3x immersiveengineering:nugget_lead", "minecraft:gunpowder", "minecraft:paper"]);//铅弹纸包葡萄弹
+
+    event.shapeless("3x scguns:powder_and_ball", ["2x minecraft:flint", "minecraft:gunpowder", "farmersdelight:canvas"]);//草布包火药弹
+    event.shapeless("3x scguns:grapeshot", ["3x minecraft:flint", "2x minecraft:gunpowder", "farmersdelight:canvas"]);//草布包葡萄弹
 
 
 
