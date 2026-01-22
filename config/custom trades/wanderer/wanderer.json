@@ -1,0 +1,2413 @@
+{
+  "profession": "wanderer",
+  "removeOtherTrades": true,
+  "maxCommonTrades": 7,
+  "maxRareTrades": 2,
+  "trades": [
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "afc:wood/barrel/cypress",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{id:\"tfc:barrel\",inventory:{inventory:{Items:[],Size:3},tank:{Amount:4000,FluidName:\"tfc:whiskey\"}}}}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "afc:wood/barrel/cypress",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{id:\"tfc:barrel\",inventory:{inventory:{Items:[],Size:3},tank:{Amount:4000,FluidName:\"tfc:beer\"}}}}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "afc:wood/barrel/cypress",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{id:\"tfc:barrel\",inventory:{inventory:{Items:[],Size:3},tank:{Amount:4000,FluidName:\"artisanal:schmaltz\"}}}}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "afc:wood/barrel/cypress",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{id:\"tfc:barrel\",inventory:{inventory:{Items:[],Size:3},tank:{Amount:4000,FluidName:\"tfc:olive_oil\"}}}}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "afc:wood/barrel/cypress",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{id:\"tfc:barrel\",inventory:{inventory:{Items:[],Size:3},tank:{Amount:4000,FluidName:\"minecraft:milk\"}}}}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "waterflasks:leather_flask",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0,Fluid:{Amount:500,FluidName:\"firmalife:goat_milk\"}}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "waterflasks:leather_flask",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0,Fluid:{Amount:500,FluidName:\"firmalife:mead\"}}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "waterflasks:leather_flask",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0,Fluid:{Amount:500,FluidName:\"minecraft:milk\"}}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "waterflasks:leather_flask",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0,Fluid:{Amount:500,FluidName:\"artisanal:apple_juice\"}}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,id:\"tfc:seeds/rye\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/maize_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rice_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/wheat_flour\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,id:\"tfc:seeds/oat\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/oat_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/barley_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rye_flour\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,id:\"tfc:seeds/oat\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/oat_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/barley_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rye_flour\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 17,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/oat_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rye_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rye_grain\"},{Count:8b,id:\"tfc:seeds/wheat\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 17,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/barley_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/wheat_grain\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/barley_grain\"},{Count:8b,id:\"tfc:seeds/maize\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/rice_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/maize_flour\"},{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33048000L,traits:[]}},id:\"tfc:food/oat_grain\"},{Count:8b,id:\"tfc:seeds/rice\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33186000L,traits:[]}},id:\"tfc:food/squash\"},{Count:8b,id:\"tfc:seeds/beet\"},{Count:8b,id:\"tfc:seeds/jute\"},{Count:8b,id:\"tfc:seeds/tomato\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33186000L,traits:[]}},id:\"tfc:food/soybean\"},{Count:8b,id:\"tfc:seeds/green_bean\"},{Count:8b,id:\"tfc:seeds/potato\"},{Count:8b,id:\"tfc:seeds/sugarcane\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33186000L,traits:[]}},id:\"tfc:food/green_bean\"},{Count:8b,id:\"tfc:seeds/carrot\"},{Count:8b,id:\"tfc:seeds/papyrus\"},{Count:8b,id:\"tfc:seeds/onion\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:food\":{creationDate:33186000L,traits:[]}},id:\"firmalife:food/fig\"},{Count:8b,id:\"tfc:seeds/soybean\"},{Count:8b,id:\"tfc:seeds/cabbage\"},{Count:8b,id:\"tfc:seeds/garlic\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,id:\"tfc:rock/loose/basalt\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:ore/normal_cassiterite\"},{Count:8b,id:\"tfc:powder/wood_ash\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/garnierite\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:ore/poor_magnetite\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/magnetite\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/tetrahedrite\"},{Count:8b,id:\"tfc:rock/loose/basalt\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,id:\"tfc:powder/amethyst\"},{Count:8b,id:\"tfc:rock/loose/gneiss\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/native_copper\"},{Count:8b,id:\"tfc:powder/sylvite\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:4b,ForgeCaps:{\"tfc:food\":{creationDate:33228000L,traits:[]}},id:\"artisanal:perishable_sugar\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:ore/poor_hematite\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/hematite\"},{Count:8b,id:\"tfc:rock/loose/chert\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:kaolin_clay\"},{Count:8b,id:\"tfc:rock/loose/granite\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:ore/cryolite\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/garnierite\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:bundle",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Items:[{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:ore/normal_native_silver\"},{Count:8b,id:\"tfc:rock/loose/chalk\"},{Count:8b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"tfc:powder/magnetite\"},{Count:8b,id:\"tfc:powder/graphite\"}]}"
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/barley",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/maize",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/oat",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/rye",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/rice",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/wheat",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/onion",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/carrot",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/potato",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/tomato",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/cabbage",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/beet",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:plant/fig_sapling",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:plant/cocoa_sapling",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/orange_sapling",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/cherry_sapling",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/plum_sapling",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/red_apple_sapling",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/banana_sapling",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/olive_sapling",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/lemon_sapling",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/green_apple_sapling",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/blueberry_bush",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/raspberry_bush",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/elderberry_bush",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:plant/blackberry_bush",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/barley_bread",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/maize_bread",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/oat_bread",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/rye_bread",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/rice_bread",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:food/wheat_bread",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/cheddar",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/chevre",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/rajya_metok",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/gouda",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/feta",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/shosha",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "brewinandchewin:jerky",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "brewinandchewin:kippers",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "brewinandchewin:pickled_pickles",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "farmersdelight:smoked_ham",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmalife:food/hardtack",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:mead",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:strad_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:eiswein",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:apple_cider",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:cristel_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "vinery:glowing_wine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "brewinandchewin:bloody_mary",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "brewinandchewin:egg_grog",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "textile:black_bear_fur",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "textile:caribou_fur",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "textile:tiger_fur",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "textile:crocodile_leather",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "textile:direwolf_fur",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:leather",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:bronze_lockpick",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:bronze_simple_key",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "legendarysurvivaloverhaul:bandage",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:healing_paste",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "legendarysurvivaloverhaul:ice_fern_leaf",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:powder/sapphire",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "legendarysurvivaloverhaul:sun_fern_leaf",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:powder/ruby",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "firmaciv:nav_clock",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "immersive_melodies:lute",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "minecraft:clay",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:kaolin_clay",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "tfc:red_kaolin_clay",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:leather_plate",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:silver_fragments",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": false,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "kubejs:leather_scrap",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 19,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/sapphire",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 21,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/ruby",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/opal",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/lapis_lazuli",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 17,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/diamond",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/amethyst",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 14,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/topaz",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/pyrite",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:rose_gold_emerald_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:rose_gold_delicacy_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:golden_opal_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/opal",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:gold_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:silver_sapphire_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/sapphire",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:silver_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:rose_gold_ruby_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/ruby",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:rose_gold_delicacy_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:silver_ruby_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/ruby",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:silver_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "shiny_ornaments:golden_diamond_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/diamond",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "shiny_ornaments:gold_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "sns:burlap_sack",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:ore/rich_native_gold",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "sns:leather_sack",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "kubejs:crown",
+        "amount": 29,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "kubejs:crown",
+        "amount": 4,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "kubejs:oldcrown",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "born_in_chaos_v1:hound_trap",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:metal/sheet/wrought_iron",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 18,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 2,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "supplementaries:globe",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/opal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "handcrafted:evoker_trophy",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 12,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "handcrafted:pillager_trophy",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "handcrafted:vindicator_trophy",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 13,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "handcrafted:witch_trophy",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "tfc:gem/emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "kubejs:crown",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1
+    }
+  ]
+}
