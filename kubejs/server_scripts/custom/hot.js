@@ -1,3 +1,4 @@
+// priority: 1
 const $HeatCapability = Java.loadClass('net.dries007.tfc.common.capabilities.heat.HeatCapability')
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 const $TFCConfig = Java.loadClass('net.dries007.tfc.config.TFCConfig')
