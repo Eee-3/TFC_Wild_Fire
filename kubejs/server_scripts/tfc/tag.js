@@ -15,8 +15,11 @@ ServerEvents.tags('minecraft:item', event => {//
 
     event.add('curios:body', 'kubejs:rubber_hot_water_bag');//热水袋
 
-
     event.add('curios:body', 'kubejs:leather_hot_water_bag');
+
+    event.add('curios:hands', "minecraft:compass");
+    event.add('curios:hands', "minecraft:spyglass");
+
 
 
     event.add('curios:body', "kubejs:metal_hot_water_bag");
@@ -38,7 +41,7 @@ ServerEvents.tags('minecraft:item', event => {//
     event.add('tfcchannelcasting:accepted_in_mold_table', 'kubejs:mold_mechanical');//零件模具
     event.add('tfc:fired_molds', 'kubejs:mold_mechanical');//零件模具
     event.add('tfc:molds', 'kubejs:mold_mechanical');//零件模具
-    const ore = ['tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
+    const ore = ["tfc_ie_addon:powder/galena",'tfc:powder/sphalerite', 'tfc:powder/native_copper', 'tfc:powder/native_gold', 'tfc:powder/hematite', 'tfc:powder/native_silver', 'tfc:powder/cassiterite', 'tfc:powder/bismuthinite', 'tfc:powder/garnierite', 'tfc:powder/malachite', 'tfc:powder/magnetite', 'tfc:powder/tetrahedrite', 'tfc:powder/limonite']
 
     ore.forEach(item => {
         event.add('kubejs:ore', item);//热矿粉
