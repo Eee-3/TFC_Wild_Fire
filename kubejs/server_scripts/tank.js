@@ -37,16 +37,14 @@ BlockEntityEvents.tick(event => {
                 if (player.isCreative() || player.isSpectator()) return;
                 let PlayerHeadSlot = player.getEquipment("head").getItem()
                 if (!helmetList.includes(PlayerHeadSlot.id)) {
-                    player.potionEffects.add("minecraft:poison", 20, 1,false,false)
-                    player.potionEffects.add("scguns:sulfur_poisoning", 20, 1)
+                    player.potionEffects.add("minecraft:poison", 100, 1,)
                 }
             } else {
                 let mobHeadSlot = entity.nbt.ArmorItems[3]
                 if (!helmetList.includes(mobHeadSlot.id)) {
                     /** @type {Internal.LivingEntity} */
                     let LivingEntity = entity
-                    LivingEntity.potionEffects.add("minecraft:poison", 20, 1,false,false)
-                    player.potionEffects.add("scguns:sulfur_poisoning", 20, 1)
+                    LivingEntity.potionEffects.add("minecraft:poison", 100, 1)
                 }
             }
         }

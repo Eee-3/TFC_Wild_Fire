@@ -804,34 +804,26 @@ ServerEvents.recipes(event => {
         {
             "type": "siegemachines:siege_workbench",
             "pattern": [
+                "a a",
                 "aba",
-                "cdc",
-                "eee"
+                " c "
             ],
             "key": {
                 "a": {
-                    "item": "immersive_aircraft:sturdy_pipes",
-                    "count": 2
+                    "item": "tfc:metal/sheet/wrought_iron",
+                    "count": 1
                 },
                 "b": {
-                    "item": "tfc:metal/double_ingot/rose_gold",
-                    "count": 2
+                    "item": "tfc:metal/double_sheet/wrought_iron",
+                    "count": 1
                 },
                 "c": {
-                    "item": "tfc:metal/sheet/rose_gold",
-                    "count": 1
-                },
-                "d": {
-                    "item": "immersive_aircraft:engine",
-                    "count": 1
-                },
-                "e": {
-                    "item": "tfc:metal/double_sheet/zinc",
-                    "count": 1
+                    "item": "tfc:metal/ingot/cast_iron",
+                    "count": 2
                 }
             },
             "result": {
-                "item": "immersive_aircraft:eco_engine",
+                "item": "siegemachines:barrel",
                 "count": 1
             }
         }

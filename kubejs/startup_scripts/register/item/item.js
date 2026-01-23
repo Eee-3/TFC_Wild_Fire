@@ -107,6 +107,7 @@ StartupEvents.registry('item', event => {
     event.create('rock_powder_blank') //粗粗安山合金模型
     event.create('emergency_hammer') //应急安全锤模型
     event.create('cast_iron_indenter', 'basic')//铸铁压头
+    event.create('dense_indenter', 'basic')//致密压头
     event.create('noheating_warmer', 'basic')//燃尽暖手宝
 
     event.create('wooden_slat_grid', 'basic').tag("vintageimprovements:curving_heads");//木条编网
