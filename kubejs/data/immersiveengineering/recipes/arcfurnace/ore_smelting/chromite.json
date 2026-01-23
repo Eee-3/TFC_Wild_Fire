@@ -9,7 +9,7 @@
   "results": [
     {
       "base_ingredient": {
-        "item": "immersiveengineering:ingot_chromium"
+        "item": "firmalife:metal/ingot/chromium"
       },
       "count": 1
     }

@@ -5,6 +5,29 @@
     "tries": 12,
     "xz_spread": 13,
     "y_spread": 2,
-    "feature": "tfc:wild_brown_mushroom"
+    "feature": "tfc:wild_brown_mushroom",
+    "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "blocks": "minecraft:air",
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "direction": "up",
+                "type": "minecraft:has_sturdy_face"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    }
   }
-}

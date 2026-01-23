@@ -30,7 +30,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 8.0,
-                "max": 20.0
+                "max": 19.0
               },
               "add": false
             }
