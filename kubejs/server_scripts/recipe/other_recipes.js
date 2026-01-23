@@ -72,8 +72,6 @@ ServerEvents.recipes(event => {
 
 
 
-
-
   const rockinout = [
 
     { in: "granite", out: "granite" },
@@ -88,7 +86,7 @@ ServerEvents.recipes(event => {
     event.shaped(`design_decor:${rock.out}_millstone`, [
       'tfc:handstone', 'kubejs:andesite_chassis', `tfc:rock/smooth/${rock.in}`
     ]);//石磨
-    create.mechanical_crafting(`design_decor:${rock.out}_crushing_wheel`, [
+    create.mechanical_crafting(`2x design_decor:${rock.out}_crushing_wheel`, [
       " aba ",
       "acdca",
       "bdedb",
@@ -106,7 +104,7 @@ ServerEvents.recipes(event => {
   event.shaped('create:millstone', [
     'tfc:handstone', 'kubejs:andesite_chassis', 'tfc:rock/smooth/andesite'
   ]);//石磨
-  create.mechanical_crafting('create:crushing_wheel', [
+  create.mechanical_crafting('2x create:crushing_wheel', [
     " aba ",
     "acdca",
     "bdedb",
@@ -215,7 +213,7 @@ ServerEvents.recipes(event => {
     c: 'create:zinc_nugget',
     d: 'tfc:brass_mechanisms',
   }) // 引擎活塞
-  event.shaped('createdieselgenerators:engine_silencer',
+  event.shaped('3x createdieselgenerators:engine_silencer',
     [
       'ca ',
       'aca',
@@ -227,7 +225,7 @@ ServerEvents.recipes(event => {
       c: '#loot:clean_cloth'
     }
   ) //引擎消嘤器
-  create.mechanical_crafting('createdieselgenerators:engine_turbocharger', [
+  create.mechanical_crafting('2x createdieselgenerators:engine_turbocharger', [
     "cba",
     "bdb",
     " b ",
@@ -320,6 +318,32 @@ ServerEvents.recipes(event => {
     , "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_sheepskin_hide`)//小羊毛 
+
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:large_soaked_hide' }]
+    , "result": [{ "item": 'tfc:large_scraped_hide' },
+    { "item": 'tfc:wool', "count": 3 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_large_soaked_hide`)//大浸泡皮
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_soaked_hide' }]
+    , "result": [{ "item": 'tfc:medium_scraped_hide' },
+    { "item": 'tfc:wool', "count": 2 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_medium_soaked_hide`)//中浸泡皮
+  event.custom({
+
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_soaked_hide' }]
+    , "result": [{ "item": 'tfc:small_scraped_hide' },
+    { "item": 'tfc:wool', "count": 1 }]
+    , "sound": "minecraft:item.axe.strip", "tool":
+      { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
+  }).id(`kubejs:cutting_reciped_small_soaked_hidee`)//小浸泡皮
+
   tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
   //手推磨磨粉
   create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
@@ -383,7 +407,77 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: '@mekanism' }, 'minecraft:iron_ingot', 'tfc:metal/ingot/steel')
 
 
+  //致密压头压中间锭配方
+  const high_carbon_metal =
+    [
+      { metal1: 'tfc:raw_iron_bloom', metal2: 'tfc:refined_iron_bloom', },
+      { metal1: 'tfc:refined_iron_bloom', metal2: 'tfc:metal/ingot/wrought_iron', },
+      { metal1: 'tfc:metal/ingot/pig_iron', metal2: 'tfc:metal/ingot/high_carbon_steel', },
+      { metal1: 'tfc:metal/ingot/high_carbon_steel', metal2: 'tfc:metal/ingot/steel', },
+      { metal1: 'tfc:metal/ingot/high_carbon_black_steel', metal2: 'tfc:metal/ingot/black_steel', },
+      { metal1: 'tfc:metal/ingot/high_carbon_blue_steel', metal2: 'tfc:metal/ingot/blue_steel', },
+      { metal1: 'tfc:metal/ingot/high_carbon_red_steel  ', metal2: 'tfc:metal/ingot/red_steel', }
+    ];
+  high_carbon_metal.forEach(high_carbon_metal => {
+    event.custom({
+      "type": "immersiveengineering:metal_press",
+      "energy": 2300,
+      "input": {
+        "item": `${high_carbon_metal.metal1}`
+      },
+      "mold": "kubejs:dense_indenter",
+      "result": {
+        "item": `${high_carbon_metal.metal2}`
+      }
+    })
+  })
 
+
+  //金属冲压机配方
+  //致密压头直接双锭压板配方
+  const metal_press =
+    [
+      { metal: 'bismuth', modid: 'tfc', temp: 1500 },
+      { metal: 'bismuth_bronze', modid: 'tfc', temp: 1500 },
+      { metal: 'black_bronze', modid: 'tfc', temp: 1500 },
+      { metal: 'bronze', modid: 'tfc', temp: 1500 },
+      { metal: 'copper', modid: 'tfc', temp: 1500 },
+      { metal: 'gold', modid: 'tfc', temp: 1300 },
+      { metal: 'nickel', modid: 'tfc', temp: 1300 },
+      { metal: 'rose_gold', modid: 'tfc', temp: 1500 },
+      { metal: 'silver', modid: 'tfc', temp: 1300 },
+      { metal: 'tin', modid: 'tfc', temp: 1500 },
+      { metal: 'zinc', modid: 'tfc', temp: 1300 },
+      { metal: 'sterling_silver', modid: 'tfc', temp: 1500 },
+      { metal: 'cast_iron', modid: 'tfc', temp: 2300 },
+      { metal: 'wrought_iron', modid: 'tfc', temp: 2300 },
+      { metal: 'steel', modid: 'tfc', temp: 2600 },
+      { metal: 'black_steel', modid: 'tfc', temp: 2800 },
+      { metal: 'blue_steel', modid: 'tfc', temp: 3000 },
+      { metal: 'red_steel', modid: 'tfc', temp: 3000 },
+      { metal: 'brass', modid: 'tfc', temp: 1500 },
+      { metal: 'electrum', modid: 'tfc_ie_addon', temp: 1300 },
+      { metal: 'aluminum', modid: 'tfc_ie_addon', temp: 1300 },
+      { metal: 'lead', modid: 'tfc_ie_addon', temp: 1300 },
+      { metal: 'constantan', modid: 'tfc_ie_addon', temp: 1300 },
+      { metal: 'uranium', modid: 'tfc_ie_addon', temp: 1300 },
+      { metal: 'chromium', modid: 'firmalife', temp: 1300 },
+      { metal: 'stainless_steel', modid: 'firmalife', temp: 2800 }
+    ];
+  metal_press.forEach(metal => {
+
+    event.custom({
+      "type": "immersiveengineering:metal_press",
+      "energy": metal.temp,
+      "input": {
+        "item": `${metal.modid}:metal/double_ingot/${metal.metal}`
+      },
+      "mold": "kubejs:dense_indenter",
+      "result": {
+        "item": `${metal.modid}:metal/sheet/${metal.metal}`
+      }
+    })
+  })
 
 
 
@@ -404,7 +498,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({ input: 'immersiveengineering:plate_steel' }, 'immersiveengineering:plate_steel', 'tfc:metal/sheet/steel') // 将配方中钢板换成钢薄板
 
 
-
+  //打磨配方
+  event.custom(
+    { "type": "create:sandpaper_polishing", "ingredients": [{ "item": `tfc:gem/amethyst` }], "results": [{ "item": `createutilities:polished_amethyst` }] }
+  )
 
 
   // event.create('leather_hot_water_bag', 'basic').texture('kubejs:item/tfc/leather_hot_water_bag');// 皮革热水袋
@@ -425,8 +522,8 @@ ServerEvents.recipes(event => {
 
 
   //搅拌
-  create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃
-  create.compacting('tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
+  /*create.compacting('minecraft:glass', ['#forge:sand', 'tfc:powder/flux']).heated()//玻璃*/
+  create.compacting('2x tfc:fire_clay', ['2x tfc:powder/kaolinite', '2x tfc:powder/graphite', 'minecraft:clay_ball']).heated()//耐火粘土
 
   create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/cast_iron', 35)]).heated()//粗安山合金-铸铁
   create.mixing('kubejs:trachyandesite_alloy', ['2x kubejs:rock_powder', Fluid.of('tfc:metal/zinc', 35)])//粗安山合金-锌
@@ -545,14 +642,48 @@ ServerEvents.recipes(event => {
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
+  //加压处理
+  /*
+  
+    {
+      "type": "vintageimprovements:pressurizing",
+      "heatRequirement": "heated",                                                           加热等级
+      "processingTime": 800,                                                                 焖煮时间
+      "ingredients": [
+        { "fluid": "immersiveengineering:creosote", "amount": 50 }, { "tag": "tfc:lumber" }],
+      "results": [{ "item": "tfc_ie_addon:treated_wood_lumber" }]                            产物
+    })
+      */
+  event.custom(
+    {
+      "type": "vintageimprovements:pressurizing",
+      "heatRequirement": "heated",
+      "processingTime": 400,
+      "ingredients": [
+        { "fluid": "immersiveengineering:creosote", "amount": 50 }, { "tag": "tfc:lumber" }],
+      "results": [{ "item": "tfc_ie_addon:treated_wood_lumber" }]
+    })
 
 
 
-
-
-  //获取树皮
-
-
+//激光焊接脆钢
+  const weak_metal =
+    [
+      { metal1: 'tfc:metal/ingot/weak_steel', metal2: 'tfc:metal/ingot/pig_iron', metal3: 'tfc:metal/ingot/high_carbon_black_steel',},
+      { metal1: 'tfc:metal/ingot/weak_blue_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_blue_steel',},
+      { metal1: 'tfc:metal/ingot/weak_red_steel', metal2: 'tfc:metal/ingot/black_steel', metal3: 'tfc:metal/ingot/high_carbon_red_steel',}
+    ];
+  weak_metal.forEach(metal => {
+    create.sequenced_assembly(metal.metal3, metal.metal1,
+      [create.deploying(metal.metal1, [metal.metal1, metal.metal2]),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": metal.metal1 }],
+        "results": [{ "item": metal.metal1, "count": 1 }], "energy": 2000, "maxChargeRate": 30
+      }),
+      create.pressing(metal.metal1, metal.metal1),
+      ]
+    ).transitionalItem(metal.metal1).loops(1)//
+  })
 
 
   event.forEachRecipe(//所有肉的烤制配方
@@ -983,6 +1114,19 @@ ServerEvents.recipes(event => {
       ]
     ).transitionalItem(input1).loops(1)//
   })
+
+  create.sequenced_assembly('immersiveengineering:sawblade', 'tfc:metal/sheet/wrought_iron',
+    [
+      create.deploying('tfc:metal/sheet/wrought_iron', ['tfc:metal/sheet/wrought_iron', 'tfc:metal/rod/wrought_iron']),
+      event.custom({
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": 'immersiveengineering:sawblade' }],
+        "results": [{ "item": 'tfc:metal/sheet/wrought_iron', "count": 1 }], "energy": 300, "maxChargeRate": 10
+      }),
+    ]
+  ).transitionalItem('tfc:metal/sheet/wrought_iron').loops(4)//
+
+
+  })
   /*  imdouble_ingots.forEach(di => {
       const input1 = `tfc_ie_addon:metal/sheet/${di}`
       const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
@@ -1059,4 +1203,7 @@ ServerEvents.recipes(event => {
   })//开胸
   create.milling('12x minecraft:bone_meal', 'butcher:pig_skeleton') // 粉碎猪鼓
  */
-})
+
+
+
+

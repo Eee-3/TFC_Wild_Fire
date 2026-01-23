@@ -5,13 +5,13 @@ ServerEvents.recipes(event => {
     event.shaped("immersiveengineering:rs_engineering", [' a ', 'aba', ' a '], {
         a: "tfc:metal/sheet/steel", b: "create:rose_quartz_block"
     })//红石工程块
-       event.shaped("tfcchannelcasting:unfired_mold_table", ['a a', 'aaa'], {
+    event.shaped("tfcchannelcasting:unfired_mold_table", ['a a', 'aaa'], {
         a: "kubejs:unfired_corundum_brick"
     })//刚玉模具桌
-       event.shaped("tfcchannelcasting:unfired_channel", ['a a', ' a '], {
+    event.shaped("tfcchannelcasting:unfired_channel", ['a a', ' a '], {
         a: "kubejs:unfired_corundum_brick"
     })//刚玉铸造流体通道
-    
+
     event.shaped('vintageimprovements:helve_hammer', ['abb', 'acc', '  d'], {
         a: 'tfc:metal/double_ingot/cast_iron', b: '#valhelsia_structures:posts', c: 'vintageimprovements:iron_spring', d: 'create:vertical_gearbox'
     })//杠杠锤
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'tfc:jar_lid'
     }) // 强力胶
     event.shaped(Item.of('handcrafted:hammer'), ['a', 'c'], {
-        a: 'tfc:metal/hammer_head/wrought_iron',c: '#tfc:lumber'
+        a: 'tfc:metal/hammer_head/wrought_iron', c: '#tfc:lumber'
     }) // 家具锤
     event.shaped(Item.of('3x handcrafted:kitchen_hood_pipe'), ['a', 'a', 'a'], {
         a: 'tfc:metal/rod/cast_iron'
@@ -419,11 +419,9 @@ ServerEvents.recipes(event => {
     ) //大型发酵储罐
     event.shaped('createdieselgenerators:basin_lid',
         [
-            ' a ',
             'cbc'
         ],
         {
-            a: 'minecraft:clock',
             b: 'vintageimprovements:andesite_sheet',
             c: 'tfc:metal/sheet/cast_iron'
         }
@@ -762,6 +760,20 @@ ServerEvents.recipes(event => {
         })
     //木梁
 
+    event.shaped('kubejs:dense_indenter', [
+
+        ' a ',
+        ' b ',
+        'dcd'
+    ],
+        {
+            a: 'tfc:metal/sheet/black_steel',
+            b: 'tfc:metal/double_ingot/black_steel',
+            c: 'tfc:metal/double_sheet/black_steel',
+            d: 'tfc:metal/ingot/black_steel',
+
+        })
+    //致密压头
     //=============================================================
     //=======================功能性存储配方==========================
     //=============================================================
