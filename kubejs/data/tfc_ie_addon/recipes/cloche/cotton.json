@@ -1,0 +1,37 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "textile:cotton_ball"
+    },
+    {
+      "item": "textile:cotton_ball"
+    },
+    {
+      "item": "textile:cotton_ball"
+    }
+  ],
+  "input": {
+    "item": "textile:seeds/cotton"
+  },
+  "soil": [
+    {
+      "item": "tfc:dirt/silt"
+    },
+    {
+      "item": "tfc:dirt/loam"
+    },
+    {
+      "item": "tfc:dirt/silty_loam"
+    },
+    {
+      "item": "tfc:dirt/sandy_loam"
+    }
+  ],
+  "time": 48000,
+  "render": {
+    "type": "crop",
+    "block": "textile:crop/cotton"
+  }
+}

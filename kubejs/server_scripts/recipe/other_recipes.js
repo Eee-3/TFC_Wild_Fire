@@ -725,7 +725,7 @@ ServerEvents.recipes(event => {
 //沃土系数更改
 ServerEvents.recipes(e => {
   const CROP_GROWTH_TIME_MULTIPLIER = 0.8;// 沃土加速系数，暂定 0.8
-  const BASE_GROWTH_TIME = 51200;// 基础生长时间
+  const BASE_GROWTH_TIME = 50000;// 基础生长时间
   const ADJUSTED_GROWTH_TIME = BASE_GROWTH_TIME * CROP_GROWTH_TIME_MULTIPLIER;// 计算调整后的生长时间
   const RICH_SOIL = 'farmersdelight:rich_soil';// 沃土土壤类型
 
@@ -749,14 +749,20 @@ ServerEvents.recipes(e => {
     { name: 'carrot', product: 'tfc:food/carrot', seed: 'tfc:seeds/carrot', cropBlock: 'tfc:crop/carrot' },
     { name: 'cabbage', product: 'tfc:food/cabbage', seed: 'tfc:seeds/cabbage', cropBlock: 'tfc:crop/cabbage' },
     { name: 'beet', product: 'tfc:food/beet', seed: 'tfc:seeds/beet', cropBlock: 'tfc:crop/beet' },
-    { name: 'barley', product: 'tfc:food/barley', seed: 'tfc:seeds/barley', cropBlock: 'tfc:crop/barley' }
+    { name: 'barley', product: 'tfc:food/barley', seed: 'tfc:seeds/barley', cropBlock: 'tfc:crop/barley' },
+
+    { name: 'white_grape', product: 'firmalife:food/white_grapes', seed: 'firmalife:seeds/white_grape', cropBlock: 'firmalife:plant/wild_white_grapes' },
+    { name: 'red_grape', product: 'firmalife:food/red_grapes', seed: 'firmalife:seeds/red_grape', cropBlock: 'firmalife:plant/wild_red_grapes' },
+    { name: 'flax', product: 'textile:flax', seed: 'textile:seeds/flax', cropBlock: 'textile:crop/flax' },
+    { name: 'cotton', product: 'textile:cotton_ball', seed: 'textile:seeds/cotton', cropBlock: 'textile:crop/cotton' }
   ];
 
   crops.forEach(crop => {
     e.custom({
       "type": "immersiveengineering:cloche",
       "results": [
-        { "item": crop.product, "count": 2 }
+        { "item": crop.product, "count": 2 },
+        { "item": crop.seed, "count": 1 }
       ],
       "input": { "item": crop.seed },
       "soil": { "item": RICH_SOIL },

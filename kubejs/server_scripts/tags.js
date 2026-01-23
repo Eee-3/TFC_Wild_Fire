@@ -133,6 +133,13 @@ ServerEvents.tags("block", event => {
         event.add('firmalife:smoking_fuel', 'kubejs:wood_briquette')
         event.add('tfc:firepit_fuel', 'kubejs:wood_briquette')
 
+        event.add('kubejs:dust_brick_copper', 'kubejs:item/ore/dust_brick/malachite')
+        event.add('kubejs:dust_brick_copper', 'kubejs:item/ore/dust_brick/tetrahedrite')
+        event.add('kubejs:dust_brick_copper', 'kubejs:item/ore/dust_brick/native_copper')
+        event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/magnetite')
+        event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/hematite')
+        event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/limonite')
+
         event.add('kubejs:peel',
             [
                 "kubejs:peel",

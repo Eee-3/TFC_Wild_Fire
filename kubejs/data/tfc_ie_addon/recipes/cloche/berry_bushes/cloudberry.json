@@ -26,7 +26,7 @@
       "item": "tfc:dirt/sandy_loam"
     }
   ],
-  "time": 64000,
+  "time": 32000,
   "render": {
     "type": "generic",
     "block": "tfc:plant/cloudberry_bush"

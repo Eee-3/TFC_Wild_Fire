@@ -36,6 +36,12 @@ ServerEvents.recipes(e => {
     "create:crafting/kinetics/propeller",//扇叶
     "create:crafting/kinetics/whisk",//搅拌头
     "butcher:hook_recipe",//恶性bug钩子
+    "butcher:cleaverknapping",
+    "butcher:plierknapping",
+    "butcher:skinningknifeknapping",
+    "butcher:firecleavermold",
+    "butcher:firepliermold",
+    "butcher:fireskinningknifemold",
     "farmersdelight:flint_knife",
     "tfc_metal_items:seq_pressing/double_ingots/electrum",//单独删除琥珀金
     "tfc_metal_items:seq_pressing/sheets/electrum",

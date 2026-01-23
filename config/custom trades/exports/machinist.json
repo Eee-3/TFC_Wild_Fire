@@ -1,0 +1,6 @@
+{
+  "profession": "immersiveengineering:machinist",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": []
+}

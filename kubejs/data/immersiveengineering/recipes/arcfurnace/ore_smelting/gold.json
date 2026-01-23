@@ -1,0 +1,23 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "input": {
+    "base_ingredient": {
+      "item": "kubejs:item/ore/dust_brick/native_gold"
+    },
+    "count": 1
+  },
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "tfc:metal/ingot/gold"
+      },
+      "count": 1
+    }
+  ],
+  "additives": [],
+  "slag": {
+    "tag": "forge:slag"
+  },
+  "time": 100,
+  "energy": 25600
+}

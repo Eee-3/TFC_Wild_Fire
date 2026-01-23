@@ -3,16 +3,16 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-        "tag": "tfc:foods/raw_meats"
+        "tag": "forge:meats"
     },
     {
-        "tag": "tfc:foods/raw_meats"
+        "tag": "forge:meats"
     },
     {
-        "tag": "tfc:foods/raw_meats"
+        "tag": "forge:meats"
     },
     {
-        "tag": "tfc:foods/raw_meats"
+        "tag": "forge:meats"
     }
   ],
   "results": [

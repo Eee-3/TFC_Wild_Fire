@@ -1,0 +1,23 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "input": {
+    "base_ingredient": {
+       "tag": "kubejs:dust_brick_copper"
+    },
+    "count": 1
+  },
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "tfc:metal/ingot/copper"
+      },
+      "count": 1
+    }
+  ],
+  "additives": [],
+  "slag": {
+    "tag": "forge:slag"
+  },
+  "time": 100,
+  "energy": 25600
+}
