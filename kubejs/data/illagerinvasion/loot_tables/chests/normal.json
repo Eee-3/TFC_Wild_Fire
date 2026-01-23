@@ -285,7 +285,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kubejs:sinew_thread",
+          "name": "kubejs:tfc/sinew_thread",
           "weight": 2
         }
       ],
@@ -313,7 +313,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kubejs:sinew",
+          "name": "kubejs:tfc/sinew",
           "weight": 3
         }
       ],

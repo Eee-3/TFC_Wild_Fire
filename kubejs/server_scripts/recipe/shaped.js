@@ -45,6 +45,18 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of('create:super_glue', '{Damage:400}'), ['aba', 'cbc', ' d '], {
         a: 'minecraft:lime_dye', b: 'tfc:glue', c: 'artisanal:metal/tinplate', d: 'tfc:jar_lid'
     }) // 强力胶
+    event.shaped(Item.of('handcrafted:hammer'), ['a', 'c'], {
+        a: 'tfc:metal/hammer_head/wrought_iron',c: '#tfc:lumber'
+    }) // 家具锤
+    event.shaped(Item.of('3x handcrafted:kitchen_hood_pipe'), ['a', 'a', 'a'], {
+        a: 'tfc:metal/rod/cast_iron'
+    }) // 装饰油烟机管道
+    event.shaped(Item.of('3x handcrafted:kitchen_hood'), ['a', 'a', 'b'], {
+        a: 'tfc:metal/rod/cast_iron', b: 'tfc:metal/sheet/cast_iron'
+    }) // 装饰油烟机
+    event.shaped(Item.of('handcrafted:fancy_painting'), ['a', 'b'], {
+        a: 'minecraft:painting', b: 'kubejs:gold_fragments'
+    }) // 高级画
 
     event.shaped('butcher:spitroast', ['aaa', 'b b', 'c c'], {
         a: 'tfc:metal/rod/cast_iron', b: '#minecraft:walls', c: '#tfc:rock/bricks'
