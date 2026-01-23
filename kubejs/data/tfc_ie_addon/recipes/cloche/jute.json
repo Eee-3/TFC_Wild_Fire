@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:jute"
+      "item": "tfc:jute",
+      "count":3
     }
   ],
   "input": {

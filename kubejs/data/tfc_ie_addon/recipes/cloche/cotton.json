@@ -3,13 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "textile:cotton_ball"
-    },
-    {
-      "item": "textile:cotton_ball"
-    },
-    {
-      "item": "textile:cotton_ball"
+      "item": "textile:cotton_ball",
+      "count":3
     }
   ],
   "input": {

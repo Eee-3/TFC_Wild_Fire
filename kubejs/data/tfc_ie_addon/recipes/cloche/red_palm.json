@@ -3,10 +3,12 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "kubejs:palm_heart"
+      "item": "kubejs:palm_heart",
+      "count":2
     },
     {
-      "item": "kubejs:palm_skin"
+      "item": "kubejs:palm_skin",
+      "count":2
     }
   ],
   "input": {

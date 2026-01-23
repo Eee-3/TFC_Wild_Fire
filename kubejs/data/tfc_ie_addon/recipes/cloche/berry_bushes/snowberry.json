@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/snowberry"
-    },
-    {
-      "item": "tfc:food/snowberry"
+      "item": "tfc:food/snowberry",
+      "count": 4
     }
   ],
   "input": {

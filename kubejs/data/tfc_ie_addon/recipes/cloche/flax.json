@@ -3,13 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "textile:flax"
-    },
-    {
-      "item": "textile:flax"
-    },
-    {
-      "item": "textile:flax"
+      "item": "textile:flax",
+      "count":3
     }
   ],
   "input": {

@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "kubejs:horsetail"
-    },
-    {
-      "item": "kubejs:horsetail"
+      "item": "kubejs:horsetail",
+      "count":3
     }
   ],
   "input": {

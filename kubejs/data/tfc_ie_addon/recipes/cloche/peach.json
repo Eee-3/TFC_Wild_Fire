@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/peach"
-    },
-    {
-      "item": "tfc:food/peach"
+      "item": "tfc:food/peach",
+      "count":2
     }
   ],
   "input": {

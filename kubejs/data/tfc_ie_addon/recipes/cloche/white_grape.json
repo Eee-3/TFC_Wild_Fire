@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "firmalife:food/white_grapes"
+      "item": "firmalife:food/white_grapes",
+      "count":3
     }
   ],
   "input": {

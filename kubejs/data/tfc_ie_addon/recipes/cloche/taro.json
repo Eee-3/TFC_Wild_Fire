@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/taro_root"
-    },
-    {
-      "item": "tfc:food/taro_root"
+      "item": "tfc:food/taro_root",
+      "count":3
     }
   ],
   "input": {

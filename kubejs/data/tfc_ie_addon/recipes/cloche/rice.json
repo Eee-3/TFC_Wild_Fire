@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/rice"
+      "item": "tfc:food/rice",
+      "count":2
     }
   ],
   "input": {

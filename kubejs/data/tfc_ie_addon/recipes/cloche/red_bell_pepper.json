@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/red_bell_pepper"
+      "item": "tfc:food/red_bell_pepper",
+      "count":2
     }
   ],
   "input": {

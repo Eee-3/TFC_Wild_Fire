@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/wintergreen_berry"
-    },
-    {
-      "item": "tfc:food/wintergreen_berry"
+      "item": "tfc:food/wintergreen_berry",
+      "count": 4
     }
   ],
   "input": {

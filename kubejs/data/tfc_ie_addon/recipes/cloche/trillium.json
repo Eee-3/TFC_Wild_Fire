@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "kubejs:trillium"
-    },
-    {
-      "item": "kubejs:trillium"
+      "item": "kubejs:trillium",
+      "count":3
     }
   ],
   "input": {

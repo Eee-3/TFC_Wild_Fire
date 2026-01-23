@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/onion"
+      "item": "tfc:food/onion",
+      "count":2
     }
   ],
   "input": {

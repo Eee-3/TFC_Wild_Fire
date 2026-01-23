@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/green_apple"
-    },
-    {
-      "item": "tfc:food/green_apple"
+      "item": "tfc:food/green_apple",
+      "count":2
     }
   ],
   "input": {

@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "kubejs:hops"
-    },
-    {
-      "item": "kubejs:hops"
+      "item": "kubejs:hops",
+      "count":2
     }
   ],
   "input": {

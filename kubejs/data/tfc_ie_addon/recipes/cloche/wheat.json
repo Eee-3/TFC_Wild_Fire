@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/wheat"
+      "item": "tfc:food/wheat",
+      "count":2
     }
   ],
   "input": {

@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:pumpkin"
+      "item": "tfc:pumpkin",
+      "count":2
     }
   ],
   "input": {

@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "kubejs:labrador_tea"
-    },
-    {
-      "item": "kubejs:labrador_tea"
+      "item": "kubejs:labrador_tea",
+      "count":3
     }
   ],
   "input": {

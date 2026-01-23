@@ -140,6 +140,8 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/hematite')
         event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/limonite')
 
+        event.add('loot:clean_cloth', 'tfc:wool_cloth')
+
         event.add('kubejs:peel',
             [
                 "kubejs:peel",

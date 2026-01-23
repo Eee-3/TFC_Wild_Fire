@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/plum"
-    },
-    {
-      "item": "tfc:food/plum"
+      "item": "tfc:food/plum",
+      "count":2
     }
   ],
   "input": {

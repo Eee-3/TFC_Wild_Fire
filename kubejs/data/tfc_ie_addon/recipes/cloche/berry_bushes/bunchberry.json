@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/bunchberry"
-    },
-    {
-      "item": "tfc:food/bunchberry"
+      "item": "tfc:food/bunchberry",
+      "count": 4
     }
   ],
   "input": {

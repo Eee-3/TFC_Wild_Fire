@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/barley"
+      "item": "tfc:food/barley",
+      "count":2
     }
   ],
   "input": {

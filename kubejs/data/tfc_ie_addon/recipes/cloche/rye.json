@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/rye"
+      "item": "tfc:food/rye",
+      "count":2
     }
   ],
   "input": {

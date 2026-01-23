@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/elderberry"
-    },
-    {
-      "item": "tfc:food/elderberry"
+      "item": "tfc:food/elderberry",
+      "count": 4
     }
   ],
   "input": {

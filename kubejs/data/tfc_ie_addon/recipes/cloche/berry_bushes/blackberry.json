@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/blackberry"
-    },
-    {
-      "item": "tfc:food/blackberry"
+      "item": "tfc:food/blackberry",
+      "count": 4
     }
   ],
   "input": {

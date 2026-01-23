@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:melon"
+      "item": "tfc:melon",
+      "count":2
     }
   ],
   "input": {

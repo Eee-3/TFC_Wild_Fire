@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/cattail_root"
-    },
-    {
-      "item": "tfc:food/cattail_root"
+      "item": "tfc:food/cattail_root",
+      "count":2
     }
   ],
   "input": {

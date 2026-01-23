@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "firmalife:food/fig"
-    },
-    {
-      "item": "firmalife:food/fig"
+      "item": "firmalife:food/fig",
+      "count":2
     }
   ],
   "input": {

@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/raspberry"
-    },
-    {
-      "item": "tfc:food/raspberry"
+      "item": "tfc:food/raspberry",
+      "count": 4
     }
   ],
   "input": {

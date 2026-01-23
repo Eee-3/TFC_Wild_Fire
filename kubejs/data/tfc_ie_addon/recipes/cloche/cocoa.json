@@ -3,10 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "firmalife:food/cocoa_beans"
-    },
-    {
-      "item": "firmalife:food/cocoa_beans"
+      "item": "firmalife:food/cocoa_beans",
+      "count":2
     }
   ],
   "input": {

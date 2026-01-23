@@ -1,0 +1,32 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "minecraft:red_mushroom",
+      "count":3
+    }
+  ],
+  "input": {
+    "item": "minecraft:red_mushroom"
+  },
+  "soil": [
+    {
+      "item": "tfc:dirt/silt"
+    },
+    {
+      "item": "tfc:dirt/loam"
+    },
+    {
+      "item": "tfc:dirt/silty_loam"
+    },
+    {
+      "item": "tfc:dirt/sandy_loam"
+    }
+  ],
+  "time": 16000,
+  "render": {
+    "type": "generic",
+    "block": "kubejs:wild_red_mushroom"
+  }
+}

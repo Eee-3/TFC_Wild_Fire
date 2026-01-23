@@ -3,13 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "alexsmobs:banana"
-    },
-    {
-      "item": "alexsmobs:banana"
-    },
-    {
-      "item": "alexsmobs:banana"
+      "item": "alexsmobs:banana",
+      "count":3
     }
   ],
   "input": {

@@ -3,7 +3,8 @@
   "type": "immersiveengineering:cloche",
   "results": [
     {
-      "item": "tfc:food/maize"
+      "item": "tfc:food/maize",
+      "count":2
     }
   ],
   "input": {
