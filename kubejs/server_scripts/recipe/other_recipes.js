@@ -267,30 +267,50 @@ ServerEvents.recipes(event => {
 
   // 皮毛/皮革 JS 数组
   const furAndLeatherItems = [
-    'crocodile_leather',
-    'lion_fur',
-    'tiger_fur',
-    'panther_fur',
-    'sabertooth_fur',
-    'cougar_fur',
-    'direwolf_fur',
-    'polar_bear_fur',
-    'caribou_fur',
-    'grizzly_bear_fur',
-    'black_bear_fur',
+    { furid: 'crocodile_leather', fur: 'crocodile_leather', modid: 'textile', size: 'large' },
+    { furid: 'lion_fur', fur: 'lion_fur', modid: 'textile', size: 'large' },
+    { furid: 'tiger_fur', fur: 'tiger_fur', modid: 'textile', size: 'large' },
+    { furid: 'panther_fur', fur: 'panther_fur', modid: 'textile', size: 'large' },
+    { furid: 'sabertooth_fur', fur: 'sabertooth_fur', modid: 'textile', size: 'large' },
+    { furid: 'cougar_fur', fur: 'cougar_fur', modid: 'textile', size: 'large' },
+    { furid: 'direwolf_fur', fur: 'direwolf_fur', modid: 'textile', size: 'large' },
+    { furid: 'polar_bear_fur', fur: 'polar_bear_fur', modid: 'textile', size: 'large' },
+    { furid: 'caribou_fur', fur: 'caribou_fur', modid: 'textile', size: 'large' },
+    { furid: 'grizzly_bear_fur', fur: 'grizzly_bear_fur', modid: 'textile', size: 'large' },
+    { furid: 'black_bear_fur', fur: 'black_bear_fur', modid: 'textile', size: 'large' },
+    //屠宰的
+    { furid: 'cow_skin', fur: 'cow_skin', modid: 'butcher', size: 'large' },
+    { furid: 'panda_skin', fur: 'pandafur', modid: 'butcher', size: 'large' },
+    { furid: 'pig_skin', fur: 'pig_skin', modid: 'butcher', size: 'large' },
+    { furid: 'sheep_skin', fur: 'sheep_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'camel_fur', fur: 'camelfur', modid: 'butcher', size: 'medium' },
+    { furid: 'creamy_llama_skin', fur: 'creamyllamaskin', modid: 'butcher', size: 'medium' },
+    { furid: 'brown_llama_skin', fur: 'brown_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'gray_llama_skin', fur: 'gray_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'white_llama_skin', fur: 'white_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_black', fur: 'blackhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_brown', fur: 'brownhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_chestnut', fur: 'chestnuthorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_darkbrown', fur: 'darkbrownhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_creamy', fur: 'creamyhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_gray', fur: 'grayhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_white', fur: 'whitehorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'donkey_skin', fur: 'donkeyskin', modid: 'butcher', size: 'medium' },
+    { furid: 'mule_skin', fur: 'muleskin', modid: 'butcher', size: 'medium' },
+
 
     //'tfc:large_sheepskin_hide'
   ];
   for (var i = 0; i < furAndLeatherItems.length; i++) {
     var ore = furAndLeatherItems[i];
     // console.log("开始调用");
-    farmersdelight_cutting('tfc:large_raw_hide', `textile:${ore}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理大生皮
+    farmersdelight_cutting('tfc:large_raw_hide', `${ore.modid}:${ore.fur}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理生皮
 
     tfc.scraping(
-      'tfc:large_raw_hide',
-      `textile:${ore}`,
-      'kubejs:item/tfc/fur/large_raw_hide',
-      `kubejs:item/tfc/fur/${ore}`
+      `tfc:${ore.size}_raw_hide`,
+      `${ore.modid}:${ore.fur}`,
+      `kubejs:item/tfc/fur/${ore.size}_raw_hide`,
+      `kubejs:item/tfc/fur/${ore.furid}`
     )
   }
 
@@ -321,26 +341,24 @@ ServerEvents.recipes(event => {
 
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:large_soaked_hide' }]
-    , "result": [{ "item": 'tfc:large_scraped_hide' },
-    { "item": 'tfc:wool', "count": 3 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting",
+    "ingredients": [{ "item": 'tfc:large_soaked_hide' }],
+    "result": [{ "item": 'tfc:large_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_large_soaked_hide`)//大浸泡皮
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_soaked_hide' }]
-    , "result": [{ "item": 'tfc:medium_scraped_hide' },
-    { "item": 'tfc:wool', "count": 2 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_soaked_hide' }],
+    "result": [{ "item": 'tfc:medium_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_medium_soaked_hide`)//中浸泡皮
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_soaked_hide' }]
-    , "result": [{ "item": 'tfc:small_scraped_hide' },
-    { "item": 'tfc:wool', "count": 1 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_soaked_hide' }],
+    "result": [{ "item": 'tfc:small_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_soaked_hidee`)//小浸泡皮
 
