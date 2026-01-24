@@ -1,0 +1,17 @@
+{
+  "name": "warriorsofpastepoch:plague_village_crossroads",
+  "fallback": "warriorsofpastepoch:plague_village_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:crossroads",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

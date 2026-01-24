@@ -2,6 +2,7 @@ ItemEvents.tooltip(event => {
     addShiftTooltip(event, [
         "kubejs:warm_warmer",
         'kubejs:alumina_dioxide',
+        'repas_de_survie:cooked_red_mushroom',
         'precisionprospecting:metal/prospector_hammer/bronze',
         'precisionprospecting:metal/prospector_hammer/black_bronze',
         'precisionprospecting:metal/prospector_hammer/bismuth_bronze',

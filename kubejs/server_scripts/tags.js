@@ -140,6 +140,56 @@ ServerEvents.tags("block", event => {
         event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/hematite')
         event.add('kubejs:dust_brick_iron', 'kubejs:item/ore/dust_brick/limonite')
 
+        event.add('kubejs:red_mushroom', 'minecraft:red_mushroom')
+        event.add('kubejs:red_mushroom', 'repas_de_survie:cooked_red_mushroom')
+        event.add('kubejs:brown_mushroom', 'minecraft:brown_mushroom')
+        event.add('kubejs:brown_mushroom', 'repas_de_survie:cooked_brown_mushroom')
+        event.add('farmersdelight:cabbage_roll_ingredients', 'repas_de_survie:cooked_red_mushroom')
+        event.add('farmersdelight:cabbage_roll_ingredients', 'repas_de_survie:cooked_brown_mushroom')
+        event.add('farmersdelight:cabbage_roll_ingredients', 'repas_de_survie:rat')
+        event.add('farmersdelight:cabbage_roll_ingredients', 'repas_de_survie:cooked_rat')
+        event.add('brewinandchewin:pizza_toppings', 'repas_de_survie:cooked_red_mushroom')
+        event.add('brewinandchewin:pizza_toppings', 'repas_de_survie:cooked_brown_mushroom')
+
+        event.add('tfc:foods/vegetables', 'repas_de_survie:cooked_red_mushroom')
+        event.add('tfc:foods/vegetables', 'repas_de_survie:cooked_brown_mushroom')
+
+        event.add('tfc:foods/meats', 'repas_de_survie:thick_meat')
+        event.add('tfc:foods/meats', 'repas_de_survie:cooked_thick_meat')
+        event.add('tfc:foods/meats', 'repas_de_survie:snake')
+        event.add('tfc:foods/meats', 'repas_de_survie:cooked_snake')
+        event.add('tfc:foods/meats', 'repas_de_survie:rat')
+        event.add('tfc:foods/meats', 'repas_de_survie:cooked_rat')
+
+        event.add('tfc:foods/raw_meats', 'repas_de_survie:thick_meat')
+        event.add('tfc:foods/raw_meats', 'repas_de_survie:snake')
+        event.add('tfc:foods/raw_meats', 'repas_de_survie:rat')
+
+        event.add('tfc:foods/can_be_salted', 'repas_de_survie:thick_meat')
+        event.add('tfc:foods/can_be_salted', 'repas_de_survie:snake')
+        event.add('tfc:foods/can_be_salted', 'repas_de_survie:rat')
+
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:thick_meat')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:cooked_thick_meat')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:snake')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:cooked_snake')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:rat')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:cooked_rat')
+
+        event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
+
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:cooked_red_mushroom')
+        event.add('tfc:foods/usable_in_soup', 'repas_de_survie:cooked_brown_mushroom')
+
+        event.add('tfc:foods/cooked_meats', 'repas_de_survie:cooked_thick_meat')
+        event.add('tfc:foods/cooked_meats', 'repas_de_survie:cooked_snake')
+        event.add('tfc:foods/cooked_meats', 'repas_de_survie:cooked_rat')
+
+        event.add('tfc:foods', 'repas_de_survie:thick_meat')
+        event.add('tfc:foods', 'repas_de_survie:cooked_thick_meat')
+        event.add('tfc:foods', 'repas_de_survie:snake')
+        event.add('tfc:foods', 'repas_de_survie:cooked_snake')
+
         event.add('loot:clean_cloth', 'tfc:wool_cloth')
 
         event.add('kubejs:peel',

@@ -21,6 +21,7 @@ ServerEvents.recipes(e => {
     "minecraft:stonecutter",
     "create:crafting/kinetics/water_wheel",//水车
     'minecraft:arrow',
+    'woodencog:mixing/barrel/mortar',
     "create:crafting/kinetics/large_water_wheel",//大水车
     "createdieselgenerators:compat/immersiveengineering/nickel_sheet",//锤子锤板子
     "createdieselgenerators:hammering/brass_sheet",

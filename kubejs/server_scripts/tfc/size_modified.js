@@ -46,7 +46,11 @@ TFCEvents.data(e => {
     'repas_de_survie:snake',
     'repas_de_survie:cooked_snake',
     'repas_de_survie:thick_meat',
-    'repas_de_survie:cooked_thick_meat'
+    'repas_de_survie:cooked_thick_meat',
+    'repas_de_survie:cooked_red_mushroom',
+    'repas_de_survie:cooked_brown_mushroom',
+    'repas_de_survie:rat',
+    'repas_de_survie:cooked_rat'
   ]
   small_light_items.forEach(item => {
     e.itemSize(item, 'small', 'light')

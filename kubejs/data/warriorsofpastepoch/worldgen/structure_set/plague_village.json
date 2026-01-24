@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "warriorsofpastepoch:plague_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 75,
+    "separation": 19,
+    "salt": 161729302
+  }
+}

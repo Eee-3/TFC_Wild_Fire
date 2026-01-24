@@ -44,6 +44,11 @@ TFCEvents.data(e => {
   e.itemHeat('immersiveengineering:nugget_constantan', 0.2, null, null)
   e.itemHeat('immersiveengineering:nugget_electrum', 0.2, null, null)
 
+  e.itemHeat('minecraft:brown_mushroom', 0.9, null, null)
+  e.itemHeat('minecraft:red_mushroom', 0.9, null, null)
+  e.itemHeat('repas_de_survie:rat', 0.9, null, null)
+  e.itemHeat('kubejs:unfired_crucible_mold', 3.5, null, null)
+
   /*e.itemHeat('#tfc:dirty_piles', 0.1, null, null)
   const heatitem = [
     '#forge:ores/rocky_chunks',

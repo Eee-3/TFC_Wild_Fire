@@ -53,11 +53,42 @@ StartupEvents.registry('item', event => {
     .texture("kubejs:item/food/meat_mixture")
 	.displayName("肉末混合物")
 
-	event.create("repas_de_survie:thick_meat")
-    .texture("kubejs:item/food/thick_meat")
+	event.create("repas_de_survie:cooked_red_mushroom")
+    .texture("kubejs:item/food/cooked_red_mushroom")
+	.displayName("熟红蘑菇")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(3)
+		foodBuilder.saturation(0.1)
+		foodBuilder.effect("minecraft:poison",100,0,0.8)
+	})
+
+	event.create("repas_de_survie:cooked_brown_mushroom")
+    .texture("kubejs:item/food/cooked_brown_mushroom")
+	.displayName("熟棕蘑菇")
 	.food(foodBuilder=>{
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.1)
+	})
+
+	event.create("repas_de_survie:rat")
+    .texture("kubejs:item/food/rat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.05)
+	})
+
+	event.create("repas_de_survie:cooked_rat")
+    .texture("kubejs:item/food/cooked_rat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(6)
+		foodBuilder.saturation(0.15)
+	})
+
+	event.create("repas_de_survie:thick_meat")
+    .texture("kubejs:item/food/thick_meat")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(8)
+		foodBuilder.saturation(0.15)
 	})
 	event.create("repas_de_survie:cooked_thick_meat")
     .texture("kubejs:item/food/cooked_thick_meat")

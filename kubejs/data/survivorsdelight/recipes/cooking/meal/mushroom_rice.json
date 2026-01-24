@@ -15,13 +15,13 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "minecraft:red_mushroom"
+        "tag": "kubejs:red_mushroom"
       }
     },
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item": "minecraft:brown_mushroom"
+        "tag": "kubejs:brown_mushroom"
       }
     },
     {
