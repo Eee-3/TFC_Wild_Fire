@@ -613,15 +613,15 @@ ServerEvents.recipes(event => {
   create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//玉米啤酒
   create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
 
-  create.filling('brewery:whiskey_jojannik', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
-  create.filling('brewery:whiskey_lilitusinglemalt', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
-  create.filling('brewery:whiskey_cristelwalker', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)])//酒
-  create.filling('brewery:whiskey_maggoallan', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)])//酒
-  create.filling('brewery:whiskey_carrasconlabel', ['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)])//酒
-  create.filling('brewery:whiskey_ak', ['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)])//酒
-  create.filling('brewery:whiskey_highland_hearth', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)])//酒
-  create.filling('brewery:whiskey_smokey_reverie', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)])//酒
-  create.filling('brewery:whiskey_jamesons_malt', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
+  create.filling('brewery:whiskey_jojannik', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
+  create.filling('brewery:whiskey_lilitusinglemalt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
+  create.filling('brewery:whiskey_cristelwalker', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_cristelwalker', 250)])//酒
+  create.filling('brewery:whiskey_maggoallan', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_maggoallan', 250)])//酒
+  create.filling('brewery:whiskey_carrasconlabel', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_carrasconlabel', 250)])//酒
+  create.filling('brewery:whiskey_ak', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_ak', 250)])//酒
+  create.filling('brewery:whiskey_highland_hearth', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_highland_hearth', 250)])//酒
+  create.filling('brewery:whiskey_smokey_reverie', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_smokey_reverie', 250)])//酒
+  create.filling('brewery:whiskey_jamesons_malt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
 
   //分液
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'brewery:beer_wheat')//玉米啤酒
@@ -630,15 +630,15 @@ ServerEvents.recipes(event => {
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle')//玉米啤酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley')//海利啤酒
 
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
-  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan')//酒
-  create.emptying(['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel')//酒
-  create.emptying(['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth')//酒
-  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
