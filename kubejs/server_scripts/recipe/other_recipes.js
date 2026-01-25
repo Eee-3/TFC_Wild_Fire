@@ -1,6 +1,39 @@
 ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
+
+
+create.sandpaper_polishing("kubejs:iron_needle","tfc:metal/rod/wrought_iron")
+create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
+
+  /*create.sequenced_assembly('kubejs:hologram_frontpanel', 'tfc:metal/sheet/black_steel',
+    [create.deploying(inputcailiao, [inputcailiao, 'tfc:metal/double_sheet/wrought_iron']),
+    create.deploying(inputcailiao, [inputcailiao, 'mekanism:elite_control_circuit']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_calculation_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_engineering_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ad_astra:photovoltaic_etrium_cell']),
+    create.pressing(inputcailiao, inputcailiao)]
+  ).transitionalItem(inputcailiao).loops(2)//六方全息面板*/
+
+
+ create.sequenced_assembly("2x kubejs:iron_needle", "tfc:metal/rod/wrought_iron",
+    [create.cutting("tfc:metal/rod/wrought_iron", "tfc:metal/rod/wrought_iron"),
+      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20}),
+      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20})
+    ]
+  ).transitionalItem("tfc:metal/rod/wrought_iron").loops(1)//铁针
+
+ create.sequenced_assembly("2x kubejs:steel_needle", "tfc:metal/rod/steel",
+    [create.cutting("tfc:metal/rod/steel", "tfc:metal/rod/steel"),
+         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20}),
+         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20})
+      ]
+  ).transitionalItem("tfc:metal/rod/steel").loops(1)//钢针
+
+
+  //create.cutting("2x kubejs:iron_needle","tfc:metal/rod/wrought_iron")
+  //create.cutting("2x kubejs:steel_needle","tfc:metal/rod/steel")
   //安山合金合成
+  
   tfc.barrel_sealed(16000)
     .outputItem('create:rose_quartz_block')
     .inputs('tfc_ie_addon:mineral/quartz_block', TFC.fluidStackIngredient('immersiveengineering:redstone_acid', 1000))
