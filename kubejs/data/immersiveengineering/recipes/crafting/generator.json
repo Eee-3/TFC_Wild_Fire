@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bab",
+    "cdc",
+    "beb"
+  ],
+  "key": {
+    "a": {
+      "item": "immersiveengineering:connector_hv"
+    },
+    "b": {
+      "item": "immersiveengineering:sheetmetal_steel"
+    },
+    "c": {
+      "item": "immersiveengineering:coil_mv"
+    },
+    "d": {
+      "item": "createdieselgenerators:engine_turbocharger"
+    },
+    "e": {
+      "item": "createdieselgenerators:coil_hv"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:generator",
+    "count": 2
+  }
+}

@@ -1,0 +1,43 @@
+{
+	"type": "farm_and_charm:roaster",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc_farm_charm:chicken"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc_farm_charm:chicken"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/vegetables"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/flour"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "farm_and_charm:butter"
+			}
+		}
+	],
+	"container": {
+		"item": "minecraft:bowl"
+	},
+	"result": {
+		"item": "tfc_farm_charm:fried_chicken",
+		"count": 1
+	},
+	"requiresLearning": false
+}

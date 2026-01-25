@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "g": {
+      "item": "kubejs:unfinished_thermometer"
+    },
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "i": {
+      "item": "tfc:brass_mechanisms"
+    },
+    "r": {
+      "item": "tfc:lens"
+    }
+  },
+  "pattern": [
+    " r ",
+    " a ",
+    "igi"
+  ],
+  "result": {
+    "item": "legendarysurvivaloverhaul:thermometer"
+  },
+  "show_notification": true
+}

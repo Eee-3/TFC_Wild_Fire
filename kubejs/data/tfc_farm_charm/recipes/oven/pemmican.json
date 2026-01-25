@@ -1,0 +1,19 @@
+{
+	"type": "firmalife:oven",
+	"ingredient": {
+		"type": "tfc:not_rotten",
+		"ingredient": {
+			"item": "repas_de_survie:meat_mixture"
+		}
+	},
+	"result_item": {
+		"stack": {
+			"item": "repas_de_survie:pemmican"
+    },
+    "modifiers": [
+      "firmalife:copy_dynamic_food"
+    ]
+  },
+  "temperature": 400,
+  "duration": 1000
+}

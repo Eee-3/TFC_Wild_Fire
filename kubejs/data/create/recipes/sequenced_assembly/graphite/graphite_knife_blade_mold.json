@@ -1,0 +1,14 @@
+{
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"item": "createmetallurgy:graphite_blank_mold"
+		}
+	],
+	"results": [
+		{
+			"item": "kubejs:graphite_knife_blade_mold"
+		}
+	],
+	"processingTime": 1000
+}

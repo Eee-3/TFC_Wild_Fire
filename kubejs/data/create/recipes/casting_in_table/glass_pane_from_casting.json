@@ -1,0 +1,14 @@
+{
+  "type": "createmetallurgy:casting_in_table",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "kubejs:molten_glass",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 60,
+  "result": {
+    "item": "minecraft:glass_pane"
+  }
+}

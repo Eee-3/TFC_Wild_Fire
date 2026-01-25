@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "repas_de_survie:cooked_rat"
+  },
+  "decay_modifier": 1.7,
+  "hunger": 4,
+  "saturation": 0.15,
+  "protein": 0.5
+}

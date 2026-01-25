@@ -1,0 +1,6 @@
+{
+  "ingredient": {
+    "item": "kubejs:item/ore/dirty_dust/native_silver"
+  },
+  "loot_table": "tfc:sluicing/deposits/dirty_dust_native_silver"
+}

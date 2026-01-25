@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:dough"
+			}
+		},
+		{
+			"item": "farm_and_charm:yeast"
+		},
+		{
+			"item": "tfc:powder/salt"
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:dough"
+			}
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:unfinished_farmers_bread",
+		"count": 2
+	}
+}

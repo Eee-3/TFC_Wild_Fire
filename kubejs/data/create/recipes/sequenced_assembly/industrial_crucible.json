@@ -1,0 +1,111 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfc:fire_bricks"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "createmetallurgy:industrial_crucible"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        },
+        {
+          "amount": 200,
+          "fluid": "tfc:metal/brass",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        },
+        {
+          "item": "create:sturdy_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        },
+        {
+          "amount": 200,
+          "fluid": "tfc:metal/brass",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        },
+        {
+          "item": "tfc:fire_clay"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ],
+      "results": [
+        {
+          "item": "createmetallurgy:incomplete_industrial_crucible"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createmetallurgy:incomplete_industrial_crucible"
+  }
+}

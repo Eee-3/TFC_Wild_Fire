@@ -1,0 +1,28 @@
+{
+  "type": "sophisticatedbackpacks:backpack_upgrade",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:netherite_backpack"
+    }
+  ],
+ "key": {
+    "B": {
+      "item": "sophisticatedbackpacks:diamond_backpack"
+    },
+    "C": {
+      "item": "kubejs:netherite_reinforcement_plate"
+    },
+      "A": {
+      "tag": "forge:leather"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:netherite_backpack"
+  }
+}

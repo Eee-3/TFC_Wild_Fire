@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "kubejs:leather_plate"
+    },
+    "b": {
+      "tag": "forge:string"
+    },
+    "d": {
+      "item": "kubejs:leather_scrap"
+    },
+    "c": {
+      "item": "tfc:burlap_cloth"
+    }
+  },
+  "pattern": [
+    "bcb",
+    "a a",
+    "d d"
+  ],
+  "result": {
+    "item": "kubejs:leather_plate_greaves"
+  }
+}

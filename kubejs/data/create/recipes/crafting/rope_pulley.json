@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "firmaciv:rope_coil"
+    },
+    "b": {
+      "item": "create:sticker"
+    },
+    "c": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "pattern": [
+    " c ",
+    "aaa",
+    " b "
+  ],
+  "result": {
+    "item": "create:rope_pulley"
+  }
+}

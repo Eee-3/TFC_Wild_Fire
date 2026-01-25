@@ -1,0 +1,23 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "input": {
+    "base_ingredient": {
+      "item": "kubejs:item/ore/dust_brick/chromite"
+    },
+    "count": 1
+  },
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "firmalife:metal/ingot/chromium"
+      },
+      "count": 1
+    }
+  ],
+  "additives": [],
+  "slag": {
+    "tag": "forge:slag"
+  },
+  "time": 100,
+  "energy": 25600
+}

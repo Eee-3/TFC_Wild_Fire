@@ -1,0 +1,14 @@
+{
+  "type": "createmetallurgy:grinding",
+  "ingredients": [
+    {
+      "item": "tfc:medium_soaked_hide"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "tfc:medium_scraped_hide"
+    }
+  ]
+}

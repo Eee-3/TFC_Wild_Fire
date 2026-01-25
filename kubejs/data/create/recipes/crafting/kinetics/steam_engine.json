@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "create:andesite_alloy_block"
+    },
+    "b": {
+      "item": "create:copper_casing"
+    },
+    "c": {
+      "item": "tfc:metal/double_sheet/brass"
+    }
+  },
+  "pattern": [
+    "c",
+    "a",
+    "b"
+  ],
+  "result": {
+    "item": "create:steam_engine"
+  }
+}

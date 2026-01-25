@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "6E63D2E12D7AADD8"
@@ -10,7 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1B5183C1350A06FF"]
 			description: [
 				"机械动力是一种注重于构建产线的工业mod，通过推进这个mod的流程，你将构建更有效率的自动化产线，将大部分工序简化为机器进行。最终建造发电机、核电站、无限矿物、刷铁机与列车系统！"
 				""
@@ -1070,7 +1070,11 @@
 		}
 		{
 			dependencies: ["1005BE3C28B3739A"]
-			description: ["注液器是一种能够将其中流体注入到物品中的机器，其本身不需要接入动力。它可以用于向桶中注入流体，或者向石英种子中注入水以使其变成石英。"]
+			description: [
+				"注液器是一种能够将其中流体注入到物品中的机器，其本身不需要接入动力。它可以用于向桶中注入流体，或者向石英种子中注入水以使其变成石英。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "6ACB2CD1D0982CA2"
 			rewards: [{
 				id: "6F5787B435AB5779"
@@ -1089,9 +1093,11 @@
 		{
 			dependencies: ["1005BE3C28B3739A"]
 			description: [
-				"分液池是一种能够将物品中的流体分离出来的机器，不需要接入动力，一般用于将容器中的流体分离出来。"
+				"分液池是一种能够将物品中的流体倒出来的机器，不需要接入动力，一般用于将容器中的流体分离出来。"
 				""
 				"分液池有一种比较奇妙的用法，由于分液池的工作方式是让物品在分液池上移动一格，因此在某些场合可以用作物流方块。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
 			]
 			id: "5B08E6A714006B4D"
 			rewards: [{
@@ -1732,7 +1738,16 @@
 		{
 			dependencies: ["2C8CA898AC4C8DFE"]
 			description: ["当你拥有红蓝黑钢后，就能做出冲压机了。冲压机只有一个用处：制作原版铁桶。听上去没有用，但实际上作用非常大，因为铁桶能够搬运所有流体源，这对搬运流体源需要钢管道的群峦传说来说无疑提升巨大。"]
-			icon: "vintageimprovements:curving_press"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "vintageimprovements:curving_press"
+			}
 			id: "77F9D88A10EAF94F"
 			rewards: [{
 				id: "2CCD2F3D13C5E8BF"
@@ -1758,7 +1773,16 @@
 		{
 			dependencies: ["2C8CA898AC4C8DFE"]
 			description: ["振动台、离心机、卷簧机，这三种机器属于无用，且不推荐制作的机器。振动台用于解包铁块九合一的物品，或是处理树叶获得其掉落物；离心机用于将由两种物品混合成的物品还原为产物，例如将灰色燃料分离成黑色和白色染料；卷簧机负责制作振动台和离心机。"]
-			icon: "vintageimprovements:vibrating_table"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "vintageimprovements:vibrating_table"
+			}
 			id: "5871AEA2EFAD588B"
 			rewards: [{
 				id: "19736E06404B6685"

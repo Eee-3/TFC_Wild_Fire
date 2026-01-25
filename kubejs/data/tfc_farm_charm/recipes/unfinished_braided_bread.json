@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+			"tag": "tfc:sweetener"
+			}
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:unfinished_braided_bread",
+		"count": 1
+	}
+}

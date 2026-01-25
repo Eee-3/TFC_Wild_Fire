@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
   //家具>右键互动>死亡领主系列
-  event.recipes.create.item_application('fantasyfurniture:necrolord/lockbox',['#forge:chests/wooden','majruszsdifficulty:cloth'])
+  event.recipes.create.item_application('fantasyfurniture:necrolord/lockbox',['#handcrafted:chests','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/counter',['#handcrafted:cupboards','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/chandelier',['#tfc:lamps','majruszsdifficulty:cloth'])
   event.recipes.create.item_application('fantasyfurniture:necrolord/oven',['minecraft:furnace','majruszsdifficulty:cloth'])
@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
     {b:'majruszsdifficulty:cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:necrolord/dresser',['aba'],
     {b:'majruszsdifficulty:cloth',a:'#handcrafted:desks'})
+  event.shapeless(Item.of('fantasyfurniture:necrolord/lockbox'),['#handcrafted:chests','majruszsdifficulty:cloth'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_small'),['minecraft:painting','majruszsdifficulty:cloth'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_small'),['fantasyfurniture:necrolord/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:necrolord/painting_wide'),['fantasyfurniture:necrolord/painting_small'])
@@ -54,7 +55,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:necrolord/table_large'),['fantasyfurniture:necrolord/table_small','fantasyfurniture:necrolord/table_small','fantasyfurniture:necrolord/table_small','fantasyfurniture:necrolord/table_small'])
   
   //家具>右键互动>皇家系列
-  event.recipes.create.item_application('fantasyfurniture:royal/lockbox',['#forge:chests/wooden','minecraft:gold_nugget'])
   event.recipes.create.item_application('fantasyfurniture:royal/counter',['#handcrafted:cupboards','minecraft:gold_nugget'])
   event.recipes.create.item_application('fantasyfurniture:royal/chandelier',['#tfc:lamps','minecraft:gold_nugget'])
   event.recipes.create.item_application('fantasyfurniture:royal/oven',['minecraft:furnace','minecraft:gold_nugget'])
@@ -92,6 +92,7 @@ ServerEvents.recipes(event => {
     {b:'minecraft:gold_nugget',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:royal/dresser',['aba'],
     {b:'minecraft:gold_nugget',a:'#handcrafted:desks'})
+  event.shapeless(Item.of('fantasyfurniture:royal/lockbox'),['#handcrafted:chests','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['minecraft:painting','minecraft:gold_nugget'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_small'),['fantasyfurniture:royal/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:royal/painting_wide'),['fantasyfurniture:royal/painting_small'])
@@ -108,7 +109,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:royal/table_large'),['fantasyfurniture:royal/table_small','fantasyfurniture:royal/table_small','fantasyfurniture:royal/table_small','fantasyfurniture:royal/table_small'])
   
   //家具>右键互动>北欧系列
-  event.recipes.create.item_application('fantasyfurniture:nordic/lockbox',['#forge:chests/wooden','tfc:wool_cloth'])
   event.recipes.create.item_application('fantasyfurniture:nordic/counter',['#handcrafted:cupboards','tfc:wool_cloth'])
   event.recipes.create.item_application('fantasyfurniture:nordic/chandelier',['#tfc:lamps','tfc:wool_cloth'])
   event.recipes.create.item_application('fantasyfurniture:nordic/oven',['minecraft:furnace','tfc:wool_cloth'])
@@ -145,6 +145,7 @@ ServerEvents.recipes(event => {
     {b:'tfc:wool_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:nordic/dresser',['aba'],
     {b:'tfc:wool_cloth',a:'#handcrafted:desks'})
+  event.shapeless(Item.of('fantasyfurniture:nordic/lockbox'),['#handcrafted:chests','tfc:wool_cloth'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_small'),['minecraft:painting','tfc:wool_cloth'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_small'),['fantasyfurniture:nordic/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:nordic/painting_wide'),['fantasyfurniture:nordic/painting_small'])
@@ -161,7 +162,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:nordic/table_large'),['fantasyfurniture:nordic/table_small','fantasyfurniture:nordic/table_small','fantasyfurniture:nordic/table_small','fantasyfurniture:nordic/table_small'])
   
   //家具>右键互动>黑精灵系列
-  event.recipes.create.item_application('fantasyfurniture:dunmer/lockbox',['#forge:chests/wooden','tfc:burlap_cloth'])
   event.recipes.create.item_application('fantasyfurniture:dunmer/counter',['#handcrafted:cupboards','tfc:burlap_cloth'])
   event.recipes.create.item_application('fantasyfurniture:dunmer/chandelier',['#tfc:lamps','tfc:burlap_cloth'])
   event.recipes.create.item_application('fantasyfurniture:dunmer/oven',['minecraft:furnace','tfc:burlap_cloth'])
@@ -198,6 +198,7 @@ ServerEvents.recipes(event => {
     {b:'tfc:burlap_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:dunmer/dresser',['aba'],
     {b:'tfc:burlap_cloth',a:'#handcrafted:desks'})
+  event.shapeless(Item.of('fantasyfurniture:dunmer/lockbox'),['#handcrafted:chests','tfc:burlap_cloth'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_small'),['minecraft:painting','tfc:burlap_cloth'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_small'),['fantasyfurniture:dunmer/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:dunmer/painting_wide'),['fantasyfurniture:dunmer/painting_small'])
@@ -214,7 +215,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:dunmer/table_large'),['fantasyfurniture:dunmer/table_small','fantasyfurniture:dunmer/table_small','fantasyfurniture:dunmer/table_small','fantasyfurniture:dunmer/table_small'])
   
   //家具>右键互动>温西尔系列
-  event.recipes.create.item_application('fantasyfurniture:venthyr/lockbox',['#forge:chests/wooden','textile:cotton_cloth'])
   event.recipes.create.item_application('fantasyfurniture:venthyr/counter',['#handcrafted:cupboards','textile:cotton_cloth'])
   event.recipes.create.item_application('fantasyfurniture:venthyr/chandelier',['#tfc:lamps','textile:cotton_cloth'])
   event.recipes.create.item_application('fantasyfurniture:venthyr/oven',['minecraft:furnace','textile:cotton_cloth'])
@@ -251,6 +251,7 @@ ServerEvents.recipes(event => {
     {b:'textile:cotton_cloth',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:venthyr/dresser',['aba'],
     {b:'textile:cotton_cloth',a:'#handcrafted:desks'})
+    event.shapeless(Item.of('fantasyfurniture:venthyr/lockbox'),['#handcrafted:chests','textile:cotton_cloth'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_small'),['minecraft:painting','textile:cotton_cloth'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_small'),['fantasyfurniture:venthyr/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:venthyr/painting_wide'),['fantasyfurniture:venthyr/painting_small'])
@@ -267,7 +268,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:venthyr/table_large'),['fantasyfurniture:venthyr/table_small','fantasyfurniture:venthyr/table_small','fantasyfurniture:venthyr/table_small','fantasyfurniture:venthyr/table_small'])
   
   //家具>右键互动>骨头(嘟嘟哒)系列
-  event.recipes.create.item_application('fantasyfurniture:bone/skeleton/lockbox',['#forge:chests/wooden','minecraft:bone'])
   event.recipes.create.item_application('fantasyfurniture:bone/skeleton/counter',['#handcrafted:cupboards','minecraft:bone'])
   event.recipes.create.item_application('fantasyfurniture:bone/skeleton/chandelier',['#tfc:lamps','minecraft:bone'])
   event.recipes.create.item_application('fantasyfurniture:bone/skeleton/oven',['minecraft:furnace','minecraft:bone'])
@@ -304,6 +304,7 @@ ServerEvents.recipes(event => {
     {b:'minecraft:bone',a:'#handcrafted:chests'})
   event.shaped('fantasyfurniture:bone/skeleton/dresser',['aba'],
     {b:'minecraft:bone',a:'#handcrafted:desks'})
+  event.shapeless(Item.of('fantasyfurniture:bone/skeleton/lockbox'),['#handcrafted:chests','minecraft:bone'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_small'),['minecraft:painting','minecraft:bone'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_small'),['fantasyfurniture:bone/skeleton/painting_wide'])
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/painting_wide'),['fantasyfurniture:bone/skeleton/painting_small'])
@@ -320,7 +321,6 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('fantasyfurniture:bone/skeleton/table_large'),['fantasyfurniture:bone/skeleton/table_small','fantasyfurniture:bone/skeleton/table_small','fantasyfurniture:bone/skeleton/table_small','fantasyfurniture:bone/skeleton/table_small'])
   
   //家具>右键互动>凋零骨头(暗黑嘟嘟哒)系列
-  event.recipes.create.item_application('fantasyfurniture:bone/wither/lockbox',['fantasyfurniture:bone/skeleton/lockbox','minecraft:black_dye'])
   event.recipes.create.item_application('fantasyfurniture:bone/wither/counter',['fantasyfurniture:bone/skeleton/counter','minecraft:black_dye'])
   event.recipes.create.item_application('fantasyfurniture:bone/wither/chandelier',['fantasyfurniture:bone/skeleton/chandelier','minecraft:black_dye'])
   event.recipes.create.item_application('fantasyfurniture:bone/wither/oven',['fantasyfurniture:bone/skeleton/oven','minecraft:black_dye'])
@@ -335,6 +335,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.item_application('fantasyfurniture:bone/wither/carpet',['fantasyfurniture:bone/skeleton/carpet','minecraft:black_dye'])
   
   //家具>合成>凋零骨头系列
+  event.shapeless(Item.of('fantasyfurniture:bone/wither/lockbox'),['fantasyfurniture:bone/skeleton/lockbox','minecraft:black_dye'])
   event.shapeless(Item.of('fantasyfurniture:bone/wither/wall_light'),['fantasyfurniture:bone/skeleton/wall_light','minecraft:black_dye'])
   event.shapeless(Item.of('fantasyfurniture:bone/wither/floor_light'),['fantasyfurniture:bone/skeleton/floor_light','minecraft:black_dye'])
   event.shapeless(Item.of('fantasyfurniture:bone/wither/desk_left'),['fantasyfurniture:bone/skeleton/desk_left','minecraft:black_dye'])

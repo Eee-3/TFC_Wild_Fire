@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 9,
+      "fluid": "firmalife:yak_milk"
+    },
+    {
+      "amount": 1,
+      "fluid": "tfc:vinegar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 10,
+      "fluid": "firmalife:curdled_yak_milk"
+    }
+  ]
+}

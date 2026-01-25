@@ -1,0 +1,49 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 1200,
+  "experience": 20.0,
+  "fluid": {
+    "amount": 100,
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
+  },
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "farmersdelight:smoked_ham"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "survivorsdelight:fruit_for_cheesecake"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/dough"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:raw_honey"
+      }
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:honey_glazed_ham_block"
+  }
+}

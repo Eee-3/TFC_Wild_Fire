@@ -1,0 +1,34 @@
+{
+  "type": "siegemachines:siege_workbench",
+  "pattern": [
+    "b b",
+    "glg",
+    "wBw"
+  ],
+  "key": {
+    "B": {
+      "tag": "minecraft:planks",
+      "count": 8
+    },
+    "b": {
+      "item": "siegemachines:beam",
+      "count": 13
+    },
+    "l": {
+      "item": "minecraft:ladder",
+      "count": 4
+    },
+    "w": {
+      "item": "siegemachines:wheel",
+      "count": 2
+    },
+    "g": {
+      "item": "tfc:metal/sheet/wrought_iron",
+      "count": 2
+    }
+  },
+  "result": {
+    "item": "trotting_wagons:armored_wagon",
+    "count": 1
+  }
+}

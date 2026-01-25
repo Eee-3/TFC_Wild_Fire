@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/conglomerate",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/conglomerate_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_conglomerate"
+}

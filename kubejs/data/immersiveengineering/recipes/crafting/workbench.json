@@ -2,12 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "a  ",
     "iss",
     "c f"
   ],
   "key": {
     "i": {
-      "tag": "forge:ingots/wrought_iron"
+      "item": "create:precision_mechanism"
+    },
+    "i": {
+      "item": "create:crafting_blueprint"
     },
     "s": {
       "tag": "forge:treated_wood_slab"

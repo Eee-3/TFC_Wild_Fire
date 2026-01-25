@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/shale",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/shale_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_shale"
+}

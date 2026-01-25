@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "对于$(thing)彩钢$()来说，$(thing)蓝钢$()更擅长防御$(thing)打击伤害$()，而$(thing)红钢$()更擅长防御$(thing)突刺伤害$()。"
+      "text": "对于$(thing)彩钢$()来说，$(thing)秘银$()更擅长防御$(thing)打击伤害$()，而$(thing)精金$()更擅长防御$(thing)突刺伤害$()。"
     }
   ],
   "read_by_default": true

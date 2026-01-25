@@ -1,0 +1,6 @@
+{
+  "profession": "minecraft:fletcher",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": []
+}

@@ -351,20 +351,20 @@
       "is_enabled": true,
       "health_bonus": {
         "__default": 0.0,
-        "expert": 0.15,
-        "master": 0.3
+        "expert": 0.0,
+        "master": 0.0
       },
       "damage_bonus": {
         "__default": 0.0,
-        "expert": 0.1,
-        "master": 0.2
+        "expert": 0.25,
+        "master": 0.5
       },
       "excluded_mobs": []
     },
     "pillager_with_fireworks": {
       "is_enabled": true,
       "required_game_stage": "master",
-      "chance": 0.15,
+      "chance": 0.01,
       "is_scaled_by_crd": true,
       "crossbow_multishot_chance": 0.25,
       "firework_drop_chance": 0.25,
@@ -390,9 +390,9 @@
       "is_scaled_by_crd": true
     },
     "spawn_player_zombie": {
-      "is_enabled": false,
+      "is_enabled": true,
       "required_game_stage": "expert",
-      "chance": 1.0,
+      "chance": 0.01,
       "is_scaled_by_crd": false,
       "head_chance": 1.0,
       "head_drop_chance": 0.1
@@ -421,8 +421,8 @@
     "extra_size_ratio_per_player": 0.3,
     "area_radius": 70,
     "kill_requirement": 250,
-    "kill_requirement_first": 50,
-    "kill_requirement_warning": 10,
+    "kill_requirement_first": 75,
+    "kill_requirement_warning": 15,
     "waves": [
       {
         "mobs": [
@@ -436,7 +436,7 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiepig",
+            "type": "born_in_chaos_v1:decrepit_skeleton",
             "count": 1
           },
           {
@@ -451,6 +451,10 @@
           },
           {
             "type": "butcher:zombiewolf",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
             "count": 1
           },
           {
@@ -479,12 +483,20 @@
             "count": 2
           },
           {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 1
+          },
+          {
             "type": "butcher:zombiepanda",
             "count": 2
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:decrepit_skeleton",
             "count": 2
           },
           {
@@ -506,6 +518,10 @@
             "count": 2
           },
           {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
+          },
+          {
             "type": "warriorsofpastepoch:skeleton_musketeer",
             "count": 1
           }
@@ -518,11 +534,57 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decrepit_skeleton",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 2
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:baby_skeleton",
+            "count": 2
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 2
+          },
+          {
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 1
+          }
+        ],
+        "game_stage": "normal",
+        "exp": 20
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
             "count": 2
           },
           {
             "type": "butcher:zombiewolf",
-            "count": 3
+            "count": 6
           },
           {
             "type": "minecraft:skeleton",
@@ -532,6 +594,10 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
             "count": 1
           },
           {
@@ -564,9 +630,13 @@
             "count": 3
           },
           {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
+          },
+          {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
+            "count": 2
           },
           {
             "type": "warriorsofpastepoch:skeleton_musketeer",
@@ -595,6 +665,10 @@
             "count": 2
           },
           {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
             "count": 1
@@ -604,12 +678,16 @@
             "count": 1
           },
           {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
+          },
+          {
             "type": "warriorsofpastepoch:skeleton_musketeer",
             "count": 1
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:cursed_armor",
+          "type": "born_in_chaos_v1:skeleton_thrasher",
           "count": 1
         },
         "game_stage": "normal",
@@ -620,12 +698,20 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 2
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
             "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:decaying_zombie",
+            "count": 3
           },
           {
             "type": "minecraft:skeleton",
@@ -638,6 +724,70 @@
             "count": 1
           },
           {
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_fisherman",
+            "count": 1
+          },
+          {
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 2
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "count": 1
+          }
+        ],
+        "game_stage": "expert",
+        "exp": 32
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:zombie",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
+            "type": "minecraft:skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+            "count": 1
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
             "type": "irons_spellbooks:necromancer",
             "count": 1
           },
@@ -646,12 +796,12 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 2
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
             "count": 1
           },
           {
@@ -659,12 +809,20 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiefox",
-            "count": 2
+            "type": "born_in_chaos_v1:swarmer",
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
             "count": 1
           },
           {
@@ -689,12 +847,16 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
             "count": 1
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
             "count": 1
           },
           {
@@ -708,7 +870,23 @@
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 3
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
           },
           {
             "type": "minecraft:wither_skeleton",
@@ -720,11 +898,11 @@
             "count": 2
           },
           {
-            "type": "majruszsdifficulty:cursed_armor",
-            "count": 2
+            "type": "irons_spellbooks:necromancer",
+            "count": 1
           },
           {
-            "type": "irons_spellbooks:necromancer",
+            "type": "born_in_chaos_v1:bonescaller",
             "count": 1
           },
           {
@@ -733,9 +911,12 @@
             "count": 1
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 1
+            "type": "born_in_chaos_v1:restless_spirit",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
           }
         ],
         "boss": {
@@ -762,42 +943,45 @@
             "count": 2
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "type": "born_in_chaos_v1:scarlet_persecutor",
             "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
+            "count": 2
           },
           {
             "type": "warriorsofpastepoch:skeleton_musketeer",
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
+            "type": "born_in_chaos_v1:spiritof_chaos",
             "count": 2
-          },
-          {
-            "type": "majruszsdifficulty:cursed_armor",
-            "count": 1
           },
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
+            "count": 2
           },
           {
-            "type": "irons_spellbooks:necromancer",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:cursed_armor",
-            "count": 1
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
           },
           {
             "type": "irons_spellbooks:citadel_keeper",
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:cursed_armor",
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
             "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 2
           },
           {
             "type": "irons_spellbooks:citadel_keeper",
@@ -810,13 +994,21 @@
       {
         "mobs": [
           {
+            "type": "minecraft:husk",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 1
+          },
+          {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
             "count": 2
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
             "count": 2
           },
           {
@@ -824,24 +1016,84 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 1
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 2
           },
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
-          },
-          {
-            "type": "butcher:zombiewolf",
-            "count": 1
-          },
-          {
-            "type": "warriorsofpastepoch:skeleton_musketeer",
             "count": 2
           },
           {
             "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:necromancer",
+            "count": 2
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          }
+        ],
+        "game_stage": "master",
+        "exp": 96
+      },
+      {
+        "mobs": [
+          {
+            "type": "minecraft:wither_skeleton",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 1
+          },
+          {
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "count": 1
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
+            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
             "count": 1
           },
           {
@@ -858,7 +1110,19 @@
             "count": 1
           },
           {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 1
+          },
+          {
             "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
             "count": 1
           },
           {
@@ -866,16 +1130,28 @@
             "count": 2
           },
           {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
+          },
+          {
             "type": "irons_spellbooks:citadel_keeper",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
             "count": 1
           }
         ],
         "boss": {
-          "type": "minecraft:pig",
+          "type": "born_in_chaos_v1:supreme_bonescaller",
           "count": 1
         },
         "game_stage": "master",
-        "exp": 60
+        "exp": 90
       },
       {
         "mobs": [
@@ -893,7 +1169,7 @@
             "count": 2
           },
           {
-            "type": "warriorsofpastepoch:skeleton_musketeer",
+            "type": "born_in_chaos_v1:skeleton_demoman",
             "count": 2
           },
           {
@@ -901,7 +1177,7 @@
             "count": 2
           },
           {
-            "type": "butcher:zombiewolf",
+            "type": "born_in_chaos_v1:bonescaller",
             "count": 2
           },
           {
@@ -909,7 +1185,7 @@
             "count": 2
           },
           {
-            "type": "majruszsdifficulty:cursed_armor",
+            "type": "born_in_chaos_v1:dark_vortex",
             "count": 1
           },
           {
@@ -917,7 +1193,19 @@
             "count": 1
           },
           {
-            "type": "butcher:zombiewolf",
+            "type": "born_in_chaos_v1:door_knight",
+            "count": 1
+          },
+          {
+            "type": "majruszsdifficulty:cursed_armor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
             "count": 1
           },
           {
@@ -925,20 +1213,24 @@
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:cursed_armor",
+            "type": "born_in_chaos_v1:door_knight",
             "count": 1
           },
           {
             "type": "irons_spellbooks:necromancer",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:barrel_zombie",
             "count": 1
           },
           {
-            "type": "minecraft:pig",
+            "type": "born_in_chaos_v1:scarlet_persecutor",
             "count": 1
           },
           {
-            "type": "butcher:zombiewolf",
-            "count": 1
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "count": 3
           },
           {
             "type": "irons_spellbooks:citadel_keeper",
@@ -949,31 +1241,43 @@
             "count": 1
           },
           {
+            "type": "born_in_chaos_v1:scarlet_persecutor",
+            "count": 1
+          },
+          {
             "type": "irons_spellbooks:citadel_keeper",
             "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "count": 3
           },
           {
             "type": "majruszsdifficulty:giant",
             "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 3
+            "count": 2
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:giant",
-          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+          "type": "born_in_chaos_v1:lifestealer_true_form",
           "count": 1
         },
         "game_stage": "master",
-        "exp": 100
+        "exp": 512
       }
     ]
   },
   "mobs": {
     "cursed_armor": {
-      "item_drop_chance": 0.2,
-      "custom_name_chance": 0.025,
+      "item_drop_chance": 0.02,
+      "custom_name_chance": 0.9,
       "custom_names": [
-        "Freshah"
+        "Freshah",
+        "Witzig_Heidi"
       ],
       "locations": [
         {
@@ -988,9 +1292,11 @@
           "chests": [
             "minecraft:chests/stronghold_corridor",
             "minecraft:chests/stronghold_crossing",
+            "illagerinvasion:chests/uncommon",
+            "illagerinvasion:chests/rare",
             "minecraft:chests/stronghold_library"
           ],
-          "chance": 0.4
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_portal",
@@ -1003,12 +1309,13 @@
           "loot": "majruszsdifficulty:gameplay/cursed_armor_nether",
           "chests": [
             "minecraft:chests/bastion_bridge",
+            "illagerinvasion:chests/epic",
             "minecraft:chests/bastion_hoglin_stable",
             "minecraft:chests/bastion_other",
             "minecraft:chests/bastion_treasure",
             "minecraft:chests/nether_bridge"
           ],
-          "chance": 0.25
+          "chance": 0.1
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_end",

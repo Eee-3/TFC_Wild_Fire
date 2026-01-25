@@ -1,0 +1,15 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "tag": "create:rich_ethanol_crop"
+    }
+  ],
+  "processingTime": 8000,
+  "results": [
+    {
+      "fluid": "createdieselgenerators:ethanol",
+      "amount": 125
+    }
+  ]
+}

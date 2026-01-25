@@ -1,0 +1,10 @@
+{
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "farmersdelight:tree_bark"
+  },
+  "result": {
+    "item": "createdieselgenerators:wood_chip",
+    "count": 4
+  }
+}

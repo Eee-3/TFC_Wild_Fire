@@ -93,12 +93,7 @@ event.shaped('vc_gliders:reinforced_paper_iron',
     ['ab',
      'ac'], 
     {
-        c: {
-            "type": "tfc:heatable",
-            "min_temp": 600,
-            "ingredient": {"item": "tfc:metal/rod/copper"}
-
-        }, 
+        c: TFC.ingredient.heatable('tfc:metal/rod/copper', 600, null), 
         a:"vc_gliders:reinforced_paper",
         b:'#tfc:hammers'
     }).damageIngredient({ tag: '#tfc:hammers' }, 20)//铜的

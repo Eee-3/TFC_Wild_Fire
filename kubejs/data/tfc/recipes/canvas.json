@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+        "item": "tfc:straw"
+    },
+    {
+        "item": "tfc:straw"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:canvas"
+  }
+}

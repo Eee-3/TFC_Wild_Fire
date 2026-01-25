@@ -69,12 +69,6 @@
         ],
         "water_creature": [
             {
-                "type": "tfc:orca",
-                "weight": 1,
-                "minCount": 1,
-                "maxCount": 3
-            },
-            {
                 "type": "tfc:dolphin",
                 "weight": 1,
                 "minCount": 1,
@@ -99,6 +93,12 @@
         "monster": [
             {
                 "type": "minecraft:spider",
+                "weight": 60,
+                "minCount": 4,
+                "maxCount": 4
+            },
+            {
+                "type": "born_in_chaos_v1:baby_spider",
                 "weight": 100,
                 "minCount": 4,
                 "maxCount": 4
@@ -110,8 +110,38 @@
                 "maxCount": 4
             },
             {
+                "type": "born_in_chaos_v1:decaying_zombie",
+                "weight": 40,
+                "minCount": 4,
+                "maxCount": 4
+            },
+            {
+                "type": "born_in_chaos_v1:zombie_fisherman",
+                "weight": 5,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
+                "type": "born_in_chaos_v1:zombie_lumberjack",
+                "weight": 5,
+                "minCount": 1,
+                "maxCount": 2
+            },
+            {
                 "type": "minecraft:skeleton",
-                "weight": 100,
+                "weight": 50,
+                "minCount": 4,
+                "maxCount": 4
+            },
+            {
+                "type": "born_in_chaos_v1:decrepit_skeleton",
+                "weight": 80,
+                "minCount": 4,
+                "maxCount": 4
+            },
+            {
+                "type": "born_in_chaos_v1:baby_skeleton",
+                "weight": 10,
                 "minCount": 4,
                 "maxCount": 4
             },

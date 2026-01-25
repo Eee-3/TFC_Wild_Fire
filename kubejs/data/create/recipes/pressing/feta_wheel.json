@@ -1,0 +1,30 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "tfc:salt_water"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/goat_curd"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/goat_curd"
+    },
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/goat_curd"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:feta_wheel"
+    }
+  ]
+}

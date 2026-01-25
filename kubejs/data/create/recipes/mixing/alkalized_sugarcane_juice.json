@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/lime"
+    },
+    {
+      "amount": 1000,
+      "fluid": "artisanal:sugarcane_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "artisanal:alkalized_sugarcane_juice"
+    }
+  ]
+}

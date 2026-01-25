@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "amount": 100,
+      "fluid": "tfc:limewater"
+    }
+  ],
+  "results": [
+    {
+      "count": 20,
+      "item": "tfc:mortar"
+    }
+  ]
+}

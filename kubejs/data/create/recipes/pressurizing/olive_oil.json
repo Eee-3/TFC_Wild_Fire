@@ -1,0 +1,18 @@
+{
+	"type":"vintageimprovements:pressurizing",
+	"secondaryFluidOutput": 0,
+	"heatRequirement": "heated",
+	"ingredients": [ 
+		{
+			"fluid": "tfc:olive_oil_water",
+			"amount": 1000
+		}
+	],
+	"results": [
+		{
+			"fluid": "tfc:olive_oil",
+			"amount": 250
+		}
+	],
+	"processingTime": 1200
+}

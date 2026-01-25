@@ -83,8 +83,8 @@
 				type: "item"
 			}]
 			title: "获得升级"
-			x: 78.13095238095238d
-			y: 4.511904761904759d
+			x: 82.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -117,8 +117,8 @@
 				type: "item"
 			}]
 			title: "制造合金双锭以制造二级铜砧"
-			x: 80.0d
-			y: 4.0d
+			x: 84.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0DE526D678470E0E"]
@@ -139,14 +139,15 @@
 			}
 			id: "3CD4B3897381D686"
 			shape: "hexagon"
+			size: 1.5d
 			subtitle: "接下来，让我们步入合金铜时代"
 			tasks: [{
 				id: "2C85EF8DEC27864C"
 				type: "checkmark"
 			}]
 			title: "第二章：合金与工艺"
-			x: 83.84523809523807d
-			y: -1.404761904761898d
+			x: 84.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -172,8 +173,8 @@
 				type: "item"
 			}]
 			title: "种树"
-			x: 86.0d
-			y: -2.0d
+			x: 86.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -219,12 +220,13 @@
 				}
 			]
 			title: "谷物加工"
-			x: 86.0d
-			y: 0.0d
+			x: 86.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
 			description: ["你可能在获得铁矿之后就将其熔化，试图将其铸造为铁锭，可最后你只得到一块黑色的铁锭——铸铁锭。这是因为单纯的铸造会使铁锭内的含碳量过高，硬度达不到合格铁的标准。合格的铁被称为锻铁，需要使用名为锻铁炉的特制炉子烧炼得到。跟随这条任务线，你将学会锻铁的锻造方法。"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "42FE5A114D45AF42"
@@ -243,8 +245,8 @@
 				}
 				type: "item"
 			}]
-			x: 81.5d
-			y: 5.0d
+			x: 84.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -255,7 +257,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "713BC7953932032B"
-			subtitle: "并非二级金属"
+			subtitle: "你也许需要大量的黄铜"
 			tasks: [{
 				id: "53E83F8F9926CC47"
 				item: {
@@ -271,7 +273,7 @@
 				type: "item"
 			}]
 			x: 81.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -298,8 +300,8 @@
 				type: "item"
 			}]
 			title: "暴殄天物"
-			x: 86.0d
-			y: -3.0d
+			x: 86.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -315,8 +317,8 @@
 				type: "item"
 			}]
 			title: "解放双手"
-			x: 86.0d
-			y: 5.0d
+			x: 86.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["713BC7953932032B"]
@@ -356,8 +358,8 @@
 				}
 			]
 			title: "工业三剑客"
-			x: 80.0d
-			y: 3.0d
+			x: 80.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25CF5F9C5D4B934C"]
@@ -381,8 +383,8 @@
 				type: "checkmark"
 			}]
 			title: "种果树"
-			x: 87.5d
-			y: -2.0d
+			x: 88.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -393,8 +395,8 @@
 				item: "firmalife:fruit_leaf"
 				type: "item"
 			}]
-			x: 89.0d
-			y: -1.0d
+			x: 89.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -408,8 +410,8 @@
 				item: "firmalife:climate_station"
 				type: "item"
 			}]
-			x: 86.0d
-			y: 3.0d
+			x: 86.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0D888CA32C333F40"]
@@ -449,8 +451,8 @@
 				}
 			]
 			title: "温室"
-			x: 87.5d
-			y: 4.0d
+			x: 88.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["400313764B17022E"]
@@ -497,8 +499,8 @@
 				}
 			]
 			title: "种植盆"
-			x: 89.0d
-			y: 4.0d
+			x: 89.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["275A0704EB4EFA8C"]
@@ -542,8 +544,8 @@
 				}
 			]
 			title: "自动灌溉"
-			x: 90.5d
-			y: 4.0d
+			x: 91.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1571B5B650ECB701"]
@@ -569,8 +571,8 @@
 				}
 				type: "item"
 			}]
-			x: 87.5d
-			y: -3.0d
+			x: 88.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["740B133DCD9B52AE"]
@@ -614,8 +616,8 @@
 				}
 			]
 			title: "吹制玻璃"
-			x: 89.0d
-			y: -3.0d
+			x: 89.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["345D69AFA3121901"]
@@ -637,8 +639,8 @@
 				}
 				type: "item"
 			}]
-			x: 90.5d
-			y: -3.0d
+			x: 91.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["570B10ABF6F54ED0"]
@@ -655,8 +657,8 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 92.0d
-			y: -3.0d
+			x: 92.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["20D072C6FCC3F36D"]
@@ -775,8 +777,8 @@
 					type: "item"
 				}
 			]
-			x: 87.5d
-			y: 0.0d
+			x: 88.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0C8B3BCFC6EC225A"]
@@ -807,8 +809,8 @@
 				}
 			]
 			title: "烤炉"
-			x: 89.0d
-			y: 0.0d
+			x: 89.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["56CDC910560BCE74"]
@@ -826,8 +828,8 @@
 				type: "checkmark"
 			}]
 			title: "变硬"
-			x: 90.5d
-			y: 0.0d
+			x: 91.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5FF7FFB0F4F5ABBE"]
@@ -850,8 +852,8 @@
 				type: "item"
 			}]
 			title: "酵种"
-			x: 92.0d
-			y: 0.0d
+			x: 92.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["47559D982B64A34E"]
@@ -885,8 +887,8 @@
 					type: "item"
 				}
 			]
-			x: 93.5d
-			y: 0.0d
+			x: 94.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["212780ACC7F7C673"]
@@ -922,8 +924,8 @@
 				type: "item"
 			}]
 			title: "&e挑战：披萨上应该加菠萝吗？"
-			x: 95.0d
-			y: 0.0d
+			x: 95.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -955,8 +957,8 @@
 				}
 			]
 			title: "果酱"
-			x: 91.5d
-			y: -2.0d
+			x: 92.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["17F0AAB82BB1DE98"]
@@ -968,8 +970,8 @@
 				item: "firmalife:drying_mat"
 				type: "item"
 			}]
-			x: 91.5d
-			y: -1.0d
+			x: 92.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0D888CA32C333F40"]
@@ -995,8 +997,8 @@
 				}
 			]
 			title: "地窖"
-			x: 87.5d
-			y: 3.0d
+			x: 88.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7736AC779D1DA025"]
@@ -1030,8 +1032,8 @@
 					type: "item"
 				}
 			]
-			x: 89.0d
-			y: 3.0d
+			x: 89.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1095,8 +1097,8 @@
 				}
 			]
 			title: "简易的保险"
-			x: 86.0d
-			y: 1.0d
+			x: 86.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1124,8 +1126,8 @@
 				type: "item"
 			}]
 			title: "拉马车"
-			x: 87.0d
-			y: 5.0d
+			x: 87.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1153,8 +1155,8 @@
 				type: "item"
 			}]
 			title: "薅羊毛"
-			x: 88.0d
-			y: 5.0d
+			x: 88.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1208,8 +1210,8 @@
 				type: "item"
 			}]
 			title: "牛口夺奶"
-			x: 89.0d
-			y: 5.0d
+			x: 89.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1223,7 +1225,6 @@
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			icon: "firmalife:gouda_wheel"
 			id: "69AA5A517FBED61A"
 			subtitle: "某种真正意义上不会腐烂的食物"
 			tasks: [{
@@ -1239,8 +1240,8 @@
 				type: "item"
 			}]
 			title: "奶酪"
-			x: 89.5d
-			y: 6.0d
+			x: 92.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["15E9260AECAE335B"]
@@ -1250,32 +1251,70 @@
 			id: "7D591DFB9CF4D847"
 			shape: "hexagon"
 			subtitle: "未雨绸缪"
-			tasks: [{
-				count: 64L
-				id: "45CA70F7EEEA1B03"
-				item: "minecraft:charcoal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 64L
+					id: "45CA70F7EEEA1B03"
+					item: "minecraft:charcoal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "7DCACBDAA2F7B410"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "大烧木炭"
-			x: 76.5d
-			y: 3.5d
+			x: 80.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4A4359CEAD6FB810"]
-			description: [
-				"锻铁炉方块是搭建锻铁炉多方块结构的核心，其本质是一块活板门，需要八张铜合金双层薄板，也就是32个铜合金锭合成。双层薄板由两张薄板焊接而成，而薄板由一个双锭锻造而成。"
-				""
-				"要搭建锻铁炉多方块结构，你需要用石砖、天然石或平滑石构建一条最高五格高，最矮三格高的3x3烟囱，烟囱中心除了底面的一格都需要留空，四个角也可以去掉。在烟囱的第二格任意一面开一个口，并将口的左右两面也放上石方块，并将锻铁炉方块放在口中，锻铁炉就搭建完成了。具体的形状可以通过查阅书得知。"
-			]
+			description: [""]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:brass_forge_door"
+			}
 			id: "15E9260AECAE335B"
 			shape: "hexagon"
-			tasks: [{
-				id: "265BEAB3CDA219F3"
-				item: "tfc:bloomery"
-				type: "item"
-			}]
-			x: 76.5d
-			y: 4.5d
+			subtitle: "工匠技艺复现之时"
+			tasks: [
+				{
+					id: "265BEAB3CDA219F3"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "119CF82A8338A305"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:brass_forge_door"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "属于你的锻造技艺"
+			x: 81.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["15E9260AECAE335B"]
@@ -1286,30 +1325,18 @@
 			]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:metal/hammer/wrought_iron"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "tfc:rock/bricks/gabbro"
 			id: "6E3F22CD2A68DE94"
 			shape: "hexagon"
-			subtitle: "Fe2O3+3CO==2Fe+3CO2(高温)"
+			subtitle: "搭建锻铁炉"
 			tasks: [{
 				id: "09E827F8DF1B2299"
 				title: "请在阅读以下内容后点击确认"
 				type: "checkmark"
 			}]
-			title: "锻铁指南"
-			x: 73.5d
-			y: 4.5d
+			title: "高塔"
+			x: 78.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6E3F22CD2A68DE94"]
@@ -1333,8 +1360,8 @@
 				}
 				type: "item"
 			}]
-			x: 73.5d
-			y: 6.0d
+			x: 79.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["58377F9BA65DF0F2"]
@@ -1356,8 +1383,8 @@
 				}
 				type: "item"
 			}]
-			x: 75.0d
-			y: 6.0d
+			x: 81.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["530975738347D212"]
@@ -1382,7 +1409,7 @@
 				}
 				type: "item"
 			}]
-			x: 77.0d
+			x: 84.0d
 			y: 6.0d
 		}
 		{
@@ -1401,8 +1428,8 @@
 				type: "advancement"
 			}]
 			title: "宝宝辅食"
-			x: 90.0d
-			y: 5.0d
+			x: 91.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6FF228D0CFA724F1"]
@@ -1415,8 +1442,8 @@
 				item: "tfc:lens"
 				type: "item"
 			}]
-			x: 93.5d
-			y: -3.0d
+			x: 94.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["75849ECACEE6E0B4"]
@@ -1440,8 +1467,8 @@
 				type: "item"
 			}]
 			title: "放大镜"
-			x: 95.0d
-			y: -3.0d
+			x: 95.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4E94E1BF45EA5096"]
@@ -1457,8 +1484,8 @@
 				type: "checkmark"
 			}]
 			title: "好渴，有什么能喝的吗"
-			x: 89.0d
-			y: -2.0d
+			x: 89.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5EE1C576428C5C78"]
@@ -1493,8 +1520,8 @@
 				}
 			]
 			title: "关于保存食物与食品卫生"
-			x: 86.0d
-			y: 2.0d
+			x: 86.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3C419F98EA5F89AF"]
@@ -1503,7 +1530,7 @@
 				"使用小罐子后，你会发现小罐子脏了，却又不知道怎么处理"
 				"这个时候，你以前打猎获得的动物脂肪将会派上用场！"
 				""
-				"把油脂炼成蜡脂，用草木灰和水混合获得碱水。然后把蜡脂与碱水混合，你就会获得脂肪酸盐，然后密封大桶八分钟，脂肪酸盐就会变成肥皂！肥皂丢进水里可以变成肥皂水，肥皂水可以轻松洗净小罐子以重复使用！"
+				"把油脂炼成油脂，用草木灰和水混合获得碱水。然后把油脂与碱水混合，你就会获得脂肪酸盐，然后密封大桶八分钟，脂肪酸盐就会变成肥皂！肥皂丢进水里可以变成肥皂水，肥皂水可以轻松洗净小罐子以重复使用！"
 			]
 			hide_until_deps_visible: true
 			icon: "butcher:animalfat"
@@ -1529,8 +1556,8 @@
 				}
 			]
 			title: "油脂与碱水"
-			x: 87.5d
-			y: 2.0d
+			x: 88.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3072431A0B7D21A5"]
@@ -1545,8 +1572,8 @@
 				item: "artisanal:soap"
 				type: "item"
 			}]
-			x: 89.0d
-			y: 2.0d
+			x: 89.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0DEA4BABDEA8ED79"]
@@ -1576,22 +1603,18 @@
 								Size: 16
 							}
 						}
-						id: "backpacked_tfc:backpack"
+						id: "sns:frame_pack"
 					}
 					type: "item"
 				}
 			]
 			title: "背包"
-			x: 80.0d
-			y: 5.0d
+			x: 85.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["193B3FD792076CDE"]
-			description: [
-				"你可以在大桶里面装入水和小麦面粉发酵成啤酒"
-				""
-				"同样的，酿久一点也可以变成陈年啤酒！"
-			]
+			description: ["来吧！酿造一些啤酒来让你的原始生活来点迷幻色彩！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1604,22 +1627,22 @@
 				id: "brewery:beer_wheat"
 			}
 			id: "2B995E82D9168DB4"
-			subtitle: "畅饮"
+			subtitle: "痛快畅饮"
 			tasks: [{
-				id: "7762D54017E57B9C"
+				id: "3C0B60D7E9BF4B47"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(firmalife:feeds_yeast)"
+						"ftbfiltersystem:filter": "or(item(brewinandchewin:strongroot_ale)item(brewinandchewin:dread_nog)item(brewinandchewin:rice_wine)item(brewinandchewin:mead)item(brewinandchewin:beer)item(brewery:beer_haley)item(brewery:beer_oat)item(brewery:beer_nettle)item(brewery:beer_hops)item(brewery:beer_barley)item(brewery:beer_wheat))"
 					}
 				}
-				title: "Any #firmalife:feeds_yeast"
+				title: "试试酿造一杯啤酒？！"
 				type: "item"
 			}]
 			title: "啤酒就是生命"
-			x: 89.0d
-			y: 1.0d
+			x: 89.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3CD4B3897381D686"]
@@ -1638,12 +1661,13 @@
 				}
 			}
 			id: "5EE1C576428C5C78"
+			shape: "hexagon"
 			tasks: [{
 				id: "4155268C1A511142"
 				type: "checkmark"
 			}]
 			title: "美好的生活"
-			x: 85.0d
+			x: 85.5d
 			y: 0.5d
 		}
 		{
@@ -1663,6 +1687,7 @@
 				}
 			}
 			id: "6F183520DCA27C19"
+			shape: "hexagon"
 			tasks: [{
 				id: "7A99B90FDBD511EA"
 				type: "checkmark"
@@ -1675,6 +1700,7 @@
 			dependencies: ["6F183520DCA27C19"]
 			hide_until_deps_complete: true
 			id: "198FB45018B308D5"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "510FA6FF21B2C6DC"
@@ -1712,77 +1738,18 @@
 					type: "item"
 				}
 			]
-			x: 80.0d
+			x: 81.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["0012F0FD8DE8560E"]
+			dependencies: ["13139928F59FBE25"]
 			description: [
-				"动力搅拌器是一种用于执行搅拌的机器，需要接入动力且在其下方两格有工作盆时才能工作。动力搅拌器可以执行两种配方，一种是搅拌的配方，另一种是无序合成的配方。"
+				"齿轮石磨是一种不会磨损的石磨、他需要接入动力才可以运转、关于他的配方可以在jei查询！"
 				""
-				"工作盆是一种工作辅助方块，可以存储九种以物流形式输入的最多16个物品或以掉落物形式输入的最多64个物品以及两种最多1000mb的流体，且六个方向都可以输入输出。工作盆侧面有一个配方过滤插槽，可以用于设定目标产物以避免配方混淆。工作盆在侧下方有置物台、溜槽、传送带、垂直放置的机械动力漏斗、工作盆之类的开放式存储方块时，会出现一个开口并尝试自动输出物品。在动态结构上倒置的工作盆会将其中的物品以掉落物的形式掉出。"
-			]
-			icon: "create:mechanical_mixer"
-			id: "1E12E1D7A92C2284"
-			subtitle: "这里没有奶昔"
-			tasks: [
-				{
-					id: "61D25A3E9D443B45"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-				{
-					id: "4EFDB7E676614196"
-					item: "create:basin"
-					type: "item"
-				}
-			]
-			title: "混合搅拌"
-			x: 75.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0012F0FD8DE8560E"]
-			description: [
-				"动力辊压机是一种用于将物品压制的机器，需要接入动力才能工作。在其下方两格没有辅助方块或有置物台和传送带时会执行金属压片的配方 ，在其下方一格有工作盆时会执行压块塑形的配方。"
+				"齿轮石磨只能由质地坚硬的[火成岩]才能制成！软岩石是不能合成石磨的"
 				""
-				"置物台是一种容器和工作辅助方块，可以存储一批物品——一次输入的最少1个最多64个物品。置物台可以从六个方向输入物品，也可以接收掉落物，但在其存储的一批物品离开之前不会再接收其他物品。"
+				"&f[鼠标对准安山岩石磨长按[W]键思索！更容易理解功能]&r"
 			]
-			icon: "create:mechanical_press"
-			id: "095495F4961CCA5D"
-			shape: "circle"
-			subtitle: "锻造？什么是锻造？"
-			tasks: [
-				{
-					id: "7DED33F59FF8B954"
-					item: "create:mechanical_press"
-					type: "item"
-				}
-				{
-					id: "25A94188CE43C192"
-					item: "create:depot"
-					type: "item"
-				}
-			]
-			title: "一锤子买卖"
-			x: 76.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["492B40A0DB508FD0"]
-			hide_dependency_lines: true
-			id: "0012F0FD8DE8560E"
-			tasks: [{
-				id: "69AF11C88BBB102D"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
-			title: "机器装配-安山合金"
-			x: 77.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["0012F0FD8DE8560E"]
 			icon: "create:millstone"
 			id: "4052E4CC34F12433"
 			shape: "circle"
@@ -1798,30 +1765,33 @@
 				title: "制作任意石磨"
 				type: "item"
 			}]
-			x: 73.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0012F0FD8DE8560E"]
-			id: "461E29387C6F301A"
-			tasks: [{
-				id: "38155864A26D7110"
-				item: "create:mechanical_saw"
-				type: "item"
-			}]
-			x: 73.5d
-			y: -4.5d
+			x: 76.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["492B40A0DB508FD0"]
+			icon: "create:hand_crank"
 			id: "5BFB313AE619BA74"
-			tasks: [{
-				id: "672BC21F7444DADE"
-				item: "create:hand_crank"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "672BC21F7444DADE"
+					item: "create:hand_crank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "5F6B405465B15A62"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "动力"
-			x: 81.5d
+			x: 80.0d
 			y: -3.5d
 		}
 		{
@@ -1829,47 +1799,24 @@
 			hide_until_deps_complete: true
 			id: "4F573E92AB8D8E7F"
 			tasks: [{
-				id: "0F19FA9A1D28769C"
-				item: "create:water_wheel"
+				id: "6A69FC2BBADAC575"
+				item: "woodencog:wooden_generator"
 				type: "item"
 			}]
-			x: 80.0d
-			y: -3.5d
+			x: 81.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["4F573E92AB8D8E7F"]
-			hide_until_deps_complete: true
-			id: "4B918C04351D501D"
-			tasks: [{
-				id: "0284B1262EAEEA24"
-				item: "create:large_water_wheel"
-				type: "item"
-			}]
-			x: 78.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0012F0FD8DE8560E"]
+			dependencies: ["13139928F59FBE25"]
+			description: ["动力砂带磨床可以执行所有砂纸配方、可以用来研磨矿物宝石、让他们重绽光彩！"]
 			id: "13B60D1D45C8F2B0"
 			tasks: [{
 				id: "3C523E5662F42BB5"
 				item: "createmetallurgy:mechanical_belt_grinder"
 				type: "item"
 			}]
-			x: 76.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["0012F0FD8DE8560E"]
-			id: "0D8ADE2F487C7DA4"
-			shape: "circle"
-			tasks: [{
-				id: "45BED560E8AB5AFE"
-				item: "create:encased_fan"
-				type: "item"
-			}]
-			x: 75.0d
-			y: -4.5d
+			x: 76.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["492B40A0DB508FD0"]
@@ -1881,23 +1828,19 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			title: "铜工作方块"
+			title: "黄铜工作方块"
 			x: 77.5d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
-			id: "151BE63A8B9BADCB"
-			tasks: [{
-				id: "1AB753D9CDFEBE25"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			x: 76.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["701A5DA00B5222CF"]
+			description: [
+				"&6铜管道&r是机械动力流体传输的介质，可以被铜机壳包裹，被铜机壳包裹的管道开口方向会被锁定，除了开口方向的管道不会再与其他管道相连。铜管道本身不能传输流体，需要泵的帮助。如果管道的尽头是空气方块，那么管道将会消耗1000mb流体生成流体源方块。群峦的流体也会形成流体源方块，但是不会形成无限流体。"
+				""
+				"&6动力泵&r是用于搬运流体的机器，需要接入动力才能工作，其方块上的箭头指示了其搬运方向。一个动力泵最多带动流体前进16格，其传输速度受转动速度影响。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "31B3E6F21348E402"
 			tasks: [
 				{
@@ -1911,44 +1854,68 @@
 					type: "item"
 				}
 			]
-			x: 76.5d
-			y: -1.0d
+			x: 77.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			description: [
+				"&6软管滑轮&r用于抽取和排放大面积流体，为其接入动力会根据转向升高或降低软管，软管末端的位置决定了抽取和排放流体位置。为软管滑轮输入流体会使其从软管下方排放流体，直到流体填充末端那一层；从软管滑轮输出流体会使其从软管上方抽取流体，直到末端那一层的流体被抽空。"
+				""
+				"如果软管末端所在的流体总体积超过了 10,000 格（配置可修改），那此时它将会将其视为是“巨大的流体”，譬如如海洋，河流或地狱的岩浆海等。此时准心指向软管滑轮时会显示“无限供应”字样。"
+				""
+				"注意：当人造水体总体积超过 9,900 格，有时也会显示为“无限供应”，但实际上抽取会消耗液体，因此实际使用时启动后应当观察一下液面是否有改变，确认无限后再加大力度。"
+				""
+				"排放状态的软管滑轮判断是否无限流体时只会计算软管末端下方的流体，而抽取状态则是判断上方。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "0F606AB5BA6D609E"
 			tasks: [{
 				id: "5ACD80C04D62F283"
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: 75.0d
-			y: -3.0d
+			x: 76.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			description: [
+				"&6分液池&r是一种能够将物品中的流体倒出来的机器，不需要接入动力，一般用于将容器中的流体分离出来。"
+				""
+				"&6分液池&r有一种比较奇妙的用法，由于分液池的工作方式是让物品在分液池上移动一格，因此在某些场合可以用作物流方块。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "72A61ACE442DFF84"
 			tasks: [{
 				id: "6561F9BC27E52BC1"
 				item: "create:item_drain"
 				type: "item"
 			}]
-			x: 75.0d
-			y: -1.0d
+			x: 76.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["701A5DA00B5222CF"]
+			description: [
+				"&6注液器&r是一种能够将其中流体注入到物品中的机器，其本身不需要接入动力。它可以用于向桶中注入流体，或者向石英种子中注入水以使其变成石英。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "5DA0438D2C89A126"
 			tasks: [{
 				id: "13F6606A4A2CB8E7"
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 73.5d
-			y: -2.0d
+			x: 74.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["198FB45018B308D5"]
+			description: ["&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7B14309A72A35AF9"
@@ -1957,15 +1924,19 @@
 				item: "create:depot"
 				type: "item"
 			}]
-			x: 80.0d
-			y: 0.5d
+			x: 78.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"701A5DA00B5222CF"
 				"31B3E6F21348E402"
 			]
-			description: ["流体阀门是一个能够控制流体是否通过的方块，通过输入方向不同的动力可以改变流体阀门的开关状态。"]
+			description: [
+				"&6流体阀门&r是一个能够控制流体是否通过的方块，通过输入方向不同的动力可以改变流体阀门的开关状态。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "685CFEACACF27218"
@@ -1974,15 +1945,19 @@
 				item: "create:fluid_valve"
 				type: "item"
 			}]
-			x: 77.5d
-			y: -1.0d
+			x: 76.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"701A5DA00B5222CF"
 				"31B3E6F21348E402"
 			]
-			description: ["智能流体管道是能够控制流入其中流体的管道，流体管道自身带有一个过滤槽，可以向其中放入装有流体的桶或过滤器以控制流体的流入。"]
+			description: [
+				"&6智能流体管道&r是能够控制流入其中流体的管道，流体管道自身带有一个过滤槽，可以向其中放入装有流体的桶或过滤器以控制流体的流入。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5D75D8CE524F5405"
@@ -1991,85 +1966,58 @@
 				item: "create:smart_fluid_pipe"
 				type: "item"
 			}]
-			x: 78.5d
-			y: -1.0d
+			x: 75.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B14309A72A35AF9"]
+			description: [
+				"工作盆是一种工作辅助方块，可以存储九种以物流形式输入的最多16个物品或以掉落物形式输入的最多64个物品以及两种最多1000mb的流体，且六个方向都可以输入输出。工作盆侧面有一个配方过滤插槽，可以用于设定目标产物以避免配方混淆。工作盆在侧下方有置物台、溜槽、传送带、垂直放置的机械动力漏斗、工作盆之类的开放式存储方块时，会出现一个开口并尝试自动输出物品。在动态结构上倒置的工作盆会将其中的物品以掉落物的形式掉出。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
 			id: "516E60B8FD6CB32B"
 			tasks: [{
 				id: "7C68472E20BAECE3"
 				item: "create:basin"
 				type: "item"
 			}]
-			x: 78.5d
-			y: 0.5d
+			x: 77.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["42F18A787B2FD09B"]
-			id: "54479E6972E47CC0"
-			tasks: [{
-				id: "438F23C132EC352B"
-				item: "createdieselgenerators:basin_lid"
-				type: "item"
-			}]
-			title: "更好的焖煮矿物"
-			x: 74.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["51D2FB5E1274EBBF"]
-			hide_until_deps_complete: true
-			id: "42F18A787B2FD09B"
-			tasks: [{
-				id: "026E44268EA5CD0E"
-				item: "createdieselgenerators:burner"
-				type: "item"
-			}]
-			title: "燃气炉"
-			x: 75.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["516E60B8FD6CB32B"]
-			id: "51D2FB5E1274EBBF"
-			tasks: [{
-				id: "04247B8BC8B510BA"
-				item: "createdieselgenerators:bulk_fermenter"
-				type: "item"
-			}]
-			title: "发酵桶"
-			x: 77.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["42F18A787B2FD09B"]
-			icon: "create:basin"
-			id: "7620289D0073F4CB"
-			title: "加热配方"
-			x: 74.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"4477187C54E7FC6A"
-				"5BFB313AE619BA74"
-			]
+			dependencies: ["5BFB313AE619BA74"]
 			description: [
 				"机械动力中的动力——“应力”是有量的大小的，每个产能机器可以产生一些，其他机器则会用掉一些，这个量不是消耗制，而是占用制。举个例子：应力就像你电脑的运行内存，你每有一个机器在工作就会占用一部分，如果工作机器占用的应力超过了你能产生的应力，那么你的动力系统就会“内存溢出”——应力过载了，整个系统都会停止运行。每个机器都会根据当前转速占用不同量的应力，转速越高，机器效率越高，应力占用量就越高。"
 				""
 				"应力表可以告诉你目前系统中总共的应力与剩下的应力，这个值会显示在指针上，如果你戴着工程师护目镜，就会显示准确的数值。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
 			]
 			hide_until_deps_complete: true
+			icon: "create:stressometer"
 			id: "59BE02E592F17A58"
-			tasks: [{
-				id: "34CD12CF113CD743"
-				item: "create:stressometer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "34CD12CF113CD743"
+					item: "create:stressometer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "70DBE62B3E95A586"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
 			title: "应力"
-			x: 81.5d
-			y: -5.0d
+			x: 82.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6F183520DCA27C19"]
@@ -2090,7 +2038,7 @@
 				type: "item"
 			}]
 			x: 81.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["235AAF8AE8B94796"]
@@ -2102,7 +2050,7 @@
 				type: "item"
 			}]
 			x: 80.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["20D181642DA76C30"]
@@ -2114,20 +2062,109 @@
 				type: "item"
 			}]
 			x: 78.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["20D072C6FCC3F36D"]
-			description: ["专业的酿造小桶可以用来酿造酒或其他腌制物品、对于大桶来说他的存储量不够多但是密封性更好、更适合用来做一些酿制配方！"]
+			description: [
+				"小桶是用来专门酿造酒的桶！密封性更好、而且更干净"
+				""
+				"不同的存放环境下的温度会让他的酿造环境有不同的差别！"
+				"同样他也不止可以酿酒、还可以做一点腌制肉！"
+			]
 			id: "193B3FD792076CDE"
+			tasks: [
+				{
+					id: "2D705BBF7DF315C9"
+					item: "brewinandchewin:keg"
+					type: "item"
+				}
+				{
+					id: "57D09A040C13CD04"
+					item: "brewinandchewin:tankard"
+					type: "item"
+				}
+			]
+			title: "酿造时间"
+			x: 88.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E3F22CD2A68DE94"]
+			description: [
+				"现在漏斗可以作为组成锻铁炉多方块结构的一部分"
+				""
+				"你可以在炉底放下一个锻铁炉以用来简便化的处理你挖掘的方胚"
+				"&8[虽然仍然需要你手挖]"
+			]
+			icon: "minecraft:hopper"
+			id: "79C70447D297FD9A"
+			subtitle: "漏斗的更改"
 			tasks: [{
-				id: "2D705BBF7DF315C9"
-				item: "brewinandchewin:keg"
+				icon: "design_decor:capitalism_warning_sign"
+				id: "186B4FBF28B133C7"
+				points: false
+				title: "给你一个试试！&8[消耗7级经验]"
+				type: "xp"
+				value: 7L
+			}]
+			title: "小贴士"
+			x: 76.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6F183520DCA27C19"]
+			dependency_requirement: "all_started"
+			description: ["你可以使用不同配比的木屑、木炭、煤炭、焦炭等燃料重新合成一些再制燃料、这些燃料的性能往往比直接用原料来的更好用"]
+			icon: "kubejs:wood_pellet"
+			id: "48A19DDF20577F61"
+			subtitle: "更具性价比的选择"
+			tasks: [{
+				id: "5DC47766C9355FB2"
+				item: "kubejs:wood_pellet"
 				type: "item"
 			}]
-			title: "酿造时间"
-			x: 87.5d
-			y: 1.0d
+			title: "再制燃料"
+			x: 81.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13139928F59FBE25"]
+			description: [
+				"动力辊压机是一种用于将物品压制的机器，需要接入动力才能工作。在其下方两格没有辅助方块或有置物台和传送带时会执行金属压片的配方 ，在其下方一格有工作盆时会执行压块塑形的配方。"
+				""
+				"&f[鼠标对准物品长按[W]键思索！更容易理解功能]&r"
+			]
+			icon: "create:mechanical_press"
+			id: "75371B1CB24686AB"
+			shape: "circle"
+			tasks: [
+				{
+					id: "0F6744DBA3473E9D"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "74A707C5A70922A4"
+					item: "kubejs:cast_iron_indenter"
+					type: "item"
+				}
+			]
+			title: "一口气砸扁"
+			x: 74.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["198FB45018B308D5"]
+			hide_dependency_lines: true
+			id: "13139928F59FBE25"
+			tasks: [{
+				id: "343EAA25C7E7DED2"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 77.5d
+			y: -4.0d
 		}
 	]
 	title: "第二章：大地结晶"

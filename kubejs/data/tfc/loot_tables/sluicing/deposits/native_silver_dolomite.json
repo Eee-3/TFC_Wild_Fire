@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "weight": 30,
-          "name": "tfcorewashing:rocky_chunks_silver"
+          "name": "kubejs:item/ore/rocky_chunks/native_silver"
         },
         {
           "type": "minecraft:empty",
@@ -30,34 +30,34 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:group",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_silver",
+              "name": "kubejs:item/ore/rocky_chunks/native_silver",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_galena",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_copper",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_cinnabar",
+              "name": "kubejs:item/ore/rocky_chunks/cinnabar",
               "weight": 2
             }
           ]

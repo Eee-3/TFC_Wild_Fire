@@ -29,7 +29,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:item",
@@ -41,27 +41,27 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_cassiterite",
+              "name": "kubejs:item/ore/rocky_chunks/cassiterite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_gold",
+              "name": "kubejs:item/ore/rocky_chunks/native_gold",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_silver",
+              "name": "kubejs:item/ore/rocky_chunks/native_silver",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_graphite",
+              "name": "kubejs:item/ore/rocky_chunks/graphite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_uraninite",
+              "name": "kubejs:item/ore/rocky_chunks/uraninite",
               "weight": 2
             }
           ]

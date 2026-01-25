@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "valhelsia_structures:valhelsia_single",
+        "location": "valhelsia_structures:spawner_dungeon/side_room/side_room_1",
+        "processors": "valhelsia_structures:remove_water",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "valhelsia_structures:valhelsia_single",
+        "location": "valhelsia_structures:spawner_dungeon/side_room/side_room_2",
+        "processors": "valhelsia_structures:remove_water",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "valhelsia_structures:valhelsia_single",
+        "location": "valhelsia_structures:spawner_dungeon/side_room/side_room_3",
+        "processors": "valhelsia_structures:remove_water",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "valhelsia_structures:valhelsia_single",
+        "location": "valhelsia_structures:spawner_dungeon/side_room/side_room_4",
+        "processors": "valhelsia_structures:remove_water",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

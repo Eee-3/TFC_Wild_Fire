@@ -1,0 +1,6 @@
+{
+    "parent": "kubejs:block/support/inventory",
+    "textures": {
+        "texture": "kubejs:block/cast_iron_support"
+    }
+}

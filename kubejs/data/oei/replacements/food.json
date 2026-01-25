@@ -9,8 +9,7 @@
         "matchItems": [
             "create:dough",
             "farmersdelight:wheat_dough",
-            "refurbished_furniture:dough",
-            "farm_and_charm:dough"
+            "refurbished_furniture:dough"
         ],
         "resultItems": "firmalife:food/wheat_dough"
     },

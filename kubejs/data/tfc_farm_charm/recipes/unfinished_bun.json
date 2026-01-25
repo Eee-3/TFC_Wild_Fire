@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:eggs"
+			}
+		},
+		{
+			"item": "farm_and_charm:yeast"
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:unfinished_bun",
+		"count": 2
+	}
+}

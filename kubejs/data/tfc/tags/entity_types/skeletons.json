@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton",
+    "minecraft:stray",
+    "born_in_chaos_v1:decrepit_skeleton",
+    "born_in_chaos_v1:baby_skeleton"
+  ]
+}

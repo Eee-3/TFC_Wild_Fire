@@ -1,1 +1,21 @@
-{  "parent": "minecraft:item/handheld",  "loader": "forge:separate_transforms",  "base": {    "parent": "kubejs:block/coaster_salmon"  },  "perspectives": {    "gui": {      "parent": "tfc:item/food/salmon_item"    }, "ground": {      "parent": "tfc:item/food/salmon_item"    }, "fixed": {      "parent": "tfc:item/food/salmon_item"    }   }}
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "textures": {
+		"particle": "tfc:item/food/salmon"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_salmon"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/salmon_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_salmon"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/salmon_item"
+        }
+    }
+}

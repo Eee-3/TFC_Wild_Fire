@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "chance": 0.15,
+          "condition": "minecraft:random_chance_with_looting",
+          "looting_multiplier": 0.01
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:crown"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:soot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:brass_mechanisms"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:silk_cloth"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:straw"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:powder/ruby"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:small_raw_hide"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artisanal:quill"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firmalife:food/cheddar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:compost"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/wandering_trader"
+}

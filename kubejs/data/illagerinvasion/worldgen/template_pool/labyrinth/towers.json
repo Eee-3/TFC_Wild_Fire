@@ -9,18 +9,18 @@
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 1
     },
     {
       "element": {
         "element_type": "illagerinvasion:single_pool_element",
-        "location": "illagerinvasion:labyrinth/tower",
+        "location": "illagerinvasion:labyrinth/tower_2",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
-      "weight": 3
+      "weight": 1
     }
   ],
   "fallback": "minecraft:empty"

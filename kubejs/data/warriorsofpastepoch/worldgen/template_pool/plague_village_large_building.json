@@ -1,0 +1,28 @@
+{
+  "name": "warriorsofpastepoch:plague_village_large_building",
+  "fallback": "warriorsofpastepoch:plague_village_end",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:large_house",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:large_house_test",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

@@ -14,7 +14,7 @@
     "entity_armor.max_for_render": 40,
     "breaking_progress": true,
     "tnt_stability": true,
-    "item_storage.items_per_line": 9,
+    "item_storage.items_per_line": 12,
     "item_frame": true,
     "crop_progress": true,
     "command_block": true,
@@ -107,6 +107,7 @@
     "shelf": true,
     "oven_top": true,
     "pumping_station": true,
+    "stovetop_pot": true,
     "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
@@ -129,7 +130,6 @@
     "decaying": true,
     "wall_torch": true,
     "windmill": true,
-    "drying_sinew": true,
     "ocelot": true,
     "candle_cake": true,
     "horse": true,
@@ -186,16 +186,8 @@
   "survivorsdelight": {
     "feast_decay": true
   },
-  "waystones": {
-    "waystone": true
-  },
   "corpse": {
     "corpse": true
-  },
-  "drinkbeer": {
-    "mixed_beer": true,
-    "trade_box": true,
-    "beer_barrel": true
   },
   "afc": {
     "tap": true

@@ -239,7 +239,7 @@
             "function": "minecraft:set_damage"
           }
         ],
-        "name": "bsa:stone/axe/flint",
+        "name": "kubejs:rock_tool/flint_axe",
           "weight": 2
         }
       ],
@@ -782,34 +782,6 @@
             }
           ],
           "name": "farmersdelight:canvas",
-          "weight": 4
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.23,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "bsa:stone/arrowhead/flint",
           "weight": 4
         }
       ],

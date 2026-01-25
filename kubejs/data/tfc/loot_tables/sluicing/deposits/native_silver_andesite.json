@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "weight": 30,
-          "name": "tfcorewashing:rocky_chunks_silver"
+          "name": "kubejs:item/ore/rocky_chunks/native_silver"
         },
         {
           "type": "minecraft:empty",
@@ -30,7 +30,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:item",
@@ -42,27 +42,27 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_copper",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_gold",
+              "name": "kubejs:item/ore/rocky_chunks/native_gold",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_magnetite",
+              "name": "kubejs:item/ore/rocky_chunks/magnetite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_galena",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
               "weight": 2
             }
           ]

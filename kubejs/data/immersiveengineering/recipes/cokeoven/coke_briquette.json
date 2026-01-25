@@ -1,0 +1,11 @@
+{
+    "type": "immersiveengineering:coke_oven",
+    "creosote": 900,
+    "input": {
+        "item": "kubejs:coal_briquette"
+    },
+    "result": {
+        "item": "kubejs:coke_briquette"
+    },
+    "time": 1800
+}

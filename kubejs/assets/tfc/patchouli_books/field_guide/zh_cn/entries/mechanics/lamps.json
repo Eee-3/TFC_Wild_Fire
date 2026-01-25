@@ -54,7 +54,7 @@
     {
       "type": "patchouli:text",
       "anchor": "tallow",
-      "text": "另一种较弱的燃料是$(thing)蜡脂$()。要制作蜡脂，在$(l:mechanics/pot)陶锅$()中用淡水中煮 5 份$(thing)鲸脂$()。每单位蜡脂的燃烧时间只有不到 2 游戏内小时。蜡脂可以用于制作$(l:mechanics/lighting#candles)蜡烛$()。"
+      "text": "另一种较弱的燃料是$(thing)油脂$()。要制作油脂，在$(l:mechanics/pot)陶锅$()中用淡水中煮 5 份$(thing)鲸脂$()。每单位油脂的燃烧时间只有不到 2 游戏内小时。油脂可以用于制作$(l:mechanics/lighting#candles)蜡烛$()。"
     },
     {
       "type": "patchouli:multiblock",
@@ -72,7 +72,7 @@
         }
       },
       "name": "熔岩灯",
-      "text": "熔岩灯是一种$(thing)永久光源$()。不过，只有$(l:mechanics/steel#blue_steel)蓝钢$()灯才能盛装熔岩。",
+      "text": "熔岩灯是一种$(thing)永久光源$()。不过，只有$(l:mechanics/steel#blue_steel)秘银$()灯才能盛装熔岩。",
       "enable_visualize": false
     },
     {

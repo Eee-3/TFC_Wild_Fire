@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "s": {
+      "item": "tfc:metal/unfinished_chestplate/wrought_iron"
+    },
+    "a": {
+      "item": "kubejs:leather_plate"
+    },
+    "b": {
+      "tag": "forge:string"
+    },
+    "c": {
+      "item": "tfc:burlap_cloth"
+    }
+  },
+  "pattern": [
+    "b b",
+    "asa",
+    "aca"
+  ],
+  "result": {
+    "item": "kubejs:leather_gamberson"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+        "item": "tfc:food/soybean"
+    }
+  ],
+  "results": [
+    {
+      "amount": 200,
+      "fluid": "createdieselgenerators:plant_oil"
+    }
+  ]
+}

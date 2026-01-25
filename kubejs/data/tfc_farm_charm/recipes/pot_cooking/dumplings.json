@@ -1,0 +1,28 @@
+{
+	"type": "farm_and_charm:pot_cooking",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc_farm_charm:mashed_potatoes"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/cabbage"
+			}
+		}
+	],
+	"container": {
+		"required": true,
+		"item": {
+			"item": "minecraft:bowl"
+		}
+	},
+	"result": {
+		"item": "tfc_farm_charm:dumplings",
+		"count": 1
+	},
+	"requiresLearning": false
+}

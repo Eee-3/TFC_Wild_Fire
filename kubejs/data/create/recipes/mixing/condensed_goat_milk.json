@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "firmalife:goat_milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 50,
+      "fluid": "artisanal:condensed_goat_milk"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/dacite",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/dacite_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_dacite"
+}

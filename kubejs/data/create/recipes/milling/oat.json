@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+   "item": "tfc:food/oat"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "tfc:food/oat_grain"
+    },
+    {
+      "count": 1,
+      "item": "tfc:straw"
+    }
+  ]
+}

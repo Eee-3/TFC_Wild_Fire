@@ -1,0 +1,13 @@
+{
+  "type": "legendarysurvivaloverhaul:sewing",
+  "addition": {
+    "item": "tfc:wool_cloth"
+  },
+  "base": {
+    "tag": "forge:string"
+  },
+  "result": {
+    "count": 6,
+    "item": "legendarysurvivaloverhaul:warm_string"
+  }
+}

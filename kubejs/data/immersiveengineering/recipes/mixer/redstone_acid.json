@@ -6,7 +6,7 @@
     }
   ],
   "result": {
-    "fluid": "immersiveengineering:redstone_acid",
+    "fluid": "vintageimprovements:sulfric_acid",
     "amount": 250
   },
   "fluid": {

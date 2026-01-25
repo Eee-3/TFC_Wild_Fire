@@ -1,0 +1,19 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    {
+      "item": "tfc:small_prepared_hide"
+    },
+    {
+      "fluid": "tfc:tannin",
+      "amount": 100
+    }
+  ],
+  "processingTime": 1000,
+  "results": [
+    {
+      "count": 1,
+      "item": "minecraft:leather"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:mud/silt"
+    },
+    {
+      "item": "tfc:straw"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": "tfc:drying_bricks/silt"
+    }
+  ]
+}

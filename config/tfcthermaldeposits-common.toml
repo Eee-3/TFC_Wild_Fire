@@ -9,14 +9,14 @@
 	#
 	# How often minerals can generate around lava. This also affects natural replenishment. Lower value => more often.
 	#Range: > 0
-	mineralGenFrequencyLava = 128
+	mineralGenFrequencyLava = 16
 	#
 	# How often minerals can generate around hot springs. This also affects natural replenishment. Lower value => more often.
 	#Range: > 0
-	mineralGenFrequencyHotSpring = 64
+	mineralGenFrequencyHotSpring = 32
 	#
 	# Toggle smoke particles released by lava? True = smokes.
-	shouldLavaSmoke = true
+	shouldLavaSmoke = false
 	#
 	# Toggle whether or not lava and hot springs should deposit minerals in other dimensions than the overworld? True = not limited to the overworld.
 	toggleOtherDimensions = false
@@ -29,7 +29,7 @@
 	#
 	# Sound amplifier level for earthquakes and tremors. Default = 4.0.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	earthquakeSoundAmplifier = 4.0
+	earthquakeSoundAmplifier = 1.0
 	#
 	# Should volcanoes launch pyroclastic bombs?
 	togglePyroclasticBombs = true
@@ -49,13 +49,13 @@
 	#
 	# How big of a chance should pyroclastic bombs have to contain a random ore? Higher value => lower chance.
 	#Range: > 1
-	pyroclasticBombOreChance = 30
+	pyroclasticBombOreChance = 1
 	#
 	# Should volcanos shake the camera during high activity events?
 	toggleVolcanoShake = true
 	#
 	# Should Nether have the occasional tremors and earthquakes?
-	toggleNetherTremor = true
+	toggleNetherTremor = false
 	#
 	# Should tremors happen more frequent? True => more frequent.
 	highTremorFrequency = false

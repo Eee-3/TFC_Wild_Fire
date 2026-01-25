@@ -4,7 +4,7 @@
 	filename: "3448C5F4EBDB1A16"
 	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		ForgeCaps: {
@@ -16,17 +16,41 @@
 		id: "tfc:metal/double_ingot/steel"
 	}
 	id: "3448C5F4EBDB1A16"
+	images: [
+		{
+			click: "#50EFCD7C10FA0994"
+			dependency: "7B1D01476090D426"
+			height: 0.2d
+			hover: ["没做前置/还是忘记了？点我快捷跳转"]
+			image: "fancymenu:textures/contextmenu/icons/search.png"
+			rotation: 0.0d
+			width: 0.2d
+			x: 5.952898420566768d
+			y: -5.381624714704415d
+		}
+		{
+			click: "#4FAE1CF04EF95651"
+			dependency: "366FC1B30FB2EF18"
+			height: 0.2d
+			hover: ["没做前置/还是忘记了？点我快捷跳转"]
+			image: "fancymenu:textures/contextmenu/icons/search.png"
+			rotation: 0.0d
+			width: 0.2d
+			x: 9.479429032811673d
+			y: -1.3652981840921612d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["4A6067EFAE9D19C1"]
 			description: [
-				"当你获得钢铁之后，群峦本体的内容就剩的不多了，不过，本整合包扩展的ad星际制造火箭需要大量的钢铁，所以建议在这个阶段发展的同时，制作刷铁机与钢铁产线，"
-				"钢后续制造黑钢以及史诗金属“&b秘银&r”和”&6精金&r“也需要很多"
+				"钢铁时代是一个重要的飞跃点、在这个阶段需要的材料和需要建造的机器会变得多很多！"
+				"但与此同时、这个阶段生活质量也会大大改变、很多事情会变大比较轻松、"
+				"不再需要和之前一样有过多的重复劳作了"
 				""
-				"从原始人生活到现在是时候摒弃手工业来到工业自动化生活了!!!!"
-				"&n如果不了解“机械动力”和“沉浸工程”这两个mod的新玩家，建议多看这两个模组的独立章节以便更好的制造工业产线&r"
+				"&o&m（但前提是你得做自动产线否则你还是得一个一个打铁……）&r&r"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -40,11 +64,6 @@
 				id: "tfc:metal/ingot/steel"
 			}
 			id: "72432121EE248C7B"
-			rewards: [{
-				id: "57FBA0AD1AF46D65"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			size: 1.75d
 			subtitle: "完成了最大的挑战，后续的事情就比较简单了"
@@ -54,19 +73,21 @@
 				type: "checkmark"
 			}]
 			title: "第四章：钢铁之魂"
-			x: 3.5d
-			y: 2.625d
+			x: 14.535714285714292d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"3933AA974EAACD79"
-				"72432121EE248C7B"
+				"7D7A0D519A2C0B53"
 			]
 			description: [
 				"我猜你早就划够了皮划艇，也可能去试了划艇发现不大理想。没关系，在拥有了钢之后，你将会能够建造一艘海上的庞然巨物——单桅帆船！这个大家伙最多能容纳13个箱子，乘坐7个人，在顺风的情况下以很快的速度航行，并携带最多6门加农炮！"
 				""
 				"单桅帆船的造价十分高昂，需要大量的钢、铜、羊毛及其他材料，且你还需要一段时间来学习如何操作帆船。如果你决定建造帆船，可以查阅书籍。看向帆船的桅杆以完成该任务。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -78,11 +99,6 @@
 				id: "firmaciv:sextant"
 			}
 			id: "6222CD178F9A72B5"
-			rewards: [{
-				id: "78AB6F3B06150136"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "世界上某些地方人类无法靠近，但帆船却可以。——艾伦·维利耶"
 			tasks: [{
 				icon: "firmaciv:cannon"
@@ -94,23 +110,22 @@
 				type: "observation"
 			}]
 			title: "船坚炮利"
-			x: 1.0d
-			y: 1.5d
+			x: 18.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: [
 				"钢管道和钢泵是能够搬运流体源的装置。将曲轴用钢棒连接到钢泵较窄的那段，若观察到钢泵中有木块跟随钢棒运动即代表钢泵开始工作。用钢管道连接钢泵的底部到水源方块，管道的末端必须放在水中，管道的末端距离钢泵不能超过16格。"
 				""
 				"如果搭建成功，钢泵较宽的那头就会出现水源方块，一个钢泵会尝试填充最大32格的封闭区域，如果这个区域大于32格，就不会进行填充。"
+				""
+				"&m其实这个管道比较废物啊、只是和群峦本体有关而已&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "tfc:steel_pump"
 			id: "68180ECE6863FA8B"
-			rewards: [{
-				id: "6449B1911D98B4E9"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "群峦本体唯一搬运流体源的方式"
 			tasks: [
 				{
@@ -124,18 +139,17 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 0.5d
+			x: 18.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
-			description: ["你已经准备好14块钢锭在这等着了，不是吗？"]
+			dependencies: ["6A3789FBED7462BD"]
+			description: [
+				"和之前一样、加工钢等级的工具或者物品都至少需要钢砧"
+				"准备好14个钢锭吧"
+			]
+			hide_until_deps_complete: true
 			id: "6AB49CFCB58E3D6B"
-			rewards: [{
-				id: "67B9A4BE55018AE0"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			subtitle: "你该学会预判了"
 			tasks: [{
@@ -152,18 +166,15 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.5d
+			x: 9.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["打火石被群峦作者的恶意安排到了钢阶段才能制作，它的用法除了右键点火也没有别的什么了。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0448F81C69D7FCA5"
-			rewards: [{
-				id: "79E14AC4B75BCD48"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "你怎么才来？"
 			tasks: [{
 				id: "4E9A859A547E0F1D"
@@ -176,20 +187,15 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 18.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["曲轴是一个能够将旋转力转变为线性力的装置，曲轴的工作需要手持钢棒对曲轴右键，动力从曲轴的背面输入，从曲轴的左面由钢棒输出，连接曲轴的机器需要放置在曲轴左侧距离曲轴一格的位置。目前可以连接曲轴的机器有钢泵和风箱，连接曲轴的风箱会自己进行鼓风，使有燃料的木炭炉一直保持在炽白温度。"]
 			hide_dependency_lines: true
 			icon: "tfc:crankshaft"
 			id: "0B1668F8FF1ECD7B"
-			rewards: [{
-				id: "68A8A64BEC740573"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "一些简单的机械原理"
 			tasks: [
 				{
@@ -212,13 +218,21 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 18.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
-			description: ["制作黑钢需要先制作脆钢，一种钢、镍和黑铜的合金，因此先收集些黑铜和镍吧。"]
-			hide_until_deps_visible: false
+			description: [
+				"我们接下来需要制作更高级的金属：黑钢"
+				"黑钢首先需要先合金制作"
+				"而他的材料需要&7镍&r和&5黑铜&r"
+				""
+				"镍是必需品"
+				""
+				"&n[在制作黑钢前建议先去发展工业、有助于更好的发展主线、当然、想和原版群峦的制作也是可以的]&r"
+			]
+			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -230,11 +244,6 @@
 				id: "tfc:metal/ingot/nickel"
 			}
 			id: "75223535BFA1B142"
-			rewards: [{
-				id: "4619CFE79BDA3E85"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -250,27 +259,23 @@
 						}
 						id: "tfc:metal/ingot/nickel"
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 10L
-					id: "0C520128A178FACD"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/black_bronze"
-					}
-					type: "item"
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "2BC1389FB46B54C9"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
 				}
 			]
 			title: "镍锭"
-			x: 3.5d
-			y: -1.5d
+			x: 9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6AB49CFCB58E3D6B"]
@@ -292,11 +297,6 @@
 				id: "firmalife:metal/ingot/chromium"
 			}
 			id: "0C2E97A138486954"
-			rewards: [{
-				id: "12CA515E25673098"
-				type: "xp"
-				xp: 30
-			}]
 			tasks: [
 				{
 					count: 10L
@@ -311,39 +311,30 @@
 						}
 						id: "firmalife:metal/ingot/chromium"
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
-					count: 10L
-					id: "7F969A0EE73BCB82"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/nickel"
-					}
-					type: "item"
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "287EBAEF4AB0DFDA"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
 				}
 			]
 			title: "铬锭"
-			x: 5.0d
-			y: -1.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0C2E97A138486954"]
 			description: ["将钢、镍和铬按照一定比例混合就可以得到不锈钢。不锈钢的用途不算很多，但也不能没有。例如其可用于建造不锈钢温室、制作加工速度是干燥垫12倍的太阳能干燥器。"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			hide_until_deps_visible: false
 			id: "418943718040C326"
-			rewards: [{
-				id: "30243E58AC40E103"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "不生锈是唯一的价值"
 			tasks: [{
 				id: "74811A37276979D8"
@@ -359,77 +350,96 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 12.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["75223535BFA1B142"]
 			description: ["将钢、镍和黑铜按照一定比例混合就可以得到脆钢。"]
-			id: "58B1D2FE24BF1134"
-			rewards: [{
-				id: "34CF48EA31CDFACD"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "hexagon"
-			subtitle: "太脆了以致于当不了五级金属"
-			tasks: [{
-				id: "458AD05150935012"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
-					id: "tfc:metal/ingot/weak_steel"
 				}
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.0d
+				id: "tfc:metal/ingot/weak_steel"
+			}
+			id: "58B1D2FE24BF1134"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "458AD05150935012"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_steel"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "1462B97DC97905CD"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
+			title: "脆弱的金属"
+			x: 10.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["58B1D2FE24BF1134"]
 			description: ["将脆钢锭和生铁锭焊接在一起可以得到高碳黑钢锭，锻打高碳黑钢锭即可得到黑钢锭。黑钢锭是五级金属，除了锻造黑钢工具以外几乎没有别的用途，最大的用途还是用于锻造红蓝钢。"]
 			hide_until_deps_visible: true
 			id: "4DFF7818B50623B5"
-			rewards: [{
-				id: "09ADD1B4CB9B71D2"
-				type: "xp"
-				xp: 30
-			}]
+			optional: true
 			shape: "gear"
-			subtitle: "黑夜给了我黑色的眼睛，我却用它来锻黑钢"
-			tasks: [{
-				id: "125439D3026E04C0"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "02CE043C5F92A9D6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/high_carbon_black_steel"
 					}
-					id: "tfc:metal/ingot/black_steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					advancement: "tfc:story/black_steel"
+					criterion: ""
+					id: "63CF296A1ADA80A4"
+					title: "获得黑钢[或黑钢制品]"
+					type: "advancement"
+				}
+			]
 			title: "&3如黑夜般深邃"
-			x: 3.5d
-			y: -4.5d
+			x: 8.0d
+			y: -8.315336310921857d
 		}
 		{
-			dependencies: ["4DFF7818B50623B5"]
-			hide_until_deps_visible: true
+			dependencies: ["5BF2B6A71C84907B"]
+			hide_until_deps_complete: true
 			icon: "tfc:crucible"
 			id: "446F9DA4F13E0AA6"
-			rewards: [{
-				id: "0BD542017E8D0545"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "准备好迎来最复杂的合金配方"
@@ -438,12 +448,13 @@
 				type: "checkmark"
 			}]
 			title: "&e史诗合金"
-			x: 3.5d
-			y: -6.0d
+			x: 4.394257636134853d
+			y: -8.315336310921857d
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
 			description: ["制作蓝钢需要先制作脆蓝钢，一种黑钢、钢、铋铜和纹银的合金。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
 				Count: 1
@@ -456,11 +467,6 @@
 				id: "tfc:metal/ingot/sterling_silver"
 			}
 			id: "419D1651505D2B46"
-			rewards: [{
-				id: "53CF2CE452C52C71"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -495,19 +501,14 @@
 				}
 			]
 			title: "纹银锭"
-			x: 2.0d
-			y: -4.5d
+			x: 3.042942431602377d
+			y: -9.0d
 		}
 		{
 			dependencies: ["419D1651505D2B46"]
 			description: ["将黑钢、钢、铋铜和纹银按照一定比例混合就可以得到劣等秘银"]
-			hide_until_deps_visible: false
+			hide_until_deps_visible: true
 			id: "7BED755237B36ACA"
-			rewards: [{
-				id: "01454BC07A1673EC"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			subtitle: "秘银青春版"
 			tasks: [{
@@ -525,18 +526,14 @@
 				type: "item"
 			}]
 			title: "劣等秘银"
-			x: 1.5d
-			y: -6.0d
+			x: 1.542942431602377d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7BED755237B36ACA"]
-			description: ["将劣等秘银锭和黑钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并太大差别。"]
+			description: ["将劣等秘银锭和黑钢锭焊接在一起可以得到高碳秘银锭，锻打高碳秘银锭即可得到&b秘银&r锭。&b秘银&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&6精金&r并无太大差别。"]
+			hide_until_deps_complete: true
 			id: "16ED3FE9D5BD6956"
-			rewards: [{
-				id: "2547CA0B02281172"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "gear"
 			subtitle: "&b蓝色是冷漠"
 			tasks: [{
@@ -553,13 +550,14 @@
 				}
 				type: "item"
 			}]
-			title: "&9忧郁蓝调"
-			x: 2.5d
-			y: -7.5d
+			title: "&9如蓝月般明洁"
+			x: 0.357516451062871d
+			y: -9.5d
 		}
 		{
 			dependencies: ["446F9DA4F13E0AA6"]
 			description: ["制作红钢需要先制作劣等精金，一种黑钢、钢、黄铜和玫瑰金的合金。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: {
 				Count: 1
@@ -572,11 +570,6 @@
 				id: "tfc:metal/ingot/rose_gold"
 			}
 			id: "0CB5C3D905F4A3F1"
-			rewards: [{
-				id: "43F3F7EBD088EF95"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -611,19 +604,14 @@
 				}
 			]
 			title: "玫瑰金锭"
-			x: 5.0d
-			y: -4.5d
+			x: 3.042942431602377d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0CB5C3D905F4A3F1"]
 			description: ["将黑钢、钢、黄铜和玫瑰金按照一定比例混合就可以得到劣等精金。"]
-			hide_until_deps_visible: false
+			hide_until_deps_visible: true
 			id: "4153C222DFD9B0D9"
-			rewards: [{
-				id: "3A024CAE6831504E"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
 			subtitle: "精金青春版"
 			tasks: [{
@@ -641,18 +629,14 @@
 				type: "item"
 			}]
 			title: "劣等精金"
-			x: 5.5d
-			y: -6.0d
+			x: 1.542942431602377d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4153C222DFD9B0D9"]
-			description: ["将劣等精金锭和黑钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并太大差别。"]
+			description: ["将劣等精金锭和黑钢锭焊接在一起可以得到高碳精金锭，锻打高碳精金锭即可得到&6精金&r锭。&6精金&r是最高级的六级金属，可以制造最高等级的装备和武器，并拥有一些新配方。性能与&b秘银&r并无太大差别。"]
+			hide_until_deps_complete: true
 			id: "4390977A27252D9E"
-			rewards: [{
-				id: "615D16049F1828D0"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "gear"
 			subtitle: "&c红色是毁灭"
 			tasks: [{
@@ -669,24 +653,20 @@
 				}
 				type: "item"
 			}]
-			title: "&4分外眼红"
-			x: 4.5d
-			y: -7.5d
+			title: "&4如烈日般灿烂"
+			x: 0.357516451062871d
+			y: -7.0d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: [
 				"储物抽屉是一个可以大量堆叠1/2/3/4个物品的神奇存储方块，他的大量存储功能很适合工业化分类，比如让一些作物的副产物单独在一个方块存储"
 				""
 				"相关的教程可以在b站搜索,本任务不再赘述"
 			]
+			hide_until_deps_complete: true
 			icon: "functionalstorage:oak_1"
 			id: "5ECF9093FFEE6BC6"
-			rewards: [{
-				id: "03EED06402AEDACE"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "打破堆叠限制"
 			tasks: [{
 				id: "16CACEDC366917FA"
@@ -701,39 +681,33 @@
 				type: "item"
 			}]
 			title: "抽屉：异次元收纳宝库"
-			x: -0.5d
-			y: 2.5d
+			x: 17.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5ECF9093FFEE6BC6"]
 			description: ["存储量非常大的单方块流体储罐,并且可以存储多种不同流体，如果只是存取流体，那他足够了，比机械动力的铜储罐好上几百倍"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
 			icon: "functionalstorage:fluid_1"
 			id: "0DCF5F18439C773F"
-			rewards: [{
-				id: "674E95AC9AEBC71C"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "超级压缩"
+			subtitle: "那个机械什么的储罐真不熟"
 			tasks: [{
 				id: "46FACBF3AC33B976"
 				item: "functionalstorage:fluid_1"
 				type: "item"
 			}]
-			title: "那个铜做的流体储罐是真不熟"
-			x: -0.5d
-			y: 1.0d
+			title: "超级压缩储罐"
+			x: 17.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["0DCF5F18439C773F"]
 			description: ["现在，使用钢板合成不同等级的存储升级，让你的存储抽屉堆叠的上限更多更多吧"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: false
 			icon: "functionalstorage:copper_upgrade"
 			id: "751B81E18D2089CB"
-			rewards: [{
-				id: "5951F5EB81BD7425"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "大大大！"
 			tasks: [{
 				id: "4BC7273F34D80924"
@@ -741,18 +715,15 @@
 				type: "item"
 			}]
 			title: "升级？"
-			x: -0.5d
-			y: -0.5d
+			x: 17.0d
+			y: -10.5d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["现在你可以用钢来制作保存食物的冰箱，只不过这个冰箱需要耗电制冷，要确保他通入Fe电源再开启使用"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "61925C98524F93F2"
-			rewards: [{
-				id: "793865E366EFCDA1"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "百事和可口相比，我觉得冰镇更好"
 			tasks: [{
 				id: "334B9F22089202AA"
@@ -760,18 +731,14 @@
 				type: "item"
 			}]
 			title: "冰箱？太好辣"
-			x: 4.5d
-			y: 5.5d
+			x: 14.0d
+			y: -9.375d
 		}
 		{
 			dependencies: ["751B81E18D2089CB"]
 			description: ["这是你可以获得的最强升级了，装上之后你的抽屉都不一定有装满的那一天"]
+			hide_until_deps_complete: true
 			id: "2BEB019453D0D72E"
-			rewards: [{
-				id: "5409149EB81F298F"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "pentagon"
 			subtitle: "目前可以得到的最强升级"
 			tasks: [{
@@ -780,163 +747,62 @@
 				type: "item"
 			}]
 			title: "最强升级！"
-			x: -0.5d
-			y: -2.0d
+			x: 17.0d
+			y: -11.5d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "7B683E6229C358F4"
-			rewards: [{
-				id: "0B1CDC5005FCFC5F"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "07CB3927A0888D62"
-				item: "minecraft:nether_star"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["7B683E6229C358F4"]
-			id: "7DBB29EBBC77608E"
-			rewards: [{
-				id: "6F057E5A0ED2CAE4"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "26A66F2B5CBD66AC"
-				item: "minecraft:beacon"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: [
-				"&4&n若你不知道烈焰人燃烧室与超级加热的用途烦请观看机械动力章节！！！&r&r"
-				""
-				"烈焰人蛋糕&e无法制作&r之后，让烈焰人燃烧室&b超级加热&r的办法只有汽油与柴油，然而柴油和汽油对于后续火箭燃料制作至关重要，所以一般无法让烈焰人持续不断的喝油"
+				"在锻铁时代时、我们通过加热的手段只有使用燃气炉，但是燃气炉的消耗量终究较大、也不够方便"
 				""
 				"而电磁炉可以很好的解决问题，只要有持续的输出热量，就可以不断的发热，虽然速度较慢，但是好在消耗量较小，搭配蒸汽机和旋转发电可以很轻松的让蒸汽机自产自销达到白嫖应力"
 				""
 				"后续的热量升级更是让电磁炉可以持续不断的&b超级加热&r，以使需要&b超级加热&r状态的配方变得自由"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "67B82C65D10099EB"
-			rewards: [{
-				id: "7EABA905DF675D16"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "不能煮火锅，不能"
+			subtitle: "可以煮火锅，可以"
 			tasks: [{
 				id: "0AA85A62BC75BB5D"
 				item: "moreburners:electric_burner"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 11.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["67B82C65D10099EB"]
 			description: ["热量升级能让电磁炉成为可以以200fe/t消耗电量而持续不断超级加热的发热猛兽"]
 			id: "4215B01BAA98CCCD"
-			rewards: [{
-				id: "7DC41A5F9177508A"
-				type: "xp"
-				xp: 30
-			}]
 			subtitle: "更好的内核"
 			tasks: [{
 				id: "0140E3F410163FBF"
 				item: "moreburners:heat_upgrade"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["4215B01BAA98CCCD"]
-			icon: "create:creative_blaze_cake"
-			id: "7701AB9FC0CC8B3F"
-			rewards: [{
-				id: "7B753AF97BF8EBE9"
-				type: "xp"
-				xp: 30
-			}]
-			tasks: [{
-				id: "1C90A3AB6BFA6481"
-				type: "checkmark"
-			}]
-			title: "恭喜你，你超级加热自由了！"
-			x: 9.0d
-			y: 4.5d
+			x: 11.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
 				"4390977A27252D9E"
 				"16ED3FE9D5BD6956"
-				"1D0D581F153F3912"
 			]
 			id: "583ECBD21EE506B5"
-			invisible: true
-			rewards: [{
-				id: "072F343226146C74"
-				type: "xp"
-				xp: 30
-			}]
 			shape: "hexagon"
+			subtitle: "整合包现阶段只制作到此"
 			tasks: [{
 				id: "7CEED06524B6D5D7"
 				item: "ad_astra:launch_pad"
 				type: "item"
 			}]
 			title: "再会了"
-			x: 3.5d
-			y: -9.5d
+			x: -1.0d
+			y: -8.282785751573684d
 		}
 		{
-			dependencies: [
-				"4390977A27252D9E"
-				"16ED3FE9D5BD6956"
-				"7E668B651B6954CB"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"你觉得，就这样做完精金秘银之后这章节就结束了？"
-				"不，还没有，接下来你应该去看机械动力和沉浸工程章节并学习大多数主要内容"
-				"【除非你是一个老手】"
-				""
-				"直到做出电弧炉我才能认为你有足够的制钢实力才能让你继续下一章"
-			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			icon: "immersiveengineering:arc_furnace"
-			id: "1D0D581F153F3912"
-			rewards: [{
-				id: "17688D8A2D4B24C2"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "钢章节远比你想的还要长"
-			tasks: [{
-				id: "37A4FF2F0993AF70"
-				type: "checkmark"
-			}]
-			title: "电弧炉？"
-			x: 1.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["马口铁是一个非常轻薄的金属，虽然成本较高，但是他的卫生程度不是陶器可以比拟的"]
 			id: "30BE0FFFDCBE95A7"
 			subtitle: "食品级金属！"
@@ -954,8 +820,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 15.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["30BE0FFFDCBE95A7"]
@@ -984,8 +850,8 @@
 				type: "item"
 			}]
 			title: "真正的太空级食物"
-			x: -0.5d
-			y: 4.5d
+			x: 15.5d
+			y: -9.375d
 		}
 		{
 			dependencies: ["29F332E1454FED83"]
@@ -1012,20 +878,16 @@
 				type: "checkmark"
 			}]
 			title: "关于罐头回收"
-			x: -2.0d
-			y: 4.5d
+			x: 15.5d
+			y: -10.375d
 		}
 		{
-			dependencies: ["72432121EE248C7B"]
+			dependencies: ["7D7A0D519A2C0B53"]
 			description: ["精妙背包是一款十分强大的存储模组，它提供了一个名叫背包的装备，既可以背在身上当做额外的存储空间，还可以放在地上当做大容量箱子。不仅如此，该背包还能够使用铁锭、金锭、钻石进行升级，最高级的背包拥有堪比钻石箱子的巨大储存量，还能够通过装载多种升级模组获得更强大的功能。最重要的是，它不受群峦本身重量系统的影响，也就是说你甚至可以在身上背好几十个装满水的大桶而不用担心超重！而如此强大的背包造价却十分的低廉，只需要四根羊毛纱，四块皮革和一个箱子，可以说是只要做出来就能颠覆游戏体验的bug级装备了。"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "2578A42ACFFDE9A1"
-			rewards: [{
-				id: "61E5EF918F3A901D"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "这份力量本不属于群峦星人"
 			tasks: [{
 				id: "6A3CF892AFE145B1"
@@ -1045,8 +907,1134 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.5d
+			x: 14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["72432121EE248C7B"]
+			hide_until_deps_complete: true
+			icon: "refurbished_furniture:oak_kitchen_sink"
+			id: "7D7A0D519A2C0B53"
+			tasks: [{
+				advancement: "createmetallurgy:steel_age"
+				criterion: ""
+				icon: "design_decor:arrow_right_sign"
+				id: "2CE792E69EC21BDE"
+				title: "我已了解"
+				type: "advancement"
+			}]
+			title: "现代化生活"
+			x: 15.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["72432121EE248C7B"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:component_steel"
+			id: "6A3789FBED7462BD"
+			shape: "hexagon"
+			subtitle: "铿锵之声"
+			tasks: [{
+				advancement: "createmetallurgy:steel_age"
+				criterion: ""
+				icon: "design_decor:arrow_right_sign"
+				id: "224D1BDCC55F2F96"
+				title: "我已了解"
+				type: "advancement"
+			}]
+			title: "真正的工业"
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7D7A0D519A2C0B53"
+				"418943718040C326"
+			]
+			hide_until_deps_complete: true
+			icon: "firmalife:stainless_steel_greenhouse_wall"
+			id: "37A28CF1E9EB324D"
+			subtitle: "永不腐坏"
+			title: "不锈钢温室"
+			x: 12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["418943718040C326"]
+			hide_until_deps_complete: true
+			id: "567A472092A56011"
+			tasks: [{
+				id: "5ACA9782BD2A5669"
+				item: "firmalife:vat"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -9.375d
+		}
+		{
+			dependencies: ["418943718040C326"]
+			hide_until_deps_complete: true
+			id: "6128136E0038CA4C"
+			tasks: [{
+				id: "41349D12FC1968FF"
+				item: {
+					Count: 1
+					id: "kubejs:stainless_steel_peel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -10.375d
+		}
+		{
+			dependencies: ["366FC1B30FB2EF18"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 23
+					}
+				}
+				id: "immersiveengineering:toolbox"
+			}
+			id: "7B1D01476090D426"
+			shape: "hexagon"
+			subtitle: "真正的重工业"
+			tasks: [
+				{
+					id: "275AC7A8C0933495"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DEABE4DB6DF4A7D"
+					item: "immersiveengineering:heavy_engineering"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "753CEBC58D9A2751"
+					item: "immersiveengineering:rs_engineering"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "000B214403578DAF"
+					item: "immersiveengineering:light_engineering"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "179D4184E8D27041"
+					item: "immersiveengineering:sheetmetal_steel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39AEA3AC2EA9356D"
+					item: "immersiveengineering:manual"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: "design_decor:arrow_right_sign"
+					id: "446E51077776BD5F"
+					optional_task: true
+					points: false
+					title: "我已了解：跳过"
+					type: "xp"
+					value: 1L
+				}
+			]
+			title: "重型机械"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:metal_press"
+			id: "18800A96A310D2AD"
+			shape: "hexagon"
+			subtitle: "极致锻压"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "517F298755EC5D76"
+					item: "immersiveengineering:metal_press"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:metal_press"
+					id: "3AE1F132F5D25438"
+					observe_type: 0
+					timer: 0L
+					title: "见证金属冲压机的建成"
+					to_observe: "immersiveengineering:metal_press"
+					type: "observation"
+				}
+			]
+			title: "金属冲压机"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1EB9A09DF84AB945"]
+			description: [
+				"柴油机是沉浸工程内发电量最高的机器。可以消耗生物柴油来进行发电，发电量为4096fe/t。"
+				""
+				"由于输出的能量太高，柴油机有三个输出位点，防止一条输电线路无法将电力全部输送出去的情况。输出的能量在三条输电线路上面会平均分配。"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "immersiveengineering:diesel_generator"
+			id: "30DCEA23B7A342E0"
+			subtitle: "轰鸣"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "6B9BB0DA4484AAA1"
+					item: "immersiveengineering:diesel_generator"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:diesel_generator"
+					id: "34EAFC03E639BAB0"
+					observe_type: 0
+					timer: 0L
+					title: "见证柴油发电机的建成"
+					to_observe: "immersiveengineering:diesel_generator"
+					type: "observation"
+				}
+			]
+			title: "柴油发电"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:lightning_rod"
+			id: "0350A7ECD7634DCC"
+			subtitle: "雷霆之声"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "270E23FC6AAB38B3"
+					item: "immersiveengineering:lightning_rod"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:lightning_rod"
+					id: "3FBAD872E37662BA"
+					observe_type: 0
+					timer: 0L
+					title: "见证避雷针的建成"
+					to_observe: "immersiveengineering:lightning_rod"
+					type: "observation"
+				}
+			]
+			title: "避雷针"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:tank"
+			id: "3F599974C2D05568"
+			tasks: [{
+				icon: "design_decor:gear_sign"
+				id: "49797D5504DDD389"
+				item: "immersiveengineering:tank"
+				optional_task: true
+				title: "点击查看所需建材"
+				type: "item"
+			}]
+			title: "大型流体储罐"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:silo"
+			id: "496C9F6F617DE0C7"
+			tasks: [{
+				icon: "design_decor:gear_sign"
+				id: "0CB7EC45AC42AFE5"
+				item: "immersiveengineering:silo"
+				optional_task: true
+				title: "点击查看所需建材"
+				type: "item"
+			}]
+			title: "大型储物筒仓"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "createdieselgenerators:biodiesel_bucket"
+			id: "1EB9A09DF84AB945"
+			tasks: [
+				{
+					id: "7BD829D9C516EDBE"
+					item: "createdieselgenerators:biodiesel_bucket"
+					type: "item"
+				}
+				{
+					id: "6199E77AD0CF8F73"
+					item: "createdieselgenerators:diesel_bucket"
+					type: "item"
+				}
+			]
+			title: "生物柴油"
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:refinery"
+			id: "2ABFF323B5CA1EAA"
+			subtitle: "炼制的其他方式"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "1C38BFCDF6A1560E"
+					item: "immersiveengineering:refinery"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:refinery"
+					id: "4A1AADF2D01C1423"
+					observe_type: 0
+					timer: 0L
+					title: "见证精炼厂的建成"
+					to_observe: "immersiveengineering:refinery"
+					type: "observation"
+				}
+			]
+			title: "精炼厂"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:bottling_machine"
+			id: "4848F0FD593930E7"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "7B5127A5960160B8"
+					item: "immersiveengineering:bottling_machine"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:bottling_machine"
+					id: "2119F025A661A45C"
+					observe_type: 0
+					timer: 0L
+					title: "见证灌装机的建成"
+					to_observe: "immersiveengineering:bottling_machine"
+					type: "observation"
+				}
+			]
+			title: "灌装机"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			dependency_requirement: "one_started"
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:squeezer"
+			id: "0CFA0C1750E3F0B7"
+			shape: "hexagon"
+			subtitle: "无尽的压榨"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "6B227247E5943933"
+					item: "immersiveengineering:squeezer"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:squeezer"
+					id: "309D508CC5877481"
+					observe_type: 0
+					timer: 0L
+					title: "见证工业挤压机的建成"
+					to_observe: "immersiveengineering:squeezer"
+					type: "observation"
+				}
+			]
+			title: "工业挤压机"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:mixer"
+			id: "0FBD02051EA19ACF"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "3C76DF10BA0FFCB2"
+					item: "immersiveengineering:mixer"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:mixer"
+					id: "0E2AF3EA62D045DF"
+					observe_type: 0
+					timer: 0L
+					title: "见证搅拌机的建成"
+					to_observe: "immersiveengineering:mixer"
+					type: "observation"
+				}
+			]
+			title: "搅拌机"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:assembler"
+			id: "6C32B2D27B58CB19"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "1725852A1B500D53"
+					item: "immersiveengineering:assembler"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:assembler"
+					id: "3F5094FD931E2D43"
+					observe_type: 0
+					timer: 0L
+					title: "见证装配机的建成"
+					to_observe: "immersiveengineering:assembler"
+					type: "observation"
+				}
+			]
+			title: "装配机"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:sawmill"
+			id: "41BBD2EED501D890"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "09632C6DC58A0286"
+					item: "immersiveengineering:sawmill"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:sawmill"
+					id: "4864C34B501AA24E"
+					observe_type: 0
+					timer: 0L
+					title: "见证锯木机的建成"
+					to_observe: "immersiveengineering:sawmill"
+					type: "observation"
+				}
+			]
+			title: "锯木机"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:auto_workbench"
+			id: "11BEBA7BDA77BC1C"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "4E80AAA82E09E185"
+					item: "immersiveengineering:auto_workbench"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:auto_workbench"
+					id: "472E103A4B6A6D1F"
+					observe_type: 0
+					timer: 0L
+					title: "见证自动工程师装配台的建成"
+					to_observe: "immersiveengineering:auto_workbench"
+					type: "observation"
+				}
+			]
+			title: "自动化工程师装配台"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:crusher"
+			id: "7572E39DE6877473"
+			shape: "hexagon"
+			subtitle: "彻底粉碎！"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "684BA290371904DE"
+					item: "immersiveengineering:crusher"
+					optional_task: true
+					title: "点击查看所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:crusher"
+					id: "33AA3A7FAD3C5F8C"
+					observe_type: 0
+					timer: 0L
+					title: "见证粉碎机的建成"
+					to_observe: "immersiveengineering:crusher"
+					type: "observation"
+				}
+			]
+			title: "粉碎机"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["38AB235E2F464D21"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:bucket_wheel"
+			icon_scale: 1.5d
+			id: "1B2E0ABE2B928B12"
+			shape: "none"
+			size: 1.5d
+			subtitle: "开采地脉之手"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "543DC162E46700EB"
+					item: "immersiveengineering:bucket_wheel"
+					optional_task: true
+					title: "点击查看斗轮所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:bucket_wheel"
+					id: "4E4269C47CAEEEF2"
+					observe_type: 0
+					timer: 0L
+					title: "见证斗轮的建成"
+					to_observe: "immersiveengineering:bucket_wheel"
+					type: "observation"
+				}
+			]
+			title: "斗轮"
+			x: 0.0d
+			y: -5.226037929877251d
+		}
+		{
+			dependencies: ["38AB235E2F464D21"]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:excavator"
+			icon_scale: 1.2d
+			id: "163E9EA062C87DE2"
+			shape: "none"
+			size: 1.5d
+			subtitle: "承担万钧之臂"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "6F688EDC7B875AEC"
+					item: "immersiveengineering:excavator"
+					optional_task: true
+					title: "查看挖掘机所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:excavator"
+					id: "1109E74E71BC9757"
+					observe_type: 0
+					timer: 0L
+					title: "见证挖掘机的建成"
+					to_observe: "immersiveengineering:excavator"
+					type: "observation"
+				}
+			]
+			title: "挖掘机"
+			x: 0.4398660052233083d
+			y: -5.25d
+		}
+		{
+			dependencies: ["7B1D01476090D426"]
+			id: "38AB235E2F464D21"
+			shape: "hexagon"
+			tasks: [{
+				id: "2848D295242EC618"
+				item: "immersiveengineering:sample_drill"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4485027AFE920134"]
+			icon: "immersiveengineering:arc_furnace"
+			id: "32A00AE94CED5549"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "最终的炼炉"
+			tasks: [
+				{
+					icon: "design_decor:gear_sign"
+					id: "26505C0FA56F9043"
+					item: "immersiveengineering:arc_furnace"
+					title: "点击查看电弧炉所需建材"
+					type: "item"
+				}
+				{
+					icon: "immersiveengineering:arc_furnace"
+					id: "5687EEAD8BF1E898"
+					observe_type: 0
+					timer: 0L
+					title: "见证电弧炉的建成"
+					to_observe: "immersiveengineering:arc_furnace"
+					type: "observation"
+				}
+			]
+			title: "电弧炉"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["366FC1B30FB2EF18"]
+			description: [
+				"电力是沉浸工程中的能量来源。沉浸工程中的绝大部分机器和部分的工具都需要消耗电。沉浸工程的电力机构主要包括发电机，电线和蓄电池。电压越高每秒传输的能量越多，在传输过程中的损耗越小。高压输电线每传输16格会损失2.5%的电量。"
+				""
+				"电线分高中低压三种，每种电线都有自己的接线器和继电器，接线器用于向机器输送电力，只能接一条电线；继电器可以接多条电线。你可以用变压器来转换电压。"
+				""
+				"电线如果不做绝缘处理的话，会对经过电线的实体造成伤害，电压越高，伤害越高。在电路中电量充足的情况下，高压电线基本上是一击必死。低压和中压电线可以做绝缘处理，但高压电线不可以。所以请科学布线，否则会导致严重的伤害。"
+				""
+				"为了防止被电线击伤，可以使用铝板制作法拉第套装。制作方法与原版的盔甲大致等同，耐久，但是可以有效的防止电线带来的伤害。"
+			]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:connector_mv_relay"
+			id: "4531DD18E00408D5"
+			subtitle: "&m以及怎么不变成焦炭"
+			tasks: [
+				{
+					id: "2096D30BAAF712C8"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "0F6BF1B7422407DD"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "0C8AEFEFE87FD34D"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+				{
+					id: "7A09451F3889C811"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					id: "0CC743A7D01E0509"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "124A5FA7ECE5CCE4"
+					item: "immersiveengineering:connector_mv_relay"
+					type: "item"
+				}
+				{
+					id: "2DF39C4C625BC559"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+				{
+					id: "5E27E69BAA84EC0E"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "5AAD1CFF8AD80024"
+					item: "immersiveengineering:connector_hv_relay"
+					type: "item"
+				}
+				{
+					id: "42B7DFB6305F715F"
+					item: "immersiveengineering:transformer"
+					type: "item"
+				}
+				{
+					id: "247B0A935346F736"
+					item: "immersiveengineering:transformer_hv"
+					type: "item"
+				}
+			]
+			title: "学习怎样成为一个电工"
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A3789FBED7462BD"]
+			icon: "immersiveengineering:circuit_table"
+			id: "366FC1B30FB2EF18"
+			shape: "hexagon"
+			subtitle: "真正的重工业"
+			tasks: [{
+				id: "2CCCFB6468A905DC"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			title: "沉浸工程"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["366FC1B30FB2EF18"]
+			description: ["蓄电池是沉浸工程的储能方块，低压蓄电池储存的最少，高压的则最多。蓄电池可以通过用工程师锤改变电力的输入输出，其自身输出电力的速度跟同等级的电线是相等的。"]
+			hide_until_deps_complete: true
+			id: "74085A375E21EAC8"
+			tasks: [
+				{
+					id: "3C6F819CBC51B441"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+				{
+					id: "158184CBC8921122"
+					item: "immersiveengineering:capacitor_mv"
+					type: "item"
+				}
+				{
+					id: "463F557F1FCF08FC"
+					item: "immersiveengineering:capacitor_hv"
+					type: "item"
+				}
+			]
+			title: "蓄电池"
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["366FC1B30FB2EF18"]
+			description: [
+				"外置加热器是一种使用电力来进行加热的设备。在本整合包中主要与坩埚进行联动。可以在前后左右上5个面放置坩埚，以达到加热的作用。"
+				""
+				"外置加热器加热坩埚的最高温度可以达到炽白（事实上炽白也分温度，但外置加热器能达到最高一档）。推荐加热高定向热解石墨粉时使用外置加热器。"
+			]
+			hide_until_deps_complete: true
+			id: "057BEF0337676DE1"
+			subtitle: "木炭炉是什么?"
+			tasks: [{
+				id: "3E735ACE1A6488B8"
+				item: "immersiveengineering:furnace_heater"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["366FC1B30FB2EF18"]
+			description: [
+				"&e&o【如果没有在锻铁时代制作&n&f防腐木&r&r&e&o请点击任务图标右上角的放大镜快捷跳转至任务】&r"
+				""
+				"工程师装配台的做法详见jei，需要防腐木台阶，防腐木棍，防腐木栅栏以及锻铁锭制作。"
+				""
+				"工程师装配台的作用是制造金属冲压机需要的各项模板，以及制作各种子弹还有电子元件。工程师装配台制作物品需要蓝图，蓝图需要自行合成，合成方法详见jei，有了蓝图之后就可以在工程师装配台中进行各项制作。"
+				""
+				"工程师装配台具有六格储存空间以及一格蓝图放置位点，放置位点内放入不同的蓝图，右侧就会出现不同的对应的合成表以进行对应的制作。"
+			]
+			hide_until_deps_complete: true
+			icon: "immersiveengineering:workbench"
+			id: "53CF01B3B600F9A3"
+			tasks: [
+				{
+					id: "49AF340D3AB6990C"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "752715891E5A75F6"
+					item: "immersiveengineering:craftingtable"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["53CF01B3B600F9A3"]
+			description: [
+				"伐木机械锯是个人手持砍树工具，效率略高于群峦工具。在原版中伐木机械效率显著高的原因是其自带连锁采集。但在群峦中所有斧头都带有连锁砍树的情况下，伐木机械锯并不具有太多优势。伐木机械锯的燃料为生物柴油。"
+				""
+				"伐木机械锯必须要装配锯条才能工作，锯条是有耐久值的，故在损坏时必须进行更换。"
+				""
+				"[详情介绍看下页]"
+				"{@pagebreak}"
+				""
+				"伐木机械锯可以附加三个不同的升级模块。升级模块总共有五种。分别为："
+				"   &f高级润滑系统&r"
+				"    &o高级润滑系统可以将锯条的磨损降低50% &r"
+				""
+				"   &f大型燃料缸&r"
+				"    &o可以将燃料的容量从2000提高到4000&r"
+				""
+				"   &f凿岩机刀片&r"
+				"    &o可以让伐木机械具有采集石头的能力&r"
+				"    &o并且自带精准采集效果&r"
+				"    &o只可惜精准采集对群峦的岩石不生效&r"
+				"    &o而且会无法伐木&r"
+				""
+				"   &f研磨盘&r"
+				"    &o可以用来让机械锯有切割金属块的能力&r"
+				"    &o也可以用来像斧头一样给木头去皮&r"
+				"    &o但是用于其他用途则容易造成损坏&r"
+				""
+				"   &f刀片盒子&r"
+				"    &o可以储存三个锯条，使得更换锯条更为容易。&r"
+				""
+				""
+				"每挖掘掉一个方块，伐木机械锯会消耗1mb燃料，可以在炼油厂或者装有生物柴油的大桶添加燃料。"
+				"（使用机械动力的注液器也同样可以注入燃料）"
+				""
+				"需要注意的是炼油厂添加燃料时，无论剩余燃料是多少都可以进行添加。但是在大桶中添加燃料时，必须要燃料耗尽时才能添加。"
+			]
+			hide_until_deps_complete: true
+			id: "6EA3EF811D571804"
+			shape: "circle"
+			subtitle: "腥风血雨"
+			tasks: [{
+				id: "46332AB94F096869"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:buzzsaw"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53CF01B3B600F9A3"]
+			description: [
+				"园艺玻璃罩是工业化生产作物的方法。上方和下方侧面可以连接电力下方也需要连接水管。"
+				"可以同时生产产物以及种子（如果有种子的话）。具体的合成方法请查阅jei或者查阅沉浸工程的工程师手册。"
+				"特别需要注意的是园艺玻璃罩需要的灯泡需要蓝图在工程师装配台内进行制作"
+				"可以加入其他肥料，以1.25倍的速度加快农业生产。"
+			]
+			hide_until_deps_complete: true
+			id: "19163959B4058062"
+			subtitle: "电力种菜"
+			tasks: [{
+				id: "63CA479B9F4822D0"
+				item: "immersiveengineering:cloche"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53CF01B3B600F9A3"]
+			description: [
+				"采矿机械钻是高级手持挖掘工具，效率比群峦的工具高许多。机械钻有多种材质的钻头可以安装、不同材质的钻头带来的效率和范围也不同。采矿机械钻的燃料为生物柴油。"
+				""
+				"钻头共分为三个等级。铁制钻头一次性可以挖掘2×2×1的区域，钢和黑钢钻头一次性可以挖掘3×3×1的区域，秘银和精金钻头一次性可以挖掘5×5×1的区域。"
+				""
+				"[详情介绍看下页]"
+				"{@pagebreak}"
+				""
+				"采矿机械钻可以附加三个不同的升级模块。升级模块总共有4种，分别为："
+				"  &f压缩空气罐&r"
+				"      &o可以使使得机械转可以在水下工作，&r"
+				"      &o并且消除水下带来的挖掘减益。&r"
+				""
+				"  &f高级润滑系统&r"
+				"      &o可以将钻头的耐久损耗降低至一半&r"
+				""
+				"  &f附加螺旋钻&r"
+				"      &o附加螺旋钻最多可以叠加三个&r"
+				"      &o每一个提高3点采矿螺旋钻的伤害&r"
+				""
+				"  &f大型燃料缸&r"
+				"      &o可以将钻头的燃料容量从2000提升至4000。&r"
+				""
+				"每挖掘掉一个方块，采矿机械钻会消耗1mb燃料，可以在炼油厂或者装有生物柴油的大桶添加燃料。"
+				"（你也可以使用机械动力的注液器来注入燃料）"
+				"需要注意的是炼油厂添加燃料时，无论剩余燃料是多少都可以进行添加。但是在大桶中添加燃料时，必须要燃料耗尽时才能添加。"
+			]
+			hide_until_deps_complete: true
+			id: "4013FFAD595B3D2A"
+			subtitle: "オレを谁だとおもってやがる！！"
+			tasks: [
+				{
+					id: "6AAAC46A1406F2DF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:drill"
+					}
+					type: "item"
+				}
+				{
+					id: "5E92FB3203D787C4"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(immersiveengineering:drillhead_steel)item(immersiveengineering:drillhead_iron)item(tfc_ie_addon:drillhead_black_steel)item(tfc_ie_addon:drillhead_blue_steel)item(tfc_ie_addon:drillhead_red_steel))"
+						}
+					}
+					optional_task: true
+					title: "制作任意钻头"
+					type: "item"
+				}
+			]
+			title: "天元突破"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DFF7818B50623B5"]
+			hide_until_deps_complete: true
+			icon: "createmetallurgy:foundry_mixer"
+			id: "7B28F5976252FE5C"
+			subtitle: "以更方便的方式加工金属"
+			tasks: [
+				{
+					id: "024772A4A8419A24"
+					item: "createmetallurgy:foundry_mixer"
+					type: "item"
+				}
+				{
+					id: "1DA5FA7F7D430861"
+					item: "createmetallurgy:sturdy_whisk"
+					type: "item"
+				}
+			]
+			title: "高级加工金属"
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7B28F5976252FE5C"]
+			hide_until_deps_visible: true
+			id: "4E457280D1D6C97D"
+			tasks: [
+				{
+					id: "08E78625FFE93DAD"
+					item: "createmetallurgy:foundry_basin"
+					type: "item"
+				}
+				{
+					id: "55DCD8EAE647A6A6"
+					item: "createmetallurgy:foundry_lid"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4E457280D1D6C97D"]
+			id: "15D0812270DDDA8F"
+			subtitle: "不是匠魂"
+			tasks: [
+				{
+					id: "187F1A0D2CE1B89D"
+					item: "createmetallurgy:faucet"
+					type: "item"
+				}
+				{
+					id: "17CF8B85EB59CA33"
+					item: "createmetallurgy:casting_table"
+					type: "item"
+				}
+				{
+					id: "36AC5B0C02F75438"
+					item: "createmetallurgy:casting_basin"
+					type: "item"
+				}
+			]
+			title: "有点眼熟"
+			x: 4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4E457280D1D6C97D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "vintageimprovements:lathe"
+			}
+			id: "5CEF137954ABF0EF"
+			tasks: [{
+				id: "74D577FD1BEAFDF3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "vintageimprovements:lathe"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["15D0812270DDDA8F"]
+			id: "41ED82DF5F917316"
+			subtitle: "更简易的制作玻璃"
+			tasks: [{
+				id: "510FB6829BFC2965"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "浇筑玻璃"
+			x: 3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"5CEF137954ABF0EF"
+				"41ED82DF5F917316"
+			]
+			id: "30103E144FF2B213"
+			subtitle: "更简易的制作玻璃制品"
+			tasks: [{
+				id: "1C4DF5A0BFE04B50"
+				item: "tfc:silica_glass_bottle"
+				type: "item"
+			}]
+			title: "削制瓶子【？"
+			x: 3.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["4DFF7818B50623B5"]
+			id: "5BF2B6A71C84907B"
+			subtitle: "再来！"
+			tasks: [{
+				id: "41C9EDB800DB1714"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.315336310921857d
+		}
+		{
+			dependencies: ["0CFA0C1750E3F0B7"]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:graphite_electrode"
+				tag: {
+					graphDmg: 0
+				}
+			}
+			id: "4485027AFE920134"
+			tasks: [
+				{
+					id: "26F81924C584D215"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "immersiveengineering:dust_hop_graphite"
+					}
+					type: "item"
+				}
+				{
+					id: "4EE10201D82494E3"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
 		}
 	]
 	title: "第四章：钢铁之魂"

@@ -1,1 +1,21 @@
-{  "parent": "minecraft:item/handheld",  "loader": "forge:separate_transforms",  "base": {    "parent": "kubejs:block/coaster_lake_trout"  },  "perspectives": {    "gui": {      "parent": "tfc:item/food/lake_trout_item"    }, "ground": {      "parent": "tfc:item/food/lake_trout_item"    }, "fixed": {      "parent": "tfc:item/food/lake_trout_item"    }   }}
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+      "textures": {
+		"particle": "tfc:item/food/lake_trout"
+	},
+    "base": {
+        "parent": "kubejs:block/coaster_lake_trout"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "tfc:item/food/lake_trout_item"
+        },
+        "ground": {
+            "parent": "kubejs:block/coaster_lake_trout"
+        },
+        "fixed": {
+            "parent": "tfc:item/food/lake_trout_item"
+        }
+    }
+}

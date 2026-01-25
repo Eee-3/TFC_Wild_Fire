@@ -54,7 +54,7 @@
     "thermal_resistance": 0.0
   },
   "minecraft:torch": {
-    "temperature": 1.0,
+    "temperature": 0.0,
     "heat_resistance": 0.0,
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
@@ -745,20 +745,32 @@
   },
   "ad_astra:jet_suit_boots": {
     "temperature": 0.0,
-    "heat_resistance": 100.0,
-    "cold_resistance": 4.5,
+    "heat_resistance": 0.0,
+    "cold_resistance": 0.0,
     "thermal_resistance": 100.0
   },
-  "lhmiracheroad:frost_ring": {
+  "kubejs:cervelliere": {
     "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 8.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "lhmiracheroad:fire_resistane_ring": {
+  "kubejs:leather_gamberson": {
     "temperature": 0.0,
-    "heat_resistance": 8.0,
-    "cold_resistance": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 2.0,
+    "thermal_resistance": 0.0
+  },
+  "kubejs:leather_plate_greaves": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.5,
+    "thermal_resistance": 0.0
+  },
+  "kubejs:leather_plate_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
     "thermal_resistance": 0.0
   }
 }

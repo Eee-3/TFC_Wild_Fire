@@ -5,32 +5,44 @@
 	group: "39B5DFD6C28A7E6E"
 	icon: "tfc:rock/loose/andesite"
 	id: "606E9CE3B7411694"
+	images: [
+		{
+			click: "#3B3817CEB8ECA525"
+			dependency: "2DB49F7DE2CD977C"
+			height: 1.0d
+			hover: ["点击跳转至动物手记"]
+			image: "eidolon:item/notetaking_tools"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			click: "#5107160B56AEDD15"
+			dependency: "2DB49F7DE2CD977C"
+			height: 1.0d
+			hover: ["关于键位变动"]
+			image: "design_decor:block/symbol_signs/question_mark"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: -2.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfchotornot:mittens"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "artisanal:quill"
 			id: "2DB49F7DE2CD977C"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "2BA37816F7D9F5A3"
 				type: "checkmark"
 			}]
 			title: "一切的开始"
-			x: -8.0d
-			y: -2.5d
+			x: -7.702687388088499d
+			y: -3.1665566443789537d
 		}
 		{
 			dependencies: ["2DB49F7DE2CD977C"]
@@ -49,8 +61,9 @@
 				title: "Any #tfc:rock_knapping"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -0.5d
+			title: "石纪元"
+			x: -7.734883762093844d
+			y: -0.7518285939786509d
 		}
 		{
 			dependencies: ["01A61645DD554B40"]
@@ -84,7 +97,7 @@
 				type: "item"
 			}]
 			title: "短兵"
-			x: -7.0d
+			x: -8.5d
 			y: 0.5d
 		}
 		{
@@ -202,7 +215,7 @@
 				type: "item"
 			}]
 			title: "木材就应该躺着"
-			x: -6.5d
+			x: -6.0d
 			y: -1.0d
 		}
 		{
@@ -236,7 +249,7 @@
 				type: "item"
 			}]
 			title: "铲子虽小力无穷"
-			x: -9.0d
+			x: -7.0d
 			y: 0.5d
 		}
 		{
@@ -256,7 +269,7 @@
 				type: "item"
 			}]
 			title: "割干草"
-			x: -7.0d
+			x: -8.5d
 			y: 2.0d
 		}
 		{
@@ -271,7 +284,7 @@
 				type: "item"
 			}]
 			title: "加固你的工具"
-			x: -7.0d
+			x: -8.5d
 			y: 3.5d
 		}
 		{
@@ -292,7 +305,7 @@
 				type: "item"
 			}]
 			title: "挖黏土"
-			x: -9.0d
+			x: -7.0d
 			y: 2.0d
 		}
 		{
@@ -349,11 +362,12 @@
 						}
 						id: "tfc:ceramic/unfired_jug"
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "制陶术"
-			x: -9.0d
+			x: -7.0d
 			y: 3.5d
 		}
 		{
@@ -500,7 +514,7 @@
 				}
 			]
 			title: " 原始屠夫"
-			x: -10.5d
+			x: -10.0d
 			y: 0.5d
 		}
 		{
@@ -522,7 +536,7 @@
 				type: "item"
 			}]
 			title: "完整的猎物！"
-			x: -10.5d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
@@ -545,7 +559,7 @@
 				item: "butcher:rope"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
@@ -565,9 +579,9 @@
 			]
 			hide_dependency_lines: true
 			hide_text_until_complete: true
+			hide_until_deps_visible: true
 			icon: "tfc:firepit"
 			id: "7E60DB1DFF798B1C"
-			invisible: true
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "火……温暖的火"
@@ -660,17 +674,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2B78615306BE3AFD"]
+			dependencies: ["6C9C6088595C7D07"]
 			description: [
 				"群峦传说修改了床的配方，这使得你无法在前期成功做出床。这使你只能使用不能度过夜晚，但是可以储存重生点的干草床代替。"
 				""
 				"要搭建干草床，你需要在地面上水平放置两个干草块，随后手持一张大兽皮对其按下右键。然而由于产出大兽皮的动物要么难以寻得，要么具有攻击性，大兽皮在前期极难获得。所以本任务并没有强制搭建干草床，你可以等有条件获取大兽皮后再进行搭建。"
 			]
+			hide_dependency_lines: true
 			hide_text_until_complete: false
 			hide_until_deps_visible: true
 			icon: "tfc:thatch"
 			id: "19CAFD0FAE153C2F"
-			invisible: true
 			size: 1.5d
 			subtitle: "先不做也可以"
 			tasks: [
@@ -686,8 +700,8 @@
 				}
 			]
 			title: "&e并不柔软的床"
-			x: -7.964285714285708d
-			y: 5.071428571428569d
+			x: -7.734883762093844d
+			y: 5.172304223003408d
 		}
 		{
 			dependencies: ["57F6BC38D1A881B4"]
@@ -732,6 +746,7 @@
 						}
 						id: "tfc:ceramic/unfired_vessel"
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -743,6 +758,7 @@
 							value: "tfc:fired_vessels"
 						}
 					}
+					optional_task: true
 					title: "Any #tfc:fired_vessels"
 					type: "item"
 				}
@@ -763,61 +779,31 @@
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfchotornot:burlap_potholder"
+				id: "kubejs:wooden_tong"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "24A56687163D36FE"
+			ignore_reward_blocking: true
 			subtitle: "没人敢拿刚烧好的东西"
-			tasks: [
-				{
-					id: "32E0CA990575055B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfchotornot:burlap_potholder"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "02266A229827860B"
+				item: {
+					Count: 1
+					id: "kubejs:wooden_tong"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "49163749F6824021"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfchotornot:tongs/wood"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "好烫！！！"
-			x: -9.5d
+			x: -9.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["2DB49F7DE2CD977C"]
+			dependencies: ["2D3E65274951DC05"]
 			dependency_requirement: "one_completed"
 			description: [
 				"如果你不幸受伤了，你可以去路边随便采一些花，然后揉在一起搓成一个药草球来治疗你的肢体，虽然他单次恢复量很少，好在廉价"
@@ -834,24 +820,8 @@
 				type: "item"
 			}]
 			title: "疼！但是得治"
-			x: -10.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2DB49F7DE2CD977C"]
-			id: "77B85F179EA08A23"
-			invisible: true
-			subtitle: "带了药的绷带不能止血，没带药的绷带不能治伤"
-			tasks: [{
-				advancement: "majruszsdifficulty:bleeding"
-				criterion: ""
-				id: "184AF021E280B1F3"
-				title: "第一滴血"
-				type: "advancement"
-			}]
-			title: "第一滴血"
-			x: -6.0d
-			y: -2.5d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -859,7 +829,7 @@
 				"7E60DB1DFF798B1C"
 			]
 			description: ["可以说，一切的一切都建立在安居乐业上，有一个安全的家，比什么真金白银都要好"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_planks"
 			id: "49367AA483E68761"
@@ -871,8 +841,8 @@
 				type: "checkmark"
 			}]
 			title: "何以为家"
-			x: -7.9285714285714235d
-			y: 8.357142857142854d
+			x: -7.83147288410985d
+			y: 8.2631561275158d
 		}
 		{
 			hide_dependency_lines: true
@@ -889,94 +859,33 @@
 		{
 			dependencies: ["54D81CF17173B502"]
 			id: "4557CEE602F8136A"
-			tasks: [
-				{
-					id: "50A92CBD622BF8E7"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_axe"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "26BCD725201034B9"
+				item: {
+					Count: 1
+					id: "call_of_yucutan:obsidian_spear"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "5ABAD1E7723C8BEE"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_hoe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5C3D66444837DA14"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "557FEB06F62E13CD"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:obsidian_knife"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "45541BDC4F025580"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "65DCA7378C3DF119"
-					item: {
-						Count: 1
-						id: "kubejs:obsidian_javelin"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "26BCD725201034B9"
-					item: {
-						Count: 1
-						id: "call_of_yucutan:obsidian_spear"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -12.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["2DB49F7DE2CD977C"]
+			hide_until_deps_complete: true
+			id: "2D3E65274951DC05"
+			tasks: [{
+				id: "1B8B9843D0A49ACA"
+				title: "我们的身体"
+				type: "checkmark"
+			}]
+			title: "血肉之躯"
+			x: -6.0d
+			y: -2.5d
+		}
 	]
-	title: "一切的开始"
+	title: "第零章：起始"
 }

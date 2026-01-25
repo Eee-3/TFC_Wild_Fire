@@ -7,7 +7,7 @@
 	],
 	"type":"immersiveengineering:metal_press",
 	"energy":2400,
-	"mold":"tfc_metal_items:steel_pressing_head",
+	"mold":"kubejs:cast_iron_indenter",
 	"input": {
 	  "type": "tfc:heatable",
 	  "min_temp": 920,

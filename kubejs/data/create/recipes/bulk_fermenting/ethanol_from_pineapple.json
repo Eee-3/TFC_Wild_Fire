@@ -1,0 +1,15 @@
+{
+  "type": "createdieselgenerators:bulk_fermenting",
+  "ingredients": [
+    {
+      "item": "firmalife:food/pineapple"
+    }
+  ],
+  "processingTime": 7750,
+  "results": [
+    {
+      "fluid": "createdieselgenerators:ethanol",
+      "amount": 175
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "tfc:powder/kaolinite"
+    },
+    "b": {
+      "item": "tfc:powder/graphite"
+    },
+    "c": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "item": "tfc:fire_clay",
+    "count": 2
+  }
+}

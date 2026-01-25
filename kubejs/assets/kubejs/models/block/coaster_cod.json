@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "tfc:item/food/cod",
-		"cod": "kubejs:block/cod"
+		"cod": "kubejs:block/cod",
+		"particle": "tfc:item/food/cod"
 	},
 	"elements": [
 		{
@@ -85,6 +85,9 @@
 		"firstperson_lefthand": {
 			"rotation": [-30, 0, -90],
 			"translation": [8, 4, 0]
+		},
+		"ground": {
+			"translation": [0, 6.5, 0]
 		}
 	}
 }

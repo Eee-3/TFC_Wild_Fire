@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:cod_slice"
+      }
+    },
+    "R": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "tfc:food/cooked_rice"
+      }
+    }
+  },
+  "pattern": [
+    "F",
+    "R"
+  ],
+  "result": {
+    "item": "farmersdelight:cod_roll"
+  },
+  "show_notification": true
+}

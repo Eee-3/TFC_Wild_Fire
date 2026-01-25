@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "tfc:metal/sheet/cast_iron"
+    },
+    "c": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "pattern": [
+    "bc"
+  ],
+  "result": {
+    "item": "fluid:fluid_interface"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:microwave_heating",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:potato"
+  },
+  "result": "minecraft:baked_potato",
+  "time": 200
+}

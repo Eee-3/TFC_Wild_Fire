@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cooling_coat",
+    "key": {
+      "a": {
+        "item": "legendarysurvivaloverhaul:cold_string"
+      },
+      "b": {
+        "tag": "tfc:sewing_needles"
+      },
+      "c": {
+        "tag": "forge:rods/wooden"
+      }
+    },
+    "pattern": [
+      " a ",
+      "bac",
+      " a "
+    ],
+    "result": {
+      "item": "legendarysurvivaloverhaul:cooling_coat_1"
+    },
+    "show_notification": true
+  }
+}

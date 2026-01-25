@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "tfc:stick_bunch"
+  },
+  "result": {
+    "item": "createdieselgenerators:wood_chip",
+    "count": 6
+  }
+}

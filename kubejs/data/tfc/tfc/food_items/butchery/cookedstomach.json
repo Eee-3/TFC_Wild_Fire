@@ -1,9 +1,0 @@
-{
-  "ingredient": {
-    "item": "butcher:stomach"
-  },
-  "hunger": 1.5,
-  "saturation": 1.5,
-  "decay_modifier": 1.5,
-  "protein": 1
-}

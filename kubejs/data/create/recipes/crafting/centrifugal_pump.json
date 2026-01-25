@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "create:fluid_valve"
+    },
+    "b": {
+      "item": "create:fluid_pipe"
+    },
+    "c": {
+      "item": "create:propeller"
+    }
+  },
+  "pattern": [
+    "b",
+    "c",
+    "a"
+  ],
+  "result": {
+    "item": "fluid:centrifugal_pump"
+  }
+}

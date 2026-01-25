@@ -1,11 +1,12 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "36A3BF356D26BFC5"
 	group: "2BD524ABD6AD1EEE"
 	icon: "immersive_paintings:glow_painting"
 	id: "36A3BF356D26BFC5"
-	order_index: 5
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{

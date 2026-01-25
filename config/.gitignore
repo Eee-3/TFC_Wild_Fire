@@ -4,6 +4,9 @@
 !/tfc*
 !/ae2
 !/almostunified
+!/alexscaves-client.toml
+!/alexscaves-general.toml
+!/alexsmobs.toml
 !/artifacts
 !/fancymenu
 !/ftb*
@@ -19,6 +22,7 @@
 !/carryon-common.toml
 !/chloride-client.json
 !/curios*
+!/custom trades
 !/farmersdelight*
 !/jecharacters.toml
 !/jeed-client.toml
@@ -34,3 +38,26 @@
 !/xaerominimap.txt
 !/xaeroworldmap-common.txt
 !/xaeroworldmap.txt
+!/Weather2
+!/visual_workbench.json
+!/visualworkbench-client.toml
+!/woodencog-common.toml
+!/parcool-client.toml
+!/parcool-client-1.toml.bak
+!/ShieldExpansion-common.toml
+!/everycomp-common.toml
+!/everycomp-entries.toml
+!/everycomp-client.toml
+!/moonlight-client.toml
+!/everycomp-hazardous.toml
+!/bc_particle
+!/spartanweaponry-common.toml
+!/spartanweaponry-client.toml
+!/oei
+!/modernfix-mixins.properties
+!/scguns-common.toml
+!/gamestages
+!/resourcepackoverrides.json
+!/survivorsdelight-common.toml
+!/ageingspawners-common.toml
+!/butcher.toml

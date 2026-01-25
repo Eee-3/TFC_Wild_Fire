@@ -1,7 +1,7 @@
 {
     "ingredient": [
         "kubejs:black_bronze_support_horizontal",
-        "kubejs:pig_iron_support_horizontal"
+        "kubejs:cast_iron_support_horizontal"
     ],
     "support_up": 3,
     "support_down": 1,

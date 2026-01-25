@@ -1,0 +1,29 @@
+{
+	"type": "farm_and_charm:stove",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "tfc:food/cabbage"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc:foods/vegetables"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "ftfc:food/mutton"
+			}
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:baked_lamb_ham",
+		"count": 1
+	},
+	"experience": 0.5,
+	"requiresLearning": false
+}

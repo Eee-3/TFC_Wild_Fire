@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "kubejs:condensed_beetroot_juice"
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:non_perishable_sugar"
+    },
+    {
+      "amount": 20,
+      "fluid": "artisanal:molasses"
+    }
+  ]
+}

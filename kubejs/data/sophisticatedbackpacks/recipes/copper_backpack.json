@@ -1,0 +1,28 @@
+{
+  "type": "sophisticatedbackpacks:backpack_upgrade",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:copper_backpack"
+    }
+  ],
+  "key": {
+    "B": {
+      "item": "sophisticatedbackpacks:backpack"
+    },
+    "C": {
+      "item": "tfc:metal/double_sheet/copper"
+    },
+      "A": {
+      "tag": "forge:leather"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:copper_backpack"
+  }
+}

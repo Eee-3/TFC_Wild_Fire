@@ -1,0 +1,10 @@
+{
+    "type": "tfc:heating",
+    "ingredient": {
+        "item": "repas_de_survie:snake"
+    },
+    "result_item": {
+        "item": "repas_de_survie:cooked_snake"
+    },
+    "temperature": 200
+}

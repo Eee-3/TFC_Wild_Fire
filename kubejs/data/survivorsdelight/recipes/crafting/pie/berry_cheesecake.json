@@ -1,0 +1,37 @@
+{
+  "type": "survivorsdelight:nutrition_crafting",
+  "key": {
+    "C": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "kubejs:cheese"
+      }
+    },
+    "F": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "survivorsdelight:fruit_for_cheesecake"
+      }
+    },
+    "P": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:pie_crust"
+      }
+    },
+    "S": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:sweetener"
+      }
+    }
+  },
+  "pattern": [
+    "FFF",
+    "SCS",
+    " P "
+  ],
+  "result": {
+    "item": "farmersdelight:sweet_berry_cheesecake"
+  }
+}

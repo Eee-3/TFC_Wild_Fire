@@ -1,0 +1,6 @@
+{
+  "profession": "minecraft:toolsmith",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": []
+}

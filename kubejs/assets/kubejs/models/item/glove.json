@@ -1,0 +1,38 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "kubejs:item/glove/glove",
+        "textures": {
+            "1": "kubejs:item/hot/glove_modle/glove_0"
+        }
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "kubejs:item/hot/glove_0"
+        }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "kubejs:item/hot/glove_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "kubejs:item/hot/glove_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "kubejs:item/hot/glove_3"
+        }
+    ]
+}

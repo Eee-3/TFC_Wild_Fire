@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "forge:eggs"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:sweetened_dough"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "bakery:hardened_dough"
+			}
+		},
+		{
+			"item": "tfc:powder/salt"
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:unfinished_bundt_cake",
+		"count": 1
+	}
+}

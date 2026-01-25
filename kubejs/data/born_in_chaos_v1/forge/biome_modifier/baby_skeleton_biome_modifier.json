@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#survivorsaquaculture:tfc_all",
+  "spawners": {
+  "type": "born_in_chaos_v1:baby_skeleton", 
+  "weight": 100, 
+  "minCount": 2, 
+  "maxCount": 4
+  }
+}

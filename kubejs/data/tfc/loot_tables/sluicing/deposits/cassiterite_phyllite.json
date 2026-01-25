@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "weight": 30,
-          "name": "tfcorewashing:rocky_chunks_cassiterite"
+          "name": "kubejs:item/ore/rocky_chunks/cassiterite"
         },
         {
           "type": "minecraft:empty",
@@ -30,34 +30,34 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:group",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_copper",
+              "name": "kubejs:item/ore/rocky_chunks/native_copper",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_galena",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_limonite",
+              "name": "kubejs:item/ore/rocky_chunks/limonite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_malachite",
+              "name": "kubejs:item/ore/rocky_chunks/malachite",
               "weight": 2
             }
           ]

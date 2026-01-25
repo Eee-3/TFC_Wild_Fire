@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+   "item": "tfc:food/maize"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "count": 1,
+      "item": "tfc:food/maize_grain"
+    },
+    {
+      "count": 1,
+      "item": "tfc:straw"
+    }
+  ]
+}

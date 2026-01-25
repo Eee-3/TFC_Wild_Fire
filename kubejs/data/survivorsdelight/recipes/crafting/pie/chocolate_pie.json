@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "kubejs:cheese"
+      }
+    },
+    "P": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "item": "farmersdelight:pie_crust"
+      }
+    },
+    "S": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "tfc:sweetener"
+      }
+    },
+    "c": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+      "tag": "survivorsdelight:chocolate_for_cheesecake"
+      }
+    }
+  },
+  "pattern": [
+    "ccc",
+    "SCS",
+    " P "
+  ],
+  "result": {
+    "item": "farmersdelight:chocolate_pie"
+  },
+  "show_notification": true
+}

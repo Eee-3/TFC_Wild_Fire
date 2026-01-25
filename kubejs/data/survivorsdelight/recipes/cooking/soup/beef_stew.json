@@ -1,0 +1,37 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 15.0,
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/vegetables"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/cooked_beef"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "farmersdelight:bone_broth"
+      }
+    },
+    {
+      "item": "tfc:powder/salt"
+    },
+    {
+      "item": "tfc:powder/salt"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:beef_stew"
+  }
+}

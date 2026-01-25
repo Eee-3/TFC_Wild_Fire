@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:sheets/cast_iron"
+  },
+  "result": {
+    "item": "bakery:iron_bench"
+  },
+  "tier": 2,
+  "rules": [
+    "draw_any",
+    "punch_last"
+  ]
+}

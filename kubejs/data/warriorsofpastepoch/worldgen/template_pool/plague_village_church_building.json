@@ -1,0 +1,28 @@
+{
+  "name": "warriorsofpastepoch:plague_village_church_building",
+  "fallback": "warriorsofpastepoch:plague_village_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:church",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:medium_house_2",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

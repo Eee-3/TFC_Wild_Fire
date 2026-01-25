@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "firmalife:food/pineapple"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "artisanal:pineapple_juice"
+    },
+    {
+      "count": 1,
+      "item": "artisanal:food/fruit_mash"
+    }
+  ]
+}

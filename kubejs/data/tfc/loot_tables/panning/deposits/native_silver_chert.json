@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "weight": 30,
-          "name": "tfcorewashing:rocky_chunks_silver"
+          "name": "kubejs:item/ore/rocky_chunks/native_silver"
         },
         {
           "type": "minecraft:group",
@@ -28,7 +28,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:dirty_pile_copper",
+              "name": "kubejs:item/ore/dirty_pile/native_copper",
               "weight": 5
             }
           ]
@@ -41,34 +41,34 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:group",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_sulfur",
+              "name": "kubejs:item/ore/rocky_chunks/sulfur",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_uraninite",
+              "name": "kubejs:item/ore/rocky_chunks/uraninite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_chromite",
+              "name": "kubejs:item/ore/rocky_chunks/chromite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_sphalerite",
+              "name": "kubejs:item/ore/rocky_chunks/sphalerite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_galena",
+              "name": "kubejs:item/ore/rocky_chunks/galena",
               "weight": 2
             }
           ]

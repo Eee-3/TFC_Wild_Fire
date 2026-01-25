@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ammo",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "immersiveengineering:nugget_lead"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "count": 24,
+    "item": "scguns:powder_and_ball"
+  }
+}

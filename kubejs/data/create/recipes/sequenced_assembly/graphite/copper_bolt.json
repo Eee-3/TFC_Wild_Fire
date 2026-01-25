@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"item": "tfc:metal/rod/copper"
+		}
+	],
+	"results": [
+		{
+			"item": "firmaciv:copper_bolt",
+			"count": 2
+		}
+	],
+	"processingTime": 1000
+}

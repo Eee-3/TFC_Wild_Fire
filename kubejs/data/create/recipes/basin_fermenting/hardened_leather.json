@@ -1,0 +1,35 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "fluid": "tfc:tannin",
+      "amount": 1000
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 4,
+      "item": "kubejs:hardened_leather"
+    }
+  ]
+}

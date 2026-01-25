@@ -1,0 +1,40 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 1200,
+  "experience": 15.0,
+  "fluid": {
+    "amount": 100,
+    "ingredient": {
+      "tag": "farmersdelight:cooking_oil"
+    }
+  },
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "farmersdelight:raw_pasta"
+      }
+    },
+    {
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/calamari"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/garlic"
+      }
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:squid_ink_pasta"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "warriorsofpastepoch:plague_village_fountain",
+  "fallback": "warriorsofpastepoch:plague_village_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:main_trail",
+        "projection": "terrain_matching",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+        {
+            "tag": "tfc:fluxstone"
+        }
+    ],
+    "results": [
+        {
+            "count": 2,
+            "item": "tfc:powder/fluxstone"
+        }
+    ],
+    "processingTime": 400
+}

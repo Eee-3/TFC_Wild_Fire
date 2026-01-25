@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+    "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "tfc:food/peach"
+      }
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "artisanal:peach_juice"
+    },
+    {
+      "count": 1,
+      "item": "artisanal:food/fruit_mash"
+    }
+  ]
+}

@@ -1,9 +1,11 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "30F46A4E89C4F061"
 	group: "39B5DFD6C28A7E6E"
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	icon: "ad_astra:earth_globe"
 	id: "30F46A4E89C4F061"
@@ -176,7 +178,6 @@
 			id: "6CD157B12B1B4EAD"
 			tasks: [{
 				id: "6AED3C9EF817BAD7"
-				item: "ad_astra:oxygen_loader"
 				type: "item"
 			}]
 			x: 4.0d
@@ -746,5 +747,5 @@
 			y: -10.5d
 		}
 	]
-	title: "第五章：再见群峦星"
+	title: "[WIP/不可见]第五章：再见群峦星"
 }

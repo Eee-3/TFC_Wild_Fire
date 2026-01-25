@@ -1,0 +1,29 @@
+{
+	"type": "farm_and_charm:stove",
+	"ingredients": [
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "tfc_farm_charm:chicken"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"tag": "brewinandchewin:fermented_drinks"
+			}
+		},
+		{
+			"type": "tfc:not_rotten",
+			"ingredient": {
+				"item": "firmalife:raw_honey"
+			}
+		}
+	],
+	"result": {
+		"item": "tfc_farm_charm:half_chicken",
+		"count": 1
+	},
+	"experience": 0.2,
+	"requiresLearning": false
+}

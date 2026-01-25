@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "weight": 30,
-          "name": "tfcorewashing:rocky_chunks_cassiterite"
+          "name": "kubejs:item/ore/rocky_chunks/cassiterite"
         },
         {
           "type": "minecraft:group",
@@ -28,7 +28,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:dirty_pile_copper",
+              "name": "kubejs:item/ore/dirty_pile/native_copper",
               "weight": 5
             }
           ]
@@ -41,7 +41,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "tfcorewashing:rocky_chunks_copper"
+          "name": "kubejs:item/ore/rocky_chunks/native_copper"
         },
         {
           "type": "minecraft:item",
@@ -53,27 +53,27 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_magnetite",
+              "name": "kubejs:item/ore/rocky_chunks/magnetite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_hematite",
+              "name": "kubejs:item/ore/rocky_chunks/hematite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_chromite",
+              "name": "kubejs:item/ore/rocky_chunks/chromite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_garnierite",
+              "name": "kubejs:item/ore/rocky_chunks/garnierite",
               "weight": 2
             },
             {
               "type": "minecraft:item",
-              "name": "tfcorewashing:rocky_chunks_limonite",
+              "name": "kubejs:item/ore/rocky_chunks/limonite",
               "weight": 2
             }
           ]

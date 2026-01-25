@@ -1,0 +1,78 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:advanced_shapeless_crafting",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "farmersdelight:pie_crust"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/fruits"
+      }
+    },
+    {
+      "tag": "firmalife:pie_pans"
+    }
+  ],
+  "result": {
+    "stack": {
+      "item": "firmalife:food/filled_pie"
+    },
+    "modifiers": [
+      {
+        "type": "tfc:meal",
+        "food": {
+          "hunger": 4,
+          "saturation": 1,
+          "water": 0.5,
+          "decay_modifier": 4.5,
+          "grain": 1.0,
+          "dairy": 0.5,
+          "fruit": 1.0
+        },
+        "portions": [
+          {
+            "nutrient_modifier": 0.65,
+            "water_modifier": 0.5,
+            "saturation_modifier": 0.9
+          }
+        ]
+      },
+      "firmalife:add_pie_pan"
+    ]
+  },
+  "primary_ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "tag": "tfc:foods/fruits"
+    }
+  }
+}

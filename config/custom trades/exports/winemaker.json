@@ -1,0 +1,6 @@
+{
+  "profession": "vinery:winemaker",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": []
+}

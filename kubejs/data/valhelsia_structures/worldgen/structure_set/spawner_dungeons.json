@@ -3,7 +3,7 @@
     "type": "valhelsia_structures:valhelsia_random_spread",
     "exclusion_zones": [],
     "salt": 23498567,
-    "separation": 7,
+    "separation": 10,
     "spacing": 28
   },
   "structures": [

@@ -1,10 +1,12 @@
+/*暂时禁用肾上腺素效果
+
 const $BodyDamageUtil = Java.loadClass('sfiomn.legendarysurvivaloverhaul.api.bodydamage.BodyDamageUtil')
 const $BodyPartEnum = Java.loadClass("sfiomn.legendarysurvivaloverhaul.api.bodydamage.BodyPartEnum")
 /**
  * @param {Internal.LivingEntityHurtEventJS} event 
  * @param {number} time 单位是s
- */
-function cooldown(event, time){
+ *//*
+function cooldown(event, time) {
   //设置冷却为1，防止重复触发
   wait = 1
   //计时器计时time秒后，将冷却设为0
@@ -16,6 +18,7 @@ function cooldown(event, time){
  * 
  * @param {Internal.LivingEntityHurtEventJS} e 
  */
+/*
 function adrenaline(e){
   //首先给予玩家painkiller以及speed效果，持续600tick
   e.entity.potionEffects.add("legendarysurvivaloverhaul:painkiller", 600)
@@ -32,11 +35,12 @@ function adrenaline(e){
     })
   })
 }
-
+*/
+/*
 PlayerEvents.tick(e =>{
   const { player } = e
   // 每400tick恢复一次 HealthRatio 小于 1 的部位
-  if (player.age % 400 != 0 || !player) return
+  if (player.age % 800 != 0 || !player) return
   // if (player.age % 20 != 0 || !player) return
   if (player.getHealth() == player.getMaxHealth()) {
     let parts = [$BodyPartEnum.HEAD, $BodyPartEnum.CHEST, $BodyPartEnum.LEFT_ARM, $BodyPartEnum.RIGHT_ARM, $BodyPartEnum.LEFT_LEG, $BodyPartEnum.RIGHT_LEG, $BodyPartEnum.LEFT_FOOT, $BodyPartEnum.RIGHT_FOOT];
@@ -51,7 +55,7 @@ PlayerEvents.tick(e =>{
 })
 //肾上腺素
 // 当玩家血量低于20%时，有p的概率触发肾上腺素
-let p = 0.05
+let p = 0.1
 // 冷却判断器
 let wait = 0
 //复活及登录时清除冷却，删除肾上腺素显示
@@ -78,7 +82,7 @@ EntityEvents.hurt(e => {
     //进行随机判定，若小于p，则触发肾上腺素
     if (Math.random() < p) {
       //触发肾上腺素后，重置p为0.05
-      p = 0.05
+      p = 0.1
       //触发肾上腺素后，设置冷却为60s
       cooldown(e, 60)
       //触发肾上腺素效果
@@ -104,3 +108,4 @@ EntityEvents.hurt(e => {
     }
   }
 })
+*/

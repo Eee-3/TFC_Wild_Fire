@@ -6,15 +6,15 @@ ServerEvents.recipes(e=> {
         create.cutting('afc:wood/stripped_log/'+afc_wood[i],'afc:wood/log/'+afc_wood[i])
         create.cutting('afc:wood/stripped_wood/'+afc_wood[i],'afc:wood/wood/'+afc_wood[i])
 
-        create.cutting(['12x afc:wood/lumber/'+afc_wood[i],'immersiveengineering:dust_wood'],'afc:wood/stripped_log/'+afc_wood[i])
-        create.cutting(['12x afc:wood/lumber/'+afc_wood[i],'immersiveengineering:dust_wood'],'afc:wood/stripped_wood/'+afc_wood[i])
+        create.cutting(['10x afc:wood/lumber/'+afc_wood[i],'createdieselgenerators:wood_chip'],'afc:wood/stripped_log/'+afc_wood[i])
+        create.cutting(['10x afc:wood/lumber/'+afc_wood[i],'createdieselgenerators:wood_chip'],'afc:wood/stripped_wood/'+afc_wood[i])
     }
     for(let i in tfc_wood){
         create.cutting('tfc:wood/stripped_log/'+tfc_wood[i],'tfc:wood/log/'+tfc_wood[i])
         create.cutting('tfc:wood/stripped_wood/'+tfc_wood[i],'tfc:wood/wood/'+tfc_wood[i])
 
-        create.cutting(['tfc:wood/lumber/'+tfc_wood[i],'immersiveengineering:dust_wood'],'tfc:wood/stripped_log/'+tfc_wood[i])
-        create.cutting(['tfc:wood/lumber/'+tfc_wood[i],'immersiveengineering:dust_wood'],'tfc:wood/stripped_wood/'+tfc_wood[i])
+        create.cutting(['10x tfc:wood/lumber/'+tfc_wood[i],'createdieselgenerators:wood_chip'],'tfc:wood/stripped_log/'+tfc_wood[i])
+        create.cutting(['10x tfc:wood/lumber/'+tfc_wood[i],'createdieselgenerators:wood_chip'],'tfc:wood/stripped_wood/'+tfc_wood[i])
     }
     create.cutting('afc:wood/stripped_log/eucalyptus','afc:wood/log/rainbow_eucalyptus')
     create.cutting('tfc:wood/stripped_log/oak','afc:wood/log/black_oak')

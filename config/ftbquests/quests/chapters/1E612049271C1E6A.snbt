@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1E612049271C1E6A"
 	group: "39B5DFD6C28A7E6E"
+	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	icon: {
 		Count: 1
@@ -42,57 +43,16 @@
 				type: "checkmark"
 			}]
 			title: "第三章：铁砂与红土"
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["78E74E2634CAD705"]
-			description: [
-				"机械动力是一种注重于构建产线的工业mod，通过推进这个mod的流程，你将构建更有效率的自动化产线，将大部分工序简化为机器进行。最终建造发电机、核电站、无限矿物、刷铁机与火车系统！"
-				""
-				"如果你准备好进行机械动力了，就点击确认。"
-			]
-			icon: "create:andesite_alloy"
-			id: "1B5183C1350A06FF"
-			tasks: [{
-				id: "0B4887E5001AFEAD"
-				title: "请在阅读以下内容后点击确认"
-				type: "checkmark"
-			}]
-			title: "机械动力"
-			x: 0.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["78E74E2634CAD705"]
-			description: [
-				"沉浸工程是一种注重于构建多方块机器的mod，该mod与群峦传说具有高度联动，通过沉浸工程的机器，你将完成一些原本群峦原版才能完成，连机械动力都做不到的自动化，最终使用最尖端的电弧炉完成金属的批量冶炼。"
-				""
-				"如果你准备好进行沉浸工程了，就点击确认。"
-			]
-			icon: {
-				Count: 1
-				id: "immersiveengineering:hammer"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2CEE61F6F19CA8F4"
-			tasks: [{
-				id: "6E65FD48EF094A29"
-				title: "请在阅读以下内容后点击确认"
-				type: "checkmark"
-			}]
-			title: "沉浸工程"
-			x: 0.5d
-			y: 2.0d
+			x: 0.0d
+			y: 0.875d
 		}
 		{
 			dependencies: ["78E74E2634CAD705"]
 			description: ["是的，还是砧，要想加工金属就离不开砧，所以再准备14个铁锭吧。"]
-			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4B6AF4B789E7C1C7"
 			shape: "hexagon"
+			size: 1.3d
 			subtitle: "这里没有附魔书"
 			tasks: [{
 				id: "2A07326B0583641B"
@@ -108,8 +68,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.0d
+			x: 1.6973164490876158d
+			y: 4.786405684200247d
 		}
 		{
 			dependencies: ["78E74E2634CAD705"]
@@ -121,7 +81,7 @@
 				""
 				"当然，你也可以轻装上阵，或是使用飞雷神在家中和路上来回tp，这是你的自由。不过请确保你完成了至少一项指标。"
 			]
-			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:dirt_path"
 			id: "5E9051E49C388834"
 			progression_mode: "linear"
@@ -258,28 +218,40 @@
 				}
 			]
 			title: "遥远的旅途"
-			x: 3.0d
-			y: -0.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5E9051E49C388834"]
 			description: ["现在，你将要离开基地去往天涯海角了，在途中你会遇到很多问题，我会一一为你解读"]
 			hide_until_deps_complete: true
-			icon: "ad_astra:earth_globe"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/sword/wrought_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4DD0871B568BFD54"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "可以安心的走出家门了"
 			tasks: [{
 				id: "7E8165DD9F5D1DE3"
 				type: "checkmark"
 			}]
-			title: "环绕世界"
-			x: 3.0d
+			title: "真正的冒险"
+			x: 0.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["4DD0871B568BFD54"]
+			dependencies: ["71E483F24F891577"]
 			description: [
 				"高岭土和石墨是你炼钢之路上的两个大问题，它们一个在热带的高原山地地区，另一个在地底深处。"
 				""
@@ -326,8 +298,8 @@
 				}
 			]
 			title: "&6天涯之远，渊邃之深"
-			x: 6.0d
-			y: -0.5d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4DD0871B568BFD54"]
@@ -344,11 +316,11 @@
 				type: "checkmark"
 			}]
 			title: "扬帆起航"
-			x: 6.0d
-			y: -5.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["4985CF7854821EF3"]
+			dependencies: ["156A7DC07864D46E"]
 			description: [
 				"航海时代添加了一个很棒的船只：“划艇”"
 				""
@@ -365,6 +337,7 @@
 				"详细的制作教程可以查看《群峦传说》"
 			]
 			hide_until_deps_complete: true
+			icon: "firmaciv:rowboat_icon_only"
 			id: "1A6D539F01A6A5BA"
 			shape: "circle"
 			subtitle: "就算没人陪你坐，还有箱子可以"
@@ -391,9 +364,9 @@
 					type: "item"
 				}
 			]
-			title: "一艘很好用的船"
-			x: 9.0d
-			y: -5.0d
+			title: "荡起双桨……"
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1A6D539F01A6A5BA"]
@@ -405,8 +378,9 @@
 				"所以本任务只是用于让你提前得知单桅帆船以便不需要从头收集材料"
 			]
 			hide_until_deps_complete: true
-			icon: "firmaciv:cannon"
+			icon: "firmaciv:sloop_icon_only"
 			id: "3933AA974EAACD79"
+			optional: true
 			shape: "gear"
 			subtitle: "为了远航，这是[不是]必要的"
 			tasks: [
@@ -432,7 +406,7 @@
 							value: "firmaciv:planks_that_make_ships"
 						}
 					}
-					title: "Any #firmaciv:planks_that_make_ships"
+					title: "可以作为船只框架的木材"
 					type: "item"
 				}
 				{
@@ -452,40 +426,8 @@
 				}
 			]
 			title: "&6为了更大更完美的船！"
-			x: 10.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["156A7DC07864D46E"]
-			description: [
-				"航海时代ban掉了所有原版船的制作方式，就连实体也无法生成，现在就需要制作一个比较简易的船“独木舟”了"
-				""
-				"要制作独木舟，你首先得将3根剥皮的原木水平放置成一排，并用锯切掉顶部。然后用斧头雕刻出独木舟的形状。最后，点燃独木舟的内部，掏空船体。这将花费与坑窑相同的时间来完成挖空过程。"
-				""
-				"你当然可以在两个座位上都放上方块或动物，但要注意如果你这样做，就没有办法驾驶它了!不过如果你不想亲自运送材料，那就当我没说了。"
-				"独木舟有两个座位，从后面驾驶。你得划桨才能全速前进如果两个玩家一起划桨，它可以走得更快。"
-				""
-				"&n雕刻独木舟需要比较柔软的木材"
-				""
-				"因此，只有部分原木是可行的:&r"
-				"花旗松木,松木,棕榈,云杉木,红杉木,木棉木,红树木,白杉木,柳木"
-				""
-				"别忘了做两个桨！"
-			]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			icon: "firmaciv:canoe_icon_only"
-			id: "4985CF7854821EF3"
-			subtitle: "迫不得已不会用"
-			tasks: [{
-				advancement: "firmaciv:canoe"
-				criterion: ""
-				id: "347D92A01041F3D0"
-				type: "advancement"
-			}]
-			title: "勉强能用的木舟"
-			x: 7.5d
-			y: -5.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3E7E9BF7BA7E8598"]
@@ -499,27 +441,26 @@
 			icon: "tfc:fire_clay"
 			id: "5D9E196F63C8F953"
 			shape: "hexagon"
-			subtitle: "20%是你的谎言"
 			tasks: [
-				{
-					id: "65FFF4D54C6937F9"
-					item: "tfc:powder/kaolinite"
-					type: "item"
-				}
-				{
-					id: "2D943C221F374B74"
-					item: "tfc:powder/graphite"
-					type: "item"
-				}
 				{
 					id: "54EE165D75B72C38"
 					item: "tfc:fire_clay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "04E81EA20D727A1A"
+					item: "tfc:fire_bricks"
+					optional_task: true
+					title: "我已了解：跳过&8[已获得最终产物]"
 					type: "item"
 				}
 			]
 			title: "千锤百炼，粉身碎骨"
 			x: 7.5d
-			y: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4B6AF4B789E7C1C7"]
@@ -544,8 +485,8 @@
 				type: "item"
 			}]
 			title: "更多锻铁"
-			x: 6.0d
-			y: 1.0d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["68B0C82BB12377DE"]
@@ -571,14 +512,20 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3CE25BF30E03A669"]
+			dependencies: [
+				"0B73FDEF3EF6266A"
+				"366E98E912E04672"
+				"1A7E7EB359A970F3"
+			]
+			dependency_requirement: "one_completed"
 			description: ["高炉方块由耐火砖和锻铁薄板制成，是高炉多方块结构的核心。"]
 			hide_until_deps_complete: true
 			id: "6051F874C8283B67"
+			min_required_dependencies: 2
 			shape: "hexagon"
 			subtitle: "超热话题"
 			tasks: [{
@@ -586,8 +533,8 @@
 				item: "tfc:blast_furnace"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 9.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5D9E196F63C8F953"]
@@ -605,6 +552,7 @@
 			hide_until_deps_complete: true
 			icon: "tfc:crucible"
 			id: "0B73FDEF3EF6266A"
+			optional: true
 			shape: "hexagon"
 			subtitle: "再见了，所有的制陶术"
 			tasks: [
@@ -620,11 +568,7 @@
 						}
 						id: "tfc:ceramic/unfired_crucible"
 					}
-					type: "item"
-				}
-				{
-					id: "5A95EA3844A2B424"
-					item: "tfc:crucible"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -639,64 +583,41 @@
 						}
 						id: "tfc:ceramic/unfired_fire_ingot_mold"
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "36B0C4E2E4AC70E3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/fire_ingot_mold"
-					}
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "156552D4826F7C6C"
+					item: "tfc:fire_bricks"
+					optional_task: true
+					title: "我已了解：跳过&8[已获得最终产物]"
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: -0.5d
+			title: "坩埚"
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0B73FDEF3EF6266A"]
-			description: ["塑形耐火黏土可得到未烧制的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
+			description: ["塑形耐火黏土可得到未硬化的耐火砖，将其烧制即可获得耐火砖，耐火砖与砂浆合成即可获得耐火砖块。"]
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			icon: "tfc:fire_bricks"
 			id: "03FA731C116C90F7"
+			optional: true
 			shape: "hexagon"
-			subtitle: "不耐火的都变成80%了"
-			tasks: [
-				{
-					id: "2456B83FA9ABEA5C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/unfired_fire_brick"
-					}
-					type: "item"
-				}
-				{
-					id: "06EF417BF122DF7A"
-					item: "tfc:ceramic/fire_brick"
-					type: "item"
-				}
-				{
-					id: "6AF7923C2C4049A1"
-					item: "tfc:fire_bricks"
-					type: "item"
-				}
-			]
+			subtitle: "物竞天择的选择"
+			tasks: [{
+				id: "6AF7923C2C4049A1"
+				item: "tfc:fire_bricks"
+				type: "item"
+			}]
 			title: "绝对耐火"
-			x: 10.5d
-			y: -0.5d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["03FA731C116C90F7"]
@@ -709,7 +630,7 @@
 			hide_until_deps_visible: false
 			icon: "tfcchannelcasting:mold_table"
 			id: "5B149F321FE450F7"
-			subtitle: "冒充匠魂"
+			subtitle: "冒牌匠魂"
 			tasks: [
 				{
 					id: "38C927CD10CEBBF7"
@@ -751,21 +672,19 @@
 				}
 			]
 			title: "自动铸造"
-			x: 12.0d
-			y: -1.0d
+			x: 12.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["6051F874C8283B67"]
-			description: [
-				"搭建高炉需要耐火砖块、高炉方块以及锻铁薄板。将高炉方块放置在坩埚上，在其任意一个侧面放置风箱，之后以高炉方块为底，在高炉上方最多到五格高位置用耐火砖块搭建烟囱。最后用锻铁薄板将烟囱的外表面（不含顶面底面）覆盖住，高炉就搭建成功了。搭建成功的高炉GUI中坩埚左右两侧的长条轮廓会变成实线，这代表你可以炼钢了。"
-				""
-				"每层完整的高炉烟囱需要4块耐火砖块和12个锻铁薄板，五层一共是20块耐火砖块和60个锻铁薄板，每层烟囱能让高炉同时多冶炼4个物品。"
-				""
-				"要想让高炉开始冶炼，需要从烟囱中投入不超过最大冶炼量的等量含铁物品和助焊剂，并加入任意量木炭，之后在确保高炉内部有鼓风口的情况下点燃高炉方块。在高炉燃烧时，你需要时不时加入燃料以保证火焰不会熄灭，同时使用风箱使温度保持在炽白，还需要看着鼓风口的耐久度以防其耐久归零。"
-				""
-				"如果一切正常，与投入含铁物品相同含铁量的熔融生铁就会出现在高炉方块内，如果其下方有坩埚，生铁就会随着流入坩埚内。这些生铁温度太低时也会凝固，因此你还需要一个木炭炉加热坩埚。"
+			dependencies: [
+				"6051F874C8283B67"
+				"20951DCB9E381CAD"
+				"03FA731C116C90F7"
 			]
-			hide_until_deps_complete: true
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_details_until_startable: true
+			hide_until_deps_visible: false
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -780,145 +699,159 @@
 				}
 			}
 			id: "6817416877252461"
+			invisible_until_tasks: 2
+			min_required_dependencies: 2
 			shape: "hexagon"
+			size: 1.3d
 			tasks: [{
 				id: "40DD13EB7068B2B9"
 				title: "请在阅读以下内容后点击确认"
 				type: "checkmark"
 			}]
-			title: "炼钢要诀"
-			x: 10.5d
-			y: 1.0d
+			title: "搭建高炉"
+			x: 11.5d
+			y: 1.2142857142857082d
 		}
 		{
-			dependencies: [
-				"6817416877252461"
-				"03FA731C116C90F7"
-			]
+			dependencies: ["6817416877252461"]
 			description: ["熔融生铁在锭模具中凝固后会变成生铁锭，与生铁方坯一样，需要锻打两次才能变成钢锭。"]
 			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/pig_iron"
+			}
 			id: "4A96D0BED6BD4151"
+			min_required_dependencies: 2
 			shape: "hexagon"
 			subtitle: "就像对生铁方坯那样"
-			tasks: [{
-				id: "5E810A53CE62B9B8"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "5E810A53CE62B9B8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/pig_iron"
 					}
-					id: "tfc:metal/ingot/pig_iron"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.5d
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "17D76583D1B5BB5F"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.2142857142857082d
 		}
 		{
 			dependencies: ["4A96D0BED6BD4151"]
 			description: ["生铁锭锻打后会变成高碳钢锭，再锻打一次吧。"]
 			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/high_carbon_steel"
+			}
 			id: "320016DCB488E572"
 			shape: "hexagon"
 			subtitle: "最后的一点碳"
-			tasks: [{
-				id: "7281125B5E1F86CF"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "7281125B5E1F86CF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/high_carbon_steel"
 					}
-					id: "tfc:metal/ingot/high_carbon_steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
-			x: 13.5d
-			y: 0.5d
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "0F784A702C1E3073"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 0.2142857142857082d
 		}
 		{
 			dependencies: ["320016DCB488E572"]
 			description: ["高碳钢锭锻打后会变成钢锭，不知不觉你能制作的金属等级已经达到了四级。这是你已熟练掌握这款模组的证明，也是你努力后的回报。"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "4A6067EFAE9D19C1"
 			shape: "gear"
 			size: 2.0d
 			subtitle: "上帝通过铁器创造了我们。然后他升高温度，将其中一些铸造成钢。——玛莉·奥斯蒙"
-			tasks: [{
-				id: "34434A8D2E02E67A"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+			tasks: [
+				{
+					id: "34434A8D2E02E67A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/steel"
 					}
-					id: "tfc:metal/ingot/steel"
+					optional_task: true
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					advancement: "createmetallurgy:steel_age"
+					criterion: ""
+					id: "0D62B5A9D94CD79B"
+					optional_task: true
+					title: "钢铁时代"
+					type: "advancement"
+				}
+			]
 			title: "&6钢铁是怎样炼成的"
-			x: 15.571428571428577d
-			y: 0.2857142857142918d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["4298CFA14952A6F2"]
-			description: ["你现在可以制作土制手枪了！终于可以合成枪械，从拿弓的猎人变成拿枪的猎人了"]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "warriorsofpastepoch:pistol"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "16DF9CE29CD8B1E5"
-			subtitle: "让手无缚鸡之力的人类占领世界的物品"
-			tasks: [{
-				id: "405F9455812D0608"
-				item: {
-					Count: 1
-					id: "warriorsofpastepoch:pistol"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "三个火枪手"
-			x: 7.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["16DF9CE29CD8B1E5"]
-			description: ["你可以继续制作长杆火枪了，长杆火枪和手枪不共用cd，这代表你可以双持该武器,本身火枪的cd较长，双持可以让发射速度快些"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			id: "4335BD92D7A12AB9"
-			subtitle: "长杆火枪"
-			tasks: [{
-				id: "428E87276B380602"
-				item: {
-					Count: 1
-					id: "warriorsofpastepoch:musket"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "好枪"
-			x: 9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4335BD92D7A12AB9"]
+			dependencies: [
+				"5838C7D9A75C66CE"
+				"0B979758AA16D413"
+				"426B7B37A7C78D06"
+				"6B6F63F8512E41D7"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "085B4365FC8CB0D4"
 			shape: "gear"
@@ -930,434 +863,12 @@
 				type: "item"
 			}]
 			title: "&6“猎人”"
-			x: 12.0d
-			y: -2.0d
+			x: 5.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["78E74E2634CAD705"]
-			description: ["如果你的谷物用来做面包还有剩，就可以用来做酒了，酒比起淡水能够恢复更多口渴值。"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			icon: "tfc:bucket/whiskey"
-			id: "7B2941C98278187A"
-			subtitle: "唯有杜康"
-			tasks: [{
-				id: "6CF579FA10DA488E"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:corn_whiskey"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:whiskey"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:vodka"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:sake"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:rum"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:cider"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:beer"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfc:rye_whiskey"
-									}
-								}
-							}
-						]
-					}
-				}
-				title: "任意酒桶"
-				type: "item"
-			}]
-			title: "何以解忧"
-			x: 4.528571428571439d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["7B2941C98278187A"]
-			description: ["将酒密封一段时间就可以得到陈年酒。陈年酒相较于新酒能够给予效果，例如陈年威士忌就能提供急迫效果。"]
-			hide_until_deps_complete: true
-			icon: "tfcagedalcohol:bucket/aged_whiskey"
-			id: "0B76D63C95BECE66"
-			subtitle: "越老越劲"
-			tasks: [{
-				id: "7040D11DF5A514C4"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_vodka"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_rye_whiskey"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_rum"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_cider"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_beer"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_whiskey"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_corn_whiskey"
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "tfc:wooden_bucket"
-								tag: {
-									fluid: {
-										Amount: 1000
-										FluidName: "tfcagedalcohol:aged_sake"
-									}
-								}
-							}
-						]
-					}
-				}
-				title: "任意陈年酒桶"
-				type: "item"
-			}]
-			title: "历久弥新"
-			x: 6.028571428571439d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["0B76D63C95BECE66"]
-			description: ["除群峦本体的酒外，葡园酒香mod也提供了大量可酿制的酒，酿制这些酒需要在野外找到葡萄种子。葡萄种子可像灌木一样种在地上，或者种植在温室里。"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			icon: "vinery:red_grape_seeds"
-			id: "5044B3B81A35A3E7"
-			subtitle: "原本种葡萄的格架被ban了"
-			tasks: [{
-				id: "17D1233903B4957C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "vinery:red_grape_seeds"
-							}
-							{
-								Count: 1b
-								id: "vinery:white_grape_seeds"
-							}
-							{
-								Count: 1b
-								id: "vinery:savanna_grape_seeds_red"
-							}
-							{
-								Count: 1b
-								id: "vinery:savanna_grape_seeds_white"
-							}
-							{
-								Count: 1b
-								id: "vinery:taiga_grape_seeds_red"
-							}
-							{
-								Count: 1b
-								id: "vinery:taiga_grape_seeds_white"
-							}
-							{
-								Count: 1b
-								id: "vinery:jungle_grape_seeds_red"
-							}
-							{
-								Count: 1b
-								id: "vinery:jungle_grape_seeds_white"
-							}
-						]
-					}
-				}
-				title: "任意葡萄种子"
-				type: "item"
-			}]
-			x: 7.528571428571439d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["5044B3B81A35A3E7"]
-			description: ["葡萄成熟以后就可以摘下来了，你需要把这些葡萄榨成葡萄汁来酿酒，榨葡萄汁需要用到葡萄藤盆。手持葡萄右键葡萄藤盆将葡萄放入其中，然后站在葡萄藤盆上 用 脚 踩 &m（某吧打过来了）&r，在葡萄藤盆上跳几次后，葡萄就换转化为对应的葡萄汁。"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			icon: "vinery:grapevine_pot"
-			id: "50369B0A28AB298E"
-			subtitle: "建议先去洗洗脚以满足心理洁癖"
-			tasks: [
-				{
-					id: "5725A15D2E6FA0B3"
-					item: "vinery:grapevine_pot"
-					type: "item"
-				}
-				{
-					id: "418C483FE3514F8F"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:jungle_grapes_white"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:jungle_grapes_red"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:taiga_grapes_white"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:taiga_grapes_red"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:savanna_grapes_white"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:savanna_grapes_red"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:white_grape"
-								}
-								{
-									Count: 1b
-									ForgeCaps: {
-										"tfc:food": {
-											creationDate: 2400000L
-											traits: [ ]
-										}
-									}
-									id: "vinery:red_grape"
-								}
-							]
-						}
-					}
-					title: "任意葡萄"
-					type: "item"
-				}
-			]
-			x: 9.02857142857144d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["50369B0A28AB298E"]
-			description: ["盛装葡萄汁需要葡萄酒瓶，葡萄酒瓶可以由吹制玻璃得到。"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			icon: "vinery:wine_bottle"
-			id: "682261AF5A852FF1"
-			subtitle: "以后榨葡萄汁的时候请想象自己是法国少女"
-			tasks: [
-				{
-					id: "7AEF8F8F8C008AA7"
-					item: "vinery:wine_bottle"
-					type: "item"
-				}
-				{
-					id: "7E6920AD9FC9B763"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "vinery:grapejuice"
-						}
-					}
-					title: "任意葡萄汁"
-					type: "item"
-				}
-			]
-			x: 10.52857142857144d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["682261AF5A852FF1"]
-			description: ["陈酿桶是葡萄汁酿成葡萄酒需要用到的方块，将葡萄汁以及满足配方的其他材料放入桶内即可自动酿制葡萄酒。酿制完成的葡萄酒需要放入葡萄酒瓶才能拿出"]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			id: "7B12F5161E0E7817"
-			subtitle: "比谷物酿的酒更上流一点"
-			tasks: [{
-				id: "2ACA0F8F3D4D11C1"
-				item: "vinery:fermentation_barrel"
-				type: "item"
-			}]
-			x: 12.02857142857144d
-			y: 4.7928571428571445d
-		}
-		{
-			dependencies: ["4B6AF4B789E7C1C7"]
+			dependencies: ["44D3A350F6971830"]
 			description: ["有了锻铁之后，就可以锻造锻铁烤架了，锻铁烤架和铸铁烤架的性能相同，但能够同时烤制五个物品。"]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "3C599FF1AC04E8C6"
@@ -1376,8 +887,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.6107142857142875d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3C599FF1AC04E8C6"]
@@ -1393,11 +904,11 @@
 				item: "farmersdelight:stove"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.6107142857142875d
+			x: -2.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5DB9C3E0DA3A253B"]
+			dependencies: ["0E70116419066DC5"]
 			description: ["厨锅是烹饪菜肴所需要用到的方块，需要被放置在炉灶上。这些菜肴遵循着特定的配方。当你将满足配方的食物放到锅中的时候，它就会开始自己烹饪菜肴，在锅中放入木碗即可将菜肴盛出。这些菜肴有着自己的营养值和保质期，与你放入的烹饪材料没有关系。"]
 			hide_until_deps_complete: true
 			id: "6639AF3A0D4459F0"
@@ -1406,58 +917,16 @@
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.6107142857142875d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6639AF3A0D4459F0"]
-			description: [
-				"炒锅是最bug的料理用物品，它需要被放置在炉灶上，手持食材右键炒锅以开始炒菜。炒菜需要用到锅铲，手持锅铲对炒锅右键即可翻炒食材。"
-				""
-				"当你开始炒菜的时候，屏幕左侧会出现两个仪表，两个仪表的指数会随时间慢慢增长，使用锅铲翻炒可以重置右侧的指针，手持盘子右键炒锅以盛出菜品。当你在左侧仪表的指针指在黄色区域且右侧仪表的指针未指在红色区域时将菜盛出，就会得到最高品质的菜肴。"
-				""
-				"这些菜肴都有着自己的保质期和营养值，与你使用的烹饪材料无关。炒锅炒菜bug的地方在于，它不仅能够重置食材的保质期，还能将腐烂的物品炒成可以吃的！"
-			]
-			hide_until_deps_complete: true
-			hide_until_deps_visible: false
-			icon: {
-				Count: 1
-				id: "cuisinedelight:cuisine_skillet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5EE42DFB2260A9DE"
-			subtitle: "&m蔓越莓炒皮蛋！"
-			tasks: [
-				{
-					id: "380A903E34F0DF56"
-					item: {
-						Count: 1
-						id: "cuisinedelight:cuisine_skillet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "23B204F7E572DC25"
-					item: "cuisinedelight:spatula"
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: 3.6107142857142875d
-		}
-		{
-			dependencies: ["4B6AF4B789E7C1C7"]
+			dependencies: ["44D3A350F6971830"]
 			description: [
 				"堆肥滚筒是堆肥桶的升级版，需要通过接入动力来工作。堆肥滚筒的容量是堆肥桶的两倍，且能稍微容纳一点肉和骨头还不生成腐烂堆肥。堆肥滚筒只有在不接入动力的时候才能放入物品，只有在接入动力的时候才会转化堆肥，因此你可以考虑用一个离合器与其连接。"
 				""
 				"一段时间后堆肥就会转化完成，如果你放入了总共32单位的物品，就会生成3个堆肥，16单位及以上是两个，8单位及以上就只有一个了。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "0481BF73F5D224F1"
@@ -1467,11 +936,11 @@
 				item: "firmalife:compost_tumbler"
 				type: "item"
 			}]
-			x: 4.5142857142857125d
-			y: 2.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["0481BF73F5D224F1"]
+			dependencies: ["44D3A350F6971830"]
 			description: [
 				"木龙头是一种能够从树上抽取有提炼价值的树液的方块，能够提取的树包括能提取糖浆的枫树和桦树，能提取胶乳的橡胶树和橡皮树。要抽取树汁，你需要将木龙头放在至少第三格高的树干上并在其正下方一个放置一个大桶，如果放置正确，树液就会从木龙头滴进桶里。"
 				""
@@ -1486,8 +955,8 @@
 				type: "item"
 			}]
 			title: "树中取液"
-			x: 6.0142857142857125d
-			y: 2.5d
+			x: -1.1149869137638433d
+			y: 3.7009237226548066d
 		}
 		{
 			dependencies: ["3509BD616E13F664"]
@@ -1529,8 +998,8 @@
 				type: "item"
 			}]
 			title: "浓缩再浓缩"
-			x: 7.5142857142857125d
-			y: 2.5d
+			x: -2.1149869137638433d
+			y: 4.200923722654807d
 		}
 		{
 			dependencies: ["1989C3DA31D6C8E3"]
@@ -1583,8 +1052,8 @@
 				type: "item"
 			}]
 			title: "树中糖"
-			x: 9.014285714285712d
-			y: 2.5d
+			x: -3.1149869137638433d
+			y: 4.200923722654807d
 		}
 		{
 			dependencies: ["4B6AF4B789E7C1C7"]
@@ -1599,8 +1068,8 @@
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			x: 4.500000000000007d
-			y: -0.5035714285714263d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4DD0871B568BFD54"]
@@ -1611,17 +1080,58 @@
 				"掠夺者营地里面的战利品多数都是金属装备与金属锭,饰品还有一些无关紧要的物品，一些营地还会有他们自己养的畜生，可以带走"
 				""
 				""
-				"&c&l另外，你获得的“不祥征兆”暂时是不会触发袭击的，因为群峦星的村民被屠杀干净了，所以暂时想报复你的掠夺者是找不到你的位置的，只不过，以后是会有触发袭击的办法，到时候袭击而来的掠夺者会非常凶残,请做好准备&r&r"
+				"{@pagebreak}"
+				"&4&l另外，你获得的“不祥征兆”暂时是不会触发袭击的，因为群峦星的村民被屠杀干净了，所以暂时想报复你的掠夺者是找不到你的位置的&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
-				id: "butcher:pillagerdisguise_helmet"
+				id: "minecraft:white_banner"
 				tag: {
-					Damage: 0
+					BlockEntityTag: {
+						Patterns: [
+							{
+								Color: 9
+								Pattern: "mr"
+							}
+							{
+								Color: 8
+								Pattern: "bs"
+							}
+							{
+								Color: 7
+								Pattern: "cs"
+							}
+							{
+								Color: 8
+								Pattern: "bo"
+							}
+							{
+								Color: 15
+								Pattern: "ms"
+							}
+							{
+								Color: 8
+								Pattern: "hh"
+							}
+							{
+								Color: 8
+								Pattern: "mc"
+							}
+							{
+								Color: 15
+								Pattern: "bo"
+							}
+						]
+						id: "minecraft:banner"
+					}
+					display: {
+						Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+					}
 				}
 			}
 			id: "22D0B839C9E27B02"
+			optional: true
 			subtitle: "向残暴的原住民进发"
 			tasks: [{
 				entity: "minecraft:pillager"
@@ -1630,17 +1140,12 @@
 				value: 10L
 			}]
 			title: "反击"
-			x: 0.5d
-			y: -2.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4DD0871B568BFD54"]
-			description: [
-				"你可能会在一些结构里面找到神秘的法术卷轴，这些法术卷轴都是一次性所以会显得很珍贵，"
-				"这个时候你终于可以制作魔法书了，魔法书可以让你把这些法术书页收入书里面，以便随时使用并且不会消耗"
-				""
-				"详情见铁之魔法书的帕秋莉手册教程"
-			]
+			description: ["&4&l因为制作空缺目前你还不可以使用铁魔法内容！！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1655,6 +1160,7 @@
 				}
 			}
 			id: "589B144F016BAA2B"
+			invisible: true
 			subtitle: "铁之魔法书"
 			tasks: [{
 				id: "69136E036D9D34BE"
@@ -1692,14 +1198,15 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"589B144F016BAA2B"
 				"22D0B839C9E27B02"
 			]
+			description: ["&4&l因为制作空缺目前你还不可以使用铁魔法内容！！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1792,8 +1299,8 @@
 				type: "item"
 			}]
 			title: "&e唤魔者的高塔"
-			x: -1.5d
-			y: -4.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["22D0B839C9E27B02"]
@@ -1803,52 +1310,11 @@
 			id: "1001B1A653E27055"
 			subtitle: "只是他们的其中之一"
 			title: "残虐的城堡"
-			x: -1.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4DD0871B568BFD54"]
-			description: [
-				"现在你可以通过铁粒来制作火枪弹药了"
-				""
-				"&8&o人类终究还是会把枪口对准自己人的&r&r"
-			]
-			hide_until_deps_complete: true
-			id: "4298CFA14952A6F2"
-			subtitle: "杀人的从来不是子弹，而是扣下扳机的手"
-			tasks: [{
-				id: "263BD7AD6E7F56C9"
-				item: "warriorsofpastepoch:musket_ammo"
-				type: "item"
-			}]
-			title: "火枪弹药"
-			x: 6.0d
+			x: -3.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["4335BD92D7A12AB9"]
-			description: ["现在你可以用青金石和羊毛布制作火枪手套装专用的布料，火枪手套装可以显著提升火枪的cd时间让他开枪更快"]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "warriorsofpastepoch:muketers_armor_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "063C9747EC50FE9E"
-			subtitle: "好的枪手需要一顶好帽子"
-			tasks: [{
-				id: "397DF3F1EFA21ABF"
-				item: "warriorsofpastepoch:azure_fabric"
-				type: "item"
-			}]
-			title: "火枪手"
-			x: 10.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4DD0871B568BFD54"]
+			dependencies: ["00E05E64E05C86F2"]
 			description: [
 				"&a&o&l现在，为了更好的探索世界，我建议你使用飞机来跨越群峦！&r&r&r"
 				""
@@ -1865,8 +1331,8 @@
 				type: "item"
 			}]
 			title: "最远的距离"
-			x: 6.0d
-			y: -3.5d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["22D0B839C9E27B02"]
@@ -1894,7 +1360,7 @@
 				type: "advancement"
 			}]
 			title: "&e“皮 肤”"
-			x: 0.5d
+			x: -2.0d
 			y: -1.0d
 		}
 		{
@@ -1914,8 +1380,8 @@
 				item: "immersive_aircraft:biplane"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -3.5d
+			x: 0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["05E29E0D8A02857D"]
@@ -1944,8 +1410,1078 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5ABCEA9D66EB2104"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "createdieselgenerators:bulk_fermenter"
+			id: "50EFCD7C10FA0994"
+			tasks: [
+				{
+					id: "7193FCEDEC4E6BB6"
+					item: "createdieselgenerators:bulk_fermenter"
+					type: "item"
+				}
+				{
+					id: "4A30AA2D0A153433"
+					item: "createdieselgenerators:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "发酵桶"
+			x: 3.15067939759318d
+			y: 2.2905335517135157d
+		}
+		{
+			dependencies: ["50EFCD7C10FA0994"]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			id: "2D8EE1518B0C8834"
+			tasks: [{
+				id: "6D31250B8CDD2A7A"
+				item: "createdieselgenerators:burner"
+				type: "item"
+			}]
+			title: "燃气炉"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1B31D6B48235E998"]
+			hide_dependent_lines: true
+			hide_details_until_startable: true
+			id: "620FE34A0406DCFE"
+			tasks: [{
+				id: "7C3CF115FD78425F"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			title: "焖煮与发酵"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D8EE1518B0C8834"]
+			hide_details_until_startable: true
+			icon: "create:basin"
+			id: "1B31D6B48235E998"
+			tasks: [{
+				id: "43103C4AC7244298"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "加热配方"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E70116419066DC5"]
+			id: "15186E203391A83E"
+			tasks: [{
+				id: "0B56B2A5C98EA2B2"
+				item: "farm_and_charm:cooking_pot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5DB9C3E0DA3A253B"]
+			id: "0E70116419066DC5"
+			tasks: [{
+				id: "47A2FCBDE0840678"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(butcher:animalfat)item(artisanal:bear_fat)item(artisanal:suet)item(artisanal:pork_fat)item(artisanal:poultry_fat)item(tfc:blubber))"
+					}
+				}
+				title: "任意脂肪"
+				type: "item"
+			}]
+			title: "炼油"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5DB9C3E0DA3A253B"]
+			id: "01BEF37417DBCD5C"
+			tasks: [{
+				id: "73F5BCD6DF7E6440"
+				item: "farm_and_charm:stove"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["78E74E2634CAD705"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tfccanes:refined_walking_cane"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44D3A350F6971830"
+			tasks: [{
+				id: "63E656E62F45D0C6"
+				type: "checkmark"
+			}]
+			title: "铁器时代的生活"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44D3A350F6971830"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "68A6EACF1D98B640"
+			tasks: [{
+				id: "05CA7A7A41A293EE"
+				item: {
+					Count: 1
+					id: "tfccanes:refined_walking_cane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4DD0871B568BFD54"]
+			hide_until_deps_complete: true
+			id: "00E05E64E05C86F2"
+			tasks: [{
+				id: "5E8C2E94CB44A1DB"
+				item: "siegemachines:siege_workbench"
+				type: "item"
+			}]
+			x: 0.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["00E05E64E05C86F2"]
+			hide_until_deps_complete: true
+			id: "3B6DFF9245C3B9C4"
+			tasks: [
+				{
+					id: "6161E3F48D848891"
+					item: "siegemachines:ballista"
+					type: "item"
+				}
+				{
+					id: "0521E26AB5A56691"
+					item: "siegemachines:giant_arrow"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3B6DFF9245C3B9C4"]
+			hide_until_deps_complete: true
+			id: "6906CED860C07E93"
+			tasks: [{
+				id: "19B6031700F745E2"
+				item: "siegemachines:catapult"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00E05E64E05C86F2"]
+			hide_until_deps_complete: true
+			id: "285A19CDC61F971F"
+			tasks: [{
+				id: "31C65C27CAFEB7A5"
+				item: "siegemachines:mortar"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["285A19CDC61F971F"]
+			hide_until_deps_complete: true
+			id: "7020A15262E94B94"
+			tasks: [{
+				id: "010583AEEF74FB3B"
+				item: "siegemachines:culverin"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6906CED860C07E93"]
+			hide_until_deps_complete: true
+			id: "0D2A0C7A580F1607"
+			tasks: [{
+				id: "2DECDAB09497F091"
+				item: "siegemachines:trebuchet"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4DD0871B568BFD54"]
+			hide_until_deps_complete: true
+			id: "495978E05556FF4E"
+			tasks: [{
+				id: "0823C13ABB6D4544"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["096AD15B81CCD5D5"]
+			hide_until_deps_complete: true
+			id: "6B6F63F8512E41D7"
+			optional: true
+			tasks: [{
+				id: "6D888B2275EBF59E"
+				item: {
+					Count: 1
+					id: "scguns:flintlock_pistol"
+					tag: {
+						AmmoCount: 1
+						Damage: 0
+						GeckoLibID: 239L
+						WasHeldLastTick: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["096AD15B81CCD5D5"]
+			hide_until_deps_complete: true
+			id: "0B979758AA16D413"
+			optional: true
+			tasks: [{
+				id: "7E349DC575CECF41"
+				item: {
+					Count: 1
+					id: "scguns:handcannon"
+					tag: {
+						AmmoCount: 1
+						Damage: 0
+						GeckoLibID: 240L
+						WasHeldLastTick: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["096AD15B81CCD5D5"]
+			hide_until_deps_complete: true
+			id: "5838C7D9A75C66CE"
+			optional: true
+			tasks: [{
+				id: "390BA8066A512EBF"
+				item: {
+					Count: 1
+					id: "scguns:musket"
+					tag: {
+						AmmoCount: 1
+						Damage: 0
+						GeckoLibID: 241L
+						WasHeldLastTick: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["096AD15B81CCD5D5"]
+			hide_until_deps_complete: true
+			id: "426B7B37A7C78D06"
+			optional: true
+			tasks: [{
+				id: "45926D27E7FDA4BE"
+				item: {
+					Count: 1
+					id: "scguns:doublet"
+					tag: {
+						AmmoCount: 2
+						Damage: 0
+						DrawnTick: 15
+						GeckoLibID: 242L
+						IsDrawing: 1b
+						IsDrawn: 1b
+						WasHeldLastTick: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["495978E05556FF4E"]
+			hide_until_deps_complete: true
+			id: "096AD15B81CCD5D5"
+			tasks: [{
+				id: "409199C13B275F2B"
+				item: "scguns:antique_blueprint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5ABCEA9D66EB2104"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "vintageimprovements:spring_coiling_machine"
+			}
+			id: "6A1737D3FC3C7C70"
+			tasks: [
+				{
+					id: "11DEAE78D2622897"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "vintageimprovements:spring_coiling_machine_wheel"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46B8937AAE752470"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "vintageimprovements:spring_coiling_machine"
+					}
+					type: "item"
+				}
+			]
+			x: 3.3177653855663607d
+			y: 1.2044746298877769d
+		}
+		{
+			dependencies: ["6A1737D3FC3C7C70"]
+			hide_details_until_startable: true
+			id: "000395E91FAB75F5"
+			tasks: [{
+				id: "5D50986FC1AA0536"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "vintageimprovements:helve_hammer"
+				}
+				type: "item"
+			}]
+			title: "无需动手"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["000395E91FAB75F5"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:raw_iron_bloom"
+			}
+			id: "2792072751116772"
+			tasks: [{
+				id: "467A5D6DC661714F"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "解放双手：自动锻铁"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["78E74E2634CAD705"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: "design_decor:industrial_gear_large"
+			id: "5ABCEA9D66EB2104"
+			shape: "hexagon"
+			tasks: [{
+				id: "6FA94AE66E21ED33"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "铁工业"
+			x: 2.0d
+			y: 1.563685681042763d
+		}
+		{
+			dependencies: ["5ABCEA9D66EB2104"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "5B73DEA756F9A843"
+			tasks: [{
+				id: "44BF3B5E0B04D76D"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: 2.466983957530971d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5ABCEA9D66EB2104"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "12AFE28BA017BFB8"
+			tasks: [{
+				id: "107D091E76100E81"
+				item: "design_decor:industrial_gear"
+				type: "item"
+			}]
+			title: "更强大的齿轮"
+			x: 2.1690492182506773d
+			y: 2.9379917551096284d
+		}
+		{
+			dependencies: ["5E9051E49C388834"]
+			description: [
+				"在群峦传说原版中、玩家在从铁到钢的时期时、有一个比较难以寻找的必要物品&e[高岭土]&r"
+				"高岭土是搭建炼钢高炉的必要材料、且高炉也需要大量的铁板、造价颇高让人苦不堪言"
+				""
+				"不过、探寻高岭土的路途"
+				"对于一些人来说也是在观光来自TFC的自然风景"
+				"对于一些熟知tfc的玩家中、高岭土对他们来说并不困难"
+				""
+				"所以在整合包中、我们保留了原有高岭土的获取方式、制作了一条支线！"
+				"不过这个支线并不会更简单、只是更方便更容易有目标些！"
+			]
+			hide_until_deps_complete: true
+			icon: "scguns:scorched_block"
+			id: "71E483F24F891577"
+			ignore_reward_blocking: true
+			shape: "hexagon"
+			tasks: [{
+				id: "40EA7F474ADFA7C8"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "耐火？"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["620FE34A0406DCFE"]
+			hide_until_deps_complete: true
+			id: "51F1B6E1ADD3C703"
+			subtitle: "矿物处理γ最终步"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "kubejs:item/ore/refined_dust/native_copper"
+				}
+				id: "63A6239F2DEACAF1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(kubejs:item/ore/refined_dust/native_gold)item(kubejs:item/ore/refined_dust/native_silver)item(kubejs:item/ore/refined_dust/tetrahedrite)item(kubejs:item/ore/refined_dust/cassiterite)item(kubejs:item/ore/refined_dust/bismuthinite)item(kubejs:item/ore/refined_dust/sphalerite)item(kubejs:item/ore/refined_dust/garnierite)item(kubejs:item/ore/refined_dust/malachite)item(kubejs:item/ore/refined_dust/uraninite)item(kubejs:item/ore/refined_dust/galena)item(kubejs:item/ore/refined_dust/bauxite)item(kubejs:item/ore/refined_dust/chromite)item(kubejs:item/ore/refined_dust/limonite)item(kubejs:item/ore/refined_dust/magnetite)item(kubejs:item/ore/refined_dust/hematite)item(kubejs:item/ore/refined_dust/native_copper))"
+					}
+				}
+				title: "尝试精炼出一个矿粉"
+				type: "item"
+			}]
+			title: "不容放过"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6A1737D3FC3C7C70"]
+			hide_dependent_lines: true
+			hide_details_until_startable: true
+			id: "4CA199D5CDE2C4F3"
+			shape: "circle"
+			tasks: [{
+				id: "66C39F3FBD30EF59"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "vintageimprovements:vacuum_chamber"
+				}
+				type: "item"
+			}]
+			title: "加压加压"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["71E483F24F891577"]
+			description: [
+				"刚玉线是我们包做的另外一种耐火路线"
+				"是需要通过提炼铝和铬来制作人造刚玉[人造红宝石]来代替耐火砖块的路线"
+				""
+				"如果你的家附近有铝土矿和铬铁矿！那么可以尝试走一下这个虽然步骤稍显繁琐但也不会和高岭土一样难找的路线！"
+				"哪怕是附近没有、随便走走看看用勘探工具查看一下、也许就能找到铝土和铬铁了呢！"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc_ie_addon:ore/rich_bauxite"
+			}
+			id: "1562D3568E1D5CB0"
+			subtitle: "另一种耐火路线"
+			tasks: [
+				{
+					id: "78D07937D3DFE763"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc_ie_addon:ore/small_bauxite)item(tfc_ie_addon:ore/rich_bauxite)item(tfc_ie_addon:ore/normal_bauxite)item(tfc_ie_addon:ore/poor_bauxite)item(tfc_ie_addon:powder/bauxite))"
+						}
+					}
+					title: "是否有铝？"
+					type: "item"
+				}
+				{
+					id: "6719A76724B35A29"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(firmalife:powder/chromite)item(firmalife:ore/small_chromite)item(firmalife:ore/poor_chromite)item(firmalife:ore/normal_chromite)item(firmalife:ore/rich_chromite))"
+						}
+					}
+					title: "是否有铬？"
+					type: "item"
+				}
+			]
+			title: "铝土与铬铁"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4CA199D5CDE2C4F3"
+				"17BAEA1D12BEA711"
+			]
+			description: [
+				"使用&6压缩机&r配合熟石灰水来真空加压熟料来获得氧化铝"
+				""
+				"&8[石灰水做法在铜章节的\"浸泡皮革\"有讲解]&r"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:alumina_powder"
+			}
+			id: "258E524CDB34C6F2"
+			invisible_until_tasks: 1
+			subtitle: "其次"
+			tasks: [
+				{
+					id: "41569AAC98EA5C1E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:alumina_powder"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "197F2B6091890CB3"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"258E524CDB34C6F2"
+				"620FE34A0406DCFE"
+			]
+			description: [
+				"使用&6焖煮&r的方法来精炼铬铁矿浆得到&f精炼铬铁矿粉&r"
+				""
+				"然后和&c氧化铝粉&r混合获得铝铬混合粉！"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:item/ore/refined_dust/chromite"
+			}
+			id: "66869DA16F071393"
+			invisible_until_tasks: 1
+			tasks: [
+				{
+					id: "19683C31255F2715"
+					item: "kubejs:aluminum_chromium_mix_powder"
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "4F351F20714B8E30"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			title: "精炼铬铁、然后混合"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1562D3568E1D5CB0"]
+			description: [
+				"使用&f铝土粉、助焊剂和盐&r来合成碱化铝土生料"
+				"&8不同级别&r的铝粉合成出来的熟料数量不同"
+				""
+				"之后用1500°C的温度来烧制生料来得到熟料"
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:bauxite_clinker"
+			id: "17BAEA1D12BEA711"
+			tasks: [
+				{
+					id: "2DE33847CACACC44"
+					item: "kubejs:bauxite_clinker"
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "73AEC1581C0FA8F9"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66869DA16F071393"]
+			description: [
+				"用&8铝铬混合粉、黏土、锭模具&r来合成未完成的刚玉砖"
+				""
+				"然后再用&f2000°C&r以上的温度烤制砖块使其成型！"
+				"这样你就完成了&4刚玉砖！&r"
+				""
+				""
+				"&8[&f2000°C&r&8的&r&6温度&r&8至少需要拥有&r&f炽白&r&8等级的&r&6燃料&r&8配合鼓风机不停鼓风才能达到、请确保你有足够高级的燃料]&r"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "kubejs:corundum_brick"
+			}
+			id: "053D26E611D4FC35"
+			min_required_dependencies: 1
+			subtitle: "红宝石"
+			tasks: [
+				{
+					id: "2C23AD8AD076C189"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:corundum_brick"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					icon: "design_decor:arrow_right_sign"
+					id: "78BB79CD4C73709D"
+					item: "kubejs:corundum_brick_block"
+					optional_task: true
+					title: "&8已获得最终产物：跳过"
+					type: "item"
+				}
+			]
+			title: "人造刚玉"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4FAE1CF04EF95651"]
+			description: [
+				"焦炉砖的制作方法是4个粘土摆在3×3合成界面的4个角，4个红砖摆在4条边上，中心放置一个砂岩。砂岩一般需要在沙滩表层沙子的底下找到。可以使用平滑砂岩，也可以使用天然砂岩。此配方一次性可以获得三个焦炉砖。"
+				""
+				"焦炉的制作方法是27个焦炉砖摆成3×3×3的形状，用工程师锤右键焦炉多方块结构一个面的正中心，就成为一个完整的焦炉结构。焦炉可以将原木变成木炭，生成250mb的杂酚油。也可以将烟煤、褐煤变成焦煤，同时生成500mb杂酚油。"
+				""
+				"焦炉可以在任意一个点连接沉浸的管道和流体泵，从而连接到其他存储容器来输出杂酚油，也可以在UI界面内通过将大桶放进右侧输入槽的方式来输出杂酚油。"
+			]
+			hide_until_deps_complete: true
+			id: "797E70374DC5D08D"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "43EADBFBA1D7FA36"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					advancement: "immersiveengineering:main/mb_cokeoven"
+					criterion: ""
+					id: "27791C856F01FF3E"
+					type: "advancement"
+				}
+			]
+			title: "焦白"
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4B6AF4B789E7C1C7"]
+			hide_until_deps_complete: true
+			id: "4FAE1CF04EF95651"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "454C5D7F8995AE97"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47B1F3945EEA2E4F"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "见习工程师"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["797E70374DC5D08D"]
+			icon: "immersiveengineering:creosote_bucket"
+			id: "50E3DC2119EEF05E"
+			shape: "hexagon"
+			tasks: [{
+				id: "701C4B3A95E6E26C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "杂酚油"
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["053D26E611D4FC35"]
+			description: [
+				"&4刚玉砖块&r可以代替所有&4耐火砖块&r能够做的事情"
+				""
+				"&f并且他也可以作为：&r"
+				"    &8木炭炉的基座&r"
+				"    &8锻铁炉的炉体&r"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "20951DCB9E381CAD"
+			optional: true
+			shape: "hexagon"
+			subtitle: "不畏高温"
+			tasks: [{
+				id: "7A519C2A3AC17FFB"
+				item: "kubejs:corundum_brick_block"
+				type: "item"
+			}]
+			title: "真 绝对耐火"
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["053D26E611D4FC35"]
+			description: [
+				"你可以用&f2600°C&r的温度来彻底融化&4刚玉砖&r来获得&4熔融刚玉&r"
+				"用1000mb的熔融刚玉来浇筑坩埚模具可以得到刚玉坩埚！功能是和坩埚一模一样的"
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:molten_corundum_bucket"
+			id: "1A7E7EB359A970F3"
+			optional: true
+			subtitle: "黏土坩埚代替品"
+			tasks: [
+				{
+					id: "2379ED4D0CC5540F"
+					item: "kubejs:crucible_mold"
+					type: "item"
+				}
+				{
+					id: "32A40AE6CF9DDA84"
+					item: "tfc:crucible"
+					type: "item"
+				}
+				{
+					id: "64C4D0DA5C0A734C"
+					item: "createmetallurgy:casting_basin"
+					type: "item"
+				}
+			]
+			title: "刚玉制耐火坩埚"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CE25BF30E03A669"]
+			id: "366E98E912E04672"
+			shape: "hexagon"
+			tasks: [{
+				id: "386E127A4ECE9321"
+				item: "createmetallurgy:foundry_lid"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4B6AF4B789E7C1C7"
+				"5ABCEA9D66EB2104"
+			]
+			description: ["动力搅拌器是一种用于执行搅拌的机器，需要接入动力且在其下方两格有工作盆时才能工作。动力搅拌器可以执行两种配方，一种是搅拌的配方，另一种是无序合成的配方。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "74BA3E29A92B1D60"
+			subtitle: "这里没有奶昔"
+			tasks: [
+				{
+					id: "76ABC8BE6CC599BE"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "67F5893C03802725"
+					item: "create:whisk"
+					type: "item"
+				}
+			]
+			title: "混合搅拌"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4B6AF4B789E7C1C7"
+				"5ABCEA9D66EB2104"
+			]
+			description: [
+				"动力锯是一个可以用于移动结构上的机器，当接入动力或被安装在移动结构上时，它将试图破坏它正面所对的木制方块，如果安装在移动结构上且移动结构上有容器，掉落物就会被转移到容器里。"
+				""
+				"动力锯还具有另一种功能：加工木制物品，例如将原木去皮，或将去皮原木转化为木板。加工物品始终会随着磨床转动向的反方向移动，这点需要注意。动力锯上有一个配方过滤槽，你可以放入目标产物以防止配方混淆。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6EDE7AE43DA1D146"
+			tasks: [
+				{
+					id: "48F69E47750C4251"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "457A72764990B80D"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "切割高手"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2D7441C2B65BA37F"
+				"50E3DC2119EEF05E"
+			]
+			description: ["防腐木板是用于制作沉浸工程各项木质结构以及工作方块的基础。首先需要将木材放进有杂酚油的大桶内浸泡8分钟变成防腐木材，4个防腐木材可以合成防腐木板。每一个普通木材变成防腐木材需要消耗50mb杂酚油。"]
+			id: "23773F37400D8ACB"
+			shape: "hexagon"
+			tasks: [{
+				id: "0999B7E2C84E86E4"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["23773F37400D8ACB"]
+			id: "6F2BAE4FB297345F"
+			tasks: [{
+				id: "10AA7565AA9082BA"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["23773F37400D8ACB"]
+			id: "57E2F4EB034F0B32"
+			tasks: [{
+				id: "3D63B72EE246EB3A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "immersiveengineering:toolbox"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["23773F37400D8ACB"]
+			id: "1B6700966885A071"
+			tasks: [{
+				id: "21975364EE0016C6"
+				item: "immersiveengineering:crate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["23773F37400D8ACB"]
+			id: "685F566B1282431D"
+			tasks: [{
+				id: "71BB05BAB279B959"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
 		}
 	]
 	title: "第三章：铁沙与红土"

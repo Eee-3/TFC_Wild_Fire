@@ -15,3 +15,6 @@ net.minecraft.client.gui.screens.LevelLoadingScreen {
 net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 }
 
+net.minecraft.client.gui.screens.ConnectScreen {
+}
+

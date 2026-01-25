@@ -3,70 +3,63 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1"
-	group: ""
+	group: "257B93C8F82BA053"
+	icon: "design_decor:warning_sign"
 	id: "21A6B461EC9F0A5B"
+	images: [{
+		click: "#606E9CE3B7411694"
+		height: 1.5d
+		hover: ["点击跳转主线"]
+		image: "tfc:item/loose_rock/andesite"
+		rotation: 0.0d
+		width: 1.5d
+		x: -1.0d
+		y: 9.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			id: "0FF989C95BAB6F5B"
-			rewards: [{
-				command: "/say Hi, @p!"
-				id: "4A68447DDC4D7724"
-				type: "command"
-			}]
-			shape: "circle"
+			id: "39B1DABB7771899C"
+			size: 2.0d
 			tasks: [{
-				id: "678BF1CB76818BE7"
+				id: "166E9DAFB7C9F6CD"
+				title: "欢迎游玩整合包"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "26DB0006AA797F95"
-			tasks: [
-				{
-					id: "5DAAE686941AA62C"
-					stat: "minecraft:time_since_death"
-					type: "stat"
-					value: 1000000000
-				}
-				{
-					id: "07F9336B54F8D31B"
-					stat: "minecraft:deaths"
-					type: "stat"
-					value: 1
-				}
-			]
-			x: -3.0d
-			y: -1.0d
-		}
-		{
-			id: "031563AF1C83455E"
-			tasks: [{
-				icon: "minecraft:oak_log"
-				id: "382071937DBA9699"
-				stage: "ok"
-				type: "gamestage"
-			}]
 			x: -1.0d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
-			id: "0CABA3F3E31329F2"
-			rewards: [{
-				advancement: "tfc:world/graphite"
-				criterion: ""
-				id: "79D380678A388866"
-				type: "advancement"
-			}]
+			id: "343C81E2EB290616"
 			tasks: [{
-				id: "1F9FB6AD14D10B92"
+				id: "1F9231AB315BD633"
+				title: "感谢名单"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "7DDFB96068C04C19"
+			tasks: [{
+				id: "1954E13CEDF483A6"
+				title: "问题反馈"
 				type: "checkmark"
 			}]
 			x: -4.0d
-			y: 1.0d
+			y: 6.0d
+		}
+		{
+			id: "0FB29EED69E96C0E"
+			tasks: [{
+				id: "7ABB0D3AE5DFDC2B"
+				title: "整合包定位"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 7.5d
 		}
 	]
+	title: "前言"
 }

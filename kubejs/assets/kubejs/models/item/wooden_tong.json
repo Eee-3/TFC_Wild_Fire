@@ -1,0 +1,29 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kubejs:item/hot/wooden_tong_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "kubejs:item/hot/wooden_tong_1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "kubejs:item/hot/wooden_tong_2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.95
+            },
+            "model": "kubejs:item/hot/wooden_tong_3"
+        }
+    ]
+}

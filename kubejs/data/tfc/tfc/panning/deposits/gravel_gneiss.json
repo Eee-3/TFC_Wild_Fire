@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "tfc:rock/gravel/gneiss",
+  "model_stages": [
+    "tfc:item/pan/cassiterite/gneiss_full"
+  ],
+  "loot_table": "tfc:panning/deposits/gravel_gneiss"
+}
