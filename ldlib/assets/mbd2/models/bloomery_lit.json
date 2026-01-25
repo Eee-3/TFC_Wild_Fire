@@ -1,12 +1,14 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
+		"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "block/fire_0",
 		"2": "mbd2:block/bloomery_lit",
 		"particle": "block/fire_0"
 	},
+	"render_type":"minecraft:cutout",
 	"elements": [
 		{
 			"name": "5746292c-97bf-4f65-bc5f-4dd68426b719_0",

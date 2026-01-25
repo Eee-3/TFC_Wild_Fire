@@ -1,10 +1,13 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"4": "mbd2:block/bloomery_input"
+		"4": "mbd2:block/bloomery_input",
+		"particle": "mbd2:block/bloomery_input"
 	},
+	"render_type":"minecraft:cutout",
 	"elements": [
 		{
 			"from": [0, 0, 0],

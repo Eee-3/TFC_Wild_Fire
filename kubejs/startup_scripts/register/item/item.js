@@ -17,10 +17,19 @@ StartupEvents.registry('item', event => {
      event.create('standard_type_gunstock_parts_steel').texture('kubejs:item/gun/standard_type_gunstock_parts_steel'); // 制式枪托配件（钢）
      event.create('standard_type_gunstock_parts_copper').texture('kubejs:item/gun/standard_type_gunstock_parts_copper'); // 制式枪托配件（铜）*/
 
-    event.create('mold_mechanical', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_mechanical')//零件模具
-    event.create('unfired_mold_mechanical', 'basic').texture('kubejs:item/tfc/unfired_mold_mechanical')//没烧的零件模具
-    event.create('mold_simple_key', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_simple_key')//简易钥匙模具
-    event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key')//没烧的简易钥匙模具
+
+    event.create('mold_mechanical', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_mechanical').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//零件模具
+    event.create('unfired_mold_mechanical', 'basic').texture('kubejs:item/tfc/unfired_mold_mechanical').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//没烧的零件模具
+
+    event.create('mold_simple_key', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_simple_key').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//简易钥匙模具
+    event.create('unfired_mold_simple_key', 'basic').texture('kubejs:item/tfc/unfired_mold_simple_key').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//没烧的简易钥匙模具
+
+    event.create('mold_rods', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_rods').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//棒模具
+    event.create('unfired_mold_rods', 'basic').texture('kubejs:item/tfc/unfired_mold_rods').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//没烧的棒模具
+
+    event.create('mold_sheet', 'tfc:mold').capacity(100).texture('kubejs:item/tfc/mold_sheet').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//板模具
+    event.create('unfired_mold_sheet', 'basic').texture('kubejs:item/tfc/unfired_mold_sheet').tag('tfc:molds').tag('tfcchannelcasting:accepted_in_mold_table')//没烧的板模具
+
     event.create('aerospace_suit_fabric', 'basic').texture('kubejs:item/ad/aerospace_suit_fabric')//ad航空服布料
     event.create('netherite_reinforcement_plate', 'basic').texture('kubejs:item/ad/netherite_reinforcement_plate')//ad下界合金强化片
     event.create('heat_resistant_reinforcement_plate', 'basic').texture('kubejs:item/ad/heat_resistant_reinforcement_plate')//ad耐热强化片
@@ -188,14 +197,7 @@ StartupEvents.registry("item", event => {//航空/航天相关部件
 
 
 
-    // 未完成部件
-    event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成
-    event.create('kubejs:basic_crystal_pannel_unfinished').texture('kubejs:item/ad/basic_crystal_pannel_unfinished'); // 基础水晶面板_未完成
-    event.create('kubejs:basic_plating_unfinished').texture('kubejs:item/ad/basic_plating_unfinished'); // 基础镀层_未完成
-    event.create('kubejs:flare_plating_unfinished').texture('kubejs:item/ad/flare_plating_unfinished'); // 耀斑镀层_未完成
-    event.create('kubejs:hologram_frontpanel_unfinished').texture('kubejs:item/ad/hologram_frontpanel_unfinished'); // 全息前面板_未完成
-    event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
-    event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
+
 })
 StartupEvents.registry("item", event => {   //工业线盔甲相关
     // 半成品黄铜骑士盔甲
@@ -222,3 +224,47 @@ StartupEvents.registry("item", event => {   //工业线盔甲相关
     event.create('kubejs:unfinished_thermometer').texture('kubejs:item/unfinished_thermometer').maxStackSize(1); // 未完成温度计
 
 });
+StartupEvents.registry("item", event => {  //半成品
+    const allmetal = [
+        "bismuth_bronze",
+        "black_bronze",
+        "bronze",
+        "copper",
+        "wrought_iron",
+        "steel",
+        "black_steel",
+        "blue_steel",
+        "red_steel",
+        "cast_iron",
+        "gold",
+        "rose_gold",
+        "electrum",
+        "constantan",
+        "brass",
+        "lead",
+        "bismuth",
+        "uranium",
+        "aluminum",
+        "silver",
+        "sterling_silver",
+        "tin",
+        "nickel",
+        "chromium",
+        "zinc",
+        "stainless_steel"]
+    allmetal.forEach(metal => {
+        event.create(`kubejs:unfinished/doble_ingot/${metal}`); // 激光焊接半成品-双锭
+        event.create(`kubejs:unfinished/hot_doble_ingot/${metal}`); // 激光焊接半成品-热双锭
+        event.create(`kubejs:unfinished/doble_sheet/${metal}`); // 激光焊接半成品-双板
+        event.create(`kubejs:unfinished/hot_doble_sheet/${metal}`); // 激光焊接半成品-热双板
+    })
+    // 未完成部件
+    event.create('kubejs:advanced_plating_unfinished').texture('kubejs:item/ad/advanced_plating_unfinished'); // 高级镀层_未完成
+    event.create('kubejs:basic_crystal_pannel_unfinished').texture('kubejs:item/ad/basic_crystal_pannel_unfinished'); // 基础水晶面板_未完成
+    event.create('kubejs:basic_plating_unfinished').texture('kubejs:item/ad/basic_plating_unfinished'); // 基础镀层_未完成
+    event.create('kubejs:flare_plating_unfinished').texture('kubejs:item/ad/flare_plating_unfinished'); // 耀斑镀层_未完成
+    event.create('kubejs:hologram_frontpanel_unfinished').texture('kubejs:item/ad/hologram_frontpanel_unfinished'); // 全息前面板_未完成
+    event.create('kubejs:moon_crystal_panel_unfinished').texture('kubejs:item/ad/moon_crystal_panel_unfinished'); // 月球水晶面板_未完成
+    event.create('kubejs:venus_plating_unfinished').texture('kubejs:item/ad/venus_plating_unfinished'); // 金星镀层_未完成
+
+})

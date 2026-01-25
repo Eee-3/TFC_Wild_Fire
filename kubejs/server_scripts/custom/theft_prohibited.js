@@ -1,4 +1,4 @@
-const BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+/*const BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 const structures = BuiltInRegistries.STRUCTURE_TYPE
 const Monster = Java.loadClass('net.minecraft.world.entity.monster.Monster')
 
@@ -41,4 +41,4 @@ BlockEvents.rightClicked(e => {
       }
     }
   }
-})
+})*/
