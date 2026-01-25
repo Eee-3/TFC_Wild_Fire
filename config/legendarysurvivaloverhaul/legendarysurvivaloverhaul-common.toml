@@ -155,7 +155,7 @@
 		# How much of an effect rain has on temperature.
 		# It means that for a value of -2, the body temperature of the player is reduced by 2.
 		#Range: -1000.0 ~ 1000.0
-		"Rain Temperature Modifier" = -1.5
+		"Rain Temperature Modifier" = -4.5
 		# How much of an effect snow has on temperature.
 		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		#Range: -1000.0 ~ 1000.0
