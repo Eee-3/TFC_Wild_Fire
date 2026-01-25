@@ -1,6 +1,35 @@
 ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
 
+  tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)//黄铜机件
+  tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)//铜螺栓
+
+
+ tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
+tfc.casting('tfc:metal/sheet/nickel', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/nickel', 200), 1)//镍板
+tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
+tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
+tfc.casting('tfc:metal/sheet/tin', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/tin', 200), 1)//锡板
+tfc.casting('tfc:metal/sheet/zinc', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/zinc', 200), 1)//锌板
+tfc.casting('tfc:metal/sheet/black_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/black_bronze', 200), 1)//黑青铜板
+tfc.casting('tfc:metal/sheet/cast_iron', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/cast_iron', 200), 1)//铸铁板
+tfc.casting('tfc:metal/sheet/bismuth', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth', 200), 1)//铋板
+tfc.casting('tfc:metal/sheet/brass', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/brass', 200), 1)//黄铜板
+tfc.casting('tfc:metal/sheet/bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bronze', 200), 1)//青铜板
+tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 200), 1)//铋青铜板
+
+ tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
+  tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
+  tfc.casting('tfc:metal/rod/nickel', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/nickel', 50), 1)//镍棒
+  tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
+  tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
+tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
+tfc.casting('tfc:metal/rod/zinc', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/zinc', 50), 1)//锌棒
+tfc.casting('tfc:metal/rod/black_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/black_bronze', 50), 1)//黑青铜棒
+tfc.casting('tfc:metal/rod/cast_iron', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/cast_iron', 50), 1)//铸铁棒
+tfc.casting('tfc:metal/rod/bismuth', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth', 50), 1)//铋棒
+tfc.casting('tfc:metal/rod/brass', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/brass', 50), 1)//黄铜棒
+tfc.casting('tfc:metal/rod/bismuth_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 50), 1)//铋青铜棒
 
 create.sandpaper_polishing("kubejs:iron_needle","tfc:metal/rod/wrought_iron")
 create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
@@ -1101,13 +1130,13 @@ ServerEvents.recipes(event => {
   double_ingots.forEach(di => {
     const input1 = `tfc:metal/ingot/${di}`
     const output1 = `tfc:metal/double_ingot/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
+    create.sequenced_assembly(`tfc:metal/ingot/${di}`, `tfc:metal/double_ingot/${di}`,
+      [create.deploying(`kubejs:tfc/doble_ingot/${di}`, [`tfc:metal/ingot/${di}`, input1]),
       event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": `kubejs:tfc/doble_ingot/${di}` }],
+        "results": [{ "item": `kubejs:tfc/hot_doble_ingot/${di}`, "count": 1 }], "energy": 2000, "maxChargeRate": 50
       }),
-      create.pressing(input1, input1),
+      create.pressing(`tfc:metal/double_ingot/${di}`, `kubejs:tfc/hot_doble_ingot/${di}`),
       ]
     ).transitionalItem(input1).loops(1)//
   })

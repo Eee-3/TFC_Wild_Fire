@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
   }
 
   const metalList = [
-   // { name: 'minecraft:netherite_ingot', number: 100, metal: "bismuth" },
+    // { name: 'minecraft:netherite_ingot', number: 100, metal: "bismuth" },
   ];
 
 
@@ -355,14 +355,16 @@ ServerEvents.recipes(e => {
     crucible(`${metala.mods}${metala.name}`, `tfc:metal/${metala.metal}`, metala.number, metala.temperature)
   });
 
-
   tfc.heating('kubejs:unfired_mold_mechanical', 1399).resultItem('kubejs:mold_mechanical')//零件模具
   tfc.heating('kubejs:unfired_mold_simple_key', 1399).resultItem('kubejs:mold_simple_key')//钥匙模具
+
+  tfc.heating('kubejs:unfired_mold_sheet', 1399).resultItem('kubejs:mold_sheet')//板模具
+  tfc.heating('kubejs:unfired_mold_rods', 1399).resultItem('kubejs:mold_rods')//棒模具
+
   tfc.heating('kubejs:unfired_crucible_mold', 1399).resultItem('kubejs:crucible_mold')//坩埚模具
 
   tfc.heating("immersiveengineering:dust_iron", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 20))//铁粉
-  tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)
-  tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)
+
   tfc.heating('tfc:brass_mechanisms', 940).resultFluid(Fluid.of('tfc:metal/brass', 50))//黄铜机件融化
   tfc.heating("sns:pack_frame", 1535).resultFluid(Fluid.of('tfc:metal/cast_iron', 200))//背包框架融化
   crucible('sns:pack_frame', 'tfc:metal/cast_iron', 200, 1535)

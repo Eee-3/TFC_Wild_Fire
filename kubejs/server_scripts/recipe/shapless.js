@@ -1,7 +1,11 @@
 ServerEvents.recipes(event => {
     const { tfc, create, kubejs, immersiveengineering } = event.recipes;
     const id_in = "kubejs:recipe/shapeless/"
-    
+
+    event.shapeless('kubejs:unfired_mold_sheet', ['#forge:sheets', "minecraft:clay"]).keepIngredient({ item: '#forge:sheets' }); //未完成的板模具
+    event.shapeless('kubejs:unfired_mold_rods', ['#forge:rods/all_metal',"minecraft:clay"]).keepIngredient({ item: '#forge:rods/all_metal' }); //未完成的棒模具
+
+
     event.shapeless('2x kubejs:charcoal_pellet', ['createdieselgenerators:wood_chip', '2x tfc:powder/charcoal', 'tfc:daub']);//木炭颗粒
     event.shapeless('2x kubejs:coal_pellet', ['kubejs:coal_powder', '2x tfc:powder/charcoal', 'tfc:daub']);//煤炭颗粒
     event.shapeless('2x kubejs:charcoal_briquette', ['8x kubejs:charcoal_pellet', 'tfc:daub']);//木屑块
