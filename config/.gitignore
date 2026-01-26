@@ -64,3 +64,5 @@
 !/borninconfiguration-general.toml
 !/map_atlases-client.toml
 !/map_atlases-common.toml
+!/itemphysic.json
+!/itemphysic-client.json
