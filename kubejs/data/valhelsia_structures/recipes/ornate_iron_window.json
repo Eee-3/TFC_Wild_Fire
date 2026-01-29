@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:yellow_stained_glass"
+    },
+    "X": {
+      "tag": "forge:sheets/cast_iron"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "create:ornate_iron_window"
+  },
+  "show_notification": true
+}

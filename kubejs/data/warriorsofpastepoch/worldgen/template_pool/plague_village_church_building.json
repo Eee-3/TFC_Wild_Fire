@@ -3,7 +3,7 @@
   "fallback": "warriorsofpastepoch:plague_village_end",
   "elements": [
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "warriorsofpastepoch:church",
@@ -14,7 +14,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "warriorsofpastepoch:medium_house_2",

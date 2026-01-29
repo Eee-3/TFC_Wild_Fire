@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "tag": "forge:rods/wrought_iron"
+    },
+    "b": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "c": {
+      "item": "vinery:stackable_log"
+    },
+    "c": {
+      "tag": "tfc:rock/bricks"
+    }
+  },
+  "pattern": [
+    "aca",
+    "bdb"
+  ],
+  "result": {
+    "count": 8,
+    "item": "valhelsia_structures:brazier"
+  },
+  "show_notification": true
+}

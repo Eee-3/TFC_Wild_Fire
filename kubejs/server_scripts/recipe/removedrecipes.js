@@ -7,6 +7,9 @@ ServerEvents.recipes(e => {
   e.remove({ mod: 'scguns' })
 
   const iddd = [
+    'createdieselgenerators:crafting/entity_filter',
+    'woodencog:crafting/kinetics/filter',
+    'woodencog:crafting/kinetics/attribute_filter',
     'tfc:crafting/fire_clay_recycle_1',
     'vintageimprovements:pressing/andesite_alloy',
     'immersiveengineering:crafting/wire_aluminum',

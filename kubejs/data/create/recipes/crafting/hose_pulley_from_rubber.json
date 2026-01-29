@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "afc:rubber_bar"
+    },
+    "b": {
+      "item": "create:fluid_valve"
+    },
+    "c": {
+      "item": "create:copper_casing"
+    }
+  },
+  "pattern": [
+    " c ",
+    "aaa",
+    " b "
+  ],
+  "result": {
+    "item": "create:hose_pulley"
+  }
+}

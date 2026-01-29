@@ -94,6 +94,20 @@
       "temperature": 0.0
     }
   ],
+    "valhelsia_structures:brazier": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 17.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
   "minecraft:soul_torch": [
     {
       "properties": {},
@@ -171,13 +185,13 @@
   "tfc:spring_water": [
     {
       "properties": {},
-      "temperature": 7.5
+      "temperature": 5.5
     }
   ],
   "tfc:flowing_spring_water": [
     {
       "properties": {},
-      "temperature": 6
+      "temperature": 1
     }
   ],
   "minecraft:jack_o_lantern": [
@@ -295,6 +309,20 @@
     }
   ],
   "minecraft:soul_campfire": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": -10.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+    "valhelsia_structures:soul_brazier": [
     {
       "properties": {
         "lit": "true"

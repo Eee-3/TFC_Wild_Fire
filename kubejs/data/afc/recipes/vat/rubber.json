@@ -1,0 +1,18 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "firmalife:vat",
+  "input_item": {
+    "ingredient": {
+        "item": "tfc:powder/sulfur"
+    },
+    "count": 1
+  },
+  "input_fluid": {
+    "ingredient": "afc:latex",
+    "amount": 1000
+  },
+  "output_item": {
+    "item": "afc:rubber_bar",
+    "count": 4
+  }
+}

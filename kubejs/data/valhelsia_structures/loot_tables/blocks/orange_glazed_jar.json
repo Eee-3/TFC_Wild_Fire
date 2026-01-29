@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "valhelsia_structures:orange_glazed_jar",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "supplementaries:blocks/urn_loot/urn_loot",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "valhelsia_structures:orange_glazed_jar",
+              "properties": {
+                "treasure": "true"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

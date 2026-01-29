@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "tfc:high_quality_cloth"
+    },
+    "b": {
+      "tag": "tfc:leather_knapping"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "bbb"
+  ],
+  "result": {
+    "item": "valhelsia_structures:white_sleeping_bag"
+  },
+  "show_notification": true
+}

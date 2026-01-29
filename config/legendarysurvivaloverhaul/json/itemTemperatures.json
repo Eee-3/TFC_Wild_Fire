@@ -47,6 +47,96 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
+  "brewery:brewfest_hat": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "brewery:brewfest_hat_red": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "brewery:brewfest_dress": {
+    "temperature": 0.0,
+    "heat_resistance": 2.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "brewery:brewfest_regalia": {
+    "temperature": 0.0,
+    "heat_resistance": 2.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "brewery:brewfest_trousers": {
+    "temperature": 0.0,
+    "heat_resistance": 2.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "brewery:brewfest_blouse": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 1.0
+  },
+  "warriorsofpastepoch:muketers_armor_helmet": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 1.0
+  },
+  "vinery:straw_hat": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "vinery:winemaker_apron": {
+    "temperature": 0.0,
+    "heat_resistance": 1.5,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.0
+  },
+  "vinery:winemaker_leggings": {
+    "temperature": 0.0,
+    "heat_resistance": 1.0,
+    "cold_resistance": 0.0,
+    "thermal_resistance": 0.5
+  },
+  "sns:hiking_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.5
+  },
+  "sns:steel_toe_hiking_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.5
+  },
+  "sns:black_steel_toe_hiking_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.5
+  },
+  "sns:blue_steel_toe_hiking_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.5
+  },
+  "sns:red_steel_toe_hiking_boots": {
+    "temperature": 0.0,
+    "heat_resistance": 0.0,
+    "cold_resistance": 1.0,
+    "thermal_resistance": 0.5
+  },
   "legendarysurvivaloverhaul:desert_boots": {
     "temperature": 0.0,
     "heat_resistance": 0.5,

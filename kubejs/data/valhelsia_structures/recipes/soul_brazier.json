@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "a": {
+      "tag": "forge:rods/steel"
+    },
+    "b": {
+      "tag": "forge:sheets/wrought_iron"
+    },
+    "c": {
+      "item": "minecraft:soul_soil"
+    },
+    "c": {
+      "tag": "tfc:rock/bricks"
+    }
+  },
+  "pattern": [
+    "aca",
+    "bdb"
+  ],
+  "result": {
+    "count": 8,
+    "item": "valhelsia_structures:soul_brazier"
+  },
+  "show_notification": true
+}

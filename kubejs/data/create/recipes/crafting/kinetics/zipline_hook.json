@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:rods/cast_iron"
+    },
+    "S": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "SAS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "parcool:wooden_zipline_hook"
+  },
+  "show_notification": true
+}

@@ -69,6 +69,17 @@ StartupEvents.registry('item', event => {
 		foodBuilder.hunger(4)
 		foodBuilder.saturation(0.1)
 	})
+	event.create("repas_de_survie:fluorescyst_shroom")
+    .texture("kubejs:item/food/fluorescyst_shroom")
+	.displayName("荧泡菌")
+	.food(foodBuilder=>{
+		foodBuilder.hunger(4)
+		foodBuilder.saturation(0.1)
+		foodBuilder.effect("minecraft:night_vision",1800,0,1)
+		.effect("minecraft:darkness",200,2,0.9)
+		.effect("minecraft:nausea",120,2,0.9)
+		.effect("minecraft:blindness",440,2,0.9)
+	})
 
 	event.create("repas_de_survie:rat")
     .texture("kubejs:item/food/rat")

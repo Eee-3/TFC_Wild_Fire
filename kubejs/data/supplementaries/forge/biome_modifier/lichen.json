@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#supplementaries:has_cave_urns",
+  "features": "minecraft:glow_lichen",
+  "step": "underground_decoration"
+}

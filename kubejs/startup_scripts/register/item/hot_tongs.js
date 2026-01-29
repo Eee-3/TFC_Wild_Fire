@@ -27,7 +27,7 @@ StartupEvents.registry('item', event => {
 
 
     ]
-    event.create('glove').maxDamage(200).texture(`kubejs:item/hot/glove`).tag('tfc:usable_on_tool_rack')
+    event.create('glove').maxDamage(200).texture(`kubejs:item/hot/glove`).tag('tfc:usable_on_tool_rack').attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack().modifyAttribute("legendarysurvivaloverhaul:heat_resistance", "heat_resistance", 4, "addition")).tag("curios:hands")
     event.create('peel').maxDamage(300).texture(`kubejs:item/hot/peel`).tag('tfc:usable_on_tool_rack')
     event.create('cast_iron_peel').maxDamage(1000).texture(`kubejs:item/hot/cast_iron_peel`).tag('tfc:usable_on_tool_rack')
     event.create('stainless_steel_peel').maxDamage(2200).texture(`kubejs:item/hot/steel_peel`).tag('tfc:usable_on_tool_rack')

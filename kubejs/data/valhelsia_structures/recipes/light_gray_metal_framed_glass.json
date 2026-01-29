@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_stained_glass"
+    },
+    "X": {
+      "tag": "forge:rods/cast_iron"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "valhelsia_structures:light_gray_metal_framed_glass"
+  },
+  "show_notification": true
+}

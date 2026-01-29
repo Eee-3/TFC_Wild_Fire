@@ -38,6 +38,18 @@ StartupEvents.registry('block', event => {
                 .model("kubejs:block/wild_crop/wild_red_mushroom")
                 .tagBlock('tfc:mineable_with_sharp_tool')
 
+                event.create('kubejs:wild_fluorescyst_shroom')
+                .material('moss')
+                .soundType('crop')
+                .hardness('0.5')
+                .box(4, 0, 4, 12, 6, 12)
+                .noCollision()
+                .notSolid()
+                .renderType('cutout_mipped')
+                .model("kubejs:block/wild_crop/wild_fluorescyst_shroom")
+                .tagBlock('tfc:mineable_with_sharp_tool')
+                .lightLevel(5)
+
         event.create('kubejs:tfc/sinew')
                 .material('wood')
                 .hardness(0.5)

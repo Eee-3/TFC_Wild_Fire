@@ -34,6 +34,17 @@
           "processors": []
         }
       }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "warriorsofpastepoch:medium_house_4",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
     }
   ]
 }

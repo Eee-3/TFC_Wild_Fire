@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "afc:maple_syrup"
+    }
+  ],
+  "results": [
+    {
+      "item": "afc:maple_sugar"
+    }
+  ]
+}

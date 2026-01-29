@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:sheets/copper"
+    },
+    "S": {
+      "tag": "tfc:lumber"
+    },
+    "c": {
+      "item": "farmersdelight:canvas"
+    }
+  },
+  "pattern": [
+    " c ",
+    "ASA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "createdieselgenerators:entity_filter"
+  },
+  "show_notification": true
+}

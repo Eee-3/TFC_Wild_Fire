@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "X": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "#X#",
+    "#X#"
+  ],
+  "result": {
+    "count": 12,
+    "item": "valhelsia_structures:paper_wall"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 100,
+      "fluid": "afc:birch_syrup"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "afc:birch_sugar"
+    }
+  ]
+}

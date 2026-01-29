@@ -622,7 +622,7 @@ ServerEvents.recipes(event => {
         ' c '
     ], {
         a: 'kubejs:material_component_steel',
-        b: 'minecraft:dried_kelp',
+        b: '#tfc:leather_knapping',
         c: 'tfc:metal/sheet/steel',
     })//钢龙头
 

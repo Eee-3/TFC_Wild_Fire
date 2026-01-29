@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "block/cross",
+  "textures": {
+    "cross": "kubejs:block/wild_fluorescyst_shroom"
+  }
+}
