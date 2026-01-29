@@ -19,8 +19,44 @@ ItemEvents.modification(event => {
         { name: 'butcher:boneskinningknife', num: 50 },
         { name: 'create:sand_paper', num: 32 },
 
-   
 
+
+        { name: 'tfc:metal/boots/black_steel', num: 4000 },
+        { name: 'tfc:metal/helmet/blue_steel', num: 4000 },
+        { name: 'tfc:metal/chestplate/blue_steel', num: 4000 },
+        { name: 'tfc:metal/greaves/blue_steel', num: 4000 },
+        { name: 'tfc:metal/boots/blue_steel', num: 4000 },
+        { name: 'tfc:metal/helmet/red_steel', num: 4000 },
+        { name: 'tfc:metal/chestplate/red_steel', num: 4000 },
+        { name: 'tfc:metal/greaves/red_steel', num: 4000 },
+        { name: 'tfc:metal/boots/red_steel', num: 4000 },
+        { name: 'tfc:metal/helmet/black_bronze', num: 4000 },
+        { name: 'tfc:metal/chestplate/black_bronze', num: 4000 },
+        { name: 'tfc:metal/greaves/black_bronze', num: 4000 },
+        { name: 'tfc:metal/boots/black_bronze', num: 4000 },
+        { name: 'tfc:metal/helmet/bismuth_bronze', num: 4000 },
+        { name: 'tfc:metal/chestplate/bismuth_bronze', num: 4000 },
+        { name: 'tfc:metal/greaves/bismuth_bronze', num: 4000 },
+        { name: 'tfc:metal/boots/bismuth_bronze', num: 4000 },
+        { name: 'tfc:metal/helmet/bronze', num: 4000 },
+        { name: 'tfc:metal/chestplate/bronze', num: 4000 },
+        { name: 'tfc:metal/greaves/bronze', num: 4000 },
+        { name: 'tfc:metal/boots/bronze', num: 4000 },
+        { name: 'tfc:metal/helmet/copper', num: 4000 },
+        { name: 'tfc:metal/chestplate/copper', num: 4000 },
+        { name: 'tfc:metal/greaves/copper', num: 4000 },
+        { name: 'tfc:metal/boots/copper', num: 4000 },
+        { name: 'tfc:metal/helmet/wrought_iron', num: 4000 },
+        { name: 'tfc:metal/chestplate/wrought_iron', num: 4000 },
+        { name: 'tfc:metal/greaves/wrought_iron', num: 4000 },
+        { name: 'tfc:metal/boots/wrought_iron', num: 4000 },
+        { name: 'tfc:metal/helmet/steel', num: 4000 },
+        { name: 'tfc:metal/chestplate/steel', num: 4000 },
+        { name: 'tfc:metal/greaves/steel', num: 4000 },
+        { name: 'tfc:metal/boots/steel', num: 4000 },
+        { name: 'tfc:metal/helmet/black_steel', num: 4000 },
+        { name: 'tfc:metal/chestplate/black_steel', num: 4000 },
+        { name: 'tfc:metal/greaves/black_steel', num: 4000 }
 
 
     ]

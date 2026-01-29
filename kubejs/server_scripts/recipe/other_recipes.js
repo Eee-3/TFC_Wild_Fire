@@ -1,6 +1,68 @@
 ServerEvents.recipes(event => {
   const { tfc, create, kubejs, immersiveengineering } = event.recipes;
+
+  tfc.casting('2x tfc:brass_mechanisms', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/brass', 100), 1)//黄铜机件
+  tfc.casting('5x firmaciv:copper_bolt', 'kubejs:mold_mechanical', TFC.fluidStackIngredient('tfc:metal/copper', 100), 1)//铜螺栓
+
+
+ tfc.casting('tfc:metal/sheet/copper', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/copper', 200), 1)//铜板
+tfc.casting('tfc:metal/sheet/nickel', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/nickel', 200), 1)//镍板
+tfc.casting('tfc:metal/sheet/rose_gold', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/rose_gold', 200), 1)//玫瑰金板
+tfc.casting('tfc:metal/sheet/silver', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/silver', 200), 1)//银板
+tfc.casting('tfc:metal/sheet/tin', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/tin', 200), 1)//锡板
+tfc.casting('tfc:metal/sheet/zinc', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/zinc', 200), 1)//锌板
+tfc.casting('tfc:metal/sheet/black_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/black_bronze', 200), 1)//黑青铜板
+tfc.casting('tfc:metal/sheet/cast_iron', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/cast_iron', 200), 1)//铸铁板
+tfc.casting('tfc:metal/sheet/bismuth', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth', 200), 1)//铋板
+tfc.casting('tfc:metal/sheet/brass', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/brass', 200), 1)//黄铜板
+tfc.casting('tfc:metal/sheet/bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bronze', 200), 1)//青铜板
+tfc.casting('tfc:metal/sheet/bismuth_bronze', 'kubejs:mold_sheet', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 200), 1)//铋青铜板
+
+ tfc.casting("tfc:metal/rod/copper", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/copper', 50), 1)//铜棒
+  tfc.casting("tfc:metal/rod/bronze", 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bronze', 50), 1)//青铜棒
+  tfc.casting('tfc:metal/rod/nickel', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/nickel', 50), 1)//镍棒
+  tfc.casting('tfc:metal/rod/rose_gold', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/rose_gold', 50), 1)//玫瑰金棒
+  tfc.casting('tfc:metal/rod/silver', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/silver', 50), 1)//银棒
+tfc.casting('tfc:metal/rod/tin', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/tin', 50), 1)//锡棒
+tfc.casting('tfc:metal/rod/zinc', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/zinc', 50), 1)//锌棒
+tfc.casting('tfc:metal/rod/black_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/black_bronze', 50), 1)//黑青铜棒
+tfc.casting('tfc:metal/rod/cast_iron', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/cast_iron', 50), 1)//铸铁棒
+tfc.casting('tfc:metal/rod/bismuth', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth', 50), 1)//铋棒
+tfc.casting('tfc:metal/rod/brass', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/brass', 50), 1)//黄铜棒
+tfc.casting('tfc:metal/rod/bismuth_bronze', 'kubejs:mold_rods', TFC.fluidStackIngredient('tfc:metal/bismuth_bronze', 50), 1)//铋青铜棒
+
+create.sandpaper_polishing("kubejs:iron_needle","tfc:metal/rod/wrought_iron")
+create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
+
+  /*create.sequenced_assembly('kubejs:hologram_frontpanel', 'tfc:metal/sheet/black_steel',
+    [create.deploying(inputcailiao, [inputcailiao, 'tfc:metal/double_sheet/wrought_iron']),
+    create.deploying(inputcailiao, [inputcailiao, 'mekanism:elite_control_circuit']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_calculation_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ae2:printed_engineering_processor']),
+    create.deploying(inputcailiao, [inputcailiao, 'ad_astra:photovoltaic_etrium_cell']),
+    create.pressing(inputcailiao, inputcailiao)]
+  ).transitionalItem(inputcailiao).loops(2)//六方全息面板*/
+
+
+ create.sequenced_assembly("2x kubejs:iron_needle", "tfc:metal/rod/wrought_iron",
+    [create.cutting("tfc:metal/rod/wrought_iron", "tfc:metal/rod/wrought_iron"),
+      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20}),
+      event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/wrought_iron"}],"results":[{"item": "tfc:metal/rod/wrought_iron","count":1}],"processingTime":20})
+    ]
+  ).transitionalItem("tfc:metal/rod/wrought_iron").loops(1)//铁针
+
+ create.sequenced_assembly("2x kubejs:steel_needle", "tfc:metal/rod/steel",
+    [create.cutting("tfc:metal/rod/steel", "tfc:metal/rod/steel"),
+         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20}),
+         event.custom({"type":"vintageimprovements:polishing","speedLimits":1,"ingredients":[{"item": "tfc:metal/rod/steel"}],"results":[{"item": "tfc:metal/rod/steel","count":1}],"processingTime":20})
+      ]
+  ).transitionalItem("tfc:metal/rod/steel").loops(1)//钢针
+
+
+  //create.cutting("2x kubejs:iron_needle","tfc:metal/rod/wrought_iron")
+  //create.cutting("2x kubejs:steel_needle","tfc:metal/rod/steel")
   //安山合金合成
+  
   tfc.barrel_sealed(16000)
     .outputItem('create:rose_quartz_block')
     .inputs('tfc_ie_addon:mineral/quartz_block', TFC.fluidStackIngredient('immersiveengineering:redstone_acid', 1000))
@@ -267,30 +329,50 @@ ServerEvents.recipes(event => {
 
   // 皮毛/皮革 JS 数组
   const furAndLeatherItems = [
-    'crocodile_leather',
-    'lion_fur',
-    'tiger_fur',
-    'panther_fur',
-    'sabertooth_fur',
-    'cougar_fur',
-    'direwolf_fur',
-    'polar_bear_fur',
-    'caribou_fur',
-    'grizzly_bear_fur',
-    'black_bear_fur',
+    { furid: 'crocodile_leather', fur: 'crocodile_leather', modid: 'textile', size: 'large' },
+    { furid: 'lion_fur', fur: 'lion_fur', modid: 'textile', size: 'large' },
+    { furid: 'tiger_fur', fur: 'tiger_fur', modid: 'textile', size: 'large' },
+    { furid: 'panther_fur', fur: 'panther_fur', modid: 'textile', size: 'large' },
+    { furid: 'sabertooth_fur', fur: 'sabertooth_fur', modid: 'textile', size: 'large' },
+    { furid: 'cougar_fur', fur: 'cougar_fur', modid: 'textile', size: 'large' },
+    { furid: 'direwolf_fur', fur: 'direwolf_fur', modid: 'textile', size: 'large' },
+    { furid: 'polar_bear_fur', fur: 'polar_bear_fur', modid: 'textile', size: 'large' },
+    { furid: 'caribou_fur', fur: 'caribou_fur', modid: 'textile', size: 'large' },
+    { furid: 'grizzly_bear_fur', fur: 'grizzly_bear_fur', modid: 'textile', size: 'large' },
+    { furid: 'black_bear_fur', fur: 'black_bear_fur', modid: 'textile', size: 'large' },
+    //屠宰的
+    { furid: 'cow_skin', fur: 'cow_skin', modid: 'butcher', size: 'large' },
+    { furid: 'panda_skin', fur: 'pandafur', modid: 'butcher', size: 'large' },
+    { furid: 'pig_skin', fur: 'pig_skin', modid: 'butcher', size: 'large' },
+    { furid: 'sheep_skin', fur: 'sheep_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'camel_fur', fur: 'camelfur', modid: 'butcher', size: 'medium' },
+    { furid: 'creamy_llama_skin', fur: 'creamyllamaskin', modid: 'butcher', size: 'medium' },
+    { furid: 'brown_llama_skin', fur: 'brown_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'gray_llama_skin', fur: 'gray_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'white_llama_skin', fur: 'white_llama_skin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_black', fur: 'blackhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_brown', fur: 'brownhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_chestnut', fur: 'chestnuthorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_darkbrown', fur: 'darkbrownhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_creamy', fur: 'creamyhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_gray', fur: 'grayhorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'horse_skin_white', fur: 'whitehorseskin', modid: 'butcher', size: 'medium' },
+    { furid: 'donkey_skin', fur: 'donkeyskin', modid: 'butcher', size: 'medium' },
+    { furid: 'mule_skin', fur: 'muleskin', modid: 'butcher', size: 'medium' },
+
 
     //'tfc:large_sheepskin_hide'
   ];
   for (var i = 0; i < furAndLeatherItems.length; i++) {
     var ore = furAndLeatherItems[i];
     // console.log("开始调用");
-    farmersdelight_cutting('tfc:large_raw_hide', `textile:${ore}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理大生皮
+    farmersdelight_cutting('tfc:large_raw_hide', `${ore.modid}:${ore.fur}`, 1, 'tfcscraping:scraping_knives', `kubejs:cutting_reciped_furleather_${i}`)// 皮毛/皮革处理生皮
 
     tfc.scraping(
-      'tfc:large_raw_hide',
-      `textile:${ore}`,
-      'kubejs:item/tfc/fur/large_raw_hide',
-      `kubejs:item/tfc/fur/${ore}`
+      `tfc:${ore.size}_raw_hide`,
+      `${ore.modid}:${ore.fur}`,
+      `kubejs:item/tfc/fur/${ore.size}_raw_hide`,
+      `kubejs:item/tfc/fur/${ore.furid}`
     )
   }
 
@@ -321,26 +403,24 @@ ServerEvents.recipes(event => {
 
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:large_soaked_hide' }]
-    , "result": [{ "item": 'tfc:large_scraped_hide' },
-    { "item": 'tfc:wool', "count": 3 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting",
+    "ingredients": [{ "item": 'tfc:large_soaked_hide' }],
+    "result": [{ "item": 'tfc:large_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_large_soaked_hide`)//大浸泡皮
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_soaked_hide' }]
-    , "result": [{ "item": 'tfc:medium_scraped_hide' },
-    { "item": 'tfc:wool', "count": 2 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:medium_soaked_hide' }],
+    "result": [{ "item": 'tfc:medium_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_medium_soaked_hide`)//中浸泡皮
   event.custom({
 
-    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_soaked_hide' }]
-    , "result": [{ "item": 'tfc:small_scraped_hide' },
-    { "item": 'tfc:wool', "count": 1 }]
-    , "sound": "minecraft:item.axe.strip", "tool":
+    "type": "farmersdelight:cutting", "ingredients": [{ "item": 'tfc:small_soaked_hide' }],
+    "result": [{ "item": 'tfc:small_scraped_hide' }],
+    "sound": "minecraft:item.axe.strip", "tool":
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_soaked_hidee`)//小浸泡皮
 
@@ -613,15 +693,15 @@ ServerEvents.recipes(event => {
   create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//玉米啤酒
   create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
 
-  create.filling('brewery:whiskey_jojannik', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
-  create.filling('brewery:whiskey_lilitusinglemalt', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
-  create.filling('brewery:whiskey_cristelwalker', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)])//酒
-  create.filling('brewery:whiskey_maggoallan', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)])//酒
-  create.filling('brewery:whiskey_carrasconlabel', ['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)])//酒
-  create.filling('brewery:whiskey_ak', ['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)])//酒
-  create.filling('brewery:whiskey_highland_hearth', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)])//酒
-  create.filling('brewery:whiskey_smokey_reverie', ['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)])//酒
-  create.filling('brewery:whiskey_jamesons_malt', ['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
+  create.filling('brewery:whiskey_jojannik', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
+  create.filling('brewery:whiskey_lilitusinglemalt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)])//酒
+  create.filling('brewery:whiskey_cristelwalker', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_cristelwalker', 250)])//酒
+  create.filling('brewery:whiskey_maggoallan', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_maggoallan', 250)])//酒
+  create.filling('brewery:whiskey_carrasconlabel', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_carrasconlabel', 250)])//酒
+  create.filling('brewery:whiskey_ak', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_ak', 250)])//酒
+  create.filling('brewery:whiskey_highland_hearth', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_highland_hearth', 250)])//酒
+  create.filling('brewery:whiskey_smokey_reverie', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_smokey_reverie', 250)])//酒
+  create.filling('brewery:whiskey_jamesons_malt', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)])//酒
 
   //分液
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_maize', 250)], 'brewery:beer_wheat')//玉米啤酒
@@ -630,15 +710,15 @@ ServerEvents.recipes(event => {
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle')//玉米啤酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley')//海利啤酒
 
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
-  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan')//酒
-  create.emptying(['firmalife:empty_volcanic_wine_bottle', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel')//酒
-  create.emptying(['firmalife:empty_olivine_wine_bottle', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth')//酒
-  create.emptying(['firmalife:empty_hematitic_wine_bottle', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
-  create.emptying(['tfc:silica_glass_bottle', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_lilitusinglemalt', 250)], 'brewery:whiskey_lilitusinglemalt')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_cristelwalker', 250)], 'brewery:whiskey_cristelwalker')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_maggoallan', 250)], 'brewery:whiskey_maggoallan')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_carrasconlabel', 250)], 'brewery:whiskey_carrasconlabel')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_ak', 250)], 'brewery:whiskey_ak')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_highland_hearth', 250)], 'brewery:whiskey_highland_hearth')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_smokey_reverie', 250)], 'brewery:whiskey_smokey_reverie')//酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jamesons_malt', 250)], 'brewery:whiskey_jamesons_malt')//酒
   //event.recipes.tfc.barrel_sealed(5000).outputItem('tfc:unrefined_paper').inputs('farmersdelight:tree_bark', TFC.fluidStackIngredient('tfc:limewater', 50))//获取未精致纸
   event.recipes.firmalife.vat().outputFluid(Fluid.of('tfc:tallow', 100)).inputs('butcher:animalfat', Fluid.of('minecraft:water', 100))//获取蜡质
 
@@ -1050,13 +1130,13 @@ ServerEvents.recipes(event => {
   double_ingots.forEach(di => {
     const input1 = `tfc:metal/ingot/${di}`
     const output1 = `tfc:metal/double_ingot/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
+    create.sequenced_assembly(`tfc:metal/ingot/${di}`, `tfc:metal/double_ingot/${di}`,
+      [create.deploying(`kubejs:tfc/doble_ingot/${di}`, [`tfc:metal/ingot/${di}`, input1]),
       event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
+        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": `kubejs:tfc/doble_ingot/${di}` }],
+        "results": [{ "item": `kubejs:tfc/hot_doble_ingot/${di}`, "count": 1 }], "energy": 2000, "maxChargeRate": 50
       }),
-      create.pressing(input1, input1),
+      create.pressing(`tfc:metal/double_ingot/${di}`, `kubejs:tfc/hot_doble_ingot/${di}`),
       ]
     ).transitionalItem(input1).loops(1)//
   })

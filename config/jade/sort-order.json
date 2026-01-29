@@ -78,6 +78,8 @@
   "jadeaddons.lootr:inventory": null,
   "lootr:info": null,
   "lootr:inventory": null,
+  "mbd2:multiblock_provider": null,
+  "mbd2:recipe_logic_provider": null,
   "mekanism:data_provider": null,
   "mekanism:entity_data_provider": null,
   "mekanism:remove_builtin": null,

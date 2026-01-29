@@ -87,3 +87,32 @@ StartupEvents.registry('item', event => {
                 new $ItemProperties()
         ))
 })
+const deposit = [
+        'andesite',
+        'basalt',
+        'chalk',
+        'chert',
+        'claystone',
+        'conglomerate',
+        'dacite',
+        'diorite',
+        'dolomite',
+        'gabbro',
+        'gneiss',
+        'granite',
+        'limestone',
+        'marble',
+        'phyllite',
+        'quartzite',
+        'rhyolite',
+        'schist',
+        'shale',
+        'slate'
+];
+deposit.forEach(deposit => {
+        StartupEvents.registry("block", event => {
+                event.create(`kubejs:deposit/gem_gravel/${deposit}`, "basic")
+                .model(`kubejs:block/deposit/gem_gravel/${deposit}`)
+                .tagBlock('forge:gravel')
+        })
+})

@@ -658,7 +658,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for how fast items cool. Higher = faster.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		itemCoolingModifier = 0.3
+		itemCoolingModifier = 0.2
 		#
 		# Should hot item entities cool off when in contact with blocks like water or snow?
 		coolHotItemEntities = true
@@ -757,7 +757,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for the minimum health that the player will obtain, based on their nutrition
 		#Range: 0.001 ~ 1000.0
-		nutritionMinimumHealthModifier = 0.8
+		nutritionMinimumHealthModifier = 1.3
 		#
 		# A multiplier for the default health that the player will have (this is at a average nutrition of 40%, aka the starting nutrition.
 		# Nutrition above this value will linearly scale to the maximum multiplier.
@@ -767,7 +767,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for the maximum health that the player will obtain, based on their nutrition
 		#Range: 0.001 ~ 1000.0
-		nutritionMaximumHealthModifier = 2.0
+		nutritionMaximumHealthModifier = 3.5
 
 	[mechanics.foodTraits]
 		#

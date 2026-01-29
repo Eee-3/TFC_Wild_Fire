@@ -1,5 +1,42 @@
 // priority: 0
 
+const deposit = [
+    'andesite',
+    'basalt',
+    'chalk',
+    'chert',
+    'claystone',
+    'conglomerate',
+    'dacite',
+    'diorite',
+    'dolomite',
+    'gabbro',
+    'gneiss',
+    'granite',
+    'limestone',
+    'marble',
+    'phyllite',
+    'quartzite',
+    'rhyolite',
+    'schist',
+    'shale',
+    'slate'
+];
+const deposit_tag = [
+    'tfc:ore_deposits',
+    'tfc:can_landslide',
+];
+deposit.forEach(deposit => {
+    deposit_tag.forEach(tag => {
+        ServerEvents.tags("block", event => {
+
+
+            event.add(tag,
+                `kubejs:deposit/gem_gravel/${deposit}`
+            )
+        })
+    })
+})
 ServerEvents.tags("block", event => {
 
 
