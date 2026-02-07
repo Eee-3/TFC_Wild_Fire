@@ -4,8 +4,8 @@ run-name: 正在发布新版本🚀
 on:
   push:
     branches:
-      - release        # 匹配主发布分支
-      - test-*         # 匹配所有 test- 开头的分支（通配符）
+      - release # 匹配主发布分支
+      - test-* # 匹配所有 test- 开头的分支（通配符）
 
 jobs:
   # 公共步骤（所有分支都需要执行的前置操作）
@@ -26,25 +26,25 @@ jobs:
         id: read-modpackname
         with:
           file: ${{ github.workspace }}/pack.toml
-          field: 'name'
+          field: "name"
       - name: 读取整合包版本号
         uses: SebRollen/toml-action@v1.2.0
         id: read-version
         with:
           file: ${{ github.workspace }}/pack.toml
-          field: 'version'
+          field: "version"
       - name: 读取mc版本号
         uses: SebRollen/toml-action@v1.2.0
         id: read-minecraft
         with:
           file: ${{ github.workspace }}/pack.toml
-          field: 'versions.minecraft'
+          field: "versions.minecraft"
       - name: 读取forge版本号
         uses: SebRollen/toml-action@v1.2.0
         id: read-forge
         with:
           file: ${{ github.workspace }}/pack.toml
-          field: 'versions.forge'
+          field: "versions.forge"
       - name: 生成整合包带测试后缀版本号
         id: generate_modpack_version
         run: |
@@ -66,9 +66,9 @@ jobs:
 
   # 客户端相关任务（并行执行）
   client-tasks:
-    needs: common-steps       # 依赖公共步骤完成
+    needs: common-steps # 依赖公共步骤完成
     runs-on: ubuntu-latest
-    env:  # Job 级环境变量（简化读取变量）
+    env: # Job 级环境变量（简化读取变量）
       MODPACK_NAME: ${{ needs.common-steps.outputs.modpack_name }}
       MODPACK_VERSION: ${{ needs.common-steps.outputs.modpack_ver }}
       MC_VERSION: ${{ needs.common-steps.outputs.mc_version }}
@@ -99,8 +99,8 @@ jobs:
           pattern: "Linux 64-bit x86"
           path: ${{ github.workspace }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          repository: Jasons-impart/packwiz
-          run-id: 14558970721
+          repository: packwiz/packwiz
+          run-id: 19636137443
       - name: 挪动packwiz到根目录
         run: |
           # ls ${{ github.workspace }}/Linux\ 64-bit\ x86
@@ -168,7 +168,7 @@ jobs:
   server-tasks:
     needs: common-steps
     runs-on: ubuntu-latest
-    env:  # Job 级环境变量（简化读取变量）
+    env: # Job 级环境变量（简化读取变量）
       MODPACK_NAME: ${{ needs.common-steps.outputs.modpack_name }}
       MODPACK_VERSION: ${{ needs.common-steps.outputs.modpack_ver }}
       MC_VERSION: ${{ needs.common-steps.outputs.mc_version }}
@@ -185,26 +185,26 @@ jobs:
           fetch-depth: 1 # 只取最新提交，加速
       - name: 删除与服务端无关的文件
         run: |
-            # mapfile -t prefixes < ${{ github.workspace }}/.packwizignore
-            # for prefix in "${prefixes[@]}"; do
-            #   echo "Deleting files with prefix: $prefix"
-            #   find ${{ github.workspace }} -name "${prefix}*" -exec rm {} +
-            # done
-            rm -f ${{ github.workspace }}/ModList0.4a.md
-            rm -f ${{ github.workspace }}/README.md
-            rm -f ${{ github.workspace }}/TODOlist.md
-            rm -f ${{ github.workspace }}/KubeJSStyleGuide.md
-            rm -f ${{ github.workspace }}/DevGuide.md
-            rm -f ${{ github.workspace }}/pack.toml
-            rm -f ${{ github.workspace }}/index.toml
-            rm -f ${{ github.workspace }}/client_jvm_args.example.txt
+          # mapfile -t prefixes < ${{ github.workspace }}/.packwizignore
+          # for prefix in "${prefixes[@]}"; do
+          #   echo "Deleting files with prefix: $prefix"
+          #   find ${{ github.workspace }} -name "${prefix}*" -exec rm {} +
+          # done
+          rm -f ${{ github.workspace }}/ModList0.4a.md
+          rm -f ${{ github.workspace }}/README.md
+          rm -f ${{ github.workspace }}/TODOlist.md
+          rm -f ${{ github.workspace }}/KubeJSStyleGuide.md
+          rm -f ${{ github.workspace }}/DevGuide.md
+          rm -f ${{ github.workspace }}/pack.toml
+          rm -f ${{ github.workspace }}/index.toml
+          rm -f ${{ github.workspace }}/client_jvm_args.example.txt
       - name: 删除客户端only模组
         run: |
-            mapfile -t prefixes < ${{ github.workspace }}/.clientonlymodlist
-            for prefix in "${prefixes[@]}"; do
-              echo "Deleting files with prefix: $prefix"
-              find ${{ github.workspace }}/mods -name "${prefix}*" -exec rm {} +
-            done
+          mapfile -t prefixes < ${{ github.workspace }}/.clientonlymodlist
+          for prefix in "${prefixes[@]}"; do
+            echo "Deleting files with prefix: $prefix"
+            find ${{ github.workspace }}/mods -name "${prefix}*" -exec rm {} +
+          done
       - name: 根据pack.toml的整合包版本替换服务安装脚本配置
         env:
           MODPACK: ${{ steps.read-version.outputs.value }}
@@ -248,7 +248,7 @@ jobs:
   patch-tasks:
     needs: [common-steps, client-tasks]
     runs-on: ubuntu-latest
-    env:  # Job 级环境变量（简化读取变量）
+    env: # Job 级环境变量（简化读取变量）
       MODPACK_NAME: ${{ needs.common-steps.outputs.modpack_name }}
       MODPACK_VERSION: ${{ needs.common-steps.outputs.modpack_ver }}
       MC_VERSION: ${{ needs.common-steps.outputs.mc_version }}
@@ -295,7 +295,7 @@ jobs:
           # 生成完整差异报告
           git diff --name-status ${{ env.LATEST_TAG }} HEAD > diff_report.txt
           cat diff_report.txt
-          
+
           # 解析差异报告
           grep -E '^D' diff_report.txt | cut -f2 > deleted_files.txt
           grep -E '^R' diff_report.txt | cut -f2 >> deleted_files.txt
