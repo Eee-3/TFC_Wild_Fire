@@ -424,14 +424,14 @@ create.sandpaper_polishing("kubejs:steel_needle","tfc:metal/rod/steel")
       { "tag": 'tfcscraping:scraping_knives', "action": "axe_strip" }
   }).id(`kubejs:cutting_reciped_small_soaked_hidee`)//小浸泡皮
 
-  tfc.quern('4x kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
+  tfc.quern('kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
   //手推磨磨粉
-  create.milling(['4x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:warm_warmer')
+  create.milling('kubejs:item/ore/dirty_dust/hematite', 'kubejs:warm_warmer')
   //机械动力磨粉
 
-  tfc.quern('3x kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
+  tfc.quern('kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
   //手推磨磨粉
-  create.milling(['3x kubejs:item/ore/dirty_dust/hematite', Item.of('kubejs:item/ore/dirty_dust/hematite').withChance(0.2)], 'kubejs:heating_warmer')
+  create.milling('kubejs:item/ore/dirty_dust/hematite', 'kubejs:heating_warmer')
   //机械动力磨粉
 
   "kubejs:wrought_iron_fragments"
@@ -1117,96 +1117,7 @@ ServerEvents.recipes(event => {
 })*/
 
 //辊压机碎矿一次处理
-ServerEvents.recipes(event => {
-  const create = event.recipes.create
-  const double_ingots = ['bismuth', 'bismuth_bronze', 'black_bronze', 'black_steel', 'blue_steel',
-    'brass', 'bronze', 'cast_iron', 'copper', 'gold', 'nickel', 'steel', 'sterling_silver', 'wrought_iron', 'zinc', 'tin', 'red_steel', 'rose_gold', 'silver'];
-  const fdouble_ingots = ['chromium', 'stainless_steel'];
-  const imdouble_ingots = ['aluminum', 'uranium', 'constantan', 'electrum', 'lead'];
 
-
-  //激光焊接-锭>双锭
-
-  double_ingots.forEach(di => {
-    const input1 = `tfc:metal/ingot/${di}`
-    const output1 = `tfc:metal/double_ingot/${di}`
-    create.sequenced_assembly(`tfc:metal/ingot/${di}`, `tfc:metal/double_ingot/${di}`,
-      [create.deploying(`kubejs:tfc/doble_ingot/${di}`, [`tfc:metal/ingot/${di}`, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": `kubejs:tfc/doble_ingot/${di}` }],
-        "results": [{ "item": `kubejs:tfc/hot_doble_ingot/${di}`, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(`tfc:metal/double_ingot/${di}`, `kubejs:tfc/hot_doble_ingot/${di}`),
-      ]
-    ).transitionalItem(input1).loops(1)//
-  })
-  fdouble_ingots.forEach(di => {
-    const input1 = `firmalife:metal/ingot/${di}`
-    const output1 = `firmalife:metal/double_ingot/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(input1, input1),
-      ]
-    ).transitionalItem(input1).loops(1)//
-  })
-  imdouble_ingots.forEach(di => {
-    const input1 = `immersiveengineering:ingot_${di}`
-    const output1 = `tfc_ie_addon:metal/double_ingot/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(input1, input1),
-      ]
-    ).transitionalItem(input1).loops(1)
-  })
-  //激光焊接-板>双板
-
-  double_ingots.forEach(di => {
-    const input1 = `tfc:metal/sheet/${di}`
-    const output1 = `tfc:metal/double_sheet/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(input1, input1),
-      ]
-    ).transitionalItem(input1).loops(1)//
-  })
-  fdouble_ingots.forEach(di => {
-    const input1 = `firmalife:metal/sheet/${di}`
-    const output1 = `firmalife:metal/double_sheet/${di}`
-    create.sequenced_assembly(output1, input1,
-      [create.deploying(input1, [input1, input1]),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": input1 }],
-        "results": [{ "item": input1, "count": 1 }], "energy": 2000, "maxChargeRate": 50
-      }),
-      create.pressing(input1, input1),
-      ]
-    ).transitionalItem(input1).loops(1)//
-  })
-
-  create.sequenced_assembly('immersiveengineering:sawblade', 'tfc:metal/sheet/wrought_iron',
-    [
-      create.deploying('tfc:metal/sheet/wrought_iron', ['tfc:metal/sheet/wrought_iron', 'tfc:metal/rod/wrought_iron']),
-      event.custom({
-        "type": "vintageimprovements:laser_cutting", "ingredients": [{ "item": 'immersiveengineering:sawblade' }],
-        "results": [{ "item": 'tfc:metal/sheet/wrought_iron', "count": 1 }], "energy": 300, "maxChargeRate": 10
-      }),
-    ]
-  ).transitionalItem('tfc:metal/sheet/wrought_iron').loops(4)//
-
-
-  })
   /*  imdouble_ingots.forEach(di => {
       const input1 = `tfc_ie_addon:metal/sheet/${di}`
       const output1 = `tfc_ie_addon:metal/double_sheet/${di}`
