@@ -631,7 +631,7 @@ ServerEvents.recipes(event => {
   create.compacting(
     ['4x createdieselgenerators:asphalt_block', Fluid.of('createdieselgenerators:diesel', 20)],
     [Fluid.of('kubejs:heavy_oil', 50), '2x #forge:gravel', '2x #forge:sand']
-  ).heated()//沥青制作
+  )//沥青制作
 
   //石磨
   create.milling('2x tfc:olive_paste', 'tfc:food/olive') // 橄榄 => 2个橄榄糊
@@ -690,7 +690,7 @@ ServerEvents.recipes(event => {
   create.filling('brewery:beer_barley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)])//大麦啤酒
   create.filling('brewery:beer_hops', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)])//酒花啤酒
   create.filling('brewery:beer_nettle', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)])//玉米啤酒
-  create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//玉米啤酒
+  create.filling('brewery:beer_oat', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)])//燕麦啤酒
   create.filling('brewery:beer_haley', ['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)])//海利啤酒
 
   create.filling('brewery:whiskey_jojannik', ['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)])//酒
@@ -708,6 +708,7 @@ ServerEvents.recipes(event => {
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_barley', 250)], 'brewery:beer_barley')//大麦啤酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_hops', 250)], 'brewery:beer_hops')//酒花啤酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_rye', 250)], 'brewery:beer_nettle')//玉米啤酒
+  create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_oat', 250)], 'brewery:beer_oat')//燕麦啤酒
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:beer_haley', 250)], 'brewery:beer_haley')//海利啤酒
 
   create.emptying(['brewinandchewin:tankard', Fluid.of('kubejs:whiskey_jojannik', 250)], 'brewery:whiskey_jojannik')//酒
